@@ -1,8 +1,8 @@
 name: EUR-Lex Daily Digest
 
 on:
+  # 04:00 UTC ≈ 06:00 Amsterdam in summer (CEST), 05:00 in winter (CET)
   schedule:
-    # 04:00 UTC ≈ 06:00 Amsterdam in summer (CEST), 05:00 in winter (CET)
     - cron: '0 4 * * *'
   workflow_dispatch:
 
@@ -35,7 +35,7 @@ jobs:
           MAILGUN_TO: ${{ secrets.MAILGUN_TO }}
           # Optional: override default model
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-          # >>> Add these three lines with values <<<
+          # --- Google Docs/Drive ---
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GOOGLE_DOCS_FOLDER_ID: ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
           GOOGLE_DOCS_SHARE_WITH: ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
