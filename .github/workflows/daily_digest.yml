@@ -35,6 +35,9 @@ jobs:
           MAILGUN_TO: ${{ secrets.MAILGUN_TO }}
           # Optional: override default model
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          GOOGLE_SERVICE_ACCOUNT_JSON
+          GOOGLE_DOCS_FOLDER_ID       (optional)
+          GOOGLE_DOCS_SHARE_WITH      (optional)
         run: python main.py
 
       - name: Commit daily report
