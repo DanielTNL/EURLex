@@ -33,3 +33,5 @@ mail_service: gmail
 # display the local date in the subject.  This does not affect the scheduler
 # (the workflow cron remains UTC).
 timezone: Europe/Amsterdam
+email:
+  to: "daan.lobo0801@gmail.com"
