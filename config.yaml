@@ -5,19 +5,68 @@
 # for an EUR‑Lex search by clicking the RSS icon next to the search results on
 # eur-lex.europa.eu.  Each feed URL must be quoted.
 feeds:
-  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L"  # Official Journal L‑series (legislation)
-  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:C"  # Official Journal C‑series (communications)
+  # Broad OJ feeds
+  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L"
+  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:C"
+  
+  # Your personalised EUR-Lex search feeds (My RSS alerts)
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xWO7lvm18tdqCEYa6XHmbPfTQ%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVMjpRIWmwJ07CW12fz5FjW%2Fg%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVM4HHKTnsOCJg9AdK4%2BSHgeM%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPQ4DWlrEgCy6bQ8daXf7jWQ%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPgC5QqogoZldnOBiHenW40g%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVP7svSvp8vvX%2FM7q3MZwyOVM%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOB3Nc0vo4vKSfz6c9NWMPxA%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOaZbexu0%2FZ4w0GRJ2KBo5Qs%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOqjhY%2BtQ3CvXIYs2rD5Fiyc%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOxN3a7sMw0d1jtHjgEuhUTw%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUMlxZcTWvS%2BxtAYizunW5QAA%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUM%2BfPeWXzVIDPrtJmlgBdmhs%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPNOdAlaH8%2BK3mIDkMObFTIc%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPWgLCgbb7I4VN9oxHJMhlpw%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUP90nGqZj0ldQaW%2BbRHjoIqs%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOHvFIxf3jlA9JeuwgTFWJOg%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOcBTK0erkTyfirFlrUSy%2FvM%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOs7pM7dPsIl4e14a2dqfkN8%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUO3V%2FO%2BcTr%2BXa1ATP9a97SsQ%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMqxgwKHzTIEhhaN288u%2FA%2Bk%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMxf2yPGvU%2B2DKvmj375b2fI%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPCOks8Lb9I%2F7HKsheVjDD24%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPZgyu5KH6%2BNZs%2FH0VS0n1XU%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPpaIo2Jjyla%2BQh6LIbMKu1k%3D"
 
 # Keywords used to filter feed entries.  If any keyword appears in the title or
 # summary (case‑insensitive), the entry is included.  You can add as many
 # keywords as you like.
 keywords:
+  # Finance & CMU
   - CMU
-  - defence
-  - AI
-  - de‑risking
-  - financial markets
+  - "capital markets union"
   - finance
+  - financial
+  - "financial markets"
+  - MiFID
+  - MiFIR
+  - EMIR
+  - ESAP
+  - "consolidated tape"
+  - prospectus
+  - securitisation
+  # AI
+  - AI
+  - "artificial intelligence"
+  - "high-risk AI"
+  # Defence / security
+  - defence
+  - defense
+  - "security and defence"
+  - EDA
+  - "dual-use"
+  # Risk / investment
+  - de-risking
+  - "risk sharing"
+  - blending
+  - "investment platform"
 
 # Language for summaries (if using OpenAI).  The script always returns
 # summaries in English (`EN`) for consistency; you can change this if you
