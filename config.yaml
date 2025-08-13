@@ -1,0 +1,35 @@
+#!/usr/bin/env yaml
+
+# List of RSS or Atom feed URLs to monitor.  Replace these with your own
+# EUR‑Lex feeds or other legal news feeds.  You can create a custom RSS feed
+# for an EUR‑Lex search by clicking the RSS icon next to the search results on
+# eur-lex.europa.eu.  Each feed URL must be quoted.
+feeds:
+  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L"  # Official Journal L‑series (legislation)
+  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:C"  # Official Journal C‑series (communications)
+
+# Keywords used to filter feed entries.  If any keyword appears in the title or
+# summary (case‑insensitive), the entry is included.  You can add as many
+# keywords as you like.
+keywords:
+  - CMU
+  - defence
+  - AI
+  - de‑risking
+  - financial markets
+  - finance
+
+# Language for summaries (if using OpenAI).  The script always returns
+# summaries in English (`EN`) for consistency; you can change this if you
+# summarise texts in another language.
+language: EN
+
+# Mail service.  Set to `gmail` to send via Gmail SMTP using `GMAIL_USER` and
+# `GMAIL_PASS` (an app password).  Set to `mailgun` to use Mailgun’s API (you
+# must also set the appropriate secrets).
+mail_service: gmail
+
+# Timezone adjustment for the e‑mail subject.  Set to Europe/Amsterdam to
+# display the local date in the subject.  This does not affect the scheduler
+# (the workflow cron remains UTC).
+timezone: Europe/Amsterdam
