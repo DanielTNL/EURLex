@@ -84,3 +84,55 @@ mail_service: gmail
 timezone: Europe/Amsterdam
 email:
   to: "daan.lobo0801@gmail.com"
+
+  # How many items to include
+caps:
+  max_total: 30
+  max_per_category: 10
+  min_per_category: 1
+
+# Window used for recency boost in scoring (hours)
+recent_hours: 72
+
+# Hybrid taxonomy (rules → LLM fallback). Tweak 'include' lists freely.
+taxonomy:
+  categories:
+    - name: "CMU & Financial Markets"
+      include:
+        - "capital markets union"
+        - cmu
+        - mifid
+        - mifir
+        - emir
+        - esap
+        - "consolidated tape"
+        - prospectus
+        - securitisation
+        - finance
+        - financial
+        - "financial markets"
+
+    - name: "AI & Digital"
+      include:
+        - "artificial intelligence"
+        - "high-risk ai"
+        - ai
+        - digital
+
+    - name: "Defence & Security"
+      include:
+        - defence
+        - defense
+        - "security and defence"
+        - "dual-use"
+        - eda
+
+    - name: "De-risking & Investment"
+      include:
+        - de-risking
+        - "risk sharing"
+        - blending
+        - "investment platform"
+
+    - name: "Other"
+      include: []
