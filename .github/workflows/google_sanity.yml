@@ -1,0 +1,65 @@
+name: Google Docs Sanity
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Google libs
+        run: pip install google-api-python-client google-auth google-auth-httplib2
+
+      - name: Probe Drive & create a test doc
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_DOCS_FOLDER_ID: ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
+          GOOGLE_DOCS_SHARE_WITH: ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
+        run: |
+          python - <<'PY'
+          import os, json
+          from io import BytesIO
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaIoBaseUpload
+
+          js = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON", "").strip()
+          if not js:
+            raise SystemExit("Missing GOOGLE_SERVICE_ACCOUNT_JSON")
+          info = json.loads(js)
+
+          # Build client
+          scopes = ["https://www.googleapis.com/auth/drive"]
+          creds = service_account.Credentials.from_service_account_info(info, scopes=scopes)
+          svc = build("drive", "v3", credentials=creds, cache_discovery=False)
+
+          # Print who we are
+          about = svc.about().get(fields="user").execute()
+          print("[probe] authenticated as:", about["user"]["emailAddress"])
+          folder_id = (os.environ.get("GOOGLE_DOCS_FOLDER_ID") or "").strip()
+          share_with = (os.environ.get("GOOGLE_DOCS_SHARE_WITH") or "").strip()
+          print("[probe] folder_id:", repr(folder_id))
+          print("[probe] share_with:", repr(share_with))
+
+          # Create a small Google Doc via HTML conversion
+          html = "<html><body><h1>Probe</h1><p>Hello from Actions.</p></body></html>"
+          media = MediaIoBaseUpload(BytesIO(html.encode("utf-8")), mimetype="text/html", resumable=False)
+          meta = {"name": "Probe Doc (temp)", "mimeType": "application/vnd.google-apps.document"}
+          if folder_id:
+            meta["parents"] = [folder_id]
+          file = svc.files().create(body=meta, media_body=media, fields="id,webViewLink,parents").execute()
+          print("[probe] created:", file)
+
+          if share_with:
+            svc.permissions().create(
+              fileId=file["id"],
+              body={"type": "user", "role": "reader", "emailAddress": share_with},
+              fields="id"
+            ).execute()
+            print("[probe] shared with:", share_with)
+          PY
