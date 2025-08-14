@@ -12,9 +12,10 @@ Outputs:
 
 Env (provided by workflow):
   OPENAI_API_KEY
-  OPENAI_MODEL                 # optional; falls back to 'gpt-4o-mini-high'
-  OPENAI_TTS_MODEL             # optional; falls back to 'gpt-4o-mini-tts'
-  OPENAI_TTS_VOICE             # optional; fallback 'alloy'
+  OPENAI_WEEKLY_MODEL          # preferred model for this script (e.g., gpt-4o-mini)
+  OPENAI_MODEL                 # fallback if weekly model missing
+  OPENAI_TTS_MODEL             # e.g., gpt-4o-mini-tts or tts-1
+  OPENAI_TTS_VOICE             # e.g., alloy
   GOOGLE_OAUTH_CLIENT_ID
   GOOGLE_OAUTH_CLIENT_SECRET
   GOOGLE_OAUTH_REFRESH_TOKEN
@@ -25,6 +26,7 @@ Env (provided by workflow):
 from __future__ import annotations
 
 import os
+import re
 import pathlib
 import datetime as dt
 from typing import Any, Dict, List, Tuple
@@ -35,11 +37,24 @@ import feedparser
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+from google.auth.transport.requests import Request
 
+# --- OpenAI SDK ---
 try:
     from openai import OpenAI
 except Exception:
     OpenAI = None  # type: ignore
+
+# --- Audio merge (ffmpeg required; installed in workflow) ---
+from pydub import AudioSegment
+
+# --- Token counting (optional; graceful fallback) ---
+try:
+    import tiktoken
+    _enc = tiktoken.get_encoding("cl100k_base")
+    def count_tokens(s: str) -> int: return len(_enc.encode(s))
+except Exception:
+    def count_tokens(s: str) -> int: return max(1, len(s) // 4)
 
 # Paths
 ROOT = pathlib.Path(__file__).parent
@@ -57,7 +72,7 @@ def load_config() -> dict:
 
 
 def last_7_days_utc() -> Tuple[dt.datetime, dt.datetime]:
-    # return timezone-aware UTC datetimes
+    # timezone-aware UTC datetimes
     end = dt.datetime.now(dt.timezone.utc)
     start = end - dt.timedelta(days=7)
     return start, end
@@ -65,27 +80,30 @@ def last_7_days_utc() -> Tuple[dt.datetime, dt.datetime]:
 
 # ------------------------ Google services -----------------------
 
-def google_creds() -> Credentials:
-    cid = os.environ["GOOGLE_OAUTH_CLIENT_ID"]
+GOOGLE_SCOPES = [
+    # IMPORTANT: these must match the scopes used when the refresh token was created
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/documents",
+]
+
+def get_google_services():
+    cid  = os.environ["GOOGLE_OAUTH_CLIENT_ID"]
     csec = os.environ["GOOGLE_OAUTH_CLIENT_SECRET"]
     rtok = os.environ["GOOGLE_OAUTH_REFRESH_TOKEN"]
-    return Credentials(
+
+    creds = Credentials(
         None,
         refresh_token=rtok,
-        token_uri="https://oauth2.googleapis.com/token",
         client_id=cid,
         client_secret=csec,
-        scopes=[
-            "https://www.googleapis.com/auth/drive.file",
-            "https://www.googleapis.com/auth/documents",
-        ],
+        token_uri="https://oauth2.googleapis.com/token",
+        scopes=GOOGLE_SCOPES,
     )
+    # Ensure access token is present/valid
+    creds.refresh(Request())
 
-
-def gd_services():
-    creds = google_creds()
-    drive = build("drive", "v3", credentials=creds, cache_discovery=False)
-    docs = build("docs", "v1", credentials=creds, cache_discovery=False)
+    drive = build("drive", "v3", credentials=creds)
+    docs  = build("docs",  "v1", credentials=creds)
     return drive, docs
 
 
@@ -163,16 +181,21 @@ def openai_client() -> OpenAI:
         raise RuntimeError("OpenAI package not available.")
     return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
+def pick_model() -> str:
+    m = (os.environ.get("OPENAI_WEEKLY_MODEL") or os.environ.get("OPENAI_MODEL") or "").strip()
+    # Map a couple of common aliases to safe choices
+    aliases = {
+        "gpt-4o-mini-high": "gpt-4o-mini",  # fallback if high-tier alias isn’t available
+        "o4-mini": "gpt-4o-mini",
+        "o4-mini-high": "gpt-4o-mini",
+    }
+    if not m:
+        return "gpt-4o-mini"
+    return aliases.get(m, m)
 
-def _choose(env_name: str, fallback: str) -> str:
-    """Return a non-empty value from env or fallback."""
-    val = (os.environ.get(env_name) or "").strip()
-    return val if val else fallback
-
-
-def call_llm(system: str, user: str, max_tokens: int, model_env: str = "OPENAI_MODEL") -> str:
+def call_llm(system: str, user: str, max_tokens: int, model_override: str | None = None) -> str:
     client = openai_client()
-    model = _choose(model_env, "gpt-4o-mini-high")  # <- SAFE DEFAULT
+    model = model_override or pick_model()
     print(f"[llm] using model: {model}")
     r = client.chat.completions.create(
         model=model,
@@ -184,17 +207,61 @@ def call_llm(system: str, user: str, max_tokens: int, model_env: str = "OPENAI_M
     return (r.choices[0].message.content or "").strip()
 
 
-def tts_mp3(text: str, out_path: pathlib.Path) -> None:
+# ------------------------ Chunked TTS + merge --------------------
+
+def strip_references_for_audio(text: str) -> str:
+    """Drop long reference lists and [n] markers; TTS reads better."""
+    t = re.sub(r"\n#+\s*References.*", "", text, flags=re.IGNORECASE | re.DOTALL)
+    t = re.sub(r"\[\d+\]", "", t)  # remove [12] style markers
+    return t
+
+def split_into_token_chunks(text: str, max_tokens: int = 1500) -> List[str]:
+    parts, buf = [], []
+    cur = 0
+    for para in text.split("\n\n"):
+        t = count_tokens(para)
+        if cur + t > max_tokens and buf:
+            parts.append("\n\n".join(buf).strip())
+            buf, cur = [para], t
+        else:
+            buf.append(para); cur += t
+    if buf: parts.append("\n\n".join(buf).strip())
+    return parts
+
+def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str, tts_voice: str) -> pathlib.Path:
+    """
+    Split text to respect model input limit, synthesize each chunk,
+    then merge to a single MP3 at out_mp3. Returns out_mp3.
+    """
     client = openai_client()
-    model = _choose("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
-    voice = _choose("OPENAI_TTS_VOICE", "alloy")
-    print(f"[tts] using model: {model}, voice: {voice}")
-    with client.audio.speech.with_streaming_response.create(
-        model=model,
-        voice=voice,
-        input=text,
-    ) as resp:
-        resp.stream_to_file(str(out_path))
+    cleaned = strip_references_for_audio(full_text)
+    chunks = split_into_token_chunks(cleaned, max_tokens=1500)  # safe margin < 2k limit
+
+    tmp_dir = ROOT / "tmp_audio"
+    tmp_dir.mkdir(exist_ok=True)
+
+    part_files: List[pathlib.Path] = []
+
+    for i, chunk in enumerate(chunks, 1):
+        part_path = tmp_dir / f"part_{i:02d}.mp3"
+        print(f"[audio] generating part {i}/{len(chunks)} → {part_path}")
+        audio = client.audio.speech.create(
+            model=tts_model,   # e.g., gpt-4o-mini-tts or tts-1
+            voice=tts_voice,   # e.g., alloy
+            input=chunk,
+            format="mp3",
+        )
+        with open(part_path, "wb") as f:
+            f.write(audio.read())
+        part_files.append(part_path)
+
+    merged = None
+    for p in part_files:
+        seg = AudioSegment.from_file(p, format="mp3")
+        merged = seg if merged is None else (merged + seg)
+    merged.export(out_mp3, format="mp3")
+    print(f"[audio] merged {len(part_files)} parts → {out_mp3}")
+    return out_mp3
 
 
 # ------------------------ Drive/Docs helpers --------------------
@@ -207,15 +274,12 @@ def drive_upload_binary(drive, path: pathlib.Path, name: str, mime: str, folder_
     f = drive.files().create(body=body, media_body=media, fields="id,webViewLink,webContentLink").execute()
     return f["id"], f.get("webViewLink") or f.get("webContentLink") or ""
 
-
 def doc_create(docs, title: str) -> str:
     d = docs.documents().create(body={"title": title}).execute()
     return d["documentId"]
 
-
 def doc_batch_update(docs, doc_id: str, requests: List[Dict[str, Any]]):
     docs.documents().batchUpdate(documentId=doc_id, body={"requests": requests}).execute()
-
 
 def doc_insert_text_requests(title: str, listen_url: str | None, briefing: str, analysis: str) -> List[Dict[str, Any]]:
     reqs: List[Dict[str, Any]] = []
@@ -241,7 +305,7 @@ def doc_insert_text_requests(title: str, listen_url: str | None, briefing: str, 
     style(start, cursor, "HEADING_1")
     insert("\n")
 
-    # Listen link
+    # Listen link (if any)
     if listen_url:
         start = cursor
         insert("Listen to this briefing (MP3)\n")
@@ -312,6 +376,10 @@ def enforce_min_words(text: str, min_words: int = 2500) -> str:
 
 # ------------------------ Main ---------------------------------
 
+def slug(s: str) -> str:
+    s = re.sub(r"[^\w\-]+", "_", s, flags=re.UNICODE)
+    return re.sub(r"_+", "_", s).strip("_").lower()
+
 def main() -> int:
     cfg = load_config()
     feeds: List[str] = cfg.get("feeds", [])
@@ -358,22 +426,26 @@ def main() -> int:
     week_num = wend.isocalendar().week
     title = f"Weekly — EU Finance & Defence — {start_label} to {end_label} (W{week_num:02d})"
     base = f"{end_label}-weekly"
+    base_slug = slug(base)
 
-    # Optional audio
+    # Optional audio (chunked)
     listen_url = None
-    mp3_path = REPORTS_DIR / f"{base}.mp3"
+    mp3_path = REPORTS_DIR / f"{base_slug}.mp3"
     try:
-        print("[audio] generating MP3…")
-        tts_mp3(
-            f"{title}. Weekly Economic & Policy Overview. {briefing}\n\nWeekly EU Policy Analysis. {analysis}",
-            mp3_path,
+        print("[audio] generating MP3 (chunked)…")
+        tts_model = (os.environ.get("OPENAI_TTS_MODEL") or "gpt-4o-mini-tts").strip()
+        tts_voice = (os.environ.get("OPENAI_TTS_VOICE") or "alloy").strip()
+        tts_text = (
+            f"{title}. Weekly Economic & Policy Overview. {briefing}\n\n"
+            f"Weekly EU Policy Analysis. {analysis}"
         )
+        synthesize_tts_chunked(tts_text, mp3_path, tts_model, tts_voice)
     except Exception as ex:
         print(f"[audio] skipped: {ex}")
         mp3_path = None
 
     # Google Docs + sharing
-    drive, docs = gd_services()
+    drive, docs = get_google_services()
     folder_id = os.environ.get("GOOGLE_DOCS_FOLDER_ID") or None
     share_with = [
         s.strip() for s in (os.environ.get("GOOGLE_DOCS_SHARE_WITH") or "").split(",") if s.strip()
@@ -409,7 +481,7 @@ def main() -> int:
                 print(f"[share] doc perm for {addr} failed: {ex}")
 
     # Local mirror
-    txt_path = REPORTS_DIR / f"{base}.txt"
+    txt_path = REPORTS_DIR / f"{base_slug}.txt"
     with txt_path.open("w", encoding="utf-8") as f:
         f.write(title + "\n\n")
         f.write("Weekly Economic & Policy Overview\n")
