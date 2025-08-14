@@ -47,8 +47,9 @@ def ams_today() -> dt.date:
     tz = pytz.timezone("Europe/Amsterdam")
     return dt.datetime.now(tz=tz).date()
 
-def last_7_days_utc() -> Tuple[dt.datetime, dt.datetime]:
-    end = dt.datetime.utcnow()
+def last_7_days_utc() -> tuple[dt.datetime, dt.datetime]:
+    # Return timezone-aware UTC datetimes
+    end = dt.datetime.now(dt.timezone.utc)
     start = end - dt.timedelta(days=7)
     return start, end
 
@@ -94,16 +95,25 @@ def fetch_feed(url: str) -> List[Dict[str, Any]]:
         out.append({"title": title, "link": link, "summary": summary, "published": published})
     return out
 
-def within_week(entry: Dict[str, Any], start: dt.datetime, end: dt.datetime) -> bool:
-    if entry["published"] is None:
+def within_week(entry: dict, start: dt.datetime, end: dt.datetime) -> bool:
+    pub = entry.get("published")
+    if pub is None:
+        # Keep undated items; they’ll be de-prioritized later
         return True
-    return start <= entry["published"] <= end
+    # Normalize to aware-UTC before comparing
+    if pub.tzinfo is None:
+        pub = pub.replace(tzinfo=dt.timezone.utc)
+    return start <= pub <= end
 
 def score_entry(entry: Dict[str,Any], keywords: List[str], recent_bonus_hours: int) -> int:
     text = (entry["title"] + " " + entry["summary"]).lower()
     s = sum(1 for kw in keywords if kw.lower() in text)
-    if entry["published"]:
-        age_h = (dt.datetime.utcnow().replace(tzinfo=dt.timezone.utc) - entry["published"]).total_seconds()/3600.0
+        if entry["published"]:
+        now = dt.datetime.now(dt.timezone.utc)
+        pub = entry["published"]
+        if pub.tzinfo is None:
+            pub = pub.replace(tzinfo=dt.timezone.utc)
+        age_h = (now - pub).total_seconds() / 3600.0
         if age_h <= recent_bonus_hours:
             s += 1
     return s
