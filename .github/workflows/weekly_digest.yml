@@ -1,0 +1,82 @@
+name: Weekly EU Finance & Defence
+
+on:
+  schedule:
+    - cron: "0 12 * * FRI"  # 12:00 UTC → 14:00 Amsterdam (CEST), 13:00 (CET)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: eurlex-weekly
+      cancel-in-progress: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly report
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL_WEEKLY: ${{ vars.OPENAI_MODEL_WEEKLY }}   # e.g., gpt-4o-mini-high or gpt-5
+          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS:     ${{ secrets.GMAIL_PASS }}
+
+          # Google OAuth (same as daily)
+          GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+          GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+          GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+
+          # Optional: Drive folder + sharing
+          GOOGLE_DOCS_FOLDER_ID:      ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
+          GOOGLE_DOCS_SHARE_WITH:     ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
+        run: python weekly.py
+
+      - name: Commit weekly report
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain reports/weekly)" ]; then
+            git add reports/weekly
+            git commit -m "Add weekly report $(date -u +%F)"
+            git push
+          else
+            echo "No changes in reports/weekly"
+          fi
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+        run: |
+          python - <<'PY'
+          import os, smtplib
+          from email.mime.text import MIMEText
+          u, p = os.environ['GMAIL_USER'], os.environ['GMAIL_PASS']
+          msg = MIMEText("Weekly EU Finance & Defence failed. Check Actions logs.")
+          msg['Subject'] = "Weekly Digest – FAILED"
+          msg['From'] = u; msg['To'] = u
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+              s.login(u, p); s.sendmail(u, [u], msg.as_string())
+          PY
