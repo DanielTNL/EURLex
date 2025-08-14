@@ -1,8 +1,9 @@
-openai>=1.40.0
 feedparser>=6.0
 PyYAML>=6.0
 pytz>=2024.1
 requests>=2.30
+openai>=1.40.0
 google-api-python-client>=2.120
 google-auth>=2.20
 google-auth-httplib2>=0.2
+google-auth-oauthlib>=1.2.0
