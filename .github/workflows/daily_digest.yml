@@ -1,9 +1,8 @@
 name: EUR-Lex Daily Digest
 
 on:
-  # 04:00 UTC ≈ 06:00 Amsterdam in summer (CEST), 05:00 in winter (CET)
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '0 4 * * *'   # ~06:00 Amsterdam in summer
   workflow_dispatch:
 
 permissions:
@@ -31,12 +30,10 @@ jobs:
           GMAIL_PASS:     ${{ secrets.GMAIL_PASS }}
           OPENAI_MODEL:   ${{ vars.OPENAI_MODEL }}
 
-          # OAuth (your Gmail)
           GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
           GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
           GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
 
-          # Optional routing/sharing
           GOOGLE_DOCS_FOLDER_ID:      ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
           GOOGLE_DOCS_SHARE_WITH:     ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
         run: python main.py
