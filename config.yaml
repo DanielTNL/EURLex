@@ -137,11 +137,16 @@ taxonomy:
     - name: "Other"
       include: []
 
+caps:
+  max_total: 50
+  max_per_category: 20
+  min_per_category: 4
+
 ranking:
-  max_age_days: 7           # hard cutoff; 0 disables
-  recent_hours_bonus: 48     # bonus window used in scoring
-  prefer_recent: true        # when scores tie, prefer newer
-  min_score: 1               # drop items with total score below this
+  max_age_days: 14        # <- HARD CUTOFF. Only items ≤ 14 days old are considered.
+  recent_hours_bonus: 72  # keep as-is (helps fresh items)
+  prefer_recent: true     # tie-break: newer first
+  min_score: 1            # require at least 1 keyword hit (or hit+bonus)
 
 dedupe:
   enabled: true
