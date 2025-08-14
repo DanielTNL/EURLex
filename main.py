@@ -1,26 +1,20 @@
 #!/usr/bin/env python3
 """
-EUR-Lex Daily Digest — with full per-item summaries + rich Executive Summary
+EUR-Lex Daily Digest — ranking controls (age cutoff, min score, de-dup) + summaries + Google Doc.
 
-What this does:
-- Fetches feeds from config.yaml
-- Scores + summarises (OpenAI if available)
-- Categorises (rules → LLM when available)
-- Writes Markdown report to reports/YYYY-MM-DD.md
-- Creates a Google Doc (owned by YOUR Gmail via OAuth) with titles + bullet summaries
-- E-mails an executive digest (Key Items + 200-word Briefing) + compact per-category title list
-
-Env expected (set via GitHub Actions step):
-  OPENAI_API_KEY (optional)           OPENAI_MODEL (optional; default gpt-4o-mini)
-  GMAIL_USER, GMAIL_PASS (for SMTP)
-  GOOGLE_OAUTH_CLIENT_ID, GOOGLE_OAUTH_CLIENT_SECRET, GOOGLE_OAUTH_REFRESH_TOKEN
-  GOOGLE_DOCS_FOLDER_ID (optional)    GOOGLE_DOCS_SHARE_WITH (optional)
+New in this build:
+- ranking.max_age_days: drop items older than N days
+- ranking.min_score: require at least this keyword score (+ bonus) to keep
+- ranking.prefer_recent: stable sort favors newer items on ties
+- ranking.recent_hours_bonus: window that adds +1 score for recency
+- dedupe.enabled + dedupe.path: remember seen links across days
 """
 
-import os, sys, yaml, feedparser, datetime as dt, re
+import os, sys, json, yaml, feedparser, datetime as dt, re
 from typing import List, Dict, Any, Tuple
 from email.mime.text import MIMEText
 import smtplib
+from io import BytesIO
 
 # ---------- optional tz ----------
 try:
@@ -37,15 +31,14 @@ if OPENAI_ENABLED:
         _oa = OpenAI()
         print(f"[openai] enabled; model={DEFAULT_MODEL}")
     except Exception as _e:
-        print("[openai] import/init error:", _e)
+        print("[openai] init error:", _e)
         _oa = None
         OPENAI_ENABLED = False
 else:
     _oa = None
-    print("[openai] disabled (no API key)")
+    print("[openai] disabled")
 
 # ---------- Google (OAuth) ----------
-from io import BytesIO
 try:
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
@@ -58,7 +51,8 @@ except Exception as _e:
     MediaIoBaseUpload = None
     GOOGLE_LIBS_OK = False
 
-# ---------- helpers ----------
+# =====================================================================
+
 def load_config(path: str) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f) or {}
@@ -78,9 +72,9 @@ def summarize_text(text: str, language: str) -> str:
     if not base:
         return ""
     if not OPENAI_ENABLED or not _oa:
-        # Simple fallback: first 4 sentences → bullets
+        # simple fallback: first 4 sentences -> bullets
         sents = re.split(r"(?<=[.!?])\s+", base)
-        picks = [f"- {sents[i].strip()}" for i in range(min(4, len(sents))) if sents[i].strip()]
+        picks = [f"- {s.strip()}" for s in sents[:4] if s.strip()]
         return "\n".join(picks)[:800]
     try:
         r = _oa.chat.completions.create(
@@ -97,7 +91,7 @@ def summarize_text(text: str, language: str) -> str:
     except Exception as e:
         print("[openai] per-item summary error:", e)
         sents = re.split(r"(?<=[.!?])\s+", base)
-        picks = [f"- {sents[i].strip()}" for i in range(min(4, len(sents))) if sents[i].strip()]
+        picks = [f"- {s.strip()}" for s in sents[:4] if s.strip()]
         return "\n".join(picks)[:800]
 
 def llm_choose_category(text: str, labels: List[str]) -> str:
@@ -138,33 +132,40 @@ def fetch_entries(url: str) -> List[Dict[str, Any]]:
         })
     return out
 
-def score_entry(ent: Dict[str,Any], kws: List[str], recent_hours: int) -> float:
+# ---------------- Ranking controls ----------------
+
+def within_max_age(d: dt.datetime|None, max_days: int) -> bool:
+    if max_days <= 0 or d is None:
+        return True if d is None else True  # no cutoff if disabled or missing date
+    age = (dt.datetime.now(dt.timezone.utc) - d).days
+    return age <= max_days
+
+def score_entry(ent: Dict[str,Any], kws: List[str], recent_hours_bonus: int) -> float:
     s = float(keyword_match_count(ent["text"], kws))
-    if recent_hours and ent.get("published_utc"):
+    if recent_hours_bonus and ent.get("published_utc"):
         delta = dt.datetime.now(dt.timezone.utc) - ent["published_utc"]
-        if delta.total_seconds() <= recent_hours*3600: s += 1.0
-    if "uri=OJ:L" in (ent.get("source") or ""): s += 0.2
+        if delta.total_seconds() <= recent_hours_bonus*3600:
+            s += 1.0
+    if "uri=OJ:L" in (ent.get("source") or ""):
+        s += 0.2
     return s
 
-def build_categories(cfg: dict) -> List[Dict[str,Any]]:
-    cats = []
-    for c in (cfg.get("taxonomy",{}).get("categories",[]) or []):
-        cats.append({"name": str(c.get("name","Other")),
-                     "include": [str(x) for x in (c.get("include",[]) or [])]})
-    if not any(c["name"]=="Other" for c in cats):
-        cats.append({"name":"Other","include":[]})
-    return cats
+# ---------------- De-dup store ----------------
 
-def rule_category(text: str, cats: List[Dict[str,Any]]) -> str:
-    low = (text or "").lower()
-    for c in cats:
-        if c["name"]=="Other": continue
-        for pat in c["include"]:
-            if pat.lower() in low:
-                return c["name"]
-    return ""
+def load_seen(path: str) -> set[str]:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return set(json.load(f))
+    except Exception:
+        return set()
 
-# ---------- Google Docs (OAuth only) ----------
+def save_seen(path: str, items: set[str]) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(sorted(items), f, ensure_ascii=False, indent=2)
+
+# ---------------- Google Docs helpers ----------------
+
 def get_drive_service_oauth():
     if not GOOGLE_LIBS_OK:
         print("[google] libs not installed; skipping Google Doc creation.")
@@ -256,7 +257,8 @@ def create_google_doc_from_html(drive, html: str, title: str,
             print("[google] share error:", e)
     return fid, link
 
-# ---------- Email ----------
+# ---------------- Email ----------------
+
 def send_email_gmail(subject: str, body: str, to_addr: str):
     user = os.getenv("GMAIL_USER"); pwd = os.getenv("GMAIL_PASS")
     if not user or not pwd: raise RuntimeError("GMAIL_USER or GMAIL_PASS not set")
@@ -267,10 +269,12 @@ def send_email_gmail(subject: str, body: str, to_addr: str):
         s.login(user,pwd); s.sendmail(user,[to_addr], msg.as_string())
 
 # =====================================================================
+
 def main():
     cfg_path = os.path.join(os.path.dirname(__file__), "config.yaml")
     cfg = load_config(cfg_path)
 
+    # Core config
     feeds: List[str] = list(cfg.get("feeds",[]))
     keywords: List[str] = cfg.get("keywords",[])
     language: str = cfg.get("language","EN")
@@ -279,11 +283,33 @@ def main():
     email_cfg = cfg.get("email") or {}
     email_to: str = email_cfg.get("to") or os.getenv("GMAIL_USER") or ""
 
+    # Caps & ranking knobs
     caps = cfg.get("caps",{}) or {}
     max_total     = int(caps.get("max_total",30))
     max_per_cat   = int(caps.get("max_per_category",10))
     min_per_cat   = int(caps.get("min_per_category",1))
-    recent_hours  = int(cfg.get("recent_hours",72))
+
+    rk    = cfg.get("ranking",{}) or {}
+    max_age_days        = int(rk.get("max_age_days", 0))          # 0 means no cutoff
+    recent_hours_bonus  = int(rk.get("recent_hours_bonus", 72))
+    prefer_recent       = bool(rk.get("prefer_recent", True))
+    min_score_required  = float(rk.get("min_score", 0))
+
+    # De-dup
+    dedupe_cfg = cfg.get("dedupe",{}) or {}
+    dedupe_enabled = bool(dedupe_cfg.get("enabled", True))
+    seen_path = os.path.join(os.path.dirname(__file__), str(dedupe_cfg.get("path","state/seen.json")))
+    seen = load_seen(seen_path) if dedupe_enabled else set()
+
+    # Taxonomy
+    def build_categories(cfg: dict) -> List[Dict[str,Any]]:
+        cats = []
+        for c in (cfg.get("taxonomy",{}).get("categories",[]) or []):
+            cats.append({"name": str(c.get("name","Other")),
+                         "include": [str(x) for x in (c.get("include",[]) or [])]})
+        if not any(c["name"]=="Other" for c in cats):
+            cats.append({"name":"Other","include":[]})
+        return cats
 
     cats_cfg = build_categories(cfg)
     labels = [c["name"] for c in cats_cfg]
@@ -304,33 +330,63 @@ def main():
         print("[digest] No feeds configured; exiting.")
         sys.exit(0)
 
-    # Fetch + score
+    # Fetch → filter by age → score
+    raw_count = 0
     pool: List[Dict[str,Any]] = []
     for u in feeds:
         try:
-            for e in fetch_entries(u):
-                e["score"] = score_entry(e, keywords, recent_hours)
+            items = fetch_entries(u)
+            raw_count += len(items)
+            for e in items:
+                if not within_max_age(e.get("published_utc"), max_age_days):
+                    continue
+                e["score"] = score_entry(e, keywords, recent_hours_bonus)
+                if e["score"] < min_score_required:
+                    continue
                 pool.append(e)
         except Exception as ex:
             print("[fetch] error", u, ex)
-    pool.sort(key=lambda x: x["score"], reverse=True)
-    shortlist = pool[: max_total*2]
 
-    # Per-item summaries (bullets)
+    # Remove seen items (by link)
+    if dedupe_enabled and seen:
+        pool = [e for e in pool if e.get("link") not in seen]
+
+    # Sort: prefer recent then score, else score then date
+    def sort_key(e):
+        pu = e.get("published_utc")
+        pu_key = pu.timestamp() if isinstance(pu, dt.datetime) else 0.0
+        if prefer_recent:
+            return (0 if pu is None else -1, -pu_key, -e["score"])
+        else:
+            return (-e["score"], -pu_key)
+
+    pool.sort(key=sort_key)
+
+    # Summarize shortlisted (limit work)
+    shortlist = pool[: max_total*2]
     for it in shortlist:
         base = it.get("summary") or it.get("title") or ""
         it["summary"] = summarize_text(base, language)
 
     # Categories
+    def rule_category(text: str, cats: List[Dict[str,Any]]) -> str:
+        low = (text or "").lower()
+        for c in cats:
+            if c["name"]=="Other": continue
+            for pat in c["include"]:
+                if pat.lower() in low:
+                    return c["name"]
+        return ""
+
     for it in shortlist:
         cat = rule_category(it["text"], cats_cfg) or llm_choose_category(it["text"], labels)
         it["category"] = cat if cat in labels else "Other"
 
-    # Bucket + caps
+    # Buckets & caps
     buckets: Dict[str,List[Dict[str,Any]]] = {c["name"]:[] for c in cats_cfg}
     for it in shortlist: buckets[it["category"]].append(it)
     for name, items in buckets.items():
-        items.sort(key=lambda x: x["score"], reverse=True)
+        items.sort(key=sort_key)
         buckets[name] = items[:max_per_cat]
 
     selected: List[Dict[str,Any]] = []
@@ -339,32 +395,35 @@ def main():
         name = c["name"]
         if buckets[name]:
             selected.extend(buckets[name][:max(0, min_per_cat)])
-    # Fill the rest best-score
-    rest: List[Tuple[float,Dict[str,Any]]] = []
+    # Fill the rest by best sort order
+    rest: List[Dict[str,Any]] = []
     for c in cats_cfg:
-        for it in buckets[c["name"]][min_per_cat:]:
-            rest.append((it["score"], it))
-    rest.sort(key=lambda x: x[0], reverse=True)
-    for _, it in rest:
+        rest.extend(buckets[c["name"]][min_per_cat:])
+    rest.sort(key=sort_key)
+    for it in rest:
         if len(selected) >= max_total: break
         selected.append(it)
     selected = selected[:max_total]
     for i,it in enumerate(selected,1): it["id"]=i
 
+    # Record as seen
+    if dedupe_enabled:
+        for it in selected:
+            if it.get("link"): seen.add(it["link"])
+        save_seen(seen_path, seen)
+
+    # Group by category
     by_cat: Dict[str,List[Dict[str,Any]]] = {c["name"]:[] for c in cats_cfg}
     for it in selected: by_cat[it["category"]].append(it)
 
-    # ---------- Executive Summary ----------
+    # Executive Summary bullets & paragraph (unchanged from your last working version)
     EXEC_TOP_N = min(5, len(selected))
     top_items = selected[:EXEC_TOP_N]
-    # Build one-liners from the first bullet (or first sentence) of each item's summary
-    exec_bullets: List[str] = []
-    for it in top_items:
-        bullets = [l.strip()[1:].strip() for l in it["summary"].splitlines() if l.strip().startswith(("-", "•"))]
-        line = bullets[0] if bullets else _first_sentence(it["summary"]) or it["title"]
-        exec_bullets.append(f"[{it['id']}] {line}")
+    def bullets_from_item(it):
+        arr = [l.strip()[1:].strip() for l in it["summary"].splitlines() if l.strip().startswith(("-", "•"))]
+        return arr[0] if arr else _first_sentence(it["summary"]) or it["title"]
 
-    # 200-word synthesized paragraph ("Briefing")
+    exec_bullets = [f"[{it['id']}] {bullets_from_item(it)}" for it in top_items]
     if OPENAI_ENABLED and _oa and top_items:
         try:
             items_text = "\n".join(f"[{it['id']}] {it['title']}\n{it['summary']}" for it in top_items)
@@ -378,16 +437,16 @@ def main():
             exec_paragraph = (r.choices[0].message.content or "").strip()
         except Exception as e:
             print("[openai] exec paragraph error:", e)
-            exec_paragraph = "Key themes: " + "; ".join(_first_sentence(it["summary"]) for it in top_items)
+            exec_paragraph = "Key themes: " + "; ".join(bullets_from_item(it) for it in top_items)
     else:
-        exec_paragraph = "Key themes: " + "; ".join(_first_sentence(it["summary"]) for it in top_items)
+        exec_paragraph = "Key themes: " + "; ".join(bullets_from_item(it) for it in top_items)
 
-    # ---------- Write Markdown report ----------
+    # Markdown report with per-item bullets
     reports_dir = os.path.join(os.path.dirname(__file__), "reports")
     os.makedirs(reports_dir, exist_ok=True)
-    md = [f"# EUR-Lex Daily Digest — {date_str}", ""]
-    md += ["## Executive Summary", "", "### Key Items"]
-    md += [f"- {b}" for b in exec_bullets] if exec_bullets else ["- (none)"]
+    md = [f"# EUR-Lex Daily Digest — {date_str}", "",
+          "## Executive Summary", "",
+          "### Key Items"] + ([f"- {b}" for b in exec_bullets] or ["- (none)"])
     if exec_paragraph:
         md += ["", "### Briefing (~200 words)", "", exec_paragraph, ""]
     md += ["## Categories",""]
@@ -396,50 +455,43 @@ def main():
         if not items: continue
         md += [f"### {name}",""]
         for it in items:
-            md += [f"**[{it['id']}] [{it['title']}]({it['link']})**",""]
-            # keep bullet formatting
-            md += [it["summary"], ""]
+            md += [f"**[{it['id']}] [{it['title']}]({it['link']})**","", it["summary"], ""]
     md += ["---", f"_Generated by GitHub Actions with OpenAI (model: {DEFAULT_MODEL})._"]
     md_text = "\n".join(md)
     report_path = os.path.join(reports_dir, f"{date_str}.md")
     with open(report_path,"w",encoding="utf-8") as f:
         f.write(md_text)
 
-    # GitHub report link
+    # Build GitHub and Google Doc
     server = os.getenv("GITHUB_SERVER_URL","https://github.com")
     repo = os.getenv("GITHUB_REPOSITORY")
     branch = os.getenv("GITHUB_REF_NAME","main")
     report_url = f"{server}/{repo}/blob/{branch}/reports/{date_str}.md" if repo else ""
 
-    # ---------- Google Doc ----------
+    def get_drive_service_oauth_wrapper():
+        return get_drive_service_oauth()
+
     doc_link = ""
-    drv, acct = get_drive_service_oauth()
+    drv, acct = get_drive_service_oauth_wrapper()
     if drv:
         try:
             folder_id = (os.getenv("GOOGLE_DOCS_FOLDER_ID") or "").strip() or None
             share_with = (os.getenv("GOOGLE_DOCS_SHARE_WITH") or "").strip() or None
-            html = md_to_html(
-                f"EUR-Lex Daily Digest — {date_str}",
-                exec_bullets, exec_paragraph, cats_cfg, by_cat
-            )
+            html = md_to_html(f"EUR-Lex Daily Digest — {date_str}", exec_bullets, exec_paragraph, cats_cfg, by_cat)
             print("[google] creating doc...")
-            _, doc_link = create_google_doc_from_html(
-                drv, html, f"EUR-Lex Daily Digest — {date_str}", folder_id, share_with
-            )
+            _, doc_link = create_google_doc_from_html(drv, html, f"EUR-Lex Daily Digest — {date_str}", folder_id, share_with)
             print("[google] doc created:", doc_link)
         except Exception as e:
             print("[google] creation failed:", e)
     else:
         print("[google] skipped (no OAuth).")
 
-    # ---------- Email body ----------
+    # Email body
     lines = ["Executive Summary","----------------"]
-    if exec_bullets:
-        lines += [f"- {b}" for b in exec_bullets]
-    if exec_paragraph:
-        lines += ["", exec_paragraph]
-    lines += ["", f"Full report (GitHub): {report_url}" if report_url else ""]
-    if doc_link: lines += [f"Full report (Google Doc): {doc_link}"]
+    if exec_bullets: lines += [f"- {b}" for b in exec_bullets]
+    if exec_paragraph: lines += ["", exec_paragraph]
+    if report_url: lines += ["", f"Full report (GitHub): {report_url}"]
+    if doc_link:   lines += [f"Full report (Google Doc): {doc_link}"]
     lines += ["", "Per-category titles","-------------------"]
     for c in cats_cfg:
         name = c["name"]; items = by_cat.get(name,[])
@@ -448,15 +500,15 @@ def main():
         for it in items:
             lines.append(f"- {it['title']}  ({it['link']})")
         lines.append("")
-    body = "\n".join([l for l in lines if l is not None])
+    body = "\n".join(lines)
 
-    # Send email
     if mail_service == "gmail":
         send_email_gmail(subject, body, email_to)
     else:
         raise RuntimeError(f"Unsupported mail_service: {mail_service}")
 
-    print("[done] Digest sent. Markdown:", report_path)
+    print(f"[done] Pulled {raw_count} entries; kept {len(selected)} after age/score/dedupe filters.")
+    print("[done] Markdown:", report_path)
     if doc_link: print("[done] Google Doc:", doc_link)
 
 if __name__ == "__main__":
