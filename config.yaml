@@ -258,3 +258,12 @@ taxonomy:
 dedupe:
   enabled: true
   path: state/seen.json
+
+weekly:
+  window_days: 7          # 7-daagse verslagperiode
+  exec_top_n: 50          # max # key items die in de briefing verweven mogen worden
+  exec_max_words: 2500    # doel-lengte van de briefing (~2.5k woorden)
+
+summary:
+  per_item_bullets: 3     # compact pre-samenvattingen ter input voor de briefing
+  per_item_max_words: 80  # zuinig, omdat de briefing lang is
