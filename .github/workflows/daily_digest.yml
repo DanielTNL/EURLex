@@ -57,12 +57,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain reports)" ]; then
-            git add reports
+          if [ -n "$(git status --porcelain reports state)" ]; then
+            git add reports state
             git commit -m "Add daily report $(date -u +%F)"
             git push
           else
-            echo "No changes in reports/"
+            echo "No changes in reports/ or state/"
           fi
 
       - name: Notify on failure
@@ -74,10 +74,12 @@ jobs:
           python - <<'PY'
           import os, smtplib
           from email.mime.text import MIMEText
-          u,p = os.environ['GMAIL_USER'], os.environ['GMAIL_PASS']
+          u, p = os.environ['GMAIL_USER'], os.environ['GMAIL_PASS']
           msg = MIMEText("EUR-Lex Daily Digest failed. Check Actions logs.")
-          msg['Subject']="EUR-Lex Digest – FAILED"
-          msg['From']=u; msg['To']=u
-          with smtplib.SMTP_SSL("smtp.gmail.com",465) as s:
-              s.login(u,p); s.sendmail(u,[u],msg.as_string())
+          msg['Subject'] = "EUR-Lex Digest – FAILED"
+          msg['From'] = u
+          msg['To'] = u
+          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
+              s.login(u, p)
+              s.sendmail(u, [u], msg.as_string())
           PY
