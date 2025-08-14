@@ -2,7 +2,6 @@
 """
 EUR-Lex Daily Digest — with robust Google Docs (OAuth) logging
 
-What this does:
 - Fetches items from feeds in config.yaml
 - Scores + summarises (OpenAI if available)
 - Categorises (rules → LLM)
@@ -10,7 +9,7 @@ What this does:
 - Creates a Google Doc (owned by YOUR Gmail via OAuth) and prints the link
 - Emails an executive digest + compact per-category titles + links
 
-Env expected (set via GitHub Actions 'env'):
+Env (set via GitHub Actions step):
   OPENAI_API_KEY (optional)           OPENAI_MODEL (optional; default gpt-4o-mini)
   GMAIL_USER, GMAIL_PASS (for SMTP)
   GOOGLE_OAUTH_CLIENT_ID, GOOGLE_OAUTH_CLIENT_SECRET, GOOGLE_OAUTH_REFRESH_TOKEN
