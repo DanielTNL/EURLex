@@ -47,15 +47,15 @@ jobs:
       - name: Run weekly synthesis
         shell: bash
         env:
-          # OpenAI
-          OPENAI_API_KEY:           ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL:             ${{ vars.OPENAI_WEEKLY_MODEL }}    # e.g. gpt-4o-mini or gpt-4o-mini-high
-          OPENAI_TTS_MODEL:         ${{ vars.OPENAI_TTS_MODEL }}       # e.g. gpt-4o-mini-tts or tts-1
-          OPENAI_TTS_VOICE:         ${{ vars.OPENAI_TTS_VOICE }}       # e.g. alloy
+          # OpenAI (defaults applied if vars are empty)
+          OPENAI_API_KEY:   ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL:     ${{ vars.OPENAI_WEEKLY_MODEL || 'gpt-4o-mini-high' }}
+          OPENAI_TTS_MODEL: ${{ vars.OPENAI_TTS_MODEL   || 'gpt-4o-mini-tts'   }}
+          OPENAI_TTS_VOICE: ${{ vars.OPENAI_TTS_VOICE   || 'alloy'             }}
 
-          # Gmail (optional mail notice)
-          GMAIL_USER:               ${{ secrets.GMAIL_USER }}
-          GMAIL_PASS:               ${{ secrets.GMAIL_PASS }}
+          # Gmail (optional failure notice)
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
 
           # Google OAuth (your Gmail account)
           GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
@@ -63,15 +63,14 @@ jobs:
           GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
 
           # Optional Drive routing/sharing
-          GOOGLE_DOCS_FOLDER_ID:    ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
-          GOOGLE_DOCS_SHARE_WITH:   ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
+          GOOGLE_DOCS_FOLDER_ID:  ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
+          GOOGLE_DOCS_SHARE_WITH: ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
         run: |
           set -euo pipefail
-          if [ -f "weekly_main.py" ]; then SCRIPT="weekly_main.py";
-          elif [ -f "weekly.py" ]; then SCRIPT="weekly.py";
+          if   [ -f "weekly_main.py" ]; then SCRIPT="weekly_main.py";
+          elif [ -f "weekly.py"      ]; then SCRIPT="weekly.py";
           else
             echo "::error::No weekly script found at repo root (expected weekly_main.py or weekly.py)."
-            echo "Files present:"
             ls -la
             exit 1
           fi
