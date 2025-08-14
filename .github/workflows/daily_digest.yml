@@ -1,8 +1,9 @@
 name: EUR-Lex Daily Digest
 
 on:
+  # 04:00 UTC ≈ 06:00 Amsterdam in summer (CEST), 05:00 in winter (CET)
   schedule:
-    - cron: '0 4 * * *'   # ~06:00 Amsterdam in summer
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -11,6 +12,10 @@ permissions:
 jobs:
   digest:
     runs-on: ubuntu-latest
+    concurrency:
+      group: eurlex-digest
+      cancel-in-progress: true
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -19,6 +24,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            pip-${{ runner.os }}-
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -30,10 +43,12 @@ jobs:
           GMAIL_PASS:     ${{ secrets.GMAIL_PASS }}
           OPENAI_MODEL:   ${{ vars.OPENAI_MODEL }}
 
+          # Google OAuth (your Gmail)
           GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
           GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
           GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
 
+          # Optional routing/sharing
           GOOGLE_DOCS_FOLDER_ID:      ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
           GOOGLE_DOCS_SHARE_WITH:     ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
         run: python main.py
@@ -49,3 +64,20 @@ jobs:
           else
             echo "No changes in reports/"
           fi
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+        run: |
+          python - <<'PY'
+          import os, smtplib
+          from email.mime.text import MIMEText
+          u,p = os.environ['GMAIL_USER'], os.environ['GMAIL_PASS']
+          msg = MIMEText("EUR-Lex Daily Digest failed. Check Actions logs.")
+          msg['Subject']="EUR-Lex Digest – FAILED"
+          msg['From']=u; msg['To']=u
+          with smtplib.SMTP_SSL("smtp.gmail.com",465) as s:
+              s.login(u,p); s.sendmail(u,[u],msg.as_string())
+          PY
