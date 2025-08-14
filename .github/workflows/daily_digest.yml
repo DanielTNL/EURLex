@@ -27,18 +27,18 @@ jobs:
       - name: Run digest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
-          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
-          MAILGUN_DOMAIN: ${{ secrets.MAILGUN_DOMAIN }}
-          MAILGUN_FROM: ${{ secrets.MAILGUN_FROM }}
-          MAILGUN_TO: ${{ secrets.MAILGUN_TO }}
-          # Optional: override default model
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-          # --- Google Docs/Drive ---
-          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-          GOOGLE_DOCS_FOLDER_ID: ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
-          GOOGLE_DOCS_SHARE_WITH: ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
+          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS:     ${{ secrets.GMAIL_PASS }}
+          OPENAI_MODEL:   ${{ vars.OPENAI_MODEL }}
+
+          # OAuth (your Gmail)
+          GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+          GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+          GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+
+          # Optional routing/sharing
+          GOOGLE_DOCS_FOLDER_ID:      ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
+          GOOGLE_DOCS_SHARE_WITH:     ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
         run: python main.py
 
       - name: Commit daily report
