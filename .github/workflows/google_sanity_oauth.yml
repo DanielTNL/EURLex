@@ -1,0 +1,72 @@
+name: Google Docs Sanity (OAuth)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Google libs
+        run: pip install google-api-python-client google-auth google-auth-httplib2 google-auth-oauthlib
+
+      - name: Probe Drive with OAuth and create a test doc
+        env:
+          GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+          GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+          GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+          GOOGLE_DOCS_FOLDER_ID:      ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
+          GOOGLE_DOCS_SHARE_WITH:     ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
+        run: |
+          python - <<'PY'
+          from google.oauth2.credentials import Credentials
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaIoBaseUpload
+          import os
+          from io import BytesIO
+
+          cid  = os.getenv("GOOGLE_OAUTH_CLIENT_ID")
+          csec = os.getenv("GOOGLE_OAUTH_CLIENT_SECRET")
+          rtok = os.getenv("GOOGLE_OAUTH_REFRESH_TOKEN")
+          folder_id = (os.environ.get("GOOGLE_DOCS_FOLDER_ID") or "").strip()
+          share_with = (os.environ.get("GOOGLE_DOCS_SHARE_WITH") or "").strip()
+
+          creds = Credentials(
+              None,
+              refresh_token=rtok,
+              client_id=cid,
+              client_secret=csec,
+              token_uri="https://oauth2.googleapis.com/token",
+              scopes=["https://www.googleapis.com/auth/drive","https://www.googleapis.com/auth/documents"],
+          )
+          drive = build("drive", "v3", credentials=creds, cache_discovery=False)
+
+          about = drive.about().get(fields="user").execute()
+          print("[probe] acting as:", about["user"]["emailAddress"])
+
+          html = "<html><body><h1>OAuth sanity</h1><p>Hello.</p></body></html>"
+          media = MediaIoBaseUpload(BytesIO(html.encode("utf-8")), mimetype="text/html", resumable=False)
+          meta = {"name": "Probe Doc (OAuth)", "mimeType": "application/vnd.google-apps.document"}
+          if folder_id: meta["parents"] = [folder_id]
+
+          f = drive.files().create(
+              body=meta, media_body=media,
+              fields="id,webViewLink,parents",
+              supportsAllDrives=True
+          ).execute()
+          print("[probe] created:", f)
+
+          if share_with:
+              drive.permissions().create(
+                  fileId=f["id"],
+                  body={"type":"user","role":"reader","emailAddress":share_with},
+                  fields="id",
+                  supportsAllDrives=True
+              ).execute()
+              print("[probe] shared with:", share_with)
+          PY
