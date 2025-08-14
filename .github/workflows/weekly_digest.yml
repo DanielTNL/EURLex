@@ -44,16 +44,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
       - name: Run weekly synthesis
         shell: bash
         env:
           # --- OpenAI (robust mapping + safe defaults) ---
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          # Prefer your original OPENAI_MODEL_WEEKLY, then OPENAI_WEEKLY_MODEL, then global OPENAI_MODEL, else default.
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || vars.OPENAI_WEEKLY_MODEL || vars.OPENAI_MODEL || 'gpt-4o-mini' }}
-          # Also export the weekly alias so either script style works.
           OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || vars.OPENAI_WEEKLY_MODEL || vars.OPENAI_MODEL || 'gpt-4o-mini' }}
-          # TTS (optional)
           OPENAI_TTS_MODEL: ${{ vars.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts' }}
           OPENAI_TTS_VOICE: ${{ vars.OPENAI_TTS_VOICE || 'alloy' }}
 
