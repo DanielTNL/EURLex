@@ -1,8 +1,9 @@
-name: Weekly EU Finance & Defence
+name: Weekly — EU Finance & Defence
 
 on:
   schedule:
-    - cron: "0 12 * * FRI"  # 12:00 UTC → 14:00 Amsterdam (CEST), 13:00 (CET)
+    # 12:00 UTC = 14:00 Amsterdam (CEST), 13:00 in winter (CET)
+    - cron: '0 12 * * 5'
   workflow_dispatch:
 
 permissions:
@@ -22,7 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: '3.10'
 
       - name: Cache pip
         uses: actions/cache@v4
@@ -35,33 +36,38 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run weekly report
+      - name: Run weekly synthesis
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL_WEEKLY: ${{ vars.OPENAI_MODEL_WEEKLY }}   # e.g., gpt-4o-mini-high or gpt-5
-          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
-          GMAIL_PASS:     ${{ secrets.GMAIL_PASS }}
+          # OpenAI
+          OPENAI_API_KEY:           ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL:             ${{ vars.OPENAI_WEEKLY_MODEL }}           # e.g. gpt-4o-mini
+          OPENAI_TTS_MODEL:         ${{ vars.OPENAI_TTS_MODEL }}              # e.g. gpt-4o-mini-tts
+          OPENAI_TTS_VOICE:         ${{ vars.OPENAI_TTS_VOICE }}              # e.g. alloy
 
-          # Google OAuth (same as daily)
+          # Gmail (emailing still reuses daily path if you want to notify)
+          GMAIL_USER:               ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS:               ${{ secrets.GMAIL_PASS }}
+
+          # Google OAuth (your Gmail account)
           GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
           GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
           GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
 
-          # Optional: Drive folder + sharing
-          GOOGLE_DOCS_FOLDER_ID:      ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
-          GOOGLE_DOCS_SHARE_WITH:     ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
-        run: python weekly.py
+          # Optional Drive routing/sharing
+          GOOGLE_DOCS_FOLDER_ID:    ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
+          GOOGLE_DOCS_SHARE_WITH:   ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
+        run: python weekly_main.py
 
-      - name: Commit weekly report
+      - name: Commit weekly outputs
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ -n "$(git status --porcelain reports/weekly)" ]; then
-            git add reports/weekly
+          if [ -n "$(git status --porcelain reports)" ]; then
+            git add reports
             git commit -m "Add weekly report $(date -u +%F)"
             git push
           else
-            echo "No changes in reports/weekly"
+            echo "No changes in reports/"
           fi
 
       - name: Notify on failure
@@ -73,10 +79,10 @@ jobs:
           python - <<'PY'
           import os, smtplib
           from email.mime.text import MIMEText
-          u, p = os.environ['GMAIL_USER'], os.environ['GMAIL_PASS']
-          msg = MIMEText("Weekly EU Finance & Defence failed. Check Actions logs.")
-          msg['Subject'] = "Weekly Digest – FAILED"
-          msg['From'] = u; msg['To'] = u
-          with smtplib.SMTP_SSL("smtp.gmail.com", 465) as s:
-              s.login(u, p); s.sendmail(u, [u], msg.as_string())
+          u,p = os.environ['GMAIL_USER'], os.environ['GMAIL_PASS']
+          msg = MIMEText("Weekly EU Finance & Defence report failed. Check Actions logs.")
+          msg['Subject']="Weekly Report – FAILED"
+          msg['From']=u; msg['To']=u
+          with smtplib.SMTP_SSL("smtp.gmail.com",465) as s:
+              s.login(u,p); s.sendmail(u,[u],msg.as_string())
           PY
