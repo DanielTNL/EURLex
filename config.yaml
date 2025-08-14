@@ -140,7 +140,7 @@ taxonomy:
 caps:
   max_total: 50
   max_per_category: 20
-  min_per_category: 4
+  min_per_category: 5
 
 ranking:
   max_age_days: 14        # <- HARD CUTOFF. Only items ≤ 14 days old are considered.
