@@ -1,37 +1,38 @@
 #!/usr/bin/env python3
 """
-Weekly EU Finance & Defence Report
-----------------------------------
-- Aggregates the last N days (default 7) across your configured feeds (config.yaml).
-- Produces one comprehensive weekly briefing (~N words) with inline [n] references.
-- Saves Markdown to reports/weekly/ and mirrors to Google Docs (same folder as daily).
-- Emails a short cover note with links to GitHub + Google Doc.
+Weekly EU Finance & Defence Report (HTML + Audio)
+- 7-day window from all configured feeds (config.yaml).
+- Produces a ~≥2,500-word briefing with inline [n] citations and an APA-like References list.
+- Clean HTML headings (<h2>, <h3>, <p>) — no Markdown hashes in the Google Doc.
+- Saves to reports/weekly/, mirrors to Google Docs, and (optionally) creates an MP3 "Listen" link.
+- Uses the same Gmail + Google OAuth + OpenAI env vars as the daily job.
 
-Env it expects (same as daily + optional weekly model):
-  OPENAI_API_KEY, OPENAI_MODEL (fallback)
-  OPENAI_MODEL_WEEKLY (preferred, e.g., 'gpt-4o-mini-high' or 'gpt-5' if available)
+Env expected:
+  OPENAI_API_KEY
+  OPENAI_MODEL_WEEKLY (preferred) or OPENAI_MODEL (fallback)  # e.g., 'gpt-4o-mini-high'
   GMAIL_USER, GMAIL_PASS
   GOOGLE_OAUTH_CLIENT_ID, GOOGLE_OAUTH_CLIENT_SECRET, GOOGLE_OAUTH_REFRESH_TOKEN
   GOOGLE_DOCS_FOLDER_ID (optional), GOOGLE_DOCS_SHARE_WITH (optional)
 """
 
-import os, sys, re, json, yaml, feedparser, datetime as dt
+import os, re, json, yaml, feedparser, datetime as dt
 from typing import List, Dict, Any, Tuple
 from urllib.parse import urlparse
 from email.mime.text import MIMEText
 import smtplib
 from io import BytesIO
 
-# --- Optional tz ---
+# Optional timezone
 try:
     import pytz
 except Exception:
     pytz = None
 
-# --- OpenAI ---
+# ---------- OpenAI ----------
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 MODEL_WEEKLY = os.getenv("OPENAI_MODEL_WEEKLY") or os.getenv("OPENAI_MODEL") or "gpt-4o-mini"
 OPENAI_ENABLED = bool(OPENAI_API_KEY)
+
 if OPENAI_ENABLED:
     try:
         from openai import OpenAI
@@ -45,7 +46,7 @@ else:
     _oa = None
     print("[openai] disabled (no OPENAI_API_KEY)")
 
-# --- Google (OAuth refresh token flow) ---
+# ---------- Google (OAuth refresh token) ----------
 try:
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
@@ -103,32 +104,6 @@ def first_sentence(s: str, n=200) -> str:
     m = re.search(r"(.+?[.!?])(\s|$)", s)
     return m.group(1) if m else s[:n]
 
-def short_bullets(text: str, language: str, bullets: int, max_words: int) -> str:
-    base = (text or "").strip()
-    if not base:
-        return ""
-    if not OPENAI_ENABLED or not _oa:
-        parts = re.split(r"(?<=[.!?])\s+", base)
-        picks = [f"- {p.strip()}" for p in parts[:bullets] if p.strip()]
-        return "\n".join(picks)[:600]
-    try:
-        r = _oa.chat.completions.create(
-            model=MODEL_WEEKLY, temperature=0.2, max_tokens=180,
-            messages=[
-                {"role":"system","content":"You are a neutral EU policy analyst. Output bullets only."},
-                {"role":"user","content":
-                 f"Summarize in {language or 'EN'} using {bullets} concise bullets (≤{max_words} words total). "
-                 "Focus on: what changed, scope, obligations, timelines, who is affected.\n\n"
-                 f"TEXT:\n{base}"}
-            ],
-        )
-        return (r.choices[0].message.content or "").strip()
-    except Exception as e:
-        print("[openai] short bullets error:", e)
-        parts = re.split(r"(?<=[.!?])\s+", base)
-        picks = [f"- {p.strip()}" for p in parts[:bullets] if p.strip()]
-        return "\n".join(picks)[:600]
-
 def domain_label(url: str) -> str:
     try:
         netloc = urlparse(url).netloc.lower()
@@ -147,7 +122,7 @@ def fmt_date(d: dt.datetime|None, tzname="Europe/Amsterdam") -> str:
     return d.strftime("%Y-%m-%d")
 
 def apa_like_ref(item: Dict[str,Any]) -> str:
-    # APA-achtig: Titel. (YYYY-MM-DD). Site. URL
+    # APA-ish: Title. (YYYY-MM-DD). Site. URL
     title = item.get("title","").strip()
     date  = fmt_date(item.get("published_utc"))
     site  = domain_label(item.get("link",""))
@@ -156,7 +131,86 @@ def apa_like_ref(item: Dict[str,Any]) -> str:
     if url: core += f" {url}"
     return core
 
-# ---------- Google Docs ----------
+# ---------- OpenAI helpers ----------
+
+def model_briefing_html(key_items: List[Dict[str,Any]],
+                        extra_items: List[Dict[str,Any]],
+                        label_start: str, label_end: str,
+                        min_words: int, model_name: str) -> str:
+    """
+    Ask the model for clean HTML (<h2>/<h3>/<p> only), ≥ min_words.
+    If shorter, loop with a 'continue and expand' prompt until threshold or 3 attempts.
+    """
+    if not (OPENAI_ENABLED and _oa):
+        # Fallback: simple stitched HTML
+        paras = "".join(f"<p>[{it['id']}] {first_sentence(it.get('summary') or it['title'])}</p>"
+                        for it in key_items)
+        return f"<h2>Weekly Briefing</h2>{paras}"
+
+    def pack_item(it: Dict[str,Any]) -> str:
+        date_s = fmt_date(it.get("published_utc"))
+        return f"[{it['id']}] {it['title']} ({date_s}) — {first_sentence(it.get('summary') or it['title'])} Link: {it['link']}"
+
+    key_text = "\n".join(pack_item(it) for it in key_items)
+    extra_text = "\n".join(pack_item(it) for it in extra_items) if extra_items else ""
+
+    sysmsg = (
+        "You are a senior EU policy analyst. Produce CLEAN HTML only: <h2>, <h3>, <p>, <ul>, <li>. "
+        "NO markdown (#), NO code fences, NO inline CSS. Neutral, factual tone. "
+        "Weave a coherent weekly narrative from the numbered items below. "
+        "Insert inline citation markers like [1], [2] that match the provided items. "
+        "Organize with informative subheadings (e.g., Markets, Banking, Insurance, Digital, ESG, Institutions, Defence). "
+        "Minimum length hard floor: {min_words} words. If you are below the floor, expand further."
+    ).format(min_words=min_words)
+
+    usrmsg_base = (
+        f"TIME WINDOW: {label_start} to {label_end}\n\n"
+        f"KEY ITEMS (must ground claims; cite with [n]):\n{key_text}\n\n"
+        f"OPTIONAL EXTRAS (use if helpful; cite with [n]):\n{extra_text}\n\n"
+        "OUTPUT REQUIREMENTS:\n"
+        "- Return CLEAN HTML only (<h2>, <h3>, <p>, <ul>, <li>), no markdown hashes.\n"
+        f"- Target length: ≥ {min_words} words (hard minimum).\n"
+        "- No URLs in the body; use [n] markers only. References will be appended separately.\n"
+    )
+
+    html = ""
+    attempts = 0
+    while attempts < 3:
+        attempts += 1
+        if attempts == 1:
+            messages = [
+                {"role":"system","content": sysmsg},
+                {"role":"user","content": usrmsg_base},
+            ]
+        else:
+            messages = [
+                {"role":"system","content": sysmsg},
+                {"role":"user","content": "CONTINUE THE SAME DOCUMENT. Expand coverage and detail while keeping the same structure and style. "
+                                          "Add more analysis and context across themes to exceed the minimum length."},
+            ]
+        try:
+            r = _oa.chat.completions.create(
+                model=model_name,
+                temperature=0.2,
+                max_tokens=8000,  # generous
+                messages=messages,
+            )
+            add = (r.choices[0].message.content or "").strip()
+            # Basic sanitization: keep only allowed tags; strip code fences/markdown remnants.
+            add = re.sub(r"```.*?```", "", add, flags=re.S)
+            # Count words in plain text
+            plain = re.sub(r"<[^>]+>", " ", add)
+            wc = len(re.findall(r"\w+", plain))
+            html += add if attempts == 1 else ("<p></p>" + add)
+            print(f"[weekly] model chunk {attempts}: ~{wc} words")
+            if wc >= min_words:
+                break
+        except Exception as e:
+            print("[openai] weekly chunk error:", e)
+            break
+    return html or "<p>(No content)</p>"
+
+# ---------- Google ----------
 def get_drive_service_oauth():
     if not GOOGLE_LIBS_OK:
         return None, None
@@ -207,23 +261,25 @@ def create_google_doc_from_html(drive, html: str, title: str,
             print("[google] share error:", e)
     return fid, link
 
-def html_escape(t: str) -> str:
-    return (t or "").replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
-
-def md_to_html(title_h1: str, briefing_html: str, refs: List[str], model_name: str) -> str:
-    h = []
-    h.append(f"<html><head><meta charset='utf-8'><title>{html_escape(title_h1)}</title></head><body>")
-    h.append(f"<h1>{html_escape(title_h1)}</h1>")
-    h.append("<h2>Weekly Briefing</h2>")
-    h.append(f"<div>{briefing_html}</div>")
-    if refs:
-        h.append("<h2>References</h2><ol>")
-        for r in refs:
-            h.append(f"<li>{html_escape(r)}</li>")
-        h.append("</ol>")
-    h.append(f"<p><em>Generated via GitHub Actions with OpenAI (model: {html_escape(model_name)}).</em></p>")
-    h.append("</body></html>")
-    return "".join(h)
+def upload_binary(drive, data: bytes, title: str, mime: str,
+                  folder_id: str|None, share_with: str|None) -> Tuple[str,str]:
+    media = MediaIoBaseUpload(BytesIO(data), mimetype=mime, resumable=False)
+    meta = {"name": title, "mimeType": mime}
+    if folder_id: meta["parents"] = [folder_id]
+    f = drive.files().create(
+        body=meta, media_body=media,
+        fields="id,webViewLink,webContentLink", supportsAllDrives=True
+    ).execute()
+    fid = f["id"]; link = f.get("webViewLink") or f.get("webContentLink")
+    if share_with:
+        try:
+            drive.permissions().create(
+                fileId=fid, fields="id", supportsAllDrives=True,
+                body={"type":"user","role":"reader","emailAddress":share_with}
+            ).execute()
+        except Exception as e:
+            print("[google] share error:", e)
+    return fid, link
 
 # ---------- Email ----------
 def send_email(subject: str, body: str, to_addr: str):
@@ -234,6 +290,10 @@ def send_email(subject: str, body: str, to_addr: str):
     msg["Subject"]=subject; msg["From"]=user; msg["To"]=to_addr
     with smtplib.SMTP_SSL("smtp.gmail.com",465) as s:
         s.login(user,pwd); s.sendmail(user,[to_addr], msg.as_string())
+
+# ---------- Utility ----------
+def strip_html_tags(html: str) -> str:
+    return re.sub(r"<[^>]+>", " ", html)
 
 # =====================================================================
 
@@ -246,9 +306,6 @@ def main():
     window_days     = int(wk.get("window_days", 7))
     exec_top_n      = int(wk.get("exec_top_n", 50))
     exec_max_words  = int(wk.get("exec_max_words", 2500))
-    summ = cfg.get("summary", {}) or {}
-    per_item_bullets    = int(summ.get("per_item_bullets", 3))
-    per_item_max_words  = int(summ.get("per_item_max_words", 80))
 
     # Ranking
     ranking = cfg.get("ranking", {}) or {}
@@ -259,6 +316,7 @@ def main():
     # Feeds & keywords
     feeds = list(cfg.get("feeds", []))
     keywords = cfg.get("keywords", [])
+
     language = cfg.get("language","EN")
     tz_name  = cfg.get("timezone","Europe/Amsterdam")
     email_to = (cfg.get("email") or {}).get("to") or os.getenv("GMAIL_USER") or ""
@@ -276,7 +334,6 @@ def main():
     else:
         label_end = now.strftime("%Y-%m-%d"); label_start = start.strftime("%Y-%m-%d")
 
-    # Title paths
     iso = now.isocalendar()
     week_no = iso[1]
     title = f"Weekly — EU Finance & Defence — {label_start} to {label_end} (W{week_no})"
@@ -296,7 +353,7 @@ def main():
         pu = e.get("published_utc")
         if pu is None or not (start <= pu <= now):
             continue
-        if e.get("link") in uniq:  # de-dup this week
+        if e.get("link") in uniq:  # de-dup
             continue
         uniq.add(e.get("link"))
         e["score"] = score_entry(e, keywords, recent_hours_bonus)
@@ -304,131 +361,127 @@ def main():
             continue
         pool.append(e)
 
-    # Sort: prefer newest then score (or opposite)
+    # Sort newest first then score (or reverse if you prefer)
     def sort_key(ent):
         ts = ent["published_utc"].timestamp() if ent.get("published_utc") else 0.0
         return (-ts, -ent["score"]) if prefer_recent else (-ent["score"], -ts)
     pool.sort(key=sort_key)
 
-    # Build shortlist: exec_top_n forms the “key items” ceiling; we can still include more in refs
-    shortlist = pool[: max(exec_top_n, 60)]  # allow ~60 refs if available
-    # Pre-compute terse bullets for model context (cheap and capped)
-    for it in shortlist:
-        base = it.get("summary") or it.get("title") or ""
-        it["short"] = short_bullets(base, language, per_item_bullets, per_item_max_words)
-    # Assign numeric ids for references
+    # Shortlist to drive citations (allow some extras beyond 50)
+    shortlist = pool[: max(exec_top_n, 60)]
     for i, it in enumerate(shortlist, 1):
         it["id"] = i
 
-    # Compose model context: only the first exec_top_n are “key”, remainder “also noted”
-    key_items = shortlist[:exec_top_n]
-    extra_items = shortlist[exec_top_n:exec_top_n+10]  # a few extras if model wants to mention
-    # References (APA-like)
+    key_items   = shortlist[:exec_top_n]
+    extra_items = shortlist[exec_top_n:exec_top_n+10]  # optional extras
+
+    # Build the briefing (pure HTML, ≥ 2,500 words)
+    briefing_html = model_briefing_html(
+        key_items, extra_items, label_start, label_end, exec_max_words, MODEL_WEEKLY
+    )
+
+    # References
     refs = [apa_like_ref(it) for it in shortlist]
 
-    # Build structured prompt
-    def pack_item(it: Dict[str,Any]) -> str:
-        date_s = fmt_date(it.get("published_utc"), tz_name)
-        return f"[{it['id']}] {it['title']} ({date_s})\n{it['short']}\nLink: {it['link']}\n"
-
-    key_text = "\n".join(pack_item(it) for it in key_items)
-    extra_text = "\n".join(pack_item(it) for it in extra_items) if extra_items else ""
-
-    # Ask model for ~2500-word synthesis with [id] citations
-    briefing = ""
-    if OPENAI_ENABLED and _oa:
-        try:
-            sysmsg = (
-                "You are a senior EU policy analyst. Write a comprehensive weekly briefing "
-                "in clear professional English. Use factual, neutral tone; no hype. "
-                "Weave in up to the 50 key items and optionally a few extra items. "
-                "Insert inline citation markers like [1], [2] referring to the numbered items provided. "
-                "Do not fabricate sources. Structure with informative subheadings."
-            )
-            usrmsg = (
-                f"TIME WINDOW: {label_start} to {label_end}\n\n"
-                f"KEY ITEMS (use these; cite with [n]):\n{key_text}\n"
-            )
-            if extra_text:
-                usrmsg += f"\nOPTIONAL EXTRAS (cite with [n] if you use them):\n{extra_text}\n"
-            usrmsg += (
-                f"\nOUTPUT REQUIREMENTS:\n"
-                f"- Length target: ~{exec_max_words} words.\n"
-                f"- Use subheadings that group themes (e.g., Markets, Banking, Insurance, Digital/Crypto, ESG, Institutions, Defence).\n"
-                f"- Refer to items only with [n] markers; do not include raw URLs in the body.\n"
-                f"- No bullet lists except sparingly; prefer narrative.\n"
-            )
-            r = _oa.chat.completions.create(
-                model=MODEL_WEEKLY,
-                temperature=0.2,
-                max_tokens=5000,  # generous for ~2500 words; API may cap lower
-                messages=[
-                    {"role":"system","content": sysmsg},
-                    {"role":"user","content": usrmsg},
-                ],
-            )
-            briefing = (r.choices[0].message.content or "").strip()
-        except Exception as e:
-            print("[openai] weekly briefing error:", e)
-            # Fallback: stitch concise lines
-            parts = [f"[{it['id']}] {first_sentence(it.get('summary') or it['title'])}" for it in key_items]
-            briefing = "Weekly highlights:\n" + "\n".join(parts)
-    else:
-        parts = [f"[{it['id']}] {first_sentence(it.get('summary') or it['title'])}" for it in key_items]
-        briefing = "Weekly highlights:\n" + "\n".join(parts)
-
-    # --- Write Markdown ---
+    # Persist to Markdown (for GitHub view)
     weekly_dir = os.path.join(base, "reports", "weekly")
     os.makedirs(weekly_dir, exist_ok=True)
-    md_lines = [f"# {title}", "", "## Weekly Briefing", "", briefing, "", "## References", ""]
-    for i, ref in enumerate(refs, 1):
-        md_lines.append(f"{i}. {ref}")
-    md_text = "\n".join(md_lines)
     md_name = f"{label_start}_to_{label_end}_W{week_no}.md"
     md_path = os.path.join(weekly_dir, md_name)
+    # Convert HTML to a simple Markdown-ish file for repo record (keep headings but drop tags crudely)
+    md_body = re.sub(r"</h2>", "\n\n", re.sub(r"<h2>", "## ", briefing_html))
+    md_body = re.sub(r"</h3>", "\n\n", re.sub(r"<h3>", "### ", md_body))
+    md_body = re.sub(r"<li>\s*", "- ", md_body)
+    md_body = re.sub(r"</li>", "\n", md_body)
+    md_body = re.sub(r"<[^>]+>", "", md_body)
     with open(md_path, "w", encoding="utf-8") as f:
-        f.write(md_text)
+        f.write(f"# {title}\n\n{md_body}\n\n## References\n")
+        for i, ref in enumerate(refs, 1):
+            f.write(f"{i}. {ref}\n")
 
-    # GitHub link (if available in Actions)
+    # Build GitHub blob URL if on Actions
     server = os.getenv("GITHUB_SERVER_URL","https://github.com")
     repo   = os.getenv("GITHUB_REPOSITORY")
     branch = os.getenv("GITHUB_REF_NAME","main")
     report_url = f"{server}/{repo}/blob/{branch}/reports/weekly/{md_name}" if repo else ""
 
-    # --- Google Doc ---
+    # Optional: Text-to-Speech (MP3) -----------------------------------
+    # Uses OpenAI TTS (e.g., 'gpt-4o-mini-tts' / 'tts-1'); see official docs:
+    # https://platform.openai.com/docs/guides/text-to-speech  and  https://platform.openai.com/docs/api-reference/audio
+    audio_link = ""
+    if OPENAI_ENABLED and _oa:
+        try:
+            # Prefer TTS model name from var; else a sensible default
+            TTS_MODEL = os.getenv("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
+            TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "alloy")
+            print(f"[tts] generating audio via {TTS_MODEL} / voice={TTS_VOICE}")
+            plain_text = re.sub(r"\s+", " ", strip_html_tags(briefing_html)).strip()
+            # Stream MP3 bytes
+            with _oa.audio.speech.with_streaming_response.create(
+                model=TTS_MODEL,
+                voice=TTS_VOICE,
+                input=plain_text
+            ) as resp:
+                mp3_bytes = resp.read()  # stream to bytes in memory
+            # Upload to Drive
+            drv, _ = get_drive_service_oauth()
+            if drv:
+                folder_id = (os.getenv("GOOGLE_DOCS_FOLDER_ID") or "").strip() or None
+                share_with = (os.getenv("GOOGLE_DOCS_SHARE_WITH") or "").strip() or None
+                title_mp3 = f"{title} — Audio.mp3"
+                _, audio_link = upload_binary(drv, mp3_bytes, title_mp3, "audio/mpeg",
+                                              folder_id, share_with)
+                print("[tts] uploaded:", audio_link)
+        except Exception as e:
+            print("[tts] error:", e, "— skipping audio")
+
+    # Google Doc (HTML import for nice headings) -----------------------
     doc_link = ""
-    drv, acct = get_drive_service_oauth()
+    drv, _acct = get_drive_service_oauth()
     if drv:
         try:
-            # Convert briefing with [n] markers and then append ordered references
-            # Use simple HTML; Google will convert to Doc.
-            # Convert line breaks to <p> blocks for the body.
-            briefing_html = "".join(f"<p>{line}</p>" for line in briefing.splitlines() if line.strip())
-            html = md_to_html(title, briefing_html, refs, MODEL_WEEKLY)
             folder_id = (os.getenv("GOOGLE_DOCS_FOLDER_ID") or "").strip() or None
             share_with = (os.getenv("GOOGLE_DOCS_SHARE_WITH") or "").strip() or None
+            # Build final HTML (add "Listen" link if present)
+            def esc(t:str)->str: return (t or "").replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
+            h = []
+            h.append(f"<html><head><meta charset='utf-8'><title>{esc(title)}</title></head><body>")
+            h.append(f"<h1>{esc(title)}</h1>")
+            if audio_link:
+                h.append(f"<p><strong>Listen:</strong> <a href='{esc(audio_link)}'>Audio version (MP3)</a></p>")
+            h.append(briefing_html)  # already clean HTML
+            h.append("<h2>References</h2><ol>")
+            for r in refs: h.append(f"<li>{esc(r)}</li>")
+            h.append("</ol>")
+            h.append(f"<p><em>Generated via GitHub Actions with OpenAI (model: {esc(MODEL_WEEKLY)}).</em></p>")
+            h.append("</body></html>")
+            full_html = "".join(h)
+
             print("[google] creating weekly doc...")
-            _, doc_link = create_google_doc_from_html(drv, html, title, folder_id, share_with)
+            _, doc_link = create_google_doc_from_html(drv, full_html, title, folder_id, share_with)
             print("[google] doc created:", doc_link)
         except Exception as e:
             print("[google] doc error:", e)
 
-    # --- Email (short cover note) ---
+    # Email cover note --------------------------------------------------
     body = [
         f"Weekly window: {label_start} → {label_end}",
         "",
         "Links:",
         f"- GitHub: {report_url}" if report_url else "- GitHub: (n/a)",
         f"- Google Doc: {doc_link}" if doc_link else "- Google Doc: (n/a)",
-        "",
-        "This is an automated weekly briefing compiled from EUR-Lex and EU institutional feeds.",
     ]
+    if audio_link:
+        body.append(f"- Audio (MP3): {audio_link}")
+    body.append("")
+    body.append("This is an automated weekly briefing compiled from EUR-Lex and EU institutional feeds.")
     send_email(subject, "\n".join(body), email_to)
 
     print("[weekly] Done.")
     print("Saved:", md_path)
     if report_url: print("GitHub:", report_url)
     if doc_link:   print("Google Doc:", doc_link)
+    if audio_link: print("Audio:", audio_link)
 
 if __name__ == "__main__":
     main()
