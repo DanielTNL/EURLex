@@ -108,7 +108,7 @@ def within_week(entry: dict, start: dt.datetime, end: dt.datetime) -> bool:
 def score_entry(entry: Dict[str,Any], keywords: List[str], recent_bonus_hours: int) -> int:
     text = (entry["title"] + " " + entry["summary"]).lower()
     s = sum(1 for kw in keywords if kw.lower() in text)
-        if entry["published"]:
+    if entry["published"]:
         now = dt.datetime.now(dt.timezone.utc)
         pub = entry["published"]
         if pub.tzinfo is None:
