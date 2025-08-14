@@ -136,3 +136,13 @@ taxonomy:
 
     - name: "Other"
       include: []
+
+ranking:
+  max_age_days: 7           # hard cutoff; 0 disables
+  recent_hours_bonus: 48     # bonus window used in scoring
+  prefer_recent: true        # when scores tie, prefer newer
+  min_score: 1               # drop items with total score below this
+
+dedupe:
+  enabled: true
+  path: state/seen.json
