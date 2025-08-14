@@ -1,17 +1,9 @@
-PyYAML==6.0.2
-feedparser==6.0.11
-pytz==2024.1
-requests==2.31.0
-
-# Google APIs
-google-api-python-client==2.179.0
-google-auth==2.40.3
-google-auth-httplib2==0.2.0
-google-auth-oauthlib==1.2.2
-
-# OpenAI
-openai==1.40.0
-
-# TTS helpers
-pydub==0.25.1
-tiktoken==0.7.0
+openai>=1.43.0,<2
+tiktoken>=0.7.0
+pydub>=0.25.1
+google-api-python-client>=2.126.0
+google-auth>=2.29.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.2.0
+feedparser>=6.0.10
+PyYAML>=6.0.1
