@@ -63,20 +63,17 @@ STATE_DIR = ROOT / "state"
 REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 STATE_DIR.mkdir(parents=True, exist_ok=True)
 
-
 # ------------------------ Config & window ------------------------
 
 def load_config() -> dict:
     with open(ROOT / "config.yaml", "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
-
 def last_7_days_utc() -> Tuple[dt.datetime, dt.datetime]:
     # timezone-aware UTC datetimes
     end = dt.datetime.now(dt.timezone.utc)
     start = end - dt.timedelta(days=7)
     return start, end
-
 
 # ------------------------ Google services -----------------------
 
@@ -106,7 +103,6 @@ def get_google_services():
     docs  = build("docs",  "v1", credentials=creds)
     return drive, docs
 
-
 # ------------------------ Feed ingest & scoring ------------------
 
 def fetch_feed(url: str) -> List[Dict[str, Any]]:
@@ -134,7 +130,6 @@ def fetch_feed(url: str) -> List[Dict[str, Any]]:
         out.append({"title": title, "link": link, "summary": summary, "published": published})
     return out
 
-
 def within_week(entry: Dict[str, Any], start: dt.datetime, end: dt.datetime) -> bool:
     pub = entry.get("published")
     if pub is None:
@@ -142,7 +137,6 @@ def within_week(entry: Dict[str, Any], start: dt.datetime, end: dt.datetime) -> 
     if pub.tzinfo is None:
         pub = pub.replace(tzinfo=dt.timezone.utc)
     return start <= pub <= end
-
 
 def score_entry(entry: Dict[str, Any], keywords: List[str], recent_bonus_hours: int) -> int:
     txt = (entry["title"] + " " + entry["summary"]).lower()
@@ -161,7 +155,6 @@ def score_entry(entry: Dict[str, Any], keywords: List[str], recent_bonus_hours: 
 
     return score
 
-
 def dedupe(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     seen = set()
     out: List[Dict[str, Any]] = []
@@ -173,12 +166,14 @@ def dedupe(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         out.append(e)
     return out
 
-
 # ------------------------ OpenAI helpers -------------------------
 
 def openai_client() -> OpenAI:
     if OpenAI is None:
         raise RuntimeError("OpenAI package not available.")
+    # Neutralize any proxy envs that can confuse certain SDK+runner combos
+    for k in ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "http_proxy", "https_proxy", "all_proxy"):
+        os.environ.pop(k, None)
     return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 def pick_model() -> str:
@@ -206,7 +201,6 @@ def call_llm(system: str, user: str, max_tokens: int, model_override: str | None
     )
     return (r.choices[0].message.content or "").strip()
 
-
 # ------------------------ Chunked TTS + merge --------------------
 
 def strip_references_for_audio(text: str) -> str:
@@ -228,6 +222,15 @@ def split_into_token_chunks(text: str, max_tokens: int = 1500) -> List[str]:
     if buf: parts.append("\n\n".join(buf).strip())
     return parts
 
+def tts_stream_to_file(client: OpenAI, model: str, voice: str, text: str, out_path: pathlib.Path) -> None:
+    # Streaming per-chunk write (SDK >=1.43)
+    with client.audio.speech.with_streaming_response.create(
+        model=model,
+        voice=voice,
+        input=text,
+    ) as resp:
+        resp.stream_to_file(str(out_path))
+
 def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str, tts_voice: str) -> pathlib.Path:
     """
     Split text to respect model input limit, synthesize each chunk,
@@ -245,14 +248,7 @@ def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str
     for i, chunk in enumerate(chunks, 1):
         part_path = tmp_dir / f"part_{i:02d}.mp3"
         print(f"[audio] generating part {i}/{len(chunks)} → {part_path}")
-        audio = client.audio.speech.create(
-            model=tts_model,   # e.g., gpt-4o-mini-tts or tts-1
-            voice=tts_voice,   # e.g., alloy
-            input=chunk,
-            format="mp3",
-        )
-        with open(part_path, "wb") as f:
-            f.write(audio.read())
+        tts_stream_to_file(client, tts_model, tts_voice, chunk, part_path)
         part_files.append(part_path)
 
     merged = None
@@ -262,7 +258,6 @@ def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str
     merged.export(out_mp3, format="mp3")
     print(f"[audio] merged {len(part_files)} parts → {out_mp3}")
     return out_mp3
-
 
 # ------------------------ Drive/Docs helpers --------------------
 
@@ -326,7 +321,6 @@ def doc_insert_text_requests(title: str, listen_url: str | None, briefing: str, 
 
     return reqs
 
-
 # ------------------------ Prompting -----------------------------
 
 def build_prompts(selected: List[Dict[str, Any]], window: Tuple[dt.datetime, dt.datetime]):
@@ -359,7 +353,6 @@ def build_prompts(selected: List[Dict[str, Any]], window: Tuple[dt.datetime, dt.
 
     return (system, user_brief), (system, user_analysis)
 
-
 def enforce_min_words(text: str, min_words: int = 2500) -> str:
     words = len(text.split())
     if words >= min_words:
@@ -372,7 +365,6 @@ def enforce_min_words(text: str, min_words: int = 2500) -> str:
         max_tokens=3500,
     )
     return text + "\n\n" + extra
-
 
 # ------------------------ Main ---------------------------------
 
@@ -494,7 +486,6 @@ def main() -> int:
         print(f"[done] MP3 link: {listen_url}")
     print(f"[done] Wrote mirrors in {REPORTS_DIR}")
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
