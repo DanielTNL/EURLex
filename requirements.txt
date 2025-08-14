@@ -1,14 +1,17 @@
-feedparser>=6.0.11
-PyYAML>=6.0.1
-requests>=2.31.0
-beautifulsoup4>=4.12.2
-pytz>=2024.1
+PyYAML==6.0.2
+feedparser==6.0.11
+pytz==2024.1
+requests==2.31.0
 
 # Google APIs
-google-api-python-client>=2.118.0
-google-auth>=2.29.0
-google-auth-oauthlib>=1.2.0
-google-auth-httplib2>=0.2.0
+google-api-python-client==2.179.0
+google-auth==2.40.3
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.2
 
-# OpenAI (new SDK used for TTS + text)
-openai>=1.40.0
+# OpenAI
+openai==1.40.0
+
+# TTS helpers
+pydub==0.25.1
+tiktoken==0.7.0
