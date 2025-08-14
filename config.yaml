@@ -1,15 +1,12 @@
 #!/usr/bin/env yaml
 
-# List of RSS or Atom feed URLs to monitor.  Replace these with your own
-# EUR‑Lex feeds or other legal news feeds.  You can create a custom RSS feed
-# for an EUR‑Lex search by clicking the RSS icon next to the search results on
-# eur-lex.europa.eu.  Each feed URL must be quoted.
+# === Feeds to monitor ===
 feeds:
-  # Broad OJ feeds
+  # EUR-Lex (OJ)
   - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L"
   - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:C"
-  
-  # Your personalised EUR-Lex search feeds (My RSS alerts)
+
+  # EUR-Lex – your saved searches (My RSS alerts)
   - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xWO7lvm18tdqCEYa6XHmbPfTQ%3D"
   - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVMjpRIWmwJ07CW12fz5FjW%2Fg%3D"
   - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVM4HHKTnsOCJg9AdK4%2BSHgeM%3D"
@@ -35,9 +32,39 @@ feeds:
   - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPZgyu5KH6%2BNZs%2FH0VS0n1XU%3D"
   - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPpaIo2Jjyla%2BQh6LIbMKu1k%3D"
 
-# Keywords used to filter feed entries.  If any keyword appears in the title or
-# summary (case‑insensitive), the entry is included.  You can add as many
-# keywords as you like.
+  # European Central Bank (ECB)
+  - "https://www.ecb.europa.eu/rss/press.html"
+  - "https://www.ecb.europa.eu/rss/blog.html"
+  - "https://www.ecb.europa.eu/rss/statpress.html"
+  - "https://www.ecb.europa.eu/rss/pub.html"
+  - "https://www.ecb.europa.eu/rss/wppub.html"
+  - "https://www.ecb.europa.eu/rss/operations.html"
+  - "https://www.ecb.europa.eu/rss/procurements.html"
+  - "https://www.ecb.europa.eu/rss/yc.html"
+  - "https://www.ecb.europa.eu/rss/rbu.html"
+
+  # European Supervisory Authorities
+  - "https://www.eba.europa.eu/news-press/news/rss.xml"   # EBA
+  - "https://www.eiopa.europa.eu/node/4770/rss_en"        # EIOPA
+  # (ESMA doesn’t expose a stable global RSS; if you find endpoints, add them here.)
+
+  # European Parliament
+  - "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
+  - "https://www.europarl.europa.eu/rss/doc/top-stories/en.xml"
+  - "https://www.europarl.europa.eu/rss/topic/907/en.xml"   # Economic & Monetary Affairs
+  - "https://www.europarl.europa.eu/rss/topic/909/en.xml"   # Industry, Research & Energy
+  - "https://www.europarl.europa.eu/rss/topic/901/en.xml"   # Internal Market & Consumer Protection
+
+  # Council of the EU
+  - "https://www.consilium.europa.eu/en/rss/pressreleases.ashx"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=ecofin"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=compet"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-ecofin"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-compet"
+  - "https://www.consilium.europa.eu/en/register/rss/THMEFA.xml"
+  - "https://www.consilium.europa.eu/en/register/rss/THMCOM.xml"
+
+# === Matching keywords (case-insensitive; title or summary) ===
 keywords:
   # Finance & CMU
   - CMU
@@ -52,49 +79,99 @@ keywords:
   - "consolidated tape"
   - prospectus
   - securitisation
-  # AI
+  - CRR
+  - CRD
+  - Basel
+  - "banking union"
+  - "single resolution"
+  - SRB
+  - SSM
+  - ECB
+  - "European Central Bank"
+  - EBA
+  - EIOPA
+  - ESMA
+  - AML
+  - "anti-money laundering"
+  - PSD2
+  - PSD3
+  - PSR
+  - MiCA
+  - DORA
+  - CSDR
+  - AIFMD
+  - UCITS
+  - "Solvency II"
+  - "sustainable finance"
+  - SFDR
+  - "taxonomy regulation"
+
+  # AI & Digital
   - AI
   - "artificial intelligence"
   - "high-risk AI"
+  - "AI Act"
+  - "Data Act"
+  - "Digital Services Act"
+  - DSA
+  - "Digital Markets Act"
+  - DMA
+  - NIS2
+  - "Cyber Resilience Act"
+  - eIDAS
+
   # Defence / security
   - defence
   - defense
   - "security and defence"
+  - "European Defence Fund"
+  - EDF
+  - PESCO
   - EDA
   - "dual-use"
-  # Risk / investment
+
+  # De-risking / investment / trade
   - de-risking
   - "risk sharing"
   - blending
   - "investment platform"
+  - "FDI screening"
+  - "foreign subsidies"
+  - "export controls"
+  - "anti-coercion instrument"
+  - "industrial policy"
+  - "Net-Zero Industry Act"
+  - "Critical Raw Materials"
 
-# Language for summaries (if using OpenAI).  The script always returns
-# summaries in English (`EN`) for consistency; you can change this if you
-# summarise texts in another language.
+# === Output language for summaries ===
 language: EN
 
-# Mail service.  Set to `gmail` to send via Gmail SMTP using `GMAIL_USER` and
-# `GMAIL_PASS` (an app password).  Set to `mailgun` to use Mailgun’s API (you
-# must also set the appropriate secrets).
+# === Mail routing ===
 mail_service: gmail
-
-# Timezone adjustment for the e‑mail subject.  Set to Europe/Amsterdam to
-# display the local date in the subject.  This does not affect the scheduler
-# (the workflow cron remains UTC).
 timezone: Europe/Amsterdam
 email:
   to: "daan.lobo0801@gmail.com"
 
-  # How many items to include
+# === Executive summary controls ===
+exec_summary:
+  max_key_items: 15       # show up to 15 “Key items”
+  briefing_words: 750     # ~750-word top briefing
+
+# === Volume controls ===
 caps:
-  max_total: 30
-  max_per_category: 10
-  min_per_category: 1
+  max_total: 50           # overall item ceiling per run (after ranking & dedupe)
+  max_per_category: 20
+  min_per_category: 5
 
-# Window used for recency boost in scoring (hours)
-recent_hours: 72
+# === Freshness & ranking ===
+recent_hours: 72          # recency boost window (hours)
+ranking:
+  max_age_days: 14        # HARD cutoff: ignore items older than 14 days
+  recent_hours_bonus: 72  # keep as-is
+  prefer_recent: true     # tie-breaker: newer first
+  min_score: 1            # ≥1 keyword hit required (or hit+bonus)
 
-# Hybrid taxonomy (rules → LLM fallback). Tweak 'include' lists freely.
+# === Taxonomy (rules first, then LLM fallback) ===
 taxonomy:
   categories:
     - name: "CMU & Financial Markets"
@@ -111,12 +188,42 @@ taxonomy:
         - finance
         - financial
         - "financial markets"
+        - crr
+        - crd
+        - basel
+        - "banking union"
+        - ecb
+        - eba
+        - eiopa
+        - esma
+        - aml
+        - psd2
+        - psd3
+        - psr
+        - mica
+        - dora
+        - csdr
+        - aifmd
+        - ucits
+        - "solvency ii"
+        - srb
+        - ssm
+        - "sustainable finance"
+        - sfdr
+        - "taxonomy regulation"
 
     - name: "AI & Digital"
       include:
         - "artificial intelligence"
         - "high-risk ai"
         - ai
+        - "ai act"
+        - "data act"
+        - dsa
+        - dma
+        - nis2
+        - "cyber resilience act"
+        - eidas
         - digital
 
     - name: "Defence & Security"
@@ -124,6 +231,9 @@ taxonomy:
         - defence
         - defense
         - "security and defence"
+        - "european defence fund"
+        - edf
+        - pesco
         - "dual-use"
         - eda
 
@@ -133,21 +243,18 @@ taxonomy:
         - "risk sharing"
         - blending
         - "investment platform"
+        - "fdi screening"
+        - "foreign subsidies"
+        - "export controls"
+        - "anti-coercion instrument"
+        - "industrial policy"
+        - "net-zero industry act"
+        - "critical raw materials"
 
     - name: "Other"
       include: []
 
-caps:
-  max_total: 50
-  max_per_category: 20
-  min_per_category: 5
-
-ranking:
-  max_age_days: 14        # <- HARD CUTOFF. Only items ≤ 14 days old are considered.
-  recent_hours_bonus: 72  # keep as-is (helps fresh items)
-  prefer_recent: true     # tie-break: newer first
-  min_score: 1            # require at least 1 keyword hit (or hit+bonus)
-
+# === De-duplication state ===
 dedupe:
   enabled: true
   path: state/seen.json
