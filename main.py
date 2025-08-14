@@ -1,47 +1,50 @@
 #!/usr/bin/env python3
 """
-EUR-Lex Daily Digest — with robust Google Docs (OAuth) logging
+EUR-Lex Daily Digest — with full per-item summaries + rich Executive Summary
 
-- Fetches items from feeds in config.yaml
+What this does:
+- Fetches feeds from config.yaml
 - Scores + summarises (OpenAI if available)
-- Categorises (rules → LLM)
+- Categorises (rules → LLM when available)
 - Writes Markdown report to reports/YYYY-MM-DD.md
-- Creates a Google Doc (owned by YOUR Gmail via OAuth) and prints the link
-- Emails an executive digest + compact per-category titles + links
+- Creates a Google Doc (owned by YOUR Gmail via OAuth) with titles + bullet summaries
+- E-mails an executive digest (Key Items + 200-word Briefing) + compact per-category title list
 
-Env (set via GitHub Actions step):
+Env expected (set via GitHub Actions step):
   OPENAI_API_KEY (optional)           OPENAI_MODEL (optional; default gpt-4o-mini)
   GMAIL_USER, GMAIL_PASS (for SMTP)
   GOOGLE_OAUTH_CLIENT_ID, GOOGLE_OAUTH_CLIENT_SECRET, GOOGLE_OAUTH_REFRESH_TOKEN
   GOOGLE_DOCS_FOLDER_ID (optional)    GOOGLE_DOCS_SHARE_WITH (optional)
 """
 
-import os, sys, yaml, feedparser, datetime as dt
+import os, sys, yaml, feedparser, datetime as dt, re
 from typing import List, Dict, Any, Tuple
 from email.mime.text import MIMEText
 import smtplib
 
-# ----- optional libs -----
+# ---------- optional tz ----------
 try:
     import pytz
 except Exception:
     pytz = None
 
-# ----- OpenAI -----
+# ---------- OpenAI ----------
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 OPENAI_ENABLED = bool(os.getenv("OPENAI_API_KEY"))
 if OPENAI_ENABLED:
     try:
         from openai import OpenAI
         _oa = OpenAI()
+        print(f"[openai] enabled; model={DEFAULT_MODEL}")
     except Exception as _e:
-        print("[openai] import error:", _e)
+        print("[openai] import/init error:", _e)
         _oa = None
         OPENAI_ENABLED = False
 else:
     _oa = None
+    print("[openai] disabled (no API key)")
 
-# ----- Google (OAuth) -----
+# ---------- Google (OAuth) ----------
 from io import BytesIO
 try:
     from google.oauth2.credentials import Credentials
@@ -55,8 +58,7 @@ except Exception as _e:
     MediaIoBaseUpload = None
     GOOGLE_LIBS_OK = False
 
-# =====================================================================
-
+# ---------- helpers ----------
 def load_config(path: str) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f) or {}
@@ -65,27 +67,38 @@ def keyword_match_count(text: str, kws: List[str]) -> int:
     low = (text or "").lower()
     return sum(1 for kw in (kws or []) if kw.lower() in low)
 
+def _first_sentence(s: str) -> str:
+    s = re.sub(r"\s+", " ", (s or "").strip())
+    m = re.search(r"(.+?[.!?])(\s|$)", s)
+    return m.group(1) if m else s[:140]
+
 def summarize_text(text: str, language: str) -> str:
+    """Return 3–5 bullet points (text with leading '-' bullets)."""
     base = (text or "").strip()
     if not base:
         return ""
     if not OPENAI_ENABLED or not _oa:
-        return base[:500] + ("…" if len(base) > 500 else "")
+        # Simple fallback: first 4 sentences → bullets
+        sents = re.split(r"(?<=[.!?])\s+", base)
+        picks = [f"- {sents[i].strip()}" for i in range(min(4, len(sents))) if sents[i].strip()]
+        return "\n".join(picks)[:800]
     try:
         r = _oa.chat.completions.create(
-            model=DEFAULT_MODEL, temperature=0.2, max_tokens=180,
+            model=DEFAULT_MODEL, temperature=0.2, max_tokens=220,
             messages=[
-                {"role":"system","content":"You are a neutral EU legal analyst. Be concise and precise."},
+                {"role":"system","content":"You are a neutral EU legal analyst. Output 3–5 concise bullets. No preface."},
                 {"role":"user","content":
-                 f"Summarize in {language or 'EN'} using 3–5 bullets (<=100 words). "
-                 "Focus on what changed, scope, obligations, timelines, who is affected.\n\n"
+                 f"Summarize in {language or 'EN'} using 3–5 bullets (<=120 words total). "
+                 "Focus on: what's new/changed, scope, obligations, timelines, who is affected.\n\n"
                  f"TEXT:\n{base}"}
             ],
         )
         return (r.choices[0].message.content or "").strip()
     except Exception as e:
-        print("[openai] summary error:", e)
-        return base[:500] + ("…" if len(base) > 500 else "")
+        print("[openai] per-item summary error:", e)
+        sents = re.split(r"(?<=[.!?])\s+", base)
+        picks = [f"- {sents[i].strip()}" for i in range(min(4, len(sents))) if sents[i].strip()]
+        return "\n".join(picks)[:800]
 
 def llm_choose_category(text: str, labels: List[str]) -> str:
     if not OPENAI_ENABLED or not _oa:
@@ -129,10 +142,8 @@ def score_entry(ent: Dict[str,Any], kws: List[str], recent_hours: int) -> float:
     s = float(keyword_match_count(ent["text"], kws))
     if recent_hours and ent.get("published_utc"):
         delta = dt.datetime.now(dt.timezone.utc) - ent["published_utc"]
-        if delta.total_seconds() <= recent_hours*3600:
-            s += 1.0
-    if "uri=OJ:L" in (ent.get("source") or ""):
-        s += 0.2
+        if delta.total_seconds() <= recent_hours*3600: s += 1.0
+    if "uri=OJ:L" in (ent.get("source") or ""): s += 0.2
     return s
 
 def build_categories(cfg: dict) -> List[Dict[str,Any]]:
@@ -153,21 +164,17 @@ def rule_category(text: str, cats: List[Dict[str,Any]]) -> str:
                 return c["name"]
     return ""
 
-# ---------------- Google Docs (OAuth only) ----------------
-
+# ---------- Google Docs (OAuth only) ----------
 def get_drive_service_oauth():
-    """Return (drive_service, account_email) or (None, None)."""
     if not GOOGLE_LIBS_OK:
         print("[google] libs not installed; skipping Google Doc creation.")
         return None, None
-
     cid  = os.getenv("GOOGLE_OAUTH_CLIENT_ID","").strip()
     csec = os.getenv("GOOGLE_OAUTH_CLIENT_SECRET","").strip()
     rtok = os.getenv("GOOGLE_OAUTH_REFRESH_TOKEN","").strip()
     if not (cid and csec and rtok):
         print("[google] OAuth env vars missing; skipping Google Doc creation.")
         return None, None
-
     try:
         creds = Credentials(
             None,
@@ -189,34 +196,39 @@ def get_drive_service_oauth():
         print("[google] OAuth error:", e)
         return None, None
 
-def md_to_html(title_h1: str, exec_syn: str,
+def _bullets_to_html(s: str) -> str:
+    lines = [l.strip() for l in (s or "").splitlines() if l.strip()]
+    items = []
+    for l in lines:
+        if l.startswith("-"): items.append(l[1:].strip())
+        elif l.startswith("•"): items.append(l[1:].strip())
+        else: items.append(l)
+    if not items: return "<p>(no items)</p>"
+    return "<ul>" + "".join(f"<li>{l}</li>" for l in items) + "</ul>"
+
+def md_to_html(title_h1: str, exec_bullets: List[str], exec_paragraph: str,
                categories: List[Dict[str,Any]],
                items_by_cat: Dict[str,List[Dict[str,Any]]]) -> str:
-    def esc(t: str) -> str:
-        return (t or "").replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
-    def bullets_to_html(s: str) -> str:
-        lines = [l.strip() for l in (s or "").splitlines() if l.strip()]
-        items = []
-        for l in lines:
-            if l.startswith("-"): items.append(l[1:].strip())
-            elif l.startswith("•"): items.append(l[1:].strip())
-            else: items.append(l)
-        if not items: return "<p>(no items)</p>"
-        return "<ul>" + "".join(f"<li>{esc(x)}</li>" for x in items) + "</ul>"
-
+    esc = lambda t: (t or "").replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")
     html = [f"<html><head><meta charset='utf-8'><title>{esc(title_h1)}</title></head><body>"]
     html.append(f"<h1>{esc(title_h1)}</h1>")
     html.append("<h2>Executive Summary</h2>")
-    html.append(bullets_to_html(exec_syn))
+    if exec_bullets:
+        html.append("<h3>Key Items</h3><ul>")
+        for b in exec_bullets:
+            html.append(f"<li>{esc(b)}</li>")
+        html.append("</ul>")
+    if exec_paragraph:
+        html.append("<h3>Briefing (~200 words)</h3>")
+        html.append(f"<p>{esc(exec_paragraph)}</p>")
     html.append("<h2>Categories</h2>")
     for c in categories:
         name = c["name"]; items = items_by_cat.get(name, [])
         if not items: continue
         html.append(f"<h3>{esc(name)}</h3>")
-        html.append("<ul>")
         for it in items:
-            html.append(f"<li><strong>[{it['id']}]</strong> <a href='{esc(it['link'])}'>{esc(it['title'])}</a></li>")
-        html.append("</ul>")
+            html.append(f"<p><strong>[{it['id']}] <a href='{esc(it['link'])}'>{esc(it['title'])}</a></strong></p>")
+            html.append(_bullets_to_html(it.get("summary","")))
     html.append(f"<p><em>Generated by GitHub Actions with OpenAI (model: {esc(DEFAULT_MODEL)}).</em></p>")
     html.append("</body></html>")
     return "".join(html)
@@ -244,8 +256,7 @@ def create_google_doc_from_html(drive, html: str, title: str,
             print("[google] share error:", e)
     return fid, link
 
-# ---------------- Email ----------------
-
+# ---------- Email ----------
 def send_email_gmail(subject: str, body: str, to_addr: str):
     user = os.getenv("GMAIL_USER"); pwd = os.getenv("GMAIL_PASS")
     if not user or not pwd: raise RuntimeError("GMAIL_USER or GMAIL_PASS not set")
@@ -256,7 +267,6 @@ def send_email_gmail(subject: str, body: str, to_addr: str):
         s.login(user,pwd); s.sendmail(user,[to_addr], msg.as_string())
 
 # =====================================================================
-
 def main():
     cfg_path = os.path.join(os.path.dirname(__file__), "config.yaml")
     cfg = load_config(cfg_path)
@@ -265,7 +275,7 @@ def main():
     keywords: List[str] = cfg.get("keywords",[])
     language: str = cfg.get("language","EN")
     mail_service: str = str(cfg.get("mail_service","gmail")).lower()
-    tz_name: str = cfg.get("timezone","UTC")
+    tz_name: str = cfg.get("timezone","Europe/Amsterdam")
     email_cfg = cfg.get("email") or {}
     email_to: str = email_cfg.get("to") or os.getenv("GMAIL_USER") or ""
 
@@ -280,13 +290,11 @@ def main():
 
     # Date / subject
     now_utc = dt.datetime.utcnow().replace(tzinfo=dt.timezone.utc)
-    local_dt = now_utc
     date_str = now_utc.strftime("%Y-%m-%d")
     if pytz:
         try:
             tz = pytz.timezone(tz_name)
-            local_dt = now_utc.astimezone(tz)
-            date_str = local_dt.strftime("%Y-%m-%d")
+            date_str = now_utc.astimezone(tz).strftime("%Y-%m-%d")
         except Exception:
             pass
     subject = f"EUR-Lex Digest — {date_str}"
@@ -308,7 +316,7 @@ def main():
     pool.sort(key=lambda x: x["score"], reverse=True)
     shortlist = pool[: max_total*2]
 
-    # Summaries
+    # Per-item summaries (bullets)
     for it in shortlist:
         base = it.get("summary") or it.get("title") or ""
         it["summary"] = summarize_text(base, language)
@@ -346,70 +354,92 @@ def main():
     by_cat: Dict[str,List[Dict[str,Any]]] = {c["name"]:[] for c in cats_cfg}
     for it in selected: by_cat[it["category"]].append(it)
 
-    # Executive digest
-    if selected:
-        joined = "\n".join(f"[{it['id']}] ({it['category']}) {it['title']} — {it['summary']}" for it in selected)
-        if OPENAI_ENABLED and _oa:
-            try:
-                r = _oa.chat.completions.create(
-                    model=DEFAULT_MODEL, temperature=0.2, max_tokens=260,
-                    messages=[
-                        {"role":"system","content":"Produce 5 concise bullets citing [id] tokens."},
-                        {"role":"user","content": f"Items:\n{joined}"},
-                    ],
-                )
-                exec_syn = (r.choices[0].message.content or "").strip()
-            except Exception as e:
-                print("[openai] exec digest error:", e)
-                exec_syn = "- Key items: " + ", ".join(f"[{it['id']}]" for it in selected[:5])
-        else:
-            exec_syn = "- Key items: " + ", ".join(f"[{it['id']}]" for it in selected[:5])
-    else:
-        exec_syn = "No relevant developments today."
+    # ---------- Executive Summary ----------
+    EXEC_TOP_N = min(5, len(selected))
+    top_items = selected[:EXEC_TOP_N]
+    # Build one-liners from the first bullet (or first sentence) of each item's summary
+    exec_bullets: List[str] = []
+    for it in top_items:
+        bullets = [l.strip()[1:].strip() for l in it["summary"].splitlines() if l.strip().startswith(("-", "•"))]
+        line = bullets[0] if bullets else _first_sentence(it["summary"]) or it["title"]
+        exec_bullets.append(f"[{it['id']}] {line}")
 
-    # Write Markdown (always)
+    # 200-word synthesized paragraph ("Briefing")
+    if OPENAI_ENABLED and _oa and top_items:
+        try:
+            items_text = "\n".join(f"[{it['id']}] {it['title']}\n{it['summary']}" for it in top_items)
+            r = _oa.chat.completions.create(
+                model=DEFAULT_MODEL, temperature=0.2, max_tokens=320,
+                messages=[
+                    {"role":"system","content":"Write ~200 words, neutral, structured, no fluff. Refer to items with [id]."},
+                    {"role":"user","content": f"Synthesize the key themes and implications across these items:\n\n{items_text}"}
+                ],
+            )
+            exec_paragraph = (r.choices[0].message.content or "").strip()
+        except Exception as e:
+            print("[openai] exec paragraph error:", e)
+            exec_paragraph = "Key themes: " + "; ".join(_first_sentence(it["summary"]) for it in top_items)
+    else:
+        exec_paragraph = "Key themes: " + "; ".join(_first_sentence(it["summary"]) for it in top_items)
+
+    # ---------- Write Markdown report ----------
     reports_dir = os.path.join(os.path.dirname(__file__), "reports")
     os.makedirs(reports_dir, exist_ok=True)
-    md = [f"# EUR-Lex Daily Digest — {date_str}", "", "## Executive Summary", exec_syn, "", "## Categories",""]
+    md = [f"# EUR-Lex Daily Digest — {date_str}", ""]
+    md += ["## Executive Summary", "", "### Key Items"]
+    md += [f"- {b}" for b in exec_bullets] if exec_bullets else ["- (none)"]
+    if exec_paragraph:
+        md += ["", "### Briefing (~200 words)", "", exec_paragraph, ""]
+    md += ["## Categories",""]
     for c in cats_cfg:
         name = c["name"]; items = by_cat.get(name,[])
         if not items: continue
-        md += [f"### {name}","", "#### Items",""]
+        md += [f"### {name}",""]
         for it in items:
-            md += [f"**[{it['id']}] [{it['title']}]({it['link']})**","", it["summary"], ""]
+            md += [f"**[{it['id']}] [{it['title']}]({it['link']})**",""]
+            # keep bullet formatting
+            md += [it["summary"], ""]
     md += ["---", f"_Generated by GitHub Actions with OpenAI (model: {DEFAULT_MODEL})._"]
     md_text = "\n".join(md)
     report_path = os.path.join(reports_dir, f"{date_str}.md")
     with open(report_path,"w",encoding="utf-8") as f:
         f.write(md_text)
 
-    # Build GitHub link
+    # GitHub report link
     server = os.getenv("GITHUB_SERVER_URL","https://github.com")
     repo = os.getenv("GITHUB_REPOSITORY")
     branch = os.getenv("GITHUB_REF_NAME","main")
     report_url = f"{server}/{repo}/blob/{branch}/reports/{date_str}.md" if repo else ""
 
-    # Google Doc (OAuth only)
+    # ---------- Google Doc ----------
     doc_link = ""
     drv, acct = get_drive_service_oauth()
     if drv:
         try:
             folder_id = (os.getenv("GOOGLE_DOCS_FOLDER_ID") or "").strip() or None
             share_with = (os.getenv("GOOGLE_DOCS_SHARE_WITH") or "").strip() or None
-            html = md_to_html(f"EUR-Lex Daily Digest — {date_str}", exec_syn, cats_cfg, by_cat)
+            html = md_to_html(
+                f"EUR-Lex Daily Digest — {date_str}",
+                exec_bullets, exec_paragraph, cats_cfg, by_cat
+            )
             print("[google] creating doc...")
-            _, doc_link = create_google_doc_from_html(drv, html, f"EUR-Lex Daily Digest — {date_str}",
-                                                      folder_id, share_with)
+            _, doc_link = create_google_doc_from_html(
+                drv, html, f"EUR-Lex Daily Digest — {date_str}", folder_id, share_with
+            )
             print("[google] doc created:", doc_link)
         except Exception as e:
             print("[google] creation failed:", e)
     else:
         print("[google] skipped (no OAuth).")
 
-    # Email body
-    lines = ["Executive Digest","----------------", exec_syn, ""]
-    if report_url: lines.append(f"Full report (GitHub): {report_url}")
-    if doc_link:   lines.append(f"Full report (Google Doc): {doc_link}")
+    # ---------- Email body ----------
+    lines = ["Executive Summary","----------------"]
+    if exec_bullets:
+        lines += [f"- {b}" for b in exec_bullets]
+    if exec_paragraph:
+        lines += ["", exec_paragraph]
+    lines += ["", f"Full report (GitHub): {report_url}" if report_url else ""]
+    if doc_link: lines += [f"Full report (Google Doc): {doc_link}"]
     lines += ["", "Per-category titles","-------------------"]
     for c in cats_cfg:
         name = c["name"]; items = by_cat.get(name,[])
@@ -418,7 +448,7 @@ def main():
         for it in items:
             lines.append(f"- {it['title']}  ({it['link']})")
         lines.append("")
-    body = "\n".join(lines)
+    body = "\n".join([l for l in lines if l is not None])
 
     # Send email
     if mail_service == "gmail":
