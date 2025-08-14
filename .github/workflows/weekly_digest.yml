@@ -2,7 +2,7 @@ name: Weekly — EU Finance & Defence
 
 on:
   schedule:
-    # 12:00 UTC = 14:00 Amsterdam (CEST), 13:00 in winter (CET)
+    # 12:00 UTC ≈ 14:00 Amsterdam (CEST), 13:00 (CET)
     - cron: '0 12 * * 5'
   workflow_dispatch:
 
@@ -19,6 +19,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Show repository tree (debug)
+        run: |
+          echo "PWD: $(pwd)"
+          ls -la
+          echo
+          echo "Weekly script candidates:"
+          find . -maxdepth 2 -type f -name "weekly*.py" -print || true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,14 +45,15 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run weekly synthesis
+        shell: bash
         env:
           # OpenAI
           OPENAI_API_KEY:           ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL:             ${{ vars.OPENAI_WEEKLY_MODEL }}           # e.g. gpt-4o-mini
-          OPENAI_TTS_MODEL:         ${{ vars.OPENAI_TTS_MODEL }}              # e.g. gpt-4o-mini-tts
-          OPENAI_TTS_VOICE:         ${{ vars.OPENAI_TTS_VOICE }}              # e.g. alloy
+          OPENAI_MODEL:             ${{ vars.OPENAI_WEEKLY_MODEL }}    # e.g. gpt-4o-mini or gpt-4o-mini-high
+          OPENAI_TTS_MODEL:         ${{ vars.OPENAI_TTS_MODEL }}       # e.g. gpt-4o-mini-tts or tts-1
+          OPENAI_TTS_VOICE:         ${{ vars.OPENAI_TTS_VOICE }}       # e.g. alloy
 
-          # Gmail (emailing still reuses daily path if you want to notify)
+          # Gmail (optional mail notice)
           GMAIL_USER:               ${{ secrets.GMAIL_USER }}
           GMAIL_PASS:               ${{ secrets.GMAIL_PASS }}
 
@@ -56,7 +65,18 @@ jobs:
           # Optional Drive routing/sharing
           GOOGLE_DOCS_FOLDER_ID:    ${{ secrets.GOOGLE_DOCS_FOLDER_ID }}
           GOOGLE_DOCS_SHARE_WITH:   ${{ secrets.GOOGLE_DOCS_SHARE_WITH }}
-        run: python weekly_main.py
+        run: |
+          set -euo pipefail
+          if [ -f "weekly_main.py" ]; then SCRIPT="weekly_main.py";
+          elif [ -f "weekly.py" ]; then SCRIPT="weekly.py";
+          else
+            echo "::error::No weekly script found at repo root (expected weekly_main.py or weekly.py)."
+            echo "Files present:"
+            ls -la
+            exit 1
+          fi
+          echo "Running: $SCRIPT"
+          python "$SCRIPT"
 
       - name: Commit weekly outputs
         run: |
