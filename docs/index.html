@@ -1,1 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EUR‑Lex Research Feed</title>
+  <link rel="manifest" href="./assets/manifest.json" />
+  <link rel="stylesheet" href="./assets/ui.css" />
+</head>
+<body>
+  <header class="site" role="banner">
+    <div class="header-inner container">
+      <div class="brand">EUR‑Lex Research Feed</div>
+      <label class="searchbar" aria-label="Search">
+        <input id="q" type="search" placeholder="Search posts & reports…" autocomplete="off" />
+        <span class="switch"><input id="askAi" type="checkbox" /> Ask AI</span>
+      </label>
+      <div class="controls">
+        <div class="palette" aria-label="Accent palette">
+          <button class="swatch" style="background:#4f46e5" onclick="Theme.setAccent(221)" aria-label="Indigo"></button>
+          <button class="swatch" style="background:#7c3aed" onclick="Theme.setAccent(267)" aria-label="Violet"></button>
+          <button class="swatch" style="background:#14b8a6" onclick="Theme.setAccent(172)" aria-label="Teal"></button>
+          <button class="swatch" style="background:#e11d48" onclick="Theme.setAccent(347)" aria-label="Rose"></button>
+          <button class="swatch" style="background:#f59e0b" onclick="Theme.setAccent(38)" aria-label="Amber"></button>
+        </div>
+        <button class="theme-toggle" onclick="Theme.setTheme((localStorage.getItem('theme')==='dark')?'light':'dark')" aria-label="Toggle theme">Theme</button>
+      </div>
+    </div>
+    <div class="pills" id="pillbar" role="toolbar" aria-label="Keyword filters"></div>
+  </header>
 
+  <div id="offline" class="offline container" hidden>Offline — showing last synced data.</div>
+
+  <main id="main" class="container">
+    <section aria-labelledby="livefeed-title">
+      <h2 id="livefeed-title">Live feed</h2>
+      <div id="feed" class="cards"></div>
+    </section>
+
+    <section aria-labelledby="keyitems-title">
+      <h2 id="keyitems-title">Key items</h2>
+      <ul id="keyItems" class="key-items"></ul>
+    </section>
+
+    <section aria-labelledby="timeline-title">
+      <h2 id="timeline-title">Reports timeline</h2>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section aria-labelledby="answer-title" id="answerSection" hidden>
+      <h2 id="answer-title">AI answer</h2>
+      <div id="answer"></div>
+      <h3>Top sources</h3>
+      <div id="aiResults" class="cards"></div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>Last synced: <span id="lastSynced">–</span></small>
+  </footer>
+
+  <script src="./assets/theme.js" defer></script>
+  <script type="module" src="./assets/app.js"></script>
+</body>
+</html>
