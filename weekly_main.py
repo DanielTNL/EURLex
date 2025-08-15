@@ -201,6 +201,10 @@ def split_into_token_chunks(text: str, max_tokens: int = 1500) -> List[str]:
     return parts
 
 def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str, tts_voice: str) -> pathlib.Path:
+    """
+    Split text to respect model input limit, synthesize each chunk via the
+    streaming TTS API (no 'format' kwarg), then merge to a single MP3.
+    """
     client = openai_client()
     cleaned = strip_references_for_audio(full_text)
     chunks = split_into_token_chunks(cleaned, max_tokens=1500)
@@ -211,8 +215,13 @@ def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str
     for i, chunk in enumerate(chunks, 1):
         part_path = tmp_dir / f"part_{i:02d}.mp3"
         print(f"[audio] generating part {i}/{len(chunks)} → {part_path}")
-        audio = client.audio.speech.create(model=tts_model, voice=tts_voice, input=chunk, format="mp3")
-        with open(part_path, "wb") as f: f.write(audio.read())
+        # Streaming API – write straight to file (no 'format' kwarg)
+        with client.audio.speech.with_streaming_response.create(
+            model=tts_model,
+            voice=tts_voice,
+            input=chunk,
+        ) as resp:
+            resp.stream_to_file(str(part_path))
         part_files.append(part_path)
 
     merged = None
@@ -290,17 +299,18 @@ def doc_insert_text_requests(title: str, listen_url: str | None,
     _insert_chunked(reqs, cursor, analysis.strip() + "\n\n")
 
     # References section
-    start = cursor[0]; _insert_chunked(reqs, cursor, "References\n"); style(start, cursor[0], "HEADING_2")
-    refs_start = cursor[0]
-    # Insert each reference on its own line; we’ll convert to numbered list
-    _insert_chunked(reqs, cursor, "\n".join(references) + "\n")
-    refs_end = cursor[0]
-    reqs.append({
-        "createParagraphBullets": {
-            "range": {"startIndex": refs_start, "endIndex": refs_end},
-            "bulletPreset": "NUMBERED_DECIMAL"
-        }
-    })
+    if references:
+        start = cursor[0]; _insert_chunked(reqs, cursor, "References\n"); style(start, cursor[0], "HEADING_2")
+        refs_start = cursor[0]
+        _insert_chunked(reqs, cursor, "\n".join(references) + "\n")
+        refs_end = cursor[0]
+        # Use a valid numbered preset; only create bullets when content exists
+        reqs.append({
+            "createParagraphBullets": {
+                "range": {"startIndex": refs_start, "endIndex": refs_end},
+                "bulletPreset": "NUMBERED_DECIMAL_ALPHA_ROMAN"
+            }
+        })
 
     return reqs
 
@@ -422,6 +432,7 @@ def main() -> int:
 
     # Optional audio (chunked)
     listen_url = None
+    mp3_id = None
     mp3_path = REPORTS_DIR / f"{base_slug}.mp3"
     try:
         print("[audio] generating MP3 (chunked)…")
@@ -453,8 +464,7 @@ def main() -> int:
             print(f"[audio] upload failed: {ex}")
             listen_url = None
 
-    # Build references list (live links); leave off the bracket numbers since
-    # the Docs numbered list will number them automatically.
+    # Build references list (live links)
     ref_lines: List[str] = []
     for i, e in enumerate(selected, 1):
         date_str = fmt_date(e.get("published"))
@@ -468,7 +478,7 @@ def main() -> int:
     # Share Doc/MP3 (if requested)
     if share_with:
         for addr in share_with:
-            for file_id in [doc_id] + ([mp3_id] if mp3_path and listen_url else []):
+            for file_id in [doc_id] + ([mp3_id] if (mp3_id and listen_url) else []):
                 try:
                     drive.permissions().create(
                         fileId=file_id,
