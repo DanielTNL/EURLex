@@ -8,32 +8,29 @@
   <link rel="stylesheet" href="./assets/ui.css" />
 </head>
 <body>
-  <header class="site">
+  <header class="site glass">
     <div class="container header-inner">
       <div class="brand">EUR-Lex Research Feed</div>
 
-      <label class="searchbar" aria-label="Search">
+      <label class="searchbar">
         <input id="q" type="search" placeholder="Search posts & reports…" autocomplete="off" />
-        <label class="ask">
-          <input id="askAi" type="checkbox" />
-          <span>Ask AI</span>
-        </label>
+        <label class="ask"><input id="askAi" type="checkbox" /> <span>Ask AI</span></label>
       </label>
 
       <div class="controls">
-        <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme">Theme</button>
+        <button class="theme-toggle" id="themeBtn">Theme</button>
         <div class="palette">
-          <button class="swatch" style="--h:221" aria-label="Indigo"></button>
-          <button class="swatch" style="--h:267" aria-label="Violet"></button>
-          <button class="swatch" style="--h:172" aria-label="Teal"></button>
-          <button class="swatch" style="--h:347" aria-label="Rose"></button>
-          <button class="swatch" style="--h:38"  aria-label="Amber"></button>
+          <button class="swatch" style="--h:221"></button>
+          <button class="swatch" style="--h:267"></button>
+          <button class="swatch" style="--h:172"></button>
+          <button class="swatch" style="--h:347"></button>
+          <button class="swatch" style="--h:38"></button>
         </div>
       </div>
     </div>
 
-    <!-- Filter widgets -->
-    <div class="container filterbar card">
+    <!-- BIG filter widget (glass) -->
+    <div class="container filterbar glass card">
       <div class="row">
         <div class="field">
           <label>Type</label>
@@ -45,33 +42,33 @@
 
         <div class="field">
           <label>Sources</label>
-          <select id="fltSources" multiple></select>
+          <div id="srcBar" class="pills scroll"></div>
         </div>
 
         <div class="field">
           <label>Categories</label>
-          <select id="fltCats" multiple>
-            <option>CMU & Financial Markets</option>
-            <option>AI & Digital</option>
-            <option>Defence & Security</option>
-            <option>De-risking & Investment</option>
-            <option>Other</option>
-          </select>
+          <div id="catBar" class="pills">
+            <button class="pill" data-cat="CMU & Financial Markets">CMU & Financial Markets</button>
+            <button class="pill" data-cat="AI & Digital">AI & Digital</button>
+            <button class="pill" data-cat="Defence & Security">Defence & Security</button>
+            <button class="pill" data-cat="De-risking & Investment">De-risking & Investment</button>
+            <button class="pill" data-cat="Other">Other</button>
+          </div>
         </div>
 
         <div class="field">
           <label>Date</label>
           <div class="seg">
-            <label><input type="radio" name="datewin" value="7"  checked> 7d</label>
+            <label><input type="radio" name="datewin" value="7"> 7d</label>
             <label><input type="radio" name="datewin" value="30"> 30d</label>
             <label><input type="radio" name="datewin" value="90"> 90d</label>
-            <label><input type="radio" name="datewin" value="0"> All</label>
+            <label><input type="radio" name="datewin" value="0" checked> All</label>
           </div>
         </div>
 
         <div class="field">
           <label>Tags</label>
-          <div id="pillbar" class="pills"></div>
+          <div id="pillbar" class="pills scroll"></div>
         </div>
 
         <div class="field right">
@@ -84,7 +81,8 @@
 
   <div id="notice" class="container notice" hidden></div>
 
-  <main class="container">
+  <!-- 3-column layout on desktop -->
+  <main class="container main-3col">
     <section>
       <h2>Live feed</h2>
       <div id="feed" class="cards"></div>
@@ -98,11 +96,14 @@
     <section>
       <h2>Reports timeline</h2>
       <div id="timeline" class="timeline"></div>
+
+      <h3 class="mt">Resources</h3>
+      <div id="resources" class="cards"></div>
     </section>
 
-    <section id="answerSection" hidden>
+    <section id="answerSection" class="span-3" hidden>
       <h2>AI answer</h2>
-      <div id="answer" class="card"></div>
+      <div id="answer" class="card glass"></div>
       <h3>Top sources</h3>
       <div id="aiResults" class="cards"></div>
     </section>
