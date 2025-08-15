@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live feed — EUR-Lex</title>
+  <link rel="manifest" href="./assets/manifest.json" />
+  <link rel="stylesheet" href="./assets/ui.css" />
+</head>
+<body>
+  <header class="site glass">
+    <div class="container header-inner">
+      <a class="brand" href="./">← EUR-Lex Research Feed</a>
+      <label class="searchbar" aria-label="Search">
+        <input id="q" type="search" placeholder="Search all documents…" autocomplete="off" />
+        <label class="ask"><input id="askAi" type="checkbox" /> <span>Ask AI</span></label>
+      </label>
+      <div class="controls">
+        <button class="theme-toggle" id="themeBtn">Theme</button>
+        <div class="palette">
+          <button class="swatch" style="--h:221"></button>
+          <button class="swatch" style="--h:267"></button>
+          <button class="swatch" style="--h:172"></button>
+          <button class="swatch" style="--h:347"></button>
+          <button class="swatch" style="--h:38"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container filterbar card glass">
+      <div class="row">
+        <div class="field">
+          <label>Sources</label>
+          <div id="srcBar" class="pills scroll"></div>
+        </div>
+        <div class="field">
+          <label>Tags</label>
+          <div id="tagBar" class="pills scroll"></div>
+        </div>
+        <div class="field">
+          <label>Date</label>
+          <div class="seg">
+            <label><input type="radio" name="datewin" value="7"> 7d</label>
+            <label><input type="radio" name="datewin" value="30"> 30d</label>
+            <label><input type="radio" name="datewin" value="90"> 90d</label>
+            <label><input type="radio" name="datewin" value="0" checked> All</label>
+          </div>
+        </div>
+        <div class="field right">
+          <button id="clearBtn" class="btn subtle">Clear</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="notice" class="container notice" hidden></div>
+
+  <main class="container">
+    <section class="card glass">
+      <h2>Resources</h2>
+      <div id="resources" class="cards"></div>
+    </section>
+
+    <section class="mt">
+      <h2>All documents</h2>
+      <div id="feed" class="cards"></div>
+    </section>
+
+    <section id="answerSection" hidden class="mt">
+      <h2>AI answer</h2>
+      <div id="answer" class="card glass"></div>
+      <h3>Top sources</h3>
+      <div id="aiResults" class="cards"></div>
+    </section>
+  </main>
+
+  <script src="./assets/theme.js" defer></script>
+  <script type="module" src="./assets/live.js"></script>
+</body>
+</html>
