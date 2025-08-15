@@ -87,3 +87,18 @@ header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--borde
 
 .notice{margin-top:10px;padding:10px;border:1px solid var(--border);border-radius:12px;background:color-mix(in oklab,var(--accent) 10%, #fff)}
 .mt{margin-top:12px}
+
+/* existing */
+.row{display:grid;grid-template-columns:1fr 2fr 2fr 1fr 2fr auto;gap:12px;align-items:center}
+
+/* NEW: live page has only Sources · Tags · Date · Actions */
+.row-live{grid-template-columns:2fr 3fr 1.4fr auto}
+
+/* align the 'Clear' field to the right edge */
+.field.right{justify-self:end}
+
+/* responsive tweaks */
+@media (max-width:1100px){
+  .row-live{grid-template-columns:1fr 1fr}
+  .field.right{justify-self:start;margin-top:8px}
+}
