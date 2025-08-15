@@ -1,25 +1,311 @@
+#!/usr/bin/env yaml
+
+# === Domain → Source/Tags mapping (used for labelling cards) ===
 domains:
   eur-lex.europa.eu:
     source: EUR-Lex
     tags: [EU, law, EUR-Lex]
-  esma.europa.eu:
-    source: ESMA News
-    tags: [EU, ESMA, regulation]
+
   ec.europa.eu:
     source: European Commission
     tags: [EU, Commission]
   commission.europa.eu:
     source: European Commission
     tags: [EU, Commission]
-  eiopa.europa.eu:
-    source: EIOPA
-    tags: [EU, EIOPA, regulation]
+
+  ecb.europa.eu:
+    source: European Central Bank
+    tags: [EU, ECB]
+
   eba.europa.eu:
-    source: EBA
+    source: European Banking Authority
     tags: [EU, EBA, regulation]
+  eiopa.europa.eu:
+    source: European Insurance and Occupational Pensions Authority
+    tags: [EU, EIOPA, regulation]
+  esma.europa.eu:
+    source: European Securities and Markets Authority
+    tags: [EU, ESMA, regulation]
+
+  europarl.europa.eu:
+    source: European Parliament
+    tags: [EU, Parliament]
+  consilium.europa.eu:
+    source: Council of the EU
+    tags: [EU, Council]
+
   europa.eu:
     source: EU (Europa)
     tags: [EU]
+
 defaults:
   source: External
   tags: [external]
+
+# === Feeds to monitor ===
+feeds:
+  # EUR-Lex (OJ)
+  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L"
+  - "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:C"
+
+  # EUR-Lex – your saved searches (My RSS alerts)
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xWO7lvm18tdqCEYa6XHmbPfTQ%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVMjpRIWmwJ07CW12fz5FjW%2Fg%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVM4HHKTnsOCJg9AdK4%2BSHgeM%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPQ4DWlrEgCy6bQ8daXf7jWQ%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPgC5QqogoZldnOBiHenW40g%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVP7svSvp8vvX%2FM7q3MZwyOVM%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOB3Nc0vo4vKSfz6c9NWMPxA%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOaZbexu0%2FZ4w0GRJ2KBo5Qs%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOqjhY%2BtQ3CvXIYs2rD5Fiyc%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOxN3a7sMw0d1jtHjgEuhUTw%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUMlxZcTWvS%2BxtAYizunW5QAA%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUM%2BfPeWXzVIDPrtJmlgBdmhs%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPNOdAlaH8%2BK3mIDkMObFTIc%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPWgLCgbb7I4VN9oxHJMhlpw%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUP90nGqZj0ldQaW%2BbRHjoIqs%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOHvFIxf3jlA9JeuwgTFWJOg%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOcBTK0erkTyfirFlrUSy%2FvM%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOs7pM7dPsIl4e14a2dqfkN8%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUO3V%2FO%2BcTr%2BXa1ATP9a97SsQ%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMqxgwKHzTIEhhaN288u%2FA%2Bk%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMxf2yPGvU%2B2DKvmj375b2fI%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPCOks8Lb9I%2F7HKsheVjDD24%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPZgyu5KH6%2BNZs%2FH0VS0n1XU%3D"
+  - "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPpaIo2Jjyla%2BQh6LIbMKu1k%3D"
+
+  # European Central Bank (ECB)
+  - "https://www.ecb.europa.eu/rss/press.html"
+  - "https://www.ecb.europa.eu/rss/blog.html"
+  - "https://www.ecb.europa.eu/rss/statpress.html"
+  - "https://www.ecb.europa.eu/rss/pub.html"
+  - "https://www.ecb.europa.eu/rss/wppub.html"
+  - "https://www.ecb.europa.eu/rss/operations.html"
+  - "https://www.ecb.europa.eu/rss/procurements.html"
+  - "https://www.ecb.europa.eu/rss/yc.html"
+  - "https://www.ecb.europa.eu/rss/rbu.html"
+
+  # European Supervisory Authorities
+  - "https://www.eba.europa.eu/news-press/news/rss.xml"   # EBA
+  - "https://www.eiopa.europa.eu/node/4770/rss_en"        # EIOPA
+  # (ESMA doesn’t expose a stable global RSS; if you find endpoints, add them here.)
+
+  # European Parliament
+  - "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
+  - "https://www.europarl.europa.eu/rss/doc/top-stories/en.xml"
+  - "https://www.europarl.europa.eu/rss/topic/907/en.xml"   # Economic & Monetary Affairs
+  - "https://www.europarl.europa.eu/rss/topic/909/en.xml"   # Industry, Research & Energy
+  - "https://www.europarl.europa.eu/rss/topic/901/en.xml"   # Internal Market & Consumer Protection
+
+  # Council of the EU
+  - "https://www.consilium.europa.eu/en/rss/pressreleases.ashx"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=ecofin"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=compet"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-ecofin"
+  - "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-compet"
+  - "https://www.consilium.europa.eu/en/register/rss/THMEFA.xml"
+  - "https://www.consilium.europa.eu/en/register/rss/THMCOM.xml"
+
+# === Matching keywords (case-insensitive; title or summary) ===
+keywords:
+  # Finance & CMU
+  - CMU
+  - "capital markets union"
+  - finance
+  - financial
+  - "financial markets"
+  - MiFID
+  - MiFIR
+  - EMIR
+  - ESAP
+  - "consolidated tape"
+  - prospectus
+  - securitisation
+  - CRR
+  - CRD
+  - Basel
+  - "banking union"
+  - "single resolution"
+  - SRB
+  - SSM
+  - ECB
+  - "European Central Bank"
+  - EBA
+  - EIOPA
+  - ESMA
+  - AML
+  - "anti-money laundering"
+  - PSD2
+  - PSD3
+  - PSR
+  - MiCA
+  - DORA
+  - CSDR
+  - AIFMD
+  - UCITS
+  - "Solvency II"
+  - "sustainable finance"
+  - SFDR
+  - "taxonomy regulation"
+
+  # AI & Digital
+  - AI
+  - "artificial intelligence"
+  - "high-risk AI"
+  - "AI Act"
+  - "Data Act"
+  - "Digital Services Act"
+  - DSA
+  - "Digital Markets Act"
+  - DMA
+  - NIS2
+  - "Cyber Resilience Act"
+  - eIDAS
+
+  # Defence / security
+  - defence
+  - defense
+  - "security and defence"
+  - "European Defence Fund"
+  - EDF
+  - PESCO
+  - EDA
+  - "dual-use"
+
+  # De-risking / investment / trade
+  - de-risking
+  - "risk sharing"
+  - blending
+  - "investment platform"
+  - "FDI screening"
+  - "foreign subsidies"
+  - "export controls"
+  - "anti-coercion instrument"
+  - "industrial policy"
+  - "Net-Zero Industry Act"
+  - "Critical Raw Materials"
+
+# === Output language for summaries ===
+language: EN
+
+# === Mail routing ===
+mail_service: gmail
+timezone: Europe/Amsterdam
+email:
+  to: "daan.lobo0801@gmail.com"
+
+# === Executive summary controls ===
+exec_summary:
+  max_key_items: 15       # show up to 15 “Key items”
+  briefing_words: 750     # ~750-word top briefing
+
+# === Volume controls ===
+caps:
+  max_total: 50           # overall item ceiling per run (after ranking & dedupe)
+  max_per_category: 20
+  min_per_category: 5
+
+# === Freshness & ranking ===
+recent_hours: 72          # recency boost window (hours)
+ranking:
+  max_age_days: 14        # HARD cutoff: ignore items older than 14 days
+  recent_hours_bonus: 72  # keep as-is
+  prefer_recent: true     # tie-breaker: newer first
+  min_score: 1            # ≥1 keyword hit required (or hit+bonus)
+
+# === Taxonomy (rules first, then LLM fallback) ===
+taxonomy:
+  categories:
+    - name: "CMU & Financial Markets"
+      include:
+        - "capital markets union"
+        - cmu
+        - mifid
+        - mifir
+        - emir
+        - esap
+        - "consolidated tape"
+        - prospectus
+        - securitisation
+        - finance
+        - financial
+        - "financial markets"
+        - crr
+        - crd
+        - basel
+        - "banking union"
+        - ecb
+        - eba
+        - eiopa
+        - esma
+        - aml
+        - psd2
+        - psd3
+        - psr
+        - mica
+        - dora
+        - csdr
+        - aifmd
+        - ucits
+        - "solvency ii"
+        - srb
+        - ssm
+        - "sustainable finance"
+        - sfdr
+        - "taxonomy regulation"
+
+    - name: "AI & Digital"
+      include:
+        - "artificial intelligence"
+        - "high-risk ai"
+        - ai
+        - "ai act"
+        - "data act"
+        - dsa
+        - dma
+        - nis2
+        - "cyber resilience act"
+        - eidas
+        - digital
+
+    - name: "Defence & Security"
+      include:
+        - defence
+        - defense
+        - "security and defence"
+        - "european defence fund"
+        - edf
+        - pesco
+        - "dual-use"
+        - eda
+
+    - name: "De-risking & Investment"
+      include:
+        - de-risking
+        - "risk sharing"
+        - blending
+        - "investment platform"
+        - "fdi screening"
+        - "foreign subsidies"
+        - "export controls"
+        - "anti-coercion instrument"
+        - "industrial policy"
+        - "net-zero industry act"
+        - "critical raw materials"
+
+    - name: "Other"
+      include: []
+
+# === De-duplication state ===
+dedupe:
+  enabled: true
+  path: state/seen.json
+
+weekly:
+  window_days: 7
+  exec_top_n: 50
+  exec_max_words: 2500
+
+summary:
+  per_item_bullets: 3
+  per_item_max_words: 80
