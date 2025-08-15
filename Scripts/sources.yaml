@@ -88,14 +88,13 @@ feeds:
   # European Supervisory Authorities
   - "https://www.eba.europa.eu/news-press/news/rss.xml"   # EBA
   - "https://www.eiopa.europa.eu/node/4770/rss_en"        # EIOPA
-  # (ESMA doesn’t expose a stable global RSS; if you find endpoints, add them here.)
 
   # European Parliament
   - "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
   - "https://www.europarl.europa.eu/rss/doc/top-stories/en.xml"
-  - "https://www.europarl.europa.eu/rss/topic/907/en.xml"   # Economic & Monetary Affairs
-  - "https://www.europarl.europa.eu/rss/topic/909/en.xml"   # Industry, Research & Energy
-  - "https://www.europarl.europa.eu/rss/topic/901/en.xml"   # Internal Market & Consumer Protection
+  - "https://www.europarl.europa.eu/rss/topic/907/en.xml"
+  - "https://www.europarl.europa.eu/rss/topic/909/en.xml"
+  - "https://www.europarl.europa.eu/rss/topic/901/en.xml"
 
   # Council of the EU
   - "https://www.consilium.europa.eu/en/rss/pressreleases.ashx"
@@ -196,22 +195,22 @@ email:
 
 # === Executive summary controls ===
 exec_summary:
-  max_key_items: 15       # show up to 15 “Key items”
-  briefing_words: 750     # ~750-word top briefing
+  max_key_items: 15
+  briefing_words: 750
 
 # === Volume controls ===
 caps:
-  max_total: 50           # overall item ceiling per run (after ranking & dedupe)
+  max_total: 50
   max_per_category: 20
   min_per_category: 5
 
 # === Freshness & ranking ===
-recent_hours: 72          # recency boost window (hours)
+recent_hours: 72
 ranking:
-  max_age_days: 14        # HARD cutoff: ignore items older than 14 days
-  recent_hours_bonus: 72  # keep as-is
-  prefer_recent: true     # tie-breaker: newer first
-  min_score: 1            # ≥1 keyword hit required (or hit+bonus)
+  max_age_days: 14
+  recent_hours_bonus: 72
+  prefer_recent: true
+  min_score: 1
 
 # === Taxonomy (rules first, then LLM fallback) ===
 taxonomy:
