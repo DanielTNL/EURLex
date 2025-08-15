@@ -1,4 +1,4 @@
-const CACHE_STATIC = 'eurlex-static-v6';
+const CACHE_STATIC = 'eurlex-site-v4';
 const STATIC_ASSETS = [
   './', './index.html', './live.html',
   './assets/ui.css', './assets/theme.js', './assets/app.js', './assets/live.js', './assets/manifest.json'
