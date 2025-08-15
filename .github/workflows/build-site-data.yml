@@ -1,29 +1,34 @@
 name: build-site-data
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: {}
   schedule:
-    - cron: "10 6 * * *"  # daily 06:10 UTC
+    - cron: "10 6 * * *"   # daily 06:10 UTC
   push:
+    branches: [ main ]
     paths:
       - "reports/**"
       - "scripts/**"
+      # Explicitly ignore docs/ changes so our own commit doesn't retrigger
+      - "!docs/**"
 
 permissions:
   contents: write
 
-# Prevent overlapping runs from racing each other
+# Run at most one per branch, but DO NOT cancel in-progress runs.
 concurrency:
-  group: build-site-data
-  cancel-in-progress: true
+  group: build-site-data-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # we need history to rebase/reset onto latest main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,27 +43,20 @@ jobs:
       - name: Build site data (posts.json + reports.json + audio.json)
         run: python scripts/build_site_data.py
 
-      # ---- FIX: rebase-safe push so "non-fast-forward" never happens ----
       - name: Commit data (rebase-safe)
         run: |
           set -e
           git config user.name "automation"
           git config user.email "actions@users.noreply.github.com"
 
-          # Stage data files; skip if nothing changed
           git add docs/data/posts.json docs/data/reports.json docs/data/audio.json || true
           if git diff --cached --quiet; then
             echo "No data changes to commit."
             exit 0
           fi
 
-          # Rebase our work on top of the latest remote main to avoid push rejection
           git fetch origin main
-          # Move HEAD to the latest remote commit but keep our changes staged
           git reset --soft origin/main
-
-          # Ensure our data files are staged after the soft reset
           git add docs/data/posts.json docs/data/reports.json docs/data/audio.json
-
           git commit -m "Build site data $(date -u +%F)"
           git push origin HEAD:main
