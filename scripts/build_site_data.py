@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-Builds docs/data/posts.json and docs/data/reports.json from:
- - Your RSS feeds in scripts/sources.yaml
- - Your Daily/Weekly files under reports/** (md/txt/html)
+Builds docs/data/posts.json, docs/data/reports.json and docs/data/audio.json from:
+ - RSS feeds in scripts/sources.yaml
+ - report files under reports/** (md/txt/html)
+ - *.mp3 files anywhere in the repo (for Weekly Digest audio)
 
-Scoring = keyword hits + recent boost.
-Caps/max_age are honored.
-Source labels & base tags come from `domains:` in sources.yaml.
+Also labels sources by domain, tags by taxonomy keywords, and ranks items.
 """
 
-import os, re, json, hashlib, datetime as dt, pathlib, html, math
+import os, re, json, hashlib, datetime as dt, pathlib, html
 from urllib.parse import urlparse
 import asyncio
 import httpx, frontmatter, yaml, feedparser
@@ -17,39 +17,48 @@ from dateutil import parser as dateparse, tz
 from bs4 import BeautifulSoup
 from trafilatura import fetch_url, extract as trafi_extract
 
+# --- Paths ---
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DOCS_DATA = ROOT / "docs" / "data"
 DOCS_DATA.mkdir(parents=True, exist_ok=True)
-POSTS_JSON = DOCS_DATA / "posts.json"
+
+POSTS_JSON   = DOCS_DATA / "posts.json"
 REPORTS_JSON = DOCS_DATA / "reports.json"
+AUDIO_JSON   = DOCS_DATA / "audio.json"
 
 CONFIG = ROOT / "scripts" / "sources.yaml"
+if not CONFIG.exists():
+    # fallback in case the folder is capitalized
+    CONFIG = ROOT / "Scripts" / "sources.yaml"
 
 REPORTS_DIRS = [ROOT / "reports", ROOT / "reports" / "weekly", ROOT / "reports" / "daily"]
 URL_RE = re.compile(r'https?://[^\s\]\)\}\>\"\'`]+', re.IGNORECASE)
 
 SUMMARY_CHARS = 1000
-MAX_LINKS_PER_REPORT = 300  # safety
+MAX_LINKS_PER_REPORT = 300
 
 def sha16(s: str) -> str:
     return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
 
+# --- Config loader (fixed) ---
 def load_cfg():
     with open(CONFIG, "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
     cfg = cfg or {}
-    domains = cfg.get("domains", {})
-    defaults = cfg.get("defaults", {"source":"External","tags":["external"]})
-    feeds = list(cfg.get("feeds", []) or [])
-    keywords = [str(k).lower() for k in (cfg.get("keywords", []) or [])]
-    taxonomy = cfg.get("taxonomy", {}).get("categories", [])
-    caps = cfg.get("caps", {"max_total":50, "max_per_category":20, "min_per_category":5})
-    ranking = cfg.get("ranking", {"max_age_days":14, "min_score":1, "prefer_recent":True})
-    dedupe = cfg.get("dedupe", {"enabled":True, "path":"state/seen.json"})
-    tzname = (cfg.get("timezone") or "Europe/Amsterdam")
-    return domains, defaults, feeds, keywords, taxonomy, caps, ranking, dedupe, tzname
 
-DOMAINS, DEFAULTS, FEEDS, KEYWORDS, TAXONOMY, CAPS, RANKING, DEDUPE, TZN = load_cfg()
+    domains  = cfg.get("domains", {}) or {}
+    defaults = cfg.get("defaults", {"source":"External","tags":["external"]})
+    feeds    = list(cfg.get("feeds", []) or [])
+    keywords = [str(k).lower() for k in (cfg.get("keywords", []) or [])]
+    taxonomy = (cfg.get("taxonomy") or {}).get("categories", []) or []
+    caps     = cfg.get("caps", {"max_total":50, "max_per_category":20, "min_per_category":5})
+    ranking  = cfg.get("ranking", {"max_age_days":14, "min_score":1, "prefer_recent":True})
+    dedupe   = cfg.get("dedupe", {"enabled":True, "path":"state/seen.json"})
+    tzname   = cfg.get("timezone") or "Europe/Amsterdam"
+    links    = cfg.get("links", {}) or {}             # <--- NEW, fixed (cfg defined above)
+    return domains, defaults, feeds, keywords, taxonomy, caps, ranking, dedupe, tzname, links
+
+DOMAINS, DEFAULTS, FEEDS, KEYWORDS, TAXONOMY, CAPS, RANKING, DEDUPE, TZN, LINKS = load_cfg()
 
 def label_for_url(u: str):
     host = urlparse(u).netloc.lower().lstrip("www.")
@@ -145,7 +154,7 @@ async def fetch_title_and_summary(client: httpx.AsyncClient, url: str):
     except Exception:
         pass
 
-    # Fallback
+    # Fallback: basic fetch + text extraction
     try:
         r = await client.get(url, timeout=20)
         if r.status_code == 200:
@@ -246,13 +255,29 @@ def load_seen():
         pass
     return {}
 
-def save_seen(seen):
-    try:
-        p = ROOT / (DEDUPE.get("path") or "state/seen.json")
-        p.parent.mkdir(parents=True, exist_ok=True)
-        p.write_text(json.dumps(list(seen.values()), ensure_ascii=False, indent=2), encoding="utf-8")
-    except Exception:
-        pass
+# --- Audio / Google Drive helpers ---
+def file_raw_url(repo: str, relpath: str) -> str:
+    return f"https://raw.githubusercontent.com/{repo}/main/{relpath}"
+
+def scan_audio(repo: str):
+    items = []
+    for f in ROOT.rglob("*.mp3"):
+        # skip irrelevant folders
+        if any(seg in f.parts for seg in (".git","node_modules",".venv","venv","dist","build")):
+            continue
+        rel = f.relative_to(ROOT).as_posix()
+        title = f.stem.replace("_"," ").replace("-"," ").strip()
+        m = re.search(r'(\d{4})[-_](\d{2})[-_](\d{2})', rel)
+        when = f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else ""
+        items.append({
+            "title": title,
+            "path": rel,
+            "raw_url": file_raw_url(repo, rel),
+            "date": when
+        })
+    items.sort(key=lambda x: x.get("date",""), reverse=True)
+    payload = {"google_drive": LINKS.get("google_drive",""), "items": items[:50]}
+    AUDIO_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 async def build():
     repo = os.getenv("GITHUB_REPOSITORY", "DanielTNL/EURLex")
@@ -267,8 +292,6 @@ async def build():
         except Exception:
             old_posts = []
 
-    seen = load_seen()
-
     # 1) FEEDS
     feed_items = []
     for url in FEEDS:
@@ -276,9 +299,12 @@ async def build():
             fp = feedparser.parse(url)
             for e in fp.entries:
                 link = e.get("link") or e.get("id")
-                if not link or not link.startswith("http"): continue
+                if not link or not link.startswith("http"):
+                    continue
                 title = e.get("title","").strip() or link
-                summary = BeautifulSoup((e.get("summary") or e.get("description") or ""), "html.parser").get_text(" ").strip()
+                # feedparser may leave HTML in summary; strip safely
+                raw_sum = (e.get("summary") or e.get("description") or "")
+                summary = BeautifulSoup(raw_sum, "html.parser").get_text(" ").strip()
                 d = None
                 for key in ("published", "updated", "created"):
                     if e.get(key):
@@ -308,7 +334,7 @@ async def build():
                     "url": link,
                     "title": title,
                     "tags": list(set(base_tags + cats)),
-                    "added": now.isoformat(),
+                    "added": d.isoformat(),
                     "summary": summary[:SUMMARY_CHARS] + ("…" if len(summary) > SUMMARY_CHARS else ""),
                     "score": s,
                     "ts": ts,
@@ -320,9 +346,9 @@ async def build():
     # 2) REPORTS + links inside them
     reports = []
     report_links = []
-    for d in REPORTS_DIRS:
-        if not d.exists(): continue
-        for f in sorted(d.rglob("*")):
+    for ddir in REPORTS_DIRS:
+        if not ddir.exists(): continue
+        for f in sorted(ddir.rglob("*")):
             if f.suffix.lower() not in (".md",".markdown",".txt",".html",".htm"): continue
             try:
                 raw, text, urls = read_report_text_and_urls(f)
@@ -369,53 +395,18 @@ async def build():
             merged.append(p)
             seenids.add(p["id"])
     merged.sort(key=lambda x: (x.get("score",0), x.get("ts",0)), reverse=True)
+    # Respect caps
     final_posts = clamp_posts_by_caps(merged)
 
+    # Sort reports newest first
     reports.sort(key=lambda r: r["date"], reverse=True)
 
     POSTS_JSON.write_text(json.dumps(final_posts, ensure_ascii=False, indent=2), encoding="utf-8")
     REPORTS_JSON.write_text(json.dumps(reports, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    for p in final_posts:
-        seen[p["id"]] = {"id": p["id"], "url": p["url"], "ts": p.get("ts")}
-    # save_seen(seen)  # optional
+    # 5) Audio/Drive
+    scan_audio(repo)
 
 if __name__ == "__main__":
     asyncio.run(build())
-    print("Wrote:", POSTS_JSON, REPORTS_JSON)
-
-# add near the other paths
-AUDIO_JSON = DOCS_DATA / "audio.json"
-
-# after load_cfg():
-def load_cfg():
-    ...
-    links = (cfg.get("links") or {})
-    return domains, defaults, feeds, keywords, taxonomy, caps, ranking, dedupe, tzname, links
-
-DOMAINS, DEFAULTS, FEEDS, KEYWORDS, TAXONOMY, CAPS, RANKING, DEDUPE, TZN, LINKS = load_cfg()
-
-# helper
-def file_raw_url(repo, relpath):
-    return f"https://raw.githubusercontent.com/{repo}/main/{relpath}"
-
-# new: scan for mp3s
-def scan_audio(repo:str):
-    items=[]
-    for f in ROOT.rglob("*.mp3"):
-        # skip venv/node_modules etc.
-        if any(seg in f.parts for seg in (".git","node_modules",".venv")): continue
-        rel = f.relative_to(ROOT).as_posix()
-        title = f.stem.replace("_"," ").replace("-"," ").strip()
-        date = re.search(r'(\d{4})[-_](\d{2})[-_](\d{2})', rel)
-        when = f"{date.group(1)}-{date.group(2)}-{date.group(3)}" if date else ""
-        items.append({
-            "title": title, "path": rel, "raw_url": file_raw_url(repo, rel), "date": when
-        })
-    # newest first
-    items.sort(key=lambda x: x.get("date",""), reverse=True)
-    payload = {"google_drive": LINKS.get("google_drive",""), "items": items[:50]}
-    AUDIO_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    # Write audio/links
-    scan_audio(repo)
+    print("Wrote:", POSTS_JSON, REPORTS_JSON, AUDIO_JSON)
