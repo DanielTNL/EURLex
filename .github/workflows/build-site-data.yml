@@ -1,0 +1,36 @@
+name: build-site-data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 6 * * *"   # daily ~08:10 Amsterdam (DST-aware on GitHub = UTC)
+  push:
+    paths:
+      - "reports/**"
+      - "scripts/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Build site data (posts.json + reports.json)
+        run: python scripts/build_site_data.py
+
+      - name: Commit data
+        run: |
+          git config user.name "automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/posts.json docs/data/reports.json
+          git commit -m "Build site data $(date -u +%F)" || echo "no changes"
+          git push
