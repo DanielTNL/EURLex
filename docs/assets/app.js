@@ -19,6 +19,7 @@ const esc = s => (s||'').replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt
 const fmt = d => new Date(d).toISOString().slice(0,10);
 
 async function jget(path){ const r=await fetch(path+'?v='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error('Fetch '+path); return r.json(); }
+function notice(msg){ els.notice.textContent = msg; els.notice.hidden = !msg; }
 
 async function loadData(){
   try{
@@ -34,15 +35,15 @@ async function loadData(){
     for(const p of POSTS){ (p.tags||[]).forEach(t=>TAGS.set(t,(TAGS.get(t)||0)+1)); sources.add(p.source||'Other'); }
     for(const r of REPORTS){ (r.tags||[]).forEach(t=>TAGS.set(t,(TAGS.get(t)||0)+1)); }
 
-    // render source pills
+    // render source pills (static)
     els.srcBar.innerHTML = Array.from(sources).sort().map(s=>`<button class="pill" data-src="${esc(s)}" aria-pressed="${selectedSources.has(s)}">${esc(s)}</button>`).join('');
     els.srcBar.querySelectorAll('.pill').forEach(b=>b.onclick=()=>{ const v=b.dataset.src; if(selectedSources.has(v)) selectedSources.delete(v); else selectedSources.add(v); b.setAttribute('aria-pressed', selectedSources.has(v)); renderAll(); });
 
-    // category pills -> already present in HTML
+    // category pills (static)
     els.catBar.querySelectorAll('.pill').forEach(b=>b.onclick=()=>{ const v=b.dataset.cat; if(selectedCats.has(v)) selectedCats.delete(v); else selectedCats.add(v); b.setAttribute('aria-pressed', selectedCats.has(v)); renderAll(); });
 
-    // tag pills (top 60)
-    const topTags = Array.from(TAGS.entries()).sort((a,b)=>b[1]-a[1]).slice(0,60);
+    // tag pills (top 80, scrollable container)
+    const topTags = Array.from(TAGS.entries()).sort((a,b)=>b[1]-a[1]).slice(0,80);
     els.pillbar.innerHTML = topTags.map(([t,c])=>`<button class="pill" data-tag="${esc(t)}" aria-pressed="${selectedTags.has(t)}">${esc(t)} · ${c}</button>`).join('');
     els.pillbar.querySelectorAll('.pill').forEach(b=>b.onclick=()=>{ const v=b.dataset.tag; if(selectedTags.has(v)) selectedTags.delete(v); else selectedTags.add(v); b.setAttribute('aria-pressed', selectedTags.has(v)); renderAll(); });
 
@@ -53,15 +54,13 @@ async function loadData(){
     els.q.oninput = ()=>{ renderAll(); debounceAsk(); };
     els.askAi.onchange = ()=> maybeAsk();
     els.refreshBtn.onclick = ()=>{ caches && caches.keys().then(keys=>keys.forEach(k=>caches.delete(k))); loadData(); };
-    els.clearBtn.onclick = ()=>{ selectedTags.clear(); selectedSources.clear(); selectedCats.clear(); els.q.value=''; document.querySelector('input[name="datewin"][value="0"]').checked=true; dateWindowDays=0; loadData(); };
+    els.clearBtn.onclick = ()=>{ selectedTags.clear(); selectedSources.clear(); selectedCats.clear(); els.q.value=''; document.querySelector('input[name="datewin"][value="0"]').checked=true; dateWindowDays=0; renderAll(); };
 
     renderAll(); els.lastSynced.textContent = new Date().toLocaleString();
   }catch(e){ console.error(e); notice('Could not load data: '+e.message); }
 }
 
-function notice(msg){ els.notice.textContent = msg; els.notice.hidden = !msg; }
 const inWin = iso => !dateWindowDays || !iso || (new Date(iso).getTime() >= Date.now()-dateWindowDays*864e5);
-
 function passes(item, isReport=false){
   if(isReport && !typeReports) return false;
   if(!isReport && !typePosts) return false;
@@ -82,11 +81,12 @@ const card = p => `<article class="card item">
 </article>`;
 
 function renderFeed(){
-  let items = POSTS.filter(p=>passesFilters(p,false));
+  let items = POSTS.filter(p=>passes(p,false));
   items.sort((a,b)=> new Date(b.added||b.date) - new Date(a.added||a.date));
-  items = items.slice(0, 10); // <= show only the latest 10 on the homepage
-  els.feed.innerHTML = items.length ? items.map(cardForItem).join('') : '<p>No items match.</p>';
+  items = items.slice(0, 10); // show only the latest 10 on the homepage
+  els.feed.innerHTML = items.length ? items.map(card).join('') : '<p>No items match.</p>';
 }
+
 function renderKeyItems(){
   const list=[]; for(const r of REPORTS){ for(const k of (r.key_items||[])){ list.push({text:k, tags:r.tags||[], date:r.date, url:r.url_html||'#'}); } }
   const arr = list.filter(x => passes({title:x.text, summary:'', tags:x.tags, date:x.date}, true));
@@ -131,6 +131,7 @@ async function maybeAsk(){
 
 /* SW */
 if('serviceWorker' in navigator){ navigator.serviceWorker.register('./assets/sw.js').catch(()=>{}); }
+/* Always-blue theme (no UI to change) */
+import './theme.js';
 
-/* Start */
 loadData();
