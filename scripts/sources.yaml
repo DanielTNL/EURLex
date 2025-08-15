@@ -207,10 +207,10 @@ caps:
 # === Freshness & ranking ===
 recent_hours: 72
 ranking:
-  max_age_days: 14
+  max_age_days: 21
   recent_hours_bonus: 72
   prefer_recent: true
-  min_score: 1
+  min_score: 0
 
 # === Taxonomy (rules first, then LLM fallback) ===
 taxonomy:
