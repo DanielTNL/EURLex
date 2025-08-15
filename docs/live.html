@@ -1,129 +1,54 @@
-// docs/assets/live.js
-// Full live feed page (all docs) with filters + paging.
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EUR-Lex Research Feed — Live</title>
+  <link rel="manifest" href="./assets/manifest.json" />
+  <link rel="stylesheet" href="./assets/ui.css" />
+</head>
+<body>
+  <header class="site" role="banner">
+    <div class="header-inner container">
+      <a href="./" class="brand">← EUR-Lex Research Feed</a>
+      <label class="searchbar" aria-label="Search all docs">
+        <input id="q" type="search" placeholder="Search all documents…" autocomplete="off" />
+        <span class="switch"><input id="askAi" type="checkbox" /> Ask AI</span>
+      </label>
+    </div>
 
-const API_BASE = localStorage.getItem('API_BASE') || ''; // optional, only for Ask AI
-const $ = (id) => document.getElementById(id);
+    <div class="container pills" id="srcBar" aria-label="Sources"></div>
+    <div class="container pills" id="catBar" aria-label="Categories"></div>
+    <div class="container">
+      <div class="pills" id="tagBar" aria-label="Tags"></div>
+      <div class="pills" aria-label="Date window">
+        <label class="pill"><input type="radio" name="datewin" value="7"> 7d</label>
+        <label class="pill"><input type="radio" name="datewin" value="30"> 30d</label>
+        <label class="pill"><input type="radio" name="datewin" value="90"> 90d</label>
+        <label class="pill"><input type="radio" name="datewin" value="0" checked> All</label>
+        <button id="clearBtn" class="pill" style="cursor:pointer">Clear</button>
+      </div>
+    </div>
+  </header>
 
-let POSTS = [];
-let AUDIO = { google_drive: "", items: [] };
-let selectedTags = new Set();
-let selectedSources = new Set();
-let selectedCats = new Set();
-let dateWindowDays = 0;
-let page = 0;
-const PAGE_SIZE = 30;
+  <main class="container">
+    <section>
+      <h2>Resources</h2>
+      <div id="resources" class="cards"></div>
+    </section>
 
-function esc(s){ return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) }
-const fmt = d => new Date(d).toISOString().slice(0,10);
-async function jget(p){ const r=await fetch(p+'?v='+Date.now(),{cache:'no-store'}); if(!r.ok) throw new Error('Fetch '+p); return r.json(); }
+    <section>
+      <h2>All documents</h2>
+      <div id="allList" class="cards"></div>
+      <div style="display:flex; justify-content:center; margin:16px 0;">
+        <button id="loadMore" class="pill" style="cursor:pointer">Load more</button>
+      </div>
+      <footer><small>Last synced: <span id="lastSynced">–</span></small></footer>
+    </section>
+  </main>
 
-function setFiltersExport(){
-  // let chat.js read current filters
-  window.FeedFilters = { selectedTags, selectedSources, selectedCats, dateWindowDays };
-}
-
-function buildPills(){
-  // Sources
-  const sources = Array.from(new Set(POSTS.map(p=>p.source||'Other'))).sort();
-  $('srcBar').innerHTML = sources.map(s=>`<button class="pill" data-src="${esc(s)}" aria-pressed="${selectedSources.has(s)}">${esc(s)}</button>`).join('');
-  $('srcBar').querySelectorAll('.pill').forEach(b=>{
-    b.onclick = ()=>{ const v=b.dataset.src; if(selectedSources.has(v)) selectedSources.delete(v); else selectedSources.add(v); b.setAttribute('aria-pressed', selectedSources.has(v)); resetRender(); };
-  });
-
-  // Categories (from tags)
-  const cats = ['CMU & Financial Markets','AI & Digital','Defence & Security','De-risking & Investment','Other'];
-  $('catBar').innerHTML = cats.map(c=>`<button class="pill" data-cat="${esc(c)}" aria-pressed="${selectedCats.has(c)}">${esc(c)}</button>`).join('');
-  $('catBar').querySelectorAll('.pill').forEach(b=>{
-    b.onclick = ()=>{ const v=b.dataset.cat; if(selectedCats.has(v)) selectedCats.delete(v); else selectedCats.add(v); b.setAttribute('aria-pressed', selectedCats.has(v)); resetRender(); };
-  });
-
-  // Tags (top 100)
-  const tagCounts = new Map();
-  POSTS.forEach(p => (p.tags||[]).forEach(t => tagCounts.set(t,(tagCounts.get(t)||0)+1)));
-  const tags = Array.from(tagCounts.entries()).sort((a,b)=>b[1]-a[1]).slice(0,100);
-  $('tagBar').innerHTML = tags.map(([t,c])=>`<button class="pill" data-tag="${esc(t)}" aria-pressed="${selectedTags.has(t)}">${esc(t)} · ${c}</button>`).join('');
-  $('tagBar').querySelectorAll('.pill').forEach(b=>{
-    b.onclick = ()=>{ const v=b.dataset.tag; if(selectedTags.has(v)) selectedTags.delete(v); else selectedTags.add(v); b.setAttribute('aria-pressed', selectedTags.has(v)); resetRender(); };
-  });
-
-  // Date radios
-  document.querySelectorAll('input[name="datewin"]').forEach(r=> r.onchange = ()=>{ dateWindowDays = Number(r.value); resetRender(); });
-  $('clearBtn').onclick = ()=>{ selectedTags.clear(); selectedSources.clear(); selectedCats.clear(); $('q').value=''; document.querySelector('input[name="datewin"][value="0"]').checked=true; dateWindowDays=0; buildPills(); resetRender(); };
-}
-
-function inWin(iso){ return !dateWindowDays || !iso || (new Date(iso).getTime() >= Date.now() - dateWindowDays*864e5); }
-function passes(p){
-  if(selectedSources.size && !selectedSources.has(p.source||'Other')) return false;
-  if(selectedCats.size && !(p.tags||[]).some(t => selectedCats.has(t))) return false;
-  if(selectedTags.size){ for(const t of selectedTags){ if(!(p.tags||[]).includes(t)) return false; } }
-  if(!inWin(p.added||p.date)) return false;
-  const q = $('q').value.trim().toLowerCase();
-  if(q){
-    const hay = (p.title+' '+(p.summary||'')+' '+(p.tags||[]).join(' ')).toLowerCase();
-    if(!hay.includes(q)) return false;
-  }
-  return true;
-}
-
-function card(p){
-  return `<article class="card">
-    <h3><a href="${esc(p.url||'#')}" target="_blank" rel="noopener">${esc(p.title||'(no title)')}</a></h3>
-    <div class="meta">${esc(p.source||'EU')} • ${esc((p.added?fmt(p.added):p.date)||'')}</div>
-    <p class="summary">${esc((p.summary||'').slice(0,280))}${(p.summary||'').length>280?'…':''}</p>
-    <div>${(p.tags||[]).slice(0,8).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
-  </article>`;
-}
-
-function renderResources(){
-  const cards = [];
-  if (AUDIO.google_drive){
-    cards.push(`<article class="card"><h3>Google Drive</h3><p><a href="${esc(AUDIO.google_drive)}" target="_blank">Open the Drive folder</a></p></article>`);
-  }
-  for(const a of (AUDIO.items||[]).slice(0,12)){
-    cards.push(`<article class="card"><h3>${esc(a.title)}</h3><div class="meta">${esc(a.date||'')}</div><audio controls preload="none" style="width:100%"><source src="${esc(a.raw_url)}" type="audio/mpeg"></audio></article>`);
-  }
-  $('resources').innerHTML = cards.join('') || '<p>No resources yet.</p>';
-}
-
-function resetRender(){
-  page = 0;
-  $('allList').innerHTML = '';
-  renderPage();
-  setFiltersExport();
-}
-
-function renderPage(){
-  const items = POSTS.filter(p=>passes(p)).sort((a,b)=> new Date(b.added||b.date) - new Date(a.added||a.date));
-  const slice = items.slice(page*PAGE_SIZE, (page+1)*PAGE_SIZE);
-  $('allList').insertAdjacentHTML('beforeend', slice.map(card).join(''));
-  $('loadMore').style.display = ( (page+1)*PAGE_SIZE < items.length ) ? '' : 'none';
-  page++;
-}
-
-async function init(){
-  try{
-    const [posts, audio] = await Promise.all([
-      jget('./data/posts.json'),
-      jget('./data/audio.json').catch(()=>({google_drive:"",items:[]}))
-    ]);
-    POSTS = posts || [];
-    AUDIO = audio || {google_drive:"",items:[]};
-    $('lastSynced').textContent = new Date().toLocaleString();
-
-    buildPills();
-    renderResources();
-    resetRender();
-
-    $('q').oninput = resetRender;
-    $('askAi').onchange = ()=>{}; // chat.js handles separate panel
-    $('loadMore').onclick = renderPage;
-
-    // SW (optional)
-    if('serviceWorker' in navigator){ navigator.serviceWorker.register('./assets/sw.js').catch(()=>{}); }
-  }catch(e){
-    console.error(e);
-    $('allList').innerHTML = `<p>Could not load data: ${esc(e.message)}</p>`;
-  }
-}
-
-init();
+  <script src="./assets/theme.js" defer></script>
+  <script type="module" src="./assets/live.js"></script>
+  <script type="module" src="./assets/chat.js"></script>
+</body>
+</html>
