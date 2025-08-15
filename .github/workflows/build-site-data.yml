@@ -2,11 +2,14 @@ name: build-site-data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "10 6 * * *"   # daily ~08:10 Amsterdam (DST-aware on GitHub = UTC)
+    - cron: "10 6 * * *"   # daily (06:10 UTC)
   push:
     paths:
       - "reports/**"
       - "scripts/**"
+
+permissions:
+  contents: write
 
 jobs:
   build:
