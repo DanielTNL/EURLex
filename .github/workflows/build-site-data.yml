@@ -32,8 +32,8 @@ jobs:
 
       - name: Commit data
         run: |
-          git config user.name "automation"
-          git config user.email "actions@users.noreply.github.com"
-          git add docs/data/posts.json docs/data/reports.json
-          git commit -m "Build site data $(date -u +%F)" || echo "no changes"
-          git push
+            git config user.name "automation"
+            git config user.email "actions@users.noreply.github.com"
+            git add docs/data/posts.json docs/data/reports.json docs/data/audio.json
+            git commit -m "Build site data $(date -u +%F)" || echo "no changes"
+            git push
