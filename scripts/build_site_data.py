@@ -383,3 +383,39 @@ async def build():
 if __name__ == "__main__":
     asyncio.run(build())
     print("Wrote:", POSTS_JSON, REPORTS_JSON)
+
+# add near the other paths
+AUDIO_JSON = DOCS_DATA / "audio.json"
+
+# after load_cfg():
+def load_cfg():
+    ...
+    links = (cfg.get("links") or {})
+    return domains, defaults, feeds, keywords, taxonomy, caps, ranking, dedupe, tzname, links
+
+DOMAINS, DEFAULTS, FEEDS, KEYWORDS, TAXONOMY, CAPS, RANKING, DEDUPE, TZN, LINKS = load_cfg()
+
+# helper
+def file_raw_url(repo, relpath):
+    return f"https://raw.githubusercontent.com/{repo}/main/{relpath}"
+
+# new: scan for mp3s
+def scan_audio(repo:str):
+    items=[]
+    for f in ROOT.rglob("*.mp3"):
+        # skip venv/node_modules etc.
+        if any(seg in f.parts for seg in (".git","node_modules",".venv")): continue
+        rel = f.relative_to(ROOT).as_posix()
+        title = f.stem.replace("_"," ").replace("-"," ").strip()
+        date = re.search(r'(\d{4})[-_](\d{2})[-_](\d{2})', rel)
+        when = f"{date.group(1)}-{date.group(2)}-{date.group(3)}" if date else ""
+        items.append({
+            "title": title, "path": rel, "raw_url": file_raw_url(repo, rel), "date": when
+        })
+    # newest first
+    items.sort(key=lambda x: x.get("date",""), reverse=True)
+    payload = {"google_drive": LINKS.get("google_drive",""), "items": items[:50]}
+    AUDIO_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    # Write audio/links
+    scan_audio(repo)
