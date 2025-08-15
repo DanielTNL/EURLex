@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="--accent-h:221">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codex</title>
+<link rel="stylesheet" href="./assets/ui.css">
+</head>
+<body>
+<header class="site">
+  <div class="header-inner">
+    <div class="brand">Codex</div>
+    <div class="searchbar">
+      <input type="search" placeholder="Search..." aria-label="Search">
+    </div>
+    <label class="switch">
+      <input type="checkbox"> Ask AI
+    </label>
+    <div class="controls">
+      <div class="palette" aria-label="Accent palette">
+        <button class="swatch" style="background:#4f46e5" onclick="Theme.setAccent(221)" aria-label="Indigo"></button>
+        <button class="swatch" style="background:#7c3aed" onclick="Theme.setAccent(267)" aria-label="Violet"></button>
+        <button class="swatch" style="background:#14b8a6" onclick="Theme.setAccent(172)" aria-label="Teal"></button>
+        <button class="swatch" style="background:#e11d48" onclick="Theme.setAccent(347)" aria-label="Rose"></button>
+        <button class="swatch" style="background:#f59e0b" onclick="Theme.setAccent(38)" aria-label="Amber"></button>
+      </div>
+      <button class="theme-toggle" onclick="Theme.setTheme((localStorage.getItem('theme')==='dark')?'light':'dark')" aria-label="Toggle theme">Theme</button>
+    </div>
+  </div>
+  <div class="pills">
+    <button class="pill" aria-pressed="true">Sample</button>
+    <button class="pill">Tag</button>
+  </div>
+</header>
+<main>
+  <div class="cards">
+    <article class="card reveal">
+      <h3>Demo Card</h3>
+      <div class="meta">Meta info</div>
+      <p class="summary">A short summary to show styling.</p>
+      <div class="tags">
+        <span class="tag">example</span>
+        <span class="tag">demo</span>
+      </div>
+    </article>
+  </div>
+</main>
+<script src="./assets/theme.js" defer></script>
+<script type="module" src="./assets/app.js"></script>
+</body>
+</html>
