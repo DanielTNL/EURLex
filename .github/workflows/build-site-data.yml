@@ -49,23 +49,32 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
+      
           git config user.name  "automation"
           git config user.email "actions@users.noreply.github.com"
-
-          # Stage only generated artifacts
+      
+          # Stage only the generated artifacts (ignore everything else)
           git add docs/data/posts.json docs/data/reports.json docs/data/audio.json || true
-
+      
+          # If nothing changed, we're done
           if git diff --cached --quiet; then
             echo "No data changes to commit."
             exit 0
           fi
-
-          # Rebase onto the latest main to avoid non-fast-forward push errors
+      
+          # Make our index/HEAD sit on top of the latest remote main
+          # --soft keeps our staged changes; no rebase conflict and no “dirty index” error.
           git fetch origin main
-          git pull --rebase origin main
-
+          git reset --soft origin/main
+      
+          # Ensure the three files are staged after the soft reset
+          git add docs/data/posts.json docs/data/reports.json docs/data/audio.json
+      
           git commit -m "Build site data $(date -u +%F)"
-
-          # Use PAT for push (token is masked in logs)
+      
+          # Push using your PAT (masked in logs)
           git remote set-url origin https://${PAT_WORKFLOW}@github.com/${REPO}.git
           git push origin HEAD:main
+                # Use PAT for push (token is masked in logs)
+                git remote set-url origin https://${PAT_WORKFLOW}@github.com/${REPO}.git
+                git push origin HEAD:main
