@@ -9,13 +9,11 @@ on:
     paths:
       - "reports/**"
       - "scripts/**"
-      # Explicitly ignore docs/ changes so our own commit doesn't retrigger
-      - "!docs/**"
+      - "!docs/**"         # don't retrigger on our own data commit
 
 permissions:
   contents: write
 
-# Run at most one per branch, but DO NOT cancel in-progress runs.
 concurrency:
   group: build-site-data-${{ github.ref }}
   cancel-in-progress: false
@@ -43,20 +41,32 @@ jobs:
       - name: Build site data (posts.json + reports.json + audio.json)
         run: python scripts/build_site_data.py
 
-      - name: Commit data (rebase-safe)
+      # ---- rebase-safe commit using a PAT that can update workflows ----
+      - name: Commit & push data (via PAT)
+        env:
+          PAT_WORKFLOW: ${{ secrets.PAT_WORKFLOW }}
+          REPO: ${{ github.repository }}
         run: |
           set -e
-          git config user.name "automation"
+
+          git config user.name  "automation"
           git config user.email "actions@users.noreply.github.com"
 
+          # Stage only the generated data files
           git add docs/data/posts.json docs/data/reports.json docs/data/audio.json || true
+
+          # Nothing to do?
           if git diff --cached --quiet; then
             echo "No data changes to commit."
             exit 0
           fi
 
+          # Make sure we’re on top of the latest main (rebase-safe)
           git fetch origin main
-          git reset --soft origin/main
-          git add docs/data/posts.json docs/data/reports.json docs/data/audio.json
+          git pull --rebase origin main
+
           git commit -m "Build site data $(date -u +%F)"
+
+          # Push using PAT (allows workflow file to exist in history)
+          git remote set-url origin https://${PAT_WORKFLOW}@github.com/${REPO}.git
           git push origin HEAD:main
