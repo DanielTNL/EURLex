@@ -81,24 +81,33 @@
 
   <div id="notice" class="container notice" hidden></div>
 
-  <!-- 3-column layout on desktop -->
+  <!-- 3-column layout on desktop, each panel scrolls -->
   <main class="container main-3col">
     <section>
-      <h2>Live feed</h2>
-      <div id="feed" class="cards"></div>
+      <div class="section-head">
+        <h2>Live feed</h2>
+        <a class="link" href="./live.html">See all →</a>
+      </div>
+      <div class="panel scrollbox">
+        <div id="feed" class="cards"></div>
+      </div>
     </section>
 
     <section>
-      <h2>Key items</h2>
-      <ul id="keyItems" class="key-items"></ul>
+      <div class="section-head"><h2>Key items</h2></div>
+      <div class="panel scrollbox">
+        <ul id="keyItems" class="key-items"></ul>
+      </div>
     </section>
 
     <section>
-      <h2>Reports timeline</h2>
-      <div id="timeline" class="timeline"></div>
+      <div class="section-head"><h2>Reports timeline</h2></div>
+      <div class="panel scrollbox">
+        <div id="timeline" class="timeline"></div>
 
-      <h3 class="mt">Resources</h3>
-      <div id="resources" class="cards"></div>
+        <h3 class="mt">Resources</h3>
+        <div id="resources" class="cards"></div>
+      </div>
     </section>
 
     <section id="answerSection" class="span-3" hidden>
