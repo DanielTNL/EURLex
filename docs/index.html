@@ -12,21 +12,10 @@
     <div class="container header-inner">
       <div class="brand">EUR-Lex Research Feed</div>
 
-      <label class="searchbar">
+      <label class="searchbar" aria-label="Search">
         <input id="q" type="search" placeholder="Search posts & reports…" autocomplete="off" />
         <label class="ask"><input id="askAi" type="checkbox" /> <span>Ask AI</span></label>
       </label>
-
-      <div class="controls">
-        <button class="theme-toggle" id="themeBtn">Theme</button>
-        <div class="palette">
-          <button class="swatch" style="--h:221"></button>
-          <button class="swatch" style="--h:267"></button>
-          <button class="swatch" style="--h:172"></button>
-          <button class="swatch" style="--h:347"></button>
-          <button class="swatch" style="--h:38"></button>
-        </div>
-      </div>
     </div>
 
     <!-- BIG filter widget (glass) -->
@@ -42,7 +31,7 @@
 
         <div class="field">
           <label>Sources</label>
-          <div id="srcBar" class="pills scroll"></div>
+          <div id="srcBar" class="pills"><!-- static pills, no scroll --></div>
         </div>
 
         <div class="field">
