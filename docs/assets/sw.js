@@ -1,8 +1,9 @@
-const CACHE_STATIC = 'eurlex-static-v5';
+const CACHE_STATIC = 'eurlex-static-v6';
 const STATIC_ASSETS = [
   './', './index.html', './live.html',
   './assets/ui.css', './assets/theme.js', './assets/app.js', './assets/live.js', './assets/manifest.json'
 ];
+
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_STATIC).then(c=>c.addAll(STATIC_ASSETS))));
 self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
 self.addEventListener('fetch', e => {
