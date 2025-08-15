@@ -3,71 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Live feed — EUR-Lex</title>
+  <title>EUR-Lex Research Feed — Live</title>
   <link rel="manifest" href="./assets/manifest.json" />
   <link rel="stylesheet" href="./assets/ui.css" />
 </head>
 <body>
-  <header class="site glass">
-    <div class="container header-inner">
-      <a class="brand" href="./">← EUR-Lex Research Feed</a>
+  <header class="site" role="banner">
+    <div class="header-inner container">
+      <a href="./" class="brand">← EUR-Lex Research Feed</a>
       <label class="searchbar" aria-label="Search">
-        <input id="q" type="search" placeholder="Search all documents…" autocomplete="off" />
-        <label class="ask"><input id="askAi" type="checkbox" /> <span>Ask AI</span></label>
+        <input id="q" type="search" placeholder="Search all documents..." autocomplete="off" />
+        <span class="switch"><input id="askAi" type="checkbox" /> Ask AI</span>
       </label>
     </div>
 
-    <div class="container filterbar card glass">
-      <div class="row row-live">
-        <div class="field">
-          <label>Sources</label>
-          <div id="srcBar" class="pills"></div>
-        </div>
-        <div class="field">
-          <label>Tags</label>
-          <div id="tagBar" class="pills scroll"></div>
-        </div>
-        <div class="field">
-          <label>Date</label>
-          <div class="seg">
-            <label><input type="radio" name="datewin" value="7"> 7d</label>
-            <label><input type="radio" name="datewin" value="30"> 30d</label>
-            <label><input type="radio" name="datewin" value="90"> 90d</label>
-            <label><input type="radio" name="datewin" value="0" checked> All</label>
-          </div>
-        </div>
-        <div class="field right">
-          <button id="clearBtn" class="btn subtle">Clear</button>
-        </div>
+    <!-- Filters (static UI; JS fills pills) -->
+    <div class="container pills" id="srcBar" aria-label="Sources"></div>
+    <div class="container pills" id="catBar" aria-label="Categories"></div>
+    <div class="container">
+      <div class="pills" id="tagBar" aria-label="Tags"></div>
+      <div class="pills" aria-label="Date window">
+        <label class="pill"><input type="radio" name="datewin" value="7"> 7d</label>
+        <label class="pill"><input type="radio" name="datewin" value="30"> 30d</label>
+        <label class="pill"><input type="radio" name="datewin" value="90"> 90d</label>
+        <label class="pill"><input type="radio" name="datewin" value="0" checked> All</label>
+        <button id="clearBtn" class="pill" style="cursor:pointer">Clear</button>
       </div>
     </div>
   </header>
 
-  <div id="notice" class="container notice" hidden></div>
-
   <main class="container">
-    <section class="card glass">
+    <section>
       <h2>Resources</h2>
       <div id="resources" class="cards"></div>
     </section>
 
-    <section class="mt">
+    <section>
       <h2>All documents</h2>
-      <div id="feed" class="cards"></div>
+      <div id="allList" class="cards"></div>
+      <div style="display:flex; justify-content:center; margin:16px 0;">
+        <button id="loadMore" class="pill" style="cursor:pointer">Load more</button>
+      </div>
     </section>
 
-    <section id="answerSection" hidden class="mt">
-      <h2>AI answer</h2>
-      <div id="answer" class="card glass"></div>
-      <h3>Top sources</h3>
-      <div id="aiResults" class="cards"></div>
-    </section>
+    <footer><small>Last synced: <span id="lastSynced">–</span></small></footer>
   </main>
 
   <script src="./assets/theme.js" defer></script>
-  <script type="module" src="./assets/live.js"></script>
-</body>
-</html>
   <script type="module" src="./assets/live.js"></script>
   <script type="module" src="./assets/chat.js"></script>
 </body>
