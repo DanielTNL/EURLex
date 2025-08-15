@@ -11,6 +11,11 @@ const els = {
 
 let POSTS=[], TAGS=new Map(), selectedTags=new Set(), selectedSources=new Set(), dateWindowDays=0;
 
+// keep chat aware of the current filters
+window.FeedFilters = {
+  selectedTags, selectedSources, selectedCats, dateWindowDays
+};
+
 const esc = s => (s||'').replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
 const fmt = d => new Date(d).toISOString().slice(0,10);
 const inWin = iso => !dateWindowDays || !iso || (new Date(iso).getTime() >= Date.now()-dateWindowDays*864e5);
