@@ -1,8 +1,25 @@
 (() => {
-  const ACCENTS = [ {name:'indigo', hue:221}, {name:'violet', hue:267}, {name:'teal', hue:172}, {name:'rose', hue:347}, {name:'amber', hue:38} ];
-  const LS = window.localStorage;
-  function setAccent(h){ document.documentElement.style.setProperty('--accent-h', h); LS.setItem('accentHue', String(h)); window.dispatchEvent(new CustomEvent('themechange',{detail:{type:'accent',hue:h}})); }
-  function setTheme(mode){ LS.setItem('theme', mode); document.documentElement.removeAttribute('data-theme'); if(mode==='dark') document.documentElement.setAttribute('data-theme','dark'); if(mode==='light') document.documentElement.setAttribute('data-theme','light'); window.dispatchEvent(new CustomEvent('themechange',{detail:{type:'mode',mode}})); }
-  const savedHue = Number(LS.getItem('accentHue')); setAccent(isNaN(savedHue)? ACCENTS[new Date().getDay()%ACCENTS.length].hue : savedHue); setTheme(LS.getItem('theme')||'auto');
-  window.Theme = { ACCENTS, setAccent, setTheme };
+  const LS = localStorage;
+  const savedHue = Number(LS.getItem('accentHue'));
+  document.documentElement.style.setProperty('--h', isNaN(savedHue) ? 221 : savedHue);
+
+  function setAccent(h){
+    document.documentElement.style.setProperty('--h', h);
+    LS.setItem('accentHue', String(h));
+  }
+  function setTheme(mode){
+    if(mode==='light') document.documentElement.setAttribute('data-theme','light');
+    else document.documentElement.removeAttribute('data-theme');
+    LS.setItem('theme', mode);
+  }
+  const startTheme = LS.getItem('theme') || 'auto';
+  setTheme(startTheme);
+
+  document.getElementById('themeBtn')?.addEventListener('click', () => {
+    const cur = LS.getItem('theme') || 'auto';
+    setTheme(cur==='light' ? 'auto' : 'light');
+  });
+  document.querySelectorAll('.swatch').forEach(b => {
+    b.addEventListener('click', () => setAccent(Number(b.style.getPropertyValue('--h'))));
+  });
 })();
