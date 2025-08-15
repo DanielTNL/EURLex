@@ -7,7 +7,7 @@
   --text:#e7e9ee; --muted:#9aa3af; --border:#1c2330;
   --card:rgba(13,18,28,.55); --surface:rgba(17,24,39,.45);
   --glass-blur:14px;
-  --above-h: 320px; /* header + filter height used for scroll panels */
+  --above-h: 330px; /* header + filter height used for scroll panels */
 }
 @media (prefers-color-scheme: light){
   :root{ --bg:#f7fafc; --text:#0e1320; --muted:#6b7280; --border:#e5e7eb; --card:rgba(255,255,255,.66); --surface:rgba(255,255,255,.54) }
@@ -18,7 +18,7 @@
 html,body{height:100%}
 body{
   margin:0; font:15px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto; color:var(--text);
-  /* Single top fade + background image; the gradient does NOT repeat */
+  /* Single top fade; no repeating blue bands */
   background:
     linear-gradient(180deg, color-mix(in oklab, var(--accent) 16%, transparent) 0%, transparent 360px) no-repeat fixed,
     url('./bg.jpg') center/cover no-repeat fixed,
@@ -33,17 +33,13 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 .glass{backdrop-filter:blur(var(--glass-blur)) saturate(120%); -webkit-backdrop-filter:blur(var(--glass-blur)) saturate(120%)}
 .card{background:var(--card); border:1px solid color-mix(in oklab, var(--border) 60%, #fff 0%); border-radius:var(--r); box-shadow:var(--shadow); padding:16px}
 
-/* header + search */
+/* header + search (sticky) */
 header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--border)}
 .header-inner{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .brand{font-weight:800;font-size:24px}
 .searchbar{flex:1;display:flex;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--border);padding:10px 14px;border-radius:999px}
 .searchbar input{flex:1;border:0;background:transparent;color:var(--text);font-size:15px}
 .ask{display:flex;align-items:center;gap:6px;font-size:14px}
-.controls{display:flex;align-items:center;gap:10px}
-.theme-toggle{border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:8px 12px;cursor:pointer}
-.palette{display:flex;gap:8px}
-.swatch{width:18px;height:18px;border-radius:999px;border:1px solid var(--border);background:hsl(var(--h),85%,56%);cursor:pointer}
 
 /* BIG filter widget */
 .filterbar.card{margin-top:12px}
@@ -55,7 +51,7 @@ header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--borde
 .btn{background:var(--accent);color:#fff;border:0;border-radius:14px;padding:10px 16px;cursor:pointer;box-shadow:var(--shadow)}
 .btn.subtle{background:var(--surface);color:var(--text);border:1px solid var(--border)}
 .pills{display:flex;gap:8px;flex-wrap:wrap}
-.pills.scroll{max-height:88px;overflow:auto}
+.pills.scroll{max-height:88px;overflow:auto}  /* used only for Tags, not Sources/Categories */
 .pill{padding:7px 12px;background:var(--surface);border:1px solid var(--border);border-radius:999px;font-size:12px;cursor:pointer;white-space:nowrap}
 .pill[aria-pressed="true"]{background:color-mix(in oklab,var(--accent) 16%, #fff);border-color:var(--accent)}
 
@@ -71,10 +67,9 @@ header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--borde
 .panel{background:var(--card); border:1px solid var(--border); border-radius:var(--r); box-shadow:var(--shadow); padding:8px}
 .scrollbox{max-height:calc(100svh - var(--above-h)); overflow:auto}
 
-/* cards (compact) */
+/* cards (compact, no left stripe) */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .card.item{position:relative;padding:14px}
-/* remove the blue accent stripe entirely */
 .card.item::before{display:none}
 .card h3{margin:0 0 6px 0;font-size:16px;line-height:1.3}
 .card h3 a{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
