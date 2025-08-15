@@ -1,1 +1,25 @@
-
+domains:
+  eur-lex.europa.eu:
+    source: EUR-Lex
+    tags: [EU, law, EUR-Lex]
+  esma.europa.eu:
+    source: ESMA News
+    tags: [EU, ESMA, regulation]
+  ec.europa.eu:
+    source: European Commission
+    tags: [EU, Commission]
+  commission.europa.eu:
+    source: European Commission
+    tags: [EU, Commission]
+  eiopa.europa.eu:
+    source: EIOPA
+    tags: [EU, EIOPA, regulation]
+  eba.europa.eu:
+    source: EBA
+    tags: [EU, EBA, regulation]
+  europa.eu:
+    source: EU (Europa)
+    tags: [EU]
+defaults:
+  source: External
+  tags: [external]
