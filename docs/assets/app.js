@@ -1,5 +1,5 @@
-// Set this in the console after Vercel deploy: localStorage.setItem('API_BASE','https://<your-vercel>.vercel.app')
-const API_BASE = localStorage.getItem('API_BASE') || '';
+// Use localStorage override if present, otherwise fallback to your Vercel base
+const API_BASE = localStorage.getItem('API_BASE') || 'https://<your-vercel>.vercel.app';
 
 let POSTS = [], REPORTS = [], AUDIO = { google_drive:"", items:[] };
 let TAGS = new Map(), selectedTags = new Set(), selectedSources = new Set(), selectedCats = new Set();
