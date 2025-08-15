@@ -7,6 +7,7 @@
   --text:#e7e9ee; --muted:#9aa3af; --border:#1c2330;
   --card:rgba(13,18,28,.55); --surface:rgba(17,24,39,.45);
   --glass-blur:14px;
+  --above-h: 320px; /* header + filter height used for scroll panels */
 }
 @media (prefers-color-scheme: light){
   :root{ --bg:#f7fafc; --text:#0e1320; --muted:#6b7280; --border:#e5e7eb; --card:rgba(255,255,255,.66); --surface:rgba(255,255,255,.54) }
@@ -16,10 +17,15 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-  margin:0; font:15px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto;
-  color:var(--text);
-  background:linear-gradient(180deg, color-mix(in oklab, var(--accent) 10%, var(--bg)), var(--bg) 33%), url('./bg.jpg') center/cover no-repeat fixed;
+  margin:0; font:15px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto; color:var(--text);
+  /* Single top fade + background image; the gradient does NOT repeat */
+  background:
+    linear-gradient(180deg, color-mix(in oklab, var(--accent) 16%, transparent) 0%, transparent 360px) no-repeat fixed,
+    url('./bg.jpg') center/cover no-repeat fixed,
+    var(--bg);
+  background-size: 100% 360px, cover, auto;
 }
+
 .container{max-width:1220px;margin:0 auto;padding:16px}
 a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
 
@@ -40,7 +46,7 @@ header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--borde
 .swatch{width:18px;height:18px;border-radius:999px;border:1px solid var(--border);background:hsl(var(--h),85%,56%);cursor:pointer}
 
 /* BIG filter widget */
-.filterbar{margin-top:12px}
+.filterbar.card{margin-top:12px}
 .row{display:grid;grid-template-columns:1fr 2fr 2fr 1fr 2fr auto;gap:12px;align-items:center}
 .field label{font-size:12px;color:var(--muted);display:block;margin-bottom:6px}
 .seg{display:flex;gap:8px;flex-wrap:wrap}
@@ -49,25 +55,34 @@ header.site{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--borde
 .btn{background:var(--accent);color:#fff;border:0;border-radius:14px;padding:10px 16px;cursor:pointer;box-shadow:var(--shadow)}
 .btn.subtle{background:var(--surface);color:var(--text);border:1px solid var(--border)}
 .pills{display:flex;gap:8px;flex-wrap:wrap}
-.pills.scroll{max-height:80px;overflow:auto}
+.pills.scroll{max-height:88px;overflow:auto}
 .pill{padding:7px 12px;background:var(--surface);border:1px solid var(--border);border-radius:999px;font-size:12px;cursor:pointer;white-space:nowrap}
 .pill[aria-pressed="true"]{background:color-mix(in oklab,var(--accent) 16%, #fff);border-color:var(--accent)}
 
-/* 3-column main */
+/* 3-column main + independent scroll panels */
 .main-3col{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px}
 .main-3col .span-3{grid-column:1/-1}
 @media (max-width:1100px){ .main-3col{grid-template-columns:1fr 1fr} }
 @media (max-width:720px){ .main-3col{grid-template-columns:1fr} }
 
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.link{background:var(--surface);border:1px solid var(--border);padding:8px 12px;border-radius:999px}
+
+.panel{background:var(--card); border:1px solid var(--border); border-radius:var(--r); box-shadow:var(--shadow); padding:8px}
+.scrollbox{max-height:calc(100svh - var(--above-h)); overflow:auto}
+
+/* cards (compact) */
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .card.item{position:relative;padding:14px}
-.card.item::before{content:"";position:absolute;left:-1px;top:-1px;bottom:-1px;width:5px;border-radius:20px;background:linear-gradient(180deg,var(--accent),transparent 60%);opacity:.9}
+/* remove the blue accent stripe entirely */
+.card.item::before{display:none}
 .card h3{margin:0 0 6px 0;font-size:16px;line-height:1.3}
 .card h3 a{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .meta{color:var(--muted);font-size:12px;margin-bottom:6px}
 .summary{font-size:13px}
 .tag{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--border);margin:4px 6px 0 0}
 
+/* key items & timeline */
 .key-items{list-style:disc;padding-left:20px}
 .timeline{max-width:100%}
 .tl-row{display:grid;grid-template-columns:110px 1fr;gap:10px;padding:10px 0;border-bottom:1px dashed var(--border)}
