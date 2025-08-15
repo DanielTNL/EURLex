@@ -81,8 +81,12 @@ const card = p => `<article class="card item">
   <div>${(p.tags||[]).slice(0,6).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>
 </article>`;
 
-function renderFeed(){ const arr = POSTS.filter(p=>passes(p,false)); els.feed.innerHTML = arr.length ? arr.map(card).join('') : '<p>No items match.</p>'; }
-
+function renderFeed(){
+  let items = POSTS.filter(p=>passesFilters(p,false));
+  items.sort((a,b)=> new Date(b.added||b.date) - new Date(a.added||a.date));
+  items = items.slice(0, 10); // <= show only the latest 10 on the homepage
+  els.feed.innerHTML = items.length ? items.map(cardForItem).join('') : '<p>No items match.</p>';
+}
 function renderKeyItems(){
   const list=[]; for(const r of REPORTS){ for(const k of (r.key_items||[])){ list.push({text:k, tags:r.tags||[], date:r.date, url:r.url_html||'#'}); } }
   const arr = list.filter(x => passes({title:x.text, summary:'', tags:x.tags, date:x.date}, true));
