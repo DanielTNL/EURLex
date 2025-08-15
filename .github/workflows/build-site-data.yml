@@ -1,27 +1,71 @@
-- name: Commit & push data (via PAT)
-  env:
-    PAT_WORKFLOW: ${{ secrets.PAT_WORKFLOW }}
-    REPO: ${{ github.repository }}
-  run: |
-    set -e
-    git config user.name  "automation"
-    git config user.email "actions@users.noreply.github.com"
+name: "EUR-Lex — Build site data"
 
-    # Stage only generated files
-    git add docs/data/posts.json docs/data/reports.json docs/data/audio.json || true
+on:
+  workflow_dispatch: {}          # <<< gives you the 'Run workflow' button
+  schedule:
+    - cron: "10 6 * * *"         # daily 06:10 UTC
+  push:
+    branches: [ main ]
+    paths:
+      - "reports/**"
+      - "scripts/**"
+      - "!docs/**"               # don't retrigger on our own data commit
 
-    # Nothing to commit?
-    if git diff --cached --quiet; then
-      echo "No data changes to commit."
-      exit 0
-    fi
+permissions:
+  contents: write
 
-    # Rebase-safe: stay on top of the latest main
-    git fetch origin main
-    git pull --rebase origin main
+concurrency:
+  group: build-site-data-${{ github.ref }}
+  cancel-in-progress: false
 
-    git commit -m "Build site data $(date -u +%F)"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
 
-    # Push using PAT
-    git remote set-url origin https://${PAT_WORKFLOW}@github.com/${REPO}.git
-    git push origin HEAD:main
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Build site data (posts.json + reports.json + audio.json)
+        run: python scripts/build_site_data.py
+
+      # Rebase-safe commit using your PAT (so workflow updates are allowed)
+      - name: Commit & push data (via PAT)
+        env:
+          PAT_WORKFLOW: ${{ secrets.PAT_WORKFLOW }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git config user.name  "automation"
+          git config user.email "actions@users.noreply.github.com"
+
+          # Stage only generated artifacts
+          git add docs/data/posts.json docs/data/reports.json docs/data/audio.json || true
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          # Rebase onto the latest main to avoid non-fast-forward push errors
+          git fetch origin main
+          git pull --rebase origin main
+
+          git commit -m "Build site data $(date -u +%F)"
+
+          # Use PAT for push (token is masked in logs)
+          git remote set-url origin https://${PAT_WORKFLOW}@github.com/${REPO}.git
+          git push origin HEAD:main
