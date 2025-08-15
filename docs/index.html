@@ -21,6 +21,7 @@
     <!-- BIG filter widget (glass) -->
     <div class="container filterbar glass card">
       <div class="row">
+        <!-- Type -->
         <div class="field">
           <label>Type</label>
           <div class="seg">
@@ -29,22 +30,19 @@
           </div>
         </div>
 
+        <!-- Sources (NEW) -->
+        <div class="field">
+          <label>Sources</label>
+          <div id="srcBar" class="pills"></div>
+        </div>
+
+        <!-- Categories (dynamic; JS fills) -->
         <div class="field">
           <label>Categories</label>
           <div id="catBar" class="pills"></div>
         </div>
 
-        <div class="field">
-          <label>Categories</label>
-          <div id="catBar" class="pills">
-            <button class="pill" data-cat="CMU & Financial Markets">CMU & Financial Markets</button>
-            <button class="pill" data-cat="AI & Digital">AI & Digital</button>
-            <button class="pill" data-cat="Defence & Security">Defence & Security</button>
-            <button class="pill" data-cat="De-risking & Investment">De-risking & Investment</button>
-            <button class="pill" data-cat="Other">Other</button>
-          </div>
-        </div>
-
+        <!-- Date -->
         <div class="field">
           <label>Date</label>
           <div class="seg">
@@ -55,11 +53,13 @@
           </div>
         </div>
 
+        <!-- Tags -->
         <div class="field">
           <label>Tags</label>
           <div id="pillbar" class="pills scroll"></div>
         </div>
 
+        <!-- Actions -->
         <div class="field right">
           <button id="clearBtn" class="btn subtle">Clear</button>
           <button id="refreshBtn" class="btn">Refresh</button>
