@@ -62,7 +62,6 @@ def score_text(qtokens, text):
     text = (text or "").lower()
     score = 0
     for t in qtokens:
-        # whole-word-ish hit
         if re.search(rf"\b{re.escape(t)}\b", text):
             score += 1
     return score
@@ -80,28 +79,22 @@ def categories_for(text):
     return cats
 
 def clamp_posts_by_caps(items):
-    # group by first category
     buckets = {}
     for it in items:
         key = (it.get("categories") or ["Other"])[0]
         buckets.setdefault(key, []).append(it)
 
-    # sort each bucket by (score desc, date desc)
     for k in buckets:
         buckets[k].sort(key=lambda x: (x.get("score",0), x.get("ts",0)), reverse=True)
         buckets[k] = buckets[k][:CAPS.get("max_per_category",20)]
 
-    # ensure min_per_category if possible
     min_per = CAPS.get("min_per_category", 5)
     selected = []
-    # first pass: take up to min_per from each (if available)
     for k, arr in buckets.items():
         selected.extend(arr[:min_per])
 
-    # fill remaining up to max_total
     max_total = CAPS.get("max_total", 50)
     if len(selected) < max_total:
-        # collect leftovers
         leftovers = []
         for k, arr in buckets.items():
             leftovers.extend(arr[min_per:])
@@ -109,7 +102,6 @@ def clamp_posts_by_caps(items):
         need = max_total - len(selected)
         selected.extend(leftovers[:need])
 
-    # final slice to max_total and dedupe by id while preserving order
     seen = set()
     uniq = []
     for it in selected:
@@ -128,13 +120,12 @@ def parse_date(d):
         return None
 
 async def fetch_title_and_summary(client: httpx.AsyncClient, url: str):
-    # Try trafilatura first (best text)
+    # Try trafilatura first
     try:
         downloaded = fetch_url(url)
         if downloaded:
             extracted = trafi_extract(downloaded, include_comments=False, include_links=False)
             if extracted:
-                # quick fetch for <title>
                 title = ""
                 try:
                     r = await client.get(url, timeout=20)
@@ -145,7 +136,6 @@ async def fetch_title_and_summary(client: httpx.AsyncClient, url: str):
                 except Exception:
                     pass
                 if not title:
-                    # fallback to first line
                     first_line = extracted.strip().splitlines()[0][:140]
                     title = first_line if len(first_line) > 10 else url
                 summary = re.sub(r"\s+", " ", extracted.strip())
@@ -155,7 +145,7 @@ async def fetch_title_and_summary(client: httpx.AsyncClient, url: str):
     except Exception:
         pass
 
-    # Fallback: plain fetch + <title> + text
+    # Fallback
     try:
         r = await client.get(url, timeout=20)
         if r.status_code == 200:
@@ -246,9 +236,9 @@ def make_report_entry(path: pathlib.Path, title: str, abstract: str, key_items: 
         "sections": []
     }
 
-def load_seen(path):
+def load_seen():
     try:
-        p = ROOT / (DEDUP.get("path") or "state/seen.json")
+        p = ROOT / (DEDUPE.get("path") or "state/seen.json")
         p.parent.mkdir(parents=True, exist_ok=True)
         if p.exists():
             return {x["id"]:x for x in json.loads(p.read_text(encoding="utf-8"))}
@@ -258,7 +248,7 @@ def load_seen(path):
 
 def save_seen(seen):
     try:
-        p = ROOT / (DEDUP.get("path") or "state/seen.json")
+        p = ROOT / (DEDUPE.get("path") or "state/seen.json")
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps(list(seen.values()), ensure_ascii=False, indent=2), encoding="utf-8")
     except Exception:
@@ -270,7 +260,6 @@ async def build():
     max_age_days = RANKING.get("max_age_days", 14)
     min_score = RANKING.get("min_score", 1)
 
-    # 1) Start from prior posts to preserve history
     old_posts = []
     if POSTS_JSON.exists():
         try:
@@ -278,10 +267,9 @@ async def build():
         except Exception:
             old_posts = []
 
-    # Track seen (for optional future logic)
-    seen = load_seen(None)
+    seen = load_seen()
 
-    # 2) Ingest FEEDS
+    # 1) FEEDS
     feed_items = []
     for url in FEEDS:
         try:
@@ -291,7 +279,6 @@ async def build():
                 if not link or not link.startswith("http"): continue
                 title = e.get("title","").strip() or link
                 summary = BeautifulSoup((e.get("summary") or e.get("description") or ""), "html.parser").get_text(" ").strip()
-                # date
                 d = None
                 for key in ("published", "updated", "created"):
                     if e.get(key):
@@ -307,13 +294,10 @@ async def build():
                 age_days = (now - (d if d.tzinfo else d.replace(tzinfo=tz.UTC))).days
                 if age_days > max_age_days:
                     continue
-
-                # score by keywords
                 text_for_score = f"{title} {summary}"
                 s = score_text(KEYWORDS, text_for_score)
                 if s < min_score:
                     continue
-
                 cats = categories_for(text_for_score)
                 src_name, base_tags = label_for_url(link)
                 pid = sha16(link)
@@ -324,7 +308,7 @@ async def build():
                     "url": link,
                     "title": title,
                     "tags": list(set(base_tags + cats)),
-                    "added": (now.isoformat()),
+                    "added": now.isoformat(),
                     "summary": summary[:SUMMARY_CHARS] + ("…" if len(summary) > SUMMARY_CHARS else ""),
                     "score": s,
                     "ts": ts,
@@ -333,7 +317,7 @@ async def build():
         except Exception as ex:
             print(f"[WARN] feed error {url}: {ex}")
 
-    # 3) Ingest REPORTS and extract their links
+    # 2) REPORTS + links inside them
     reports = []
     report_links = []
     for d in REPORTS_DIRS:
@@ -344,18 +328,14 @@ async def build():
                 raw, text, urls = read_report_text_and_urls(f)
                 title, abstract, key_items = guess_title_abstract_keyitems(text)
                 reports.append(make_report_entry(f, title, abstract, key_items, repo))
-                # take many links but not infinite
-                for u in urls[:MAX_LINKS_PER_REPORT]:
-                    report_links.append(u)
+                report_links.extend(urls[:MAX_LINKS_PER_REPORT])
             except Exception as ex:
                 print(f"[WARN] report parse {f}: {ex}")
 
-    # 4) Fetch titles/summaries for report links (async)
+    # 3) Fetch titles/summaries for report links
     report_items = []
     async with httpx.AsyncClient(headers={"User-Agent":"eurlex-site-builder/1.0"}) as client:
-        tasks = []
-        for u in report_links:
-            tasks.append(fetch_title_and_summary(client, u))
+        tasks = [fetch_title_and_summary(client, u) for u in report_links]
         results = await asyncio.gather(*tasks, return_exceptions=True)
 
     now_iso = dt.datetime.utcnow().isoformat()+"Z"
@@ -380,32 +360,25 @@ async def build():
             "categories": cats
         })
 
-    # 5) Merge: old_posts + feed_items + report_items → dedupe by id
+    # 4) Merge + rank + cap
     merged = []
     seenids = set()
-    # keep old first to preserve history, then add new
     for arr in (old_posts, feed_items, report_items):
         for p in arr:
             if p["id"] in seenids: continue
             merged.append(p)
             seenids.add(p["id"])
-
-    # 6) Rank and cap
-    # primary: score desc, secondary: ts desc
     merged.sort(key=lambda x: (x.get("score",0), x.get("ts",0)), reverse=True)
     final_posts = clamp_posts_by_caps(merged)
 
-    # 7) Sort reports newest first
     reports.sort(key=lambda r: r["date"], reverse=True)
 
-    # 8) Write outputs
     POSTS_JSON.write_text(json.dumps(final_posts, ensure_ascii=False, indent=2), encoding="utf-8")
     REPORTS_JSON.write_text(json.dumps(reports, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 9) Save dedupe state (optional future use)
     for p in final_posts:
         seen[p["id"]] = {"id": p["id"], "url": p["url"], "ts": p.get("ts")}
-    # save_seen(seen)  # uncomment if you want a persistent seen log
+    # save_seen(seen)  # optional
 
 if __name__ == "__main__":
     asyncio.run(build())
