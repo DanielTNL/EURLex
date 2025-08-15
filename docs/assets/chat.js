@@ -1,7 +1,5 @@
-// docs/assets/chat.js
-// Slide-out chat that talks to your Vercel API and uses the current page filters.
-// Reads API_BASE from localStorage (same as app.js/live.js).
-const API_BASE = localStorage.getItem('API_BASE') || '';
+// Use localStorage override if present, otherwise fallback to your Vercel base
+const API_BASE = localStorage.getItem('API_BASE') || 'https://<your-vercel>.vercel.app';
 
 const qs = sel => document.querySelector(sel);
 const $$ = sel => Array.from(document.querySelectorAll(sel));
