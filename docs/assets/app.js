@@ -5,6 +5,11 @@ let POSTS = [], REPORTS = [], AUDIO = { google_drive:"", items:[] };
 let TAGS = new Map(), selectedTags = new Set(), selectedSources = new Set(), selectedCats = new Set();
 let typePosts = true, typeReports = true, dateWindowDays = 0; // default: All
 
+// keep chat aware of the current filters
+window.FeedFilters = {
+  selectedTags, selectedSources, selectedCats, dateWindowDays
+};
+
 const $ = id => document.getElementById(id);
 const els = {
   q: $('q'), askAi: $('askAi'), feed: $('feed'), keyItems: $('keyItems'),
