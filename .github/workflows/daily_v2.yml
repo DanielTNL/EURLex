@@ -66,7 +66,7 @@ jobs:
           fi
 
       # 6) Publish site bridge (v2 -> legacy)
-      - name: Publish site bridge (v2 → legacy)
+      - name: Publish site bridge (v2 -> legacy)
         run: |
           python workers/publish_site_bridge.py
 
@@ -109,27 +109,12 @@ jobs:
           git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]" || echo "No changes to commit"
           git push || true
 
-      # 10) Read revalidate URL/paths from config_v2.yaml into env
-      - name: Extract revalidate settings
-        run: |
-          python - <<'PY'
-import os, json, yaml
-cfg = yaml.safe_load(open('config_v2.yaml'))
-site = (cfg or {}).get('site') or {}
-url = (site.get('revalidate_url') or '').strip()
-paths = site.get('revalidate_paths', ['/', '/live'])
-with open(os.environ['GITHUB_ENV'], 'a') as f:
-    f.write(f"REVALIDATE_URL={url}\n")
-    f.write(f"REVALIDATE_PATHS={json.dumps(paths)}\n")
-print("REVALIDATE_URL:", url)
-print("REVALIDATE_PATHS:", paths)
-PY
-
-      # 11) Revalidate website
+      # 10) Revalidate website (simple & safe; no YAML-quote traps)
       - name: Revalidate website
-        if: ${{ env.REVALIDATE_URL != '' }}
         run: |
-          echo "POST ${REVALIDATE_URL}"
-          curl -sS -X POST "${REVALIDATE_URL}" \
+          REVALIDATE_URL="https://YOUR_DOMAIN_HERE/api/revalidate?secret=694yI9Tf8as-f4pMkqpPM28FArtIuEzkwmS5GCcVLAg"
+          echo '{"paths":["/","/live"]}' > payload.json
+          echo "POST $REVALIDATE_URL"
+          curl -sS -X POST "$REVALIDATE_URL" \
             -H "Content-Type: application/json" \
-            -d "{\"paths\": ${REVALIDATE_PATHS:-[\"/\",\"/live\"]}}"
+            --data-binary @payload.json || true
