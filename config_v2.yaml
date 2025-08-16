@@ -7,3 +7,6 @@ rate_limits:
   max_concurrency: 4
 render:
   enable_playwright: false
+site:
+  revalidate_url: "https://YOUR-DOMAIN.com/api/revalidate?secret=XYZ"  # or your deploy hook URL
+  revalidate_paths: ["/", "/live"]
