@@ -3,6 +3,10 @@ name: Pipeline v2 (manual)
 on:
   workflow_dispatch:
 
+# Nodig om outputs terug te kunnen pushen naar de repo
+permissions:
+  contents: write
+
 jobs:
   dryrun:
     runs-on: ubuntu-latest
@@ -13,15 +17,59 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Best-effort install; won't fail the workflow if requirements.txt is missing or incomplete
+      # Best-effort install; faalt niet als er iets ontbreekt
       - name: Install deps (best-effort)
-        run: pip install -r requirements.txt || true
+        run: |
+          python -V
+          pip install -r requirements.txt || true
 
-      - name: Weekly discover (stub)
+      - name: Weekly discover
         run: python workers/weekly_discover.py --window 7d --sources sources_v2.yaml --config config_v2.yaml
 
-      - name: Process documents (stub)
-        run: python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml || true
+      - name: Process documents
+        run: python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml
 
-      - name: Build timeline (stub)
+      - name: Build timeline
         run: python workers/build_timeline.py --window 7d --config config_v2.yaml
+
+      # >>> Nieuw: toon wat er is weggeschreven (handig voor snelle controle)
+      - name: Show outputs (ls + head)
+        run: |
+          echo "== Directory tree =="
+          ls -lah
+          echo "== outputs/docs =="
+          ls -lah outputs/docs || true
+          for f in outputs/docs/*.ndjson; do
+            echo "---- $f (first 3 lines) ----"
+            head -n 3 "$f" || true
+          done
+          echo "== outputs/timelines =="
+          ls -lah outputs/timelines || true
+          for f in outputs/timelines/*.json; do
+            echo "---- $f (first 40 lines) ----"
+            head -n 40 "$f" || true
+          done
+          echo "== state =="
+          ls -lah state || true
+
+      # >>> Nieuw: upload resultaat als artifact (downloadbaar per run)
+      - name: Upload data artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-v2-data
+          path: |
+            outputs/docs/*.ndjson
+            outputs/timelines/*.json
+            state/latest_discovery.json
+          if-no-files-found: warn
+
+      # >>> Nieuw: commit outputs terug naar de repo (optioneel)
+      - name: Commit outputs back to repo (optional)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add outputs/docs outputs/timelines state/latest_discovery.json || true
+          git commit -m "pipeline v2 data $(date -u +'%F %T') [manual]" || echo "No changes to commit"
+          git push
