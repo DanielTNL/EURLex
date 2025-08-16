@@ -3,11 +3,20 @@ sources:
     type: html_list
     base_url: https://investeu.europa.eu/news
     discover:
-      list_selectors: ["main article a[href]"]
-      date_selectors: ["time[datetime]"]
-      pagination: { max_pages: 1 }
+      list_selectors:
+        - "main article a[href]"
+        - "ul.news-list li a[href]"
+        - "div.view-content a[href]"
+      date_selectors:
+        - "time[datetime]"
+        - "meta[property='article:published_time']::attr(content)"
+        - "meta[name='date']::attr(content)"
+      pagination:
+        next_selector: "a[rel='next'], a.next, button.load-more"
+        max_pages: 2
       include_url_patterns: ["news","press","stories"]
+      exclude_url_patterns: ["#","/tag/","/category/","/taxonomy/"]
     parsing:
-      title_selectors: ["h1"]
-      pdf_link_selectors: ["a[href$='.pdf']"]
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']","a[href*='download']"]
       prefer_updated_date: false
