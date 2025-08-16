@@ -30,4 +30,6 @@ eurlex_digest/
 4. *(Alternative mail service)* To send through Mailgun instead of Gmail, set `MAIL_SERVICE` to `mailgun` in `config.yaml` and add the secrets `MAILGUN_API_KEY`, `MAILGUN_DOMAIN` and `MAILGUN_FROM`/`MAILGUN_TO` as appropriate.
 5. **Push to GitHub**.  The daily workflow will run automatically at the scheduled time (default 07:00 UTC).  You can also trigger it manually from the **Actions** tab.
 
-Refer to the top‑level answer for a detailed explanation of each step and troubleshooting advice.
+## Adding new sources
+
+To scrape additional websites, define them in [`sources_v2.yaml`](sources_v2.yaml). See [docs/adding_sources.md](docs/adding_sources.md) for details on the available keys such as `list_selectors`, `date_selectors`, and pagination.
