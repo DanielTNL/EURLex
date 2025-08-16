@@ -93,6 +93,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/docs outputs/timelines reports/daily docs/digests docs/data || true
+          git add outputs/docs outputs/timelines reports/daily docs/digests docs/data docs/site docs/*.json || true
           git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]" || echo "No changes to commit"
           git push
