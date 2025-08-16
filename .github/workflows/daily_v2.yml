@@ -32,20 +32,25 @@ jobs:
           pip install -r requirements.txt || true
           pip install requests python-dateutil beautifulsoup4 lxml pyyaml orjson feedparser html5lib || true
 
-      # 1) Discover last 24h (tolerant weekly_discover.py)
+      # 1) Discover last 24h (capture exit code instead of continue-on-error)
       - name: Daily discover (last 24h)
         id: discover
-        continue-on-error: true
         run: |
+          set +e
           if [ -f sources_v2.yaml ]; then
             python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml
+            rc=$?
           else
             python workers/weekly_discover.py --window 1d --config config_v2.yaml
+            rc=$?
           fi
+          echo "DISCOVER_RC=$rc" >> "$GITHUB_ENV"
+          # don't fail the job here; downstream step decides based on DISCOVER_RC
+          exit 0
 
       # 1b) Fallback only if discover failed
-      - name: Fallback: write empty discovery
-        if: ${{ steps.discover.outcome != 'success' }}
+      - name: "Fallback: write empty discovery"
+        if: ${{ env.DISCOVER_RC != '0' }}
         shell: python
         run: |
           import os, json
@@ -136,7 +141,7 @@ jobs:
           git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]" || echo "No changes to commit"
           git push || true
 
-      # 10) Warm GitHub Pages (no revalidate endpoint on Pages)
+      # 10) Warm GitHub Pages (Pages has no /api/revalidate)
       - name: Warm GitHub Pages
         run: |
           ROOT_URL="https://danieltnl.github.io/EURLex/"
