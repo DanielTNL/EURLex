@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-# Bridge: publiceer v2-uitvoer naar paden die de site leest.
-# Schrijft o.a. docs/site/live.json, key-items.json, reports_timeline.json, digest_latest.json.
+# Bridge: neem v2-uitvoer en publiceer naar paden die de site leest.
+# Schrijft naar BEIDE plekken:
+#  - docs/site/live.json, key-items.json, reports_timeline.json, digest_latest.json
+#  - docs/live.json,    key-items.json, reports_timeline.json, digest_latest.json
+# Behoudt ook docs/data/timeline-latest.json (v2).
 
 import os, json, glob
 from datetime import datetime, timedelta, timezone
 from dateutil import parser as dtparse
 
+ROOT_DIR = "docs"
 SITE_DIR = "docs/site"
 DATA_DIR = "docs/data"
 NDJSON_GLOB = "outputs/docs/*.ndjson"
@@ -36,6 +40,7 @@ SOURCE_LABELS = {
 MAJOR_PROGRAMMES = {"InvestEU","EIB","EIF","EDF","ESMA"}
 
 def ensure_dirs():
+    os.makedirs(ROOT_DIR, exist_ok=True)
     os.makedirs(SITE_DIR, exist_ok=True)
     os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -43,8 +48,7 @@ def parse_dt(s):
     if not s: return None
     try:
         d = dtparse.parse(s)
-        if d.tzinfo is None:
-            d = d.replace(tzinfo=timezone.utc)
+        if d.tzinfo is None: d = d.replace(tzinfo=timezone.utc)
         return d
     except Exception:
         return None
@@ -109,6 +113,13 @@ def score_key(rec):
         score += 2
     return score
 
+def write_json(obj, *paths):
+    for p in paths:
+        d = os.path.dirname(p)
+        if d: os.makedirs(d, exist_ok=True)
+        with open(p, "w", encoding="utf-8") as f:
+            json.dump(obj, f, ensure_ascii=False)
+
 def main():
     ensure_dirs()
     now = datetime.now(timezone.utc)
@@ -121,43 +132,40 @@ def main():
         d = parse_dt(r.get("published_date") or r.get("fetch_time"))
         if d and d >= cutoff:
             recent.append(r)
-    # sort nieuw → oud
     recent.sort(key=lambda r: r.get("published_date") or r.get("fetch_time") or "", reverse=True)
 
     live_items = [map_live(r) for r in recent[:200]]
-    key_items = sorted(recent, key=score_key, reverse=True)[:20]
-    key_items = [map_live(r) for r in key_items]
+    key_items = [map_live(r) for r in sorted(recent, key=score_key, reverse=True)[:20]]
 
     # Timeline
-    tl_file = latest_file(TIMELINE_GLOB)
     reports_timeline = {"schema":"timeline.v1","events":[]}
+    tl_file = latest_file(TIMELINE_GLOB)
     if tl_file:
         with open(tl_file, "r", encoding="utf-8") as f:
             reports_timeline = json.load(f)
 
-    # Daily digest latest (als aanwezig)
+    # Daily digest (laatste)
     digest_latest = None
     if os.path.exists(DAILY_LATEST):
         with open(DAILY_LATEST, "r", encoding="utf-8") as f:
             digest_latest = json.load(f)
 
-    # Schrijven
-    with open(f"{SITE_DIR}/live.json", "w", encoding="utf-8") as f:
-        json.dump({"generated_at": now.isoformat(), "items": live_items}, f, ensure_ascii=False)
-    with open(f"{SITE_DIR}/key-items.json", "w", encoding="utf-8") as f:
-        json.dump({"generated_at": now.isoformat(), "items": key_items}, f, ensure_ascii=False)
-    with open(f"{SITE_DIR}/reports_timeline.json", "w", encoding="utf-8") as f:
-        json.dump(reports_timeline, f, ensure_ascii=False)
+    # Schrijf site + root
+    write_json({"generated_at": now.isoformat(), "items": live_items},
+               f"{SITE_DIR}/live.json", f"{ROOT_DIR}/live.json")
+    write_json({"generated_at": now.isoformat(), "items": key_items},
+               f"{SITE_DIR}/key-items.json", f"{ROOT_DIR}/key-items.json")
+    write_json(reports_timeline,
+               f"{SITE_DIR}/reports_timeline.json", f"{ROOT_DIR}/reports_timeline.json")
     if digest_latest:
-        with open(f"{SITE_DIR}/digest_latest.json", "w", encoding="utf-8") as f:
-            json.dump(digest_latest, f, ensure_ascii=False)
+        write_json(digest_latest,
+                   f"{SITE_DIR}/digest_latest.json", f"{ROOT_DIR}/digest_latest.json")
 
     # Houd v2 payloads ook bij
     if tl_file:
-        with open("docs/data/timeline-latest.json", "w", encoding="utf-8") as f:
-            json.dump(reports_timeline, f, ensure_ascii=False)
+        write_json(reports_timeline, f"{DATA_DIR}/timeline-latest.json")
 
-    # kleine index
+    # Kleine index
     by_source = {}
     for r in recent:
         sid = r.get("source_id","unknown")
@@ -170,8 +178,7 @@ def main():
         "key_items": len(key_items),
         "timeline_events": len(reports_timeline.get("events", []))
     }
-    with open(f"{SITE_DIR}/index.json", "w", encoding="utf-8") as f:
-        json.dump(index, f, ensure_ascii=False, indent=2)
+    write_json(index, f"{SITE_DIR}/index.json", f"{ROOT_DIR}/index.json")
 
     print(json.dumps({"status":"ok","live":len(live_items),"key":len(key_items),
                       "timeline_events":len(reports_timeline.get("events",[]))}, ensure_ascii=False))
