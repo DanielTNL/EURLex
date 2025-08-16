@@ -2,7 +2,7 @@ name: Pipeline v2 (daily)
 
 on:
   schedule:
-    # GitHub Actions draait cron in UTC. 06:00 UTC = 08:00 Europe/Amsterdam (CEST).
+    # GitHub Actions cron is UTC. 06:00 UTC = 08:00 Europe/Amsterdam (CEST).
     - cron: "0 6 * * *"
   workflow_dispatch: {}
 
@@ -12,6 +12,9 @@ permissions:
 concurrency:
   group: daily-v2
   cancel-in-progress: false
+
+env:
+  TZ: Europe/Amsterdam
 
 jobs:
   run:
@@ -27,7 +30,7 @@ jobs:
         run: |
           python -V
           pip install -r requirements.txt || true
-          pip install python-dateutil beautifulsoup4 lxml pyyaml orjson || true
+          pip install requests python-dateutil beautifulsoup4 lxml pyyaml orjson || true
 
       # 1) Discover laatste 24 uur (alle bronnen uit sources_v2.yaml)
       - name: Daily discover (last 24h)
@@ -49,18 +52,17 @@ jobs:
         run: |
           python workers/build_daily_digest.py --hours 24
 
-      # 5) Build site payload
+      # 5) Build site payload (jouw bestaande site builder of minimale fallback)
       - name: Build site payload
         run: |
           if [ -f build_site_data.py ]; then
-            # Gebruik jouw bestaande script indien aanwezig
             python build_site_data.py || true
           else
-            # Fallback: minimale site data
             python workers/build_site_data_v2.py
           fi
 
-      - name: Publish site bridge (v2 → site data)
+      # 6) Publiceer bridge: v2 → legacy paden die de front-end leest
+      - name: Publish site bridge (v2 → legacy)
         run: |
           python workers/publish_site_bridge.py
 
@@ -87,6 +89,8 @@ jobs:
             reports/daily/*.md
             docs/digests/*.json
             docs/data/*.json
+            docs/*.json
+            docs/site/*.json
           if-no-files-found: warn
 
       - name: Commit results back to main
