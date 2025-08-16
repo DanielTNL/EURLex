@@ -1,9 +1,62 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2025-08-09T11:47:56.401764+00:00",
-    "end": "2025-08-16T11:47:56.401764+00:00",
+    "start": "2025-08-09T12:17:33.416855+00:00",
+    "end": "2025-08-16T12:17:33.416855+00:00",
     "timezone": "Europe/Amsterdam"
   },
-  "events": []
+  "events": [
+    {
+      "date": "2025-08-16T13:52:32+02:00",
+      "title": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
+      "url": "https://www.euronews.com/my-europe/2025/08/16/european-leaders-ready-to-support-trilateral-meeting-between-us-ukraine-and-russia",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-16T12:12:22+02:00",
+      "title": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
+      "url": "https://www.euronews.com/culture/2025/08/16/thats-show-business-for-you-how-taylor-swifts-new-era-sparked-the-branding-trend-of-2025",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-16T12:00:16+02:00",
+      "title": "Video.\n            \n          Latest news bulletin | August 16th, 2025 – Midday",
+      "url": "https://www.euronews.com/video/2025/08/16/latest-news-bulletin-august-16th-2025-midday",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Video. Latest news bulletin | August 16th, 2025 – Midday",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-14T18:00:29+02:00",
+      "title": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainmen... More",
+      "url": "https://www.euronews.com/programs/top-news-stories-today",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainmen... More",
+      "amounts": []
+    }
+  ]
 }
