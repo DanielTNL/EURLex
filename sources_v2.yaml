@@ -1,4 +1,5 @@
 sources:
+  # Existing sources
   - source_id: investeu_news
     type: html_list
     base_url: https://investeu.europa.eu/news
@@ -20,3 +21,274 @@ sources:
       title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
       pdf_link_selectors: ["a[href$='.pdf']","a[href*='download']"]
       prefer_updated_date: false
+
+  - source_id: eib_press
+    type: html_list
+    base_url: https://www.eib.org/en/press/all
+    discover:
+      list_selectors:
+        - "article a[href]"
+        - "div.press-list a[href]"
+      date_selectors:
+        - "time[datetime]"
+        - "span.date"
+      pagination:
+        next_selector: "a.next"
+        max_pages: 3
+      include_url_patterns: ["press","news","stories"]
+      exclude_url_patterns: ["#","/search?"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  - source_id: eif_news
+    type: html_list
+    base_url: https://www.eif.org/news/index.htm
+    discover:
+      list_selectors:
+        - ".news-list a[href]"
+        - "article a[href]"
+        - "ul li a[href]"
+      date_selectors:
+        - "time[datetime]"
+        - "span.date"
+      pagination:
+        next_selector: "a.next, a[rel='next']"
+        max_pages: 2
+      include_url_patterns: ["news","press","story"]
+      exclude_url_patterns: ["#","/event"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']","a[href*='download']"]
+
+  - source_id: edf_publications
+    type: html_list
+    base_url: https://defence-industry-space.ec.europa.eu
+    discover:
+      list_selectors:
+        - "a[href*='/funding/']"
+        - "a[href*='european-defence-fund']"
+        - "a[href*='work-programme']"
+        - "a[href*='results']"
+        - "a[href*='call']"
+      date_selectors:
+        - "time[datetime]"
+        - "meta[property='article:published_time']::attr(content)"
+      pagination:
+        next_selector: "a[rel='next'], a.next"
+        max_pages: 2
+      include_url_patterns: ["call","award","work-programme","results","guidance","european-defence-fund"]
+      exclude_url_patterns: ["#","/events/","/jobs/","/tenders"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']","a[href*='download']"]
+
+  - source_id: esma_publications
+    type: html_list
+    base_url: https://www.esma.europa.eu/publications
+    discover:
+      list_selectors:
+        - ".view-content a[href]"
+        - "article a[href]"
+      date_selectors:
+        - "time[datetime]"
+        - ".date"
+      pagination:
+        next_selector: "a[rel='next'], a.next"
+        max_pages: 3
+      include_url_patterns: ["statement","report","opinion","guidelines","consultation","qa"]
+      exclude_url_patterns: ["#","/taxonomy/","/node/"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Newly added sources
+
+  # Nationale investeringsmaatschappij
+  - source_id: investnl_news
+    type: html_list
+    base_url: https://invest-nl.nl/en/news
+    discover:
+      list_selectors: ["article a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination: { max_pages: 2 }
+      include_url_patterns: ["news"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Branchevereniging voor financiële markten (AFME)
+  - source_id: afme_news
+    type: html_list
+    base_url: https://www.afme.eu/news
+    discover:
+      list_selectors: ["article a[href]", ".listing a[href]"]
+      date_selectors: ["time[datetime]", ".date", "span.date"]
+      pagination: { max_pages: 3 }
+      include_url_patterns: ["press", "news", "views"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Airbus persberichten
+  - source_id: airbus_press
+    type: html_list
+    base_url: https://www.airbus.com/en/newsroom/press-releases
+    discover:
+      list_selectors: ["article a[href]", ".press-list a[href]"]
+      date_selectors: ["time[datetime]", ".article-date", ".date"]
+      pagination:
+        next_selector: "a.next"
+        max_pages: 3
+      include_url_patterns: ["press", "release"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']", "a[href*='download']"]
+
+  # Boeing pers & statements
+  - source_id: boeing_press
+    type: html_list
+    base_url: https://boeing.mediaroom.com/news-releases-statements
+    discover:
+      list_selectors: ["article a[href]", "table a[href]", ".news-releases a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination: { max_pages: 3 }
+      include_url_patterns: ["releases", "statements"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Helsing newsroom
+  - source_id: helsing_news
+    type: html_list
+    base_url: https://helsing.ai/newsroom
+    discover:
+      list_selectors: ["article a[href]", "div[class*='news'] a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination: { max_pages: 2 }
+      include_url_patterns: ["news"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Anduril newsroom
+  - source_id: anduril_news
+    type: html_list
+    base_url: https://anduril.com/newsroom
+    discover:
+      list_selectors: ["article a[href]", ".news-grid a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination: { max_pages: 2 }
+      include_url_patterns: ["news"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Palantir persberichten
+  - source_id: palantir_press
+    type: html_list
+    base_url: https://www.palantir.com/newsroom/press-releases
+    discover:
+      list_selectors: ["article a[href]", "div[class*='press'] a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination: { max_pages: 2 }
+      include_url_patterns: ["press", "release"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # McKinsey media center (benadering; site is dynamisch)
+  - source_id: mckinsey_media
+    type: html_list
+    base_url: https://www.mckinsey.com/about-us/media
+    discover:
+      list_selectors: ["a[href]"]
+      date_selectors: []
+      pagination: { max_pages: 1 }
+      include_url_patterns: ["news", "press", "statement"]
+      exclude_url_patterns: ["#","/contact"]
+    parsing:
+      title_selectors: ["h1"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # PwC wereldwijde persberichten
+  - source_id: pwc_press
+    type: html_list
+    base_url: https://www.pwc.com/gx/en/news-room/press-releases.html
+    discover:
+      list_selectors: ["article a[href]", "div[class*='news'] a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination: { max_pages: 2 }
+      include_url_patterns: ["press", "release"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Euronews technologie / innovatie [oai_citation:0‡euronews.com](https://www.euronews.com/next/tech-news#:~:text=Europe%20News%20%20,43%20%20Zelenskyy%20announces)
+  - source_id: euronews_tech
+    type: html_list
+    base_url: https://www.euronews.com/next/tech-news
+    discover:
+      list_selectors: ["article a[href]", ".c-article-list a[href]"]
+      date_selectors: ["time[datetime]", ".c-article-card__date"]
+      pagination: { max_pages: 2 }
+      include_url_patterns: ["news"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # NATO nieuws [oai_citation:1‡nato.int](https://www.nato.int/cps/en/natohq/news.htm#:~:text=Date%20Title%2014%20Aug,lepers.jpg%2C%2030.40KB)
+  - source_id: nato_news
+    type: html_list
+    base_url: https://www.nato.int/cps/en/natohq/news.htm
+    discover:
+      list_selectors: ["table td a[href]", "article a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination:
+        next_selector: "a[href*='page=']"
+        max_pages: 3
+      include_url_patterns: ["news"]
+      exclude_url_patterns: ["archive"]
+    parsing:
+      title_selectors: ["h1"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # RAND persberichten [oai_citation:2‡rand.org](https://www.rand.org/news/press.html#:~:text=Recent%20News%20Releases)
+  - source_id: rand_press
+    type: html_list
+    base_url: https://www.rand.org/news/press.html
+    discover:
+      list_selectors: ["article a[href]", ".results a[href]"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination:
+        next_selector: "a[rel='next']"
+        max_pages: 2
+      include_url_patterns: ["news", "press"]
+      exclude_url_patterns: ["#"]
+    parsing:
+      title_selectors: ["h1"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+
+  # Bruegel publicaties [oai_citation:3‡bruegel.org](https://www.bruegel.org/publications#:~:text=Book)
+  - source_id: bruegel_publications
+    type: html_list
+    base_url: https://www.bruegel.org/publications
+    discover:
+      list_selectors: ["a[href*='/publications/']"]
+      date_selectors: ["time[datetime]", ".date"]
+      pagination:
+        next_selector: "a[rel='next']"
+        max_pages: 3
+      include_url_patterns: ["publications"]
+      exclude_url_patterns: ["#","/events/"]
+    parsing:
+      title_selectors: ["h1"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
