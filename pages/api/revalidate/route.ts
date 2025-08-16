@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
   const url = new URL(req.url);
-  if (url.searchParams.get('secret') !== process.env.REVALIDATE_SECRET) {
-    return NextResponse.json({ message: 'Invalid token' }, { status: 401 });
-  }
+  if (new URL(req.url).searchParams.get('secret') !== '694yI9Tf8as-f4pMkqpPM28FArtIuEzkwmS5GCcVLAg') {
+  return NextResponse.json({ message: 'Invalid token' }, { status: 401 });
+}
   const { paths = ["/"] } = await req.json().catch(() => ({}));
   try {
     // @ts-expect-error revalidate is available in route handlers
