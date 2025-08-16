@@ -1,40 +1,26 @@
 #!/usr/bin/env python3
-# Bridge: neem v2-uitvoer en publiceer naar paden die de site leest.
-# Schrijft naar BEIDE plekken:
-#  - docs/site/live.json, key-items.json, reports_timeline.json, digest_latest.json
-#  - docs/live.json,    key-items.json, reports_timeline.json, digest_latest.json
-# Behoudt ook docs/data/timeline-latest.json (v2).
+# Bridge: v2 -> legacy site payloads (root én /site), met taxonomy uit config.yml.
 
-import os, json, glob
+import os, json, glob, re, yaml
 from datetime import datetime, timedelta, timezone
 from dateutil import parser as dtparse
 
 ROOT_DIR = "docs"
 SITE_DIR = "docs/site"
 DATA_DIR = "docs/data"
+CONFIG_YAML = "config.yml"
+
 NDJSON_GLOB = "outputs/docs/*.ndjson"
 TIMELINE_GLOB = "outputs/timelines/*.json"
 DAILY_LATEST = "docs/digests/latest.json"
 
 SOURCE_LABELS = {
-    "investeu_news": "InvestEU",
-    "eib_press": "EIB",
-    "eif_news": "EIF",
-    "edf_publications": "EDF",
-    "esma_publications": "ESMA",
-    "investnl_news": "Invest-NL",
-    "afme_news": "AFME",
-    "airbus_press": "Airbus",
-    "boeing_press": "Boeing",
-    "helsing_news": "Helsing",
-    "anduril_news": "Anduril",
-    "palantir_press": "Palantir",
-    "mckinsey_media": "McKinsey",
-    "pwc_press": "PwC",
-    "euronews_tech": "Euronews (Tech)",
-    "nato_news": "NATO",
-    "rand_press": "RAND",
-    "bruegel_publications": "Bruegel",
+    "investeu_news": "InvestEU", "eib_press": "EIB", "eif_news": "EIF",
+    "edf_publications": "EDF", "esma_publications": "ESMA", "investnl_news": "Invest-NL",
+    "afme_news": "AFME", "airbus_press": "Airbus", "boeing_press": "Boeing",
+    "helsing_news": "Helsing", "anduril_news": "Anduril", "palantir_press": "Palantir",
+    "mckinsey_media": "McKinsey", "pwc_press": "PwC", "euronews_tech": "Euronews (Tech)",
+    "nato_news": "NATO", "rand_press": "RAND", "bruegel_publications": "Bruegel",
 }
 
 MAJOR_PROGRAMMES = {"InvestEU","EIB","EIF","EDF","ESMA"}
@@ -58,7 +44,7 @@ def load_ndjson(glob_pat):
     for path in sorted(glob.glob(glob_pat)):
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
-                line = line.strip()
+                line=line.strip()
                 if not line: continue
                 try:
                     obj = json.loads(line)
@@ -72,7 +58,24 @@ def latest_file(glob_pat):
     files = sorted(glob.glob(glob_pat), key=lambda p: os.path.getmtime(p), reverse=True)
     return files[0] if files else None
 
-def categorise(rec):
+def load_taxonomy():
+    """Lees config.yml en geef [(category_name, [regex/strings...]), ...] terug."""
+    if not os.path.exists(CONFIG_YAML):
+        return []
+    with open(CONFIG_YAML, "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f)
+    cats = []
+    for cat in (cfg.get("taxonomy", {}).get("categories", []) or []):
+        name = cat.get("name")
+        inc = cat.get("include") or []
+        # prepare case-insensitive regex list
+        pat = [re.compile(re.escape(k), re.IGNORECASE) for k in inc if isinstance(k, str) and k.strip()]
+        if name and pat:
+            cats.append((name, pat))
+    return cats
+
+def categorise(rec, taxo):
+    """Eerst regels op basis van programma/bron; dan keywords uit config.yml; dan fallback."""
     progs = set(rec.get("programme") or [])
     techs = set(rec.get("tech_area") or [])
     sid = rec.get("source_id","")
@@ -84,9 +87,14 @@ def categorise(rec):
         return "AI & Digital"
     if progs & {"InvestEU","EIB","EIF"} or sid == "investnl_news":
         return "De-risking & Investment"
+
+    text = (rec.get("title") or "") + " " + (rec.get("summary_150w") or "")
+    for name, patterns in taxo:
+        if any(p.search(text) for p in patterns):
+            return name
     return "Other"
 
-def map_live(rec):
+def map_live(rec, taxo):
     title = rec.get("title") or "(untitled)"
     url = rec.get("canonical_url") or rec.get("url")
     date = rec.get("published_date") or rec.get("fetch_time")
@@ -101,7 +109,7 @@ def map_live(rec):
         "date": date,
         "doc_type": rec.get("doc_type") or "News",
         "tags": tags[:12],
-        "category": categorise(rec)
+        "category": categorise(rec, taxo)
     }
 
 def score_key(rec):
@@ -123,6 +131,7 @@ def write_json(obj, *paths):
 def main():
     ensure_dirs()
     now = datetime.now(timezone.utc)
+    taxonomy = load_taxonomy()
 
     # Live feed: laatste 30 dagen
     records = load_ndjson(NDJSON_GLOB)
@@ -134,8 +143,8 @@ def main():
             recent.append(r)
     recent.sort(key=lambda r: r.get("published_date") or r.get("fetch_time") or "", reverse=True)
 
-    live_items = [map_live(r) for r in recent[:200]]
-    key_items = [map_live(r) for r in sorted(recent, key=score_key, reverse=True)[:20]]
+    live_items = [map_live(r, taxonomy) for r in recent[:200]]
+    key_items = [map_live(r, taxonomy) for r in sorted(recent, key=score_key, reverse=True)[:20]]
 
     # Timeline
     reports_timeline = {"schema":"timeline.v1","events":[]}
@@ -150,7 +159,7 @@ def main():
         with open(DAILY_LATEST, "r", encoding="utf-8") as f:
             digest_latest = json.load(f)
 
-    # Schrijf site + root
+    # Schrijf site + root (legacy)
     write_json({"generated_at": now.isoformat(), "items": live_items},
                f"{SITE_DIR}/live.json", f"{ROOT_DIR}/live.json")
     write_json({"generated_at": now.isoformat(), "items": key_items},
@@ -165,7 +174,7 @@ def main():
     if tl_file:
         write_json(reports_timeline, f"{DATA_DIR}/timeline-latest.json")
 
-    # Kleine index
+    # Index/telemetrie
     by_source = {}
     for r in recent:
         sid = r.get("source_id","unknown")
