@@ -19,9 +19,10 @@ env:
 jobs:
   run:
     runs-on: ubuntu-latest
-    env:
-      # Optional: set globally for the job if you have a revalidate endpoint
-      REVALIDATE_URL: ${{ secrets.REVALIDATE_URL }}
+    # (Optional) hardcode here if you don't want to touch config_v2.yaml:
+    # env:
+    #   REVALIDATE_URL: "https://your-site.com/api/revalidate?secret=XYZ"
+    #   REVALIDATE_PATHS: '["/","/live"]'
 
     steps:
       - uses: actions/checkout@v4
@@ -36,15 +37,12 @@ jobs:
           pip install -r requirements.txt || true
           pip install requests python-dateutil beautifulsoup4 lxml pyyaml orjson jsonschema jq || true
 
-      # 1) Discover laatste 24 uur (alle bronnen)
-      # Guard against a missing sources_v2.yaml: if it exists, pass it; otherwise run with just config_v2.yaml
+      # 1) Discover laatste 24 uur (alle bronnen uit sources_v2.yaml)
       - name: Daily discover (last 24h)
         run: |
           if [ -f sources_v2.yaml ]; then
-            echo "Using sources_v2.yaml"
             python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml
           else
-            echo "sources_v2.yaml not found — running with config_v2.yaml only"
             python workers/weekly_discover.py --window 1d --config config_v2.yaml
           fi
 
@@ -53,31 +51,7 @@ jobs:
         run: |
           python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit 50
 
-      # 2b) (Optional) Validate state/timeline against schema if present
-      - name: Validate state/timeline schema (best-effort)
-        continue-on-error: true
-        run: |
-          if [ -f schemas/timeline.v1.json ]; then
-            python - <<'PY'
-import json, glob, jsonschema, sys
-from pathlib import Path
-schema = json.load(open('schemas/timeline.v1.json'))
-errs = 0
-for f in glob.glob('state/*.json'):
-    try:
-        data = json.load(open(f))
-        # If your files have top-level arrays or objects with "items", adapt here:
-        jsonschema.validate(data, schema)
-    except Exception as e:
-        print(f"[schema] {f}: {e}")
-        errs += 1
-print(f"[schema] done with {errs} error(s)")
-PY
-          else
-            echo "No schemas/timeline.v1.json found; skipping validation"
-          fi
-
-      # 3) Bouw rolling timeline (7 dagen)
+      # 3) Bouw rolling timeline (7 dagen is prettig voor website)
       - name: Build timeline (rolling 7d)
         run: |
           python workers/build_timeline.py --window 7d --config config_v2.yaml
@@ -87,7 +61,7 @@ PY
         run: |
           python workers/build_daily_digest.py --hours 24
 
-      # 5) Build site payload (prefer your project builder; fallback to v2 worker)
+      # 5) Build site payload (jouw bestaande site builder of minimale fallback)
       - name: Build site payload
         run: |
           if [ -f build_site_data.py ]; then
@@ -101,22 +75,7 @@ PY
         run: |
           python workers/publish_site_bridge.py
 
-      # 7) Summaries for quick inspection
-      - name: Summarise counts
-        continue-on-error: true
-        run: |
-          echo "== SUMMARY ==" >> $GITHUB_STEP_SUMMARY
-          if [ -f docs/site/site_data.json ]; then
-            echo "- items in docs/site/site_data.json: $(jq '.items | length' docs/site/site_data.json)" >> $GITHUB_STEP_SUMMARY || true
-          fi
-          if [ -f outputs/timelines/timeline_7d.json ]; then
-            echo "- items in outputs/timelines/timeline_7d.json: $(jq '.items | length' outputs/timelines/timeline_7d.json)" >> $GITHUB_STEP_SUMMARY || true
-          fi
-          if [ -f reports/daily/latest.md ]; then
-            echo "- daily report generated ✅" >> $GITHUB_STEP_SUMMARY
-          fi
-
-      # 8) Inspectie in logs
+      # Inspectie in logs
       - name: Show outputs (ls + head)
         run: |
           echo "== outputs/docs ==" && ls -lah outputs/docs || true
@@ -129,7 +88,20 @@ PY
           for f in outputs/docs/*.ndjson; do echo "---- $f"; head -n 2 "$f" || true; done
           for f in outputs/timelines/*.json; do echo "---- $f"; head -n 40 "$f" || true; done
 
-      # 9) Commit results back to main (so the website can fetch fresh docs)
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-v2-data
+          path: |
+            outputs/docs/*.ndjson
+            outputs/timelines/*.json
+            reports/daily/*.md
+            docs/digests/*.json
+            docs/data/*.json
+            docs/*.json
+            docs/site/*.json
+          if-no-files-found: warn
+
       - name: Commit results back to main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -140,11 +112,46 @@ PY
           git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]" || echo "No changes to commit"
           git push || true
 
-      # 10) Revalidate website (Next.js ISR / Vercel) — optional but recommended
-      - name: Revalidate website
-        if: ${{ env.REVALIDATE_URL != '' }}
+      # 7) Revalidate website (no GitHub secret; reads from config_v2.yaml or env override)
+      - name: Revalidate website (no secret)
+        continue-on-error: true
         run: |
-          echo "POST to $REVALIDATE_URL"
-          curl -sS -X POST "$REVALIDATE_URL" \
-            -H "Content-Type: application/json" \
-            -d '{"paths":["/","/live"]}'
+          python - <<'PY'
+import os, json, sys
+import urllib.request
+import yaml
+
+# 1) Prefer env if provided literally in the workflow
+url = os.getenv("REVALIDATE_URL", "").strip()
+paths_env = os.getenv("REVALIDATE_PATHS", "").strip()
+
+# 2) Else read from config_v2.yaml -> site.revalidate_url / site.revalidate_paths
+if not url:
+    try:
+        cfg = yaml.safe_load(open("config_v2.yaml"))
+        url = (cfg.get("site") or {}).get("revalidate_url", "")
+        default_paths = ["/","/live"]
+        paths = (cfg.get("site") or {}).get("revalidate_paths", default_paths)
+    except Exception as e:
+        print("Could not read config_v2.yaml:", e)
+        url, paths = "", ["/","/live"]
+else:
+    # If REVALIDATE_PATHS env is set, expect JSON array
+    try:
+        paths = json.loads(paths_env) if paths_env else ["/","/live"]
+    except Exception:
+        paths = ["/","/live"]
+
+if not url:
+    print("No revalidate URL configured. Skipping.")
+    sys.exit(0)
+
+payload = json.dumps({"paths": paths}).encode()
+req = urllib.request.Request(url, data=payload, headers={"Content-Type":"application/json"}, method="POST")
+try:
+    with urllib.request.urlopen(req, timeout=20) as r:
+        body = r.read().decode()
+        print("Revalidate response:", body[:500])
+except Exception as e:
+    print("Revalidate failed:", e)
+PY
