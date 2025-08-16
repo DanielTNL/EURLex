@@ -72,6 +72,8 @@ jobs:
           echo "== reports/daily ==" && ls -lah reports/daily || true
           echo "== docs/digests ==" && ls -lah docs/digests || true
           echo "== docs/data ==" && ls -lah docs/data || true
+          echo "== docs/site ==" && ls -lah docs/site || true
+          echo "== docs root json ==" && ls -lah docs/*.json || true
           for f in outputs/docs/*.ndjson; do echo "---- $f"; head -n 2 "$f" || true; done
           for f in outputs/timelines/*.json; do echo "---- $f"; head -n 40 "$f" || true; done
 
