@@ -1,8 +1,8 @@
 {
   "schema": "daily_digest.v1",
-  "generated_at": "2025-08-16T12:45:54.367915+00:00",
+  "generated_at": "2025-08-16T12:56:27.820995+00:00",
   "window_hours": 24,
-  "count": 11,
+  "count": 14,
   "items": [
     {
       "title": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
@@ -130,6 +130,45 @@
       "url": "https://www.euronews.com/2025/08/16/zelenskyy-announces-white-house-meeting-with-trump-to-take-place-on-monday",
       "source_id": "investeu_news",
       "published_date": "2025-08-16T10:41:21+02:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": ""
+    },
+    {
+      "title": "Two years after her death, a biopic on Irish singer Sinéad O'Connor is in the works",
+      "url": "https://www.euronews.com/culture/2025/08/16/two-years-after-her-death-a-biopic-on-irish-singer-sinead-oconnor-is-in-the-works",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T09:04:33+02:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": ""
+    },
+    {
+      "title": "From warzones to tropical islands: Meet the 19-year-old solo traveller who has visited 118 nations",
+      "url": "https://www.euronews.com/travel/2025/08/16/from-warzones-to-tropical-islands-meet-the-19-year-old-solo-traveller-who-has-visited-118-",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T08:00:55+02:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": ""
+    },
+    {
+      "title": "Protesters oppose Donald Trump's Alaskan summit with his Russian counterpart Vladimir Putin",
+      "url": "https://www.euronews.com/2025/08/16/protesters-oppose-donald-trumps-alaskan-summit-with-his-russian-counterpart-vladimir-putin",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T07:53:17+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"

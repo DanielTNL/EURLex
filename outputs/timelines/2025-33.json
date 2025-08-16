@@ -1,8 +1,8 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2025-08-09T12:45:54.317953+00:00",
-    "end": "2025-08-16T12:45:54.317953+00:00",
+    "start": "2025-08-09T12:56:27.770371+00:00",
+    "end": "2025-08-16T12:56:27.770371+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
@@ -138,6 +138,45 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Zelenskyy announces White House meeting with Trump to take place on Monday",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-16T09:04:33+02:00",
+      "title": "Two years after her death, a biopic on Irish singer Sinéad O'Connor is in the works",
+      "url": "https://www.euronews.com/culture/2025/08/16/two-years-after-her-death-a-biopic-on-irish-singer-sinead-oconnor-is-in-the-works",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Two years after her death, a biopic on Irish singer Sinéad O'Connor is in the works",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-16T08:00:55+02:00",
+      "title": "From warzones to tropical islands: Meet the 19-year-old solo traveller who has visited 118 nations",
+      "url": "https://www.euronews.com/travel/2025/08/16/from-warzones-to-tropical-islands-meet-the-19-year-old-solo-traveller-who-has-visited-118-",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "From warzones to tropical islands: Meet the 19-year-old solo traveller who has visited 118 nations",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-16T07:53:17+02:00",
+      "title": "Protesters oppose Donald Trump's Alaskan summit with his Russian counterpart Vladimir Putin",
+      "url": "https://www.euronews.com/2025/08/16/protesters-oppose-donald-trumps-alaskan-summit-with-his-russian-counterpart-vladimir-putin",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Protesters oppose Donald Trump's Alaskan summit with his Russian counterpart Vladimir Putin",
       "amounts": []
     },
     {
