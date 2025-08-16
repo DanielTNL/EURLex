@@ -1,0 +1,27 @@
+name: Pipeline v2 (manual)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dryrun:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Best-effort install; won't fail the workflow if requirements.txt is missing or incomplete
+      - name: Install deps (best-effort)
+        run: pip install -r requirements.txt || true
+
+      - name: Weekly discover (stub)
+        run: python workers/weekly_discover.py --window 7d --sources sources_v2.yaml --config config_v2.yaml
+
+      - name: Process documents (stub)
+        run: python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml || true
+
+      - name: Build timeline (stub)
+        run: python workers/build_timeline.py --window 7d --config config_v2.yaml
