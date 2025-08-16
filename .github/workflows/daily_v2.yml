@@ -2,8 +2,7 @@ name: Pipeline v2 (daily)
 
 on:
   schedule:
-    # GitHub Actions cron is UTC. 06:00 UTC = 08:00 Europe/Amsterdam (CEST).
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * *" # UTC
   workflow_dispatch: {}
 
 permissions:
@@ -19,25 +18,21 @@ env:
 jobs:
   run:
     runs-on: ubuntu-latest
-    # (Optional) hardcode here if you don't want to touch config_v2.yaml:
-    # env:
-    #   REVALIDATE_URL: "https://your-site.com/api/revalidate?secret=XYZ"
-    #   REVALIDATE_PATHS: '["/","/live"]'
 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install deps (best-effort)
         run: |
           python -V
           pip install -r requirements.txt || true
-          pip install requests python-dateutil beautifulsoup4 lxml pyyaml orjson jsonschema jq || true
+          pip install requests python-dateutil beautifulsoup4 lxml pyyaml orjson || true
 
-      # 1) Discover laatste 24 uur (alle bronnen uit sources_v2.yaml)
+      # 1) Discover last 24h
       - name: Daily discover (last 24h)
         run: |
           if [ -f sources_v2.yaml ]; then
@@ -46,22 +41,22 @@ jobs:
             python workers/weekly_discover.py --window 1d --config config_v2.yaml
           fi
 
-      # 2) Verwerk documenten (samenvattingen e.d.)
+      # 2) Process documents
       - name: Process documents
         run: |
           python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit 50
 
-      # 3) Bouw rolling timeline (7 dagen is prettig voor website)
+      # 3) Build timeline (7d)
       - name: Build timeline (rolling 7d)
         run: |
           python workers/build_timeline.py --window 7d --config config_v2.yaml
 
-      # 4) Daily digest (MD + JSON → voor nieuwsbrief/website)
+      # 4) Daily digest
       - name: Build daily digest
         run: |
           python workers/build_daily_digest.py --hours 24
 
-      # 5) Build site payload (jouw bestaande site builder of minimale fallback)
+      # 5) Build site payload
       - name: Build site payload
         run: |
           if [ -f build_site_data.py ]; then
@@ -70,12 +65,12 @@ jobs:
             python workers/build_site_data_v2.py
           fi
 
-      # 6) Publiceer bridge: v2 → legacy paden die de front-end leest
+      # 6) Publish site bridge (v2 -> legacy)
       - name: Publish site bridge (v2 → legacy)
         run: |
           python workers/publish_site_bridge.py
 
-      # Inspectie in logs
+      # 7) Show outputs in logs
       - name: Show outputs (ls + head)
         run: |
           echo "== outputs/docs ==" && ls -lah outputs/docs || true
@@ -88,6 +83,7 @@ jobs:
           for f in outputs/docs/*.ndjson; do echo "---- $f"; head -n 2 "$f" || true; done
           for f in outputs/timelines/*.json; do echo "---- $f"; head -n 40 "$f" || true; done
 
+      # 8) Upload artifacts (optional)
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -102,6 +98,7 @@ jobs:
             docs/site/*.json
           if-no-files-found: warn
 
+      # 9) Commit results
       - name: Commit results back to main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -112,46 +109,27 @@ jobs:
           git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]" || echo "No changes to commit"
           git push || true
 
-      # 7) Revalidate website (no GitHub secret; reads from config_v2.yaml or env override)
-      - name: Revalidate website (no secret)
-        continue-on-error: true
+      # 10) Read revalidate URL/paths from config_v2.yaml into env
+      - name: Extract revalidate settings
         run: |
           python - <<'PY'
-import os, json, sys
-import urllib.request
-import yaml
-
-# 1) Prefer env if provided literally in the workflow
-url = os.getenv("REVALIDATE_URL", "").strip()
-paths_env = os.getenv("REVALIDATE_PATHS", "").strip()
-
-# 2) Else read from config_v2.yaml -> site.revalidate_url / site.revalidate_paths
-if not url:
-    try:
-        cfg = yaml.safe_load(open("config_v2.yaml"))
-        url = (cfg.get("site") or {}).get("revalidate_url", "")
-        default_paths = ["/","/live"]
-        paths = (cfg.get("site") or {}).get("revalidate_paths", default_paths)
-    except Exception as e:
-        print("Could not read config_v2.yaml:", e)
-        url, paths = "", ["/","/live"]
-else:
-    # If REVALIDATE_PATHS env is set, expect JSON array
-    try:
-        paths = json.loads(paths_env) if paths_env else ["/","/live"]
-    except Exception:
-        paths = ["/","/live"]
-
-if not url:
-    print("No revalidate URL configured. Skipping.")
-    sys.exit(0)
-
-payload = json.dumps({"paths": paths}).encode()
-req = urllib.request.Request(url, data=payload, headers={"Content-Type":"application/json"}, method="POST")
-try:
-    with urllib.request.urlopen(req, timeout=20) as r:
-        body = r.read().decode()
-        print("Revalidate response:", body[:500])
-except Exception as e:
-    print("Revalidate failed:", e)
+import os, json, yaml
+cfg = yaml.safe_load(open('config_v2.yaml'))
+site = (cfg or {}).get('site') or {}
+url = (site.get('revalidate_url') or '').strip()
+paths = site.get('revalidate_paths', ['/', '/live'])
+with open(os.environ['GITHUB_ENV'], 'a') as f:
+    f.write(f"REVALIDATE_URL={url}\n")
+    f.write(f"REVALIDATE_PATHS={json.dumps(paths)}\n")
+print("REVALIDATE_URL:", url)
+print("REVALIDATE_PATHS:", paths)
 PY
+
+      # 11) Revalidate website
+      - name: Revalidate website
+        if: ${{ env.REVALIDATE_URL != '' }}
+        run: |
+          echo "POST ${REVALIDATE_URL}"
+          curl -sS -X POST "${REVALIDATE_URL}" \
+            -H "Content-Type: application/json" \
+            -d "{\"paths\": ${REVALIDATE_PATHS:-[\"/\",\"/live\"]}}"
