@@ -1,0 +1,13 @@
+sources:
+  - source_id: investeu_news
+    type: html_list
+    base_url: https://investeu.europa.eu/news
+    discover:
+      list_selectors: ["main article a[href]"]
+      date_selectors: ["time[datetime]"]
+      pagination: { max_pages: 1 }
+      include_url_patterns: ["news","press","stories"]
+    parsing:
+      title_selectors: ["h1"]
+      pdf_link_selectors: ["a[href$='.pdf']"]
+      prefer_updated_date: false
