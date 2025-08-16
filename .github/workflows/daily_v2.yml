@@ -60,6 +60,10 @@ jobs:
             python workers/build_site_data_v2.py
           fi
 
+      - name: Publish site bridge (v2 → site data)
+        run: |
+          python workers/publish_site_bridge.py
+
       # Inspectie in logs
       - name: Show outputs (ls + head)
         run: |
