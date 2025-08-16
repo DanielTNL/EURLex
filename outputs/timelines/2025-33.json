@@ -1,11 +1,24 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2025-08-09T12:56:27.770371+00:00",
-    "end": "2025-08-16T12:56:27.770371+00:00",
+    "start": "2025-08-09T13:07:46.907249+00:00",
+    "end": "2025-08-16T13:07:46.907249+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2025-08-16T14:31:38+02:00",
+      "title": "UK trade envoy to Turkey resigns over visit to occupied northern Cyprus",
+      "url": "https://www.euronews.com/2025/08/16/uk-trade-envoy-to-turkey-resigns-over-visit-to-occupied-northern-cyprus",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "UK trade envoy to Turkey resigns over visit to occupied northern Cyprus",
+      "amounts": []
+    },
     {
       "date": "2025-08-16T13:52:32+02:00",
       "title": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
@@ -37,6 +50,32 @@
       "amounts": []
     },
     {
+      "date": "2025-08-16T13:52:32+02:00",
+      "title": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
+      "url": "https://www.euronews.com/my-europe/2025/08/16/european-leaders-ready-to-support-trilateral-meeting-between-us-ukraine-and-russia",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-16T12:12:22+02:00",
+      "title": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
+      "url": "https://www.euronews.com/culture/2025/08/16/thats-show-business-for-you-how-taylor-swifts-new-era-sparked-the-branding-trend-of-2025",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
+      "amounts": []
+    },
+    {
       "date": "2025-08-16T12:12:22+02:00",
       "title": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
       "url": "https://www.euronews.com/culture/2025/08/16/thats-show-business-for-you-how-taylor-swifts-new-era-sparked-the-branding-trend-of-2025",
@@ -73,6 +112,19 @@
       "tech_area": [],
       "stage": "NA",
       "short": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
+      "amounts": []
+    },
+    {
+      "date": "2025-08-16T12:00:16+02:00",
+      "title": "Video.\n            \n          Latest news bulletin | August 16th, 2025 – Midday",
+      "url": "https://www.euronews.com/video/2025/08/16/latest-news-bulletin-august-16th-2025-midday",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Video. Latest news bulletin | August 16th, 2025 – Midday",
       "amounts": []
     },
     {
