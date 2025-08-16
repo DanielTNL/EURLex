@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.query.secret !== process.env.REVALIDATE_SECRET) {
-    return res.status(401).json({ message: 'Invalid token' });
-  }
+  if (req.query.secret !== '694yI9Tf8as-f4pMkqpPM28FArtIuEzkwmS5GCcVLAg') {
+  return res.status(401).json({ message: 'Invalid token' });
+}
   const { paths = ["/"] } = (req.body || {}) as { paths?: string[] };
   try {
     for (const p of paths) await res.revalidate(p);
