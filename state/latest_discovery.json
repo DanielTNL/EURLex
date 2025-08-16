@@ -1,0 +1,1 @@
+{"schema": "discovery.aggregate.v1", "window": {"start": "2025-08-09T11:47:42.597505+00:00", "end": "2025-08-16T11:47:42.597505+00:00", "timezone": "Europe/Amsterdam"}, "total_items": 0, "sources": [{"schema": "discovery.v1", "source_id": "investeu_news", "discovered_at": "2025-08-16T11:47:55.721038+00:00", "base_url": "https://investeu.europa.eu/news", "items": []}]}
