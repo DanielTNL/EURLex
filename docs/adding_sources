@@ -1,0 +1,41 @@
+# Adding sources
+
+The file [`sources_v2.yaml`](../sources_v2.yaml) lists HTML sources that the weekly discovery process crawls. Each entry in the `sources` list describes one site and how to extract links and metadata from it.
+
+## Example structure
+
+```yaml
+- source_id: investeu_news
+  type: html_list
+  base_url: https://investeu.europa.eu/news
+  discover:
+    list_selectors:
+      - "main article a[href]"
+      - "ul.news-list li a[href]"
+    date_selectors:
+      - "time[datetime]"
+      - "meta[property='article:published_time']::attr(content)"
+    pagination:
+      next_selector: "a[rel='next'], a.next, button.load-more"
+      max_pages: 2
+    include_url_patterns: ["news","press","stories"]
+    exclude_url_patterns: ["#","/tag/","/category/","/taxonomy/"]
+  parsing:
+    title_selectors: ["h1", "meta[property='og:title']::attr(content)"]
+    pdf_link_selectors: ["a[href$='.pdf']","a[href*='download']"]
+```
+
+## Key fields
+
+### `list_selectors`
+A list of CSS selectors used on the listing page to locate links to individual articles.
+
+### `date_selectors`
+CSS selectors that point to the publication date on an article page. The scraper tries them in order until a date is found.
+
+### `pagination`
+Describes how to follow additional listing pages.
+- `next_selector` — CSS selector for the "next" link or button.
+- `max_pages` — maximum number of listing pages to crawl from the `base_url`.
+
+Optional keys like `include_url_patterns`, `exclude_url_patterns`, `title_selectors`, or `pdf_link_selectors` refine which links are followed and how individual pages are parsed.
