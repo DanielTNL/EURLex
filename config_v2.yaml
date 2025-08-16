@@ -1,0 +1,9 @@
+timezone: Europe/Amsterdam
+week_start: Monday
+output_dir: outputs
+openai_model: gpt-4o-mini
+rate_limits:
+  per_domain_rps: 0.7
+  max_concurrency: 4
+render:
+  enable_playwright: false
