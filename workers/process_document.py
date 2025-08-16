@@ -43,12 +43,10 @@ def fetch(url):
     return r.text, r.url
 
 def extract_main(soup):
-    # Prefer main/article; else fall back to body paragraphs
     root = soup.find(["main", "article"]) or soup
-    # collect reasonably clean paragraphs
     ps = [p.get_text(" ", strip=True) for p in root.select("p") if p.get_text(strip=True)]
     text = "\n".join(ps)
-    return text[:50000]  # cap to avoid huge prompts
+    return text[:50000]
 
 def extract_title(soup):
     for sel in ["h1", "meta[property='og:title']"]:
@@ -58,7 +56,6 @@ def extract_title(soup):
     return (soup.title.get_text(" ", strip=True) if soup.title else None)
 
 def extract_date(soup, hint=None):
-    # Precedence: meta article:published_time, time[datetime], meta[name=date], visible fallback
     for sel in ["meta[property='article:published_time']", "time[datetime]", "meta[name='date']"]:
         el = soup.select_one(sel)
         if el:
@@ -70,7 +67,6 @@ def extract_date(soup, hint=None):
         d = safe_parse_dt(hint)
         if d:
             return d
-    # visible date with conservative regex
     header = soup.find(["header", "main", "article"]) or soup
     txt = header.get_text(" ", strip=True)
     m = re.search(r"\b(\d{1,2}\s+[A-Za-z]{3,9}\s+\d{4})\b", txt)
@@ -78,7 +74,6 @@ def extract_date(soup, hint=None):
         d = safe_parse_dt(m.group(1))
         if d:
             return d
-    # fallback to fetch time
     return datetime.now(timezone.utc)
 
 def detect_doc_type(text):
@@ -125,7 +120,7 @@ def detect_instrument(text):
         labs.append("Procurement")
     if re.search(r"\blisting\b|\bipo\b", t):
         labs.append("Listing/Market")
-    return labs or ["Procurement"] if "tender" in t else []
+    return labs or (["Procurement"] if "tender" in t else [])
 
 TECH_MAP = {
     "AI/Autonomy": r"\bAI\b|\bartificial intelligence\b|\bautonom(y|ous)\b|\bC4ISR\b|\bcommand\b",
@@ -151,13 +146,12 @@ def detect_tech(text):
     return labels
 
 def extract_amounts(text):
-    # very simple EUR extraction
     amounts = []
     for m in re.finditer(r"(€|\bEUR\b)\s*([\d\.,\s]+)\s*(billion|bn|million|mn|m)?", text, flags=re.IGNORECASE):
         raw = m.group(2).replace(" ", "")
         unit = (m.group(3) or "").lower()
         try:
-            val = float(raw.replace(".", "").replace(",", "."))  # naive; ok for PR text
+            val = float(raw.replace(".", "").replace(",", "."))
         except Exception:
             continue
         if unit in ("billion", "bn"):
@@ -168,11 +162,10 @@ def extract_amounts(text):
     return amounts[:5]
 
 def summarise_150w(title, text):
-    # Use OpenAI if available; else simple fallback summary
-    body = text[:4000]  # cap token usage
+    body = text[:4000]
     if USE_OPENAI and OPENAI_CLIENT:
         prompt = (
-            "Summarise neutrally in ~150 words. Focus on what changed for financing or eligibility, "
+            "Summarise neutrally in ~150 words. Focus on changes to financing/eligibility, "
             "which programme/instrument is involved, amounts, and expected direction for innovation. "
             "UK English, minimal adjectives."
         )
@@ -190,7 +183,6 @@ def summarise_150w(title, text):
             return resp.choices[0].message.content.strip()
         except Exception:
             pass
-    # Fallback: first ~5-7 sentences trimmed
     sentences = re.split(r"(?<=[\.\?\!])\s+", text)
     cut = " ".join(sentences[:7])
     return (cut[:1450] + "…") if len(cut) > 1450 else cut
@@ -209,9 +201,9 @@ def main():
     ap.add_argument("--from", dest="queue", required=False, default="state/latest_discovery.json",
                     help="path to discovery aggregate json")
     ap.add_argument("--limit", type=int, default=5)
+    ap.add_argument("--config", default="config_v2.yaml")  # accept & ignore to match workflow
     args = ap.parse_args()
 
-    # Load discovery aggregate
     if not os.path.exists(args.queue):
         print(json.dumps({"processed": 0, "reason": "no discovery file"}))
         return
@@ -244,9 +236,7 @@ def main():
             instrument = detect_instrument(text)
             tech = detect_tech(text)
             amounts = extract_amounts(soup.get_text(" ", strip=True))
-
             summary = summarise_150w(title, text)
-
             dedupe = sha256((final_url or url) + title + (pub_dt.isoformat() if pub_dt else ""))
 
             rec = {
@@ -283,15 +273,13 @@ def main():
                 "extraction_notes": None
             }
 
-            # append NDJSON
             with open(out_file, "a", encoding="utf-8") as wf:
                 wf.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
             processed += 1
             written_urls.append(final_url or url)
 
-        except Exception as e:
-            # continue on errors
+        except Exception:
             continue
 
     print(json.dumps({"processed": processed, "ndjson": out_file, "urls": written_urls}, ensure_ascii=False))
