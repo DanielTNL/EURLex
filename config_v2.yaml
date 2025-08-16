@@ -8,5 +8,5 @@ rate_limits:
 render:
   enable_playwright: false
 site:
-  revalidate_url: "https://YOUR-DOMAIN.com/api/revalidate?secret=XYZ"  # or your deploy hook URL
+  revalidate_url: "https://<your-domain>/api/revalidate?secret=694yI9Tf8as-f4pMkqpPM28FArtIuEzkwmS5GCcVLAg"
   revalidate_paths: ["/", "/live"]
