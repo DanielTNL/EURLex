@@ -32,35 +32,35 @@ jobs:
           pip install -r requirements.txt || true
           pip install requests python-dateutil beautifulsoup4 lxml pyyaml orjson feedparser html5lib || true
 
-      # 1) Discover last 24h (with tolerant fallback if the primary discover crashes)
+      # 1) Discover last 24h (tolerant weekly_discover.py)
       - name: Daily discover (last 24h)
+        id: discover
+        continue-on-error: true
         run: |
-          set -e
-          ok=0
           if [ -f sources_v2.yaml ]; then
-            python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml && ok=1 || ok=0
+            python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml
           else
-            python workers/weekly_discover.py --window 1d --config config_v2.yaml && ok=1 || ok=0
+            python workers/weekly_discover.py --window 1d --config config_v2.yaml
           fi
 
-          if [ "$ok" -ne 1 ]; then
-            echo "::warning:: Primary discover failed. Writing minimal state/latest_discovery.json so pipeline can continue."
-            python - <<'PY'
-import os, json
-from datetime import datetime, timezone
-os.makedirs("state", exist_ok=True)
-payload = {
-  "generated_at": datetime.now(timezone.utc).isoformat(),
-  "window": "1d",
-  "items": [],
-  "documents": [],
-  "sources": []
-}
-with open("state/latest_discovery.json", "w", encoding="utf-8") as f:
-    json.dump(payload, f, ensure_ascii=False)
-print("Wrote state/latest_discovery.json (empty fallback)")
-PY
-          fi
+      # 1b) Fallback only if discover failed
+      - name: Fallback: write empty discovery
+        if: ${{ steps.discover.outcome != 'success' }}
+        shell: python
+        run: |
+          import os, json
+          from datetime import datetime, timezone
+          os.makedirs("state", exist_ok=True)
+          payload = {
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "window": "1d",
+            "items": [],
+            "documents": [],
+            "sources": []
+          }
+          with open("state/latest_discovery.json", "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False)
+          print("Wrote state/latest_discovery.json (empty fallback)")
 
       # 2) Process documents
       - name: Process documents
@@ -90,6 +90,12 @@ PY
       - name: Publish site bridge (v2 -> legacy)
         run: |
           python workers/publish_site_bridge.py
+
+      # 6b) Ensure GitHub Pages serves raw files (skip Jekyll)
+      - name: Ensure .nojekyll in docs
+        run: |
+          mkdir -p docs
+          touch docs/.nojekyll
 
       # 7) Show outputs in logs
       - name: Show outputs (ls + head)
@@ -126,16 +132,13 @@ PY
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/docs outputs/timelines reports/daily docs/digests docs/data docs/site docs/*.json || true
+          git add outputs/docs outputs/timelines reports/daily docs/digests docs/data docs/site docs/*.json docs/.nojekyll || true
           git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]" || echo "No changes to commit"
           git push || true
 
-      # 10) Revalidate website (simple & safe; no YAML-quote traps)
-      - name: Revalidate website
+      # 10) Warm GitHub Pages (no revalidate endpoint on Pages)
+      - name: Warm GitHub Pages
         run: |
-          REVALIDATE_URL="https://YOUR_DOMAIN_HERE/api/revalidate?secret=694yI9Tf8as-f4pMkqpPM28FArtIuEzkwmS5GCcVLAg"
-          echo '{"paths":["/","/live"]}' > payload.json
-          echo "POST $REVALIDATE_URL"
-          curl -sS -X POST "$REVALIDATE_URL" \
-            -H "Content-Type: application/json" \
-            --data-binary @payload.json || true
+          ROOT_URL="https://danieltnl.github.io/EURLex/"
+          echo "GET $ROOT_URL"
+          curl -sS -I "$ROOT_URL" || true
