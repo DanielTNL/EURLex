@@ -1,119 +1,99 @@
 {
-  "schema": "timeline.v1",
-  "window": {
-    "start": "2025-08-09T12:29:00.781316+00:00",
-    "end": "2025-08-16T12:29:00.781316+00:00",
-    "timezone": "Europe/Amsterdam"
-  },
-  "events": [
+  "schema": "daily_digest.v1",
+  "generated_at": "2025-08-16T12:29:00.830708+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "items": [
     {
-      "date": "2025-08-16T13:52:32+02:00",
       "title": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
       "url": "https://www.euronews.com/my-europe/2025/08/16/european-leaders-ready-to-support-trilateral-meeting-between-us-ukraine-and-russia",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T13:52:32+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"
       ],
+      "finance_instrument": [],
       "tech_area": [],
-      "stage": "NA",
-      "short": "European leaders ready to support trilateral meeting between US, Ukraine and Russia",
-      "amounts": []
+      "summary_150w": ""
     },
     {
-      "date": "2025-08-16T12:12:22+02:00",
       "title": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
       "url": "https://www.euronews.com/culture/2025/08/16/thats-show-business-for-you-how-taylor-swifts-new-era-sparked-the-branding-trend-of-2025",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T12:12:22+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"
       ],
+      "finance_instrument": [],
       "tech_area": [],
-      "stage": "NA",
-      "short": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
-      "amounts": []
+      "summary_150w": ""
     },
     {
-      "date": "2025-08-16T12:12:22+02:00",
       "title": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
       "url": "https://www.euronews.com/culture/2025/08/16/thats-show-business-for-you-how-taylor-swifts-new-era-sparked-the-branding-trend-of-2025",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T12:12:22+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"
       ],
+      "finance_instrument": [],
       "tech_area": [],
-      "stage": "NA",
-      "short": "That’s (show) business for you: How Taylor Swift’s new era sparked the branding trend of 2025",
-      "amounts": []
+      "summary_150w": ""
     },
     {
-      "date": "2025-08-16T12:00:16+02:00",
       "title": "Video.\n            \n          Latest news bulletin | August 16th, 2025 – Midday",
       "url": "https://www.euronews.com/video/2025/08/16/latest-news-bulletin-august-16th-2025-midday",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T12:00:16+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"
       ],
+      "finance_instrument": [],
       "tech_area": [],
-      "stage": "NA",
-      "short": "Video. Latest news bulletin | August 16th, 2025 – Midday",
-      "amounts": []
+      "summary_150w": ""
     },
     {
-      "date": "2025-08-16T12:00:16+02:00",
       "title": "Video.\n            \n          Latest news bulletin | August 16th, 2025 – Midday",
       "url": "https://www.euronews.com/video/2025/08/16/latest-news-bulletin-august-16th-2025-midday",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T12:00:16+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"
       ],
+      "finance_instrument": [],
       "tech_area": [],
-      "stage": "NA",
-      "short": "Video. Latest news bulletin | August 16th, 2025 – Midday",
-      "amounts": []
+      "summary_150w": ""
     },
     {
-      "date": "2025-08-16T10:41:21+02:00",
       "title": "Zelenskyy announces White House meeting with Trump to take place on Monday",
       "url": "https://www.euronews.com/2025/08/16/zelenskyy-announces-white-house-meeting-with-trump-to-take-place-on-monday",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-16T10:41:21+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"
       ],
+      "finance_instrument": [],
       "tech_area": [],
-      "stage": "NA",
-      "short": "Zelenskyy announces White House meeting with Trump to take place on Monday",
-      "amounts": []
+      "summary_150w": ""
     },
     {
-      "date": "2025-08-15T18:23:24+02:00",
       "title": "World News",
       "url": "https://www.euronews.com/programs/world",
+      "source_id": "investeu_news",
+      "published_date": "2025-08-15T18:23:24+02:00",
       "doc_type": "Blog/News",
       "programme": [
         "Other/NA"
       ],
+      "finance_instrument": [],
       "tech_area": [],
-      "stage": "NA",
-      "short": "World News",
-      "amounts": [
-        {
-          "amount": 700.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2025-08-14T18:00:29+02:00",
-      "title": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainmen... More",
-      "url": "https://www.euronews.com/programs/top-news-stories-today",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainmen... More",
-      "amounts": []
+      "summary_150w": ""
     }
   ]
 }
