@@ -10,7 +10,5 @@ PyYAML>=6.0.1
 requests==2.32.*
 beautifulsoup4==4.12.*
 lxml==5.*
-python-dateutil==2.9.
-PyYAML==6.0.
+python-dateutil==2.9.0.post0
 orjson==3.10.*
-openai>=1.36.0
