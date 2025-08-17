@@ -7,8 +7,8 @@ google-auth-httplib2>=0.2.0
 google-auth-oauthlib>=1.2.0
 feedparser>=6.0.10
 PyYAML>=6.0.1
-requests==2.32.*
-beautifulsoup4==4.12.*
-lxml==5.*
+requests~=2.32.0
+beautifulsoup4~=4.12.0
+lxml~=5.0
 python-dateutil==2.9.0.post0
-orjson==3.10.*
+orjson~=3.10.0
