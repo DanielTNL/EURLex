@@ -1,7 +1,7 @@
 name: "EUR-Lex — Build site data"
 
 on:
-  workflow_dispatch: {}          # <<< gives you the 'Run workflow' button
+  workflow_dispatch: {}          # manual 'Run workflow' button
   schedule:
     - cron: "10 6 * * *"         # daily 06:10 UTC
   push:
@@ -34,10 +34,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps
+      # Install from root AND scripts requirements, with guards + debug
+      - name: Install deps (root + scripts)
         run: |
-          python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
+          set -euo pipefail
+          python -m pip install --upgrade pip setuptools wheel
+
+          echo "== requirements files present =="
+          ls -1 requirements*.txt scripts/*.txt 2>/dev/null || true
+
+          for f in requirements.txt scripts/requirements.txt; do
+            if [ -f "$f" ]; then
+              echo ">>> Checking $f for trailing-dot version pins"
+              if grep -nE '==[0-9]+\.[0-9]+\.($|[^0-9])' "$f"; then
+                echo "Invalid version specifier (trailing dot) in $f"; exit 1;
+              fi
+              echo ">>> Installing from $f"
+              python -m pip install -r "$f"
+            fi
+          done
+
+          python -m pip check
 
       - name: Build site data (posts.json + reports.json + audio.json)
         run: python scripts/build_site_data.py
@@ -49,32 +66,26 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
-      
+
           git config user.name  "automation"
           git config user.email "actions@users.noreply.github.com"
-      
-          # Stage only the generated artifacts (ignore everything else)
+
+          # Stage only the generated artifacts (adjust if your script writes elsewhere)
           git add docs/data/posts.json docs/data/reports.json docs/data/audio.json || true
-      
+
           # If nothing changed, we're done
           if git diff --cached --quiet; then
             echo "No data changes to commit."
             exit 0
           fi
-      
-          # Make our index/HEAD sit on top of the latest remote main
-          # --soft keeps our staged changes; no rebase conflict and no “dirty index” error.
+
+          # Rebase-safe: put our staged changes on top of latest remote main
           git fetch origin main
           git reset --soft origin/main
-      
-          # Ensure the three files are staged after the soft reset
           git add docs/data/posts.json docs/data/reports.json docs/data/audio.json
-      
+
           git commit -m "Build site data $(date -u +%F)"
-      
-          # Push using your PAT (masked in logs)
+
+          # Push using PAT (masked in logs)
           git remote set-url origin https://${PAT_WORKFLOW}@github.com/${REPO}.git
           git push origin HEAD:main
-                # Use PAT for push (token is masked in logs)
-                git remote set-url origin https://${PAT_WORKFLOW}@github.com/${REPO}.git
-                git push origin HEAD:main
