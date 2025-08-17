@@ -26,11 +26,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install deps (best-effort)
+      # Install dependencies from root + scripts (+ workers if present), fail fast
+      - name: Install deps (root + scripts + workers)
         run: |
-          python -V
-          pip install -r requirements.txt || true
-          pip install requests python-dateutil beautifulsoup4 lxml pyyaml orjson feedparser html5lib || true
+          set -euo pipefail
+          python -m pip install --upgrade pip setuptools wheel
+
+          echo "== requirements files present =="
+          ls -1 requirements*.txt scripts/*.txt workers/*.txt 2>/dev/null || true
+
+          for f in requirements.txt scripts/requirements.txt workers/requirements.txt; do
+            if [ -f "$f" ]; then
+              echo ">>> Checking $f for trailing-dot version pins"
+              if grep -nE '==[0-9]+\.[0-9]+\.($|[^0-9])' "$f"; then
+                echo "Invalid version specifier (trailing dot) in $f"; exit 1;
+              fi
+              echo ">>> Installing from $f"
+              python -m pip install -r "$f"
+            fi
+          done
+
+          python -m pip check
 
       # 1) Discover last 24h (capture exit code instead of continue-on-error)
       - name: Daily discover (last 24h)
@@ -45,7 +61,6 @@ jobs:
             rc=$?
           fi
           echo "DISCOVER_RC=$rc" >> "$GITHUB_ENV"
-          # don't fail the job here; downstream step decides based on DISCOVER_RC
           exit 0
 
       # 1b) Fallback only if discover failed
