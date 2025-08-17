@@ -3,7 +3,6 @@ name: Pipeline v2 (manual)
 on:
   workflow_dispatch:
 
-# Nodig om outputs terug te kunnen pushen naar de repo
 permissions:
   contents: write
 
@@ -17,11 +16,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      # Best-effort install; faalt niet als er iets ontbreekt
-      - name: Install deps (best-effort)
+      # Install dependencies (fail fast if broken)
+      - name: Install deps
         run: |
-          python -V
-          pip install -r requirements.txt || true
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+          python -m pip check
 
       - name: Weekly discover
         run: python workers/weekly_discover.py --window 7d --sources sources_v2.yaml --config config_v2.yaml
@@ -32,7 +32,6 @@ jobs:
       - name: Build timeline
         run: python workers/build_timeline.py --window 7d --config config_v2.yaml
 
-      # >>> Nieuw: toon wat er is weggeschreven (handig voor snelle controle)
       - name: Show outputs (ls + head)
         run: |
           echo "== Directory tree =="
@@ -52,7 +51,6 @@ jobs:
           echo "== state =="
           ls -lah state || true
 
-      # >>> Nieuw: upload resultaat als artifact (downloadbaar per run)
       - name: Upload data artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -63,7 +61,6 @@ jobs:
             state/latest_discovery.json
           if-no-files-found: warn
 
-      # >>> Nieuw: commit outputs terug naar de repo (optioneel)
       - name: Commit outputs back to repo (optional)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
