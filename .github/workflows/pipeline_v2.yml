@@ -10,17 +10,36 @@ jobs:
   dryrun:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # Install dependencies (fail fast if broken)
-      - name: Install deps
+      # Install dependencies from root + scripts (+ workers if present), fail fast
+      - name: Install deps (root + scripts + workers)
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt
+
+          echo "== requirements files present =="
+          ls -1 requirements*.txt scripts/*.txt workers/*.txt 2>/dev/null || true
+
+          for f in requirements.txt scripts/requirements.txt workers/requirements.txt; do
+            if [ -f "$f" ]; then
+              echo ">>> Checking $f for trailing-dot version pins"
+              if grep -nE '==[0-9]+\.[0-9]+\.($|[^0-9])' "$f"; then
+                echo "Invalid version specifier (trailing dot) in $f"; exit 1;
+              fi
+              echo ">>> Installing from $f"
+              python -m pip install -r "$f"
+            fi
+          done
+
           python -m pip check
 
       - name: Weekly discover
