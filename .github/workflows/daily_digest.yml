@@ -55,12 +55,27 @@ jobs:
 
           python -m pip check
 
+      # Guard + visibility: ensure a model is set and show which one we'll use
+      - name: Assert OpenAI model
+        env:
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+        run: |
+          python - <<'PY'
+          import os, sys
+          m = (os.getenv("OPENAI_MODEL") or "").strip()
+          if not m:
+              print("ERROR: OPENAI_MODEL is empty. Set repo variable OPENAI_MODEL or rely on fallback.", file=sys.stderr)
+              sys.exit(2)
+          print("Resolved OPENAI_MODEL:", m)
+          PY
+
       - name: Run digest
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           GMAIL_USER:     ${{ secrets.GMAIL_USER }}
           GMAIL_PASS:     ${{ secrets.GMAIL_PASS }}
-          OPENAI_MODEL:   ${{ vars.OPENAI_MODEL }}
+          # ✅ Always provide a model (repo var fallback → hard default)
+          OPENAI_MODEL:   ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
 
           # Google OAuth (your Gmail)
           GOOGLE_OAUTH_CLIENT_ID:     ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
