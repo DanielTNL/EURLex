@@ -1,6 +1,7 @@
-beautifulsoup4==4.12.*
-lxml==5.*
-python-dateutil==2.9.0.post0
-PyYAML>=6.0.1
-orjson==3.10.*
 python-frontmatter==1.1.0
+# If scripts also need these, keep them in sync with root:
+# requests~=2.32.0
+# beautifulsoup4~=4.12.0
+# lxml~=5.0
+# orjson~=3.10.0
+# PyYAML>=6.0.1
