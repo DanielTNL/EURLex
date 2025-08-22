@@ -1,8 +1,8 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2025-08-14T06:22:33.954348+00:00",
-    "end": "2025-08-21T06:22:33.954348+00:00",
+    "start": "2025-08-15T06:14:57.607526+00:00",
+    "end": "2025-08-22T06:14:57.607526+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
@@ -248,19 +248,6 @@
           "currency": "EUR"
         }
       ]
-    },
-    {
-      "date": "2025-08-14T18:00:29+02:00",
-      "title": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainmen... More",
-      "url": "https://www.euronews.com/programs/top-news-stories-today",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainmen... More",
-      "amounts": []
     }
   ]
 }
