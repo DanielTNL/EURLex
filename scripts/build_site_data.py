@@ -40,6 +40,145 @@ MAX_LINKS_PER_REPORT = 300
 def sha16(s: str) -> str:
     return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
 
+def squash_text(text: str) -> str:
+    return re.sub(r"\s+", " ", html.unescape(text or "")).strip()
+
+def collapse_repeated_sentences(text: str) -> str:
+    sentences = re.split(r"(?<=[.!?])\s+", text)
+    seen = set()
+    cleaned = []
+    for sentence in sentences:
+        candidate = sentence.strip()
+        if not candidate:
+            continue
+        fingerprint = re.sub(r"[^a-z0-9]+", "", candidate.lower())
+        if len(fingerprint) > 24 and fingerprint in seen:
+            continue
+        cleaned.append(candidate)
+        if len(fingerprint) > 24:
+            seen.add(fingerprint)
+    return " ".join(cleaned)
+
+def trim_after_repeated_lead(text: str, min_len: int = 80) -> str:
+    compact = squash_text(text)
+    if len(compact) < min_len * 2:
+        return compact
+
+    for size in range(min(180, len(compact) // 2), min_len - 1, -10):
+        lead = compact[:size].strip(" ,;:-")
+        if len(lead) < min_len:
+            continue
+        second = compact.find(lead, size)
+        if second > 0:
+            return compact[:second].strip(" ,;:-")
+    return compact
+
+def trim_after_repeated_reference(text: str) -> str:
+    compact = squash_text(text)
+    match = re.match(r"^((?:Case\s+[A-Z]-\d+/\d+|P\d+_TA\(\d{4}\)\d+|CELEX:[A-Z0-9()./_-]+|OJ:[A-Z]_[A-Z0-9]+))", compact, flags=re.I)
+    if not match:
+        return compact
+    token = match.group(1).strip()
+    second = compact.find(token, len(token))
+    if second > 0:
+        return compact[:second].strip(" ,;:-")
+    return compact
+
+def extract_reader_reference(title: str) -> str:
+    title = squash_text(title)
+    patterns = [
+        r"(CELEX:[A-Z0-9()./_-]+)",
+        r"\b(Case\s+[A-Z]-\d+/\d+)\b",
+        r"\b(CON/\d{4}/\d+)\b",
+        r"\b(P\d+_TA\(\d{4}\)\d+)\b",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, title, flags=re.I)
+        if match:
+            return match.group(1).strip()
+    return ""
+
+def derive_title_from_summary(summary: str) -> str:
+    cleaned = squash_text(summary)
+    if not cleaned:
+        return ""
+    cleaned = re.sub(r"^This document is an excerpt from the EUR-Lex website\b[:\s-]*", "", cleaned, flags=re.I)
+    cleaned = re.sub(r"^Document\s+[A-Z0-9:/()._-]+\s*", "", cleaned)
+    cleaned = collapse_repeated_sentences(cleaned)
+    cleaned = trim_after_repeated_lead(cleaned)
+    cleaned = trim_after_repeated_reference(cleaned)
+    cleaned = re.split(r"\b(?:ELI:|Official Journal|Language of the case:|OJ\s+[A-Z],)\b", cleaned)[0].strip()
+    if not cleaned:
+        return ""
+    first_sentence = re.split(r"(?<=[.!?])\s+", cleaned)[0].strip()
+    candidate = first_sentence or cleaned
+    return candidate[:220].strip(" ,;:-")
+
+def clean_reader_title(title: str, summary: str = "") -> str:
+    original = squash_text(title)
+    if not original:
+        return "Untitled"
+
+    cleaned = original
+    cleaned = re.sub(r"^This document is an excerpt from the EUR-Lex website\b[:\s-]*", "", cleaned, flags=re.I)
+    cleaned = re.sub(r"^Document\s+[A-Z0-9:/()._-]+\s*", "", cleaned)
+
+    celex_match = re.match(r"^(CELEX:[^:]+):\s*(.+)$", cleaned, flags=re.I)
+    if celex_match:
+        cleaned = celex_match.group(2).strip()
+
+    if not cleaned or cleaned.lower().startswith("this document is an excerpt from the eur-lex website"):
+        cleaned = derive_title_from_summary(summary) or original
+
+    cleaned = cleaned.replace(".#", ": ")
+    cleaned = re.sub(r"\s*#\s*", " ", cleaned)
+    cleaned = re.split(r"\b(?:ELI:|Official Journal|Language of the case:)\b", cleaned)[0].strip()
+    cleaned = re.sub(r"\s+", " ", cleaned).strip(" ,;:-")
+    return cleaned or original or "Untitled"
+
+def clean_reader_summary(summary: str, title: str = "") -> str:
+    cleaned = squash_text(summary)
+    if not cleaned:
+        return ""
+
+    cleaned = re.sub(r"^This document is an excerpt from the EUR-Lex website\b[:\s-]*", "", cleaned, flags=re.I)
+    cleaned = re.sub(r"^Document\s+[A-Z0-9:/()._-]+\s*", "", cleaned)
+    cleaned = collapse_repeated_sentences(cleaned)
+    cleaned = trim_after_repeated_lead(cleaned)
+    cleaned = trim_after_repeated_reference(cleaned)
+    cleaned = re.split(r"\b(?:ELI:|Official Journal|Language of the case:|OJ\s+[A-Z],)\b", cleaned)[0].strip()
+
+    cleaned_title = clean_reader_title(title)
+    if cleaned_title and cleaned.lower().startswith(cleaned_title.lower() + " "):
+        cleaned = cleaned[len(cleaned_title):].strip(" .:-")
+
+    return re.sub(r"\s+", " ", cleaned).strip()
+
+def enrich_post_entry(item: dict) -> dict:
+    enriched = dict(item)
+    original_title = squash_text(enriched.get("original_title") or enriched.get("title") or "")
+    raw_summary = squash_text(enriched.get("summary") or "")
+    display_title = squash_text(clean_reader_title(original_title, raw_summary))
+    display_summary = squash_text(clean_reader_summary(raw_summary, original_title))
+    reference = squash_text(extract_reader_reference(original_title))
+
+    enriched["title"] = original_title or enriched.get("title") or "Untitled"
+    enriched["original_title"] = original_title or enriched["title"]
+    enriched["summary"] = raw_summary
+    enriched["display_title"] = display_title or enriched["original_title"]
+
+    if display_summary:
+        enriched["display_summary"] = display_summary
+    else:
+        enriched.pop("display_summary", None)
+
+    if reference:
+        enriched["reference"] = reference
+    else:
+        enriched.pop("reference", None)
+
+    return enriched
+
 # --- Config loader (fixed) ---
 def load_cfg():
     with open(CONFIG, "r", encoding="utf-8") as f:
@@ -233,10 +372,13 @@ def make_report_entry(path: pathlib.Path, title: str, abstract: str, key_items: 
     if "weekly" in lr: tags.append("weekly")
     if "daily" in lr: tags.append("daily")
     if not tags: tags.append("report")
+    display_title = re.sub(r"^#+\s*", "", squash_text(title))
     return {
         "id": rid,
         "date": date,
         "title": title.strip() or "Untitled",
+        "original_title": title.strip() or "Untitled",
+        "display_title": display_title or "Untitled",
         "url_html": url_html,
         "url_drive": "",
         "tags": tags,
@@ -344,7 +486,7 @@ async def build():
     old_posts = []
     if POSTS_JSON.exists():
         try:
-            old_posts = json.loads(POSTS_JSON.read_text(encoding="utf-8"))
+            old_posts = [enrich_post_entry(item) for item in json.loads(POSTS_JSON.read_text(encoding="utf-8"))]
         except Exception:
             old_posts = []
 
@@ -384,7 +526,7 @@ async def build():
                 src_name, base_tags = label_for_url(link)
                 pid = sha16(link)
                 ts = int((d if d.tzinfo else d.replace(tzinfo=tz.UTC)).timestamp())
-                feed_items.append({
+                feed_items.append(enrich_post_entry({
                     "id": pid,
                     "source": src_name,
                     "url": link,
@@ -395,7 +537,7 @@ async def build():
                     "score": s,
                     "ts": ts,
                     "categories": cats
-                })
+                }))
         except Exception as ex:
             print(f"[WARN] feed error {url}: {ex}")
 
@@ -429,7 +571,7 @@ async def build():
         src_name, base_tags = label_for_url(u)
         cats = categories_for(f"{title} {summary}")
         pid = sha16(u)
-        report_items.append({
+        report_items.append(enrich_post_entry({
             "id": pid,
             "source": src_name,
             "url": u,
@@ -440,16 +582,16 @@ async def build():
             "score": score_text(KEYWORDS, f"{title} {summary}"),
             "ts": int(dt.datetime.now(tz.UTC).timestamp()),
             "categories": cats
-        })
+        }))
 
     # 4) Merge + rank + cap
-    merged = []
-    seenids = set()
+    merged_by_id = {}
     for arr in (old_posts, feed_items, report_items):
-        for p in arr:
-            if p["id"] in seenids: continue
-            merged.append(p)
-            seenids.add(p["id"])
+        for post in arr:
+            current = merged_by_id.get(post["id"])
+            if current is None or post.get("ts", 0) >= current.get("ts", 0):
+                merged_by_id[post["id"]] = post
+    merged = list(merged_by_id.values())
     merged.sort(key=lambda x: (x.get("score",0), x.get("ts",0)), reverse=True)
     # Respect caps
     final_posts = clamp_posts_by_caps(merged)

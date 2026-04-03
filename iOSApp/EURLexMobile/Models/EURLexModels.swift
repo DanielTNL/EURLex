@@ -94,14 +94,225 @@ enum TextSanitizer {
     }
 }
 
+enum PostReaderFormatter {
+    static func reference(from title: String) -> String? {
+        let cleaned = TextSanitizer.clean(title)
+        guard !cleaned.isEmpty else { return nil }
+
+        let patterns = [
+            "(CELEX:[A-Z0-9()./_-]+)",
+            "\\b(Case\\s+[A-Z]-\\d+/\\d+)\\b",
+            "\\b(CON/\\d{4}/\\d+)\\b",
+            "\\b(P\\d+_TA\\(\\d{4}\\)\\d+)\\b"
+        ]
+
+        for pattern in patterns {
+            if let match = firstMatch(in: cleaned, pattern: pattern) {
+                return match
+            }
+        }
+
+        return nil
+    }
+
+    static func displayTitle(from original: String, summary: String) -> String {
+        let fallback = TextSanitizer.clean(original)
+        guard !fallback.isEmpty else { return "Untitled" }
+
+        var cleaned = fallback
+        cleaned = cleaned.replacingOccurrences(
+            of: #"^This document is an excerpt from the EUR-Lex website\b[:\s-]*"#,
+            with: "",
+            options: .regularExpression
+        )
+        cleaned = cleaned.replacingOccurrences(
+            of: #"^Document\s+[A-Z0-9:/()._-]+\s*"#,
+            with: "",
+            options: .regularExpression
+        )
+
+        if let range = cleaned.range(of: #"^(CELEX:[^:]+):\s*(.+)$"#, options: .regularExpression) {
+            let full = String(cleaned[range])
+            if let titlePart = captureGroup(in: full, pattern: #"^(CELEX:[^:]+):\s*(.+)$"#, group: 2) {
+                cleaned = titlePart
+            }
+        }
+
+        if cleaned.isEmpty || cleaned.lowercased().hasPrefix("this document is an excerpt from the eur-lex website") {
+            cleaned = derivedTitle(from: summary) ?? fallback
+        }
+
+        cleaned = cleaned
+            .replacingOccurrences(of: ".#", with: ": ")
+            .replacingOccurrences(of: #"\s*#\s*"#, with: " ", options: .regularExpression)
+            .replacingOccurrences(of: #"\b(?:ELI:|Official Journal|Language of the case:)\b.*$"#, with: "", options: .regularExpression)
+
+        cleaned = TextSanitizer.clean(cleaned)
+        return cleaned.isEmpty ? fallback : cleaned.trimmingCharacters(in: CharacterSet(charactersIn: " ,;:-"))
+    }
+
+    static func displaySummary(from summary: String, title: String) -> String {
+        var cleaned = TextSanitizer.clean(summary)
+        guard !cleaned.isEmpty else { return "" }
+
+        cleaned = cleaned.replacingOccurrences(
+            of: #"^This document is an excerpt from the EUR-Lex website\b[:\s-]*"#,
+            with: "",
+            options: .regularExpression
+        )
+        cleaned = cleaned.replacingOccurrences(
+            of: #"^Document\s+[A-Z0-9:/()._-]+\s*"#,
+            with: "",
+            options: .regularExpression
+        )
+        cleaned = collapseRepeatedSentences(in: cleaned)
+        cleaned = trimAfterRepeatedLead(in: cleaned)
+        cleaned = trimAfterRepeatedReference(in: cleaned)
+        cleaned = cleaned.replacingOccurrences(
+            of: #"\b(?:ELI:|Official Journal|Language of the case:|OJ\s+[A-Z],)\b.*$"#,
+            with: "",
+            options: .regularExpression
+        )
+
+        let readableTitle = displayTitle(from: title, summary: summary)
+        if cleaned.lowercased().hasPrefix(readableTitle.lowercased() + " ") {
+            cleaned.removeFirst(readableTitle.count)
+        }
+
+        cleaned = TextSanitizer.clean(cleaned).trimmingCharacters(in: CharacterSet(charactersIn: " .:-"))
+        return cleaned
+    }
+
+    private static func derivedTitle(from summary: String) -> String? {
+        var cleaned = TextSanitizer.clean(summary)
+        guard !cleaned.isEmpty else { return nil }
+
+        cleaned = cleaned.replacingOccurrences(
+            of: #"^This document is an excerpt from the EUR-Lex website\b[:\s-]*"#,
+            with: "",
+            options: .regularExpression
+        )
+        cleaned = cleaned.replacingOccurrences(
+            of: #"^Document\s+[A-Z0-9:/()._-]+\s*"#,
+            with: "",
+            options: .regularExpression
+        )
+        cleaned = collapseRepeatedSentences(in: cleaned)
+        cleaned = trimAfterRepeatedLead(in: cleaned)
+        cleaned = trimAfterRepeatedReference(in: cleaned)
+        cleaned = cleaned.replacingOccurrences(
+            of: #"\b(?:ELI:|Official Journal|Language of the case:|OJ\s+[A-Z],)\b.*$"#,
+            with: "",
+            options: .regularExpression
+        )
+
+        let firstSentence = splitSentences(in: cleaned).first ?? cleaned
+        let trimmed = TextSanitizer.clean(firstSentence)
+        guard !trimmed.isEmpty else { return nil }
+        return String(trimmed.prefix(220)).trimmingCharacters(in: CharacterSet(charactersIn: " ,;:-"))
+    }
+
+    private static func collapseRepeatedSentences(in text: String) -> String {
+        let sentences = splitSentences(in: text)
+            .map(TextSanitizer.clean)
+            .filter { !$0.isEmpty }
+
+        var seen = Set<String>()
+        var kept: [String] = []
+
+        for sentence in sentences {
+            let fingerprint = sentence
+                .lowercased()
+                .replacingOccurrences(of: #"[^a-z0-9]+"#, with: "", options: .regularExpression)
+
+            if fingerprint.count > 24, seen.contains(fingerprint) {
+                continue
+            }
+
+            kept.append(sentence)
+            if fingerprint.count > 24 {
+                seen.insert(fingerprint)
+            }
+        }
+
+        return kept.joined(separator: " ")
+    }
+
+    private static func splitSentences(in text: String) -> [String] {
+        let pieces = text.split(whereSeparator: { ".!?".contains($0) })
+        if pieces.isEmpty {
+            return [text]
+        }
+        return pieces.map { String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
+    }
+
+    private static func trimAfterRepeatedLead(in text: String, minLength: Int = 80) -> String {
+        let compact = TextSanitizer.clean(text)
+        guard compact.count >= minLength * 2 else { return compact }
+
+        let maxLength = min(180, compact.count / 2)
+        guard maxLength >= minLength else { return compact }
+
+        for size in stride(from: maxLength, through: minLength, by: -10) {
+            let lead = String(compact.prefix(size)).trimmingCharacters(in: CharacterSet(charactersIn: " ,;:-"))
+            guard lead.count >= minLength else { continue }
+            let searchStart = compact.index(compact.startIndex, offsetBy: size)
+            if let range = compact.range(of: lead, options: [], range: searchStart..<compact.endIndex) {
+                return String(compact[..<range.lowerBound]).trimmingCharacters(in: CharacterSet(charactersIn: " ,;:-"))
+            }
+        }
+
+        return compact
+    }
+
+    private static func trimAfterRepeatedReference(in text: String) -> String {
+        let compact = TextSanitizer.clean(text)
+        let pattern = #"^((?:Case\s+[A-Z]-\d+/\d+|P\d+_TA\(\d{4}\)\d+|CELEX:[A-Z0-9()./_-]+|OJ:[A-Z]_[A-Z0-9]+))"#
+        guard let token = firstMatch(in: compact, pattern: pattern), !token.isEmpty else {
+            return compact
+        }
+        let searchStart = compact.index(compact.startIndex, offsetBy: token.count)
+        if let range = compact.range(of: token, options: [], range: searchStart..<compact.endIndex) {
+            return String(compact[..<range.lowerBound]).trimmingCharacters(in: CharacterSet(charactersIn: " ,;:-"))
+        }
+        return compact
+    }
+
+    private static func firstMatch(in text: String, pattern: String) -> String? {
+        guard let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive]) else {
+            return nil
+        }
+        let range = NSRange(text.startIndex..., in: text)
+        guard let match = regex.firstMatch(in: text, options: [], range: range), let captureRange = Range(match.range(at: 1), in: text) else {
+            return nil
+        }
+        return String(text[captureRange])
+    }
+
+    private static func captureGroup(in text: String, pattern: String, group: Int) -> String? {
+        guard let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive]) else {
+            return nil
+        }
+        let range = NSRange(text.startIndex..., in: text)
+        guard let match = regex.firstMatch(in: text, options: [], range: range), let captureRange = Range(match.range(at: group), in: text) else {
+            return nil
+        }
+        return String(text[captureRange]).trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+}
+
 struct Post: Decodable, Identifiable, Hashable {
     let id: String
     let source: String
     let url: String
     let title: String
+    let originalTitle: String
+    private let displayTitleValue: String?
     let tags: [String]
     let added: String?
     let summary: String
+    private let displaySummaryValue: String?
+    let reference: String?
     let categories: [String]
 
     enum CodingKeys: String, CodingKey {
@@ -109,9 +320,13 @@ struct Post: Decodable, Identifiable, Hashable {
         case source
         case url
         case title
+        case originalTitle = "original_title"
+        case displayTitleValue = "display_title"
         case tags
         case added
         case summary
+        case displaySummaryValue = "display_summary"
+        case reference
         case categories
     }
 
@@ -121,9 +336,13 @@ struct Post: Decodable, Identifiable, Hashable {
         source = try container.decodeIfPresent(String.self, forKey: .source) ?? "Unknown Source"
         url = try container.decodeIfPresent(String.self, forKey: .url) ?? ""
         title = try container.decodeIfPresent(String.self, forKey: .title) ?? "Untitled"
+        originalTitle = try container.decodeIfPresent(String.self, forKey: .originalTitle) ?? title
+        displayTitleValue = try container.decodeIfPresent(String.self, forKey: .displayTitleValue)
         tags = try container.decodeIfPresent([String].self, forKey: .tags) ?? []
         added = try container.decodeIfPresent(String.self, forKey: .added)
         summary = try container.decodeIfPresent(String.self, forKey: .summary) ?? ""
+        displaySummaryValue = try container.decodeIfPresent(String.self, forKey: .displaySummaryValue)
+        reference = try container.decodeIfPresent(String.self, forKey: .reference) ?? PostReaderFormatter.reference(from: originalTitle)
         categories = try container.decodeIfPresent([String].self, forKey: .categories) ?? []
     }
 
@@ -132,18 +351,41 @@ struct Post: Decodable, Identifiable, Hashable {
     var sortDate: Date { addedDate ?? .distantPast }
     var displayDateText: String { EURLexDate.short(added) }
     var relativeDateText: String { EURLexDate.relative(added) }
+    var displayTitle: String {
+        let cleaned = TextSanitizer.clean(displayTitleValue ?? "")
+        return cleaned.isEmpty ? PostReaderFormatter.displayTitle(from: originalTitle, summary: summary) : cleaned
+    }
+    var originalTitleDisplay: String {
+        let cleaned = TextSanitizer.clean(originalTitle)
+        return cleaned.isEmpty ? title : cleaned
+    }
+    var displaySummary: String {
+        let cleaned = TextSanitizer.clean(displaySummaryValue ?? "")
+        return cleaned.isEmpty ? PostReaderFormatter.displaySummary(from: summary, title: originalTitleDisplay) : cleaned
+    }
     var summaryPreview: String {
-        let cleaned = TextSanitizer.clean(summary)
+        let cleaned = TextSanitizer.clean(displaySummary)
         return cleaned.isEmpty ? "No summary is available in the published feed yet." : cleaned
+    }
+    var hasDistinctOriginalTitle: Bool {
+        normalizedComparable(displayTitle) != normalizedComparable(originalTitleDisplay)
     }
     var primaryTags: [String] { Array((categories + tags).uniquePreservingOrder().prefix(5)) }
     var dedupeKey: String { [id, url.lowercased(), title.lowercased()].joined(separator: "|") }
+
+    private func normalizedComparable(_ text: String) -> String {
+        TextSanitizer.clean(text)
+            .lowercased()
+            .replacingOccurrences(of: #"[^a-z0-9]+"#, with: "", options: .regularExpression)
+    }
 }
 
 struct Report: Decodable, Identifiable, Hashable {
     let id: String
     let date: String
     let title: String
+    let originalTitle: String
+    private let displayTitleValue: String?
     let urlHtml: String
     let urlDrive: String
     let tags: [String]
@@ -154,6 +396,8 @@ struct Report: Decodable, Identifiable, Hashable {
         case id
         case date
         case title
+        case originalTitle = "original_title"
+        case displayTitleValue = "display_title"
         case urlHtml
         case urlDrive
         case tags
@@ -166,6 +410,8 @@ struct Report: Decodable, Identifiable, Hashable {
         id = try container.decode(String.self, forKey: .id)
         date = try container.decodeIfPresent(String.self, forKey: .date) ?? ""
         title = try container.decodeIfPresent(String.self, forKey: .title) ?? "Untitled report"
+        originalTitle = try container.decodeIfPresent(String.self, forKey: .originalTitle) ?? title
+        displayTitleValue = try container.decodeIfPresent(String.self, forKey: .displayTitleValue)
         urlHtml = try container.decodeIfPresent(String.self, forKey: .urlHtml) ?? ""
         urlDrive = try container.decodeIfPresent(String.self, forKey: .urlDrive) ?? ""
         tags = try container.decodeIfPresent([String].self, forKey: .tags) ?? []
@@ -200,7 +446,9 @@ struct Report: Decodable, Identifiable, Hashable {
     var sortDate: Date { reportDate ?? .distantPast }
     var displayDateText: String { EURLexDate.short(date) }
     var displayTitle: String {
-        title.replacingOccurrences(of: #"^#+\s*"#, with: "", options: .regularExpression)
+        let cleaned = TextSanitizer.clean(displayTitleValue ?? "")
+        if !cleaned.isEmpty { return cleaned }
+        return title.replacingOccurrences(of: #"^#+\s*"#, with: "", options: .regularExpression)
     }
     var abstractPreview: String {
         let cleaned = TextSanitizer.clean(abstract)

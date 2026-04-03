@@ -4,11 +4,6 @@ struct TodayView: View {
     @ObservedObject var model: AppModel
     @Binding var selectedTab: AppTab
 
-    private let newspaperColumns = [
-        GridItem(.flexible(), spacing: 14),
-        GridItem(.flexible(), spacing: 14)
-    ]
-
     @State private var selectedDay: Date?
     @State private var selectedReport: Report?
     @State private var selectedPost: Post?
@@ -21,8 +16,8 @@ struct TodayView: View {
         var unique = Set<Date>()
         var ordered: [Date] = []
 
-        let candidates = model.posts.compactMap(\.addedDate)
-            + model.reports.compactMap(\.reportDate)
+        let candidates = model.posts.compactMap { $0.addedDate }
+            + model.reports.compactMap { $0.reportDate }
             + model.timeline.events.compactMap { EURLexDate.parse($0.date) }
             + [model.digest?.generatedDate].compactMap { $0 }
 
@@ -51,22 +46,32 @@ struct TodayView: View {
         model.reports.first { $0.tags.contains("weekly") }
     }
 
-    private var weeklyPosts: [Post] {
-        guard let reportDate = weeklyReport?.reportDate else { return [] }
-        return model.posts.filter {
-            guard let date = $0.addedDate else { return false }
-            return calendar.isDate(date, equalTo: reportDate, toGranularity: .weekOfYear)
-        }
-        .prefix(4)
-        .map { $0 }
-    }
-
     var body: some View {
         GeometryReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
+                    PageHeroHeader(
+                        title: "Briefing",
+                        subtitle: "The daily front page for the brief, key points, and linked documents.",
+                        accent: AppTheme.cobalt
+                    )
+
                     dayOverviewCard
+
+                    if !daySnapshot.prominentDocuments.isEmpty {
+                        importantDocumentsSection
+                    }
+
+                    if !daySnapshot.topCategories.isEmpty {
+                        categoriesSection
+                    }
+
+                    if !daySnapshot.relatedPosts.isEmpty {
+                        relatedDocumentsSection
+                    }
+
                     daySelector
+
                     if let weeklyReport {
                         sundayEditionSection(report: weeklyReport)
                     }
@@ -78,7 +83,8 @@ struct TodayView: View {
                 .frame(width: proxy.size.width, alignment: .leading)
             }
         }
-        .navigationTitle("Briefing")
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
         .navigationDestination(item: $selectedReport) { report in
             ReportDetailView(report: report)
         }
@@ -107,7 +113,7 @@ struct TodayView: View {
             selectedDay = newValue
         }
         .sheet(isPresented: $showingRelatedArticles) {
-            BriefingRelatedArticlesSheet(posts: daySnapshot.posts)
+            BriefingRelatedArticlesSheet(posts: daySnapshot.relatedPosts)
         }
         .sheet(isPresented: $showingCategories) {
             BriefingCategoriesSheet(categories: daySnapshot.topCategories)
@@ -125,93 +131,150 @@ struct TodayView: View {
                     Text(dayTitle(for: activeDay))
                         .font(.system(size: 34, weight: .bold, design: .serif))
                         .foregroundStyle(AppTheme.ink)
-
-                    Text(daySnapshot.introParagraph)
-                        .font(.subheadline)
-                        .foregroundStyle(AppTheme.slate)
-                        .lineSpacing(4)
                 }
 
                 Spacer(minLength: 12)
                 SyncStatusBadge(state: model.loadState)
             }
 
-            publishedPulse
+            Text(daySnapshot.introParagraph)
+                .font(.body)
+                .foregroundStyle(AppTheme.ink)
+                .lineSpacing(5)
 
-            VStack(alignment: .leading, spacing: 12) {
-                if !daySnapshot.headline.isEmpty {
-                    Text(daySnapshot.headline)
-                        .font(.title3.weight(.semibold))
-                        .foregroundStyle(AppTheme.ink)
-                }
+            if !daySnapshot.topLines.isEmpty {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Key points")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(AppTheme.lavender)
 
-                HStack(spacing: 10) {
-                    Button {
-                        openPrimaryBriefingDestination()
-                    } label: {
-                        Label("View more", systemImage: "arrow.right.circle")
+                    ForEach(Array(daySnapshot.topLines.prefix(3).enumerated()), id: \.offset) { _, item in
+                        HStack(alignment: .top, spacing: 10) {
+                            Circle()
+                                .fill(AppTheme.cobalt)
+                                .frame(width: 7, height: 7)
+                                .padding(.top, 6)
+
+                            Text(item)
+                                .font(.subheadline.weight(.semibold))
+                                .foregroundStyle(AppTheme.ink)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }
-                    .buttonStyle(PrimaryCapsuleButtonStyle())
-
-                    Button {
-                        showingRelatedArticles = true
-                    } label: {
-                        Label("Related articles", systemImage: "newspaper")
-                    }
-                    .buttonStyle(SecondaryCapsuleButtonStyle())
-                    .disabled(daySnapshot.posts.isEmpty)
-                }
-
-                HStack(spacing: 10) {
-                    Button {
-                        showingCategories = true
-                    } label: {
-                        Label("Categories", systemImage: "square.grid.2x2")
-                    }
-                    .buttonStyle(SecondaryCapsuleButtonStyle())
-                    .disabled(daySnapshot.topCategories.isEmpty)
-
-                    Button {
-                        selectedTab = .feed
-                    } label: {
-                        Label("Open feed", systemImage: "text.append")
-                    }
-                    .buttonStyle(SecondaryCapsuleButtonStyle())
                 }
             }
+
+            briefingMetaRow
+
+            Button {
+                openPrimaryBriefingDestination()
+            } label: {
+                Label("View more", systemImage: "arrow.right.circle")
+            }
+            .buttonStyle(PrimaryCapsuleButtonStyle())
         }
         .glassCard(cornerRadius: 34, tint: AppTheme.cobalt, padding: 22)
     }
 
-    private var publishedPulse: some View {
-        HStack(spacing: 8) {
-            Text("\(daySnapshot.signalCount) published signals")
-                .font(.subheadline.weight(.semibold))
+    private var briefingMetaRow: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                briefingMetaPill(title: "Signals", value: daySnapshot.signalCount, tint: AppTheme.cobalt)
+                briefingMetaPill(title: "Reports", value: daySnapshot.reports.count, tint: AppTheme.lavender)
+                briefingMetaPill(title: "Categories", value: daySnapshot.topCategories.count, tint: AppTheme.mint)
+                briefingMetaPill(title: "Timeline", value: daySnapshot.timelineEvents.count, tint: AppTheme.coral)
+            }
+            .padding(.vertical, 2)
+        }
+    }
+
+    private func briefingMetaPill(title: String, value: Int, tint: Color) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("\(value)")
+                .font(.headline.weight(.bold))
                 .foregroundStyle(AppTheme.ink)
-
-            Circle()
-                .fill(AppTheme.border)
-                .frame(width: 4, height: 4)
-
-            Text("\(daySnapshot.reports.count) reports")
-                .font(.subheadline)
-                .foregroundStyle(AppTheme.slate)
-
-            Circle()
-                .fill(AppTheme.border)
-                .frame(width: 4, height: 4)
-
-            Text("\(daySnapshot.timelineEvents.count) timeline items")
-                .font(.subheadline)
-                .foregroundStyle(AppTheme.slate)
+            Text(title.uppercased())
+                .font(.caption2.weight(.bold))
+                .foregroundStyle(tint)
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 12)
-        .background(AppTheme.panelSoft, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .background(AppTheme.panelSoft, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
         .overlay(
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
                 .strokeBorder(AppTheme.border, lineWidth: 1)
         )
+    }
+
+    private var importantDocumentsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionTitle(
+                title: "Important documents",
+                subtitle: "The clearest entry points for this day.",
+                accent: AppTheme.cobalt,
+                tone: .page
+            )
+
+            ForEach(daySnapshot.prominentDocuments) { document in
+                Button {
+                    open(document)
+                } label: {
+                    BriefingDocumentCard(document: document)
+                }
+                .buttonStyle(.plain)
+            }
+        }
+    }
+
+    private var categoriesSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionTitle(
+                title: "Categories",
+                subtitle: "The strongest themes attached to this day so far.",
+                accent: AppTheme.lavender,
+                tone: .page
+            )
+
+            VStack(alignment: .leading, spacing: 12) {
+                TagStrip(tags: daySnapshot.topCategories)
+
+                Button {
+                    showingCategories = true
+                } label: {
+                    Label("View all categories", systemImage: "square.grid.2x2")
+                }
+                .buttonStyle(SecondaryCapsuleButtonStyle())
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .glassCard(cornerRadius: 26, tint: AppTheme.lavender, padding: 16)
+        }
+    }
+
+    private var relatedDocumentsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionTitle(
+                title: "Related documents",
+                subtitle: "A few nearby reads if you want to go deeper.",
+                accent: AppTheme.mint,
+                tone: .page
+            )
+
+            ForEach(Array(daySnapshot.relatedPosts.prefix(2))) { post in
+                Button {
+                    selectedPost = post
+                } label: {
+                    BriefingRelatedPostCard(post: post)
+                }
+                .buttonStyle(.plain)
+            }
+
+            Button {
+                showingRelatedArticles = true
+            } label: {
+                Label("Browse related documents", systemImage: "newspaper")
+            }
+            .buttonStyle(SecondaryCapsuleButtonStyle())
+        }
     }
 
     private var daySelector: some View {
@@ -233,13 +296,13 @@ struct TodayView: View {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text(shortWeekday(for: day).uppercased())
                                     .font(.caption2.weight(.bold))
-                                    .foregroundStyle(isSelected(day) ? Color.white.opacity(0.84) : AppTheme.slate)
+                                    .foregroundStyle(isSelected(day) ? Color.white.opacity(0.90) : AppTheme.slate)
                                 Text(dayNumber(for: day))
                                     .font(.title3.weight(.bold))
                                     .foregroundStyle(AppTheme.ink)
                                 Text("\(snapshot.signalCount) signals")
                                     .font(.caption.weight(.semibold))
-                                    .foregroundStyle(isSelected(day) ? Color.white.opacity(0.84) : AppTheme.slate)
+                                    .foregroundStyle(isSelected(day) ? Color.white.opacity(0.90) : AppTheme.slate)
                             }
                             .frame(width: 88, alignment: .leading)
                             .padding(14)
@@ -270,40 +333,36 @@ struct TodayView: View {
     }
 
     private func sundayEditionSection(report: Report) -> some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 12) {
             SectionTitle(
                 title: "Sunday Edition",
-                subtitle: "A more editorial weekly read, designed to feel like a compact newspaper.",
+                subtitle: "The weekly newspaper-style overview lives here each Sunday morning.",
                 accent: AppTheme.lavender,
                 tone: .page
             )
 
-            VStack(alignment: .leading, spacing: 18) {
+            VStack(alignment: .leading, spacing: 16) {
                 HStack(alignment: .top) {
-                    VStack(alignment: .leading, spacing: 10) {
+                    VStack(alignment: .leading, spacing: 8) {
                         Text("WEEKEND FRONT PAGE")
                             .font(.caption.weight(.bold))
                             .foregroundStyle(AppTheme.lavender)
 
-                        Text(report.title)
-                            .font(.system(size: 30, weight: .bold, design: .serif))
+                        Text(report.displayTitle)
+                            .font(.system(size: 28, weight: .bold, design: .serif))
                             .foregroundStyle(AppTheme.ink)
 
                         Text(report.abstractPreview)
                             .font(.subheadline)
                             .foregroundStyle(AppTheme.slate)
+                            .lineLimit(4)
                     }
 
                     Spacer(minLength: 12)
 
-                    VStack(alignment: .trailing, spacing: 6) {
-                        Text(report.displayDateText)
-                            .font(.headline.weight(.semibold))
-                            .foregroundStyle(AppTheme.ink)
-                        Text("Sunday morning edition")
-                            .font(.caption)
-                            .foregroundStyle(AppTheme.slate)
-                    }
+                    Text(report.displayDateText)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(AppTheme.ink)
                 }
 
                 NavigationLink(destination: ReportDetailView(report: report)) {
@@ -312,67 +371,7 @@ struct TodayView: View {
                 .buttonStyle(PrimaryCapsuleButtonStyle())
             }
             .glassCard(cornerRadius: 34, tint: AppTheme.lavender, padding: 22)
-
-            LazyVGrid(columns: newspaperColumns, spacing: 14) {
-                ForEach(Array(report.keyItems.prefix(4).enumerated()), id: \.offset) { index, item in
-                    newspaperTile(
-                        kicker: "Section \(index + 1)",
-                        headline: item,
-                        body: supportingStory(for: index),
-                        tint: index.isMultiple(of: 2) ? AppTheme.cobalt : AppTheme.coral
-                    )
-                }
-            }
-
-            if !weeklyPosts.isEmpty {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Related reading")
-                        .font(.headline.weight(.semibold))
-                        .foregroundStyle(AppTheme.ink)
-
-                    ForEach(weeklyPosts) { post in
-                        NavigationLink(destination: PostDetailView(post: post)) {
-                            VStack(alignment: .leading, spacing: 8) {
-                                Text(post.source.uppercased())
-                                    .font(.caption.weight(.bold))
-                                    .foregroundStyle(AppTheme.mint)
-                                Text(post.title)
-                                    .font(.headline.weight(.semibold))
-                                    .foregroundStyle(AppTheme.ink)
-                                Text(post.summaryPreview)
-                                    .font(.subheadline)
-                                    .foregroundStyle(AppTheme.slate)
-                                    .lineLimit(3)
-                            }
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .glassCard(cornerRadius: 24, tint: AppTheme.cobalt, padding: 16)
-                        }
-                        .buttonStyle(.plain)
-                    }
-                }
-            }
         }
-    }
-
-    private func newspaperTile(kicker: String, headline: String, body: String, tint: Color) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(kicker)
-                .font(.caption.weight(.bold))
-                .foregroundStyle(tint)
-
-            Text(headline)
-                .font(.headline.weight(.semibold))
-                .fontDesign(.serif)
-                .foregroundStyle(AppTheme.ink)
-                .frame(maxWidth: .infinity, alignment: .leading)
-
-            Text(body)
-                .font(.subheadline)
-                .foregroundStyle(AppTheme.slate)
-                .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .frame(maxWidth: .infinity, minHeight: 180, alignment: .topLeading)
-        .glassCard(cornerRadius: 28, tint: tint, padding: 18)
     }
 
     private func snapshot(for day: Date) -> DaySnapshot {
@@ -385,7 +384,7 @@ struct TodayView: View {
             guard let addedDate = post.addedDate else { return false }
             return calendar.isDate(addedDate, inSameDayAs: day)
         }
-        .prefix(5)
+        .prefix(6)
         .map { $0 }
 
         let timelineEvents = model.timeline.events.filter { event in
@@ -415,21 +414,6 @@ struct TodayView: View {
         )
     }
 
-    private func supportingStory(for index: Int) -> String {
-        let fallback = [
-            "The weekly edition will read more like a compact newspaper once the backend assembles sections automatically.",
-            "This slot is intended for AI-written context, section decks, and clearer editorial transitions.",
-            "Related source material from the same week can sit beneath the editorial summary for fast drilling in.",
-            "The Sunday morning refresh can combine the weekly report with selected article cards and source citations."
-        ]
-
-        if weeklyPosts.indices.contains(index) {
-            return weeklyPosts[index].summaryPreview
-        }
-
-        return fallback[index % fallback.count]
-    }
-
     private func dayTitle(for day: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE d MMMM"
@@ -453,19 +437,13 @@ struct TodayView: View {
     }
 
     private func openPrimaryBriefingDestination() {
-        if let report = daySnapshot.dailyReport {
-            selectedReport = report
+        if let document = daySnapshot.prominentDocuments.first {
+            open(document)
             return
         }
 
         if let firstDigestURL = daySnapshot.digestItems.first?.destinationURL {
-            selectedPost = nil
             UIApplication.shared.open(firstDigestURL)
-            return
-        }
-
-        if let post = daySnapshot.posts.first {
-            selectedPost = post
             return
         }
 
@@ -475,6 +453,15 @@ struct TodayView: View {
         }
 
         selectedTab = .feed
+    }
+
+    private func open(_ document: BriefingDocument) {
+        switch document {
+        case .report(let report):
+            selectedReport = report
+        case .post(let post):
+            selectedPost = post
+        }
     }
 }
 
@@ -493,34 +480,18 @@ private struct DaySnapshot {
         digestItems.count + posts.count + timelineEvents.count
     }
 
-    var headline: String {
-        if let dailyReport {
-            return dailyReport.title
-        }
-        if let digestItem = digestItems.first {
-            return digestItem.title
-        }
-        if let post = posts.first {
-            return post.title
-        }
-        if let event = timelineEvents.first {
-            return event.title
-        }
-        return "No published briefing yet"
-    }
-
     var summary: String {
         if let dailyReport {
             return dailyReport.abstractPreview
         }
 
-        let digestSummary = digestItems.prefix(2).map(\.summaryPreview).joined(separator: " ")
+        let digestSummary = digestItems.prefix(2).map { $0.summaryPreview }.joined(separator: " ")
         if !digestSummary.isEmpty {
             return trimmed(digestSummary, limit: 260)
         }
 
         if let firstPost = posts.first {
-            return trimmed("The feed for this day is led by \(firstPost.title). \(posts.count) source articles and \(timelineEvents.count) timeline signals are currently attached to this briefing day.", limit: 260)
+            return trimmed("The feed for this day is led by \(firstPost.displayTitle). \(posts.count) source articles and \(timelineEvents.count) timeline signals are currently attached to this briefing day.", limit: 260)
         }
 
         if let firstEvent = timelineEvents.first {
@@ -544,7 +515,7 @@ private struct DaySnapshot {
             opener = "No full briefing has been published for this date yet."
         }
 
-        return trimmed("\(opener) \(summary)", limit: 280)
+        return trimmed("\(opener) \(summary)", limit: 300)
     }
 
     var topLines: [String] {
@@ -552,26 +523,169 @@ private struct DaySnapshot {
             return Array(dailyReport.keyItems.prefix(3))
         }
 
-        let digestTitles = digestItems.map(\.title)
+        let digestTitles = digestItems.map { $0.title }
         if !digestTitles.isEmpty {
             return Array(digestTitles.prefix(3))
         }
 
-        let postTitles = posts.map(\.title)
+        let postTitles = posts.map { $0.displayTitle }
         if !postTitles.isEmpty {
             return Array(postTitles.prefix(3))
         }
 
-        return timelineEvents.map(\.title).prefix(3).map { $0 }
+        return Array(timelineEvents.map { $0.title }.prefix(3))
     }
 
     var topCategories: [String] {
-        Array(posts.flatMap(\.categories).uniquePreservingOrder().prefix(8))
+        Array(posts.flatMap { $0.categories }.uniquePreservingOrder().prefix(8))
+    }
+
+    var prominentDocuments: [BriefingDocument] {
+        var items: [BriefingDocument] = []
+
+        if let dailyReport {
+            items.append(.report(dailyReport))
+        } else if let firstReport = reports.first {
+            items.append(.report(firstReport))
+        }
+
+        let primaryPostCount = items.isEmpty ? 2 : 1
+        items.append(contentsOf: posts.prefix(primaryPostCount).map { .post($0) })
+        return items
+    }
+
+    var relatedPosts: [Post] {
+        let consumed = Set(prominentDocuments.compactMap { document in
+            switch document {
+            case .post(let post):
+                return post.id
+            case .report:
+                return nil
+            }
+        })
+
+        return posts.filter { !consumed.contains($0.id) }
     }
 
     private func trimmed(_ text: String, limit: Int) -> String {
         guard text.count > limit else { return text }
         return String(text.prefix(limit - 1)) + "…"
+    }
+}
+
+private enum BriefingDocument: Identifiable, Hashable {
+    case report(Report)
+    case post(Post)
+
+    var id: String {
+        switch self {
+        case .report(let report):
+            return "report-\(report.id)"
+        case .post(let post):
+            return "post-\(post.id)"
+        }
+    }
+
+    var title: String {
+        switch self {
+        case .report(let report):
+            return report.displayTitle
+        case .post(let post):
+            return post.displayTitle
+        }
+    }
+
+    var subtitle: String {
+        switch self {
+        case .report(let report):
+            return report.abstractPreview
+        case .post(let post):
+            return post.summaryPreview
+        }
+    }
+
+    var kicker: String {
+        switch self {
+        case .report(let report):
+            return report.typeLabel
+        case .post(let post):
+            return post.source
+        }
+    }
+
+    var accent: Color {
+        switch self {
+        case .report(let report):
+            return report.tags.contains("weekly") ? AppTheme.coral : AppTheme.cobalt
+        case .post(let post):
+            return AppTheme.accent(for: post.source)
+        }
+    }
+}
+
+private struct BriefingDocumentCard: View {
+    let document: BriefingDocument
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(document.kicker.uppercased())
+                .font(.caption.weight(.bold))
+                .foregroundStyle(document.accent)
+
+            Text(document.title)
+                .font(.headline.weight(.semibold))
+                .fontDesign(.serif)
+                .foregroundStyle(AppTheme.ink)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            Text(document.subtitle)
+                .font(.subheadline)
+                .foregroundStyle(AppTheme.slate)
+                .lineLimit(3)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .glassCard(cornerRadius: 26, tint: document.accent, padding: 16)
+    }
+}
+
+private struct BriefingRelatedPostCard: View {
+    let post: Post
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(post.source.uppercased())
+                .font(.caption.weight(.bold))
+                .foregroundStyle(AppTheme.accent(for: post.source))
+
+            if let reference = post.reference {
+                Text(reference)
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(AppTheme.plumSoft)
+            }
+
+            Text(post.displayTitle)
+                .font(.headline.weight(.semibold))
+                .fontDesign(.serif)
+                .foregroundStyle(AppTheme.ink)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            if post.hasDistinctOriginalTitle {
+                Text(post.originalTitleDisplay)
+                    .font(.caption)
+                    .foregroundStyle(AppTheme.plumSoft)
+                    .lineLimit(2)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+
+            Text(post.summaryPreview)
+                .font(.subheadline)
+                .foregroundStyle(AppTheme.slate)
+                .lineLimit(2)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .glassCard(cornerRadius: 24, tint: AppTheme.mint, padding: 16)
     }
 }
 
@@ -603,7 +717,7 @@ private struct BriefingRelatedArticlesSheet: View {
                 .padding(20)
                 .padding(.bottom, 20)
             }
-            .navigationTitle("Related articles")
+            .navigationTitle("Related documents")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") {

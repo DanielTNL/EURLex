@@ -6,9 +6,13 @@ google-auth>=2.29.0
 google-auth-httplib2>=0.2.0
 google-auth-oauthlib>=1.2.0
 feedparser>=6.0.10
+httpx>=0.28.0
 PyYAML>=6.0.1
 requests~=2.32.0
 beautifulsoup4~=4.12.0
 lxml~=5.0
+lxml_html_clean>=0.4.0
 python-dateutil==2.9.0.post0
+python-frontmatter==1.1.0
+trafilatura>=2.0.0
 orjson~=3.10.0

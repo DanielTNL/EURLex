@@ -51,6 +51,53 @@ struct SectionTitle: View {
     }
 }
 
+
+struct PageHeroHeader: View {
+    let title: String
+    let subtitle: String
+    var accent: Color = AppTheme.cobalt
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(title)
+                .font(.system(size: 34, weight: .bold, design: .serif))
+                .foregroundStyle(AppTheme.ink)
+
+            Text(subtitle)
+                .font(.subheadline)
+                .foregroundStyle(AppTheme.slate)
+                .lineSpacing(4)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 18)
+        .background(
+            RoundedRectangle(cornerRadius: 28, style: .continuous)
+                .fill(AppTheme.panelSoft)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 28, style: .continuous)
+                        .fill(.ultraThinMaterial)
+                        .opacity(0.55)
+                }
+                .overlay {
+                    RoundedRectangle(cornerRadius: 28, style: .continuous)
+                        .fill(
+                            LinearGradient(
+                                colors: [accent.opacity(0.28), AppTheme.lavender.opacity(0.14), Color.white.opacity(0.06)],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                }
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 28, style: .continuous)
+                .strokeBorder(Color.white.opacity(0.16), lineWidth: 1)
+        )
+        .shadow(color: accent.opacity(0.12), radius: 18, x: 0, y: 12)
+    }
+}
+
 struct PostCardView: View {
     let post: Post
 
@@ -59,18 +106,34 @@ struct PostCardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             HStack(alignment: .top) {
-                sourceBadge
+                VStack(alignment: .leading, spacing: 8) {
+                    sourceBadge
+
+                    if let reference = post.reference {
+                        Text(reference)
+                            .font(.caption2.weight(.semibold))
+                            .foregroundStyle(AppTheme.plumSoft)
+                    }
+                }
                 Spacer()
                 Text(post.displayDateText)
                     .font(.caption.weight(.medium))
                     .foregroundStyle(AppTheme.slate)
             }
 
-            Text(post.title)
+            Text(post.displayTitle)
                 .font(.title3.weight(.semibold))
                 .fontDesign(.serif)
                 .foregroundStyle(AppTheme.ink)
                 .multilineTextAlignment(.leading)
+
+            if post.hasDistinctOriginalTitle {
+                Text(post.originalTitleDisplay)
+                    .font(.caption)
+                    .foregroundStyle(AppTheme.plumSoft)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.leading)
+            }
 
             Text(post.summaryPreview)
                 .font(.subheadline)
@@ -113,7 +176,7 @@ struct ReportCardView: View {
                     .foregroundStyle(AppTheme.slate)
             }
 
-            Text(report.title)
+            Text(report.displayTitle)
                 .font(.title3.weight(.semibold))
                 .fontDesign(.serif)
                 .foregroundStyle(AppTheme.ink)
