@@ -17,7 +17,10 @@ struct AskAIView: View {
     @State private var prompt = ""
     @State private var webEnabled = false
     @State private var messages: [AskAIMessage] = []
+    @State private var isSending = false
     @FocusState private var isComposerFocused: Bool
+
+    private let backend = EURLexBackendClient.live
 
     private let suggestedPrompts = [
         "What are the biggest EU policy signals today?",
@@ -36,6 +39,12 @@ struct AskAIView: View {
             GeometryReader { geometry in
                 ScrollView {
                     VStack(spacing: 18) {
+                        PageHeroHeader(
+                            title: "Ask AI",
+                            subtitle: "Chat across the platform, with optional web search when you turn it on.",
+                            accent: AppTheme.mint
+                        )
+
                         if messages.isEmpty {
                             emptyState
                         } else {
@@ -49,7 +58,8 @@ struct AskAIView: View {
                     .frame(width: geometry.size.width, alignment: .leading)
                 }
             }
-            .navigationTitle("Ask AI")
+            .navigationTitle("")
+            .navigationBarTitleDisplayMode(.inline)
             .scrollDismissesKeyboard(.interactively)
             .safeAreaInset(edge: .bottom) {
                 composerBar
@@ -107,6 +117,10 @@ struct AskAIView: View {
                 Text("Suggested prompts")
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(AppTheme.plumSoft)
+
+                Text(backend.isConfigured ? "Ready to answer from the platform now." : "Backend deployment is the last step before live answers appear here.")
+                    .font(.caption)
+                    .foregroundStyle(AppTheme.slate)
             }
 
             VStack(spacing: 10) {
@@ -141,6 +155,19 @@ struct AskAIView: View {
             ForEach(messages) { message in
                 chatBubble(message)
                     .id(message.id)
+            }
+
+            if isSending {
+                HStack {
+                    ProgressView()
+                        .tint(AppTheme.cobalt)
+
+                    Text("Thinking…")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(AppTheme.plumSoft)
+                }
+                .padding(.horizontal, 4)
+                .id("typing-indicator")
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -194,24 +221,31 @@ struct AskAIView: View {
                 Button {
                     sendPrompt()
                 } label: {
-                    Image(systemName: "arrow.up")
-                        .font(.headline.weight(.bold))
-                        .foregroundStyle(.white)
-                        .frame(width: 42, height: 42)
-                        .background(
-                            Circle()
-                                .fill(
-                                    LinearGradient(
-                                        colors: [AppTheme.cobalt, AppTheme.lavender],
-                                        startPoint: .topLeading,
-                                        endPoint: .bottomTrailing
-                                    )
+                    Group {
+                        if isSending {
+                            ProgressView()
+                                .tint(.white)
+                        } else {
+                            Image(systemName: "arrow.up")
+                                .font(.headline.weight(.bold))
+                                .foregroundStyle(.white)
+                        }
+                    }
+                    .frame(width: 42, height: 42)
+                    .background(
+                        Circle()
+                            .fill(
+                                LinearGradient(
+                                    colors: [AppTheme.cobalt, AppTheme.lavender],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
                                 )
-                        )
+                            )
+                    )
                 }
                 .buttonStyle(.plain)
-                .opacity(trimmedPrompt.isEmpty ? 0.45 : 1)
-                .disabled(trimmedPrompt.isEmpty)
+                .opacity(trimmedPrompt.isEmpty || isSending ? 0.45 : 1)
+                .disabled(trimmedPrompt.isEmpty || isSending)
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 14)
@@ -288,26 +322,66 @@ struct AskAIView: View {
 
     private func sendPrompt() {
         let userPrompt = trimmedPrompt
-        guard !userPrompt.isEmpty else { return }
+        guard !userPrompt.isEmpty, !isSending else { return }
 
         messages.append(AskAIMessage(role: .user, text: userPrompt))
         prompt = ""
+        isSending = true
 
-        let response = webEnabled
-            ? "Web search is enabled. Once the backend is connected, this will answer from the platform first and then add live web findings."
-            : "I’ll answer from the platform corpus once the backend is connected. For now, this is the final chat layout and input flow."
+        Task {
+            let lower = userPrompt.lowercased()
 
-        let lower = userPrompt.lowercased()
-        if lower.contains("voice overview") || (lower.contains("audio") && lower.contains("week")) {
-            messages.append(
-                AskAIMessage(
-                    role: .assistant,
-                    text: "This will map to a weekly audio request. The GitHub side is being prepared to publish requested weekly briefings into the Voice tab, and the app UI is already shaped for those uploads."
-                )
-            )
-            return
+            do {
+                if lower.contains("voice overview") || (lower.contains("audio") && lower.contains("week")) {
+                    let result = try await backend.requestWeeklyAudio(promptHint: userPrompt)
+                    let response = result.message ?? "I queued a weekly voice overview. Once GitHub finishes the workflow and publishes the audio, it will appear in the Voice tab after refresh."
+
+                    await MainActor.run {
+                        messages.append(AskAIMessage(role: .assistant, text: response))
+                        isSending = false
+                    }
+                    return
+                }
+
+                let payload = messages.map {
+                    BackendChatMessage(
+                        role: $0.role == .assistant ? "assistant" : "user",
+                        content: $0.text
+                    )
+                }
+
+                let response = try await backend.chat(messages: payload, remote: webEnabled)
+                let answer = TextSanitizer.clean(response.answer ?? "")
+
+                await MainActor.run {
+                    messages.append(
+                        AskAIMessage(
+                            role: .assistant,
+                            text: answer.isEmpty
+                                ? "The backend responded, but it did not return an answer yet."
+                                : answer
+                        )
+                    )
+                    isSending = false
+                }
+            } catch {
+                let message: String
+                if let localized = error as? LocalizedError, let description = localized.errorDescription {
+                    message = description
+                } else {
+                    message = "The backend could not be reached right now."
+                }
+
+                await MainActor.run {
+                    messages.append(
+                        AskAIMessage(
+                            role: .assistant,
+                            text: "I couldn’t complete that request yet. \(message) If the backend has not been deployed yet, that is the next setup step."
+                        )
+                    )
+                    isSending = false
+                }
+            }
         }
-
-        messages.append(AskAIMessage(role: .assistant, text: response))
     }
 }

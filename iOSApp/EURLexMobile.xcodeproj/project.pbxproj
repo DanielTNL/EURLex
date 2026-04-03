@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217EFB5715CCC78B2C943BA8 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86549ECD1819EB2BBF6BE99C /* AppConfiguration.swift */; };
 		24B181E85E16F9D5735FE0ED /* ReportDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512D45951B0B1E109D5A330 /* ReportDetailView.swift */; };
 		2BE4EA4BA372A1CD197E2720 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4AD3B5F0159FF1F0BC897B /* AppModel.swift */; };
 		2BF7E5B156DF4FB80DC00954 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44900B4BB006BC61B8BDBC05 /* LibraryView.swift */; };
 		346D0535D6B326B776E3B06F /* LoadStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD09DFABD86F4E824CF60D /* LoadStateView.swift */; };
 		34C401BC2256D6D56A8C2647 /* AskAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54D96B7E7433CC9F565399 /* AskAIView.swift */; };
+		38F05649E0FBAB035695DDA6 /* EURLexBackendClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87604576E45F863D492F5CCD /* EURLexBackendClient.swift */; };
 		392CC27023CCAE8047290E09 /* EURLexModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F19BB26DEA2A350195B08DE /* EURLexModels.swift */; };
 		4ED7CADF26BF9A9A011706F6 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B36D0737B1A9A95F6E49E /* TodayView.swift */; };
 		4F86E532B5B90946CA29D7E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFD205A8D40768B1FC98B54 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		72DC166B94A57F31D1BDD5BA /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
 		73AD09DFABD86F4E824CF60D /* LoadStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStateView.swift; sourceTree = "<group>"; };
 		7512D45951B0B1E109D5A330 /* ReportDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDetailView.swift; sourceTree = "<group>"; };
+		86549ECD1819EB2BBF6BE99C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		87604576E45F863D492F5CCD /* EURLexBackendClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EURLexBackendClient.swift; sourceTree = "<group>"; };
 		92F1F21871F698C233C1510F /* AudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
 		9BB56AFA3EA382C4B8607F6E /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		A74B428C304E5EE361ABECCD /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 			children = (
 				AA4AD3B5F0159FF1F0BC897B /* AppModel.swift */,
 				B6E16C464B4688B2FA1AB430 /* EURLexAPIClient.swift */,
+				87604576E45F863D492F5CCD /* EURLexBackendClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		9703DF768F39E08669179E7E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				86549ECD1819EB2BBF6BE99C /* AppConfiguration.swift */,
 				9BB56AFA3EA382C4B8607F6E /* AppTheme.swift */,
 				D1D1126075E099DC30E20753 /* AppView.swift */,
 				C112655F35F3B4760B5D0ED1 /* EURLexMobileApp.swift */,
@@ -272,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217EFB5715CCC78B2C943BA8 /* AppConfiguration.swift in Sources */,
 				2BE4EA4BA372A1CD197E2720 /* AppModel.swift in Sources */,
 				936CEE8911728239022D1756 /* AppTheme.swift in Sources */,
 				B1FBFB8CA043E92EE0370F9E /* AppView.swift in Sources */,
@@ -279,6 +286,7 @@
 				EF5325527FFEEA2780A9FEE4 /* AudioView.swift in Sources */,
 				5D5C3632665BF353B83B8054 /* ContentCards.swift in Sources */,
 				97D29E445B20850AF71BF97D /* EURLexAPIClient.swift in Sources */,
+				38F05649E0FBAB035695DDA6 /* EURLexBackendClient.swift in Sources */,
 				A88FDA1FD1647B0B167FA6CF /* EURLexMobileApp.swift in Sources */,
 				392CC27023CCAE8047290E09 /* EURLexModels.swift in Sources */,
 				DD872C238E40854BB20D8C6E /* FeedView.swift in Sources */,

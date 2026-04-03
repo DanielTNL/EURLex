@@ -60,6 +60,7 @@ import yaml
 USER_AGENT = "Mozilla/5.0 (compatible; PipelineV2/1.0; +https://example.com)"
 REQ_TIMEOUT = 20
 MAX_HTML_LINKS = 200  # soft cap per page
+CUSTOM_FEEDS_PATH = "state/custom_feeds.json"
 
 
 # -------------------------- helpers: parsing & robustness --------------------------
@@ -192,6 +193,28 @@ def load_yaml(path: str) -> Dict[str, Any]:
         return yaml.safe_load(f) or {}
 
 
+def load_custom_feeds(path: str = CUSTOM_FEEDS_PATH) -> List[Source]:
+    if not os.path.exists(path):
+        return []
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f) or {}
+    except Exception:
+        return []
+
+    raw = payload.get("feeds") if isinstance(payload, dict) else payload
+    found: List[Source] = []
+
+    if isinstance(raw, list):
+        for item in raw:
+            s = Source.from_any(item)
+            if s and s.enabled:
+                found.append(s)
+
+    return found
+
+
 def pick_sources(sources_path: Optional[str], config_path: Optional[str]) -> List[Source]:
     found: List[Source] = []
 
@@ -213,6 +236,8 @@ def pick_sources(sources_path: Optional[str], config_path: Optional[str]) -> Lis
                 s = Source.from_any(x)
                 if s and s.enabled:
                     found.append(s)
+
+    found.extend(load_custom_feeds())
 
     # de-dup by (name,url)
     uniq: Dict[Tuple[str, str], Source] = {}

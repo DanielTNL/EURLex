@@ -35,9 +35,17 @@ struct EURLexAPIClient {
     let session: URLSession
 
     static let live = EURLexAPIClient(
-        baseURL: URL(string: "https://danieltnl.github.io/EURLex/")!,
-        session: .shared
+        baseURL: AppConfiguration.publishedDataBaseURL,
+        session: configuredSession
     )
+
+    private static let configuredSession: URLSession = {
+        let configuration = URLSessionConfiguration.default
+        configuration.requestCachePolicy = .useProtocolCachePolicy
+        configuration.timeoutIntervalForRequest = 10
+        configuration.timeoutIntervalForResource = 15
+        return URLSession(configuration: configuration)
+    }()
 
     func fetchSnapshot() async throws -> AppSnapshot {
         async let posts = fetchData(path: "data/posts.json")
@@ -69,7 +77,7 @@ struct EURLexAPIClient {
         }
 
         var request = URLRequest(url: url)
-        request.timeoutInterval = 20
+        request.timeoutInterval = 10
         request.cachePolicy = .useProtocolCachePolicy
 
         let (data, response) = try await session.data(for: request)

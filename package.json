@@ -1,0 +1,8 @@
+{
+  "name": "eurlex-github-backed-backend",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "20.x"
+  }
+}

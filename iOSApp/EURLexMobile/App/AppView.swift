@@ -62,37 +62,18 @@ struct AppView: View {
     var body: some View {
         ZStack {
             AmbientBackground()
+            tabShell
 
-            switch loadPresentation {
-            case .loading:
-                ProgressView("Loading EURLex")
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .tint(.white)
-            case .error(let message):
-                VStack(spacing: 16) {
-                    Image(systemName: "wifi.exclamationmark")
-                        .font(.system(size: 42))
-                        .foregroundStyle(AppTheme.ink)
-                    Text("Could not reach the published feeds")
-                        .font(.title2.weight(.semibold))
-                        .fontDesign(.serif)
-                    Text(message)
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(AppTheme.slate)
-                    Button("Retry") {
-                        Task { await model.reload() }
-                    }
-                    .buttonStyle(PrimaryCapsuleButtonStyle())
+            if let overlayMode = launchOverlayMode {
+                LaunchOverlay(mode: overlayMode) {
+                    Task { await model.reload() }
                 }
                 .padding(24)
-                .glassCard(cornerRadius: 32, tint: AppTheme.coral)
-                .padding(24)
-            case .tabs:
-                tabShell
+                .transition(.opacity.combined(with: .scale(scale: 0.98)))
             }
         }
         .tint(AppTheme.cobalt)
+        .animation(.spring(response: 0.35, dampingFraction: 0.9), value: model.loadState)
         .task {
             if model.shouldLoad {
                 await model.reload()
@@ -140,16 +121,16 @@ struct AppView: View {
         }
     }
 
-    private var loadPresentation: LoadPresentation {
+    private var launchOverlayMode: LaunchOverlay.Mode? {
+        guard !model.hasContent else { return nil }
+
         switch model.loadState {
-        case .idle where !model.hasContent:
+        case .idle, .loading:
             return .loading
-        case .loading where !model.hasContent:
-            return .loading
-        case .failed(let message) where !model.hasContent:
+        case .failed(let message):
             return .error(message)
-        default:
-            return .tabs
+        case .loaded:
+            return nil
         }
     }
 }
@@ -213,8 +194,57 @@ struct BottomDock: View {
     }
 }
 
-private enum LoadPresentation {
-    case loading
-    case error(String)
-    case tabs
+private struct LaunchOverlay: View {
+    enum Mode: Equatable {
+        case loading
+        case error(String)
+    }
+
+    let mode: Mode
+    let retry: () -> Void
+
+    var body: some View {
+        VStack(spacing: 16) {
+            switch mode {
+            case .loading:
+                ProgressView()
+                    .controlSize(.large)
+                    .tint(.white)
+
+                Text("Loading EURLex")
+                    .font(.title3.weight(.semibold))
+                    .fontDesign(.serif)
+                    .foregroundStyle(AppTheme.ink)
+
+                Text("Pulling the latest GitHub briefing feed. The first simulator launch can take a little while after a fresh Xcode install.")
+                    .font(.subheadline)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(AppTheme.slate)
+                    .lineSpacing(4)
+            case .error(let message):
+                Image(systemName: "wifi.exclamationmark")
+                    .font(.system(size: 42))
+                    .foregroundStyle(AppTheme.ink)
+
+                Text("Could not reach the published feeds")
+                    .font(.title2.weight(.semibold))
+                    .fontDesign(.serif)
+                    .foregroundStyle(AppTheme.ink)
+
+                Text(message)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(AppTheme.slate)
+                    .lineSpacing(4)
+
+                Button("Retry", action: retry)
+                    .buttonStyle(PrimaryCapsuleButtonStyle())
+                    .padding(.top, 4)
+            }
+        }
+        .frame(maxWidth: 420)
+        .padding(24)
+        .glassCard(cornerRadius: 32, tint: AppTheme.cobalt)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
 }

@@ -25,6 +25,7 @@ DOCS_DATA.mkdir(parents=True, exist_ok=True)
 POSTS_JSON   = DOCS_DATA / "posts.json"
 REPORTS_JSON = DOCS_DATA / "reports.json"
 AUDIO_JSON   = DOCS_DATA / "audio.json"
+CUSTOM_FEEDS_JSON = ROOT / "state" / "custom_feeds.json"
 
 CONFIG = ROOT / "scripts" / "sources.yaml"
 if not CONFIG.exists():
@@ -197,7 +198,32 @@ def load_cfg():
     links    = cfg.get("links", {}) or {}             # <--- NEW, fixed (cfg defined above)
     return domains, defaults, feeds, keywords, taxonomy, caps, ranking, dedupe, tzname, links
 
+def load_custom_feeds():
+    if not CUSTOM_FEEDS_JSON.exists():
+        return []
+
+    try:
+        payload = json.loads(CUSTOM_FEEDS_JSON.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+
+    feeds = payload.get("feeds", []) if isinstance(payload, dict) else payload
+    cleaned = []
+    for item in feeds or []:
+        if isinstance(item, str):
+            url = item.strip()
+        elif isinstance(item, dict):
+            url = str(item.get("url") or "").strip()
+        else:
+            url = ""
+
+        if url.startswith("http"):
+            cleaned.append(url)
+
+    return list(dict.fromkeys(cleaned))
+
 DOMAINS, DEFAULTS, FEEDS, KEYWORDS, TAXONOMY, CAPS, RANKING, DEDUPE, TZN, LINKS = load_cfg()
+FEEDS = list(dict.fromkeys(FEEDS + load_custom_feeds()))
 
 def label_for_url(u: str):
     host = urlparse(u).netloc.lower().lstrip("www.")

@@ -22,6 +22,7 @@ export default async function handler(req,res){
   try{
     const body = req.body || {};
     const { messages = [], top_k = 8, filters = {}, remote = false, attachments = [] } = body;
+    const model = process.env.OPENAI_MODEL_CHAT || process.env.OPENAI_MODEL || "gpt-4o-mini";
 
     const DATA_BASE = process.env.DATA_BASE || DATA_BASE_DEFAULT;
     const [posts, reports] = await Promise.all([
@@ -52,7 +53,14 @@ export default async function handler(req,res){
 
     const score = (it)=>{
       if(!good(it)) return -1;
-      const hay = ((it.title||'')+' '+(it.summary||it.abstract||'')+' '+(it.tags||[]).join(' ')+' '+(it.source||'')).toLowerCase();
+      const hay = ((
+        (it.display_title||it.title||'')+' '+
+        (it.original_title||'')+' '+
+        (it.display_summary||it.summary||it.abstract||'')+' '+
+        (it.reference||'')+' '+
+        (it.tags||[]).join(' ')+' '+
+        (it.source||'')
+      )).toLowerCase();
       let s = 0; for(const t of qTokens) if(hay.includes(t)) s++;
       const when = new Date(it.added||it.date||0);
       if(!isNaN(when)) { const days=(Date.now()-when.getTime())/86400000; s += Math.max(0,3-Math.min(3,Math.floor(days/7))); }
@@ -70,9 +78,12 @@ export default async function handler(req,res){
     // Build context (docs + attachments)
     const blocks = top.map((r,i)=>{
       const date = (r.added||r.date||'').slice(0,10);
-      const sum = (r.summary || r.abstract || '').replace(/\s+/g,' ').slice(0,900);
+      const title = r.display_title || r.title || "(untitled)";
+      const original = r.original_title && r.original_title !== title ? `\nOriginal title: ${r.original_title}` : '';
+      const reference = r.reference ? `\nReference: ${r.reference}` : '';
+      const sum = (r.display_summary || r.summary || r.abstract || '').replace(/\s+/g,' ').slice(0,900);
       const ext = (remote && (fetched[i]?.text)) ? `\n[REMOTE]\n${fetched[i].text.slice(0,1500)}\n` : '';
-      return `[${i+1}] ${r.title} — ${r.source||r.kind} — ${date}\n${sum}\nURL: ${r.url}\n${ext}`;
+      return `[${i+1}] ${title} — ${r.source||r.kind} — ${date}${reference}${original}\n${sum}\nURL: ${r.url}\n${ext}`;
     }).join('\n\n');
 
     const attBlocks = (attachments||[]).slice(0,4).map((a,i)=>`[A${i+1}] ${a.name}\n${String(a.text||'').slice(0,2000)}`).join('\n\n');
@@ -81,10 +92,10 @@ export default async function handler(req,res){
     if(!apiKey){ return res.json({ answer:null, results:top }); }
 
     const payload = {
-      model: 'gpt-4o-mini',
+      model,
       temperature: 0.2,
       messages: [
-        { role:'system', content:'You are an expert EU policy analyst. Cite sources like [1] or [A1]. Keep answers concise.' },
+        { role:'system', content:'You are an expert EU policy analyst. Prefer the polished reader titles for readability, but preserve precise provenance. Cite sources like [1] or [A1]. Keep answers concise and well-structured.' },
         ...messages.filter(m=>m.role!=='system'),
         { role:'user', content: `Question: ${lastUser}\n\nRelevant documents:\n${blocks}\n\nAttachments (if any):\n${attBlocks}\n\nAnswer with citations.` }
       ]
