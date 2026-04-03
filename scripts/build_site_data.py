@@ -259,6 +259,48 @@ def load_seen():
 def file_raw_url(repo: str, relpath: str) -> str:
     return f"https://raw.githubusercontent.com/{repo}/main/{relpath}"
 
+def audio_metadata_for(rel: str):
+    lower = rel.lower()
+    if "reports/audio/monthly/" in lower:
+        return {
+            "kind": "monthly_roundtable",
+            "series": "Monthly roundtable",
+            "requested": False,
+        }
+    if "reports/audio/requests/" in lower:
+        return {
+            "kind": "requested_weekly_brief",
+            "series": "Requested weekly brief",
+            "requested": True,
+        }
+    if "reports/weekly/" in lower:
+        return {
+            "kind": "legacy_weekly_brief",
+            "series": "Legacy weekly brief",
+            "requested": False,
+        }
+    return {
+        "kind": "audio_brief",
+        "series": "Audio brief",
+        "requested": False,
+    }
+
+def read_audio_summary(path: pathlib.Path) -> str:
+    companion_paths = [
+        path.with_suffix(".txt"),
+        path.with_suffix(".md"),
+    ]
+    for companion in companion_paths:
+        if not companion.exists():
+            continue
+        text = companion.read_text(encoding="utf-8", errors="ignore")
+        paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
+        for paragraph in paragraphs[1:] if len(paragraphs) > 1 else paragraphs:
+            cleaned = re.sub(r"\s+", " ", paragraph).strip()
+            if cleaned:
+                return cleaned[:280] + ("…" if len(cleaned) > 280 else "")
+    return ""
+
 def scan_audio(repo: str):
     items = []
     for f in ROOT.rglob("*.mp3"):
@@ -269,14 +311,28 @@ def scan_audio(repo: str):
         title = f.stem.replace("_"," ").replace("-"," ").strip()
         m = re.search(r'(\d{4})[-_](\d{2})[-_](\d{2})', rel)
         when = f"{m.group(1)}-{m.group(2)}-{m.group(3)}" if m else ""
+        meta = audio_metadata_for(rel)
         items.append({
             "title": title,
             "path": rel,
             "raw_url": file_raw_url(repo, rel),
-            "date": when
+            "date": when,
+            "kind": meta["kind"],
+            "series": meta["series"],
+            "requested": meta["requested"],
+            "summary": read_audio_summary(f),
         })
-    items.sort(key=lambda x: x.get("date",""), reverse=True)
-    payload = {"google_drive": LINKS.get("google_drive",""), "items": items[:50]}
+    items.sort(key=lambda x: (x.get("date",""), x.get("kind","")), reverse=True)
+
+    monthly = [item for item in items if item.get("kind") == "monthly_roundtable"]
+    requests = [item for item in items if item.get("kind") == "requested_weekly_brief"]
+
+    payload = {
+        "google_drive": LINKS.get("google_drive",""),
+        "monthly": monthly[:12],
+        "requests": requests[:24],
+        "items": items[:50],
+    }
     AUDIO_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 async def build():

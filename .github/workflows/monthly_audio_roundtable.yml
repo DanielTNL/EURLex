@@ -1,0 +1,53 @@
+name: Monthly Audio Roundtable
+
+on:
+  schedule:
+    - cron: "0 7 1 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  monthly-audio:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Build monthly roundtable audio
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TTS_MODEL: ${{ vars.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts' }}
+          OPENAI_TTS_VOICE_A: ${{ vars.OPENAI_TTS_VOICE_A || 'alloy' }}
+          OPENAI_TTS_VOICE_B: ${{ vars.OPENAI_TTS_VOICE_B || 'verse' }}
+          OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+        run: |
+          python audio_overview.py monthly
+
+      - name: Refresh site data
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          python build_site_data.py
+
+      - name: Commit monthly audio outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/audio docs/data/audio.json
+          git commit -m "Add monthly audio roundtable $(date -u +'%F')" || echo "No changes to commit"
+          git push || true
