@@ -1,25 +1,4 @@
 {
-  "updated_at": "2026-04-04T10:42:45.962Z",
-  "items": [
-    {
-      "id": "63214279d8fa",
-      "title": "Verification Note",
-      "source_type": "upload",
-      "kind": "txt",
-      "repo_path": "library/uploads/verification-note-63214279d8fa.txt",
-      "source_url": null,
-      "raw_url": "https://raw.githubusercontent.com/DanielTNL/EURLex/main/library/uploads/verification-note-63214279d8fa.txt",
-      "mime_type": null,
-      "size_bytes": 58,
-      "tags": [
-        "verification-temp"
-      ],
-      "status": "ready",
-      "summary": "Temporary deployment verification note for EURLex backend.",
-      "extracted_text": "Temporary deployment verification note for EURLex backend.",
-      "added_at": "2026-04-04T10:42:45.962Z",
-      "updated_at": "2026-04-04T10:42:45.962Z",
-      "error": null
-    }
-  ]
+  "updated_at": "2026-04-04T10:42:47.128Z",
+  "items": []
 }
