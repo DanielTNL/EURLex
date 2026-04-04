@@ -30,11 +30,11 @@ jobs:
       - name: Build monthly roundtable audio
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_TTS_MODEL: ${{ vars.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts' }}
-          OPENAI_TTS_VOICE_A: ${{ vars.OPENAI_TTS_VOICE_A || 'alloy' }}
-          OPENAI_TTS_VOICE_B: ${{ vars.OPENAI_TTS_VOICE_B || 'verse' }}
-          OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || 'gpt-4o-mini' }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          OPENAI_TTS_MODEL: ${{ vars.OPENAI_TTS_MODEL || secrets.OPENAI_TTS_MODEL || 'gpt-4o-mini-tts' }}
+          OPENAI_TTS_VOICE_A: ${{ vars.OPENAI_TTS_VOICE_A || secrets.OPENAI_TTS_VOICE_A || secrets.OPENAI_TTS_VOICE || 'alloy' }}
+          OPENAI_TTS_VOICE_B: ${{ vars.OPENAI_TTS_VOICE_B || secrets.OPENAI_TTS_VOICE_B || 'verse' }}
+          OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
         run: |
           python audio_overview.py monthly
 
