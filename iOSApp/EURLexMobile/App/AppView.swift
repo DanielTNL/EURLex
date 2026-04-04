@@ -75,6 +75,7 @@ struct AppView: View {
         .tint(AppTheme.cobalt)
         .animation(.spring(response: 0.35, dampingFraction: 0.9), value: model.loadState)
         .task {
+            await model.prepareNotifications()
             if model.shouldLoad {
                 await model.reload()
             }

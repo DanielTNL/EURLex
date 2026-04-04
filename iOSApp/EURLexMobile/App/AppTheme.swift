@@ -15,9 +15,9 @@ enum AppTheme {
     static let lavender = Color(red: 0.72, green: 0.49, blue: 1.00)
     static let plum = Color(red: 0.25, green: 0.21, blue: 0.52)
     static let plumSoft = Color(red: 0.39, green: 0.35, blue: 0.66)
-    static let pageTitle = Color(red: 0.16, green: 0.13, blue: 0.36)
-    static let pageBody = Color(red: 0.22, green: 0.20, blue: 0.46)
-    static let pageSubtext = Color(red: 0.31, green: 0.30, blue: 0.56)
+    static let pageTitle = Color(red: 0.13, green: 0.11, blue: 0.31)
+    static let pageBody = Color(red: 0.17, green: 0.15, blue: 0.40)
+    static let pageSubtext = Color(red: 0.24, green: 0.23, blue: 0.50)
     static let heroText = Color(red: 0.95, green: 0.97, blue: 1.00)
     static let heroSubtext = Color(red: 0.80, green: 0.85, blue: 0.95)
 

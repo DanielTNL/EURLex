@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LibraryView: View {
     @ObservedObject var model: AppModel
+    @State private var selectedSundayEdition: SundayEditionEntry?
 
     var body: some View {
         GeometryReader { proxy in
@@ -14,6 +15,7 @@ struct LibraryView: View {
                     )
 
                     heroCard
+                    sundayArchiveSection
                     reportsSection
                     audioSection
                     uploadsSection
@@ -27,6 +29,9 @@ struct LibraryView: View {
         }
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
+        .navigationDestination(item: $selectedSundayEdition) { edition in
+            SundayEditionReaderView(edition: edition)
+        }
     }
 
     private var heroCard: some View {
@@ -66,6 +71,77 @@ struct LibraryView: View {
                 ForEach(Array(model.reports.prefix(3))) { report in
                     NavigationLink(destination: ReportDetailView(report: report)) {
                         ReportCardView(report: report)
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+        }
+    }
+
+    private var sundayArchiveSection: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            SectionTitle(
+                title: "Sunday archive",
+                subtitle: "The long-form weekly editions live here after Sunday so the main briefing stays focused.",
+                accent: AppTheme.lavender,
+                tone: .page
+            )
+
+            if model.sundayEditions.items.isEmpty {
+                Text("Sunday editions will appear here once the weekly newsletter is published.")
+                    .font(.subheadline)
+                    .foregroundStyle(AppTheme.slate)
+                    .glassCard(cornerRadius: 24, tint: AppTheme.lavender, padding: 16)
+            } else {
+                ForEach(Array(model.sundayEditions.items.prefix(4))) { edition in
+                    Button {
+                        selectedSundayEdition = edition
+                    } label: {
+                        VStack(alignment: .leading, spacing: 14) {
+                            HStack(alignment: .top) {
+                                VStack(alignment: .leading, spacing: 8) {
+                                    Text("SUNDAY EDITION")
+                                        .font(.caption.weight(.bold))
+                                        .foregroundStyle(AppTheme.lavender)
+
+                                    Text(edition.headline)
+                                        .font(.title3.weight(.semibold))
+                                        .fontDesign(.serif)
+                                        .foregroundStyle(AppTheme.ink)
+                                        .multilineTextAlignment(.leading)
+                                }
+
+                                Spacer(minLength: 12)
+
+                                Text(edition.displayDateText)
+                                    .font(.caption.weight(.semibold))
+                                    .foregroundStyle(AppTheme.slate)
+                            }
+
+                            Text(edition.intro)
+                                .font(.subheadline)
+                                .foregroundStyle(AppTheme.slate)
+                                .lineLimit(4)
+
+                            if !edition.keyPoints.isEmpty {
+                                HStack(spacing: 8) {
+                                    ForEach(Array(edition.keyPoints.prefix(2).enumerated()), id: \.offset) { _, item in
+                                        Text(item)
+                                            .font(.caption.weight(.semibold))
+                                            .foregroundStyle(AppTheme.ink)
+                                            .padding(.horizontal, 12)
+                                            .padding(.vertical, 8)
+                                            .background(
+                                                Capsule(style: .continuous)
+                                                    .fill(Color.white.opacity(0.10))
+                                            )
+                                            .lineLimit(1)
+                                    }
+                                }
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .glassCard(cornerRadius: 28, tint: AppTheme.lavender, padding: 18)
                     }
                     .buttonStyle(.plain)
                 }

@@ -21,7 +21,7 @@
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>EURLexBackendBaseURL</key>
-	<string></string>
+	<string>https://eurlex-app-backend.vercel.app/</string>
 	<key>EURLexPublishedDataBaseURL</key>
 	<string>https://danieltnl.github.io/EURLex/</string>
 	<key>LSRequiresIPhoneOS</key>

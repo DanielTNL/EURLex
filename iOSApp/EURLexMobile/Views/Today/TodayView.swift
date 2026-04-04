@@ -9,6 +9,7 @@ struct TodayView: View {
     @State private var selectedPost: Post?
     @State private var selectedBriefingReader: DailyBriefingEntry?
     @State private var selectedSundayEdition: SundayEditionEntry?
+    @State private var selectedCategory: String?
     @State private var showingRelatedArticles = false
     @State private var showingCategories = false
 
@@ -58,7 +59,20 @@ struct TodayView: View {
     }
 
     private var sundayEdition: SundayEditionEntry? {
-        model.latestSundayEdition
+        guard let edition = model.latestSundayEdition,
+              let editionDate = EURLexDate.parse(edition.editionDate) else {
+            return nil
+        }
+
+        let today = calendar.startOfDay(for: Date())
+        let editionDay = calendar.startOfDay(for: editionDate)
+        let isSunday = calendar.component(.weekday, from: today) == 1
+
+        guard isSunday, calendar.isDate(today, inSameDayAs: editionDay) else {
+            return nil
+        }
+
+        return edition
     }
 
     var body: some View {
@@ -135,15 +149,31 @@ struct TodayView: View {
             guard let newValue, selectedDay == nil else { return }
             selectedDay = newValue
         }
+        .onChange(of: selectedDay) { _, _ in
+            selectedCategory = nil
+        }
         .sheet(isPresented: $showingRelatedArticles) {
-            if let briefing = activeBriefing {
-                EditorialDocumentsSheet(title: "Related documents", subtitle: "Original source titles and links attached to this briefing.", documents: briefing.relatedDocuments)
+            if activeBriefing != nil {
+                EditorialDocumentsSheet(
+                    title: "Related documents",
+                    subtitle: selectedCategory == nil
+                        ? "Original source titles and links attached to this briefing."
+                        : "Filtered to documents where \(selectedCategory ?? "") appears as a lead category.",
+                    documents: filteredEditorialRelatedDocuments
+                )
             } else {
-                BriefingRelatedArticlesSheet(posts: daySnapshot.relatedPosts)
+                BriefingRelatedArticlesSheet(posts: filteredRelatedPosts)
             }
         }
         .sheet(isPresented: $showingCategories) {
-            BriefingCategoriesSheet(categories: daySnapshot.topCategories)
+            BriefingCategoriesSheet(
+                categories: dayCategories,
+                selectedCategory: selectedCategory,
+                onSelect: { category in
+                    selectedCategory = category
+                    showingCategories = false
+                }
+            )
         }
     }
 
@@ -157,6 +187,23 @@ struct TodayView: View {
 
     private var editorialCategories: [String] {
         activeBriefing?.categories ?? []
+    }
+
+    private var dayCategories: [String] {
+        let categories = activeBriefing?.categories ?? daySnapshot.topCategories
+        return Array(categories.uniquePreservingOrder().prefix(8))
+    }
+
+    private var filteredEditorialRelatedDocuments: [EditorialDocument] {
+        guard let selectedCategory else { return editorialRelatedDocuments }
+        return editorialRelatedDocuments.filter {
+            matches(category: selectedCategory, in: $0.categories) || matches(category: selectedCategory, in: $0.tags)
+        }
+    }
+
+    private var filteredRelatedPosts: [Post] {
+        guard let selectedCategory else { return daySnapshot.relatedPosts }
+        return daySnapshot.relatedPosts.filter { matches(category: selectedCategory, in: $0.categories) }
     }
 
     private var dayOverviewCard: some View {
@@ -358,12 +405,47 @@ struct TodayView: View {
             )
 
             VStack(alignment: .leading, spacing: 12) {
-                TagStrip(tags: activeBriefing?.categories ?? daySnapshot.topCategories)
+                if !dayCategories.isEmpty {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 10) {
+                            Button {
+                                selectedCategory = nil
+                            } label: {
+                                FilterPill(title: "All", isSelected: selectedCategory == nil, tint: AppTheme.lavender)
+                            }
+                            .buttonStyle(.plain)
+
+                            ForEach(dayCategories, id: \.self) { category in
+                                Button {
+                                    selectedCategory = selectedCategory == category ? nil : category
+                                } label: {
+                                    FilterPill(
+                                        title: category,
+                                        isSelected: selectedCategory == category,
+                                        tint: AppTheme.accent(for: category)
+                                    )
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                    }
+                    .mask {
+                        HorizontalEdgeFadeMask()
+                    }
+                }
+
+                if let selectedCategory {
+                    Text("Showing documents where \(selectedCategory) is a primary theme for the selected day.")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(AppTheme.pageBody)
+                }
 
                 Button {
                     showingCategories = true
                 } label: {
-                    Label("View all categories", systemImage: "square.grid.2x2")
+                    Label(selectedCategory == nil ? "View all categories" : "Change category filter", systemImage: "square.grid.2x2")
                 }
                 .buttonStyle(SecondaryCapsuleButtonStyle())
             }
@@ -376,22 +458,30 @@ struct TodayView: View {
         VStack(alignment: .leading, spacing: 12) {
             SectionTitle(
                 title: "Related documents",
-                subtitle: "A few nearby reads if you want to go deeper.",
+                subtitle: selectedCategory == nil
+                    ? "A few nearby reads if you want to go deeper."
+                    : "Filtered to the \(selectedCategory ?? "") theme for the selected day.",
                 accent: AppTheme.mint,
                 tone: .page
             )
 
             if let briefing = activeBriefing, !briefing.relatedDocuments.isEmpty {
-                ForEach(Array(briefing.relatedDocuments.prefix(2))) { document in
-                    Button {
-                        open(document)
-                    } label: {
-                        EditorialDocumentCard(document: document, accent: AppTheme.mint)
+                if filteredEditorialRelatedDocuments.isEmpty {
+                    filteredCategoryEmptyState
+                } else {
+                    ForEach(Array(filteredEditorialRelatedDocuments.prefix(3))) { document in
+                        Button {
+                            open(document)
+                        } label: {
+                            EditorialDocumentCard(document: document, accent: AppTheme.mint)
+                        }
+                        .buttonStyle(.plain)
                     }
-                    .buttonStyle(.plain)
                 }
+            } else if filteredRelatedPosts.isEmpty, selectedCategory != nil {
+                filteredCategoryEmptyState
             } else {
-                ForEach(Array(daySnapshot.relatedPosts.prefix(2))) { post in
+                ForEach(Array(filteredRelatedPosts.prefix(3))) { post in
                     Button {
                         selectedPost = post
                     } label: {
@@ -404,10 +494,24 @@ struct TodayView: View {
             Button {
                 showingRelatedArticles = true
             } label: {
-                Label("Browse related documents", systemImage: "newspaper")
+                Label(selectedCategory == nil ? "Browse related documents" : "Browse filtered documents", systemImage: "newspaper")
             }
             .buttonStyle(SecondaryCapsuleButtonStyle())
         }
+    }
+
+    private var filteredCategoryEmptyState: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("No documents for this category yet")
+                .font(.headline.weight(.semibold))
+                .foregroundStyle(AppTheme.ink)
+
+            Text("Try another category, or switch back to All to see the broader reading list for this day.")
+                .font(.subheadline)
+                .foregroundStyle(AppTheme.slate)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .glassCard(cornerRadius: 24, tint: AppTheme.mint, padding: 16)
     }
 
     private var daySelector: some View {
@@ -685,6 +789,12 @@ struct TodayView: View {
             UIApplication.shared.open(url)
         }
     }
+
+    private func matches(category: String, in categories: [String]) -> Bool {
+        categories.prefix(3).contains {
+            $0.localizedCaseInsensitiveCompare(category) == .orderedSame
+        }
+    }
 }
 
 private struct DaySnapshot {
@@ -954,6 +1064,8 @@ private struct BriefingRelatedArticlesSheet: View {
 
 private struct BriefingCategoriesSheet: View {
     let categories: [String]
+    let selectedCategory: String?
+    let onSelect: (String?) -> Void
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -978,8 +1090,21 @@ private struct BriefingCategoriesSheet: View {
                         .frame(maxWidth: .infinity)
                         .padding(.top, 28)
                     } else {
-                        TagStrip(tags: categories)
-                            .glassCard(cornerRadius: 26, tint: AppTheme.lavender, padding: 16)
+                        VStack(alignment: .leading, spacing: 12) {
+                            Button {
+                                onSelect(nil)
+                            } label: {
+                                FilterPill(title: "All", isSelected: selectedCategory == nil, tint: AppTheme.lavender)
+                            }
+                            .buttonStyle(.plain)
+
+                            FlexibleCategoryGrid(
+                                categories: categories,
+                                selectedCategory: selectedCategory,
+                                onSelect: onSelect
+                            )
+                        }
+                        .glassCard(cornerRadius: 26, tint: AppTheme.lavender, padding: 16)
                     }
                 }
                 .padding(20)
@@ -995,6 +1120,32 @@ private struct BriefingCategoriesSheet: View {
             }
         }
         .presentationDetents([.medium])
+    }
+}
+
+private struct FlexibleCategoryGrid: View {
+    let categories: [String]
+    let selectedCategory: String?
+    let onSelect: (String?) -> Void
+
+    private let columns = [GridItem(.adaptive(minimum: 150), spacing: 10)]
+
+    var body: some View {
+        LazyVGrid(columns: columns, alignment: .leading, spacing: 10) {
+            ForEach(categories, id: \.self) { category in
+                Button {
+                    onSelect(selectedCategory == category ? nil : category)
+                } label: {
+                    FilterPill(
+                        title: category,
+                        isSelected: selectedCategory == category,
+                        tint: AppTheme.accent(for: category)
+                    )
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .buttonStyle(.plain)
+            }
+        }
     }
 }
 
@@ -1146,6 +1297,8 @@ private struct EditorialTextBlock: View {
 private struct EditorialSectionCard: View {
     let section: EditorialSection
     var tint: Color
+    var supportingSummary: String?
+    var sourceAction: (() -> Void)?
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -1154,7 +1307,21 @@ private struct EditorialSectionCard: View {
                 .fontDesign(.serif)
                 .foregroundStyle(AppTheme.ink)
 
+            if let supportingSummary, !supportingSummary.isEmpty {
+                Text(supportingSummary)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(AppTheme.heroSubtext)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+
             EditorialTextBlock(text: section.body)
+
+            if let sourceAction {
+                Button(action: sourceAction) {
+                    Label("Open original source", systemImage: "safari")
+                }
+                .buttonStyle(SecondaryCapsuleButtonStyle())
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .glassCard(cornerRadius: 28, tint: tint, padding: 18)
@@ -1163,6 +1330,19 @@ private struct EditorialSectionCard: View {
 
 private struct BriefingReaderView: View {
     let briefing: DailyBriefingEntry
+    @State private var selectedSourceURL: IdentifiedURL?
+
+    private var expandedSummary: String {
+        [briefing.summary, briefing.keyPoints.prefix(2).joined(separator: " "), supportingEditorialContext]
+            .filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+            .joined(separator: "\n\n")
+    }
+
+    private var supportingEditorialContext: String {
+        let related = briefing.relatedDocuments.prefix(2).map(\.summaryPreview).joined(separator: " ")
+        guard !related.isEmpty else { return "" }
+        return "Context from attached source documents: \(related)"
+    }
 
     var body: some View {
         ScrollView {
@@ -1183,20 +1363,20 @@ private struct BriefingReaderView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Introduction", subtitle: "A tighter editorial opener for the day.")
+                    SectionTitle(title: "Introduction", subtitle: "A tighter editorial opener for the day.", tone: .page)
                     EditorialTextBlock(text: briefing.intro)
                 }
                 .dossierCard()
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Full brief", subtitle: "Detailed but mobile-readable analysis across the day’s material.")
-                    EditorialTextBlock(text: briefing.summary)
+                    SectionTitle(title: "Full brief", subtitle: "Detailed but mobile-readable analysis across the day’s material, with a little more connective context.", tone: .page)
+                    EditorialTextBlock(text: expandedSummary)
                 }
                 .dossierCard()
 
                 if !briefing.keyPoints.isEmpty {
                     VStack(alignment: .leading, spacing: 12) {
-                        SectionTitle(title: "Key points", subtitle: nil)
+                        SectionTitle(title: "Key points", subtitle: nil, tone: .page)
                         ForEach(Array(briefing.keyPoints.enumerated()), id: \.offset) { _, item in
                             HStack(alignment: .top, spacing: 10) {
                                 Circle()
@@ -1214,18 +1394,31 @@ private struct BriefingReaderView: View {
 
                 if !briefing.sections.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Structured reading", subtitle: "The core arguments, broken into readable sections.")
+                        SectionTitle(title: "Structured reading", subtitle: "The core arguments, broken into readable sections, with the source close at hand.", tone: .page)
                         ForEach(briefing.sections) { section in
-                            EditorialSectionCard(section: section, tint: AppTheme.cobalt)
+                            EditorialSectionCard(
+                                section: section,
+                                tint: AppTheme.cobalt,
+                                supportingSummary: bestMatchingDocument(for: section)?.summaryPreview,
+                                sourceAction: {
+                                    if let url = bestMatchingDocument(for: section)?.destinationURL {
+                                        selectedSourceURL = IdentifiedURL(url: url)
+                                    }
+                                }
+                            )
                         }
                     }
                 }
 
                 if !briefing.importantDocuments.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Source documents", subtitle: "Original titles and links, kept close for lookup and verification.")
+                        SectionTitle(title: "Source documents", subtitle: "Original titles and links, kept close for lookup and verification.", tone: .page)
                         ForEach(briefing.importantDocuments) { document in
-                            Link(destination: document.destinationURL ?? URL(string: "https://danieltnl.github.io/EURLex/")!) {
+                            Button {
+                                if let url = document.destinationURL {
+                                    selectedSourceURL = IdentifiedURL(url: url)
+                                }
+                            } label: {
                                 EditorialDocumentCard(document: document)
                             }
                             .buttonStyle(.plain)
@@ -1235,9 +1428,13 @@ private struct BriefingReaderView: View {
 
                 if !briefing.relatedDocuments.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Related reading", subtitle: nil)
+                        SectionTitle(title: "Related reading", subtitle: nil, tone: .page)
                         ForEach(briefing.relatedDocuments.prefix(3)) { document in
-                            Link(destination: document.destinationURL ?? URL(string: "https://danieltnl.github.io/EURLex/")!) {
+                            Button {
+                                if let url = document.destinationURL {
+                                    selectedSourceURL = IdentifiedURL(url: url)
+                                }
+                            } label: {
                                 EditorialDocumentCard(document: document, accent: AppTheme.mint)
                             }
                             .buttonStyle(.plain)
@@ -1248,13 +1445,53 @@ private struct BriefingReaderView: View {
             .padding(20)
             .padding(.bottom, 120)
         }
+        .background(AmbientBackground().ignoresSafeArea())
         .navigationTitle("Daily Brief")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(item: $selectedSourceURL) { item in
+            SafariSheet(url: item.url)
+        }
+    }
+
+    private func bestMatchingDocument(for section: EditorialSection) -> EditorialDocument? {
+        let pool = briefing.importantDocuments + briefing.relatedDocuments
+        guard !pool.isEmpty else { return nil }
+
+        let sectionTokens = tokenSet(for: "\(section.title) \(section.body)")
+        return pool.max { lhs, rhs in
+            overlapScore(tokens: sectionTokens, document: lhs) < overlapScore(tokens: sectionTokens, document: rhs)
+        }
+    }
+
+    private func overlapScore(tokens: Set<String>, document: EditorialDocument) -> Int {
+        let documentTokens = tokenSet(for: "\(document.title) \(document.summary)")
+        return tokens.intersection(documentTokens).count
+    }
+
+    private func tokenSet(for text: String) -> Set<String> {
+        let lowercased = text.lowercased()
+        let words = lowercased
+            .components(separatedBy: CharacterSet.alphanumerics.inverted)
+            .filter { $0.count > 3 }
+        return Set(words)
     }
 }
 
-private struct SundayEditionReaderView: View {
+struct SundayEditionReaderView: View {
     let edition: SundayEditionEntry
+    @State private var selectedSourceURL: IdentifiedURL?
+
+    private var expandedWeeklySummary: String {
+        [edition.summary, edition.keyPoints.prefix(2).joined(separator: " "), supportingEditorialContext]
+            .filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+            .joined(separator: "\n\n")
+    }
+
+    private var supportingEditorialContext: String {
+        let related = edition.relatedDocuments.prefix(2).map(\.summaryPreview).joined(separator: " ")
+        guard !related.isEmpty else { return "" }
+        return "Context from the attached weekly source documents: \(related)"
+    }
 
     var body: some View {
         ScrollView {
@@ -1275,20 +1512,20 @@ private struct SundayEditionReaderView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Front page", subtitle: "The opening argument for the week.")
+                    SectionTitle(title: "Front page", subtitle: "The opening argument for the week.", tone: .page)
                     EditorialTextBlock(text: edition.intro)
                 }
                 .dossierCard()
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Weekly overview", subtitle: "A longer-form synthesis of the week’s publications.")
-                    EditorialTextBlock(text: edition.summary)
+                    SectionTitle(title: "Weekly overview", subtitle: "A longer-form synthesis of the week’s publications, with a little more connective context.", tone: .page)
+                    EditorialTextBlock(text: expandedWeeklySummary)
                 }
                 .dossierCard()
 
                 if !edition.keyPoints.isEmpty {
                     VStack(alignment: .leading, spacing: 12) {
-                        SectionTitle(title: "Key points", subtitle: nil)
+                        SectionTitle(title: "Key points", subtitle: nil, tone: .page)
                         ForEach(Array(edition.keyPoints.enumerated()), id: \.offset) { _, item in
                             HStack(alignment: .top, spacing: 10) {
                                 Circle()
@@ -1306,18 +1543,31 @@ private struct SundayEditionReaderView: View {
 
                 if !edition.sections.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Sections", subtitle: "A cleaner newspaper-style structure for the weekly read.")
+                        SectionTitle(title: "Sections", subtitle: "A cleaner newspaper-style structure for the weekly read, with the original source close by.", tone: .page)
                         ForEach(edition.sections) { section in
-                            EditorialSectionCard(section: section, tint: AppTheme.lavender)
+                            EditorialSectionCard(
+                                section: section,
+                                tint: AppTheme.lavender,
+                                supportingSummary: bestMatchingDocument(for: section)?.summaryPreview,
+                                sourceAction: {
+                                    if let url = bestMatchingDocument(for: section)?.destinationURL {
+                                        selectedSourceURL = IdentifiedURL(url: url)
+                                    }
+                                }
+                            )
                         }
                     }
                 }
 
                 if !edition.importantDocuments.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Source documents", subtitle: "Original titles and links behind the weekly edition.")
+                        SectionTitle(title: "Source documents", subtitle: "Original titles and links behind the weekly edition.", tone: .page)
                         ForEach(edition.importantDocuments) { document in
-                            Link(destination: document.destinationURL ?? URL(string: "https://danieltnl.github.io/EURLex/")!) {
+                            Button {
+                                if let url = document.destinationURL {
+                                    selectedSourceURL = IdentifiedURL(url: url)
+                                }
+                            } label: {
                                 EditorialDocumentCard(document: document, accent: AppTheme.lavender)
                             }
                             .buttonStyle(.plain)
@@ -1328,7 +1578,34 @@ private struct SundayEditionReaderView: View {
             .padding(20)
             .padding(.bottom, 120)
         }
+        .background(AmbientBackground().ignoresSafeArea())
         .navigationTitle("Sunday Edition")
         .navigationBarTitleDisplayMode(.inline)
+        .sheet(item: $selectedSourceURL) { item in
+            SafariSheet(url: item.url)
+        }
+    }
+
+    private func bestMatchingDocument(for section: EditorialSection) -> EditorialDocument? {
+        let pool = edition.importantDocuments + edition.relatedDocuments
+        guard !pool.isEmpty else { return nil }
+
+        let sectionTokens = tokenSet(for: "\(section.title) \(section.body)")
+        return pool.max { lhs, rhs in
+            overlapScore(tokens: sectionTokens, document: lhs) < overlapScore(tokens: sectionTokens, document: rhs)
+        }
+    }
+
+    private func overlapScore(tokens: Set<String>, document: EditorialDocument) -> Int {
+        let documentTokens = tokenSet(for: "\(document.title) \(document.summary)")
+        return tokens.intersection(documentTokens).count
+    }
+
+    private func tokenSet(for text: String) -> Set<String> {
+        let lowercased = text.lowercased()
+        let words = lowercased
+            .components(separatedBy: CharacterSet.alphanumerics.inverted)
+            .filter { $0.count > 3 }
+        return Set(words)
     }
 }

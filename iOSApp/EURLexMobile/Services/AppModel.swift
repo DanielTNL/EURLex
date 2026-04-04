@@ -21,9 +21,14 @@ final class AppModel: ObservableObject {
     @Published private(set) var library: LibraryPayload = .empty
 
     private let client: EURLexAPIClient
+    private let notifications: BriefingNotificationCoordinator
 
-    init(client: EURLexAPIClient = .live) {
+    init(
+        client: EURLexAPIClient = .live,
+        notifications: BriefingNotificationCoordinator = .shared
+    ) {
         self.client = client
+        self.notifications = notifications
         if let cachedSnapshot = client.cachedSnapshot() {
             apply(snapshot: cachedSnapshot)
         }
@@ -103,6 +108,10 @@ final class AppModel: ObservableObject {
         }
     }
 
+    func prepareNotifications() async {
+        await notifications.requestAuthorizationIfNeeded()
+    }
+
     func reload() async {
         guard !isLoading else { return }
         loadState = .loading
@@ -110,6 +119,10 @@ final class AppModel: ObservableObject {
         do {
             let snapshot = try await client.fetchSnapshot()
             apply(snapshot: snapshot)
+            await notifications.process(
+                latestBriefing: latestBriefing,
+                latestSundayEdition: latestSundayEdition
+            )
             loadState = .loaded(Date())
         } catch is CancellationError {
             return

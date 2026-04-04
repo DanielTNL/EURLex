@@ -23,7 +23,7 @@ struct SectionTitle: View {
     private var subtitleColor: Color {
         switch tone {
         case .page:
-            return AppTheme.pageSubtext
+            return AppTheme.pageBody
         case .card:
             return AppTheme.slate
         }
