@@ -1,4 +1,14 @@
 {
-  "updated_at": "",
-  "feeds": []
+  "updated_at": "2026-04-04T10:42:43.521Z",
+  "feeds": [
+    {
+      "id": "6904f1c4283b",
+      "name": "Verification Feed",
+      "url": "https://example.com/feed.xml",
+      "tags": [
+        "verification-temp"
+      ],
+      "added_at": "2026-04-04T10:42:43.521Z"
+    }
+  ]
 }
