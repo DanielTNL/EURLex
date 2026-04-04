@@ -33,17 +33,16 @@
   "categories": [
     "AI & Digital",
     "CMU & Financial Markets",
-    "Defence & Security",
     "daily",
-    "report",
-    "Other",
-    "De-risking & Investment"
+    "Defence & Security",
+    "De-risking & Investment",
+    "Other"
   ],
   "important_documents": [
     {
       "id": "rep-2026-04-04-9282b1dd12fb619d",
       "title": "Daily Digest — 2026-04-04",
-      "summary": "_Items in last 24h: 0_",
+      "summary": "_Items in last 24h: 2_",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-04.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -226,20 +225,21 @@
       ]
     },
     {
-      "id": "6e92b7828f02a786",
-      "title": "https://www.europarl.europa.eu/news/en/press-room/20260325IPR39214/",
-      "summary": "EP TODAY Thursday 26 March EU-US trade relations Starting the day at 9.00, MEPs and Commissioner Valdis Dombrovskis will discuss two legislative proposals implementing tariff aspects of the July 2025 Turnberry Agreement with the US. The deal would eliminate m…",
-      "url": "https://www.europarl.europa.eu/news/en/press-room/20260325IPR39214/",
+      "id": "e18d8ae1ceda4c72",
+      "title": "CONSIL:ST_7322_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) - Mandate for negotiations with the European Parliament",
+      "summary": "",
+      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_7322_2026_INIT",
       "kind": "post",
-      "source": "European Parliament",
+      "source": "EUR-Lex",
       "date": "2026-04-04",
       "categories": [
         "AI & Digital"
       ],
       "tags": [
+        "EUR-Lex",
+        "law",
         "EU",
-        "AI & Digital",
-        "Parliament"
+        "AI & Digital"
       ]
     }
   ],

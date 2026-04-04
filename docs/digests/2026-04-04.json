@@ -1,7 +1,34 @@
 {
   "schema": "daily_digest.v1",
-  "generated_at": "2026-04-04T06:45:01.868750+00:00",
+  "generated_at": "2026-04-04T08:36:01.766459+00:00",
   "window_hours": 24,
-  "count": 0,
-  "items": []
+  "count": 2,
+  "items": [
+    {
+      "title": "Auditing of companies' financial statements",
+      "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+      "source_id": "esma_publications",
+      "published_date": "2026-04-04T08:35:54.910753+00:00",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "A statutory audit is a legally required review of financial records. The role of a statutory audit is to certify the financial statements of companies or public entities. An audit provides stakeholders such as investors and shareholders with an opinion on the accuracy of companies’ accounts. As a result, statutory audits contribute to the orderly functioning of markets by improving the confidence in the integrity of financial statements. In the field of statutory auditing, the Commission's goals are to\nThe Committee of European Auditing Oversight Bodies (CEAOB) was established in 2016 to improve cooperation between European national audit authorities in the EU. The CEAOB contributes to the proper application of EU audit legislation by facilitating supervisory convergence. Regulation No 537/2014 requires national authorities responsible for audit oversight and the European Competition Network to draw up reports on developments in the national markets for statutory audit services to public-interest entities (PIEs). The Commission then uses these reports to draw up joint reports covering the whole EU. Companies are increasingly operating on a global basis and are listed on capital markets in different continents. To ensure investors are protected by effective global oversight of auditors  the EU cooperates internationally on the supervision of auditors. The EU has adopted several equivalence decisions recognising that the public supervision of auditors in certain non-EU countries meets the same requirements that are in force in the EU through the audit directive. The EU has also adopted several decisions recognising that the audit supervision authority of certain non-EU countries is adequate to exchange audit working papers with relevant authorities in EU countries. Report on monitoring developments in the EU market for statutory audit services to public‑interest entities from 2019 to 2021 . Study on the Audit Directive (Directive 2006/43/EC as amended by Directive 2014/56/EU) and the Audit Regulation (Regulation (EU) 537/2014) . Second report on monitoring developments in the EU market for statutory audit services to public-interest entities . First report on monitoring developments in the EU market for statutory audit services to public-interest entities . Publication in the official journal of the Directive on statutory audits of annual accounts and consolidated accounts and of the Regulation on specific requirements regarding statutory audit of public-interest entities . Commission's recommendation concerning the limitation of the civil liability of statutory auditors and audit firms\nCommission's recommendation of on external quality assurance for statutory auditors and audit firms\nCommission's recommendation on statutory auditors' independence in the EU\nThe Statutory Audit Directive was transposed by all EU Member states into their national law. Committee of European Auditing Oversight Bodies (CEAOB)\nEuropean Competition Network\nShare this page\n\nReferences\n• Source — 04 Apr 2026 — https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en"
+    },
+    {
+      "title": "Guidelines, Recommendations and Technical Standards",
+      "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+      "source_id": "esma_publications",
+      "published_date": "2026-04-04T08:35:51.875182+00:00",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "Breadcrumb\nThe elaboration and issuance of Technical Standards, Guidelines and Recommendations are key parts of ESMA's work. All documents are available in the main library , and on this page we provide an overview with the links to the specific documents. Information on the Technical Standards, Guidelines and Recommendations that ESMA is currently working on can be found in its annual work programme . In order to promote supervisory convergence ESMA has the power to issue guidelines and recommendations (Article 16ESMA Regulation 1095/2010) which are addressed to competent authorities or, as the case may be, to market participants. In the context of developing the guidelines and recommendations, ESMA will, where appropriate, conduct open public consultation. ESMA is entitled to receive information from competent authorities or, as the case may be, from market participants on whether they comply with the guidelines and to publish the reasons for supervisory authorities’ non-compliance. The tables below provide an overview of all guidelines published on our website, with information about the process and related documents. To date, ESMA published only one set of recommendations to an NCA, following a peer review. According to Articles 10 et seq. Regulation 1095/2010 ESMA is entitled to elaborate technical standards to be submitted to the Commission for endorsement. Depending on the level 1 mandate ESMA will either develop regulatory technical standards which are endorsed by the Commission by means of delegated acts under Article 290 TFEU or implementing technical standards which are adopted by the Commission by means of implementing acts under Article 291 TFEU. Usually, ESMA will conduct open public consultations before submitting the technical standards to the Commission.\n\nReferences\n• Source — 04 Apr 2026 — https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards"
+    }
+  ]
 }

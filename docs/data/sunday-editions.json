@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T08:31:54.870757+00:00",
+  "generated_at": "2026-04-04T08:40:47.041688+00:00",
   "latest_end_date": "2026-04-04",
   "items": [
     {
@@ -37,17 +37,16 @@
       "categories": [
         "AI & Digital",
         "CMU & Financial Markets",
-        "Defence & Security",
         "daily",
-        "report",
-        "Other",
-        "De-risking & Investment"
+        "Defence & Security",
+        "De-risking & Investment",
+        "Other"
       ],
       "important_documents": [
         {
           "id": "rep-2026-04-04-9282b1dd12fb619d",
           "title": "Daily Digest — 2026-04-04",
-          "summary": "_Items in last 24h: 0_",
+          "summary": "_Items in last 24h: 2_",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-04.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -230,20 +229,21 @@
           ]
         },
         {
-          "id": "6e92b7828f02a786",
-          "title": "https://www.europarl.europa.eu/news/en/press-room/20260325IPR39214/",
-          "summary": "EP TODAY Thursday 26 March EU-US trade relations Starting the day at 9.00, MEPs and Commissioner Valdis Dombrovskis will discuss two legislative proposals implementing tariff aspects of the July 2025 Turnberry Agreement with the US. The deal would eliminate m…",
-          "url": "https://www.europarl.europa.eu/news/en/press-room/20260325IPR39214/",
+          "id": "e18d8ae1ceda4c72",
+          "title": "CONSIL:ST_7322_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) - Mandate for negotiations with the European Parliament",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_7322_2026_INIT",
           "kind": "post",
-          "source": "European Parliament",
+          "source": "EUR-Lex",
           "date": "2026-04-04",
           "categories": [
             "AI & Digital"
           ],
           "tags": [
+            "EUR-Lex",
+            "law",
             "EU",
-            "AI & Digital",
-            "Parliament"
+            "AI & Digital"
           ]
         }
       ],
@@ -259,7 +259,6 @@
       "summary": "Weekly Economic & Policy Overview This week, the European Union (EU) witnessed significant developments across various sectors, including monetary policy, financial markets, banking, digitalization, and geopolitical dynamics. The ongoing challenges posed by inflation and supply chain disruptions con",
       "key_points": [
         "Weekly — EU Finance & Defence — 2025-08-08 to 2025-08-15 (W33)",
-        "PI COM:Ares(2025)6555277: 2026 Review report on the implementation and enforcement of the European Parliament and Council Regulation (EU) 2…",
         "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)"
       ],
       "sections": [
@@ -268,18 +267,13 @@
           "body": "Weekly Economic & Policy Overview This week, the European Union (EU) witnessed significant developments across various sectors, including monetary policy, financial markets, banking, digitalization, and geopolitical dynamics. The ongoing challenges posed by i… Source: EURLex reports, 2025-08-15."
         },
         {
-          "title": "PI_COM:Ares(2025)6555277: 2026 Review report on the implementation and enforcement of the European Parliament and Counc…",
-          "body": "PI_COM:Ares(2025)6555277: 2026 Review report on the implementation and enforcement of the European Parliament and Council Regulation (EU) 2022/2560 of 14 December 2022 on foreign… Source: EUR-Lex, 2025-08-15."
-        },
-        {
           "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
           "body": "Weekly Economic & Policy Overview The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union… Source: EURLex reports, 2025-08-14."
         }
       ],
       "categories": [
-        "report",
-        "weekly",
-        "De-risking & Investment"
+        "daily",
+        "weekly"
       ],
       "important_documents": [
         {
@@ -306,43 +300,10 @@
           "source": "EURLex reports",
           "date": "2025-08-15",
           "categories": [
-            "report"
+            "daily"
           ],
           "tags": [
-            "report"
-          ]
-        },
-        {
-          "id": "f65d4efd1689a194",
-          "title": "PI_COM:Ares(2025)6555277: 2026 Review report on the implementation and enforcement of the European Parliament and Council Regulation (EU) 2022/2560 of 14 December 2022 on foreign subsidies distorting the internal market",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2025)6555277",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2025-08-15",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "De-risking & Investment",
-            "EUR-Lex",
-            "EU",
-            "law"
-          ]
-        },
-        {
-          "id": "rep-2025-08-14-d52a4ac2ee33c262",
-          "title": "EUR-Lex Daily Digest — 2025-08-14",
-          "summary": "## Executive Summary",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-14.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2025-08-14",
-          "categories": [
-            "report"
-          ],
-          "tags": [
-            "report"
+            "daily"
           ]
         },
         {
@@ -359,41 +320,6 @@
           "tags": [
             "weekly"
           ]
-        }
-      ],
-      "related_documents": [
-        {
-          "id": "rep-2025-08-15-7e044ac6c5177689",
-          "title": "Weekly — EU Finance & Defence — 2025-08-08 to 2025-08-15 (W33)",
-          "summary": "Weekly Economic & Policy Overview This week, the European Union (EU) witnessed significant developments across various sectors, including monetary policy, financial markets, banking, digitalization, and geopolitical dynamics. The ongoing challenges posed by i…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-15-weekly.txt",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2025-08-15",
-          "categories": [
-            "weekly"
-          ],
-          "tags": [
-            "weekly"
-          ]
-        },
-        {
-          "id": "f65d4efd1689a194",
-          "title": "PI_COM:Ares(2025)6555277: 2026 Review report on the implementation and enforcement of the European Parliament and Council Regulation (EU) 2022/2560 of 14 December 2022 on foreign subsidies distorting the internal market",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2025)6555277",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2025-08-15",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "De-risking & Investment",
-            "EUR-Lex",
-            "EU",
-            "law"
-          ]
         },
         {
           "id": "rep-2025-08-14-d52a4ac2ee33c262",
@@ -404,25 +330,10 @@
           "source": "EURLex reports",
           "date": "2025-08-14",
           "categories": [
-            "report"
+            "daily"
           ],
           "tags": [
-            "report"
-          ]
-        },
-        {
-          "id": "rep-2025-08-14-b1a3bb528088c3bf",
-          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
-          "summary": "Weekly Economic & Policy Overview The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-14-weekly.txt",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2025-08-14",
-          "categories": [
-            "weekly"
-          ],
-          "tags": [
-            "weekly"
+            "daily"
           ]
         },
         {
@@ -434,10 +345,72 @@
           "source": "EURLex reports",
           "date": "2025-08-13",
           "categories": [
-            "report"
+            "daily"
           ],
           "tags": [
-            "report"
+            "daily"
+          ]
+        }
+      ],
+      "related_documents": [
+        {
+          "id": "rep-2025-08-15-0dc6b8bde243bddf",
+          "title": "EUR-Lex Daily Digest — 2025-08-15",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-15.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-15",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2025-08-14-b1a3bb528088c3bf",
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "summary": "Weekly Economic & Policy Overview The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-14-weekly.txt",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-14",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
+        {
+          "id": "rep-2025-08-14-d52a4ac2ee33c262",
+          "title": "EUR-Lex Daily Digest — 2025-08-14",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-14.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-14",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2025-08-13-81c25359b52721c3",
+          "title": "EUR-Lex Daily Digest — 2025-08-13",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-13.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-13",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
           ]
         }
       ],
@@ -465,7 +438,7 @@
         }
       ],
       "categories": [
-        "report",
+        "daily",
         "weekly"
       ],
       "important_documents": [
@@ -493,10 +466,10 @@
           "source": "EURLex reports",
           "date": "2025-08-14",
           "categories": [
-            "report"
+            "daily"
           ],
           "tags": [
-            "report"
+            "daily"
           ]
         },
         {
@@ -508,27 +481,27 @@
           "source": "EURLex reports",
           "date": "2025-08-13",
           "categories": [
-            "report"
+            "daily"
           ],
           "tags": [
-            "report"
+            "daily"
           ]
         }
       ],
       "related_documents": [
         {
-          "id": "rep-2025-08-14-b1a3bb528088c3bf",
-          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
-          "summary": "Weekly Economic & Policy Overview The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-14-weekly.txt",
+          "id": "rep-2025-08-14-d52a4ac2ee33c262",
+          "title": "EUR-Lex Daily Digest — 2025-08-14",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-14.md",
           "kind": "report",
           "source": "EURLex reports",
           "date": "2025-08-14",
           "categories": [
-            "weekly"
+            "daily"
           ],
           "tags": [
-            "weekly"
+            "daily"
           ]
         },
         {
@@ -540,10 +513,10 @@
           "source": "EURLex reports",
           "date": "2025-08-13",
           "categories": [
-            "report"
+            "daily"
           ],
           "tags": [
-            "report"
+            "daily"
           ]
         }
       ],
