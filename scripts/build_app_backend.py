@@ -92,6 +92,16 @@ def iso_day(raw: Optional[str]) -> Optional[str]:
     return parsed.date().isoformat() if parsed else None
 
 
+def is_live_day(day: Optional[str]) -> bool:
+    if not day:
+        return False
+    try:
+        value = date.fromisoformat(day)
+    except Exception:
+        return False
+    return value <= datetime.now(timezone.utc).date()
+
+
 def clean_text(text: str, limit: int = 400) -> str:
     compact = re.sub(r'\s+', ' ', text or '').strip()
     if len(compact) <= limit:
@@ -497,22 +507,22 @@ def daily_briefings(posts: List[dict], reports: List[dict], timeline: dict, dige
     days = set()
     for post in posts:
         value = iso_day(post.get('added'))
-        if value:
+        if is_live_day(value):
             days.add(value)
     for report in reports:
         value = iso_day(report.get('date'))
-        if value:
+        if is_live_day(value):
             days.add(value)
     for event in timeline.get('events', []):
         value = iso_day(event.get('date'))
-        if value:
+        if is_live_day(value):
             days.add(value)
     digest_day = iso_day(digest.get('generated_at'))
-    if digest_day:
+    if is_live_day(digest_day):
         days.add(digest_day)
     for item in digest.get('items', []):
         value = iso_day(item.get('published_date'))
-        if value:
+        if is_live_day(value):
             days.add(value)
 
     ordered_days = sorted(days, reverse=True)[:MAX_BRIEFING_DAYS]
@@ -584,22 +594,22 @@ def sunday_editions(posts: List[dict], reports: List[dict], timeline: dict) -> d
     posts_by_day: defaultdict[str, List[CommonDocument]] = defaultdict(list)
     for post in posts:
         day = iso_day(post.get('added'))
-        if day:
+        if is_live_day(day):
             posts_by_day[day].append(post_to_common(post))
 
     timeline_by_day: defaultdict[str, List[CommonDocument]] = defaultdict(list)
     for event in timeline.get('events', []):
         day = iso_day(event.get('date'))
-        if day:
+        if is_live_day(day):
             timeline_by_day[day].append(timeline_to_common(event))
 
     reports_by_day: defaultdict[str, List[CommonDocument]] = defaultdict(list)
     for report in reports:
         day = iso_day(report.get('date'))
-        if day:
+        if is_live_day(day):
             reports_by_day[day].append(report_to_common(report))
 
-    weekly_reports = [r for r in reports if 'weekly' in (r.get('tags') or [])]
+    weekly_reports = [r for r in reports if 'weekly' in (r.get('tags') or []) and is_live_day(iso_day(r.get('date')))]
     weekly_reports.sort(key=lambda item: item.get('date') or '', reverse=True)
 
     editions = []
