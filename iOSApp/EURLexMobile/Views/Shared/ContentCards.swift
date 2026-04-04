@@ -3,6 +3,7 @@ import SwiftUI
 enum SectionTitleTone {
     case page
     case card
+    case reader
 }
 
 struct SectionTitle: View {
@@ -17,6 +18,8 @@ struct SectionTitle: View {
             return AppTheme.pageTitle
         case .card:
             return AppTheme.ink
+        case .reader:
+            return AppTheme.ink
         }
     }
 
@@ -26,6 +29,8 @@ struct SectionTitle: View {
             return AppTheme.pageBody
         case .card:
             return AppTheme.slate
+        case .reader:
+            return AppTheme.heroSubtext
         }
     }
 

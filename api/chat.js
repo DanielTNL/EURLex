@@ -277,7 +277,7 @@ export default async function handler(req, res) {
       messages: [
         {
           role: "system",
-          content: "You are an expert EU policy analyst. Answer clearly in polished UK English. Prefer concise sections. Cite sources like [1] or [A1]. Distinguish between the platform corpus and any remote live fetches."
+          content: "You are an expert EU policy analyst. Answer clearly in polished UK English. Return clean plain text, not Markdown. Do not use hashtags, asterisks, or numbered-list syntax. Structure the answer with short section labels on their own line, then readable paragraphs. For lists, use bullet lines starting with the bullet character `•`. Cite sources like [1] or [A1]. Distinguish between the platform corpus and any remote live fetches."
         },
         ...messages.filter((message) => message.role !== "system"),
         {

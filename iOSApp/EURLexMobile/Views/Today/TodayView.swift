@@ -1355,28 +1355,28 @@ private struct BriefingReaderView: View {
                     Text(briefing.headline)
                         .font(.largeTitle.weight(.bold))
                         .fontDesign(.serif)
-                        .foregroundStyle(AppTheme.pageTitle)
+                        .foregroundStyle(AppTheme.ink)
 
                     Text(briefing.displayDateText)
                         .font(.subheadline)
-                        .foregroundStyle(AppTheme.pageBody)
+                        .foregroundStyle(AppTheme.heroSubtext)
                 }
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Introduction", subtitle: "A tighter editorial opener for the day.", tone: .page)
+                    SectionTitle(title: "Introduction", subtitle: "A tighter editorial opener for the day.", tone: .reader)
                     EditorialTextBlock(text: briefing.intro)
                 }
                 .dossierCard()
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Full brief", subtitle: "Detailed but mobile-readable analysis across the day’s material, with a little more connective context.", tone: .page)
+                    SectionTitle(title: "Full brief", subtitle: "Detailed but mobile-readable analysis across the day’s material, with a little more connective context.", tone: .reader)
                     EditorialTextBlock(text: expandedSummary)
                 }
                 .dossierCard()
 
                 if !briefing.keyPoints.isEmpty {
                     VStack(alignment: .leading, spacing: 12) {
-                        SectionTitle(title: "Key points", subtitle: nil, tone: .page)
+                        SectionTitle(title: "Key points", subtitle: nil, tone: .reader)
                         ForEach(Array(briefing.keyPoints.enumerated()), id: \.offset) { _, item in
                             HStack(alignment: .top, spacing: 10) {
                                 Circle()
@@ -1394,7 +1394,7 @@ private struct BriefingReaderView: View {
 
                 if !briefing.sections.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Structured reading", subtitle: "The core arguments, broken into readable sections, with the source close at hand.", tone: .page)
+                        SectionTitle(title: "Structured reading", subtitle: "The core arguments, broken into readable sections, with the source close at hand.", tone: .reader)
                         ForEach(briefing.sections) { section in
                             EditorialSectionCard(
                                 section: section,
@@ -1412,7 +1412,7 @@ private struct BriefingReaderView: View {
 
                 if !briefing.importantDocuments.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Source documents", subtitle: "Original titles and links, kept close for lookup and verification.", tone: .page)
+                        SectionTitle(title: "Source documents", subtitle: "Original titles and links, kept close for lookup and verification.", tone: .reader)
                         ForEach(briefing.importantDocuments) { document in
                             Button {
                                 if let url = document.destinationURL {
@@ -1428,7 +1428,7 @@ private struct BriefingReaderView: View {
 
                 if !briefing.relatedDocuments.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Related reading", subtitle: nil, tone: .page)
+                        SectionTitle(title: "Related reading", subtitle: nil, tone: .reader)
                         ForEach(briefing.relatedDocuments.prefix(3)) { document in
                             Button {
                                 if let url = document.destinationURL {
@@ -1504,28 +1504,28 @@ struct SundayEditionReaderView: View {
                     Text(edition.headline)
                         .font(.largeTitle.weight(.bold))
                         .fontDesign(.serif)
-                        .foregroundStyle(AppTheme.pageTitle)
+                        .foregroundStyle(AppTheme.ink)
 
                     Text(edition.displayWeekRange)
                         .font(.subheadline)
-                        .foregroundStyle(AppTheme.pageBody)
+                        .foregroundStyle(AppTheme.heroSubtext)
                 }
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Front page", subtitle: "The opening argument for the week.", tone: .page)
+                    SectionTitle(title: "Front page", subtitle: "The opening argument for the week.", tone: .reader)
                     EditorialTextBlock(text: edition.intro)
                 }
                 .dossierCard()
 
                 VStack(alignment: .leading, spacing: 12) {
-                    SectionTitle(title: "Weekly overview", subtitle: "A longer-form synthesis of the week’s publications, with a little more connective context.", tone: .page)
+                    SectionTitle(title: "Weekly overview", subtitle: "A longer-form synthesis of the week’s publications, with a little more connective context.", tone: .reader)
                     EditorialTextBlock(text: expandedWeeklySummary)
                 }
                 .dossierCard()
 
                 if !edition.keyPoints.isEmpty {
                     VStack(alignment: .leading, spacing: 12) {
-                        SectionTitle(title: "Key points", subtitle: nil, tone: .page)
+                        SectionTitle(title: "Key points", subtitle: nil, tone: .reader)
                         ForEach(Array(edition.keyPoints.enumerated()), id: \.offset) { _, item in
                             HStack(alignment: .top, spacing: 10) {
                                 Circle()
@@ -1543,7 +1543,7 @@ struct SundayEditionReaderView: View {
 
                 if !edition.sections.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Sections", subtitle: "A cleaner newspaper-style structure for the weekly read, with the original source close by.", tone: .page)
+                        SectionTitle(title: "Sections", subtitle: "A cleaner newspaper-style structure for the weekly read, with the original source close by.", tone: .reader)
                         ForEach(edition.sections) { section in
                             EditorialSectionCard(
                                 section: section,
@@ -1561,7 +1561,7 @@ struct SundayEditionReaderView: View {
 
                 if !edition.importantDocuments.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
-                        SectionTitle(title: "Source documents", subtitle: "Original titles and links behind the weekly edition.", tone: .page)
+                        SectionTitle(title: "Source documents", subtitle: "Original titles and links behind the weekly edition.", tone: .reader)
                         ForEach(edition.importantDocuments) { document in
                             Button {
                                 if let url = document.destinationURL {

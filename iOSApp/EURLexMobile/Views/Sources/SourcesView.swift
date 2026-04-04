@@ -1,5 +1,6 @@
 import SwiftUI
 import UniformTypeIdentifiers
+import UIKit
 
 struct SourcesView: View {
     @ObservedObject var model: AppModel
@@ -117,12 +118,6 @@ struct SourcesView: View {
         .sheet(item: $selectedIntakeMode) { mode in
             intakeModeSheet(mode)
         }
-        .fileImporter(
-            isPresented: $isImportingDocument,
-            allowedContentTypes: supportedImportTypes,
-            allowsMultipleSelection: false,
-            onCompletion: handleImportedDocument
-        )
         .task {
             guard !hasLoaded else { return }
             hasLoaded = true
@@ -155,7 +150,7 @@ struct SourcesView: View {
                 title: "Intake paths",
                 subtitle: "The app now has real routes for feeds, links, notes, and uploads.",
                 accent: AppTheme.lavender,
-                tone: .page
+                tone: .card
             )
 
             VStack(spacing: 12) {
@@ -196,7 +191,7 @@ struct SourcesView: View {
 
             Text(backend.isConfigured ? "GitHub remains the storage and processing layer, while the app handles clean intake." : "Once the backend URL is configured, these tiles become live GitHub-backed actions.")
                 .font(.subheadline)
-                .foregroundStyle(AppTheme.pageBody)
+                .foregroundStyle(AppTheme.slate)
         }
         .glassCard(cornerRadius: 30, tint: AppTheme.lavender, padding: 20)
     }
@@ -334,11 +329,11 @@ struct SourcesView: View {
 
                     Text("What GitHub can safely carry")
                         .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(AppTheme.pageTitle)
+                        .foregroundStyle(AppTheme.ink)
 
                     Text("Public feeds, modest documents, app-ready JSON, and scheduled refreshes are a strong fit. Large private archives still belong in dedicated storage later on.")
                         .font(.subheadline)
-                        .foregroundStyle(AppTheme.pageBody)
+                        .foregroundStyle(AppTheme.slate)
                 }
                 .glassCard(cornerRadius: 26, tint: AppTheme.mint, padding: 16)
             }
@@ -419,7 +414,7 @@ struct SourcesView: View {
 
             Text(document.summaryPreview)
                 .font(.subheadline)
-                .foregroundStyle(AppTheme.pageBody)
+                .foregroundStyle(AppTheme.slate)
                 .lineLimit(4)
 
             if !document.tags.isEmpty {
@@ -454,7 +449,7 @@ struct SourcesView: View {
 
                 Text(subtitle)
                     .font(.caption.weight(.semibold))
-                    .foregroundStyle(AppTheme.pageBody)
+                    .foregroundStyle(AppTheme.heroSubtext)
 
                 Spacer(minLength: 0)
 
@@ -541,7 +536,7 @@ struct SourcesView: View {
 
             Text("Jump back into the feed fields and we’ll focus the RSS URL immediately.")
                 .font(.subheadline)
-                .foregroundStyle(AppTheme.pageBody)
+                .foregroundStyle(AppTheme.slate)
 
             Button("Jump to feed form") {
                 selectedIntakeMode = nil
@@ -616,6 +611,11 @@ struct SourcesView: View {
             }
         }
         .glassCard(cornerRadius: 28, tint: AppTheme.lavender, padding: 18)
+        .sheet(isPresented: $isImportingDocument) {
+            DocumentImportSheet(contentTypes: supportedImportTypes) { url in
+                handleImportedDocumentSelection(url)
+            }
+        }
     }
 
     private var noteModeBody: some View {
@@ -626,7 +626,7 @@ struct SourcesView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Note text")
                     .font(.caption.weight(.bold))
-                    .foregroundStyle(AppTheme.pageBody)
+                    .foregroundStyle(AppTheme.heroSubtext)
 
                 TextEditor(text: $noteText)
                     .font(.body)
@@ -686,7 +686,7 @@ struct SourcesView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.caption.weight(.bold))
-                .foregroundStyle(AppTheme.pageBody)
+                .foregroundStyle(AppTheme.heroSubtext)
 
             TextField(title, text: text)
                 .textInputAutocapitalization(.never)
@@ -711,7 +711,7 @@ struct SourcesView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.caption.weight(.bold))
-                .foregroundStyle(AppTheme.pageBody)
+                .foregroundStyle(AppTheme.heroSubtext)
 
             TextField(placeholder, text: text)
                 .textInputAutocapitalization(.never)
@@ -733,7 +733,7 @@ struct SourcesView: View {
     private func statusCard(text: String, tint: Color) -> some View {
         Text(text)
             .font(.subheadline)
-            .foregroundStyle(AppTheme.pageTitle)
+            .foregroundStyle(AppTheme.ink)
             .glassCard(cornerRadius: 22, tint: tint, padding: 14)
     }
 
@@ -967,13 +967,48 @@ struct SourcesView: View {
         }
     }
 
-    private func handleImportedDocument(_ result: Result<[URL], Error>) {
-        switch result {
-        case .success(let urls):
-            importedDocumentURL = urls.first
+    private func handleImportedDocumentSelection(_ url: URL?) {
+        guard let url else {
             errorMessage = nil
-        case .failure(let error):
-            errorMessage = error.localizedDescription
+            return
+        }
+
+        importedDocumentURL = url
+        errorMessage = nil
+    }
+}
+
+private struct DocumentImportSheet: UIViewControllerRepresentable {
+    let contentTypes: [UTType]
+    let onPick: (URL?) -> Void
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(onPick: onPick)
+    }
+
+    func makeUIViewController(context: Context) -> UIDocumentPickerViewController {
+        let picker = UIDocumentPickerViewController(forOpeningContentTypes: contentTypes, asCopy: true)
+        picker.delegate = context.coordinator
+        picker.allowsMultipleSelection = false
+        picker.shouldShowFileExtensions = true
+        return picker
+    }
+
+    func updateUIViewController(_ uiViewController: UIDocumentPickerViewController, context: Context) {}
+
+    final class Coordinator: NSObject, UIDocumentPickerDelegate {
+        private let onPick: (URL?) -> Void
+
+        init(onPick: @escaping (URL?) -> Void) {
+            self.onPick = onPick
+        }
+
+        func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+            onPick(urls.first)
+        }
+
+        func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+            onPick(nil)
         }
     }
 }

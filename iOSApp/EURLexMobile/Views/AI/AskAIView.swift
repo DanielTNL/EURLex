@@ -286,37 +286,43 @@ struct AskAIView: View {
         return HStack {
             if isUser { Spacer(minLength: 50) }
 
-            Text(message.text)
-                .font(.body)
-                .foregroundStyle(isUser ? .white : AppTheme.ink)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 14)
-                .background(
-                    RoundedRectangle(cornerRadius: 26, style: .continuous)
-                        .fill(
-                            isUser
-                                ? LinearGradient(
-                                    colors: [AppTheme.cobalt, AppTheme.lavender],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                                : LinearGradient(
-                                    colors: [AppTheme.panelStrong, AppTheme.panelSoft],
-                                    startPoint: .topLeading,
-                                    endPoint: .bottomTrailing
-                                )
-                        )
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 26, style: .continuous)
-                                .fill(.ultraThinMaterial)
-                                .opacity(isUser ? 0.08 : 0.38)
-                        }
-                )
-                .overlay {
-                    RoundedRectangle(cornerRadius: 26, style: .continuous)
-                        .strokeBorder(isUser ? Color.white.opacity(0.12) : AppTheme.border, lineWidth: 1)
+            Group {
+                if isUser {
+                    Text(message.text)
+                        .font(.body)
+                        .foregroundStyle(.white)
+                } else {
+                    AssistantAnswerView(text: message.text)
                 }
-                .frame(maxWidth: .infinity, alignment: isUser ? .trailing : .leading)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+            .background(
+                RoundedRectangle(cornerRadius: 26, style: .continuous)
+                    .fill(
+                        isUser
+                            ? LinearGradient(
+                                colors: [AppTheme.cobalt, AppTheme.lavender],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                            : LinearGradient(
+                                colors: [AppTheme.panelStrong, AppTheme.panelSoft],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                    )
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 26, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                            .opacity(isUser ? 0.08 : 0.38)
+                    }
+            )
+            .overlay {
+                RoundedRectangle(cornerRadius: 26, style: .continuous)
+                    .strokeBorder(isUser ? Color.white.opacity(0.12) : AppTheme.border, lineWidth: 1)
+            }
+            .frame(maxWidth: .infinity, alignment: isUser ? .trailing : .leading)
 
             if !isUser { Spacer(minLength: 50) }
         }
@@ -365,7 +371,7 @@ struct AskAIView: View {
                 }
 
                 let response = try await backend.chat(messages: payload, remote: webEnabled)
-                let answer = TextSanitizer.clean(response.answer ?? "")
+                let answer = AIAnswerFormatter.normalized(response.answer ?? "")
 
                 await MainActor.run {
                     messages.append(
@@ -397,5 +403,168 @@ struct AskAIView: View {
                 }
             }
         }
+    }
+}
+
+private enum AIAnswerBlock: Hashable {
+    case heading(String)
+    case paragraph(String)
+    case bullets([String])
+}
+
+private enum AIAnswerFormatter {
+    static func normalized(_ text: String) -> String {
+        let linePreserving = text
+            .replacingOccurrences(of: "\r\n", with: "\n")
+            .replacingOccurrences(of: "\r", with: "\n")
+            .replacingOccurrences(of: #"(?m)^#{1,6}\s*"#, with: "", options: .regularExpression)
+            .replacingOccurrences(of: #"\*\*(.*?)\*\*"#, with: "$1", options: .regularExpression)
+            .replacingOccurrences(of: #"__(.*?)__"#, with: "$1", options: .regularExpression)
+            .replacingOccurrences(of: #"`([^`]+)`"#, with: "$1", options: .regularExpression)
+            .replacingOccurrences(of: #"\n{3,}"#, with: "\n\n", options: .regularExpression)
+
+        return linePreserving
+            .split(separator: "\n", omittingEmptySubsequences: false)
+            .map {
+                String($0)
+                    .replacingOccurrences(of: #"\s+"#, with: " ", options: .regularExpression)
+                    .trimmingCharacters(in: .whitespacesAndNewlines)
+            }
+            .joined(separator: "\n")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    static func blocks(from text: String) -> [AIAnswerBlock] {
+        let normalizedText = normalized(text)
+        guard !normalizedText.isEmpty else { return [] }
+
+        let lines = normalizedText
+            .split(separator: "\n", omittingEmptySubsequences: false)
+            .map(String.init)
+
+        var blocks: [AIAnswerBlock] = []
+        var paragraphLines: [String] = []
+        var index = 0
+
+        func flushParagraph() {
+            guard !paragraphLines.isEmpty else { return }
+            blocks.append(.paragraph(paragraphLines.joined(separator: " ")))
+            paragraphLines.removeAll()
+        }
+
+        while index < lines.count {
+            let line = lines[index].trimmingCharacters(in: .whitespacesAndNewlines)
+
+            if line.isEmpty {
+                flushParagraph()
+                index += 1
+                continue
+            }
+
+            if isBullet(line) {
+                flushParagraph()
+                var bullets: [String] = []
+                while index < lines.count {
+                    let current = lines[index].trimmingCharacters(in: .whitespacesAndNewlines)
+                    guard isBullet(current) else { break }
+                    let cleaned = stripBullet(current)
+                    if !cleaned.isEmpty {
+                        bullets.append(cleaned)
+                    }
+                    index += 1
+                }
+                if !bullets.isEmpty {
+                    blocks.append(.bullets(bullets))
+                }
+                continue
+            }
+
+            let nextNonEmpty = lines[(index + 1)...].first {
+                !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+            }
+            if looksLikeHeading(line, nextNonEmpty: nextNonEmpty, isFirstBlock: blocks.isEmpty && paragraphLines.isEmpty) {
+                flushParagraph()
+                blocks.append(.heading(line))
+                index += 1
+                continue
+            }
+
+            paragraphLines.append(line)
+            index += 1
+        }
+
+        flushParagraph()
+        return blocks.isEmpty ? [.paragraph(normalizedText)] : blocks
+    }
+
+    private static func isBullet(_ line: String) -> Bool {
+        line.range(of: #"^(?:[-*•]|\d+[.)])\s+"#, options: .regularExpression) != nil
+    }
+
+    private static func stripBullet(_ line: String) -> String {
+        line
+            .replacingOccurrences(of: #"^(?:[-*•]|\d+[.)])\s+"#, with: "", options: .regularExpression)
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private static func looksLikeHeading(_ line: String, nextNonEmpty: String?, isFirstBlock: Bool) -> Bool {
+        guard nextNonEmpty != nil else { return false }
+        guard !line.contains("http"), !line.hasSuffix("."), !line.hasSuffix(":"), !isBullet(line) else { return false }
+
+        if isFirstBlock, line.count <= 110 {
+            return true
+        }
+
+        let wordCount = line.split(separator: " ").count
+        return line.count <= 72 && wordCount <= 8
+    }
+}
+
+private struct AssistantAnswerView: View {
+    let text: String
+
+    private var blocks: [AIAnswerBlock] {
+        AIAnswerFormatter.blocks(from: text)
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            ForEach(Array(blocks.enumerated()), id: \.offset) { index, block in
+                switch block {
+                case .heading(let title):
+                    Text(title)
+                        .font(index == 0 ? .title3.weight(.bold) : .headline.weight(.semibold))
+                        .fontDesign(.serif)
+                        .foregroundStyle(AppTheme.ink)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                case .paragraph(let paragraph):
+                    Text(paragraph)
+                        .font(.body)
+                        .foregroundStyle(AppTheme.ink)
+                        .lineSpacing(5)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                case .bullets(let items):
+                    VStack(alignment: .leading, spacing: 10) {
+                        ForEach(Array(items.enumerated()), id: \.offset) { _, item in
+                            HStack(alignment: .top, spacing: 10) {
+                                Circle()
+                                    .fill(AppTheme.cobalt)
+                                    .frame(width: 7, height: 7)
+                                    .padding(.top, 6)
+
+                                Text(item)
+                                    .font(.body)
+                                    .foregroundStyle(AppTheme.ink)
+                                    .lineSpacing(4)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
