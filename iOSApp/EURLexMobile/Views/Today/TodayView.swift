@@ -54,25 +54,8 @@ struct TodayView: View {
         model.briefing(for: activeDay)
     }
 
-    private var weeklyReport: Report? {
-        model.reports.first { $0.tags.contains("weekly") }
-    }
-
-    private var sundayEdition: SundayEditionEntry? {
-        guard let edition = model.latestSundayEdition,
-              let editionDate = EURLexDate.parse(edition.editionDate) else {
-            return nil
-        }
-
-        let today = calendar.startOfDay(for: Date())
-        let editionDay = calendar.startOfDay(for: editionDate)
-        let isSunday = calendar.component(.weekday, from: today) == 1
-
-        guard isSunday, calendar.isDate(today, inSameDayAs: editionDay) else {
-            return nil
-        }
-
-        return edition
+    private var latestSundayEditionForBriefing: SundayEditionEntry? {
+        model.latestSundayEdition
     }
 
     var body: some View {
@@ -99,12 +82,8 @@ struct TodayView: View {
                         relatedDocumentsSection
                     }
 
-                    daySelector
-
-                    if let sundayEdition {
+                    if let sundayEdition = latestSundayEditionForBriefing {
                         sundayEditionSection(edition: sundayEdition)
-                    } else if let weeklyReport {
-                        sundayEditionSection(report: weeklyReport)
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -222,23 +201,26 @@ struct TodayView: View {
                         .font(.caption.weight(.bold))
                         .foregroundStyle(AppTheme.mint)
 
-                    Text(briefing.title)
-                        .font(.system(size: 30, weight: .bold, design: .serif))
+                    Text(displayBriefingDayTitle(briefing))
+                        .font(.system(size: 28, weight: .bold, design: .serif))
                         .foregroundStyle(AppTheme.ink)
+                        .fixedSize(horizontal: false, vertical: true)
 
                     Text(briefing.headline)
                         .font(.title3.weight(.semibold))
                         .foregroundStyle(AppTheme.heroSubtext)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
 
                 Spacer(minLength: 12)
                 SyncStatusBadge(state: model.loadState)
             }
 
-            Text(briefing.intro)
+            Text(homeIntro(for: briefing))
                 .font(.body)
                 .foregroundStyle(AppTheme.ink)
                 .lineSpacing(5)
+                .fixedSize(horizontal: false, vertical: true)
 
             if !briefing.keyPoints.isEmpty {
                 VStack(alignment: .leading, spacing: 10) {
@@ -514,103 +496,6 @@ struct TodayView: View {
         .glassCard(cornerRadius: 24, tint: AppTheme.mint, padding: 16)
     }
 
-    private var daySelector: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            SectionTitle(
-                title: "Other days",
-                subtitle: "Tap a date to shift the briefing without leaving the main tab.",
-                accent: AppTheme.lavender,
-                tone: .page
-            )
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    ForEach(availableDays.prefix(8), id: \.self) { day in
-                        let snapshot = snapshot(for: day)
-                        Button {
-                            selectedDay = day
-                        } label: {
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text(shortWeekday(for: day).uppercased())
-                                    .font(.caption2.weight(.bold))
-                                    .foregroundStyle(isSelected(day) ? Color.white.opacity(0.90) : AppTheme.slate)
-                                Text(dayNumber(for: day))
-                                    .font(.title3.weight(.bold))
-                                    .foregroundStyle(AppTheme.ink)
-                                Text(dayChipLabel(for: day, snapshot: snapshot))
-                                    .font(.caption.weight(.semibold))
-                                    .foregroundStyle(isSelected(day) ? Color.white.opacity(0.90) : AppTheme.slate)
-                            }
-                            .frame(width: 88, alignment: .leading)
-                            .padding(14)
-                            .background {
-                                RoundedRectangle(cornerRadius: 24, style: .continuous)
-                                    .fill(isSelected(day) ? AppTheme.coral.opacity(0.88) : AppTheme.panelSoft)
-                                    .overlay {
-                                        RoundedRectangle(cornerRadius: 24, style: .continuous)
-                                            .fill(.ultraThinMaterial)
-                                            .opacity(isSelected(day) ? 0.10 : 0.24)
-                                    }
-                            }
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 24, style: .continuous)
-                                    .strokeBorder(isSelected(day) ? Color.white.opacity(0.20) : AppTheme.border, lineWidth: 1)
-                            }
-                        }
-                        .buttonStyle(.plain)
-                    }
-                }
-                .padding(.horizontal, 6)
-                .padding(.vertical, 2)
-            }
-            .mask {
-                HorizontalEdgeFadeMask(fadeWidth: 26)
-            }
-        }
-    }
-
-    private func sundayEditionSection(report: Report) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            SectionTitle(
-                title: "Sunday Edition",
-                subtitle: "The weekly newspaper-style overview lives here each Sunday morning.",
-                accent: AppTheme.lavender,
-                tone: .page
-            )
-
-            VStack(alignment: .leading, spacing: 16) {
-                HStack(alignment: .top) {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("WEEKEND FRONT PAGE")
-                            .font(.caption.weight(.bold))
-                            .foregroundStyle(AppTheme.lavender)
-
-                        Text(report.displayTitle)
-                            .font(.system(size: 28, weight: .bold, design: .serif))
-                            .foregroundStyle(AppTheme.ink)
-
-                        Text(report.abstractPreview)
-                            .font(.subheadline)
-                            .foregroundStyle(AppTheme.slate)
-                            .lineLimit(4)
-                    }
-
-                    Spacer(minLength: 12)
-
-                    Text(report.displayDateText)
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(AppTheme.ink)
-                }
-
-                NavigationLink(destination: ReportDetailView(report: report)) {
-                    Label("Read full weekly edition", systemImage: "newspaper.fill")
-                }
-                .buttonStyle(PrimaryCapsuleButtonStyle())
-            }
-            .glassCard(cornerRadius: 34, tint: AppTheme.lavender, padding: 22)
-        }
-    }
-
     private func sundayEditionSection(edition: SundayEditionEntry) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             SectionTitle(
@@ -741,6 +626,17 @@ struct TodayView: View {
         return "\(snapshot.signalCount) signals"
     }
 
+    private func displayBriefingDayTitle(_ briefing: DailyBriefingEntry) -> String {
+        guard let date = briefing.briefingDate else { return briefing.title }
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE d MMMM"
+        return formatter.string(from: date)
+    }
+
+    private func homeIntro(for briefing: DailyBriefingEntry) -> String {
+        expandedLeadText(intro: briefing.intro, summary: briefing.summary, cap: 460)
+    }
+
     private func openPrimaryBriefingDestination() {
         if let briefing = activeBriefing {
             selectedBriefingReader = briefing
@@ -757,8 +653,8 @@ struct TodayView: View {
             return
         }
 
-        if let weeklyReport {
-            selectedReport = weeklyReport
+        if let latestSundayEditionForBriefing {
+            selectedSundayEdition = latestSundayEditionForBriefing
             return
         }
 
@@ -1328,6 +1224,29 @@ private struct EditorialSectionCard: View {
     }
 }
 
+private func expandedLeadText(intro: String, summary: String, cap: Int?) -> String {
+    let cleanIntro = TextSanitizer.clean(intro)
+    let cleanSummary = TextSanitizer.clean(summary)
+    let needsSupport = cleanIntro.hasSuffix("...") || cleanIntro.hasSuffix("…")
+
+    let combined = needsSupport && !cleanSummary.isEmpty
+        ? cleanIntro.replacingOccurrences(of: "...", with: "").replacingOccurrences(of: "…", with: "") + " " + firstSentences(from: cleanSummary, count: 2)
+        : cleanIntro
+
+    guard let cap else { return combined }
+    guard combined.count > cap else { return combined }
+    return String(combined.prefix(cap - 1)).trimmingCharacters(in: .whitespacesAndNewlines) + "…"
+}
+
+private func firstSentences(from text: String, count: Int) -> String {
+    let components = text
+        .split(whereSeparator: { ".!?".contains($0) })
+        .map { TextSanitizer.clean(String($0)) }
+        .filter { !$0.isEmpty }
+
+    return components.prefix(count).joined(separator: ". ") + (components.isEmpty ? "" : ".")
+}
+
 private struct BriefingReaderView: View {
     let briefing: DailyBriefingEntry
     @State private var selectedSourceURL: IdentifiedURL?
@@ -1355,7 +1274,7 @@ private struct BriefingReaderView: View {
                     Text(briefing.headline)
                         .font(.largeTitle.weight(.bold))
                         .fontDesign(.serif)
-                        .foregroundStyle(AppTheme.ink)
+                        .foregroundStyle(AppTheme.heroText)
 
                     Text(briefing.displayDateText)
                         .font(.subheadline)
@@ -1364,7 +1283,7 @@ private struct BriefingReaderView: View {
 
                 VStack(alignment: .leading, spacing: 12) {
                     SectionTitle(title: "Introduction", subtitle: "A tighter editorial opener for the day.", tone: .reader)
-                    EditorialTextBlock(text: briefing.intro)
+                    EditorialTextBlock(text: expandedLeadText(intro: briefing.intro, summary: briefing.summary, cap: nil))
                 }
                 .dossierCard()
 
@@ -1504,7 +1423,7 @@ struct SundayEditionReaderView: View {
                     Text(edition.headline)
                         .font(.largeTitle.weight(.bold))
                         .fontDesign(.serif)
-                        .foregroundStyle(AppTheme.ink)
+                        .foregroundStyle(AppTheme.heroText)
 
                     Text(edition.displayWeekRange)
                         .font(.subheadline)
@@ -1513,7 +1432,7 @@ struct SundayEditionReaderView: View {
 
                 VStack(alignment: .leading, spacing: 12) {
                     SectionTitle(title: "Front page", subtitle: "The opening argument for the week.", tone: .reader)
-                    EditorialTextBlock(text: edition.intro)
+                    EditorialTextBlock(text: expandedLeadText(intro: edition.intro, summary: edition.summary, cap: nil))
                 }
                 .dossierCard()
 

@@ -1,0 +1,92 @@
+name: Sunday Edition Refresh
+
+on:
+  schedule:
+    - cron: "0 7 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sunday-edition-refresh
+  cancel-in-progress: false
+
+env:
+  TZ: Europe/Amsterdam
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps (root + scripts + workers)
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip setuptools wheel
+          for f in requirements.txt scripts/requirements.txt workers/requirements.txt; do
+            if [ -f "$f" ]; then
+              python -m pip install -r "$f"
+            fi
+          done
+          python -m pip check
+
+      - name: Rebuild site payload
+        run: |
+          if [ -f build_site_data.py ]; then
+            python build_site_data.py
+          else
+            python scripts/build_site_data.py
+          fi
+
+      - name: Rebuild Sunday editorial payload
+        run: |
+          if [ -f build_app_backend.py ]; then
+            python build_app_backend.py
+          else
+            python scripts/build_app_backend.py
+          fi
+
+      - name: Validate backend outputs
+        run: |
+          python scripts/validate_backend_outputs.py
+
+      - name: Publish site bridge
+        run: |
+          python workers/publish_site_bridge.py
+
+      - name: Ensure .nojekyll in docs
+        run: |
+          mkdir -p docs
+          touch docs/.nojekyll
+
+      - name: Commit results back to main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data docs/site docs/*.json docs/.nojekyll outputs/docs outputs/timelines reports/daily docs/digests || true
+          if git diff --cached --quiet; then
+            echo "No Sunday refresh changes to commit"
+            exit 0
+          fi
+          git commit -m "refresh sunday edition $(date -u +'%F %T') [auto]"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort || true
+            echo "Retrying push ($attempt/3) after remote changed..."
+            sleep 3
+          done
+          echo "Push failed after 3 attempts" >&2
+          exit 1

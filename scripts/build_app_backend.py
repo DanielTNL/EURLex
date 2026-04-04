@@ -610,45 +610,26 @@ def sunday_editions(posts: List[dict], reports: List[dict], timeline: dict) -> d
         if is_live_day(day):
             reports_by_day[day].append(report_to_common(report))
 
+    available_days = sorted(set(posts_by_day) | set(timeline_by_day) | set(reports_by_day), reverse=True)
+    available_sundays = sorted(
+        {
+            date.fromisoformat(day)
+            for day in available_days
+            if date.fromisoformat(day).weekday() == 6
+        },
+        reverse=True,
+    )[:MAX_SUNDAY_EDITIONS]
+
     weekly_reports = [r for r in reports if 'weekly' in (r.get('tags') or []) and is_live_day(iso_day(r.get('date')))]
     weekly_reports.sort(key=lambda item: item.get('date') or '', reverse=True)
+    reports_by_week_end = {
+        date.fromisoformat(iso_day(report.get('date')) or report['date']): report
+        for report in weekly_reports
+    }
 
     editions = []
-    available_days = sorted(set(posts_by_day) | set(timeline_by_day) | set(reports_by_day), reverse=True)
-    if available_days:
-        latest_end = date.fromisoformat(available_days[0])
-        latest_start = latest_end - timedelta(days=6)
-        latest_week_days = {(latest_start + timedelta(days=offset)).isoformat() for offset in range(7)}
-        latest_documents = []
-        for day in sorted(latest_week_days, reverse=True):
-            latest_documents.extend(reports_by_day.get(day, []))
-            latest_documents.extend(posts_by_day.get(day, []))
-            latest_documents.extend(timeline_by_day.get(day, []))
-        latest_documents = unique_documents(latest_documents)
-        latest_title = f"Sunday Edition — {latest_start.isoformat()} to {latest_end.isoformat()}"
-        latest_summary = clean_text(' '.join(cleaned_doc_summary(doc, 240) for doc in latest_documents[:4] if doc.summary), 820)
-        latest_key_points = [doc.title for doc in latest_documents[:5]]
-        latest_editorial = maybe_ai_sunday(latest_title, latest_summary, latest_key_points, latest_documents[:8])
-        editions.append(
-            {
-                'edition_date': latest_end.isoformat(),
-                'week_start': latest_start.isoformat(),
-                'week_end': latest_end.isoformat(),
-                'title': latest_title,
-                'headline': latest_editorial['headline'],
-                'intro': latest_editorial['intro'],
-                'summary': latest_editorial['summary'],
-                'key_points': latest_editorial['key_points'],
-                'sections': latest_editorial['sections'],
-                'categories': collect_categories(latest_documents),
-                'important_documents': [doc.to_payload() for doc in latest_documents[:5]],
-                'related_documents': [doc.to_payload() for doc in latest_documents[5:11]],
-                'report': None,
-            }
-        )
-
-    for index, report in enumerate(weekly_reports[:MAX_SUNDAY_EDITIONS]):
-        end_day = date.fromisoformat(iso_day(report.get('date')) or report['date'])
+    for index, end_day in enumerate(available_sundays):
+        report = reports_by_week_end.get(end_day)
         start_day = end_day - timedelta(days=6)
         week_days = {(start_day + timedelta(days=offset)).isoformat() for offset in range(7)}
         documents = []
@@ -656,14 +637,23 @@ def sunday_editions(posts: List[dict], reports: List[dict], timeline: dict) -> d
             documents.extend(reports_by_day.get(day, []))
             documents.extend(posts_by_day.get(day, []))
             documents.extend(timeline_by_day.get(day, []))
-        important = unique_documents([report_to_common(report)] + documents)[:8]
+
+        anchor_documents = []
+        if report:
+            anchor_documents.append(report_to_common(report))
+
+        important = unique_documents(anchor_documents + documents)[:8]
         related = unique_documents(documents)[1:7]
         categories = collect_categories(important + related)
-        fallback_key_points = list(report.get('key_items') or []) or [doc.title for doc in important[:5]]
-        summary = clean_text(
-            strip_markdown_noise(report.get('abstract') or ' '.join(cleaned_doc_summary(doc, 240) for doc in important[:4] if doc.summary)),
-            860,
-        )
+
+        if report:
+            fallback_key_points = list(report.get('key_items') or []) or [doc.title for doc in important[:5]]
+            summary_seed = report.get('abstract') or ' '.join(cleaned_doc_summary(doc, 240) for doc in important[:4] if doc.summary)
+        else:
+            fallback_key_points = [doc.title for doc in important[:5]]
+            summary_seed = ' '.join(cleaned_doc_summary(doc, 240) for doc in important[:4] if doc.summary)
+
+        summary = clean_text(strip_markdown_noise(summary_seed), 860)
         title = f"Sunday Edition — {start_day.isoformat()} to {end_day.isoformat()}"
         editorial = maybe_ai_sunday(title, summary, fallback_key_points, important)
         if index > 0:
@@ -688,11 +678,15 @@ def sunday_editions(posts: List[dict], reports: List[dict], timeline: dict) -> d
             'categories': categories,
             'important_documents': [doc.to_payload() for doc in important[:5]],
             'related_documents': [doc.to_payload() for doc in related],
-            'report': {
-                'id': report.get('id'),
-                'title': report.get('display_title') or report.get('title'),
-                'url': report.get('url_html'),
-            },
+            'report': (
+                {
+                    'id': report.get('id'),
+                    'title': report.get('display_title') or report.get('title'),
+                    'url': report.get('url_html'),
+                }
+                if report
+                else None
+            ),
         }
         if not any(existing['week_end'] == edition['week_end'] for existing in editions):
             editions.append(edition)

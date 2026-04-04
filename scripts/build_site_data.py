@@ -631,7 +631,9 @@ async def build():
             "categories": cats
         }))
 
-    # 4) Merge + rank + cap
+    # 4) Merge + rank.
+    # The app feed should act like a true rolling archive, so keep the
+    # deduped historical stream instead of shrinking it back to a capped slice.
     merged_by_id = {}
     for arr in (old_posts, feed_items, report_items):
         for post in arr:
@@ -640,8 +642,7 @@ async def build():
                 merged_by_id[post["id"]] = post
     merged = list(merged_by_id.values())
     merged.sort(key=lambda x: (x.get("score",0), x.get("ts",0)), reverse=True)
-    # Respect caps
-    final_posts = clamp_posts_by_caps(merged)
+    final_posts = merged
 
     # Sort reports newest first
     deduped_reports = {}

@@ -84,10 +84,26 @@ struct AppView: View {
 
     private var tabShell: some View {
         ZStack {
-            currentScreen
-                .transition(.opacity.combined(with: .move(edge: .bottom)))
+            tabScreen(.briefing)
+                .opacity(selectedTab == .briefing ? 1 : 0)
+                .allowsHitTesting(selectedTab == .briefing)
+
+            tabScreen(.feed)
+                .opacity(selectedTab == .feed ? 1 : 0)
+                .allowsHitTesting(selectedTab == .feed)
+
+            tabScreen(.askAI)
+                .opacity(selectedTab == .askAI ? 1 : 0)
+                .allowsHitTesting(selectedTab == .askAI)
+
+            tabScreen(.sources)
+                .opacity(selectedTab == .sources ? 1 : 0)
+                .allowsHitTesting(selectedTab == .sources)
+
+            tabScreen(.library)
+                .opacity(selectedTab == .library ? 1 : 0)
+                .allowsHitTesting(selectedTab == .library)
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.9), value: selectedTab)
         .safeAreaInset(edge: .bottom) {
             BottomDock(selectedTab: $selectedTab)
                 .padding(.horizontal, 16)
@@ -97,8 +113,8 @@ struct AppView: View {
     }
 
     @ViewBuilder
-    private var currentScreen: some View {
-        switch selectedTab {
+    private func tabScreen(_ tab: AppTab) -> some View {
+        switch tab {
         case .briefing:
             NavigationStack {
                 TodayView(model: model, selectedTab: $selectedTab)

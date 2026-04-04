@@ -26,7 +26,7 @@ struct SectionTitle: View {
     private var subtitleColor: Color {
         switch tone {
         case .page:
-            return AppTheme.pageBody
+            return AppTheme.pageSubtext
         case .card:
             return AppTheme.slate
         case .reader:

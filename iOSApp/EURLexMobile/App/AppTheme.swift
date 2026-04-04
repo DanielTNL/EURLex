@@ -1,9 +1,9 @@
 import SwiftUI
 
 enum AppTheme {
-    static let midnight = Color(red: 0.05, green: 0.07, blue: 0.14)
-    static let twilight = Color(red: 0.09, green: 0.10, blue: 0.22)
-    static let nebula = Color(red: 0.14, green: 0.09, blue: 0.28)
+    static let dawn = Color(red: 0.97, green: 0.98, blue: 1.00)
+    static let sky = Color(red: 0.93, green: 0.96, blue: 1.00)
+    static let lilacMist = Color(red: 0.95, green: 0.93, blue: 1.00)
 
     static let ink = Color(red: 0.94, green: 0.97, blue: 1.00)
     static let slate = Color(red: 0.76, green: 0.81, blue: 0.91)
@@ -15,9 +15,9 @@ enum AppTheme {
     static let lavender = Color(red: 0.72, green: 0.49, blue: 1.00)
     static let plum = Color(red: 0.25, green: 0.21, blue: 0.52)
     static let plumSoft = Color(red: 0.39, green: 0.35, blue: 0.66)
-    static let pageTitle = Color(red: 0.13, green: 0.11, blue: 0.31)
-    static let pageBody = Color(red: 0.17, green: 0.15, blue: 0.40)
-    static let pageSubtext = Color(red: 0.24, green: 0.23, blue: 0.50)
+    static let pageTitle = Color(red: 0.24, green: 0.17, blue: 0.51)
+    static let pageBody = Color(red: 0.31, green: 0.23, blue: 0.59)
+    static let pageSubtext = Color(red: 0.42, green: 0.35, blue: 0.69)
     static let heroText = Color(red: 0.95, green: 0.97, blue: 1.00)
     static let heroSubtext = Color(red: 0.80, green: 0.85, blue: 0.95)
 
@@ -33,7 +33,7 @@ enum AppTheme {
     static let composerBottomLift: CGFloat = 96
 
     static let background = LinearGradient(
-        colors: [midnight, twilight, nebula],
+        colors: [dawn, sky, lilacMist],
         startPoint: .topLeading,
         endPoint: .bottomTrailing
     )
@@ -52,25 +52,25 @@ struct AmbientBackground: View {
                     .ignoresSafeArea()
 
                 Circle()
-                    .fill(AppTheme.cobalt.opacity(0.30))
+                    .fill(AppTheme.cobalt.opacity(0.12))
                     .frame(width: proxy.size.width * 0.88)
                     .blur(radius: 68)
                     .offset(x: -proxy.size.width * 0.22, y: -proxy.size.height * 0.26)
 
                 Circle()
-                    .fill(AppTheme.lavender.opacity(0.26))
+                    .fill(AppTheme.lavender.opacity(0.14))
                     .frame(width: proxy.size.width * 0.78)
                     .blur(radius: 82)
                     .offset(x: proxy.size.width * 0.34, y: -proxy.size.height * 0.12)
 
                 Circle()
-                    .fill(AppTheme.mint.opacity(0.16))
+                    .fill(AppTheme.mint.opacity(0.10))
                     .frame(width: proxy.size.width * 0.58)
                     .blur(radius: 72)
                     .offset(x: proxy.size.width * 0.18, y: proxy.size.height * 0.32)
 
                 AngularGradient(
-                    colors: [AppTheme.cobalt.opacity(0.14), AppTheme.lavender.opacity(0.06), .clear],
+                    colors: [AppTheme.cobalt.opacity(0.08), AppTheme.lavender.opacity(0.04), .clear],
                     center: .topTrailing
                 )
                 .ignoresSafeArea()
