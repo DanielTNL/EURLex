@@ -253,9 +253,15 @@ def main():
         agg = json.load(f)
 
     items = []
-    for src in agg.get("sources", []):
-        for it in src.get("items", []):
-            items.append(it)
+    if isinstance(agg.get("items"), list):
+        items.extend([it for it in agg.get("items", []) if isinstance(it, dict)])
+    else:
+        for src in agg.get("sources", []):
+            if not isinstance(src, dict):
+                continue
+            for it in src.get("items", []):
+                if isinstance(it, dict):
+                    items.append(it)
     items = items[: args.limit]
 
     out_file = week_path()
@@ -264,8 +270,10 @@ def main():
 
     for it in items:
         url = it.get("url")
-        title_hint = it.get("title_hint")
-        published_hint = it.get("published_date_hint")
+        title_hint = it.get("title") or it.get("title_hint")
+        published_hint = it.get("published_at") or it.get("published_date_hint")
+        source_id = it.get("source_id") or "external_source"
+        source_name = it.get("source") or source_id
         try:
             html, final_url = fetch(url)
             soup = BeautifulSoup(html, "lxml")
@@ -283,7 +291,8 @@ def main():
 
             rec = {
                 "schema": "document.v2",
-                "source_id": "investeu_news",
+                "source_id": source_id,
+                "source_name": source_name,
                 "url": final_url or url,
                 "canonical_url": final_url or url,
                 "fetch_time": iso_now(),

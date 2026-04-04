@@ -51,11 +51,13 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           python build_site_data.py
+          python build_app_backend.py
+          python scripts/validate_backend_outputs.py
 
       - name: Commit requested weekly audio
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/audio docs/data/audio.json
+          git add reports/audio docs/data
           git commit -m "Add requested weekly audio $(date -u +'%F %T')" || echo "No changes to commit"
           git push || true

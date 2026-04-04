@@ -1,0 +1,1084 @@
+{
+  "generated_at": "2026-04-04T08:24:13.862828+00:00",
+  "counts": {
+    "total": 67,
+    "custom": 0,
+    "built_in": 67
+  },
+  "items": [
+    {
+      "source_id": "afme_news",
+      "name": "Afme News",
+      "url": "https://www.afme.eu/news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "airbus_press",
+      "name": "Airbus Press",
+      "url": "https://www.airbus.com/en/newsroom/press-releases",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "anduril_news",
+      "name": "Anduril News",
+      "url": "https://anduril.com/newsroom",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "boeing_press",
+      "name": "Boeing Press",
+      "url": "https://boeing.mediaroom.com/news-releases-statements",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "bruegel_publications",
+      "name": "Bruegel Publications",
+      "url": "https://www.bruegel.org/publications",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/register/rss/THMCOM.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/register/rss/THMEFA.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=compet",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=ecofin",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-compet",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-ecofin",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/pressreleases.ashx",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "edf_publications",
+      "name": "Edf Publications",
+      "url": "https://defence-industry-space.ec.europa.eu",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eib_press",
+      "name": "Eib Press",
+      "url": "https://www.eib.org/en/press/all",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eif_news",
+      "name": "Eif News",
+      "url": "https://www.eif.org/news/index.htm",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "esma_publications",
+      "name": "Esma Publications",
+      "url": "https://www.esma.europa.eu/publications",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMqxgwKHzTIEhhaN288u%2FA%2Bk%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMxf2yPGvU%2B2DKvmj375b2fI%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPCOks8Lb9I%2F7HKsheVjDD24%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPZgyu5KH6%2BNZs%2FH0VS0n1XU%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPpaIo2Jjyla%2BQh6LIbMKu1k%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUM%2BfPeWXzVIDPrtJmlgBdmhs%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUMlxZcTWvS%2BxtAYizunW5QAA%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUO3V%2FO%2BcTr%2BXa1ATP9a97SsQ%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOHvFIxf3jlA9JeuwgTFWJOg%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOcBTK0erkTyfirFlrUSy%2FvM%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOs7pM7dPsIl4e14a2dqfkN8%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUP90nGqZj0ldQaW%2BbRHjoIqs%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPNOdAlaH8%2BK3mIDkMObFTIc%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPWgLCgbb7I4VN9oxHJMhlpw%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVM4HHKTnsOCJg9AdK4%2BSHgeM%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVMjpRIWmwJ07CW12fz5FjW%2Fg%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOB3Nc0vo4vKSfz6c9NWMPxA%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOaZbexu0%2FZ4w0GRJ2KBo5Qs%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOqjhY%2BtQ3CvXIYs2rD5Fiyc%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOxN3a7sMw0d1jtHjgEuhUTw%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVP7svSvp8vvX%2FM7q3MZwyOVM%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPQ4DWlrEgCy6bQ8daXf7jWQ%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPgC5QqogoZldnOBiHenW40g%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xWO7lvm18tdqCEYa6XHmbPfTQ%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:C",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "euronews_tech",
+      "name": "Euronews Tech",
+      "url": "https://www.euronews.com/next/tech-news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eba.europa.eu",
+      "name": "European Banking Authority",
+      "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/blog.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/operations.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/procurements.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/pub.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/rbu.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/statpress.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/wppub.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/yc.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eiopa.europa.eu",
+      "name": "European Insurance and Occupational Pensions Authority",
+      "url": "https://www.eiopa.europa.eu/node/4770/rss_en",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/doc/top-stories/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/topic/901/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/topic/907/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/topic/909/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "helsing_news",
+      "name": "Helsing News",
+      "url": "https://helsing.ai/newsroom",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "investeu_news",
+      "name": "Investeu News",
+      "url": "https://investeu.europa.eu/news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "investnl_news",
+      "name": "Investnl News",
+      "url": "https://invest-nl.nl/en/news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "mckinsey_media",
+      "name": "Mckinsey Media",
+      "url": "https://www.mckinsey.com/about-us/media",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "nato_news",
+      "name": "Nato News",
+      "url": "https://www.nato.int/cps/en/natohq/news.htm",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "palantir_press",
+      "name": "Palantir Press",
+      "url": "https://www.palantir.com/newsroom/press-releases",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "pwc_press",
+      "name": "Pwc Press",
+      "url": "https://www.pwc.com/gx/en/news-room/press-releases.html",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "rand_press",
+      "name": "Rand Press",
+      "url": "https://www.rand.org/news/press.html",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "afme_news",
+      "name": "Afme News",
+      "url": "https://www.afme.eu/news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "airbus_press",
+      "name": "Airbus Press",
+      "url": "https://www.airbus.com/en/newsroom/press-releases",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "anduril_news",
+      "name": "Anduril News",
+      "url": "https://anduril.com/newsroom",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "boeing_press",
+      "name": "Boeing Press",
+      "url": "https://boeing.mediaroom.com/news-releases-statements",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "bruegel_publications",
+      "name": "Bruegel Publications",
+      "url": "https://www.bruegel.org/publications",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/register/rss/THMCOM.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/register/rss/THMEFA.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=compet",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=ecofin",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-compet",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/meetings.ashx?cat=wp-ecofin",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "consilium.europa.eu",
+      "name": "Council of the EU",
+      "url": "https://www.consilium.europa.eu/en/rss/pressreleases.ashx",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "edf_publications",
+      "name": "Edf Publications",
+      "url": "https://defence-industry-space.ec.europa.eu",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eib_press",
+      "name": "Eib Press",
+      "url": "https://www.eib.org/en/press/all",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eif_news",
+      "name": "Eif News",
+      "url": "https://www.eif.org/news/index.htm",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "esma_publications",
+      "name": "Esma Publications",
+      "url": "https://www.esma.europa.eu/publications",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMqxgwKHzTIEhhaN288u%2FA%2Bk%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMxf2yPGvU%2B2DKvmj375b2fI%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPCOks8Lb9I%2F7HKsheVjDD24%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPZgyu5KH6%2BNZs%2FH0VS0n1XU%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPpaIo2Jjyla%2BQh6LIbMKu1k%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUM%2BfPeWXzVIDPrtJmlgBdmhs%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUMlxZcTWvS%2BxtAYizunW5QAA%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUO3V%2FO%2BcTr%2BXa1ATP9a97SsQ%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOHvFIxf3jlA9JeuwgTFWJOg%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOcBTK0erkTyfirFlrUSy%2FvM%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOs7pM7dPsIl4e14a2dqfkN8%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUP90nGqZj0ldQaW%2BbRHjoIqs%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPNOdAlaH8%2BK3mIDkMObFTIc%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPWgLCgbb7I4VN9oxHJMhlpw%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVM4HHKTnsOCJg9AdK4%2BSHgeM%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVMjpRIWmwJ07CW12fz5FjW%2Fg%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOB3Nc0vo4vKSfz6c9NWMPxA%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOaZbexu0%2FZ4w0GRJ2KBo5Qs%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOqjhY%2BtQ3CvXIYs2rD5Fiyc%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOxN3a7sMw0d1jtHjgEuhUTw%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVP7svSvp8vvX%2FM7q3MZwyOVM%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPQ4DWlrEgCy6bQ8daXf7jWQ%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPgC5QqogoZldnOBiHenW40g%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xWO7lvm18tdqCEYa6XHmbPfTQ%3D",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:C",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eur-lex.europa.eu",
+      "name": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "euronews_tech",
+      "name": "Euronews Tech",
+      "url": "https://www.euronews.com/next/tech-news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eba.europa.eu",
+      "name": "European Banking Authority",
+      "url": "https://www.eba.europa.eu/news-press/news/rss.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/blog.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/operations.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/press.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/procurements.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/pub.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/rbu.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/statpress.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/wppub.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "ecb.europa.eu",
+      "name": "European Central Bank",
+      "url": "https://www.ecb.europa.eu/rss/yc.html",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "eiopa.europa.eu",
+      "name": "European Insurance and Occupational Pensions Authority",
+      "url": "https://www.eiopa.europa.eu/node/4770/rss_en",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/doc/top-stories/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/topic/901/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/topic/907/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "europarl.europa.eu",
+      "name": "European Parliament",
+      "url": "https://www.europarl.europa.eu/rss/topic/909/en.xml",
+      "kind": "rss",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "helsing_news",
+      "name": "Helsing News",
+      "url": "https://helsing.ai/newsroom",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "investeu_news",
+      "name": "Investeu News",
+      "url": "https://investeu.europa.eu/news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "investnl_news",
+      "name": "Investnl News",
+      "url": "https://invest-nl.nl/en/news",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "mckinsey_media",
+      "name": "Mckinsey Media",
+      "url": "https://www.mckinsey.com/about-us/media",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "nato_news",
+      "name": "Nato News",
+      "url": "https://www.nato.int/cps/en/natohq/news.htm",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "palantir_press",
+      "name": "Palantir Press",
+      "url": "https://www.palantir.com/newsroom/press-releases",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "pwc_press",
+      "name": "Pwc Press",
+      "url": "https://www.pwc.com/gx/en/news-room/press-releases.html",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    },
+    {
+      "source_id": "rand_press",
+      "name": "Rand Press",
+      "url": "https://www.rand.org/news/press.html",
+      "kind": "html_list",
+      "origin": "built_in",
+      "enabled": true
+    }
+  ]
+}

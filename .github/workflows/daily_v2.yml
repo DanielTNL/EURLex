@@ -18,6 +18,10 @@ env:
 jobs:
   run:
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || 'gpt-4o-mini' }}
 
     steps:
       - uses: actions/checkout@v4
@@ -105,6 +109,19 @@ jobs:
           else
             python workers/build_site_data_v2.py
           fi
+
+      # 5b) Build app-facing editorial backend payloads
+      - name: Build app backend payload
+        run: |
+          if [ -f build_app_backend.py ]; then
+            python build_app_backend.py
+          else
+            python scripts/build_app_backend.py
+          fi
+
+      - name: Validate backend outputs
+        run: |
+          python scripts/validate_backend_outputs.py
 
       # 6) Publish site bridge (v2 -> legacy)
       - name: Publish site bridge (v2 -> legacy)

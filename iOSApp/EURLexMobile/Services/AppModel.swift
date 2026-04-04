@@ -16,6 +16,8 @@ final class AppModel: ObservableObject {
     @Published private(set) var audio: AudioPayload = .empty
     @Published private(set) var timeline: TimelinePayload = .empty
     @Published private(set) var digest: DailyDigest?
+    @Published private(set) var briefings: DailyBriefingPayload = .empty
+    @Published private(set) var sundayEditions: SundayEditionPayload = .empty
 
     private let client: EURLexAPIClient
 
@@ -37,7 +39,7 @@ final class AppModel: ObservableObject {
     }
 
     var hasContent: Bool {
-        !posts.isEmpty || !reports.isEmpty || !audio.items.isEmpty || digest != nil
+        !posts.isEmpty || !reports.isEmpty || !audio.items.isEmpty || digest != nil || !briefings.items.isEmpty
     }
 
     var availableSources: [String] {
@@ -81,6 +83,21 @@ final class AppModel: ObservableObject {
         }
     }
 
+    var latestBriefing: DailyBriefingEntry? {
+        briefings.items.first
+    }
+
+    var latestSundayEdition: SundayEditionEntry? {
+        sundayEditions.items.first
+    }
+
+    func briefing(for date: Date) -> DailyBriefingEntry? {
+        briefings.items.first { entry in
+            guard let briefingDate = entry.briefingDate else { return false }
+            return Calendar.autoupdatingCurrent.isDate(briefingDate, inSameDayAs: date)
+        }
+    }
+
     func reload() async {
         guard !isLoading else { return }
         loadState = .loading
@@ -117,6 +134,20 @@ final class AppModel: ObservableObject {
                 .sorted { EURLexDate.parse($0.date) ?? .distantPast > EURLexDate.parse($1.date) ?? .distantPast }
         )
         digest = snapshot.digest.deduped()
+        briefings = DailyBriefingPayload(
+            generatedAt: snapshot.briefings.generatedAt,
+            latestDate: snapshot.briefings.latestDate,
+            items: snapshot.briefings.items.sorted {
+                EURLexDate.parse($0.date) ?? .distantPast > EURLexDate.parse($1.date) ?? .distantPast
+            }
+        )
+        sundayEditions = SundayEditionPayload(
+            generatedAt: snapshot.sundayEditions.generatedAt,
+            latestEndDate: snapshot.sundayEditions.latestEndDate,
+            items: snapshot.sundayEditions.items.sorted {
+                EURLexDate.parse($0.weekEnd) ?? .distantPast > EURLexDate.parse($1.weekEnd) ?? .distantPast
+            }
+        )
     }
 
     private static func unique<T>(_ items: [T], using keyPath: KeyPath<T, String>) -> [T] {

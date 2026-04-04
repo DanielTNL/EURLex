@@ -32,6 +32,12 @@ struct ReportsView: View {
         GeometryReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
+                    PageHeroHeader(
+                        title: "Reports",
+                        subtitle: "Browse the structured report archive and open full editions quickly.",
+                        accent: AppTheme.cobalt
+                    )
+
                     SectionTitle(
                         title: "Reports archive",
                         subtitle: "\(filteredReports.count) reports available",
@@ -69,7 +75,8 @@ struct ReportsView: View {
                 .frame(width: proxy.size.width, alignment: .leading)
             }
         }
-        .navigationTitle("Reports")
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {

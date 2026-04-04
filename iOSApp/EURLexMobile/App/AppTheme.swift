@@ -6,15 +6,20 @@ enum AppTheme {
     static let nebula = Color(red: 0.14, green: 0.09, blue: 0.28)
 
     static let ink = Color(red: 0.94, green: 0.97, blue: 1.00)
-    static let slate = Color(red: 0.70, green: 0.76, blue: 0.88)
+    static let slate = Color(red: 0.76, green: 0.81, blue: 0.91)
 
     static let cobalt = Color(red: 0.18, green: 0.53, blue: 0.99)
     static let mint = Color(red: 0.34, green: 0.77, blue: 1.00)
     static let coral = Color(red: 0.37, green: 0.39, blue: 0.97)
     static let amber = Color(red: 0.52, green: 0.52, blue: 1.00)
     static let lavender = Color(red: 0.72, green: 0.49, blue: 1.00)
-    static let plum = Color(red: 0.39, green: 0.31, blue: 0.72)
-    static let plumSoft = Color(red: 0.55, green: 0.49, blue: 0.82)
+    static let plum = Color(red: 0.25, green: 0.21, blue: 0.52)
+    static let plumSoft = Color(red: 0.39, green: 0.35, blue: 0.66)
+    static let pageTitle = Color(red: 0.18, green: 0.15, blue: 0.40)
+    static let pageBody = Color(red: 0.28, green: 0.26, blue: 0.52)
+    static let pageSubtext = Color(red: 0.39, green: 0.38, blue: 0.62)
+    static let heroText = Color(red: 0.95, green: 0.97, blue: 1.00)
+    static let heroSubtext = Color(red: 0.80, green: 0.85, blue: 0.95)
 
     static let accentPalette: [Color] = [cobalt, coral, amber, lavender, mint]
     static let panel = Color(red: 0.10, green: 0.12, blue: 0.22).opacity(0.72)

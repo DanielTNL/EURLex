@@ -113,6 +113,48 @@ def normalize_url(base: str, href: str) -> str:
         return href
 
 
+def split_selector_attr(selector: str) -> Tuple[str, Optional[str]]:
+    if "::attr(" in selector and selector.endswith(")"):
+        head, _, tail = selector.partition("::attr(")
+        return head.strip(), tail[:-1].strip()
+    return selector.strip(), None
+
+
+def extract_selector_value(node: Any, selectors: Iterable[str]) -> str:
+    for raw in selectors:
+        selector, attr = split_selector_attr(raw)
+        if not selector:
+            continue
+        try:
+            target = node.select_one(selector) if hasattr(node, "select_one") else None
+        except Exception:
+            target = None
+        if target is None:
+            continue
+        if attr:
+            value = (target.get(attr) or "").strip()
+        else:
+            value = target.get_text(" ", strip=True)
+        if value:
+            return value
+    return ""
+
+
+def matches_url_patterns(url: str, include_patterns: Iterable[str] | None, exclude_patterns: Iterable[str] | None) -> bool:
+    lowered = (url or "").lower()
+    if not lowered:
+        return False
+    if include_patterns:
+        includes = [item.lower() for item in include_patterns if item]
+        if includes and not any(item in lowered for item in includes):
+            return False
+    if exclude_patterns:
+        excludes = [item.lower() for item in exclude_patterns if item]
+        if any(item in lowered for item in excludes):
+            return False
+    return True
+
+
 def stable_id(u: str) -> str:
     return hashlib.sha1(u.encode("utf-8", "ignore")).hexdigest()
 
@@ -149,6 +191,7 @@ def within_window(iso_str: str, cutoff_utc: datetime) -> bool:
 
 @dataclass
 class Source:
+    source_id: str
     name: str
     url: str
     type: Optional[str] = None  # "feed" | "html" | None=auto
@@ -161,29 +204,52 @@ class Source:
     tags: Optional[List[str]] = None
     enabled: bool = True
     base: Optional[str] = None  # override base for relative URLs
+    list_selectors: Optional[List[str]] = None
+    date_selectors: Optional[List[str]] = None
+    include_url_patterns: Optional[List[str]] = None
+    exclude_url_patterns: Optional[List[str]] = None
+    next_selector: Optional[str] = None
+    max_pages: int = 1
 
     @staticmethod
     def from_any(x: Any) -> Optional["Source"]:
         if isinstance(x, str):
-            return Source(name=urlparse(x).netloc or x, url=x)
+            name = urlparse(x).netloc or x
+            return Source(source_id=name, name=name, url=x)
         if isinstance(x, dict):
-            url = (x.get("url") or "").strip()
+            discover = x.get("discover") or {}
+            parsing = x.get("parsing") or {}
+            url = (x.get("url") or x.get("base_url") or "").strip()
             if not url:
                 return None
-            name = (x.get("name") or urlparse(url).netloc or url).strip()
+            source_id = str(x.get("source_id") or x.get("id") or x.get("name") or urlparse(url).netloc or url).strip()
+            name = (x.get("name") or x.get("source_id") or urlparse(url).netloc or url).strip()
+            raw_type = (x.get("type") or "").strip().lower()
+            mapped_type = "feed" if raw_type in {"feed", "rss", "atom"} else ("html" if raw_type else None)
             return Source(
+                source_id=source_id,
                 name=name,
                 url=url,
-                type=(x.get("type") or None),
+                type=mapped_type,
                 selector=x.get("selector") or None,
                 link_attr=x.get("link_attr") or None,
-                title_selector=x.get("title_selector") or None,
+                title_selector=(
+                    x.get("title_selector")
+                    or (parsing.get("title_selectors") or [None])[0]
+                    or None
+                ),
                 time_selector=x.get("time_selector") or None,
                 time_attr=x.get("time_attr") or None,
                 time_format=x.get("time_format") or None,
                 tags=x.get("tags") or None,
                 enabled=bool(x.get("enabled", True)),
                 base=x.get("base") or None,
+                list_selectors=discover.get("list_selectors") or None,
+                date_selectors=discover.get("date_selectors") or None,
+                include_url_patterns=discover.get("include_url_patterns") or None,
+                exclude_url_patterns=discover.get("exclude_url_patterns") or None,
+                next_selector=(discover.get("pagination") or {}).get("next_selector"),
+                max_pages=int((discover.get("pagination") or {}).get("max_pages") or 1),
             )
         return None
 
@@ -283,8 +349,18 @@ def discover_from_html(text: str, base_url: str, s: Source) -> List[Dict[str, An
 
     # Use custom selector if provided
     candidates: Iterable[Any]
+    selectors = list(s.list_selectors or [])
     if s.selector:
-        candidates = soup.select(s.selector)
+        selectors.insert(0, s.selector)
+
+    if selectors:
+        selected: List[Any] = []
+        for selector in selectors:
+            try:
+                selected.extend(soup.select(selector))
+            except Exception:
+                continue
+        candidates = selected
     else:
         # try common article patterns first, then all links
         candidates = soup.select("article a[href], .article a[href], a[href]")
@@ -299,6 +375,8 @@ def discover_from_html(text: str, base_url: str, s: Source) -> List[Dict[str, An
         url = normalize_url(s.base or base_url, href)
         if not url:
             continue
+        if not matches_url_patterns(url, s.include_url_patterns, s.exclude_url_patterns):
+            continue
         title = ""
         if s.title_selector:
             tnode = node.select_one(s.title_selector) if hasattr(node, "select_one") else None
@@ -307,19 +385,21 @@ def discover_from_html(text: str, base_url: str, s: Source) -> List[Dict[str, An
             title = node.get_text(" ", strip=True)[:300]
 
         published_iso = ""
+        raw_dates: List[str] = []
         if s.time_selector:
-            tnode = soup.select_one(s.time_selector)
-            if tnode is not None:
-                tval = tnode.get(s.time_attr or "datetime") or tnode.get_text(" ", strip=True)
-                if tval:
-                    if s.time_format:
-                        try:
-                            dt = datetime.strptime(tval, s.time_format).replace(tzinfo=timezone.utc)
-                            published_iso = dt.isoformat()
-                        except Exception:
-                            published_iso = parse_date_to_iso(tval)
-                    else:
+            raw_dates.append(s.time_selector)
+        raw_dates.extend(s.date_selectors or [])
+        if raw_dates:
+            tval = extract_selector_value(node, raw_dates) or extract_selector_value(soup, raw_dates)
+            if tval:
+                if s.time_format:
+                    try:
+                        dt = datetime.strptime(tval, s.time_format).replace(tzinfo=timezone.utc)
+                        published_iso = dt.isoformat()
+                    except Exception:
                         published_iso = parse_date_to_iso(tval)
+                else:
+                    published_iso = parse_date_to_iso(tval)
 
         out.append({
             "title": title,
@@ -335,26 +415,44 @@ def discover_from_html(text: str, base_url: str, s: Source) -> List[Dict[str, An
 def process_source(s: Source, cutoff_utc: datetime) -> List[Dict[str, Any]]:
     items: List[Dict[str, Any]] = []
     try:
-        text, content, headers = fetch(s.url)
-        ctype = headers.get("Content-Type", "")
-        auto_feed = looks_like_feed(text, ctype)
-        mode = (s.type or "").lower()
-        is_feed = (mode == "feed") or (mode == "" and auto_feed)
+        current_url = s.url
+        seen_pages = set()
 
-        if is_feed:
-            parsed = discover_from_feed_bytes(content)
-            if not parsed:  # feedparser gave nothing; try tolerant XML/HTML
-                parsed = discover_from_html(text, s.url, s)  # will handle xml-as-html too
-        else:
-            parsed = discover_from_html(text, s.url, s)
+        for _ in range(max(1, s.max_pages)):
+            if current_url in seen_pages:
+                break
+            seen_pages.add(current_url)
 
-        # augment with source name and filter by window
-        for it in parsed:
-            it["source"] = s.name or (urlparse(s.url).netloc or s.url)
-            it["tags"] = list(s.tags or [])
-            it["published_at"] = it.get("published_at") or ""
-            if within_window(it["published_at"], cutoff_utc):
-                items.append(it)
+            text, content, headers = fetch(current_url)
+            ctype = headers.get("Content-Type", "")
+            auto_feed = looks_like_feed(text, ctype)
+            mode = (s.type or "").lower()
+            is_feed = (mode == "feed") or (mode == "" and auto_feed)
+
+            if is_feed:
+                parsed = discover_from_feed_bytes(content)
+                if not parsed:  # feedparser gave nothing; try tolerant XML/HTML
+                    parsed = discover_from_html(text, current_url, s)
+            else:
+                parsed = discover_from_html(text, current_url, s)
+
+            for it in parsed:
+                it["source"] = s.name or (urlparse(s.url).netloc or s.url)
+                it["source_id"] = s.source_id or s.name
+                it["tags"] = list(s.tags or [])
+                it["published_at"] = it.get("published_at") or ""
+                if within_window(it["published_at"], cutoff_utc):
+                    items.append(it)
+
+            if is_feed or not s.next_selector:
+                break
+
+            soup = safe_soup(text, prefer_xml=False)
+            next_href = extract_selector_value(soup, [s.next_selector])
+            next_url = normalize_url(current_url, next_href) if next_href else ""
+            if not next_url or next_url == current_url:
+                break
+            current_url = next_url
 
     except Exception as e:
         print(f"[discover] skipping '{s.name}' ({s.url}): {e}", file=sys.stderr)

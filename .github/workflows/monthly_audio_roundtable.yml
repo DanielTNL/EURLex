@@ -43,11 +43,13 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           python build_site_data.py
+          python build_app_backend.py
+          python scripts/validate_backend_outputs.py
 
       - name: Commit monthly audio outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/audio docs/data/audio.json
+          git add reports/audio docs/data
           git commit -m "Add monthly audio roundtable $(date -u +'%F')" || echo "No changes to commit"
           git push || true

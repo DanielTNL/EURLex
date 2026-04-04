@@ -32,11 +32,12 @@ if not CONFIG.exists():
     # fallback in case the folder is capitalized
     CONFIG = ROOT / "Scripts" / "sources.yaml"
 
-REPORTS_DIRS = [ROOT / "reports", ROOT / "reports" / "weekly", ROOT / "reports" / "daily"]
+REPORTS_DIRS = [ROOT / "reports"]
 URL_RE = re.compile(r'https?://[^\s\]\)\}\>\"\'`]+', re.IGNORECASE)
 
 SUMMARY_CHARS = 1000
-MAX_LINKS_PER_REPORT = 300
+MAX_LINKS_PER_REPORT = 80
+MAX_REPORT_FILES_FOR_LINK_EXTRACTION = 20
 
 def sha16(s: str) -> str:
     return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
@@ -388,16 +389,28 @@ def guess_title_abstract_keyitems(text: str):
             if len(key_items) >= 3: break
     return title, abstract, key_items
 
+
+def infer_report_tags(path: pathlib.Path, title: str) -> list[str]:
+    lowered_path = path.as_posix().lower()
+    lowered_title = squash_text(title).lower()
+    tags: list[str] = []
+
+    if "/reports/weekly/" in lowered_path or "weekly" in lowered_title or "sunday edition" in lowered_title:
+        tags.append("weekly")
+    if "/reports/daily/" in lowered_path or "daily digest" in lowered_title or "daily brief" in lowered_title:
+        tags.append("daily")
+
+    if not tags:
+        tags.append("report")
+
+    return tags
+
 def make_report_entry(path: pathlib.Path, title: str, abstract: str, key_items: list[str], repo: str):
     date = norm_report_date(path)
     rid = f"rep-{date}-{sha16(str(path))}"
     file_rel = path.relative_to(ROOT).as_posix()
     url_html = f"https://github.com/{repo}/blob/main/{file_rel}"
-    tags = []
-    lr = file_rel.lower()
-    if "weekly" in lr: tags.append("weekly")
-    if "daily" in lr: tags.append("daily")
-    if not tags: tags.append("report")
+    tags = infer_report_tags(path, title)
     display_title = re.sub(r"^#+\s*", "", squash_text(title))
     return {
         "id": rid,
@@ -569,16 +582,24 @@ async def build():
 
     # 2) REPORTS + links inside them
     reports = []
+    seen_report_paths = set()
     report_links = []
+    report_link_files_seen = 0
     for ddir in REPORTS_DIRS:
         if not ddir.exists(): continue
-        for f in sorted(ddir.rglob("*")):
+        for f in sorted(ddir.rglob("*"), reverse=True):
             if f.suffix.lower() not in (".md",".markdown",".txt",".html",".htm"): continue
             try:
+                rel = f.relative_to(ROOT).as_posix()
+                if rel in seen_report_paths:
+                    continue
+                seen_report_paths.add(rel)
                 raw, text, urls = read_report_text_and_urls(f)
                 title, abstract, key_items = guess_title_abstract_keyitems(text)
                 reports.append(make_report_entry(f, title, abstract, key_items, repo))
-                report_links.extend(urls[:MAX_LINKS_PER_REPORT])
+                if report_link_files_seen < MAX_REPORT_FILES_FOR_LINK_EXTRACTION:
+                    report_links.extend(urls[:MAX_LINKS_PER_REPORT])
+                    report_link_files_seen += 1
             except Exception as ex:
                 print(f"[WARN] report parse {f}: {ex}")
 
@@ -623,7 +644,10 @@ async def build():
     final_posts = clamp_posts_by_caps(merged)
 
     # Sort reports newest first
-    reports.sort(key=lambda r: r["date"], reverse=True)
+    deduped_reports = {}
+    for report in reports:
+        deduped_reports[(report["date"], report["url_html"])] = report
+    reports = sorted(deduped_reports.values(), key=lambda r: r["date"], reverse=True)
 
     POSTS_JSON.write_text(json.dumps(final_posts, ensure_ascii=False, indent=2), encoding="utf-8")
     REPORTS_JSON.write_text(json.dumps(reports, ensure_ascii=False, indent=2), encoding="utf-8")

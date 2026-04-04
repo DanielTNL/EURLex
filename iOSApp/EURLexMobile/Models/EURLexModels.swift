@@ -484,6 +484,113 @@ struct Report: Decodable, Identifiable, Hashable {
     var dedupeKey: String { [id, title.lowercased(), date].joined(separator: "|") }
 }
 
+struct EditorialDocument: Decodable, Identifiable, Hashable {
+    let id: String
+    let title: String
+    let summary: String
+    let url: String
+    let kind: String
+    let source: String
+    let date: String
+    let categories: [String]
+    let tags: [String]
+
+    var destinationURL: URL? { URL(string: url) }
+    var displayDateText: String { EURLexDate.short(date) }
+    var summaryPreview: String {
+        let cleaned = TextSanitizer.clean(summary)
+        return cleaned.isEmpty ? "No summary is available for this source yet." : cleaned
+    }
+    var sourceLabel: String {
+        let cleaned = TextSanitizer.clean(source)
+        return cleaned.isEmpty ? "Source" : cleaned
+    }
+}
+
+struct EditorialSection: Decodable, Identifiable, Hashable {
+    let title: String
+    let body: String
+
+    var id: String { [title, body].joined(separator: "|") }
+}
+
+struct BriefingSignalCounts: Decodable, Hashable {
+    let posts: Int
+    let reports: Int
+    let digestItems: Int
+    let timelineEvents: Int
+
+    static let empty = BriefingSignalCounts(posts: 0, reports: 0, digestItems: 0, timelineEvents: 0)
+}
+
+struct BriefingReportLink: Decodable, Hashable {
+    let id: String?
+    let title: String?
+    let url: String?
+
+    var destinationURL: URL? {
+        guard let url else { return nil }
+        return URL(string: url)
+    }
+}
+
+struct DailyBriefingEntry: Decodable, Identifiable, Hashable {
+    let date: String
+    let title: String
+    let headline: String
+    let intro: String
+    let summary: String
+    let keyPoints: [String]
+    let sections: [EditorialSection]
+    let categories: [String]
+    let importantDocuments: [EditorialDocument]
+    let relatedDocuments: [EditorialDocument]
+    let report: BriefingReportLink?
+    let signalCounts: BriefingSignalCounts
+
+    var id: String { date }
+    var briefingDate: Date? { EURLexDate.parse(date) }
+    var displayDateText: String { EURLexDate.short(date) }
+}
+
+struct DailyBriefingPayload: Decodable, Hashable {
+    let generatedAt: String
+    let latestDate: String
+    let items: [DailyBriefingEntry]
+
+    static let empty = DailyBriefingPayload(generatedAt: "", latestDate: "", items: [])
+}
+
+struct SundayEditionEntry: Decodable, Identifiable, Hashable {
+    let editionDate: String
+    let weekStart: String
+    let weekEnd: String
+    let title: String
+    let headline: String
+    let intro: String
+    let summary: String
+    let keyPoints: [String]
+    let sections: [EditorialSection]
+    let categories: [String]
+    let importantDocuments: [EditorialDocument]
+    let relatedDocuments: [EditorialDocument]
+    let report: BriefingReportLink?
+
+    var id: String { weekEnd.isEmpty ? editionDate : weekEnd }
+    var displayDateText: String { EURLexDate.short(editionDate) }
+    var displayWeekRange: String {
+        "\(EURLexDate.short(weekStart)) to \(EURLexDate.short(weekEnd))"
+    }
+}
+
+struct SundayEditionPayload: Decodable, Hashable {
+    let generatedAt: String
+    let latestEndDate: String
+    let items: [SundayEditionEntry]
+
+    static let empty = SundayEditionPayload(generatedAt: "", latestEndDate: "", items: [])
+}
+
 struct AudioPayload: Decodable, Hashable {
     let googleDrive: String
     let monthly: [AudioItem]

@@ -21,6 +21,12 @@ struct AudioView: View {
         GeometryReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
+                    PageHeroHeader(
+                        title: "Voice",
+                        subtitle: "Monthly roundtables and requested audio briefings in one archive.",
+                        accent: AppTheme.mint
+                    )
+
                     SectionTitle(
                         title: "Voice overview",
                         subtitle: monthlyItems.isEmpty ? "Monthly roundtables will appear here" : "\(monthlyItems.count) monthly discussions published",
@@ -66,7 +72,8 @@ struct AudioView: View {
                 .frame(width: proxy.size.width, alignment: .leading)
             }
         }
-        .navigationTitle("Audio")
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {

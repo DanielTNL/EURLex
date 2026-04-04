@@ -38,7 +38,7 @@ struct PillScroller: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(title)
                 .font(.headline.weight(.semibold))
-                .foregroundStyle(AppTheme.plum)
+                .foregroundStyle(AppTheme.pageTitle)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {

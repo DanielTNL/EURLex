@@ -7,12 +7,19 @@ struct TodayView: View {
     @State private var selectedDay: Date?
     @State private var selectedReport: Report?
     @State private var selectedPost: Post?
+    @State private var selectedBriefingReader: DailyBriefingEntry?
+    @State private var selectedSundayEdition: SundayEditionEntry?
     @State private var showingRelatedArticles = false
     @State private var showingCategories = false
 
     private var calendar: Calendar { .autoupdatingCurrent }
 
     private var availableDays: [Date] {
+        let editorialDays = model.briefings.items.compactMap(\.briefingDate)
+        if !editorialDays.isEmpty {
+            return editorialDays
+        }
+
         var unique = Set<Date>()
         var ordered: [Date] = []
 
@@ -42,8 +49,16 @@ struct TodayView: View {
         snapshot(for: activeDay)
     }
 
+    private var activeBriefing: DailyBriefingEntry? {
+        model.briefing(for: activeDay)
+    }
+
     private var weeklyReport: Report? {
         model.reports.first { $0.tags.contains("weekly") }
+    }
+
+    private var sundayEdition: SundayEditionEntry? {
+        model.latestSundayEdition
     }
 
     var body: some View {
@@ -58,21 +73,23 @@ struct TodayView: View {
 
                     dayOverviewCard
 
-                    if !daySnapshot.prominentDocuments.isEmpty {
+                    if !editorialImportantDocuments.isEmpty || !daySnapshot.prominentDocuments.isEmpty {
                         importantDocumentsSection
                     }
 
-                    if !daySnapshot.topCategories.isEmpty {
+                    if !editorialCategories.isEmpty || !daySnapshot.topCategories.isEmpty {
                         categoriesSection
                     }
 
-                    if !daySnapshot.relatedPosts.isEmpty {
+                    if !editorialRelatedDocuments.isEmpty || !daySnapshot.relatedPosts.isEmpty {
                         relatedDocumentsSection
                     }
 
                     daySelector
 
-                    if let weeklyReport {
+                    if let sundayEdition {
+                        sundayEditionSection(edition: sundayEdition)
+                    } else if let weeklyReport {
                         sundayEditionSection(report: weeklyReport)
                     }
                 }
@@ -90,6 +107,12 @@ struct TodayView: View {
         }
         .navigationDestination(item: $selectedPost) { post in
             PostDetailView(post: post)
+        }
+        .navigationDestination(item: $selectedBriefingReader) { briefing in
+            BriefingReaderView(briefing: briefing)
+        }
+        .navigationDestination(item: $selectedSundayEdition) { edition in
+            SundayEditionReaderView(edition: edition)
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -113,14 +136,102 @@ struct TodayView: View {
             selectedDay = newValue
         }
         .sheet(isPresented: $showingRelatedArticles) {
-            BriefingRelatedArticlesSheet(posts: daySnapshot.relatedPosts)
+            if let briefing = activeBriefing {
+                EditorialDocumentsSheet(title: "Related documents", subtitle: "Original source titles and links attached to this briefing.", documents: briefing.relatedDocuments)
+            } else {
+                BriefingRelatedArticlesSheet(posts: daySnapshot.relatedPosts)
+            }
         }
         .sheet(isPresented: $showingCategories) {
             BriefingCategoriesSheet(categories: daySnapshot.topCategories)
         }
     }
 
+    private var editorialImportantDocuments: [EditorialDocument] {
+        activeBriefing?.importantDocuments ?? []
+    }
+
+    private var editorialRelatedDocuments: [EditorialDocument] {
+        activeBriefing?.relatedDocuments ?? []
+    }
+
+    private var editorialCategories: [String] {
+        activeBriefing?.categories ?? []
+    }
+
     private var dayOverviewCard: some View {
+        if let briefing = activeBriefing {
+            AnyView(editorialDayOverviewCard(briefing))
+        } else {
+            AnyView(legacyDayOverviewCard)
+        }
+    }
+
+    private func editorialDayOverviewCard(_ briefing: DailyBriefingEntry) -> some View {
+        VStack(alignment: .leading, spacing: 18) {
+            HStack(alignment: .top) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Label("AI Daily Brief", systemImage: "sparkles.rectangle.stack")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(AppTheme.mint)
+
+                    Text(briefing.title)
+                        .font(.system(size: 30, weight: .bold, design: .serif))
+                        .foregroundStyle(AppTheme.ink)
+
+                    Text(briefing.headline)
+                        .font(.title3.weight(.semibold))
+                        .foregroundStyle(AppTheme.heroSubtext)
+                }
+
+                Spacer(minLength: 12)
+                SyncStatusBadge(state: model.loadState)
+            }
+
+            Text(briefing.intro)
+                .font(.body)
+                .foregroundStyle(AppTheme.ink)
+                .lineSpacing(5)
+
+            if !briefing.keyPoints.isEmpty {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Key points")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(AppTheme.lavender)
+
+                    ForEach(Array(briefing.keyPoints.prefix(4).enumerated()), id: \.offset) { _, item in
+                        HStack(alignment: .top, spacing: 10) {
+                            Circle()
+                                .fill(AppTheme.cobalt)
+                                .frame(width: 7, height: 7)
+                                .padding(.top, 6)
+
+                            Text(item)
+                                .font(.subheadline.weight(.semibold))
+                                .foregroundStyle(AppTheme.ink)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                    }
+                }
+            }
+
+            HStack(spacing: 10) {
+                briefingMetaPill(title: "Signals", value: briefing.signalCounts.posts + briefing.signalCounts.digestItems + briefing.signalCounts.timelineEvents, tint: AppTheme.cobalt)
+                briefingMetaPill(title: "Docs", value: briefing.importantDocuments.count, tint: AppTheme.lavender)
+                briefingMetaPill(title: "Themes", value: briefing.categories.count, tint: AppTheme.mint)
+            }
+
+            Button {
+                selectedBriefingReader = briefing
+            } label: {
+                Label("View full briefing", systemImage: "text.document")
+            }
+            .buttonStyle(PrimaryCapsuleButtonStyle())
+        }
+        .glassCard(cornerRadius: 34, tint: AppTheme.cobalt, padding: 22)
+    }
+
+    private var legacyDayOverviewCard: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack(alignment: .top) {
                 VStack(alignment: .leading, spacing: 10) {
@@ -215,13 +326,24 @@ struct TodayView: View {
                 tone: .page
             )
 
-            ForEach(daySnapshot.prominentDocuments) { document in
-                Button {
-                    open(document)
-                } label: {
-                    BriefingDocumentCard(document: document)
+            if let briefing = activeBriefing, !briefing.importantDocuments.isEmpty {
+                ForEach(briefing.importantDocuments) { document in
+                    Button {
+                        open(document)
+                    } label: {
+                        EditorialDocumentCard(document: document)
+                    }
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
+            } else {
+                ForEach(daySnapshot.prominentDocuments) { document in
+                    Button {
+                        open(document)
+                    } label: {
+                        BriefingDocumentCard(document: document)
+                    }
+                    .buttonStyle(.plain)
+                }
             }
         }
     }
@@ -236,7 +358,7 @@ struct TodayView: View {
             )
 
             VStack(alignment: .leading, spacing: 12) {
-                TagStrip(tags: daySnapshot.topCategories)
+                TagStrip(tags: activeBriefing?.categories ?? daySnapshot.topCategories)
 
                 Button {
                     showingCategories = true
@@ -259,13 +381,24 @@ struct TodayView: View {
                 tone: .page
             )
 
-            ForEach(Array(daySnapshot.relatedPosts.prefix(2))) { post in
-                Button {
-                    selectedPost = post
-                } label: {
-                    BriefingRelatedPostCard(post: post)
+            if let briefing = activeBriefing, !briefing.relatedDocuments.isEmpty {
+                ForEach(Array(briefing.relatedDocuments.prefix(2))) { document in
+                    Button {
+                        open(document)
+                    } label: {
+                        EditorialDocumentCard(document: document, accent: AppTheme.mint)
+                    }
+                    .buttonStyle(.plain)
                 }
-                .buttonStyle(.plain)
+            } else {
+                ForEach(Array(daySnapshot.relatedPosts.prefix(2))) { post in
+                    Button {
+                        selectedPost = post
+                    } label: {
+                        BriefingRelatedPostCard(post: post)
+                    }
+                    .buttonStyle(.plain)
+                }
             }
 
             Button {
@@ -300,7 +433,7 @@ struct TodayView: View {
                                 Text(dayNumber(for: day))
                                     .font(.title3.weight(.bold))
                                     .foregroundStyle(AppTheme.ink)
-                                Text("\(snapshot.signalCount) signals")
+                                Text(dayChipLabel(for: day, snapshot: snapshot))
                                     .font(.caption.weight(.semibold))
                                     .foregroundStyle(isSelected(day) ? Color.white.opacity(0.90) : AppTheme.slate)
                             }
@@ -374,6 +507,67 @@ struct TodayView: View {
         }
     }
 
+    private func sundayEditionSection(edition: SundayEditionEntry) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            SectionTitle(
+                title: "Sunday Edition",
+                subtitle: "A structured weekly read with original titles and source links close at hand.",
+                accent: AppTheme.lavender,
+                tone: .page
+            )
+
+            VStack(alignment: .leading, spacing: 16) {
+                HStack(alignment: .top) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("WEEKEND FRONT PAGE")
+                            .font(.caption.weight(.bold))
+                            .foregroundStyle(AppTheme.lavender)
+
+                        Text(edition.headline)
+                            .font(.system(size: 28, weight: .bold, design: .serif))
+                            .foregroundStyle(AppTheme.ink)
+
+                        Text(edition.intro)
+                            .font(.subheadline)
+                            .foregroundStyle(AppTheme.slate)
+                            .lineLimit(4)
+                    }
+
+                    Spacer(minLength: 12)
+
+                    Text(edition.displayWeekRange)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(AppTheme.ink)
+                }
+
+                if !edition.keyPoints.isEmpty {
+                    VStack(alignment: .leading, spacing: 8) {
+                        ForEach(Array(edition.keyPoints.prefix(3).enumerated()), id: \.offset) { _, item in
+                            HStack(alignment: .top, spacing: 10) {
+                                Circle()
+                                    .fill(AppTheme.lavender)
+                                    .frame(width: 7, height: 7)
+                                    .padding(.top, 6)
+
+                                Text(item)
+                                    .font(.subheadline.weight(.semibold))
+                                    .foregroundStyle(AppTheme.ink)
+                            }
+                        }
+                    }
+                }
+
+                Button {
+                    selectedSundayEdition = edition
+                } label: {
+                    Label("Read full weekly edition", systemImage: "newspaper.fill")
+                }
+                .buttonStyle(PrimaryCapsuleButtonStyle())
+            }
+            .glassCard(cornerRadius: 34, tint: AppTheme.lavender, padding: 22)
+        }
+    }
+
     private func snapshot(for day: Date) -> DaySnapshot {
         let reports = model.reports.filter { report in
             guard let reportDate = report.reportDate else { return false }
@@ -436,7 +630,19 @@ struct TodayView: View {
         calendar.isDate(day, inSameDayAs: activeDay)
     }
 
+    private func dayChipLabel(for day: Date, snapshot: DaySnapshot) -> String {
+        if let briefing = model.briefing(for: day) {
+            return "\(briefing.importantDocuments.count) docs"
+        }
+        return "\(snapshot.signalCount) signals"
+    }
+
     private func openPrimaryBriefingDestination() {
+        if let briefing = activeBriefing {
+            selectedBriefingReader = briefing
+            return
+        }
+
         if let document = daySnapshot.prominentDocuments.first {
             open(document)
             return
@@ -461,6 +667,22 @@ struct TodayView: View {
             selectedReport = report
         case .post(let post):
             selectedPost = post
+        }
+    }
+
+    private func open(_ document: EditorialDocument) {
+        if let report = model.reports.first(where: { $0.urlHtml.caseInsensitiveCompare(document.url) == .orderedSame }) {
+            selectedReport = report
+            return
+        }
+
+        if let post = model.posts.first(where: { $0.url.caseInsensitiveCompare(document.url) == .orderedSame }) {
+            selectedPost = post
+            return
+        }
+
+        if let url = document.destinationURL {
+            UIApplication.shared.open(url)
         }
     }
 }
@@ -741,11 +963,11 @@ private struct BriefingCategoriesSheet: View {
                     Text("General categories")
                         .font(.title2.weight(.bold))
                         .fontDesign(.serif)
-                        .foregroundStyle(AppTheme.plum)
+                        .foregroundStyle(AppTheme.pageTitle)
 
                     Text("These are the strongest topic labels attached to the selected day so far.")
                         .font(.subheadline)
-                        .foregroundStyle(AppTheme.plumSoft)
+                        .foregroundStyle(AppTheme.pageSubtext)
 
                     if categories.isEmpty {
                         ContentUnavailableView(
@@ -773,5 +995,340 @@ private struct BriefingCategoriesSheet: View {
             }
         }
         .presentationDetents([.medium])
+    }
+}
+
+private struct EditorialDocumentCard: View {
+    let document: EditorialDocument
+    var accent: Color? = nil
+
+    private var tint: Color {
+        accent ?? AppTheme.accent(for: document.source + document.kind)
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(alignment: .top) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(document.sourceLabel.uppercased())
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(tint)
+
+                    Text(document.title)
+                        .font(.headline.weight(.semibold))
+                        .fontDesign(.serif)
+                        .foregroundStyle(AppTheme.ink)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+
+                if document.destinationURL != nil {
+                    Image(systemName: "arrow.up.right")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(AppTheme.heroSubtext)
+                }
+            }
+
+            HStack(spacing: 10) {
+                Text(document.kind.uppercased())
+                Text(document.displayDateText)
+            }
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(AppTheme.heroSubtext)
+
+            Text(document.summaryPreview)
+                .font(.subheadline)
+                .foregroundStyle(AppTheme.slate)
+                .lineLimit(4)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .glassCard(cornerRadius: 26, tint: tint, padding: 16)
+    }
+}
+
+private struct EditorialDocumentsSheet: View {
+    let title: String
+    let subtitle: String
+    let documents: [EditorialDocument]
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    Text(subtitle)
+                        .font(.subheadline)
+                        .foregroundStyle(AppTheme.pageSubtext)
+
+                    if documents.isEmpty {
+                        ContentUnavailableView(
+                            "No linked documents",
+                            systemImage: "doc.text",
+                            description: Text("This editorial entry does not currently expose additional linked documents.")
+                        )
+                        .frame(maxWidth: .infinity)
+                        .padding(.top, 40)
+                    } else {
+                        ForEach(documents) { document in
+                            Link(destination: document.destinationURL ?? URL(string: "https://danieltnl.github.io/EURLex/")!) {
+                                EditorialDocumentCard(document: document)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+                .padding(20)
+                .padding(.bottom, 20)
+            }
+            .navigationTitle(title)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { dismiss() }
+                }
+            }
+        }
+        .presentationDetents([.medium, .large])
+    }
+}
+
+private struct EditorialTextBlock: View {
+    let text: String
+
+    private var paragraphs: [String] {
+        let rawParagraphs = text
+            .split(separator: "\n", omittingEmptySubsequences: true)
+            .map { TextSanitizer.clean(String($0)) }
+            .filter { !$0.isEmpty }
+
+        if rawParagraphs.count > 1 {
+            return rawParagraphs
+        }
+
+        let compact = TextSanitizer.clean(text)
+        guard compact.count > 260 else { return compact.isEmpty ? [] : [compact] }
+
+        let sentences = compact.split(whereSeparator: { ".!?".contains($0) }).map { TextSanitizer.clean(String($0)) }.filter { !$0.isEmpty }
+        guard !sentences.isEmpty else { return [compact] }
+
+        var paragraphs: [String] = []
+        var current = ""
+
+        for sentence in sentences {
+            let candidate = current.isEmpty ? sentence : "\(current). \(sentence)"
+            if candidate.count > 240, !current.isEmpty {
+                paragraphs.append(current + ".")
+                current = sentence
+            } else {
+                current = candidate
+            }
+        }
+
+        if !current.isEmpty {
+            paragraphs.append(current + ".")
+        }
+
+        return paragraphs
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            ForEach(Array(paragraphs.enumerated()), id: \.offset) { _, paragraph in
+                Text(paragraph)
+                    .font(.body)
+                    .foregroundStyle(AppTheme.ink)
+                    .lineSpacing(6)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+    }
+}
+
+private struct EditorialSectionCard: View {
+    let section: EditorialSection
+    var tint: Color
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text(section.title)
+                .font(.title3.weight(.semibold))
+                .fontDesign(.serif)
+                .foregroundStyle(AppTheme.ink)
+
+            EditorialTextBlock(text: section.body)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .glassCard(cornerRadius: 28, tint: tint, padding: 18)
+    }
+}
+
+private struct BriefingReaderView: View {
+    let briefing: DailyBriefingEntry
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(briefing.title.uppercased())
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(AppTheme.cobalt)
+
+                    Text(briefing.headline)
+                        .font(.largeTitle.weight(.bold))
+                        .fontDesign(.serif)
+                        .foregroundStyle(AppTheme.pageTitle)
+
+                    Text(briefing.displayDateText)
+                        .font(.subheadline)
+                        .foregroundStyle(AppTheme.pageBody)
+                }
+
+                VStack(alignment: .leading, spacing: 12) {
+                    SectionTitle(title: "Introduction", subtitle: "A tighter editorial opener for the day.")
+                    EditorialTextBlock(text: briefing.intro)
+                }
+                .dossierCard()
+
+                VStack(alignment: .leading, spacing: 12) {
+                    SectionTitle(title: "Full brief", subtitle: "Detailed but mobile-readable analysis across the day’s material.")
+                    EditorialTextBlock(text: briefing.summary)
+                }
+                .dossierCard()
+
+                if !briefing.keyPoints.isEmpty {
+                    VStack(alignment: .leading, spacing: 12) {
+                        SectionTitle(title: "Key points", subtitle: nil)
+                        ForEach(Array(briefing.keyPoints.enumerated()), id: \.offset) { _, item in
+                            HStack(alignment: .top, spacing: 10) {
+                                Circle()
+                                    .fill(AppTheme.cobalt)
+                                    .frame(width: 8, height: 8)
+                                    .padding(.top, 6)
+                                Text(item)
+                                    .font(.body)
+                                    .foregroundStyle(AppTheme.ink)
+                            }
+                        }
+                    }
+                    .dossierCard()
+                }
+
+                if !briefing.sections.isEmpty {
+                    VStack(alignment: .leading, spacing: 14) {
+                        SectionTitle(title: "Structured reading", subtitle: "The core arguments, broken into readable sections.")
+                        ForEach(briefing.sections) { section in
+                            EditorialSectionCard(section: section, tint: AppTheme.cobalt)
+                        }
+                    }
+                }
+
+                if !briefing.importantDocuments.isEmpty {
+                    VStack(alignment: .leading, spacing: 14) {
+                        SectionTitle(title: "Source documents", subtitle: "Original titles and links, kept close for lookup and verification.")
+                        ForEach(briefing.importantDocuments) { document in
+                            Link(destination: document.destinationURL ?? URL(string: "https://danieltnl.github.io/EURLex/")!) {
+                                EditorialDocumentCard(document: document)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+
+                if !briefing.relatedDocuments.isEmpty {
+                    VStack(alignment: .leading, spacing: 14) {
+                        SectionTitle(title: "Related reading", subtitle: nil)
+                        ForEach(briefing.relatedDocuments.prefix(3)) { document in
+                            Link(destination: document.destinationURL ?? URL(string: "https://danieltnl.github.io/EURLex/")!) {
+                                EditorialDocumentCard(document: document, accent: AppTheme.mint)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+            }
+            .padding(20)
+            .padding(.bottom, 120)
+        }
+        .navigationTitle("Daily Brief")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+private struct SundayEditionReaderView: View {
+    let edition: SundayEditionEntry
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("SUNDAY EDITION")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(AppTheme.lavender)
+
+                    Text(edition.headline)
+                        .font(.largeTitle.weight(.bold))
+                        .fontDesign(.serif)
+                        .foregroundStyle(AppTheme.pageTitle)
+
+                    Text(edition.displayWeekRange)
+                        .font(.subheadline)
+                        .foregroundStyle(AppTheme.pageBody)
+                }
+
+                VStack(alignment: .leading, spacing: 12) {
+                    SectionTitle(title: "Front page", subtitle: "The opening argument for the week.")
+                    EditorialTextBlock(text: edition.intro)
+                }
+                .dossierCard()
+
+                VStack(alignment: .leading, spacing: 12) {
+                    SectionTitle(title: "Weekly overview", subtitle: "A longer-form synthesis of the week’s publications.")
+                    EditorialTextBlock(text: edition.summary)
+                }
+                .dossierCard()
+
+                if !edition.keyPoints.isEmpty {
+                    VStack(alignment: .leading, spacing: 12) {
+                        SectionTitle(title: "Key points", subtitle: nil)
+                        ForEach(Array(edition.keyPoints.enumerated()), id: \.offset) { _, item in
+                            HStack(alignment: .top, spacing: 10) {
+                                Circle()
+                                    .fill(AppTheme.lavender)
+                                    .frame(width: 8, height: 8)
+                                    .padding(.top, 6)
+                                Text(item)
+                                    .font(.body)
+                                    .foregroundStyle(AppTheme.ink)
+                            }
+                        }
+                    }
+                    .dossierCard()
+                }
+
+                if !edition.sections.isEmpty {
+                    VStack(alignment: .leading, spacing: 14) {
+                        SectionTitle(title: "Sections", subtitle: "A cleaner newspaper-style structure for the weekly read.")
+                        ForEach(edition.sections) { section in
+                            EditorialSectionCard(section: section, tint: AppTheme.lavender)
+                        }
+                    }
+                }
+
+                if !edition.importantDocuments.isEmpty {
+                    VStack(alignment: .leading, spacing: 14) {
+                        SectionTitle(title: "Source documents", subtitle: "Original titles and links behind the weekly edition.")
+                        ForEach(edition.importantDocuments) { document in
+                            Link(destination: document.destinationURL ?? URL(string: "https://danieltnl.github.io/EURLex/")!) {
+                                EditorialDocumentCard(document: document, accent: AppTheme.lavender)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+            }
+            .padding(20)
+            .padding(.bottom, 120)
+        }
+        .navigationTitle("Sunday Edition")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

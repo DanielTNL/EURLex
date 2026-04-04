@@ -16,17 +16,17 @@ struct PostDetailView: View {
                     if let reference = post.reference {
                         Text(reference)
                             .font(.caption.weight(.semibold))
-                            .foregroundStyle(AppTheme.plumSoft)
+                            .foregroundStyle(AppTheme.pageSubtext)
                     }
 
                     Text(post.displayTitle)
                         .font(.largeTitle.weight(.bold))
                         .fontDesign(.serif)
-                        .foregroundStyle(AppTheme.plum)
+                        .foregroundStyle(AppTheme.pageTitle)
 
                     Text(post.relativeDateText)
                         .font(.subheadline)
-                        .foregroundStyle(AppTheme.plumSoft)
+                        .foregroundStyle(AppTheme.pageBody)
                 }
 
                 if post.hasDistinctOriginalTitle {

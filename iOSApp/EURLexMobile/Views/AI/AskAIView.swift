@@ -112,15 +112,15 @@ struct AskAIView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Ask anything")
                     .font(.system(size: 38, weight: .bold, design: .serif))
-                    .foregroundStyle(AppTheme.plum)
+                    .foregroundStyle(AppTheme.pageTitle)
 
                 Text("Suggested prompts")
                     .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(AppTheme.plumSoft)
+                    .foregroundStyle(AppTheme.pageBody)
 
                 Text(backend.isConfigured ? "Ready to answer from the platform now." : "Backend deployment is the last step before live answers appear here.")
                     .font(.caption)
-                    .foregroundStyle(AppTheme.slate)
+                    .foregroundStyle(AppTheme.pageSubtext)
             }
 
             VStack(spacing: 10) {
@@ -164,7 +164,7 @@ struct AskAIView: View {
 
                     Text("Thinking…")
                         .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(AppTheme.plumSoft)
+                        .foregroundStyle(AppTheme.pageBody)
                 }
                 .padding(.horizontal, 4)
                 .id("typing-indicator")

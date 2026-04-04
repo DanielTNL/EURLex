@@ -9,6 +9,10 @@ permissions:
 jobs:
   dryrun:
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || 'gpt-4o-mini' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,6 +55,18 @@ jobs:
       - name: Build timeline
         run: python workers/build_timeline.py --window 7d --config config_v2.yaml
 
+      - name: Build daily digest
+        run: python workers/build_daily_digest.py --hours 24
+
+      - name: Build site payload
+        run: python build_site_data.py
+
+      - name: Build app backend payload
+        run: python build_app_backend.py
+
+      - name: Validate backend outputs
+        run: python scripts/validate_backend_outputs.py
+
       - name: Show outputs (ls + head)
         run: |
           echo "== Directory tree =="
@@ -63,6 +79,8 @@ jobs:
           done
           echo "== outputs/timelines =="
           ls -lah outputs/timelines || true
+          echo "== docs/data =="
+          ls -lah docs/data || true
           for f in outputs/timelines/*.json; do
             echo "---- $f (first 40 lines) ----"
             head -n 40 "$f" || true
@@ -78,6 +96,8 @@ jobs:
             outputs/docs/*.ndjson
             outputs/timelines/*.json
             state/latest_discovery.json
+            docs/data/*.json
+            docs/digests/*.json
           if-no-files-found: warn
 
       - name: Commit outputs back to repo (optional)
@@ -86,6 +106,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/docs outputs/timelines state/latest_discovery.json || true
+          git add outputs/docs outputs/timelines state/latest_discovery.json docs/data docs/digests || true
           git commit -m "pipeline v2 data $(date -u +'%F %T') [manual]" || echo "No changes to commit"
           git push

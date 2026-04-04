@@ -14,7 +14,7 @@ struct SectionTitle: View {
     private var titleColor: Color {
         switch tone {
         case .page:
-            return AppTheme.plum
+            return AppTheme.pageTitle
         case .card:
             return AppTheme.ink
         }
@@ -23,7 +23,7 @@ struct SectionTitle: View {
     private var subtitleColor: Color {
         switch tone {
         case .page:
-            return AppTheme.plumSoft
+            return AppTheme.pageSubtext
         case .card:
             return AppTheme.slate
         }
@@ -58,43 +58,50 @@ struct PageHeroHeader: View {
     var accent: Color = AppTheme.cobalt
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 10) {
+                RoundedRectangle(cornerRadius: 999, style: .continuous)
+                    .fill(
+                        LinearGradient(
+                            colors: [accent, AppTheme.lavender],
+                            startPoint: .leading,
+                            endPoint: .trailing
+                        )
+                    )
+                    .frame(width: 46, height: 8)
+
+                Text("Platform View")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(AppTheme.heroSubtext)
+                    .textCase(.uppercase)
+            }
+
             Text(title)
-                .font(.system(size: 34, weight: .bold, design: .serif))
-                .foregroundStyle(AppTheme.ink)
+                .font(.system(size: 36, weight: .bold, design: .serif))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [AppTheme.heroText, Color.white.opacity(0.84)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
 
             Text(subtitle)
                 .font(.subheadline)
-                .foregroundStyle(AppTheme.slate)
+                .foregroundStyle(AppTheme.heroSubtext)
                 .lineSpacing(4)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal, 20)
-        .padding(.vertical, 18)
-        .background(
-            RoundedRectangle(cornerRadius: 28, style: .continuous)
-                .fill(AppTheme.panelSoft)
-                .overlay {
-                    RoundedRectangle(cornerRadius: 28, style: .continuous)
-                        .fill(.ultraThinMaterial)
-                        .opacity(0.55)
-                }
-                .overlay {
-                    RoundedRectangle(cornerRadius: 28, style: .continuous)
-                        .fill(
-                            LinearGradient(
-                                colors: [accent.opacity(0.28), AppTheme.lavender.opacity(0.14), Color.white.opacity(0.06)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                }
-        )
-        .overlay(
-            RoundedRectangle(cornerRadius: 28, style: .continuous)
-                .strokeBorder(Color.white.opacity(0.16), lineWidth: 1)
-        )
-        .shadow(color: accent.opacity(0.12), radius: 18, x: 0, y: 12)
+        .glassCard(cornerRadius: 32, tint: accent, padding: 22)
+        .overlay(alignment: .topTrailing) {
+            Circle()
+                .fill(accent.opacity(0.20))
+                .frame(width: 118, height: 118)
+                .blur(radius: 24)
+                .offset(x: 24, y: -26)
+                .allowsHitTesting(false)
+        }
     }
 }
 

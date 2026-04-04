@@ -17,11 +17,11 @@ struct ReportDetailView: View {
                     Text(report.displayTitle)
                         .font(.largeTitle.weight(.bold))
                         .fontDesign(.serif)
-                        .foregroundStyle(AppTheme.plum)
+                        .foregroundStyle(AppTheme.pageTitle)
 
                     Text(report.displayDateText)
                         .font(.subheadline)
-                        .foregroundStyle(AppTheme.plumSoft)
+                        .foregroundStyle(AppTheme.pageBody)
                 }
 
                 VStack(alignment: .leading, spacing: 12) {

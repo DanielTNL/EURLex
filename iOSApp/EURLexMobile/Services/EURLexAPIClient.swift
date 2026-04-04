@@ -6,6 +6,8 @@ struct AppSnapshot {
     let audio: AudioPayload
     let timeline: TimelinePayload
     let digest: DailyDigest
+    let briefings: DailyBriefingPayload
+    let sundayEditions: SundayEditionPayload
 }
 
 private struct CachedPayloads {
@@ -14,6 +16,8 @@ private struct CachedPayloads {
     let audio: Data
     let timeline: Data
     let digest: Data
+    let briefings: Data
+    let sundayEditions: Data
 }
 
 enum EURLexAPIClientError: LocalizedError {
@@ -53,13 +57,23 @@ struct EURLexAPIClient {
         async let audio = fetchData(path: "data/audio.json")
         async let timeline = fetchData(path: "data/timeline-latest.json")
         async let digest = fetchData(path: "digests/latest.json")
+        async let briefings = fetchOptionalData(
+            path: "data/briefings.json",
+            fallbackJSON: #"{"generated_at":"","latest_date":"","items":[]}"#
+        )
+        async let sundayEditions = fetchOptionalData(
+            path: "data/sunday-editions.json",
+            fallbackJSON: #"{"generated_at":"","latest_end_date":"","items":[]}"#
+        )
 
         let payloads = try await CachedPayloads(
             posts: posts,
             reports: reports,
             audio: audio,
             timeline: timeline,
-            digest: digest
+            digest: digest,
+            briefings: briefings,
+            sundayEditions: sundayEditions
         )
 
         try persist(payloads)
@@ -93,6 +107,14 @@ struct EURLexAPIClient {
         return data
     }
 
+    private func fetchOptionalData(path: String, fallbackJSON: String) async -> Data {
+        do {
+            return try await fetchData(path: path)
+        } catch {
+            return Data(fallbackJSON.utf8)
+        }
+    }
+
     private func decodeSnapshot(from payloads: CachedPayloads) throws -> AppSnapshot {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -102,7 +124,9 @@ struct EURLexAPIClient {
             reports: decoder.decode([Report].self, from: payloads.reports),
             audio: decoder.decode(AudioPayload.self, from: payloads.audio),
             timeline: decoder.decode(TimelinePayload.self, from: payloads.timeline),
-            digest: decoder.decode(DailyDigest.self, from: payloads.digest)
+            digest: decoder.decode(DailyDigest.self, from: payloads.digest),
+            briefings: decoder.decode(DailyBriefingPayload.self, from: payloads.briefings),
+            sundayEditions: decoder.decode(SundayEditionPayload.self, from: payloads.sundayEditions)
         )
     }
 
@@ -113,6 +137,8 @@ struct EURLexAPIClient {
         try payloads.audio.write(to: directory.appendingPathComponent("audio.json"), options: .atomic)
         try payloads.timeline.write(to: directory.appendingPathComponent("timeline.json"), options: .atomic)
         try payloads.digest.write(to: directory.appendingPathComponent("digest.json"), options: .atomic)
+        try payloads.briefings.write(to: directory.appendingPathComponent("briefings.json"), options: .atomic)
+        try payloads.sundayEditions.write(to: directory.appendingPathComponent("sunday-editions.json"), options: .atomic)
     }
 
     private func loadCachedPayloads() -> CachedPayloads? {
@@ -122,7 +148,9 @@ struct EURLexAPIClient {
             let reports = try? Data(contentsOf: directory.appendingPathComponent("reports.json")),
             let audio = try? Data(contentsOf: directory.appendingPathComponent("audio.json")),
             let timeline = try? Data(contentsOf: directory.appendingPathComponent("timeline.json")),
-            let digest = try? Data(contentsOf: directory.appendingPathComponent("digest.json"))
+            let digest = try? Data(contentsOf: directory.appendingPathComponent("digest.json")),
+            let briefings = try? Data(contentsOf: directory.appendingPathComponent("briefings.json")),
+            let sundayEditions = try? Data(contentsOf: directory.appendingPathComponent("sunday-editions.json"))
         else {
             return nil
         }
@@ -132,7 +160,9 @@ struct EURLexAPIClient {
             reports: reports,
             audio: audio,
             timeline: timeline,
-            digest: digest
+            digest: digest,
+            briefings: briefings,
+            sundayEditions: sundayEditions
         )
     }
 

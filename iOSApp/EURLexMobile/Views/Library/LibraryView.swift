@@ -7,6 +7,12 @@ struct LibraryView: View {
         GeometryReader { proxy in
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
+                    PageHeroHeader(
+                        title: "Library",
+                        subtitle: "Your archive of reports, audio, and documents in one place.",
+                        accent: AppTheme.lavender
+                    )
+
                     heroCard
                     reportsSection
                     audioSection
@@ -19,7 +25,8 @@ struct LibraryView: View {
                 .frame(width: proxy.size.width, alignment: .leading)
             }
         }
-        .navigationTitle("Library")
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
     }
 
     private var heroCard: some View {

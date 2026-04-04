@@ -1,0 +1,68 @@
+name: Manage Custom Sources
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Whether to add, remove, or list a custom feed"
+        required: true
+        type: choice
+        options:
+          - add
+          - remove
+          - list
+      url:
+        description: "Feed URL for add/remove"
+        required: false
+        type: string
+      name:
+        description: "Optional display name when adding a feed"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  manage:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || 'gpt-4o-mini' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+
+      - name: Update custom feed registry
+        run: |
+          python scripts/manage_custom_feeds.py "${{ inputs.action }}" \
+            --url "${{ inputs.url }}" \
+            --name "${{ inputs.name }}"
+
+      - name: Rebuild published app data
+        if: ${{ inputs.action != 'list' }}
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          python build_site_data.py
+          python build_app_backend.py
+          python scripts/validate_backend_outputs.py
+
+      - name: Commit source changes
+        if: ${{ inputs.action != 'list' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/custom_feeds.json docs/data
+          git commit -m "Update custom sources $(date -u +'%F %T')" || echo "No changes to commit"
+          git push || true

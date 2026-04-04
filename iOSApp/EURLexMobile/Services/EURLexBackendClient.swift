@@ -32,6 +32,32 @@ struct WeeklyAudioRequestResponse: Decodable {
     let workflow: String?
 }
 
+struct CustomFeed: Decodable, Hashable, Identifiable {
+    let id: String
+    let name: String
+    let url: String
+    let tags: [String]
+    let addedAt: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case url
+        case tags
+        case addedAt = "added_at"
+    }
+}
+
+struct CustomFeedsResponse: Decodable {
+    let updatedAt: String?
+    let feeds: [CustomFeed]
+
+    enum CodingKeys: String, CodingKey {
+        case updatedAt = "updated_at"
+        case feeds
+    }
+}
+
 enum EURLexBackendError: LocalizedError {
     case notConfigured
     case invalidURL(String)
@@ -77,7 +103,7 @@ struct EURLexBackendClient {
             "remote": remote
         ]
 
-        let data = try await sendJSON(path: "api/chat", body: requestBody)
+        let data = try await sendJSON(path: "api/chat", method: "POST", body: requestBody)
         let decoder = JSONDecoder()
         return try decoder.decode(BackendChatResponse.self, from: data)
     }
@@ -88,12 +114,45 @@ struct EURLexBackendClient {
             requestBody["end_date"] = endDate
         }
 
-        let data = try await sendJSON(path: "api/audio-request", body: requestBody)
+        let data = try await sendJSON(path: "api/audio-request", method: "POST", body: requestBody)
         let decoder = JSONDecoder()
         return try decoder.decode(WeeklyAudioRequestResponse.self, from: data)
     }
 
-    private func sendJSON(path: String, body: [String: Any]) async throws -> Data {
+    func fetchSources() async throws -> [CustomFeed] {
+        let data = try await sendJSON(path: "api/sources", method: "GET")
+        let decoder = JSONDecoder()
+        let response = try decoder.decode(CustomFeedsResponse.self, from: data)
+        return response.feeds
+    }
+
+    func addSource(name: String, url: String, tags: [String]) async throws -> [CustomFeed] {
+        let data = try await sendJSON(
+            path: "api/sources",
+            method: "POST",
+            body: [
+                "name": name,
+                "url": url,
+                "tags": tags
+            ]
+        )
+        let decoder = JSONDecoder()
+        let response = try decoder.decode(CustomFeedsResponse.self, from: data)
+        return response.feeds
+    }
+
+    func deleteSource(id: String) async throws -> [CustomFeed] {
+        let data = try await sendJSON(
+            path: "api/sources",
+            method: "DELETE",
+            body: ["id": id]
+        )
+        let decoder = JSONDecoder()
+        let response = try decoder.decode(CustomFeedsResponse.self, from: data)
+        return response.feeds
+    }
+
+    private func sendJSON(path: String, method: String, body: [String: Any]? = nil) async throws -> Data {
         guard let baseURL else {
             throw EURLexBackendError.notConfigured
         }
@@ -103,11 +162,13 @@ struct EURLexBackendClient {
         }
 
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = method
         request.timeoutInterval = 25
         request.cachePolicy = .reloadIgnoringLocalCacheData
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try JSONSerialization.data(withJSONObject: body)
+        if let body {
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.httpBody = try JSONSerialization.data(withJSONObject: body)
+        }
 
         let (data, response) = try await session.data(for: request)
 
