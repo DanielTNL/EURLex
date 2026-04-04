@@ -1,26 +1,4 @@
 {
-  "updated_at": "2026-04-04T11:23:05.761Z",
-  "items": [
-    {
-      "id": "7fa0b39e8c19",
-      "title": "Codex upload smoke test 1775301784578",
-      "source_type": "upload",
-      "kind": "txt",
-      "repo_path": "library/uploads/codex-upload-smoke-test-1775301784578-7fa0b39e8c19.txt",
-      "source_url": null,
-      "raw_url": "https://raw.githubusercontent.com/DanielTNL/EURLex/main/library/uploads/codex-upload-smoke-test-1775301784578-7fa0b39e8c19.txt",
-      "mime_type": "text/plain",
-      "size_bytes": 65,
-      "tags": [
-        "smoke-test",
-        "codex"
-      ],
-      "status": "ready",
-      "summary": "This is a smoke test document for the EURLex backend upload flow.",
-      "extracted_text": "This is a smoke test document for the EURLex backend upload flow.",
-      "added_at": "2026-04-04T11:23:05.760Z",
-      "updated_at": "2026-04-04T11:23:05.760Z",
-      "error": null
-    }
-  ]
+  "updated_at": "2026-04-04T11:23:07.220Z",
+  "items": []
 }
