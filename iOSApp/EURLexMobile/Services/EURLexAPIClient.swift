@@ -8,6 +8,7 @@ struct AppSnapshot {
     let digest: DailyDigest
     let briefings: DailyBriefingPayload
     let sundayEditions: SundayEditionPayload
+    let library: LibraryPayload
 }
 
 private struct CachedPayloads {
@@ -18,6 +19,7 @@ private struct CachedPayloads {
     let digest: Data
     let briefings: Data
     let sundayEditions: Data
+    let library: Data
 }
 
 enum EURLexAPIClientError: LocalizedError {
@@ -65,6 +67,10 @@ struct EURLexAPIClient {
             path: "data/sunday-editions.json",
             fallbackJSON: #"{"generated_at":"","latest_end_date":"","items":[]}"#
         )
+        async let library = fetchOptionalData(
+            path: "data/library.json",
+            fallbackJSON: #"{"generated_at":"","count":0,"items":[]}"#
+        )
 
         let payloads = try await CachedPayloads(
             posts: posts,
@@ -73,7 +79,8 @@ struct EURLexAPIClient {
             timeline: timeline,
             digest: digest,
             briefings: briefings,
-            sundayEditions: sundayEditions
+            sundayEditions: sundayEditions,
+            library: library
         )
 
         try persist(payloads)
@@ -126,7 +133,8 @@ struct EURLexAPIClient {
             timeline: decoder.decode(TimelinePayload.self, from: payloads.timeline),
             digest: decoder.decode(DailyDigest.self, from: payloads.digest),
             briefings: decoder.decode(DailyBriefingPayload.self, from: payloads.briefings),
-            sundayEditions: decoder.decode(SundayEditionPayload.self, from: payloads.sundayEditions)
+            sundayEditions: decoder.decode(SundayEditionPayload.self, from: payloads.sundayEditions),
+            library: decoder.decode(LibraryPayload.self, from: payloads.library)
         )
     }
 
@@ -139,6 +147,7 @@ struct EURLexAPIClient {
         try payloads.digest.write(to: directory.appendingPathComponent("digest.json"), options: .atomic)
         try payloads.briefings.write(to: directory.appendingPathComponent("briefings.json"), options: .atomic)
         try payloads.sundayEditions.write(to: directory.appendingPathComponent("sunday-editions.json"), options: .atomic)
+        try payloads.library.write(to: directory.appendingPathComponent("library.json"), options: .atomic)
     }
 
     private func loadCachedPayloads() -> CachedPayloads? {
@@ -150,7 +159,8 @@ struct EURLexAPIClient {
             let timeline = try? Data(contentsOf: directory.appendingPathComponent("timeline.json")),
             let digest = try? Data(contentsOf: directory.appendingPathComponent("digest.json")),
             let briefings = try? Data(contentsOf: directory.appendingPathComponent("briefings.json")),
-            let sundayEditions = try? Data(contentsOf: directory.appendingPathComponent("sunday-editions.json"))
+            let sundayEditions = try? Data(contentsOf: directory.appendingPathComponent("sunday-editions.json")),
+            let library = try? Data(contentsOf: directory.appendingPathComponent("library.json"))
         else {
             return nil
         }
@@ -162,7 +172,8 @@ struct EURLexAPIClient {
             timeline: timeline,
             digest: digest,
             briefings: briefings,
-            sundayEditions: sundayEditions
+            sundayEditions: sundayEditions,
+            library: library
         )
     }
 

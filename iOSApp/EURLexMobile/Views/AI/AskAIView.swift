@@ -31,7 +31,7 @@ struct AskAIView: View {
     ]
 
     private var bottomContentInset: CGFloat {
-        messages.isEmpty ? 240 : 220
+        messages.isEmpty ? 300 : 268
     }
 
     var body: some View {
@@ -65,37 +65,8 @@ struct AskAIView: View {
                 composerBar
                     .padding(.horizontal, 16)
                     .padding(.top, 10)
-                    .padding(.bottom, 8)
+                    .padding(.bottom, AppTheme.composerBottomLift)
                     .background(.clear)
-            }
-            .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
-                    Button {
-                        webEnabled.toggle()
-                    } label: {
-                        Label(webEnabled ? "Web on" : "Web off", systemImage: webEnabled ? "globe" : "lock.doc")
-                            .font(.subheadline.weight(.semibold))
-                            .foregroundStyle(webEnabled ? .white : AppTheme.ink)
-                            .padding(.horizontal, 14)
-                            .padding(.vertical, 10)
-                            .background(
-                                Capsule(style: .continuous)
-                                    .fill(webEnabled ? AppTheme.coral : AppTheme.panelSoft)
-                                    .overlay {
-                                        Capsule(style: .continuous)
-                                            .fill(.ultraThinMaterial)
-                                            .opacity(webEnabled ? 0.12 : 0.34)
-                                    }
-                            )
-                            .overlay {
-                                Capsule(style: .continuous)
-                                    .strokeBorder(AppTheme.border, lineWidth: 1)
-                            }
-                    }
-                    .buttonStyle(.plain)
-
-                    Spacer()
-                }
             }
             .onChange(of: messages.count) { _, _ in
                 if let lastID = messages.last?.id {
@@ -210,13 +181,52 @@ struct AskAIView: View {
                 }
             }
 
-            HStack(alignment: .bottom, spacing: 12) {
-                TextField("Message EURLex", text: $prompt, axis: .vertical)
+            HStack(alignment: .center, spacing: 12) {
+                Button {
+                    webEnabled.toggle()
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: webEnabled ? "globe" : "internaldrive")
+                            .font(.subheadline.weight(.bold))
+
+                        Text(webEnabled ? "Web on" : "Corpus")
+                            .font(.caption.weight(.semibold))
+                    }
+                    .foregroundStyle(webEnabled ? .white : AppTheme.ink)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 11)
+                    .background(
+                        Capsule(style: .continuous)
+                            .fill(webEnabled ? AppTheme.coral.opacity(0.92) : AppTheme.panelSoft)
+                            .overlay {
+                                Capsule(style: .continuous)
+                                    .fill(.ultraThinMaterial)
+                                    .opacity(webEnabled ? 0.10 : 0.38)
+                            }
+                    )
+                    .overlay {
+                        Capsule(style: .continuous)
+                            .strokeBorder(AppTheme.border, lineWidth: 1)
+                    }
+                }
+                .buttonStyle(.plain)
+
+                TextField(
+                    "",
+                    text: $prompt,
+                    prompt: Text("Type your prompt")
+                        .foregroundStyle(AppTheme.heroSubtext.opacity(0.92)),
+                    axis: .vertical
+                )
                     .textFieldStyle(.plain)
                     .font(.body)
                     .foregroundStyle(AppTheme.ink)
                     .focused($isComposerFocused)
-                    .lineLimit(1 ... 6)
+                    .submitLabel(.send)
+                    .lineLimit(1 ... 5)
+                    .onSubmit {
+                        sendPrompt()
+                    }
 
                 Button {
                     sendPrompt()
@@ -263,6 +273,10 @@ struct AskAIView: View {
                     .strokeBorder(AppTheme.border, lineWidth: 1)
             }
             .shadow(color: AppTheme.shadow, radius: 18, x: 0, y: 10)
+            .contentShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
+            .onTapGesture {
+                isComposerFocused = true
+            }
         }
     }
 

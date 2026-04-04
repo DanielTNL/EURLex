@@ -843,3 +843,96 @@ struct DigestItem: Decodable, Identifiable, Hashable {
     var topicTags: [String] { Array((programme + financeInstrument + techArea).uniquePreservingOrder().prefix(4)) }
     var dedupeKey: String { [url.lowercased(), title.lowercased(), sourceId.lowercased()].joined(separator: "|") }
 }
+
+struct LibraryPayload: Decodable, Hashable {
+    let generatedAt: String
+    let count: Int
+    let items: [LibraryDocument]
+
+    static let empty = LibraryPayload(generatedAt: "", count: 0, items: [])
+}
+
+struct LibraryDocument: Decodable, Identifiable, Hashable {
+    let id: String
+    let title: String
+    let path: String?
+    let kind: String
+    let sizeBytes: Int
+    let rawURL: String?
+    let sourceURL: String?
+    let sourceType: String
+    let tags: [String]
+    let status: String
+    let summary: String
+    let updatedAt: String
+
+    var destinationURL: URL? {
+        if let rawURL, let url = URL(string: rawURL) { return url }
+        if let sourceURL, let url = URL(string: sourceURL) { return url }
+        return nil
+    }
+
+    var displayStatus: String {
+        switch status.lowercased() {
+        case "ready":
+            return "Ready"
+        case "pending_processing":
+            return "Processing on GitHub"
+        default:
+            return status.replacingOccurrences(of: "_", with: " ").capitalized
+        }
+    }
+
+    var displayKind: String {
+        switch kind.lowercased() {
+        case "pdf":
+            return "PDF"
+        case "docx":
+            return "DOCX"
+        case "md":
+            return "Markdown"
+        case "txt":
+            return "Text"
+        case "url":
+            return "Web link"
+        default:
+            return kind.uppercased()
+        }
+    }
+
+    var displayDateText: String {
+        EURLexDate.short(updatedAt)
+    }
+
+    var sizeText: String {
+        guard sizeBytes > 0 else { return displayKind }
+        let formatter = ByteCountFormatter()
+        formatter.countStyle = .file
+        return "\(displayKind) • \(formatter.string(fromByteCount: Int64(sizeBytes)))"
+    }
+
+    var summaryPreview: String {
+        let cleaned = TextSanitizer.clean(summary)
+        return cleaned.isEmpty ? "This document has been registered and will appear here once processing finishes." : cleaned
+    }
+
+    var dedupeKey: String {
+        [id.lowercased(), rawURL?.lowercased() ?? "", sourceURL?.lowercased() ?? ""].joined(separator: "|")
+    }
+}
+
+struct BackendDocumentsResponse: Decodable {
+    let updatedAt: String?
+    let items: [LibraryDocument]
+    let maxUploadBytes: Int?
+    let queuedProcessing: Bool?
+    let message: String?
+
+    enum CodingKeys: String, CodingKey {
+        case updatedAt = "updated_at"
+        case items
+        case maxUploadBytes = "max_upload_bytes"
+        case queuedProcessing = "queued_processing"
+        case message
+    }
+}

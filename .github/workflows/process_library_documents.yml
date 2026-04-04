@@ -1,0 +1,63 @@
+name: Process Library Documents
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - library/uploads/**
+      - state/library_documents.json
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          for f in requirements.txt scripts/requirements.txt; do
+            if [ -f "$f" ]; then
+              python -m pip install -r "$f"
+            fi
+          done
+
+      - name: Process library registry and rebuild app data
+        run: |
+          python scripts/process_library_documents.py
+          python build_app_backend.py
+          python scripts/validate_backend_outputs.py
+
+      - name: Commit processed library outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/library_documents.json docs/data
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Process library documents $(date -u +'%F %T')"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort || true
+            echo "Retrying push ($attempt/3) after remote changed..."
+            sleep 3
+          done
+          echo "Push failed after 3 attempts" >&2
+          exit 1

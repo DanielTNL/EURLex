@@ -18,6 +18,7 @@ final class AppModel: ObservableObject {
     @Published private(set) var digest: DailyDigest?
     @Published private(set) var briefings: DailyBriefingPayload = .empty
     @Published private(set) var sundayEditions: SundayEditionPayload = .empty
+    @Published private(set) var library: LibraryPayload = .empty
 
     private let client: EURLexAPIClient
 
@@ -39,7 +40,7 @@ final class AppModel: ObservableObject {
     }
 
     var hasContent: Bool {
-        !posts.isEmpty || !reports.isEmpty || !audio.items.isEmpty || digest != nil || !briefings.items.isEmpty
+        !posts.isEmpty || !reports.isEmpty || !audio.items.isEmpty || digest != nil || !briefings.items.isEmpty || !library.items.isEmpty
     }
 
     var availableSources: [String] {
@@ -89,6 +90,10 @@ final class AppModel: ObservableObject {
 
     var latestSundayEdition: SundayEditionEntry? {
         sundayEditions.items.first
+    }
+
+    var libraryDocuments: [LibraryDocument] {
+        library.items
     }
 
     func briefing(for date: Date) -> DailyBriefingEntry? {
@@ -147,6 +152,12 @@ final class AppModel: ObservableObject {
             items: snapshot.sundayEditions.items.sorted {
                 EURLexDate.parse($0.weekEnd) ?? .distantPast > EURLexDate.parse($1.weekEnd) ?? .distantPast
             }
+        )
+        library = LibraryPayload(
+            generatedAt: snapshot.library.generatedAt,
+            count: snapshot.library.items.count,
+            items: Self.unique(snapshot.library.items, using: \.dedupeKey)
+                .sorted { EURLexDate.parse($0.updatedAt) ?? .distantPast > EURLexDate.parse($1.updatedAt) ?? .distantPast }
         )
     }
 

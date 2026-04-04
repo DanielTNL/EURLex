@@ -51,10 +51,14 @@ struct CustomFeed: Decodable, Hashable, Identifiable {
 struct CustomFeedsResponse: Decodable {
     let updatedAt: String?
     let feeds: [CustomFeed]
+    let queuedProcessing: Bool?
+    let message: String?
 
     enum CodingKeys: String, CodingKey {
         case updatedAt = "updated_at"
         case feeds
+        case queuedProcessing = "queued_processing"
+        case message
     }
 }
 
@@ -104,7 +108,7 @@ struct EURLexBackendClient {
         ]
 
         let data = try await sendJSON(path: "api/chat", method: "POST", body: requestBody)
-        let decoder = JSONDecoder()
+        let decoder = configuredDecoder()
         return try decoder.decode(BackendChatResponse.self, from: data)
     }
 
@@ -115,13 +119,13 @@ struct EURLexBackendClient {
         }
 
         let data = try await sendJSON(path: "api/audio-request", method: "POST", body: requestBody)
-        let decoder = JSONDecoder()
+        let decoder = configuredDecoder()
         return try decoder.decode(WeeklyAudioRequestResponse.self, from: data)
     }
 
     func fetchSources() async throws -> [CustomFeed] {
         let data = try await sendJSON(path: "api/sources", method: "GET")
-        let decoder = JSONDecoder()
+        let decoder = configuredDecoder()
         let response = try decoder.decode(CustomFeedsResponse.self, from: data)
         return response.feeds
     }
@@ -136,7 +140,7 @@ struct EURLexBackendClient {
                 "tags": tags
             ]
         )
-        let decoder = JSONDecoder()
+        let decoder = configuredDecoder()
         let response = try decoder.decode(CustomFeedsResponse.self, from: data)
         return response.feeds
     }
@@ -147,9 +151,84 @@ struct EURLexBackendClient {
             method: "DELETE",
             body: ["id": id]
         )
-        let decoder = JSONDecoder()
+        let decoder = configuredDecoder()
         let response = try decoder.decode(CustomFeedsResponse.self, from: data)
         return response.feeds
+    }
+
+    func fetchDocuments() async throws -> BackendDocumentsResponse {
+        let data = try await sendJSON(path: "api/documents", method: "GET")
+        return try configuredDecoder().decode(BackendDocumentsResponse.self, from: data)
+    }
+
+    func addDocumentLink(title: String, url: String, tags: [String]) async throws -> BackendDocumentsResponse {
+        let data = try await sendJSON(
+            path: "api/documents",
+            method: "POST",
+            body: [
+                "title": title,
+                "url": url,
+                "tags": tags
+            ]
+        )
+        return try configuredDecoder().decode(BackendDocumentsResponse.self, from: data)
+    }
+
+    func addDocumentNote(title: String, text: String, tags: [String]) async throws -> BackendDocumentsResponse {
+        let data = try await sendJSON(
+            path: "api/documents",
+            method: "POST",
+            body: [
+                "title": title,
+                "text": text,
+                "tags": tags
+            ]
+        )
+        return try configuredDecoder().decode(BackendDocumentsResponse.self, from: data)
+    }
+
+    func uploadDocument(fileURL: URL, title: String, tags: [String]) async throws -> BackendDocumentsResponse {
+        let data = try Data(contentsOf: fileURL)
+        let payload: [String: Any] = [
+            "title": title,
+            "filename": fileURL.lastPathComponent,
+            "mime_type": mimeType(for: fileURL),
+            "content_base64": data.base64EncodedString(),
+            "tags": tags
+        ]
+
+        let responseData = try await sendJSON(path: "api/documents", method: "POST", body: payload)
+        return try configuredDecoder().decode(BackendDocumentsResponse.self, from: responseData)
+    }
+
+    func deleteDocument(id: String) async throws -> BackendDocumentsResponse {
+        let data = try await sendJSON(
+            path: "api/documents",
+            method: "DELETE",
+            body: ["id": id]
+        )
+        return try configuredDecoder().decode(BackendDocumentsResponse.self, from: data)
+    }
+
+    private func configuredDecoder() -> JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }
+
+    private func mimeType(for fileURL: URL) -> String {
+        switch fileURL.pathExtension.lowercased() {
+        case "pdf":
+            return "application/pdf"
+        case "docx":
+            return "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        case "md", "markdown":
+            return "text/markdown"
+        case "txt":
+            return "text/plain"
+        default:
+            return "application/octet-stream"
+        }
     }
 
     private func sendJSON(path: String, method: String, body: [String: Any]? = nil) async throws -> Data {

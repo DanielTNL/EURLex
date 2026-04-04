@@ -36,6 +36,9 @@ That keeps the system GitHub-backed while making the interactive app features wo
   - triggers the GitHub workflow that creates a requested weekly audio overview
 - `api/sources.js`
   - stores custom RSS/Atom feeds in `state/custom_feeds.json`
+- `api/documents.js`
+  - stores repo-backed URL and document intake in `state/library_documents.json`
+  - writes uploaded files into `library/uploads/`
 - `api/health.js`
   - simple deployment health check
 - `api/_lib/github.js`
@@ -58,6 +61,9 @@ Set these in your deployment platform:
   - set to `https://danieltnl.github.io/EURLex/data`
 - `OPENAI_MODEL_CHAT`
   - optional, default is `gpt-4o-mini`
+- `MAX_UPLOAD_BYTES`
+  - optional, default is `4000000`
+  - recommended while using GitHub-backed public storage
 
 ## One-time deployment steps
 
@@ -104,12 +110,35 @@ Then paste that token into the deployment env var:
 - `Web on` mode enriches answers with live fetches from linked sources
 - asking for a weekly voice overview queues the GitHub workflow
 - custom RSS/Atom feeds can be added through the backend and included by the GitHub pipeline
+- URL-based document intake can be added through the backend and folded into the corpus
+- uploaded public text/PDF/DOCX documents can be committed into GitHub and processed into the app library
+
+## Storage and consistency notes
+
+- This setup is intentionally **GitHub-first**, not database-first.
+- That works well for:
+  - public source registries
+  - modest public uploads
+  - traceable content history
+  - app consistency through published JSON
+- It is **not** the right long-term store for:
+  - large private document collections
+  - high-frequency writes from many users
+  - very large PDFs or media archives
+
+Recommended guardrails:
+
+- keep uploaded documents modest in size
+- treat uploads as public/reference material
+- use GitHub Actions as the canonical post-processing layer
+- later, move large/private files to dedicated blob storage if the app grows
 
 ## What still needs a later phase
 
-- full document uploads for PDF/DOCX storage and retrieval
 - true open-web search across the broader internet
   - for that, add a dedicated search provider later such as Tavily, Exa, or SerpAPI
+- larger-scale or private document storage
+  - for that, move uploads from GitHub-backed storage into object storage
 
 ## Health check
 

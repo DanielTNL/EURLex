@@ -58,7 +58,7 @@ async function githubRequest(path, { method = "GET", body, token }) {
   return response.json();
 }
 
-export async function getRepoJSON(filePath, fallback) {
+export async function getRepoFile(filePath) {
   const { owner, repo, token, ref } = repoConfig();
 
   try {
@@ -67,10 +67,27 @@ export async function getRepoJSON(filePath, fallback) {
       { token }
     );
 
-    const content = Buffer.from(payload.content, "base64").toString("utf8");
     return {
-      data: JSON.parse(content),
+      data: Buffer.from(payload.content, "base64").toString("utf8"),
       sha: payload.sha
+    };
+  } catch (error) {
+    if (String(error.message || error).includes("404")) {
+      return { data: null, sha: null };
+    }
+    throw error;
+  }
+}
+
+export async function getRepoJSON(filePath, fallback) {
+  try {
+    const { data, sha } = await getRepoFile(filePath);
+    if (data == null) {
+      return { data: fallback, sha: null };
+    }
+    return {
+      data: JSON.parse(data),
+      sha
     };
   } catch (error) {
     if (String(error.message || error).includes("404")) {
@@ -81,24 +98,59 @@ export async function getRepoJSON(filePath, fallback) {
 }
 
 export async function putRepoJSON(filePath, data, message) {
+  return putRepoContent(
+    filePath,
+    Buffer.from(JSON.stringify(data, null, 2) + "\n", "utf8").toString("base64"),
+    message,
+    { encoding: "base64" }
+  );
+}
+
+export async function putRepoContent(filePath, content, message, options = {}) {
   const { owner, repo, token, ref } = repoConfig();
   if (!token) {
     throw new Error("GITHUB_BACKEND_TOKEN or GITHUB_PAT is required for repo writes.");
   }
 
-  const current = await getRepoJSON(filePath, null);
-  const content = Buffer.from(JSON.stringify(data, null, 2) + "\n", "utf8").toString("base64");
+  const current = await getRepoFile(filePath);
+  const encodedContent = options.encoding === "base64"
+    ? String(content || "")
+    : Buffer.from(String(content || ""), "utf8").toString("base64");
 
   await githubRequest(`/repos/${owner}/${repo}/contents/${encodeRepoPath(filePath)}`, {
     method: "PUT",
     token,
     body: {
       message,
-      content,
+      content: encodedContent,
       sha: current.sha || undefined,
       branch: ref
     }
   });
+}
+
+export async function deleteRepoPath(filePath, message) {
+  const { owner, repo, token, ref } = repoConfig();
+  if (!token) {
+    throw new Error("GITHUB_BACKEND_TOKEN or GITHUB_PAT is required for repo deletes.");
+  }
+
+  const current = await getRepoFile(filePath);
+  if (!current.sha) {
+    return { ok: true, deleted: false };
+  }
+
+  await githubRequest(`/repos/${owner}/${repo}/contents/${encodeRepoPath(filePath)}`, {
+    method: "DELETE",
+    token,
+    body: {
+      message,
+      sha: current.sha,
+      branch: ref
+    }
+  });
+
+  return { ok: true, deleted: true };
 }
 
 export async function dispatchWorkflow(workflowFile, inputs = {}) {

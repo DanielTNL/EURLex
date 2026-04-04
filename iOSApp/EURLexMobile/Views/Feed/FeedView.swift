@@ -87,6 +87,7 @@ struct FeedView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(20)
+                .padding(.bottom, AppTheme.screenBottomClearance)
                 .frame(width: proxy.size.width, alignment: .leading)
             }
         }

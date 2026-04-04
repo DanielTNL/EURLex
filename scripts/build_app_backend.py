@@ -33,6 +33,7 @@ DIGEST_LATEST_JSON = DIGESTS_DIR / 'latest.json'
 SOURCES_YAML = ROOT / 'scripts' / 'sources.yaml'
 SOURCES_V2_YAML = ROOT / 'sources_v2.yaml'
 CUSTOM_FEEDS_JSON = STATE_DIR / 'custom_feeds.json'
+LIBRARY_STATE_JSON = STATE_DIR / 'library_documents.json'
 
 BRIEFINGS_JSON = DOCS_DATA / 'briefings.json'
 BRIEFING_LATEST_JSON = DOCS_DATA / 'briefing-latest.json'
@@ -787,7 +788,7 @@ def load_source_catalog() -> dict:
 
 
 def build_library_catalog(repo: str) -> dict:
-    items = []
+    items_by_key: dict[str, dict] = {}
     for directory in LIBRARY_DIRS:
         if not directory.exists():
             continue
@@ -797,15 +798,45 @@ def build_library_catalog(repo: str) -> dict:
             rel = path.relative_to(ROOT).as_posix()
             if rel.endswith('.gitkeep'):
                 continue
-            items.append(
-                {
-                    'title': title_case_source(path.stem),
-                    'path': rel,
-                    'kind': path.suffix.lower().lstrip('.'),
-                    'size_bytes': path.stat().st_size,
-                    'raw_url': f'https://raw.githubusercontent.com/{repo}/main/{rel}',
-                }
-            )
+            items_by_key[rel] = {
+                'id': rel,
+                'title': title_case_source(path.stem),
+                'path': rel,
+                'kind': path.suffix.lower().lstrip('.'),
+                'size_bytes': path.stat().st_size,
+                'raw_url': f'https://raw.githubusercontent.com/{repo}/main/{rel}',
+                'source_type': 'upload',
+                'tags': [],
+                'status': 'ready',
+                'summary': '',
+                'updated_at': '',
+            }
+
+    registry = load_json(LIBRARY_STATE_JSON, {'items': []})
+    for item in registry.get('items', []) if isinstance(registry, dict) else []:
+        if not isinstance(item, dict):
+            continue
+        key = str(item.get('id') or item.get('repo_path') or item.get('source_url') or '').strip()
+        if not key:
+            continue
+        path = str(item.get('repo_path') or '').strip()
+        raw_url = str(item.get('raw_url') or item.get('source_url') or '').strip()
+        items_by_key[key] = {
+            'id': key,
+            'title': str(item.get('title') or title_case_source(pathlib.Path(path or raw_url or key).stem)),
+            'path': path or None,
+            'kind': str(item.get('kind') or pathlib.Path(path).suffix.lstrip('.') or 'url'),
+            'size_bytes': int(item.get('size_bytes') or 0),
+            'raw_url': raw_url,
+            'source_url': str(item.get('source_url') or '') or None,
+            'source_type': str(item.get('source_type') or ('url' if item.get('source_url') else 'upload')),
+            'tags': list(item.get('tags') or []),
+            'status': str(item.get('status') or 'ready'),
+            'summary': clean_text(str(item.get('summary') or ''), 800),
+            'updated_at': str(item.get('updated_at') or ''),
+        }
+
+    items = sorted(items_by_key.values(), key=lambda item: ((item.get('updated_at') or ''), item.get('title') or ''), reverse=True)
     return {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'count': len(items),

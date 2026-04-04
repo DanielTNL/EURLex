@@ -21,7 +21,7 @@ struct LibraryView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)
                 .padding(.top, 12)
-                .padding(.bottom, 30)
+                .padding(.bottom, AppTheme.screenBottomClearance)
                 .frame(width: proxy.size.width, alignment: .leading)
             }
         }
@@ -42,7 +42,7 @@ struct LibraryView: View {
             HStack(spacing: 12) {
                 sourceMetric(title: "Reports", value: "\(model.reports.count)", tint: AppTheme.cobalt)
                 sourceMetric(title: "Audio", value: "\(model.audio.items.count)", tint: AppTheme.mint)
-                sourceMetric(title: "Uploads", value: "Soon", tint: AppTheme.lavender)
+                sourceMetric(title: "Docs", value: "\(model.libraryDocuments.count)", tint: AppTheme.lavender)
             }
         }
         .glassCard(cornerRadius: 34, tint: AppTheme.lavender, padding: 22)
@@ -114,21 +114,63 @@ struct LibraryView: View {
         VStack(alignment: .leading, spacing: 14) {
             SectionTitle(
                 title: "Uploaded documents",
-                subtitle: "NotebookLM-style ingestion comes in the backend phase.",
+                subtitle: "Published library documents, notes, and uploads land here once GitHub finishes processing them.",
                 accent: AppTheme.lavender,
                 tone: .page
             )
 
-            VStack(alignment: .leading, spacing: 10) {
-                Text("Planned flow")
-                    .font(.headline.weight(.semibold))
-                    .foregroundStyle(AppTheme.ink)
-                Text("1. Upload PDFs, notes, or briefs\n2. Extract and index them\n3. Fold them into Ask AI answers with citations")
-                    .font(.subheadline)
-                    .foregroundStyle(AppTheme.slate)
+            if model.libraryDocuments.isEmpty {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("No library documents yet")
+                        .font(.headline.weight(.semibold))
+                        .foregroundStyle(AppTheme.ink)
+                    Text("Add links, notes, or files from the Sources tab and they will appear here after GitHub processes the intake.")
+                        .font(.subheadline)
+                        .foregroundStyle(AppTheme.slate)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .glassCard(cornerRadius: 26, tint: AppTheme.lavender, padding: 16)
+            } else {
+                ForEach(Array(model.libraryDocuments.prefix(4))) { document in
+                    VStack(alignment: .leading, spacing: 10) {
+                        HStack(alignment: .top, spacing: 12) {
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(document.title)
+                                    .font(.headline.weight(.semibold))
+                                    .foregroundStyle(AppTheme.ink)
+
+                                Text("\(document.displayStatus) • \(document.sizeText)")
+                                    .font(.caption.weight(.bold))
+                                    .foregroundStyle(AppTheme.lavender)
+                            }
+
+                            Spacer(minLength: 0)
+
+                            if let url = document.destinationURL {
+                                ShareLink(item: url) {
+                                    Image(systemName: "arrow.up.forward.app")
+                                        .font(.subheadline.weight(.bold))
+                                        .foregroundStyle(AppTheme.pageTitle)
+                                        .frame(width: 34, height: 34)
+                                        .background(Color.white.opacity(0.58), in: Circle())
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+
+                        Text(document.summaryPreview)
+                            .font(.subheadline)
+                            .foregroundStyle(AppTheme.slate)
+                            .lineLimit(4)
+
+                        if !document.tags.isEmpty {
+                            TagStrip(tags: document.tags)
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .glassCard(cornerRadius: 26, tint: AppTheme.lavender, padding: 16)
+                }
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .glassCard(cornerRadius: 26, tint: AppTheme.lavender, padding: 16)
         }
     }
 

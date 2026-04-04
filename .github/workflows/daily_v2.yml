@@ -170,8 +170,19 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add outputs/docs outputs/timelines reports/daily docs/digests docs/data docs/site docs/*.json docs/.nojekyll || true
-          git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]" || echo "No changes to commit"
-          git push || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort || true
+            echo "Retrying push ($attempt/3) after remote changed..."
+            sleep 3
+          done
+          echo "Push failed after 3 attempts" >&2
+          exit 1
 
       # 10) Warm GitHub Pages (Pages has no /api/revalidate)
       - name: Warm GitHub Pages

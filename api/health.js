@@ -1,4 +1,5 @@
 import { applyCors, repoConfig } from "./_lib/github.js";
+import { MAX_UPLOAD_BYTES } from "./_lib/library.js";
 
 export default async function handler(req, res) {
   applyCors(res);
@@ -12,6 +13,9 @@ export default async function handler(req, res) {
     ok: true,
     backendConfigured,
     githubWritesConfigured,
-    repository
+    repository,
+    dataBase: process.env.DATA_BASE || "https://danieltnl.github.io/EURLex/data",
+    maxUploadBytes: MAX_UPLOAD_BYTES,
+    documentsEnabled: true
   });
 }

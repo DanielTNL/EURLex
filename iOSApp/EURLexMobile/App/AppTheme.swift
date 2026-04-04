@@ -15,9 +15,9 @@ enum AppTheme {
     static let lavender = Color(red: 0.72, green: 0.49, blue: 1.00)
     static let plum = Color(red: 0.25, green: 0.21, blue: 0.52)
     static let plumSoft = Color(red: 0.39, green: 0.35, blue: 0.66)
-    static let pageTitle = Color(red: 0.18, green: 0.15, blue: 0.40)
-    static let pageBody = Color(red: 0.28, green: 0.26, blue: 0.52)
-    static let pageSubtext = Color(red: 0.39, green: 0.38, blue: 0.62)
+    static let pageTitle = Color(red: 0.16, green: 0.13, blue: 0.36)
+    static let pageBody = Color(red: 0.22, green: 0.20, blue: 0.46)
+    static let pageSubtext = Color(red: 0.31, green: 0.30, blue: 0.56)
     static let heroText = Color(red: 0.95, green: 0.97, blue: 1.00)
     static let heroSubtext = Color(red: 0.80, green: 0.85, blue: 0.95)
 
@@ -28,6 +28,9 @@ enum AppTheme {
     static let border = Color.white.opacity(0.14)
     static let shadow = Color.black.opacity(0.34)
     static let softShadow = Color.black.opacity(0.18)
+    static let floatingDockReservedHeight: CGFloat = 118
+    static let screenBottomClearance: CGFloat = 152
+    static let composerBottomLift: CGFloat = 96
 
     static let background = LinearGradient(
         colors: [midnight, twilight, nebula],

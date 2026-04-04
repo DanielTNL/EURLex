@@ -1,6 +1,11 @@
 name: Manage Custom Sources
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - state/custom_feeds.json
   workflow_dispatch:
     inputs:
       action:
@@ -41,16 +46,33 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt
+          for f in requirements.txt scripts/requirements.txt workers/requirements.txt; do
+            if [ -f "$f" ]; then
+              python -m pip install -r "$f"
+            fi
+          done
 
       - name: Update custom feed registry
+        if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           python scripts/manage_custom_feeds.py "${{ inputs.action }}" \
             --url "${{ inputs.url }}" \
             --name "${{ inputs.name }}"
 
+      - name: Discover from current source registry
+        if: ${{ github.event_name == 'push' || inputs.action != 'list' }}
+        run: |
+          if [ -f sources_v2.yaml ]; then
+            python workers/weekly_discover.py --window 7d --sources sources_v2.yaml --config config_v2.yaml
+          else
+            python workers/weekly_discover.py --window 7d --config config_v2.yaml
+          fi
+          python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit 50
+          python workers/build_timeline.py --window 7d --config config_v2.yaml
+          python workers/build_daily_digest.py --hours 24
+
       - name: Rebuild published app data
-        if: ${{ inputs.action != 'list' }}
+        if: ${{ github.event_name == 'push' || inputs.action != 'list' }}
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
@@ -59,10 +81,21 @@ jobs:
           python scripts/validate_backend_outputs.py
 
       - name: Commit source changes
-        if: ${{ inputs.action != 'list' }}
+        if: ${{ github.event_name == 'push' || inputs.action != 'list' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/custom_feeds.json docs/data
-          git commit -m "Update custom sources $(date -u +'%F %T')" || echo "No changes to commit"
-          git push || true
+          git add state/custom_feeds.json state/latest_discovery.json outputs/docs outputs/timelines docs/data docs/digests
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update custom sources $(date -u +'%F %T')"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort || true
+            echo "Retrying push ($attempt/3) after remote changed..."
+            sleep 3
+          done
+          echo "Push failed after 3 attempts" >&2
+          exit 1

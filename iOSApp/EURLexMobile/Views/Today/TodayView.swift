@@ -96,7 +96,7 @@ struct TodayView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 20)
                 .padding(.top, 12)
-                .padding(.bottom, 30)
+                .padding(.bottom, AppTheme.screenBottomClearance)
                 .frame(width: proxy.size.width, alignment: .leading)
             }
         }

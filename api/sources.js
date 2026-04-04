@@ -65,7 +65,11 @@ export default async function handler(req, res) {
       };
 
       await putRepoJSON(SOURCES_PATH, payload, `Update custom feeds (${nextFeed.name})`);
-      return res.status(200).json(payload);
+      return res.status(200).json({
+        ...payload,
+        queued_processing: true,
+        message: "The source registry has been updated in GitHub. The source-refresh workflow will pick up the change and fold new material into the published corpus."
+      });
     }
 
     if (req.method === "DELETE") {
@@ -82,7 +86,10 @@ export default async function handler(req, res) {
       };
 
       await putRepoJSON(SOURCES_PATH, payload, `Remove custom feed (${target})`);
-      return res.status(200).json(payload);
+      return res.status(200).json({
+        ...payload,
+        queued_processing: true
+      });
     }
 
     return res.status(405).json({ error: "Method not allowed." });

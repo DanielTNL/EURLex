@@ -107,6 +107,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add outputs/docs outputs/timelines state/latest_discovery.json docs/data docs/digests || true
-          git commit -m "pipeline v2 data $(date -u +'%F %T') [manual]" || echo "No changes to commit"
-          git pull --rebase origin main || true
-          git push || echo "Push skipped"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "pipeline v2 data $(date -u +'%F %T') [manual]"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && exit 0
+            git rebase --abort || true
+            echo "Retrying push ($attempt/3) after remote changed..."
+            sleep 3
+          done
+          echo "Push failed after 3 attempts" >&2
+          exit 1
