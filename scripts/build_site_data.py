@@ -367,26 +367,138 @@ def read_report_text_and_urls(path: pathlib.Path):
         urls = list(dict.fromkeys(URL_RE.findall(raw)))
     return raw, text, urls
 
-def guess_title_abstract_keyitems(text: str):
-    lines = [l.strip() for l in text.splitlines()]
-    title = next((l for l in lines if l), "Untitled report")
-    after = "\n".join(lines[1:]).strip()
-    paras = [p.strip() for p in re.split(r"\n\s*\n", after) if p.strip()]
-    abstract = paras[0][:300] if paras else ""
-    key_items = []
-    capture = False
-    for l in lines:
-        if re.search(r'key\s*items?|highlights', l, re.I):
-            capture = True; continue
-        if capture and (l.startswith("- ") or l.startswith("* ")):
-            key_items.append(l[2:].strip())
-        elif capture and l and not (l.startswith("- ") or l.startswith("* ")):
+def clean_report_fragment(text: str, limit: int = 0) -> str:
+    cleaned = BeautifulSoup(text or "", "html.parser").get_text(" ")
+    cleaned = re.sub(r'\[(.*?)\]\((.*?)\)', r'\1', cleaned)
+    cleaned = cleaned.replace("**", "").replace("__", "").replace("`", "")
+    cleaned = re.sub(r'^\s*[-*]\s+', '', cleaned, flags=re.M)
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    if limit and len(cleaned) > limit:
+        return cleaned[:limit].rstrip(" ,;:-") + "…"
+    return cleaned
+
+
+def report_heading_label(line: str) -> str:
+    return re.sub(r'^\s*#+\s*', '', (line or '').strip()).strip()
+
+
+def section_by_heading_prefix(text: str, start_prefixes: list[str], stop_prefixes: list[str]) -> str:
+    lines = text.splitlines()
+    start_index = None
+    prefixes = tuple(prefix.lower() for prefix in start_prefixes)
+    stops = tuple(prefix.lower() for prefix in stop_prefixes)
+
+    for index, line in enumerate(lines):
+        label = report_heading_label(line)
+        if label and label.lower().startswith(prefixes):
+            start_index = index + 1
             break
+
+    if start_index is None:
+        return ""
+
+    collected: list[str] = []
+    for line in lines[start_index:]:
+        label = report_heading_label(line)
+        lower = label.lower()
+        if label and lower.startswith(stops):
+            break
+        collected.append(line)
+    return "\n".join(collected).strip()
+
+
+def first_real_paragraphs(text: str, max_count: int = 2) -> list[str]:
+    paragraphs = []
+    for chunk in re.split(r"\n\s*\n", text or ""):
+        chunk = re.split(r"\n\s*#{2,6}\s+", chunk, maxsplit=1)[0]
+        cleaned = clean_report_fragment(chunk)
+        if not cleaned:
+            continue
+        if cleaned.lower() in {
+            "executive summary",
+            "key items",
+            "briefing (~200 words)",
+            "weekly economic & policy overview",
+            "weekly economic and policy overview",
+            "weekly eu policy analysis",
+            "categories",
+            "references",
+        }:
+            continue
+        paragraphs.append(cleaned)
+        if len(paragraphs) >= max_count:
+            break
+    return paragraphs
+
+
+def parse_key_item_lines(text: str) -> list[str]:
+    items: list[str] = []
+    for line in (text or "").splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith(("- ", "* ")):
+            value = clean_report_fragment(re.sub(r'^\[(\d+)\]\s*', '', stripped[2:]), 320)
+            if value and value.lower() not in {"(none)", "none"}:
+                items.append(value)
+        elif items:
+            break
+    return items
+
+
+def fallback_key_items_from_report(text: str, limit: int = 4) -> list[str]:
+    items: list[str] = []
+    for line in (text or "").splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("### "):
+            label = report_heading_label(stripped)
+            if label and label.lower() not in {"key items", "briefing (~200 words)", "categories", "references"}:
+                items.append(clean_report_fragment(label, 160))
+        elif stripped.startswith(("- ", "* ")):
+            value = clean_report_fragment(re.sub(r'^\[(\d+)\]\s*', '', stripped[2:]), 220)
+            if value and value.lower() not in {"(none)", "none"}:
+                items.append(value)
+        if len(items) >= limit:
+            break
+    return items[:limit]
+
+
+def guess_title_abstract_keyitems(text: str):
+    lines = [l.rstrip() for l in text.splitlines()]
+    title = next((report_heading_label(l) for l in lines if report_heading_label(l)), "Untitled report")
+
+    briefing_block = section_by_heading_prefix(
+        text,
+        ["Briefing", "Weekly Economic and Policy Overview", "Weekly Economic & Policy Overview"],
+        ["Categories", "Weekly EU Policy Analysis", "References"],
+    )
+    executive_block = section_by_heading_prefix(
+        text,
+        ["Executive Summary"],
+        ["Key Items", "Briefing", "Weekly Economic and Policy Overview", "Weekly Economic & Policy Overview", "Categories", "References"],
+    )
+    key_block = section_by_heading_prefix(
+        text,
+        ["Key Items", "Highlights"],
+        ["Briefing", "Categories", "Weekly Economic and Policy Overview", "Weekly Economic & Policy Overview", "Weekly EU Policy Analysis", "References"],
+    )
+
+    key_items = parse_key_item_lines(key_block)
     if not key_items:
-        for l in lines:
-            if l.startswith(("- ","* ")):
-                key_items.append(l[2:].strip())
-            if len(key_items) >= 3: break
+        key_items = fallback_key_items_from_report(text)
+
+    abstract_paragraphs = first_real_paragraphs(briefing_block, max_count=2)
+    if not abstract_paragraphs:
+        abstract_paragraphs = first_real_paragraphs(executive_block, max_count=2)
+    if not abstract_paragraphs:
+        after = "\n".join(lines[1:]).strip()
+        abstract_paragraphs = first_real_paragraphs(after, max_count=2)
+
+    abstract = clean_report_fragment(" ".join(abstract_paragraphs), 700)
+    abstract = abstract.split(" ### ", 1)[0].strip()
+    abstract = re.sub(r'^\s*Key themes:\s*', '', abstract, flags=re.I)
     return title, abstract, key_items
 
 
@@ -423,6 +535,7 @@ def make_report_entry(path: pathlib.Path, title: str, abstract: str, key_items: 
         "tags": tags,
         "key_items": key_items[:10],
         "abstract": abstract.strip(),
+        "briefing": abstract.strip(),
         "sections": []
     }
 
@@ -595,6 +708,14 @@ async def build():
                     # These lightweight daily stubs are useful as pipeline artifacts,
                     # but the app should prefer the richer editorial reports stored in
                     # reports/YYYY-MM-DD.md.
+                    continue
+                if rel.startswith("reports/audio/"):
+                    # Audio request mirrors belong in audio.json, not in the editorial
+                    # report corpus used by the app briefings.
+                    continue
+                if rel.startswith("reports/weekly/") and f.suffix.lower() == ".txt":
+                    # The text mirrors next to weekly MP3s are useful for playback,
+                    # but the richer markdown weekly report should drive the briefings.
                     continue
                 if rel in seen_report_paths:
                     continue

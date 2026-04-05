@@ -53,6 +53,8 @@ LIBRARY_DIRS = [
 LIBRARY_EXTENSIONS = {'.pdf', '.txt', '.md', '.markdown', '.docx'}
 MAX_BRIEFING_DAYS = 14
 MAX_SUNDAY_EDITIONS = 8
+MAX_AI_DAILY_DAYS = 7
+MAX_AI_SUNDAY_EDITIONS = 4
 
 
 def load_json(path: pathlib.Path, default: Any) -> Any:
@@ -171,7 +173,7 @@ def llm_json(system: str, user: str, prefer_weekly: bool = False) -> Optional[di
                 {'role': 'system', 'content': system},
                 {'role': 'user', 'content': user},
             ],
-            max_tokens=900,
+            max_tokens=1800,
             response_format={'type': 'json_object'},
         )
         content = response.choices[0].message.content or ''
@@ -224,7 +226,7 @@ def report_to_common(report: dict) -> CommonDocument:
     return CommonDocument(
         id=str(report.get('id') or report.get('url_html') or ''),
         title=report.get('display_title') or report.get('title') or 'Untitled report',
-        summary=clean_text(report.get('abstract') or '', 260),
+        summary=clean_text(report.get('briefing') or report.get('abstract') or '', 520),
         url=report.get('url_html') or '',
         kind='report',
         source='EURLex reports',
@@ -298,6 +300,15 @@ def strip_markdown_noise(text: str) -> str:
 
 def cleaned_doc_summary(doc: CommonDocument, limit: int = 320) -> str:
     base = strip_markdown_noise(doc.summary)
+    lowered_base = re.sub(r'\s+', ' ', base).strip().lower()
+    lowered_title = re.sub(r'\s+', ' ', doc.title).strip().lower()
+    if lowered_base and lowered_title:
+        if lowered_base == lowered_title:
+            return ''
+        if lowered_base.startswith(lowered_title) and len(lowered_base) <= len(lowered_title) + 60:
+            return ''
+    if lowered_base.startswith('http://') or lowered_base.startswith('https://'):
+        return ''
     if base:
         return clean_text(base, limit)
     return clean_text(doc.title, min(limit, 180))
@@ -316,19 +327,27 @@ def is_synthetic_digest(doc: CommonDocument) -> bool:
 
 def editorial_documents(documents: List[CommonDocument]) -> List[CommonDocument]:
     preferred = [doc for doc in documents if not is_synthetic_digest(doc)]
+    preferred.sort(
+        key=lambda doc: (
+            1 if cleaned_doc_summary(doc, 220) else 0,
+            len(cleaned_doc_summary(doc, 220)),
+            doc.date or '',
+        ),
+        reverse=True,
+    )
     return preferred or documents
 
 
 def fallback_sections_from_documents(documents: List[CommonDocument], count: int = 3) -> List[dict]:
     sections = []
     for doc in editorial_documents(documents)[:count]:
+        body = cleaned_doc_summary(doc, 480)
+        if not body:
+            continue
         sections.append(
             {
                 'title': clean_text(doc.title, 120),
-                'body': clean_text(
-                    f"{cleaned_doc_summary(doc, 280)} Source: {doc.source}, {doc.date or 'undated'}.",
-                    340,
-                ),
+                'body': clean_text(f"{body} Source: {doc.source}, {doc.date or 'undated'}.", 520),
             }
         )
     return sections
@@ -338,7 +357,7 @@ def compact_key_points(key_points: List[str], documents: List[CommonDocument], l
     cleaned = []
     for item in key_points:
         value = clean_text(strip_markdown_noise(item), 140)
-        if value:
+        if value and value.lower() not in {'(none)', 'none'} and not value.lower().startswith(('http://', 'https://')):
             cleaned.append(value)
     preferred_cleaned = [
         item for item in cleaned
@@ -394,7 +413,7 @@ def fallback_daily_payload(day_label: str, summary: str, key_points: List[str], 
     return {
         'headline': clean_text(headline, 160),
         'intro': build_intro(summary, documents, day_label),
-        'summary': clean_text(fallback_summary or build_intro(summary, documents, day_label), 760),
+        'summary': clean_text(fallback_summary or build_intro(summary, documents, day_label), 1800),
         'key_points': compact_key_points(key_points, documents, 4),
         'sections': fallback_sections_from_documents(documents, count=3),
     }
@@ -412,19 +431,22 @@ def maybe_ai_daily(day_label: str, summary: str, key_points: List[str], document
     )
     prompt = (
         f"Create a premium daily policy briefing for {day_label}. Return JSON only with keys headline, intro, summary, key_points, sections. "
-        "Use only the supplied material. Write in precise UK English with an academic but readable tone. "
-        "Do not invent facts, dates, figures, institutional positions, or causal claims. "
-        "headline must be 8-18 words. intro must be one paragraph of 70-110 words. "
-        "summary must be 2-4 short paragraphs, richly detailed but readable on mobile. "
-        "key_points must be an array of 3 or 4 short bullets without numbering or markdown bullets. "
-        "sections must be an array of exactly 3 objects with keys title and body. Each body should be one compact paragraph. "
-        "Avoid markdown headings, asterisks, or links in the prose. When useful, preserve original document titles verbatim in the prose.\n\n"
+        "Use only the supplied material. Write in precise UK English with a witty, academically literate newspaper-analysis tone. "
+        "Be concrete, sceptical, and explanatory. Do not invent facts, dates, figures, institutional positions, motives, or causal claims. "
+        "Do not merely rewrite titles. Explain what changed, why it matters, who is affected, and how the items connect across categories. "
+        "headline must be 8-18 words and should sound like a strong front-page standfirst, not a filename. "
+        "intro must be one paragraph of 110-160 words with a clear thesis for the day. "
+        "summary must be 4-6 short paragraphs totalling roughly 450-650 words. It should read like a sharp morning newspaper article for a policy reader. "
+        "key_points must be an array of exactly 4 short, concrete takeaways without numbering or markdown bullets. "
+        "sections must be an array of exactly 3 objects with keys title and body. Each title should usually preserve the original source-document title. "
+        "Each body must be 2-4 sentences that summarize the document's substance and then state why it matters. "
+        "Avoid markdown headings, asterisks, raw URLs, or references to 'the supplied material', 'the corpus', or filenames.\n\n"
         f"Base summary: {fallback['summary']}\n"
         f"Known key points: {key_points[:4]}\n"
         f"Documents:\n{corpus}"
     )
     response = llm_json(
-        'You write compact editorial mobile briefings for European policy readers.',
+        'You write compact but substantial editorial briefings for a premium European policy app.',
         prompt,
         prefer_weekly=False,
     )
@@ -432,18 +454,18 @@ def maybe_ai_daily(day_label: str, summary: str, key_points: List[str], document
         return fallback
     return {
         'headline': clean_text(response.get('headline') or fallback['headline'], 160),
-        'intro': clean_text(response.get('intro') or fallback['intro'], 360),
-        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 900),
+        'intro': clean_text(response.get('intro') or fallback['intro'], 520),
+        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 2400),
         'key_points': compact_key_points(response.get('key_points') or fallback['key_points'], documents, 4),
         'sections': [
             {
                 'title': clean_text(str(item.get('title') or ''), 120),
-                'body': clean_text(strip_markdown_noise(str(item.get('body') or '')), 340),
+                'body': clean_text(strip_markdown_noise(str(item.get('body') or '')), 620),
             }
             for item in (response.get('sections') or [])
             if isinstance(item, dict)
             and clean_text(str(item.get('title') or ''), 120)
-            and clean_text(strip_markdown_noise(str(item.get('body') or '')), 340)
+            and clean_text(strip_markdown_noise(str(item.get('body') or '')), 620)
         ][:3] or fallback['sections'],
     }
 
@@ -457,7 +479,7 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
     fallback = {
         'headline': clean_text((lead_documents[0].title if lead_documents else title), 180),
         'intro': build_intro(summary, documents, title),
-        'summary': clean_text(cleaned_summary or build_intro(summary, documents, title), 980),
+        'summary': clean_text(cleaned_summary or build_intro(summary, documents, title), 2200),
         'key_points': compact_key_points(key_points, documents, 5),
         'sections': fallback_sections,
     }
@@ -471,12 +493,14 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
     )
     prompt = (
         f"Create a Sunday morning newspaper-style weekly edition titled '{title}'. Return JSON only with keys headline, intro, summary, key_points, sections. "
-        "Use only the supplied material. Write in precise UK English with a polished newspaper-analysis tone. "
-        "Do not invent facts or smooth over uncertainty. headline must be 8-18 words. "
-        "intro must be one paragraph of 90-140 words. summary must be 4-6 short paragraphs with academic detail but strong readability. "
-        "key_points must be an array of 4 or 5 short bullets without numbering or markdown bullets. "
-        "sections must be an array of exactly 4 objects with keys title and body. Each body should be one compact but information-dense paragraph. "
-        "Avoid markdown headings, bullets in prose, or links. Preserve original document titles when useful so readers can look them up easily.\n\n"
+        "Use only the supplied material. Write in precise UK English with a polished, witty, critically minded weekend-newspaper tone. "
+        "Do not invent facts or smooth over uncertainty. Find the red thread across the week: what kept resurfacing, what shifted, where institutions are converging, and where the pressure points remain. "
+        "headline must be 8-18 words. intro must be one paragraph of 120-170 words with a strong thesis. "
+        "summary must be 6-8 short paragraphs totalling roughly 700-1100 words. It should feel like a smart Sunday front-page analysis, not a list of items. "
+        "key_points must be an array of exactly 5 concrete takeaways without numbering or markdown bullets. "
+        "sections must be an array of exactly 4 objects with keys title and body. Each title should usually preserve the original source-document title. "
+        "Each body must summarize the document substance and explain why it matters in the wider weekly pattern. "
+        "Avoid markdown headings, bullets in prose, raw URLs, or references to filenames or the corpus. Preserve original document titles when useful so readers can look them up easily.\n\n"
         f"Base summary: {fallback['summary']}\n"
         f"Known key points: {key_points[:5]}\n"
         f"Documents:\n{corpus}"
@@ -493,13 +517,13 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
         if not isinstance(item, dict):
             continue
         title_text = clean_text(str(item.get('title') or ''), 140)
-        body_text = clean_text(str(item.get('body') or ''), 320)
+        body_text = clean_text(strip_markdown_noise(str(item.get('body') or '')), 700)
         if title_text and body_text:
             sections.append({'title': title_text, 'body': body_text})
     return {
         'headline': clean_text(response.get('headline') or fallback['headline'], 180),
-        'intro': clean_text(response.get('intro') or fallback['intro'], 420),
-        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 1400),
+        'intro': clean_text(response.get('intro') or fallback['intro'], 620),
+        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 3200),
         'key_points': compact_key_points(response.get('key_points') or fallback['key_points'], documents, 5),
         'sections': sections[:4] or fallback['sections'],
     }
@@ -509,15 +533,16 @@ def preferred_daily_report(reports_day: List[dict]) -> dict | None:
     if not reports_day:
         return None
 
-    def score(report: dict) -> tuple[int, int, int]:
+    def score(report: dict) -> tuple[int, int, int, int]:
         tags = report.get('tags') or []
         key_items = report.get('key_items') or []
         abstract = str(report.get('abstract') or '')
         url = str(report.get('url_html') or '')
         is_daily = 1 if 'daily' in tags else 0
         not_stub_path = 1 if '/reports/daily/' not in url else 0
+        non_placeholder = 0 if looks_placeholder_summary(abstract) else 1
         richness = len(key_items) * 10 + min(len(abstract), 600)
-        return (is_daily, not_stub_path, richness)
+        return (is_daily, not_stub_path, non_placeholder, richness)
 
     return max(reports_day, key=score)
 
@@ -568,8 +593,18 @@ def daily_briefings(posts: List[dict], reports: List[dict], timeline: dict, dige
 
         daily_report = preferred_daily_report(reports_day)
         primary_report = report_to_common(daily_report) if daily_report else None
+        report_is_useful = bool(
+            primary_report
+            and ((daily_report or {}).get('key_items') or cleaned_doc_summary(primary_report, 260))
+            and not looks_placeholder_summary((daily_report or {}).get('abstract') or '')
+        )
 
-        important = unique_documents([x for x in [primary_report] if x] + digest_items + posts_day + timeline_day)[:5]
+        important_pool = unique_documents(
+            ([primary_report] if (primary_report and report_is_useful) else []) + digest_items + posts_day + timeline_day
+        )
+        if not important_pool and primary_report:
+            important_pool = [primary_report]
+        important = important_pool[:5]
         related = unique_documents(posts_day + digest_items + timeline_day)[1:7]
         categories = collect_categories(important + related)
 
@@ -583,7 +618,7 @@ def daily_briefings(posts: List[dict], reports: List[dict], timeline: dict, dige
         dt_value = date.fromisoformat(day)
         day_label = dt_value.strftime('%A %-d %B %Y') if os.name != 'nt' else dt_value.strftime('%A %#d %B %Y')
         editorial = maybe_ai_daily(day_label, summary, fallback_key_points, important)
-        if index > 0:
+        if index >= MAX_AI_DAILY_DAYS:
             editorial = fallback_daily_payload(day_label, summary, fallback_key_points, important)
 
         report_payload = (
@@ -680,8 +715,11 @@ def sunday_editions(posts: List[dict], reports: List[dict], timeline: dict) -> d
         if report:
             anchor_documents.append(report_to_common(report))
 
-        important = unique_documents(anchor_documents + documents)[:8]
-        related = unique_documents(documents)[1:7]
+        weekly_editorial_pool = editorial_documents(documents)
+        important = unique_documents(anchor_documents + weekly_editorial_pool)[:8]
+        if not important:
+            important = unique_documents(documents)[:8]
+        related = unique_documents(weekly_editorial_pool)[1:7]
         categories = collect_categories(important + related)
 
         if report:
@@ -694,7 +732,7 @@ def sunday_editions(posts: List[dict], reports: List[dict], timeline: dict) -> d
         summary = clean_text(strip_markdown_noise(summary_seed), 860)
         title = f"Sunday Edition — {start_day.isoformat()} to {end_day.isoformat()}"
         editorial = maybe_ai_sunday(title, summary, fallback_key_points, important)
-        if index > 0:
+        if index >= MAX_AI_SUNDAY_EDITIONS:
             editorial = {
                 'headline': clean_text(title, 180),
                 'intro': build_intro(summary, important, title),

@@ -158,16 +158,20 @@ def build_weekly_script(reports: Sequence[Dict[str, str]], start: dt.date, end: 
         for idx, report in enumerate(reports[:8], start=1)
     )
 
-    extra_angle = f"\nOptional angle to emphasize: {prompt_hint.strip()}\n" if prompt_hint.strip() else ""
+    extra_angle = f"\nPreferred angle to emphasize: {prompt_hint.strip()}\n" if prompt_hint.strip() else ""
     system = (
-        "You write concise voice briefings about European policy. "
-        "Write plain narration in polished paragraphs with no markdown."
+        "You write concise but insightful voice briefings about European policy. "
+        "Write plain narration in polished paragraphs with no markdown. "
+        "Your job is not to list every item. Your job is to find the week's decisive pattern and explain it through one clear lens."
     )
     user = (
         f"Create a weekly audio briefing for {start.isoformat()} to {end.isoformat()}."
         f"{extra_angle}"
-        "\nOpen with the biggest theme of the week, then summarise the most important developments, "
-        "and finish with what to watch next. Aim for 5-7 minutes of audio.\n\n"
+        "\nPick one interpretive lens for the week, such as supervisory strategy, market structure, institutional power, consumer risk, industrial policy, or geopolitical exposure. "
+        "Use that lens to explain the week. Do not sound like you are reading headlines back to the listener. "
+        "Open with the week's defining tension, then explain the 3-5 most important developments, show how they connect, include at least one counterpoint or surprise, "
+        "and finish with what to watch next. Aim for 5-7 minutes of audio. "
+        "The tone should be sharp, readable, lightly witty, and analytically confident.\n\n"
         f"Use this report corpus:\n{corpus}"
     )
     script = call_llm(system, user, max_tokens=1800).strip()

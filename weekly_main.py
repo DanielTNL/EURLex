@@ -348,8 +348,10 @@ def build_prompts(selected: List[Dict[str, Any]], window: Tuple[dt.datetime, dt.
     corpus = "\n".join(f"- {e['title']} :: {e['summary']} :: {e['link']}" for e in selected)
 
     system = (
-        "You are a senior EU policy analyst. Write clear professional prose in plain paragraphs "
-        "(no markdown symbols). Use bracketed citations [n] that correspond to a numbered list called 'References'. "
+        "You are a senior EU policy analyst writing for a premium European policy briefing. "
+        "Write clear, elegant prose in plain paragraphs (no markdown symbols). "
+        "Find the week's through-line, explain recurring patterns, and avoid sounding like a laundry list of headlines. "
+        "Use bracketed citations [n] that correspond to a numbered list called 'References'. "
         "Use descriptive sub-headings (plain text lines) within sections; keep them concise and professional."
     )
 
@@ -357,8 +359,9 @@ def build_prompts(selected: List[Dict[str, Any]], window: Tuple[dt.datetime, dt.
         f"Time window: {start_iso} to {end_iso}.\n"
         f"Items (title :: snippet :: URL):\n{corpus}\n\n"
         "Produce a WEEKLY BRIEFING of at least 1,800 words (hard minimum). "
-        "Open with 1–2 paragraphs stating the week's top-line narrative. Then synthesise monetary policy, "
-        "financial markets, banking/insurance, digital/AI, ESG, EU institutions, and defence. "
+        "Open with 1–2 paragraphs stating the week's top-line narrative and the central tension running through it. Then synthesise monetary policy, "
+        "financial markets, banking/insurance, digital/AI, ESG, EU institutions, and defence as connected themes rather than isolated items. "
+        "Be analytical, critically minded, and readable. Do not simply restate document titles. "
         "Insert short sub-headings where helpful (plain text, no markdown). "
         "Weave items into the narrative with citations like [3], [7] using this numbered list:\n"
         + "\n".join(numbered)
@@ -367,6 +370,7 @@ def build_prompts(selected: List[Dict[str, Any]], window: Tuple[dt.datetime, dt.
     user_analysis = (
         "Write ONE consolidated section titled 'Weekly EU Policy Analysis' (800–1200 words). "
         "Explain cross-cutting implications and forward risks for EU financial markets and defence. "
+        "Adopt a slightly different lens from the main briefing by stressing structural patterns, institutional incentives, and second-order effects. "
         "Use short sub-headings where helpful (plain text, no markdown). "
         "Use the same [n] references."
     )

@@ -81,10 +81,11 @@ def summarize_text(text: str, language: str) -> str:
         r = _oa.chat.completions.create(
             model=DEFAULT_MODEL, temperature=0.2, max_tokens=220,
             messages=[
-                {"role":"system","content":"You are a neutral EU legal analyst. Output 3–5 concise bullets. No preface."},
+                {"role":"system","content":"You are a sharp EU policy editor. Output 2-4 concise bullets only. Each bullet must explain substance or consequence, not merely restate the title. No preface, no markdown other than '-' bullets."},
                 {"role":"user","content":
-                 f"Summarize in {language or 'EN'} using 3–5 bullets (<=120 words total). "
-                 "Focus on: what's new/changed, scope, obligations, timelines, who is affected.\n\n"
+                 f"Summarize in {language or 'EN'} using 2-4 bullets (ideally 80-140 words total). "
+                 "Focus on: what changed, what the document actually does or says, who is affected, why it matters, and any timing or implementation angle. "
+                 "Avoid repeating the document title or identifier unless necessary.\n\n"
                  f"TEXT:\n{base}"}
             ],
         )
@@ -431,8 +432,8 @@ def main():
             r = _oa.chat.completions.create(
                 model=DEFAULT_MODEL, temperature=0.2, max_tokens=320,
                 messages=[
-                    {"role":"system","content":"Write ~200 words, neutral, structured, no fluff. Refer to items with [id]."},
-                    {"role":"user","content": f"Synthesize the key themes and implications across these items:\n\n{items_text}"}
+                    {"role":"system","content":"Write a sharp daily European policy briefing in polished prose. Be factual, synthetic, and readable. Sound like a concise newspaper briefing for an expert reader. Use [id] references where helpful."},
+                    {"role":"user","content": f"Synthesize the key themes and implications across these items.\nWrite roughly 220-320 words.\nDo not merely list titles. Explain the day's through-line, what changed, and why it matters across markets, regulation, supervision, or institutions.\n\n{items_text}"}
                 ],
             )
             exec_paragraph = (r.choices[0].message.content or "").strip()
