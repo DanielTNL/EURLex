@@ -1,38 +1,53 @@
 {
-  "generated_at": "2026-04-05T06:57:47.536890+00:00",
+  "generated_at": "2026-04-05T07:22:50.554993+00:00",
   "latest_date": "2026-04-05",
   "items": [
     {
       "date": "2026-04-05",
       "title": "Sunday 5 April 2026",
-      "headline": "EBA Report Highlights SupTech's Role in Enhancing AML and CFT Supervision",
-      "intro": "The European Banking Authority (EBA) has released a significant report detailing the potential of supervisory technology (SupTech) to improve the effectiveness of anti-money laundering (AML) and countering the financing of terrorism (CFT) measures across Europe. This report underscores the importance of integrating advanced technological tools into regulato…",
-      "summary": "The EBA's latest report emphasises the transformative potential of SupTech in enhancing the supervision of AML and CFT efforts. By leveraging technology, regulators can streamline processes, improve data analysis, and enhance their ability to detect suspicious activities. This approach not only facilitates more effective oversight but also supports financial institutions in meeting their compliance obligations more efficiently. The report outlines various technological tools that can be employed in the supervisory landscape, including data analytics, machine learning, and artificial intelligence. These tools can significantly reduce the burden on regulators and financial institutions alike, enabling a more proactive stance against financial crime. Furthermore, the EBA's findings align with ongoing legislative efforts, such as the Financial Markets (MiFID and MiFIR Administrative Penalti…",
+      "headline": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+      "intro": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the published material, the b…",
+      "summary": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the published material, the biggest themes were ma",
       "key_points": [
-        "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds | European Banki…",
-        "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
-        "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12",
-        "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22"
+        "2026-04-04 | Daily Digest — 2026-04-04 | reports/daily/2026-04-04.md",
+        "2026-04-03 | EUR-Lex Daily Digest — 2026-04-03 | reports/2026-04-03.md",
+        "2026-04-03 | Daily Digest — 2026-04-03 | reports/daily/2026-04-03.md"
       ],
       "sections": [
         {
-          "title": "EBA's Findings on SupTech",
-          "body": "The EBA's report highlights the significant advantages of employing SupTech in the realm of AML and CFT supervision. By utilising advanced technologies, regulators can enhance their analytical capabilities, allowing for more effective identification and monitoring of suspicious transactions. This shift towards technology-driven supervisi…"
+          "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+          "body": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the publi… Source: EURLex reports, 2026-04-05."
         },
         {
-          "title": "Legislative Context",
-          "body": "The findings of the EBA are particularly relevant in light of the Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations. These regulations aim to provide a comprehensive framework for the enforcement of financial market rules, and the integration of SupTech could significantly bolster…"
+          "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA fi…",
+          "body": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the… Source: European Banking Authority, 2026-04-05."
         },
         {
-          "title": "Future Implications",
-          "body": "As the financial landscape continues to evolve, the implications of the EBA's report are profound. The adoption of SupTech not only promises to enhance regulatory oversight but also encourages financial institutions to innovate in their compliance strategies. This proactive approach is crucial for maintaining the integrity of the financi…"
+          "title": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
+          "body": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017 Source: EUR-Lex, 2026-04-05."
         }
       ],
       "categories": [
         "CMU & Financial Markets",
+        "weekly",
         "AI & Digital"
       ],
       "important_documents": [
+        {
+          "id": "rep-2026-04-05-b61377a65ff4d985",
+          "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+          "summary": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the publi…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-05-weekly-request.txt",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-05",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
         {
           "id": "a2da4cda38e00c7f",
           "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds | European Banking Authority",
@@ -45,10 +60,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "EBA",
             "CMU & Financial Markets",
-            "regulation"
+            "regulation",
+            "EBA",
+            "EU"
           ]
         },
         {
@@ -63,10 +78,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -81,10 +96,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -99,30 +114,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
+            "CMU & Financial Markets",
             "law",
-            "CMU & Financial Markets",
-            "EUR-Lex"
-          ]
-        },
-        {
-          "id": "bd0526c5b1f0368b",
-          "title": "CONSIL:ST_7384_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) [15708/25 - 2025/0359 (COD)] - European Central Bank/ ECB Opinion",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_7384_2026_INIT",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-04-05",
-          "categories": [
-            "CMU & Financial Markets",
-            "AI & Digital"
-          ],
-          "tags": [
             "EUR-Lex",
-            "AI & Digital",
-            "EU",
-            "law",
-            "CMU & Financial Markets"
+            "EU"
           ]
         }
       ],
@@ -139,10 +134,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -157,10 +152,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -175,10 +170,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -194,11 +189,11 @@
             "AI & Digital"
           ],
           "tags": [
-            "EUR-Lex",
             "AI & Digital",
             "EU",
             "law",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "EUR-Lex"
           ]
         },
         {
@@ -213,10 +208,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -231,17 +226,21 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
-      "report": null,
+      "report": {
+        "id": "rep-2026-04-05-b61377a65ff4d985",
+        "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+        "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-05-weekly-request.txt"
+      },
       "signal_counts": {
         "posts": 989,
-        "reports": 0,
+        "reports": 1,
         "digest_items": 0,
         "timeline_events": 0
       }
@@ -596,9 +595,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -613,9 +612,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -630,9 +629,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -647,9 +646,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         }
       ],
@@ -666,9 +665,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -683,9 +682,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -700,9 +699,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -717,9 +716,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -734,9 +733,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -751,9 +750,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         }
       ],
@@ -828,10 +827,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
+            "EIOPA",
             "CMU & Financial Markets",
             "regulation",
-            "EIOPA"
+            "EU"
           ]
         },
         {
@@ -846,9 +845,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "Parliament",
-            "Other"
+            "Parliament"
           ]
         },
         {
@@ -863,9 +862,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -880,9 +879,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "Parliament",
-            "Other"
+            "Parliament"
           ]
         }
       ],
@@ -899,9 +898,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "Parliament",
-            "Other"
+            "Parliament"
           ]
         },
         {
@@ -916,9 +915,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         },
         {
@@ -933,9 +932,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "Parliament",
-            "Other"
+            "Parliament"
           ]
         },
         {
@@ -950,8 +949,8 @@
             "Other"
           ],
           "tags": [
-            "EU",
             "Other",
+            "EU",
             "Council"
           ]
         },
@@ -967,8 +966,8 @@
             "AI & Digital"
           ],
           "tags": [
-            "EU",
             "AI & Digital",
+            "EU",
             "ECB"
           ]
         },
@@ -984,9 +983,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         }
       ],
@@ -1063,8 +1062,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1080,10 +1079,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EU",
-            "ECB",
             "Defence & Security",
-            "De-risking & Investment"
+            "De-risking & Investment",
+            "EU",
+            "ECB"
           ]
         },
         {
@@ -1098,8 +1097,8 @@
             "AI & Digital"
           ],
           "tags": [
-            "EU",
             "AI & Digital",
+            "EU",
             "ECB"
           ]
         },
@@ -1115,8 +1114,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "external",
-            "De-risking & Investment"
+            "De-risking & Investment",
+            "external"
           ]
         }
       ],
@@ -1134,10 +1133,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EU",
-            "ECB",
             "Defence & Security",
-            "De-risking & Investment"
+            "De-risking & Investment",
+            "EU",
+            "ECB"
           ]
         },
         {
@@ -1152,8 +1151,8 @@
             "AI & Digital"
           ],
           "tags": [
-            "EU",
             "AI & Digital",
+            "EU",
             "ECB"
           ]
         },
@@ -1169,8 +1168,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "external",
-            "De-risking & Investment"
+            "De-risking & Investment",
+            "external"
           ]
         },
         {
@@ -1185,8 +1184,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1201,10 +1200,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1219,10 +1218,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
@@ -1296,10 +1295,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1314,10 +1313,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1332,10 +1331,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1350,10 +1349,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
@@ -1370,10 +1369,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1388,10 +1387,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1406,10 +1405,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1424,10 +1423,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EU",
+            "De-risking & Investment",
             "law",
             "EUR-Lex",
-            "De-risking & Investment"
+            "EU"
           ]
         },
         {
@@ -1442,10 +1441,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1460,10 +1459,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
@@ -1537,8 +1536,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1553,8 +1552,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1569,8 +1568,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1585,10 +1584,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
@@ -1605,8 +1604,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1621,8 +1620,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1637,10 +1636,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1655,10 +1654,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1673,10 +1672,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -1691,10 +1690,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
@@ -1816,10 +1815,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
+            "EIOPA",
             "CMU & Financial Markets",
             "regulation",
-            "EIOPA"
+            "EU"
           ]
         },
         {
@@ -1834,9 +1833,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -1851,9 +1850,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -1868,9 +1867,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         }
       ],
@@ -1887,9 +1886,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -1904,9 +1903,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -1921,9 +1920,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -1938,8 +1937,8 @@
             "Other"
           ],
           "tags": [
-            "EU",
             "Other",
+            "EU",
             "Council"
           ]
         },
@@ -1955,8 +1954,8 @@
             "Other"
           ],
           "tags": [
-            "EU",
             "Other",
+            "EU",
             "Council"
           ]
         },
@@ -1972,9 +1971,9 @@
             "Other"
           ],
           "tags": [
+            "Other",
             "EU",
-            "ECB",
-            "Other"
+            "ECB"
           ]
         }
       ],
@@ -2048,10 +2047,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2066,9 +2065,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2083,10 +2082,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2101,9 +2100,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         }
       ],
@@ -2120,9 +2119,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2137,10 +2136,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2155,9 +2154,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2172,10 +2171,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2190,10 +2189,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2208,10 +2207,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "law",
             "Other",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
@@ -2287,10 +2286,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "EU",
+            "CMU & Financial Markets",
             "AI & Digital",
-            "ECB",
-            "CMU & Financial Markets"
+            "EU",
+            "ECB"
           ]
         },
         {
@@ -2305,10 +2304,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
             "law",
             "Defence & Security",
-            "EUR-Lex"
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2323,9 +2322,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2340,8 +2339,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         }
       ],
@@ -2358,10 +2357,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
             "law",
             "Defence & Security",
-            "EUR-Lex"
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2376,9 +2375,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2393,8 +2392,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2409,8 +2408,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "external",
-            "Defence & Security"
+            "Defence & Security",
+            "external"
           ]
         },
         {
@@ -2425,8 +2424,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2441,9 +2440,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         }
       ],
@@ -2516,8 +2515,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2532,10 +2531,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "EBA",
             "CMU & Financial Markets",
-            "regulation"
+            "regulation",
+            "EBA",
+            "EU"
           ]
         },
         {
@@ -2550,10 +2549,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2568,8 +2567,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         }
       ],
@@ -2586,10 +2585,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "EBA",
             "CMU & Financial Markets",
-            "regulation"
+            "regulation",
+            "EBA",
+            "EU"
           ]
         },
         {
@@ -2604,10 +2603,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "law",
             "CMU & Financial Markets",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -2622,8 +2621,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2638,8 +2637,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2654,8 +2653,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2670,8 +2669,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         }
       ],
@@ -2745,8 +2744,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2761,9 +2760,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2778,10 +2777,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "EBA",
             "CMU & Financial Markets",
-            "regulation"
+            "regulation",
+            "EBA",
+            "EU"
           ]
         },
         {
@@ -2796,9 +2795,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         }
       ],
@@ -2815,9 +2814,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2832,10 +2831,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "EU",
-            "EBA",
             "CMU & Financial Markets",
-            "regulation"
+            "regulation",
+            "EBA",
+            "EU"
           ]
         },
         {
@@ -2850,9 +2849,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EU",
-            "ECB",
-            "CMU & Financial Markets"
+            "ECB"
           ]
         },
         {
@@ -2867,8 +2866,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2883,8 +2882,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "external",
-            "Defence & Security"
+            "Defence & Security",
+            "external"
           ]
         },
         {
@@ -2899,8 +2898,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "external",
-            "Defence & Security"
+            "Defence & Security",
+            "external"
           ]
         }
       ],
