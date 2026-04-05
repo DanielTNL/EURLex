@@ -200,7 +200,7 @@ def summarise_150w(title, text, url=None, pub_dt=None):
                     {"role": "user", "content": prompt + "\n\n" + content}
                 ],
                 temperature=0.3,
-                max_tokens=1100
+                max_completion_tokens=1100
             )
             return resp.choices[0].message.content.strip()
         except Exception:

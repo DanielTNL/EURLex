@@ -79,7 +79,7 @@ def summarize_text(text: str, language: str) -> str:
         return "\n".join(picks)[:800]
     try:
         r = _oa.chat.completions.create(
-            model=DEFAULT_MODEL, temperature=0.2, max_tokens=220,
+            model=DEFAULT_MODEL, temperature=0.2, max_completion_tokens=220,
             messages=[
                 {"role":"system","content":"You are a sharp EU policy editor. Output 2-4 concise bullets only. Each bullet must explain substance or consequence, not merely restate the title. No preface, no markdown other than '-' bullets."},
                 {"role":"user","content":
@@ -101,7 +101,7 @@ def llm_choose_category(text: str, labels: List[str]) -> str:
         return "Other"
     try:
         r = _oa.chat.completions.create(
-            model=DEFAULT_MODEL, temperature=0.0, max_tokens=12,
+            model=DEFAULT_MODEL, temperature=0.0, max_completion_tokens=12,
             messages=[
                 {"role":"system","content":"Choose the single best label. Output only the label."},
                 {"role":"user","content":f"Labels: {', '.join(labels)}\nText: {text}"},
@@ -430,7 +430,7 @@ def main():
         try:
             items_text = "\n".join(f"[{it['id']}] {it['title']}\n{it['summary']}" for it in top_items)
             r = _oa.chat.completions.create(
-                model=DEFAULT_MODEL, temperature=0.2, max_tokens=320,
+                model=DEFAULT_MODEL, temperature=0.2, max_completion_tokens=320,
                 messages=[
                     {"role":"system","content":"Write a sharp daily European policy briefing in polished prose. Be factual, synthetic, and readable. Sound like a concise newspaper briefing for an expert reader. Use [id] references where helpful."},
                     {"role":"user","content": f"Synthesize the key themes and implications across these items.\nWrite roughly 220-320 words.\nDo not merely list titles. Explain the day's through-line, what changed, and why it matters across markets, regulation, supervision, or institutions.\n\n{items_text}"}

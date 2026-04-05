@@ -181,7 +181,7 @@ def llm_json(system: str, user: str, prefer_weekly: bool = False) -> Optional[di
                 {'role': 'system', 'content': system},
                 {'role': 'user', 'content': user},
             ],
-            max_tokens=7000,
+            max_completion_tokens=7000,
             response_format={'type': 'json_object'},
         )
         content = response.choices[0].message.content or ''
