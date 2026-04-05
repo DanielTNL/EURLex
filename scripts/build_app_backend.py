@@ -110,7 +110,15 @@ def clean_text(text: str, limit: int = 400) -> str:
     compact = re.sub(r'\s+', ' ', text or '').strip()
     if len(compact) <= limit:
         return compact
-    return compact[: limit - 1].rstrip(' ,;:-') + '…'
+    sentence_floor = max(120, int(limit * 0.6))
+    for match in reversed(list(re.finditer(r'(?<=[.!?])\s+', compact[: limit + 1]))):
+        cutoff = match.start()
+        if cutoff >= sentence_floor:
+            return compact[:cutoff].rstrip()
+    cutoff = compact.rfind(' ', 0, limit - 1)
+    if cutoff < max(40, int(limit * 0.45)):
+        cutoff = limit - 1
+    return compact[:cutoff].rstrip(' ,;:-') + '…'
 
 
 def title_case_source(source_id: str) -> str:
@@ -138,9 +146,9 @@ def pick_model(prefer_weekly: bool = False) -> str:
             os.getenv('OPENAI_WEEKLY_MODEL')
             or os.getenv('OPENAI_MODEL_WEEKLY')
             or os.getenv('OPENAI_MODEL')
-            or 'gpt-4o-mini'
+            or 'gpt-5.4-nano'
         ).strip()
-    return (os.getenv('OPENAI_MODEL') or 'gpt-4o-mini').strip()
+    return (os.getenv('OPENAI_MODEL') or 'gpt-5.4-nano').strip()
 
 
 def parse_json_object(text: str) -> Optional[dict]:
@@ -173,7 +181,7 @@ def llm_json(system: str, user: str, prefer_weekly: bool = False) -> Optional[di
                 {'role': 'system', 'content': system},
                 {'role': 'user', 'content': user},
             ],
-            max_tokens=1800,
+            max_tokens=7000,
             response_format={'type': 'json_object'},
         )
         content = response.choices[0].message.content or ''
@@ -212,7 +220,7 @@ def post_to_common(post: dict) -> CommonDocument:
     return CommonDocument(
         id=str(post.get('id') or post.get('url') or ''),
         title=post.get('display_title') or post.get('title') or 'Untitled',
-        summary=clean_text(post.get('display_summary') or post.get('summary') or '', 260),
+        summary=clean_text(post.get('display_summary') or post.get('summary') or '', 340),
         url=post.get('url') or '',
         kind='post',
         source=post.get('source') or domain_name(post.get('url') or ''),
@@ -226,7 +234,7 @@ def report_to_common(report: dict) -> CommonDocument:
     return CommonDocument(
         id=str(report.get('id') or report.get('url_html') or ''),
         title=report.get('display_title') or report.get('title') or 'Untitled report',
-        summary=clean_text(report.get('briefing') or report.get('abstract') or '', 520),
+        summary=clean_text(report.get('briefing') or report.get('abstract') or '', 860),
         url=report.get('url_html') or '',
         kind='report',
         source='EURLex reports',
@@ -241,7 +249,7 @@ def digest_to_common(item: dict) -> CommonDocument:
     return CommonDocument(
         id=str(item.get('url') or item.get('title') or ''),
         title=item.get('title') or 'Untitled digest item',
-        summary=clean_text(item.get('summary_150w') or '', 260),
+        summary=clean_text(item.get('summary_150w') or '', 340),
         url=item.get('url') or '',
         kind=item.get('doc_type') or 'digest',
         source=item.get('source_id') or 'Digest',
@@ -256,7 +264,7 @@ def timeline_to_common(item: dict) -> CommonDocument:
     return CommonDocument(
         id=str(item.get('id') or item.get('url') or item.get('title') or ''),
         title=item.get('title') or 'Untitled timeline event',
-        summary=clean_text(item.get('summary') or item.get('summary_150w') or '', 260),
+        summary=clean_text(item.get('summary') or item.get('summary_150w') or '', 340),
         url=item.get('url') or '',
         kind=item.get('doc_type') or item.get('stage') or 'timeline',
         source=item.get('source_id') or 'Timeline',
@@ -285,7 +293,7 @@ def collect_categories(documents: Iterable[CommonDocument]) -> List[str]:
     return [name for name, _ in counter.most_common(8)]
 
 
-def strip_markdown_noise(text: str) -> str:
+def strip_markdown_noise(text: str, limit: int = 12000) -> str:
     cleaned = text or ''
     if not cleaned:
         return ''
@@ -295,10 +303,10 @@ def strip_markdown_noise(text: str) -> str:
     cleaned = cleaned.replace('_', ' ')
     cleaned = cleaned.replace('`', '')
     cleaned = re.sub(r'\[(.*?)\]\((.*?)\)', r'\1', cleaned)
-    return clean_text(cleaned, 1400)
+    return clean_text(cleaned, limit)
 
 
-def cleaned_doc_summary(doc: CommonDocument, limit: int = 320) -> str:
+def cleaned_doc_summary(doc: CommonDocument, limit: int = 520) -> str:
     base = strip_markdown_noise(doc.summary)
     lowered_base = re.sub(r'\s+', ' ', base).strip().lower()
     lowered_title = re.sub(r'\s+', ' ', doc.title).strip().lower()
@@ -341,13 +349,13 @@ def editorial_documents(documents: List[CommonDocument]) -> List[CommonDocument]
 def fallback_sections_from_documents(documents: List[CommonDocument], count: int = 3) -> List[dict]:
     sections = []
     for doc in editorial_documents(documents)[:count]:
-        body = cleaned_doc_summary(doc, 480)
+        body = cleaned_doc_summary(doc, 820)
         if not body:
             continue
         sections.append(
             {
                 'title': clean_text(doc.title, 120),
-                'body': clean_text(f"{body} Source: {doc.source}, {doc.date or 'undated'}.", 520),
+                'body': clean_text(f"{body} Source: {doc.source}, {doc.date or 'undated'}.", 980),
             }
         )
     return sections
@@ -382,7 +390,7 @@ def looks_placeholder_summary(text: str) -> bool:
     return any(cleaned.startswith(item) for item in placeholders)
 
 
-def narrative_summary_from_documents(documents: List[CommonDocument], limit: int = 720) -> str:
+def narrative_summary_from_documents(documents: List[CommonDocument], limit: int = 1800) -> str:
     parts = []
     for doc in editorial_documents(documents)[:4]:
         summary = cleaned_doc_summary(doc, 220)
@@ -392,14 +400,14 @@ def narrative_summary_from_documents(documents: List[CommonDocument], limit: int
 
 
 def build_intro(summary: str, documents: List[CommonDocument], edition_label: str) -> str:
-    cleaned_summary = strip_markdown_noise(summary)
+    cleaned_summary = strip_markdown_noise(summary, limit=4000)
     if cleaned_summary and not looks_placeholder_summary(cleaned_summary):
-        return clean_text(cleaned_summary, 280)
+        return clean_text(cleaned_summary, 420)
     if documents:
         lead = editorial_documents(documents)[0]
         return clean_text(
             f"{edition_label} is led by {lead.title}. {len(documents)} relevant documents are currently attached to this publication window.",
-            280,
+            420,
         )
     return f"{edition_label} is waiting for the next batch of published material."
 
@@ -409,11 +417,11 @@ def fallback_daily_payload(day_label: str, summary: str, key_points: List[str], 
     headline = (lead_documents[0].title if lead_documents else '') or f'{day_label} briefing'
     fallback_summary = strip_markdown_noise(summary)
     if looks_placeholder_summary(fallback_summary):
-        fallback_summary = narrative_summary_from_documents(documents, limit=760)
+        fallback_summary = narrative_summary_from_documents(documents, limit=2400)
     return {
         'headline': clean_text(headline, 160),
         'intro': build_intro(summary, documents, day_label),
-        'summary': clean_text(fallback_summary or build_intro(summary, documents, day_label), 1800),
+        'summary': clean_text(fallback_summary or build_intro(summary, documents, day_label), 6200),
         'key_points': compact_key_points(key_points, documents, 4),
         'sections': fallback_sections_from_documents(documents, count=3),
     }
@@ -435,11 +443,12 @@ def maybe_ai_daily(day_label: str, summary: str, key_points: List[str], document
         "Be concrete, sceptical, and explanatory. Do not invent facts, dates, figures, institutional positions, motives, or causal claims. "
         "Do not merely rewrite titles. Explain what changed, why it matters, who is affected, and how the items connect across categories. "
         "headline must be 8-18 words and should sound like a strong front-page standfirst, not a filename. "
-        "intro must be one paragraph of 110-160 words with a clear thesis for the day. "
-        "summary must be 4-6 short paragraphs totalling roughly 450-650 words. It should read like a sharp morning newspaper article for a policy reader. "
+        "intro must be one paragraph of 130-190 words with a clear thesis for the day. "
+        "summary must be 8-10 compact paragraphs totalling roughly 1300-1800 words. It should read like a sharp morning newspaper article for a policy reader, with enough room to synthesize the day properly rather than merely sketching it. "
         "key_points must be an array of exactly 4 short, concrete takeaways without numbering or markdown bullets. "
         "sections must be an array of exactly 3 objects with keys title and body. Each title should usually preserve the original source-document title. "
-        "Each body must be 2-4 sentences that summarize the document's substance and then state why it matters. "
+        "Each body must be 4-6 complete sentences that summarize the document's substance, explain why it matters, and connect it to the wider day. "
+        "Every field must end on a complete sentence. Do not trail off, do not end mid-word, and do not use ellipses unless the original source itself requires them. "
         "Avoid markdown headings, asterisks, raw URLs, or references to 'the supplied material', 'the corpus', or filenames.\n\n"
         f"Base summary: {fallback['summary']}\n"
         f"Known key points: {key_points[:4]}\n"
@@ -454,18 +463,18 @@ def maybe_ai_daily(day_label: str, summary: str, key_points: List[str], document
         return fallback
     return {
         'headline': clean_text(response.get('headline') or fallback['headline'], 160),
-        'intro': clean_text(response.get('intro') or fallback['intro'], 520),
-        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 2400),
+        'intro': clean_text(response.get('intro') or fallback['intro'], 900),
+        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary'], limit=16000), 9800),
         'key_points': compact_key_points(response.get('key_points') or fallback['key_points'], documents, 4),
         'sections': [
             {
                 'title': clean_text(str(item.get('title') or ''), 120),
-                'body': clean_text(strip_markdown_noise(str(item.get('body') or '')), 620),
+                'body': clean_text(strip_markdown_noise(str(item.get('body') or ''), limit=2600), 1500),
             }
             for item in (response.get('sections') or [])
             if isinstance(item, dict)
             and clean_text(str(item.get('title') or ''), 120)
-            and clean_text(strip_markdown_noise(str(item.get('body') or '')), 620)
+            and clean_text(strip_markdown_noise(str(item.get('body') or ''), limit=2600), 1500)
         ][:3] or fallback['sections'],
     }
 
@@ -475,11 +484,11 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
     lead_documents = editorial_documents(documents)
     cleaned_summary = strip_markdown_noise(summary)
     if looks_placeholder_summary(cleaned_summary):
-        cleaned_summary = narrative_summary_from_documents(documents, limit=1100)
+        cleaned_summary = narrative_summary_from_documents(documents, limit=3600)
     fallback = {
         'headline': clean_text((lead_documents[0].title if lead_documents else title), 180),
         'intro': build_intro(summary, documents, title),
-        'summary': clean_text(cleaned_summary or build_intro(summary, documents, title), 2200),
+        'summary': clean_text(cleaned_summary or build_intro(summary, documents, title), 14000),
         'key_points': compact_key_points(key_points, documents, 5),
         'sections': fallback_sections,
     }
@@ -495,11 +504,12 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
         f"Create a Sunday morning newspaper-style weekly edition titled '{title}'. Return JSON only with keys headline, intro, summary, key_points, sections. "
         "Use only the supplied material. Write in precise UK English with a polished, witty, critically minded weekend-newspaper tone. "
         "Do not invent facts or smooth over uncertainty. Find the red thread across the week: what kept resurfacing, what shifted, where institutions are converging, and where the pressure points remain. "
-        "headline must be 8-18 words. intro must be one paragraph of 120-170 words with a strong thesis. "
-        "summary must be 6-8 short paragraphs totalling roughly 700-1100 words. It should feel like a smart Sunday front-page analysis, not a list of items. "
+        "headline must be 8-18 words. intro must be one paragraph of 140-220 words with a strong thesis. "
+        "summary must be 10-14 compact paragraphs totalling roughly 2800-4200 words. It should feel like a smart Sunday front-page analysis, not a list of items, and it should add real synthesis rather than recap alone. "
         "key_points must be an array of exactly 5 concrete takeaways without numbering or markdown bullets. "
         "sections must be an array of exactly 4 objects with keys title and body. Each title should usually preserve the original source-document title. "
         "Each body must summarize the document substance and explain why it matters in the wider weekly pattern. "
+        "Every field must end on a complete sentence. Do not trail off, do not end mid-word, and do not use ellipses unless the original source itself requires them. "
         "Avoid markdown headings, bullets in prose, raw URLs, or references to filenames or the corpus. Preserve original document titles when useful so readers can look them up easily.\n\n"
         f"Base summary: {fallback['summary']}\n"
         f"Known key points: {key_points[:5]}\n"
@@ -517,13 +527,13 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
         if not isinstance(item, dict):
             continue
         title_text = clean_text(str(item.get('title') or ''), 140)
-        body_text = clean_text(strip_markdown_noise(str(item.get('body') or '')), 700)
+        body_text = clean_text(strip_markdown_noise(str(item.get('body') or ''), limit=2800), 1700)
         if title_text and body_text:
             sections.append({'title': title_text, 'body': body_text})
     return {
         'headline': clean_text(response.get('headline') or fallback['headline'], 180),
-        'intro': clean_text(response.get('intro') or fallback['intro'], 620),
-        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 3200),
+        'intro': clean_text(response.get('intro') or fallback['intro'], 1100),
+        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary'], limit=24000), 22000),
         'key_points': compact_key_points(response.get('key_points') or fallback['key_points'], documents, 5),
         'sections': sections[:4] or fallback['sections'],
     }

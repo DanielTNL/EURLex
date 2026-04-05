@@ -174,7 +174,7 @@ def build_weekly_script(reports: Sequence[Dict[str, str]], start: dt.date, end: 
         "The tone should be sharp, readable, lightly witty, and analytically confident.\n\n"
         f"Use this report corpus:\n{corpus}"
     )
-    script = call_llm(system, user, max_tokens=1800).strip()
+    script = call_llm(system, user, max_tokens=2600).strip()
     if script:
         return script
 

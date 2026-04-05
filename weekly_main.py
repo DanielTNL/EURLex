@@ -14,7 +14,7 @@ Outputs:
 
 Env (provided by workflow):
   OPENAI_API_KEY
-  OPENAI_WEEKLY_MODEL          # preferred model (e.g., gpt-4o-mini); falls back to OPENAI_MODEL
+  OPENAI_WEEKLY_MODEL          # preferred model (e.g., gpt-5.4-nano); falls back to OPENAI_MODEL
   OPENAI_MODEL
   OPENAI_TTS_MODEL             # e.g., gpt-4o-mini-tts or tts-1
   OPENAI_TTS_VOICE             # e.g., alloy
@@ -167,7 +167,7 @@ def pick_model() -> str:
         "o4-mini": "gpt-4o-mini",
         "o4-mini-high": "gpt-4o-mini",
     }
-    return aliases.get(m, m or "gpt-4o-mini")
+    return aliases.get(m, m or "gpt-5.4-nano")
 
 def call_llm(system: str, user: str, max_tokens: int, model_override: str | None = None) -> str:
     client = openai_client()

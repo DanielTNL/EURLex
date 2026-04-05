@@ -60,7 +60,7 @@ Set these in your deployment platform:
 - `DATA_BASE`
   - set to `https://danieltnl.github.io/EURLex/data`
 - `OPENAI_MODEL_CHAT`
-  - optional, default is `gpt-4o-mini`
+  - optional, default is `gpt-5.4-nano`
 - `MAX_UPLOAD_BYTES`
   - optional, default is `4000000`
   - recommended while using GitHub-backed public storage

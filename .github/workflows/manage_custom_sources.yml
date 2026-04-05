@@ -28,13 +28,16 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   manage:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
-      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-5.4-nano' }}
+      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-5.4-nano' }}
 
     steps:
       - uses: actions/checkout@v5

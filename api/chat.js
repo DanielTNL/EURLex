@@ -197,7 +197,7 @@ export default async function handler(req, res) {
   try {
     const body = req.body || {};
     const { messages = [], top_k = 8, filters = {}, remote = false, attachments = [] } = body;
-    const model = process.env.OPENAI_MODEL_CHAT || process.env.OPENAI_MODEL || "gpt-4o-mini";
+    const model = process.env.OPENAI_MODEL_CHAT || process.env.OPENAI_MODEL || "gpt-5.4-nano";
     const dataBase = process.env.DATA_BASE || DATA_BASE_DEFAULT;
 
     const [posts, reports, briefings, sundayEditions, publishedLibrary, registry] = await Promise.all([

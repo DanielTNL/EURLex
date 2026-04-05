@@ -23,7 +23,7 @@ except Exception:
     pytz = None
 
 # ---------- OpenAI ----------
-DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.4-nano")
 REPORT_ONLY = (os.getenv("REPORT_ONLY", "") or "").strip().lower() in {"1", "true", "yes", "on"}
 OPENAI_ENABLED = bool(os.getenv("OPENAI_API_KEY"))
 if OPENAI_ENABLED:

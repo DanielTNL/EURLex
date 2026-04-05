@@ -13,6 +13,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
   TZ: Europe/Amsterdam
 
 jobs:
@@ -20,17 +21,17 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
-      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-5.4-nano' }}
+      OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-5.4-nano' }}
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 

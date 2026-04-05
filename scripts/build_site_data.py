@@ -489,14 +489,14 @@ def guess_title_abstract_keyitems(text: str):
     if not key_items:
         key_items = fallback_key_items_from_report(text)
 
-    abstract_paragraphs = first_real_paragraphs(briefing_block, max_count=2)
+    abstract_paragraphs = first_real_paragraphs(briefing_block, max_count=3)
     if not abstract_paragraphs:
-        abstract_paragraphs = first_real_paragraphs(executive_block, max_count=2)
+        abstract_paragraphs = first_real_paragraphs(executive_block, max_count=3)
     if not abstract_paragraphs:
         after = "\n".join(lines[1:]).strip()
-        abstract_paragraphs = first_real_paragraphs(after, max_count=2)
+        abstract_paragraphs = first_real_paragraphs(after, max_count=3)
 
-    abstract = clean_report_fragment(" ".join(abstract_paragraphs), 700)
+    abstract = clean_report_fragment(" ".join(abstract_paragraphs), 1400)
     abstract = abstract.split(" ### ", 1)[0].strip()
     abstract = re.sub(r'^\s*Key themes:\s*', '', abstract, flags=re.I)
     return title, abstract, key_items

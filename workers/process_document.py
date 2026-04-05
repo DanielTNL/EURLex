@@ -194,7 +194,7 @@ def summarise_150w(title, text, url=None, pub_dt=None):
         )
         try:
             resp = OPENAI_CLIENT.chat.completions.create(
-                model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+                model=os.getenv("OPENAI_MODEL", "gpt-5.4-nano"),
                 messages=[
                     {"role": "system", "content": "You are a precise newsletter writer for EU policy and finance audiences."},
                     {"role": "user", "content": prompt + "\n\n" + content}
