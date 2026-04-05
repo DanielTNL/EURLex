@@ -1,11 +1,37 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-03-29T20:03:06.572535+00:00",
-    "end": "2026-04-05T20:03:06.572535+00:00",
+    "start": "2026-03-29T22:19:09.350364+00:00",
+    "end": "2026-04-05T22:19:09.350364+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-04-05T22:19:03.560056+00:00",
+      "title": "Auditing of companies' financial statements",
+      "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Auditing of companies' financial statements",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-05T22:18:54.914393+00:00",
+      "title": "Guidelines, Recommendations and Technical Standards",
+      "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Guidelines, Recommendations and Technical Standards",
+      "amounts": []
+    },
     {
       "date": "2026-04-05T20:02:54.246117+00:00",
       "title": "Auditing of companies' financial statements",

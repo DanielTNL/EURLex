@@ -1,9 +1,35 @@
 {
   "schema": "daily_digest.v1",
-  "generated_at": "2026-04-05T20:03:06.610439+00:00",
+  "generated_at": "2026-04-05T22:19:09.388521+00:00",
   "window_hours": 24,
-  "count": 2,
+  "count": 4,
   "items": [
+    {
+      "title": "Auditing of companies' financial statements",
+      "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+      "source_id": "esma_publications",
+      "published_date": "2026-04-05T22:19:03.560056+00:00",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": ""
+    },
+    {
+      "title": "Guidelines, Recommendations and Technical Standards",
+      "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+      "source_id": "esma_publications",
+      "published_date": "2026-04-05T22:18:54.914393+00:00",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": ""
+    },
     {
       "title": "Auditing of companies' financial statements",
       "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
