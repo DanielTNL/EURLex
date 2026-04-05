@@ -58,6 +58,7 @@ enum AppTab: String, CaseIterable, Identifiable {
 struct AppView: View {
     @StateObject private var model = AppModel()
     @State private var selectedTab: AppTab = .briefing
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         ZStack {
@@ -79,6 +80,10 @@ struct AppView: View {
             if model.shouldLoad {
                 await model.reload()
             }
+        }
+        .onChange(of: scenePhase) { _, newPhase in
+            guard newPhase == .active else { return }
+            Task { await model.reload() }
         }
     }
 

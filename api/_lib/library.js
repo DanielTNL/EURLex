@@ -3,7 +3,10 @@ import { deleteRepoPath, getRepoJSON, putRepoContent, putRepoJSON, repoConfig } 
 
 const LIBRARY_STATE_PATH = "state/library_documents.json";
 const LIBRARY_UPLOAD_PREFIX = "library/uploads";
-const MAX_UPLOAD_BYTES = Number(process.env.MAX_UPLOAD_BYTES || 4_000_000);
+// The API currently transports uploads as base64 inside JSON to a Vercel
+// serverless function. Keeping the raw file comfortably below 4 MB avoids
+// platform-level 413 responses once the base64 expansion is applied.
+const MAX_UPLOAD_BYTES = Number(process.env.MAX_UPLOAD_BYTES || 2_750_000);
 const MAX_TEXT_CHARS = Number(process.env.MAX_LIBRARY_TEXT_CHARS || 20_000);
 const ALLOWED_UPLOAD_KINDS = new Set(["pdf", "docx", "md", "txt"]);
 

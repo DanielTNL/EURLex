@@ -2,7 +2,7 @@ name: Sunday Edition Refresh
 
 on:
   schedule:
-    - cron: "0 7 * * 0"
+    - cron: "0 3 * * 0" # 05:00 Europe/Amsterdam during CEST, 04:00 during CET
   workflow_dispatch: {}
 
 permissions:

@@ -2,7 +2,7 @@ name: Pipeline v2 (daily)
 
 on:
   schedule:
-    - cron: "0 6 * * *" # UTC
+    - cron: "0 3 * * *" # 05:00 Europe/Amsterdam during CEST, 04:00 during CET
   workflow_dispatch: {}
 
 permissions:
@@ -24,9 +24,9 @@ jobs:
       OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 

@@ -67,6 +67,7 @@ enum EURLexBackendError: LocalizedError {
     case invalidURL(String)
     case badStatusCode(Int)
     case missingAnswer
+    case uploadTooLarge(Int)
 
     var errorDescription: String? {
         switch self {
@@ -78,11 +79,16 @@ enum EURLexBackendError: LocalizedError {
             return "The backend returned HTTP \(code)."
         case .missingAnswer:
             return "The backend responded, but did not include an answer."
+        case .uploadTooLarge(let bytes):
+            let mb = Double(bytes) / 1_000_000
+            return String(format: "This file is too large for the current GitHub-backed upload route. Please keep uploads under %.1f MB for now.", mb)
         }
     }
 }
 
 struct EURLexBackendClient {
+    static let safeUploadLimitBytes = 2_750_000
+
     let baseURL: URL?
     let session: URLSession
 
@@ -189,6 +195,9 @@ struct EURLexBackendClient {
 
     func uploadDocument(fileURL: URL, title: String, tags: [String]) async throws -> BackendDocumentsResponse {
         let data = try Data(contentsOf: fileURL)
+        guard data.count <= Self.safeUploadLimitBytes else {
+            throw EURLexBackendError.uploadTooLarge(Self.safeUploadLimitBytes)
+        }
         let payload: [String: Any] = [
             "title": title,
             "filename": fileURL.lastPathComponent,
