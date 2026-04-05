@@ -111,20 +111,49 @@ jobs:
       - name: Commit outputs back to repo (optional)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+          OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A outputs/docs outputs/timelines reports state/latest_discovery.json docs/data docs/digests docs/site docs/*.json docs/.nojekyll || true
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
+
+          stage_and_commit() {
+            git add -A outputs/docs outputs/timelines reports state/latest_discovery.json docs/data docs/digests docs/site docs/*.json docs/.nojekyll || true
+            if git diff --cached --quiet; then
+              echo "No changes to commit"
+              return 1
+            fi
+            git commit -m "pipeline v2 data $(date -u +'%F %T') [manual]"
+            return 0
+          }
+
+          rebuild_manual_outputs() {
+            python workers/weekly_discover.py --window 7d --sources sources_v2.yaml --config config_v2.yaml
+            python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml
+            python workers/build_timeline.py --window 7d --config config_v2.yaml
+            python workers/build_daily_digest.py --hours 24
+            REPORT_ONLY=1 python main.py
+            python build_site_data.py
+            python build_app_backend.py
+            python scripts/validate_backend_outputs.py
+          }
+
+          if ! stage_and_commit; then
             exit 0
           fi
-          git commit -m "pipeline v2 data $(date -u +'%F %T') [manual]"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
-            git rebase --abort || true
-            echo "Retrying push ($attempt/3) after remote changed..."
-            sleep 3
-          done
-          echo "Push failed after 3 attempts" >&2
-          exit 1
+
+          if git push; then
+            exit 0
+          fi
+
+          echo "Remote changed; rebuilding manual pipeline outputs on top of latest main..."
+          git fetch origin main
+          git reset --hard origin/main
+          rebuild_manual_outputs
+
+          if ! stage_and_commit; then
+            exit 0
+          fi
+
+          git push

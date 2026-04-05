@@ -177,23 +177,90 @@ jobs:
       - name: Commit results back to main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+          OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A outputs/docs outputs/timelines reports reports/daily docs/digests docs/data docs/site docs/*.json docs/.nojekyll state/seen.json state/latest_discovery.json || true
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
+
+          stage_and_commit() {
+            git add -A outputs/docs outputs/timelines reports reports/daily docs/digests docs/data docs/site docs/*.json docs/.nojekyll state/seen.json state/latest_discovery.json || true
+            if git diff --cached --quiet; then
+              echo "No changes to commit"
+              return 1
+            fi
+            git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]"
+            return 0
+          }
+
+          rebuild_daily_outputs() {
+            set +e
+            if [ -f sources_v2.yaml ]; then
+              python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml
+              rc=$?
+            else
+              python workers/weekly_discover.py --window 1d --config config_v2.yaml
+              rc=$?
+            fi
+            set -e
+
+            if [ "$rc" -ne 0 ]; then
+              python - <<'PY'
+import os, json
+from datetime import datetime, timezone
+os.makedirs("state", exist_ok=True)
+payload = {
+  "generated_at": datetime.now(timezone.utc).isoformat(),
+  "window": "1d",
+  "items": [],
+  "documents": [],
+  "sources": []
+}
+with open("state/latest_discovery.json", "w", encoding="utf-8") as f:
+  json.dump(payload, f, ensure_ascii=False)
+print("Wrote state/latest_discovery.json (empty fallback)")
+PY
+            fi
+
+            python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit 50
+            python workers/build_timeline.py --window 7d --config config_v2.yaml
+            python workers/build_daily_digest.py --hours 24
+            REPORT_ONLY=1 python main.py
+            if [ -f build_site_data.py ]; then
+              python build_site_data.py || true
+            else
+              python workers/build_site_data_v2.py
+            fi
+            if [ -f build_app_backend.py ]; then
+              python build_app_backend.py
+            else
+              python scripts/build_app_backend.py
+            fi
+            python scripts/validate_backend_outputs.py
+            python workers/publish_site_bridge.py
+            mkdir -p docs
+            touch docs/.nojekyll
+          }
+
+          if ! stage_and_commit; then
             exit 0
           fi
-          git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
-            git rebase --abort || true
-            echo "Retrying push ($attempt/3) after remote changed..."
-            sleep 3
-          done
-          echo "Push failed after 3 attempts" >&2
-          exit 1
+
+          if git push; then
+            exit 0
+          fi
+
+          echo "Remote changed; rebuilding daily outputs on top of latest main..."
+          git fetch origin main
+          git reset --hard origin/main
+          rebuild_daily_outputs
+
+          if ! stage_and_commit; then
+            exit 0
+          fi
+
+          git push
 
       # 10) Warm GitHub Pages (Pages has no /api/revalidate)
       - name: Warm GitHub Pages
