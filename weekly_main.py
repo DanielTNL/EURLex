@@ -191,12 +191,21 @@ def strip_references_for_audio(text: str) -> str:
 def split_into_token_chunks(text: str, max_tokens: int = 1500) -> List[str]:
     parts, buf, cur = [], [], 0
     for para in text.split("\n\n"):
+        para = para.strip()
+        if not para:
+            continue
         t = count_tokens(para)
         if cur + t > max_tokens and buf:
-            parts.append("\n\n".join(buf).strip()); buf, cur = [para], t
+            candidate = "\n\n".join(buf).strip()
+            if candidate:
+                parts.append(candidate)
+            buf, cur = [para], t
         else:
             buf.append(para); cur += t
-    if buf: parts.append("\n\n".join(buf).strip())
+    if buf:
+        candidate = "\n\n".join(buf).strip()
+        if candidate:
+            parts.append(candidate)
     return parts
 
 def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str, tts_voice: str) -> pathlib.Path:
@@ -207,6 +216,8 @@ def synthesize_tts_chunked(full_text: str, out_mp3: pathlib.Path, tts_model: str
     client = openai_client()
     cleaned = strip_references_for_audio(full_text)
     chunks = split_into_token_chunks(cleaned, max_tokens=1500)
+    if not chunks:
+        raise RuntimeError("No non-empty audio chunks were generated for TTS.")
 
     tmp_dir = ROOT / "tmp_audio"; tmp_dir.mkdir(exist_ok=True)
     part_files: List[pathlib.Path] = []
