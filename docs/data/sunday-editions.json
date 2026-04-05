@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T20:23:35.292830+00:00",
+  "generated_at": "2026-04-05T20:38:34.220407+00:00",
   "latest_end_date": "2026-04-05",
   "items": [
     {
@@ -51,10 +51,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "regulation",
             "EBA",
-            "CMU & Financial Markets",
-            "EU"
+            "EU",
+            "regulation",
+            "CMU & Financial Markets"
           ]
         },
         {
@@ -70,10 +70,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "CMU & Financial Markets",
+            "EU",
             "ECB",
-            "AI & Digital",
-            "EU"
+            "CMU & Financial Markets",
+            "AI & Digital"
           ]
         },
         {
@@ -89,10 +89,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "CMU & Financial Markets",
+            "EU",
             "ECB",
-            "AI & Digital",
-            "EU"
+            "CMU & Financial Markets",
+            "AI & Digital"
           ]
         },
         {
@@ -107,9 +107,9 @@
             "AI & Digital"
           ],
           "tags": [
-            "Parliament",
+            "EU",
             "AI & Digital",
-            "EU"
+            "Parliament"
           ]
         },
         {
@@ -124,10 +124,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "regulation",
             "EBA",
-            "CMU & Financial Markets",
-            "EU"
+            "EU",
+            "regulation",
+            "CMU & Financial Markets"
           ]
         }
       ],
@@ -145,10 +145,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "CMU & Financial Markets",
+            "EU",
             "ECB",
-            "AI & Digital",
-            "EU"
+            "CMU & Financial Markets",
+            "AI & Digital"
           ]
         },
         {
@@ -164,10 +164,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "CMU & Financial Markets",
+            "EU",
             "ECB",
-            "AI & Digital",
-            "EU"
+            "CMU & Financial Markets",
+            "AI & Digital"
           ]
         },
         {
@@ -182,9 +182,9 @@
             "AI & Digital"
           ],
           "tags": [
-            "Parliament",
+            "EU",
             "AI & Digital",
-            "EU"
+            "Parliament"
           ]
         },
         {
@@ -199,10 +199,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "regulation",
             "EBA",
-            "CMU & Financial Markets",
-            "EU"
+            "EU",
+            "regulation",
+            "CMU & Financial Markets"
           ]
         },
         {
@@ -218,9 +218,9 @@
           ],
           "tags": [
             "regulation",
-            "CMU & Financial Markets",
+            "EU",
             "EIOPA",
-            "EU"
+            "CMU & Financial Markets"
           ]
         },
         {
@@ -235,9 +235,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "CMU & Financial Markets",
+            "EU",
             "ECB",
-            "EU"
+            "CMU & Financial Markets"
           ]
         }
       ],
@@ -292,8 +292,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -308,8 +308,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -324,8 +324,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -340,8 +340,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -356,8 +356,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         }
       ],
@@ -374,8 +374,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -390,8 +390,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -406,8 +406,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -422,8 +422,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -438,8 +438,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -454,8 +454,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         }
       ],
@@ -510,8 +510,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -526,8 +526,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -542,8 +542,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -558,8 +558,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -574,8 +574,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         }
       ],
@@ -592,8 +592,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -608,8 +608,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -624,8 +624,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -640,8 +640,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -656,8 +656,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -672,8 +672,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         }
       ],
@@ -729,8 +729,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -745,8 +745,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -761,8 +761,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -777,9 +777,9 @@
             "Other"
           ],
           "tags": [
-            "EUR-Lex",
             "law",
             "EU",
+            "EUR-Lex",
             "Other"
           ]
         },
@@ -795,8 +795,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "CMU & Financial Markets",
-            "external"
+            "external",
+            "CMU & Financial Markets"
           ]
         }
       ],
@@ -813,8 +813,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -829,8 +829,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -845,9 +845,9 @@
             "Other"
           ],
           "tags": [
-            "EUR-Lex",
             "law",
             "EU",
+            "EUR-Lex",
             "Other"
           ]
         },
@@ -863,8 +863,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "CMU & Financial Markets",
-            "external"
+            "external",
+            "CMU & Financial Markets"
           ]
         },
         {
@@ -879,8 +879,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         },
         {
@@ -895,8 +895,8 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "external"
+            "external",
+            "Other"
           ]
         }
       ],
