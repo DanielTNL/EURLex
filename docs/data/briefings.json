@@ -1,38 +1,85 @@
 {
-  "generated_at": "2026-04-05T19:44:01.821800+00:00",
+  "generated_at": "2026-04-05T20:23:33.206639+00:00",
   "latest_date": "2026-04-05",
   "items": [
     {
       "date": "2026-04-05",
       "title": "Sunday 5 April 2026",
-      "headline": "Spring 2026: EU Financial System Faces Geopolitical Strains and AI Regulation Challenges",
-      "intro": "As Europe grapples with a complex web of geopolitical tensions and the rapid evolution of artificial intelligence, the latest update from the European Supervisory Authorities (ESAs) underscores the precarious state of the EU financial system. The spring 2026 Joint Committee report reveals a landscape fraught with risks, particularly from private finance and the adoption of AI technologies. With the impending activation of the AI Act and its implications for businesses, the stakes are high for firms navigating thes…",
-      "summary": "The European Supervisory Authorities (ESAs) have released their spring 2026 risk update, highlighting significant vulnerabilities in the EU financial system. Geopolitical pressures, particularly stemming from external conflicts, have intensified the risks associated with private finance. The report suggests that these external factors could destabilise the financial landscape, necessitating a closer look at regulatory frameworks and risk management strategies. In tandem with these developments, the European Parliament has announced a delayed application of the Artificial Intelligence Act, which introduces a ban on 'nudifier' applications deemed high-risk. This regulatory pause offers a moment of respite for companies, particularly small and mid-cap enterprises, which may struggle to comply with stringent AI obligations. The flexibility granted under the Act could encourage innovation while ensuring safety, albeit with the caveat that sector-specific laws may still impose varying requirements. Additionally, the ECB's Economic Bulletin sheds light on the adoption of AI technologies among euro area firms, revealing a cautious yet optimistic outlook for AI investment through 2026. This aligns with the broader trend of digital transformation in the financial sector, where firms are increasingly leveraging AI to enhance efficiency and competitiveness. However, the report also warns…",
+      "headline": "New Leadership and Regulatory Changes Signal a Shift in EU Financial Stability Focus",
+      "intro": "As François-Louis Michaud prepares to take the helm of the European Banking Authority, the EU's financial landscape braces for a recalibration of regulatory priorities. This shift, coupled with updated guidelines on insurance and the ongoing impact of climate change on economic stability, underscores a critical juncture for both banking and insurance sectors. The implications of these developments extend beyond mere compliance; they herald a new era of oversight that could redefine the EU's approach to financial r…",
+      "summary": "The appointment of François-Louis Michaud as Chair of the European Banking Authority (EBA) effective April 16, 2026, marks a significant leadership change that is poised to influence EU banking regulation. Michaud's tenure is expected to recalibrate the EBA's focus towards enhancing financial stability and consumer protection, potentially altering the regulatory landscape that governs banks across the EU. This transition comes at a time when the financial system is grappling with the dual pressures of geopolitical tensions and climate-related risks, necessitating a robust response from regulators. In parallel, the European Securities and Markets Authority (ESMA) has released updated guidelines aimed at improving supervisory reporting and public disclosure requirements under Solvency II. These changes are designed to enhance transparency and consistency within the insurance sector, which is increasingly under scrutiny as it navigates the complexities of climate change impacts on financial stability. The emphasis on clearer reporting standards is not merely bureaucratic; it reflects a growing recognition of the need for accountability in an era where financial institutions are expected to be stewards of both economic and environmental health. Moreover, a recent risk update from the European Supervisory Authorities highlights the vulnerabilities within the EU financial system, ex…",
       "key_points": [
-        "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
-        "Artificial Intelligence Act: delayed application, ban on nudifier apps",
-        "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
-        "AI adoption among euro area firms shows cautious optimism amid regulatory changes"
+        "François-Louis Michaud's appointment as Chair of the European Banking Authority (EBA) marks a significant leadership change that will influ…",
+        "The final report outlines updated supervisory reporting and public disclosure requirements under Solvency II, aiming to enhance transparenc…",
+        "Severe weather shocks negatively impact the US economy primarily during periods of financial instability, leading to significant declines i…",
+        "Severe weather shocks negatively impact real and financial variables in the US economy, particularly during periods of financial instabilit…"
       ],
       "sections": [
         {
+          "title": "Auditing of companies' financial statements",
+          "body": "The European Commission has reaffirmed its commitment to statutory audits as a cornerstone for financial integrity. This focus aims to bolster confidence in the financial markets, particularly as the EU navigates complex economic challenges."
+        },
+        {
+          "title": "Guidelines, Recommendations and Technical Standards",
+          "body": "ESMA's latest guidance seeks to refine the regulatory landscape by developing clear guidelines for financial reporting and disclosures. This initiative is crucial for enhancing market transparency and ensuring that financial institutions are held accountable."
+        },
+        {
           "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
-          "body": "The ESAs' spring 2026 update reveals a concerning landscape for the EU financial system, marked by geopolitical tensions and escalating risks from private finance. These factors threaten to destabilise the financial ecosystem, prompting a call for enhanced regulatory vigilance and risk management strategies."
-        },
-        {
-          "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
-          "body": "The European Parliament has announced a delay in the application of the AI Act, which includes a ban on high-risk 'nudifier' applications. This decision provides temporary relief for companies, particularly smaller enterprises, allowing them to navigate compliance challenges while fostering innovation in AI technologies."
-        },
-        {
-          "title": "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
-          "body": "The ECB's Economic Bulletin highlights the cautious optimism surrounding AI adoption among euro area firms, with plans for increased investment through 2026. However, the potential risks associated with unregulated AI deployment necessitate careful consideration as firms adapt to the evolving regulatory landscape."
+          "body": "The spring 2026 Joint Committee update from the ESAs underscores the pressing vulnerabilities in the EU financial system, particularly in light of geopolitical tensions. This highlights the need for a coordinated regulatory response to safeguard financial stability."
         }
       ],
       "categories": [
         "CMU & Financial Markets",
-        "AI & Digital"
+        "AI & Digital",
+        "Other/NA",
+        "daily"
       ],
       "important_documents": [
+        {
+          "id": "rep-2026-04-05-53ff83dab91f99e1",
+          "title": "EUR-Lex Daily Digest — 2026-04-05",
+          "summary": "Today's European policy briefing underscores a pivotal moment in the regulatory landscape, particularly within the banking and insurance sectors, while also addressing the broader implications of climate change on financial stability. The appointment of François-Louis Michaud as Chair of the European Banking Authority (EBA), effective April 16, 2026, signals a forthcoming shift in EU banking regulation. Michaud's leadership is anticipated to recalibrate the EBA's focus on financial stability and consumer protectio…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-05.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-05",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+          "title": "Auditing of companies' financial statements",
+          "summary": "**EU Innovation, Defence, and Capital Markets Update: Auditing for Confidence** In a move that underscores the EU's commitment to enhancing market integrity, the European Commission has reaffirmed its focus on statutory audits as a cornerstone for financial t…",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+          "kind": "Report",
+          "source": "esma_publications",
+          "date": "2026-04-05",
+          "categories": [
+            "Other/NA"
+          ],
+          "tags": [
+            "Other/NA"
+          ]
+        },
+        {
+          "id": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+          "title": "Guidelines, Recommendations and Technical Standards",
+          "summary": "**EU Innovation, Defence, and Capital Markets Update: Navigating the Future** As the European Union continues to refine its regulatory landscape, the European Securities and Markets Authority (ESMA) has been at the forefront of developing guidelines, recommen…",
+          "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+          "kind": "Guidance/Notice",
+          "source": "esma_publications",
+          "date": "2026-04-05",
+          "categories": [
+            "Other/NA"
+          ],
+          "tags": [
+            "Other/NA"
+          ]
+        },
         {
           "id": "6d74a437c2a1b5a6",
           "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
@@ -46,8 +93,8 @@
           ],
           "tags": [
             "regulation",
-            "CMU & Financial Markets",
             "EBA",
+            "CMU & Financial Markets",
             "EU"
           ]
         },
@@ -63,64 +110,8 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
             "Parliament",
-            "EU"
-          ]
-        },
-        {
-          "id": "cf12fe4d6fb694cc",
-          "title": "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
-          "summary": "This box presents new information about the adoption of artificial intelligence (AI) technologies by euro area firms, and about their plans for AI investment up to the end of 2026. The Survey on the Access to Finance of Enterprises (SAFE) for the fourth quart…",
-          "url": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202602_06~c9f485c478.en.html",
-          "kind": "post",
-          "source": "European Central Bank",
-          "date": "2026-04-05",
-          "categories": [
-            "CMU & Financial Markets",
-            "AI & Digital"
-          ],
-          "tags": [
             "AI & Digital",
-            "CMU & Financial Markets",
-            "ECB",
-            "EU"
-          ]
-        },
-        {
-          "id": "a2f359eef6b81eaf",
-          "title": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
-          "summary": "- SPEECH AI and the euro area economy Keynote speech by Philip R. Lane, Member of the Executive Board of the ECB, at ECB-SAFE-RCEA International Conference on the Climate-Macro-Finance Interface (3CMFI) Frankfurt, 23 March 2026 Introduction Artificial intelli…",
-          "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
-          "kind": "post",
-          "source": "European Central Bank",
-          "date": "2026-04-05",
-          "categories": [
-            "CMU & Financial Markets",
-            "AI & Digital"
-          ],
-          "tags": [
-            "AI & Digital",
-            "CMU & Financial Markets",
-            "ECB",
-            "EU"
-          ]
-        },
-        {
-          "id": "a2da4cda38e00c7f",
-          "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds | European Banking Authority",
-          "summary": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the…",
-          "url": "https://www.eba.europa.eu/publications-and-media/press-releases/suptech-can-make-anti-money-laundering-and-countering-financing-terrorism-supervision-more-effective",
-          "kind": "post",
-          "source": "European Banking Authority",
-          "date": "2026-04-05",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "regulation",
-            "CMU & Financial Markets",
-            "EBA",
             "EU"
           ]
         }
@@ -138,8 +129,8 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
             "Parliament",
+            "AI & Digital",
             "EU"
           ]
         },
@@ -156,9 +147,9 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
             "CMU & Financial Markets",
             "ECB",
+            "AI & Digital",
             "EU"
           ]
         },
@@ -175,9 +166,9 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
             "CMU & Financial Markets",
             "ECB",
+            "AI & Digital",
             "EU"
           ]
         },
@@ -194,8 +185,8 @@
           ],
           "tags": [
             "regulation",
-            "CMU & Financial Markets",
             "EBA",
+            "CMU & Financial Markets",
             "EU"
           ]
         },
@@ -211,9 +202,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EUR-Lex",
             "law",
-            "CMU & Financial Markets",
             "EU"
           ]
         },
@@ -236,76 +227,49 @@
           ]
         }
       ],
-      "report": null,
+      "report": {
+        "id": "rep-2026-04-05-53ff83dab91f99e1",
+        "title": "EUR-Lex Daily Digest — 2026-04-05",
+        "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-05.md"
+      },
       "signal_counts": {
-        "posts": 1491,
-        "reports": 0,
-        "digest_items": 0,
+        "posts": 1507,
+        "reports": 1,
+        "digest_items": 2,
         "timeline_events": 0
       }
     },
     {
       "date": "2026-04-04",
       "title": "Saturday 4 April 2026",
-      "headline": "European Supervisory Authorities Tighten Audit Standards Amid Rising Disclosure Demands",
-      "intro": "As the landscape of financial transparency evolves, the European Supervisory Authorities (ESAs) are ramping up their efforts to enhance statutory audits and improve disclosure practices. With the increasing scrutiny on principal adverse impacts (PAIs) in sustainable finance, the ESAs are not only reinforcing the importance of rigorous auditing but also pushing for greater accountability from financial market participants. This shift signals a critical juncture for stakeholders, as the interplay between compliance…",
-      "summary": "The role of statutory audits has gained renewed significance as the ESAs emphasise their necessity in certifying the financial statements of companies and public entities. These audits serve as a vital assurance mechanism for stakeholders, including investors and shareholders, who rely on accurate financial reporting to make informed decisions. The ongoing evolution of auditing standards reflects a broader commitment to financial integrity and accountability in the European market. In tandem with the focus on auditing, the ESAs have released new guidelines, recommendations, and technical standards aimed at enhancing the quality and consistency of financial disclosures. These documents are essential for ensuring that financial entities adhere to best practices, particularly in the context of sustainable finance. The emphasis on clear and comprehensive guidelines underscores the ESAs' proactive approach to fostering transparency and trust in the financial system. Moreover, the latest report from the Joint Committee of the ESAs highlights a notable increase in efforts by financial market participants to disclose their principal adverse impacts. This shift towards greater transparency is particularly pertinent in the context of the Sustainable Finance Disclosure Regulation (SFDR), which mandates that firms disclose how their activities affect sustainability outcomes. As stakeholde…",
+      "headline": "European Supervisory Authorities Step Up on Transparency and Consumer Protection",
+      "intro": "On 4 April 2026, the Joint Committee of the European Supervisory Authorities (ESAs) unveiled significant advancements in voluntary disclosures regarding principal adverse impacts (PAIs) and consumer protection against online fraud. The latest report indicates a marked improvement in transparency from financial market participants, while new guidelines aim to empower consumers against the rising tide of digital scams. This dual focus not only enhances accountability within the financial sector but also addresses th…",
+      "summary": "The ESAs have released their fourth annual report on the voluntary disclosure of principal adverse impacts under the Sustainable Finance Disclosure Regulation (SFDR). This year's findings reveal a notable increase in the efforts made by financial market participants to disclose PAIs, suggesting a growing recognition of the importance of transparency in sustainable finance. Such disclosures are crucial for investors seeking to understand the environmental and social impacts of their investments, thereby fostering a more responsible financial ecosystem. In tandem with the report, the ESAs have published two factsheets aimed at equipping consumers with the tools to detect and prevent online fraud, particularly in the realms of cryptocurrency and AI-assisted scams. As digital fraud becomes more sophisticated, these guidelines serve as a vital resource for consumers, helping them navigate the treacherous waters of online financial transactions. The emphasis on consumer education reflects a broader commitment to safeguarding public trust in financial markets. Additionally, the ESAs have outlined their 2026 Work Programme, which focuses on enhancing collaboration among the authorities to strengthen the financial system's resilience. This proactive approach is essential in addressing emerging risks and ensuring that the financial sector adapts to the evolving landscape of digital fina…",
       "key_points": [
-        "Auditing of companies' financial statements is crucial for stakeholder confidence.",
-        "New guidelines and standards aim to enhance financial disclosure practices.",
-        "Increased efforts from financial market participants on principal adverse impacts are noted.",
-        "Consumer protection against online fraud is a growing focus for the ESAs."
+        "The ESAs note greater effort from financial market participants in their disclosure of principal adverse impacts.",
+        "New guidelines aim to help consumers detect and prevent online frauds and scams.",
+        "The 2026 Work Programme focuses on strengthening collaboration among the ESAs.",
+        "Increased transparency may lead to heightened scrutiny from regulators and investors."
       ],
       "sections": [
         {
-          "title": "Auditing of companies' financial statements",
-          "body": "Statutory audits are now more critical than ever, serving as a legal requirement for reviewing financial records of companies and public entities. This certification process provides stakeholders with essential insights into the financial health of organisations, thereby fostering trust and accountability in the market."
+          "title": "Greater Transparency in Principal Adverse Impact Disclosures",
+          "body": "The ESAs' fourth annual report reveals a significant uptick in the voluntary disclosure of principal adverse impacts by financial market participants. This shift not only enhances accountability but also aligns with the growing demand for sustainable finance practices, allowing investors to make more informed decisions."
         },
         {
-          "title": "Guidelines, Recommendations and Technical Standards",
-          "body": "The ESAs have released comprehensive guidelines and technical standards to enhance the quality of financial disclosures. These documents are pivotal in ensuring that financial entities maintain high standards of transparency, which is increasingly demanded by investors and regulators alike."
+          "title": "Consumer Protection Against Online Fraud",
+          "body": "In response to the rising threat of online scams, the ESAs have published two factsheets designed to educate consumers on identifying and preventing fraud. This initiative is critical as digital fraud becomes increasingly sophisticated, ensuring that consumers are better equipped to protect their financial interests."
         },
         {
-          "title": "The ESAs note greater effort from financial market participants in their disclosure of principal adverse impacts",
-          "body": "The latest report from the ESAs indicates a significant uptick in the voluntary disclosure of principal adverse impacts by financial market participants. This trend reflects a growing recognition of the importance of sustainability in finance and may lead to more responsible corporate behaviour in the long run."
+          "title": "2026 Work Programme: A Strategic Focus",
+          "body": "The ESAs' 2026 Work Programme outlines key areas for collaboration aimed at strengthening the financial system's resilience. By addressing emerging risks and fostering cooperation among regulatory bodies, the programme seeks to enhance the overall stability and integrity of the European financial landscape."
         }
       ],
       "categories": [
         "CMU & Financial Markets",
-        "AI & Digital",
-        "Other/NA"
+        "AI & Digital"
       ],
       "important_documents": [
-        {
-          "id": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
-          "title": "Auditing of companies' financial statements",
-          "summary": "A statutory audit is a legally required review of financial records. The role of a statutory audit is to certify the financial statements of companies or public entities. An audit provides stakeholders such as investors and shareholders with an opinion on the…",
-          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
-          "kind": "Report",
-          "source": "esma_publications",
-          "date": "2026-04-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
-          "title": "Guidelines, Recommendations and Technical Standards",
-          "summary": "Breadcrumb The elaboration and issuance of Technical Standards, Guidelines and Recommendations are key parts of ESMA's work. All documents are available in the main library , and on this page we provide an overview with the links to the specific documents. In…",
-          "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
-          "kind": "Guidance/Notice",
-          "source": "esma_publications",
-          "date": "2026-04-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
         {
           "id": "f1c02974c76bc5b3",
           "title": "The ESAs note greater effort from financial market participants in their disclosure of principal adverse impacts",
@@ -347,6 +311,46 @@
           "title": "ESAs publish key tips to help consumers detect, prevent, and act on online frauds and scams",
           "summary": "The three European Supervisory Authorities (EBA, EIOPA and ESMA – ESAs) today published two factsheets designed to help consumers protect themselves from crypto and other online frauds and scams and explain how fraudsters increasingly use artificial intellige…",
           "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-publish-key-tips-help-consumers-detect-prevent-and-act-online-frauds-and-scams",
+          "kind": "post",
+          "source": "European Banking Authority",
+          "date": "2026-04-04",
+          "categories": [
+            "CMU & Financial Markets",
+            "AI & Digital"
+          ],
+          "tags": [
+            "EU",
+            "AI & Digital",
+            "CMU & Financial Markets",
+            "EBA",
+            "regulation"
+          ]
+        },
+        {
+          "id": "0d0b48af57259d39",
+          "title": "https://www.eiopa.europa.eu/publications/esas-factsheets-crypto-scams-and-ai-assisted-online-financial-scams_en",
+          "summary": "Details - Publication date - 15 December 2025 Description The three European Supervisory Authorities (EBA, EIOPA and ESMA – ESAs) today published two factsheets designed to help consumers protect themselves from crypto and other online frauds and scams and ex…",
+          "url": "https://www.eiopa.europa.eu/publications/esas-factsheets-crypto-scams-and-ai-assisted-online-financial-scams_en",
+          "kind": "post",
+          "source": "European Insurance and Occupational Pensions Authority",
+          "date": "2026-04-04",
+          "categories": [
+            "CMU & Financial Markets",
+            "AI & Digital"
+          ],
+          "tags": [
+            "EU",
+            "EIOPA",
+            "AI & Digital",
+            "CMU & Financial Markets",
+            "regulation"
+          ]
+        },
+        {
+          "id": "139cf137c7c818f0",
+          "title": "ESAs’ Joint Committee publishes Work Programme for 2026",
+          "summary": "The Joint Committee of the European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today presented its 2026 Work Programme, outlining key areas of collaboration for the coming year. The upcoming Programme aims to strengthen the financial system’s di…",
+          "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-joint-committee-publishes-work-programme-2026",
           "kind": "post",
           "source": "European Banking Authority",
           "date": "2026-04-04",
@@ -487,34 +491,34 @@
       "signal_counts": {
         "posts": 14,
         "reports": 0,
-        "digest_items": 2,
-        "timeline_events": 2
+        "digest_items": 0,
+        "timeline_events": 0
       }
     },
     {
       "date": "2026-04-03",
       "title": "Friday 3 April 2026",
-      "headline": "Long-Term Yields Surge: Implications for Eurozone Fiscal Strategies",
-      "intro": "As the eurozone grapples with rising long-term yields, the financial landscape is shifting dramatically, impacting fiscal policies and investment strategies across member states. The steepening yield curve, particularly between 30-year and 10-year bonds, signals a potential recalibration of economic priorities. This briefing explores the ramifications of these changes, alongside recent budgetary updates from key European agencies, highlighting the interconnectedness of fiscal planning and market dynamics in a rapi…",
-      "summary": "The past year has witnessed a notable rise in long-term yields, particularly affecting the eurozone's financial architecture. This steepening of the yield curve between 30-year and 10-year bonds suggests a growing divergence in investor sentiment regarding future economic stability and inflation expectations. Such shifts are not merely academic; they have real-world implications for government borrowing costs and investment strategies, potentially constraining fiscal flexibility in the face of rising debt servicing costs. In tandem with these market developments, the European Environment Agency (EEA) has released an amending budget for the 2025 financial year, reflecting adjustments necessary to meet evolving environmental challenges. This underscores the necessity for agile fiscal responses in light of changing economic conditions, particularly as member states navigate the dual pressures of climate commitments and financial sustainability. Additionally, the European Research Executive Agency (REA) has outlined its budget for 2026, signalling a continued commitment to innovation and research funding amidst tightening financial conditions. This is crucial as Europe seeks to maintain its competitive edge in a global landscape increasingly defined by technological advancement and sustainability. Lastly, the Fusion for Energy Joint Undertaking (F4E) has also amended its budget fo…",
+      "headline": "Long-Term Yields Surge: Implications for European Fiscal Strategies",
+      "intro": "As long-term yields continue to rise, the financial landscape in Europe is shifting dramatically. The steepening yield curve, particularly between 30-year and 10-year bonds, signals a potential recalibration of fiscal strategies across advanced economies. This development is not merely a numerical curiosity; it has profound implications for government borrowing, investment in public projects, and the broader economic outlook. Policymakers must now grapple with the ramifications of these changes, particularly as th…",
+      "summary": "Over the past year, there has been a notable increase in very long-term yields, which has resulted in a steepening yield curve between 30-year and 10-year bonds across several advanced economies, including the euro area. This shift indicates a growing divergence in investor expectations regarding future economic conditions, inflation, and central bank policies. The implications of this steepening curve are significant, as it may lead to higher borrowing costs for governments and influence their fiscal strategies moving forward. Investors are likely to reassess their risk profiles, which could further impact funding for public projects and social programmes. In tandem with these financial developments, the European Environment Agency (EEA) has released an amending budget for the 2025 financial year, reflecting adjustments necessary to meet evolving environmental challenges. This budget underscores the importance of sustainable investment, particularly in light of rising yields that may affect the cost of financing green initiatives. As governments reassess their spending priorities, the EEA's budgetary adjustments could signal a shift towards more resilient and sustainable economic policies. Similarly, the European Research Executive Agency (REA) has presented its statement of revenue and expenditure for 2026, which is critical for funding research and innovation across the con…",
       "key_points": [
-        "The rise in very long-term yields has steepened the slopes between 30-year and ten-year yields in several advanced economies, including the…",
-        "The EEA's amending budget for 2025 reflects necessary adjustments to meet environmental challenges amid rising yields.",
-        "The REA's budget for 2026 underscores a commitment to research funding despite tightening financial conditions.",
-        "F4E's amended budget for 2025 illustrates ongoing adjustments within European funding mechanisms in response to economic pressures."
+        "The rise in very long-term yields over the past year has steepened the slopes between 30-year and ten-year yields in several advanced econo…",
+        "CELEX:32026B01399: Statement of revenue and expenditure for the 2025 financial year – European Environment Agency (EEA) – amending budget N…",
+        "CELEX:32026B01520: Statement of revenue and expenditure for the 2026 financial year – European Research Executive Agency (REA)",
+        "CELEX:32026B01429: Statement of revenue and expenditure for the 2025 financial year – Fusion for Energy Joint Undertaking (F4E) – amending…"
       ],
       "sections": [
         {
           "title": "The Rise in Long-Term Yields",
-          "body": "The increase in long-term yields over the past year has significantly steepened the yield curve, particularly between 30-year and 10-year bonds. This trend indicates a shift in investor confidence and expectations regarding future economic conditions, which could lead to higher borrowing costs for governments and impact fiscal policies across the eurozone."
+          "body": "The increase in long-term yields signifies a shift in market sentiment, reflecting concerns about inflation and future economic growth. This steepening of the yield curve may lead to higher borrowing costs for governments, impacting their fiscal strategies and investment capabilities."
         },
         {
-          "title": "EEA Amending Budget for 2025",
-          "body": "The European Environment Agency has released an amending budget for the 2025 financial year, necessitated by the need to address pressing environmental issues. This adjustment is vital as it reflects the agency's commitment to adapting its financial strategies in response to the evolving economic landscape, particularly in light of rising long-term yields."
+          "title": "European Environment Agency Budget Adjustments",
+          "body": "The EEA's amending budget for 2025 highlights the need for sustainable investment in light of rising yields. As governments face increased borrowing costs, prioritising environmental initiatives will be crucial for achieving long-term sustainability goals."
         },
         {
-          "title": "REA's 2026 Financial Statement",
-          "body": "The European Research Executive Agency has outlined its budget for 2026, reaffirming its dedication to funding research and innovation. This commitment is essential for maintaining Europe's competitive edge, especially as financial conditions tighten due to rising yields, which may challenge future investment capabilities."
+          "title": "Funding Challenges for Research and Fusion Projects",
+          "body": "The REA's budget for 2026 and F4E's amending budget for 2025 underscore the importance of securing funding for research and energy projects. Rising long-term yields could complicate financing efforts, necessitating strategic adjustments to ensure continued support for innovation."
         }
       ],
       "categories": [
@@ -553,27 +557,27 @@
     {
       "date": "2026-04-02",
       "title": "Thursday 2 April 2026",
-      "headline": "EIOPA Reports on Retail Investment Costs Amid ECB's Liquidity Measures",
-      "intro": "As the European Central Bank (ECB) continues its liquidity provision strategy, the European Insurance and Occupational Pensions Authority (EIOPA) has released a critical report evaluating the cost-effectiveness of retail investment products. This juxtaposition of monetary policy and consumer investment insights highlights the ongoing tension between regulatory oversight and market dynamics. With the ECB allotting substantial funds to bolster liquidity, the implications for retail investors and the broader financia…",
-      "summary": "The EIOPA's recent report scrutinises the costs, charges, and overall value for money of retail investment products from 2020 to 2023. This analysis is crucial for investors seeking transparency and fairness in a market often perceived as opaque. By shedding light on these financial products, the report aims to empower consumers and enhance competition among providers, potentially leading to better outcomes for retail investors. However, the effectiveness of these measures will depend on how well they are implemented and enforced across member states. In a related development, the ECB has announced significant liquidity injections, allotting €10.2 billion and €9.3 billion through its main refinancing operations on the same day. These actions, aimed at stabilising the financial system, reflect ongoing concerns about economic volatility and the need for robust monetary support. The fixed interest rates of 2.15% signal the ECB's commitment to maintaining liquidity while navigating the complexities of inflation and economic recovery. Moreover, the ECB's provision of liquidity in US dollars, with allotments of $15 million and $29.3 million, underscores the interconnectedness of global financial markets. This dual currency strategy may assist European banks in managing dollar liquidity needs, particularly as transatlantic trade and investment flows remain significant. The implicatio…",
+      "headline": "EIOPA's Investment Report and Space Programme Budgets: A Day of Financial Insights",
+      "intro": "As Europe grapples with economic uncertainties, today's policy briefing delves into EIOPA's latest report on retail investment products and the European Union Agency for the Space Programme's financial statements. The findings reveal critical insights into the cost-effectiveness of investment products and the fiscal strategies underpinning the EU's space ambitions. With retail investors facing a complex landscape and the space sector vying for funding, these developments are pivotal for stakeholders across the boa…",
+      "summary": "EIOPA's recent report on the costs and past performance of retail investment products from 2020 to 2023 highlights the ongoing challenges faced by investors in securing value for money. The analysis reveals that while some products offer competitive pricing, others fall short, raising questions about transparency and consumer protection. This scrutiny is crucial as retail investors increasingly seek clarity in a market often clouded by hidden charges and complex fee structures. The report's findings could prompt regulatory changes aimed at enhancing consumer trust and fostering a more equitable investment environment. In parallel, the European Commission's corrigendum regarding substances under the REACH regulation underscores the EU's commitment to environmental safety and regulatory compliance. This document details authorisations for the use of certain chemicals, reflecting the EU's stringent approach to chemical management. The implications are significant for industries reliant on these substances, as compliance costs may rise, potentially impacting product pricing and market access. Additionally, the European Union Agency for the Space Programme has released its statements of revenue and expenditure for the 2026 financial year. The agency's budget outlines funding priorities that will shape the future of Europe’s space initiatives, including satellite development and res…",
       "key_points": [
-        "EIOPA's report evaluates retail investment product costs from 2020 to 2023, aiming for greater transparency.",
-        "The ECB's liquidity measures include €10.2 billion and €9.3 billion allotments to support financial stability.",
-        "US dollar liquidity provisions by the ECB highlight the global interconnectedness of financial markets.",
-        "The European Commission's corrigendum on REACH regulations reflects ongoing efforts to enhance consumer safety."
+        "EIOPA's report reveals mixed value for money in retail investment products from 2020-2023.",
+        "The European Commission's corrigendum addresses authorisations under REACH, impacting chemical usage.",
+        "EUSPA's budget statements for 2026 highlight funding priorities for Europe's space programme.",
+        "These developments signal a need for vigilance among stakeholders in investment and space sectors."
       ],
       "sections": [
         {
           "title": "EIOPA's Costs and Past Performance Report",
-          "body": "The EIOPA's report critically assesses the costs and value for money of retail investment products over the past three years. This analysis is vital for consumers and regulators alike, as it aims to foster transparency and competition in a market often viewed as lacking clarity."
-        },
-        {
-          "title": "ECB's Liquidity Provisioning",
-          "body": "On the same day, the ECB announced substantial liquidity allotments, totalling over €19 billion across various operations. These measures are designed to ensure financial stability amid economic uncertainties, reflecting the ECB's ongoing commitment to support the eurozone economy."
+          "body": "EIOPA's latest analysis scrutinises the costs and performance of retail investment products over the past three years, revealing significant disparities in value for money. This report is critical as it informs investors about the cost structures they face, potentially leading to regulatory reforms aimed at increasing transparency and protecting consumer interests."
         },
         {
           "title": "European Commission's REACH Corrigendum",
-          "body": "The corrigendum from the European Commission addresses authorisations for substances under the REACH regulation, reinforcing the EU's commitment to consumer safety and environmental standards. This regulatory update is crucial for industries that rely on chemical substances, as compliance will be mandatory."
+          "body": "The corrigendum to the European Commission's decisions on chemical authorisations under REACH highlights the EU's rigorous approach to chemical safety. By detailing the substances that require authorisation, the document underscores the potential regulatory burdens on industries, which may affect their operational costs and product availability."
+        },
+        {
+          "title": "EUSPA's Financial Statements for 2026",
+          "body": "The European Union Agency for the Space Programme's financial statements outline the budgetary framework for 2026, focusing on funding for satellite and space research initiatives. This financial clarity is essential for stakeholders in the space sector, as it determines the viability of future projects and Europe's competitive stance in global space exploration."
         }
       ],
       "categories": [
@@ -608,9 +612,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -625,9 +629,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -642,9 +646,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -659,9 +663,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -678,9 +682,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -695,9 +699,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -712,9 +716,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -729,9 +733,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -746,9 +750,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -763,9 +767,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "ECB",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -784,27 +788,27 @@
     {
       "date": "2026-04-01",
       "title": "Wednesday 1 April 2026",
-      "headline": "EU-UK Gibraltar Deal Approved Amidst Economic Shifts and AI Investments",
-      "intro": "As the EU greenlights a pivotal agreement on Gibraltar, the landscape of European policy is shifting, with implications for trade, technology, and economic resilience. This briefing examines the recent developments in EU-UK relations, the evolving investment in artificial intelligence, and the broader economic context shaped by regulatory changes and geopolitical tensions. The interplay of these factors not only highlights the complexities of post-Brexit negotiations but also underscores the urgent need for strate…",
-      "summary": "The Council of the EU has officially approved the signature and provisional application of the EU-UK agreement on Gibraltar, a significant step in post-Brexit relations. This agreement aims to facilitate cooperation and ensure stability in the region, which has been a contentious point since the UK's departure from the EU. The deal is expected to enhance trade relations and provide a framework for addressing future disputes, marking a cautious yet hopeful turn in EU-UK dynamics. In parallel, new findings from the Survey on the Access to Finance of Enterprises (SAFE) reveal a notable uptick in the adoption of artificial intelligence technologies among euro area firms. This shift is indicative of a broader trend towards digital transformation, which is essential for maintaining competitive advantage in an increasingly tech-driven economy. The investment in AI not only promises to enhance productivity but also raises questions about regulatory frameworks and the ethical implications of such technologies. Amid these developments, the backdrop of escalating trade tensions, particularly between China and the United States, looms large. China's recent export controls on rare earths have intensified concerns about supply chain vulnerabilities, particularly for industries reliant on these critical materials. This situation underscores the need for the EU to bolster its strategic autono…",
+      "headline": "EU-UK Gibraltar Deal Secured Amidst Economic Shifts and AI Investments",
+      "intro": "As the EU moves to solidify its post-Brexit relationship with the UK through a newly greenlit Gibraltar agreement, the economic landscape is also shifting with significant investments in artificial intelligence across the euro area. This dual development highlights the EU's strategic pivot towards innovation while navigating complex geopolitical tensions, particularly with China over rare earth exports. The implications of these changes are far-reaching, affecting trade, technology, and the broader economic framew…",
+      "summary": "The recent approval of the EU-UK agreement on Gibraltar marks a significant step in post-Brexit relations, as member states have greenlighted its signature and provisional application. This deal is crucial not only for maintaining stability in the region but also for ensuring that Gibraltar's unique status is respected amid ongoing negotiations. The agreement is expected to facilitate smoother trade and cooperation, which is essential for both the EU and the UK as they navigate their new relationship. In parallel, a report from the European Insurance and Occupational Pensions Authority has shed light on the costs and past performance of financial products, indicating a growing concern over transparency and accountability in the financial sector. This report underscores the necessity for robust regulatory frameworks as the EU seeks to enhance consumer protection and trust in financial markets, especially as they become increasingly intertwined with technological advancements. Moreover, the latest survey on the adoption of artificial intelligence technologies among euro area firms reveals a surge in investment, signalling a shift towards digital transformation in the region. This trend is particularly pertinent as businesses seek to leverage AI for competitive advantage, which could reshape the economic landscape and drive innovation across various sectors. However, this rapid a…",
       "key_points": [
-        "The EU-UK agreement on Gibraltar has been greenlighted, aiming to stabilise post-Brexit relations.",
-        "Euro area firms are increasingly investing in artificial intelligence, signalling a shift towards digital transformation.",
-        "China's export controls on rare earths exacerbate supply chain vulnerabilities amid US trade tensions.",
-        "The Recovery and Resilience Facility continues to support structural reforms and economic growth in the EU."
+        "The EU-UK agreement on Gibraltar has been greenlit, enhancing post-Brexit relations.",
+        "EIOPA's report highlights the need for transparency in financial products amid changing market dynamics.",
+        "Euro area firms are increasingly investing in AI technologies, signalling a shift towards digital transformation.",
+        "China's export controls on rare earths pose challenges for European industries and supply chains."
       ],
       "sections": [
         {
           "title": "EU-UK relations: member states greenlight EU-UK deal on Gibraltar",
-          "body": "The Council of the EU has given the green light for the signature and provisional application of the EU-UK agreement on Gibraltar. This agreement is designed to foster cooperation and ensure stability in a region that has been a focal point of contention since Brexit, potentially smoothing over trade relations and future disputes."
+          "body": "Member states have approved the signature and provisional application of the EU-UK agreement on Gibraltar, a move aimed at stabilising post-Brexit relations. This agreement is vital for ensuring that Gibraltar's unique status is respected, facilitating smoother trade and cooperation between the EU and the UK."
         },
         {
           "title": "Costs and past performance report 2026",
-          "body": "The European Insurance and Occupational Pensions Authority has released its 2026 report detailing costs and past performance metrics. This report is crucial for understanding the financial landscape and ensuring that firms are held accountable, particularly as they navigate the complexities of regulatory compliance and economic recovery."
+          "body": "The European Insurance and Occupational Pensions Authority has released a report detailing the costs and past performance of financial products. This document emphasises the need for enhanced transparency and accountability in the financial sector, which is crucial for maintaining consumer trust as the market evolves."
         },
         {
-          "title": "Survey on the Access to Finance of Enterprises (SAFE)",
-          "body": "Recent findings from the SAFE indicate a significant rise in the adoption of AI technologies among euro area firms. This trend highlights the urgency for businesses to embrace digital transformation, which is essential for maintaining competitiveness in a rapidly evolving market, while also raising important regulatory and ethical considerations."
+          "title": "Survey on the adoption of AI technologies",
+          "body": "Recent findings indicate a significant uptick in investment in artificial intelligence technologies among euro area firms. This trend reflects a broader shift towards digital transformation, which could reshape various sectors but also necessitates careful regulatory oversight to address ethical concerns."
         }
       ],
       "categories": [
@@ -839,9 +843,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -858,8 +862,8 @@
           "tags": [
             "regulation",
             "EIOPA",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -878,8 +882,8 @@
           "tags": [
             "regulation",
             "EIOPA",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -898,27 +902,27 @@
     {
       "date": "2026-03-31",
       "title": "Tuesday 31 March 2026",
-      "headline": "European Training Foundation Unveils Financial Strategies Amidst Regulatory Overhaul",
-      "intro": "As the European Training Foundation (ETF) presents its financial statements for 2025 and 2026, the backdrop of significant regulatory changes in payment services and customs is hard to ignore. The ETF's budgetary outlines not only reflect a commitment to educational and vocational training but also underscore the challenges posed by evolving market dynamics and legislative frameworks. The intersection of these financial documents with broader regulatory shifts raises critical questions about the future of training…",
-      "summary": "The European Training Foundation has released its statement of revenue and expenditure for the 2026 financial year, alongside an amending budget for 2025. This dual release highlights the ETF's ongoing commitment to enhancing vocational education and training across Europe, a crucial element in addressing skills shortages and fostering economic resilience. The 2026 budget reflects an increase in funding aimed at expanding training programmes, which is particularly timely given the EU's focus on digital transformation and green skills. However, the effectiveness of these initiatives will depend on their integration with broader regulatory changes, particularly those affecting payment services and customs regulations. In a parallel development, the European Commission has proposed a new directive on payment services, which aims to streamline and modernise the existing framework. This proposal, known as PSD3, seeks to enhance consumer protection and promote competition within the financial sector. The implications of this regulatory overhaul are significant, as they could reshape how training providers operate within the financial services landscape, potentially affecting funding and operational models for vocational training initiatives. Moreover, the proposed regulation establishing the Union Customs Code and the European Union Customs Authority is set to further complicate the…",
+      "headline": "European Training Foundation's Financial Statements: A Year of Adjustments and Ambitions",
+      "intro": "As the European Training Foundation (ETF) unveils its financial statements for 2026, the implications of budgetary adjustments for 2025 are equally significant. The ETF's financial health is not just a matter of numbers; it reflects the EU's commitment to education and training in a rapidly changing economic landscape. With the amending budget for 2025 and the new proposals for 2026, stakeholders must scrutinise how these fiscal decisions will impact educational initiatives across Europe. The interconnectedness of…",
+      "summary": "The European Training Foundation has released its statement of revenue and expenditure for the 2026 financial year, alongside an amending budget for 2025. This dual release highlights the ETF's ongoing efforts to adapt its financial strategies in response to evolving educational needs and economic challenges. The 2026 budget aims to enhance funding for training programmes that align with the EU's broader objectives of fostering a skilled workforce capable of navigating the complexities of the modern economy. The amending budget for 2025 reflects necessary adjustments to previous allocations, ensuring that resources are directed towards the most pressing educational initiatives. This recalibration is crucial as the EU faces increasing competition in global markets, necessitating a workforce that is not only well-trained but also adaptable to technological advancements. The ETF's financial manoeuvres are indicative of a proactive approach to workforce development, signalling a commitment to long-term educational investments. Moreover, the implications of these financial statements extend beyond mere numbers; they resonate with various stakeholders, including educational institutions, policymakers, and the private sector. As the ETF aligns its budgetary priorities with the EU's strategic goals, the ripple effects will be felt across member states, influencing how educational prog…",
       "key_points": [
-        "ETF's 2026 budget reflects increased funding for vocational training initiatives.",
-        "Proposed PSD3 directive aims to modernise payment services and enhance consumer protection.",
-        "New Union Customs Code regulation seeks to simplify customs procedures.",
-        "Integration of training initiatives with regulatory changes is crucial for effectiveness."
+        "The ETF's 2026 budget aims to enhance funding for vital training programmes.",
+        "The 2025 amending budget reflects necessary adjustments to previous allocations.",
+        "These financial decisions signal a commitment to long-term educational investments.",
+        "The focus on training is crucial for achieving the EU's net-zero economy ambitions."
       ],
       "sections": [
         {
           "title": "Statement of revenue and expenditure for the 2026 financial year – European Training Foundation (ETF)",
-          "body": "The ETF's financial statement for 2026 outlines a strategic increase in funding aimed at enhancing vocational training across Europe. This is particularly relevant as the EU grapples with skills shortages and the need for a workforce equipped for digital and green economies."
+          "body": "The ETF's statement for 2026 outlines a comprehensive budget aimed at bolstering educational initiatives across Europe. This budget is designed to respond to the urgent need for a skilled workforce in an increasingly competitive global landscape, making it a critical component of the EU's economic strategy."
         },
         {
           "title": "Statement of revenue and expenditure for the 2025 financial year – European Training Foundation (ETF) – amending budget…",
-          "body": "The amending budget for 2025 reflects adjustments necessary to align with changing priorities and economic conditions. This flexibility is vital as the ETF seeks to respond effectively to the evolving landscape of vocational training amidst regulatory changes."
+          "body": "The amending budget for 2025 addresses previous financial allocations, ensuring that resources are effectively redirected to priority areas within education and training. This adjustment is essential for maintaining the ETF's responsiveness to the changing demands of the labour market."
         },
         {
-          "title": "Proposal for a Directive on payment services in the internal market amending Directive 98/26/EC",
-          "body": "The proposed directive on payment services aims to modernise the regulatory framework governing financial transactions. Its implications for training providers could be profound, necessitating a reevaluation of how vocational training aligns with new consumer protection standards and competitive practices."
+          "title": "The corrigendum does not concern the English version",
+          "body": "This corrigendum highlights the administrative precision required in financial reporting. While it may seem a minor detail, it underscores the importance of clarity and accuracy in the EU's financial documentation, which is vital for maintaining stakeholder trust and accountability."
         }
       ],
       "categories": [
@@ -955,8 +959,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -987,8 +991,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1005,8 +1009,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -1039,8 +1043,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1057,8 +1061,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1075,8 +1079,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1091,8 +1095,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         },
         {
@@ -1107,8 +1111,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         }
       ],
@@ -1121,39 +1125,39 @@
         "posts": 21,
         "reports": 1,
         "digest_items": 0,
-        "timeline_events": 1
+        "timeline_events": 0
       }
     },
     {
       "date": "2026-03-30",
       "title": "Monday 30 March 2026",
-      "headline": "New Leadership at EBA Signals Shift in European Banking Oversight",
-      "intro": "As François-Louis Michaud steps into the role of Chair of the European Banking Authority, the implications for regulatory frameworks and financial stability in Europe are profound. His appointment comes at a critical juncture, with ongoing tensions in Ukraine and evolving financial landscapes necessitating robust oversight. This briefing explores the ramifications of Michaud's leadership, the recent court rulings affecting EU sanctions, and the broader context of financial governance in Europe.",
-      "summary": "François-Louis Michaud's appointment as Chair of the European Banking Authority (EBA) marks a significant moment for European financial regulation. Set to officially assume office on 16 April 2026, Michaud's leadership is expected to steer the EBA through a tumultuous period characterised by geopolitical instability and regulatory challenges. His experience in banking supervision will be crucial as the EU grapples with the implications of ongoing sanctions against Russia and the need for a cohesive response to financial threats. In related developments, the Court of Justice of the European Union's recent rulings underscore the EU's commitment to maintaining stringent sanctions against Russia in light of the Ukraine conflict. The judgment in the VEB.RF case reinforces the freezing of assets and restrictions on financial services, highlighting the EU's resolve to counteract external threats to its security and economic integrity. This legal backdrop is pivotal for Michaud as he navigates the complexities of compliance and enforcement within the banking sector. Furthermore, the rulings concerning Urban Vision and the implications of the Multiannual Financial Framework discussions reveal a broader narrative of regulatory adaptation in response to evolving market conditions. As the EU seeks to bolster its financial competitiveness, the interplay between regulatory frameworks and ma…",
+      "headline": "New Leadership and Legislative Moves Signal Shift in EU Financial Governance",
+      "intro": "As the European Union navigates a complex financial landscape, the appointment of François-Louis Michaud as chair of the European Banking Authority (EBA) and ongoing legislative efforts to amend key directives underscore a pivotal moment in EU financial governance. These developments are not merely administrative; they reflect broader strategic responses to the evolving economic challenges posed by geopolitical tensions and regulatory demands. Michaud's leadership will be crucial as the EU seeks to bolster its fin…",
+      "summary": "The Council of the EU has appointed François-Louis Michaud as the new chair of the European Banking Authority, effective from 16 April 2026. Michaud's extensive experience in financial regulation positions him well to steer the EBA through turbulent economic waters, particularly as the EU grapples with the implications of its sanctions regime against Russia. His leadership comes at a time when the EU is not only reinforcing its financial oversight but also adapting its legislative framework to enhance early intervention measures and resolution funding, as outlined in the proposed amendments to Directive 2014/59/EU. In parallel, the Council's latest position on the proposed directive reflects a proactive approach to ensuring that the EU's financial institutions are equipped to handle crises effectively. This legislative push aims to clarify the conditions under which early intervention can occur, thereby preventing potential systemic risks before they escalate. The interconnectedness of these developments highlights the EU's commitment to maintaining financial stability amidst external pressures, particularly from the ongoing situation in Ukraine. Moreover, the recent judgment in the VEB.RF v Council case reinforces the EU's legal framework for imposing sanctions, particularly regarding the freezing of assets and restrictions on financial services for Russian entities. This rul…",
       "key_points": [
-        "François-Louis Michaud appointed Chair of the EBA, starting 16 April 2026.",
-        "Recent court rulings affirm EU sanctions against Russia, impacting financial operations.",
-        "Ongoing discussions on the Multiannual Financial Framework highlight regulatory adaptation.",
-        "Michaud's leadership is crucial for navigating compliance and fostering financial innovation."
+        "François-Louis Michaud appointed chair of the European Banking Authority from 16 April 2026.",
+        "Proposed amendments to key directives aim to enhance early intervention and resolution funding in banking.",
+        "Recent court ruling strengthens the EU's legal basis for sanctions against Russian financial entities.",
+        "These developments reflect a strategic shift in EU financial governance amidst geopolitical tensions."
       ],
       "sections": [
         {
           "title": "Council appoints François-Louis Michaud chair of the European Banking Authority",
-          "body": "The Council of the EU has appointed François-Louis Michaud as the new Chair of the European Banking Authority, effective from 16 April 2026. This appointment comes at a time when the EBA faces significant challenges, particularly in relation to regulatory compliance and the enforcement of sanctions against Russia. Michaud's expertise will be essential in steering the EBA through these turbulent waters."
+          "body": "The Council has officially appointed François-Louis Michaud as the new chair of the European Banking Authority, effective from mid-April. This appointment is significant as it comes at a critical juncture for EU financial regulation, particularly in light of ongoing geopolitical tensions and the need for a robust regulatory framework."
         },
         {
-          "title": "VEB.RF v Council: Judgment of the Court",
-          "body": "The Court of Justice of the European Union delivered a judgment reinforcing the EU's sanctions against Russia, particularly concerning the freezing of assets and restrictions on financial services for Russian institutions. This ruling is significant as it underscores the EU's commitment to maintaining pressure on Russia amid ongoing geopolitical tensions, directly impacting how financial institutions operate within the EU."
+          "title": "Statement of the Council's reasons: Position (EU) No 4/2026",
+          "body": "The Council's latest position on the proposed directive amending Directive 2014/59/EU outlines essential changes aimed at improving early intervention measures and funding for resolution actions. This legislative effort is crucial for enhancing the EU's ability to manage potential banking crises effectively, thereby safeguarding financial stability."
         },
         {
-          "title": "Urban Vision: Judgment of the Court",
-          "body": "The Court's ruling in the Urban Vision case highlights the ongoing evolution of regulatory frameworks within the EU, particularly in relation to public contracts and competitive practices. As the EU navigates its financial landscape, such rulings will influence how institutions align with regulatory expectations, further complicating the environment in which Michaud will operate as EBA Chair."
+          "title": "CELEX:62024CA0572: Case C-572/24 P: Judgment of the Court",
+          "body": "The recent judgment in the VEB.RF v Council case solidifies the EU's authority to impose sanctions on Russian financial institutions, reinforcing the legal framework for asset freezes and service restrictions. This ruling not only impacts the targeted entities but also underscores the EU's commitment to a unified response to external threats, shaping future sanctions policies."
         }
       ],
       "categories": [
         "CMU & Financial Markets",
-        "daily",
-        "Other"
+        "Other",
+        "daily"
       ],
       "important_documents": [
         {
@@ -1183,8 +1187,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1199,26 +1203,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
-          ]
-        },
-        {
-          "id": "4ac9c04dd9787b84",
-          "title": "François-Louis Michaud to take up his role as Chair of the European Banking Authority",
-          "summary": "François-Louis Michaud will take up his position as Chair of the European Banking Authority (EBA) as from the 16 April 2026, following today’s formal appointment by the Council of the European Union.",
-          "url": "https://www.eba.europa.eu/publications-and-media/press-releases/francois-louis-michaud-take-his-role-chair-european-banking-authority",
-          "kind": "post",
-          "source": "European Banking Authority",
-          "date": "2026-03-30",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "regulation",
             "CMU & Financial Markets",
-            "EBA",
-            "EU"
+            "external"
           ]
         },
         {
@@ -1235,94 +1221,6 @@
           "tags": [
             "CMU & Financial Markets",
             "Council",
-            "EU"
-          ]
-        }
-      ],
-      "related_documents": [
-        {
-          "id": "d1aed4721ea8888d",
-          "title": "CM 2305 2026 INIT",
-          "summary": "Ad hoc Working Party on the Multiannual Financial Framework (European Competitiveness Fund)",
-          "url": "https://data.consilium.europa.eu/doc/document/CM-2305-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-30",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "external",
-            "CMU & Financial Markets"
-          ]
-        },
-        {
-          "id": "4ac9c04dd9787b84",
-          "title": "François-Louis Michaud to take up his role as Chair of the European Banking Authority",
-          "summary": "François-Louis Michaud will take up his position as Chair of the European Banking Authority (EBA) as from the 16 April 2026, following today’s formal appointment by the Council of the European Union.",
-          "url": "https://www.eba.europa.eu/publications-and-media/press-releases/francois-louis-michaud-take-his-role-chair-european-banking-authority",
-          "kind": "post",
-          "source": "European Banking Authority",
-          "date": "2026-03-30",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "regulation",
-            "CMU & Financial Markets",
-            "EBA",
-            "EU"
-          ]
-        },
-        {
-          "id": "8dbcc1e915a486e9",
-          "title": "Council appoints François-Louis Michaud chair of the European Banking Authority",
-          "summary": "The Council appointed François-Louis Michaud as chairperson of the European banking authority (EBA). Mr Michaud will take up the role on 16 April 2026. His term of office will run for a five-year period and may be extended once.",
-          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/03/30/council-appoints-francois-louis-michaud-chair-of-the-european-banking-authority/",
-          "kind": "post",
-          "source": "Council of the EU",
-          "date": "2026-03-30",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "CMU & Financial Markets",
-            "Council",
-            "EU"
-          ]
-        },
-        {
-          "id": "e5bda85b04094e14",
-          "title": "Final report on supervisory reporting and public disclosure requirements under Solvency II",
-          "summary": "Final report on supervisory reporting and public disclosure requirements under Solvency II",
-          "url": "https://www.eiopa.europa.eu/publications/final-report-supervisory-reporting-and-public-disclosure-requirements-under-solvency-ii_en",
-          "kind": "post",
-          "source": "European Insurance and Occupational Pensions Authority",
-          "date": "2026-03-30",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "regulation",
-            "EIOPA",
-            "CMU & Financial Markets",
-            "EU"
-          ]
-        },
-        {
-          "id": "4d5c70a035857e08",
-          "title": "Severe weather and financial (in)stability",
-          "summary": "We quantify the effect of severe weather shocks on the US economy in an environment in which the economy can switch between periods of financial stability and financial instability, like the Great Recession. We estimate a New Keynesian dynamic stochastic gene…",
-          "url": "https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3211~48db9ddba7.en.pdf",
-          "kind": "post",
-          "source": "European Central Bank",
-          "date": "2026-03-30",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "CMU & Financial Markets",
-            "ECB",
             "EU"
           ]
         },
@@ -1340,8 +1238,115 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
+            "EU",
+            "Other"
+          ]
+        }
+      ],
+      "related_documents": [
+        {
+          "id": "d1aed4721ea8888d",
+          "title": "CM 2305 2026 INIT",
+          "summary": "Ad hoc Working Party on the Multiannual Financial Framework (European Competitiveness Fund)",
+          "url": "https://data.consilium.europa.eu/doc/document/CM-2305-2026-INIT/en/pdf",
+          "kind": "post",
+          "source": "External",
+          "date": "2026-03-30",
+          "categories": [
+            "CMU & Financial Markets"
+          ],
+          "tags": [
+            "CMU & Financial Markets",
+            "external"
+          ]
+        },
+        {
+          "id": "8dbcc1e915a486e9",
+          "title": "Council appoints François-Louis Michaud chair of the European Banking Authority",
+          "summary": "The Council appointed François-Louis Michaud as chairperson of the European banking authority (EBA). Mr Michaud will take up the role on 16 April 2026. His term of office will run for a five-year period and may be extended once.",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/03/30/council-appoints-francois-louis-michaud-chair-of-the-european-banking-authority/",
+          "kind": "post",
+          "source": "Council of the EU",
+          "date": "2026-03-30",
+          "categories": [
+            "CMU & Financial Markets"
+          ],
+          "tags": [
+            "CMU & Financial Markets",
+            "Council",
             "EU"
+          ]
+        },
+        {
+          "id": "19c19c621d5579f3",
+          "title": "Statement of the Council's reasons: Position (EU) No 4/2026 of the Council at first reading with a view to the adoption of Directive of the European Parliament and of the Council amending Directive 2014/59/EU as regards early intervention measures, conditions for resolution and funding of resolution action and Directive 2014/24/EU as regards valuation services in resolution",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AG0004(02)",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-03-30",
+          "categories": [
+            "Other"
+          ],
+          "tags": [
+            "EUR-Lex",
+            "law",
+            "EU",
+            "Other"
+          ]
+        },
+        {
+          "id": "0705fb547ce4df7b",
+          "title": "P10_TA(2025)0154 – Product safety and regulatory compliance in e-commerce and non-EU imports – European Parliament resolution of 9 July 2025 on product safety and regulatory compliance in e-commerce and non-EU imports (2025/2037(INI))",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025IP0154",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-03-30",
+          "categories": [
+            "Other"
+          ],
+          "tags": [
+            "EUR-Lex",
+            "law",
+            "EU",
+            "Other"
+          ]
+        },
+        {
+          "id": "bee1ee5f5c3388c3",
+          "title": "Position (EU) No 4/2026 of the Council at first reading with a view to the adoption of a Directive of the European Parliament and of the Council amending Directive 2014/59/EU as regards early intervention measures, conditions for resolution and funding of resolution action and Directive 2014/24/EU as regards valuation services in resolution – Adopted by the Council on 5 March 2026 (Text with EEA relevance)",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AG0004(01)",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-03-30",
+          "categories": [
+            "Other"
+          ],
+          "tags": [
+            "EUR-Lex",
+            "law",
+            "EU",
+            "Other"
+          ]
+        },
+        {
+          "id": "69a914bf7e5aa19f",
+          "title": "Position (EU) No 1/2026 of the Council at first reading with a view to the adoption of a Directive of the European Parliament and of the Council amending Directive 2000/60/EC establishing a framework for Community action in the field of water policy, Directive 2006/118/EC on the protection of groundwater against pollution and deterioration and Directive 2008/105/EC on environmental quality standards in the field of water policy – Adopted by the Council on 17 February 2026 (Text with EEA relevance)",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AG0001(01)",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-03-30",
+          "categories": [
+            "Other"
+          ],
+          "tags": [
+            "EUR-Lex",
+            "law",
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -1351,10 +1356,10 @@
         "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-30.md"
       },
       "signal_counts": {
-        "posts": 79,
+        "posts": 67,
         "reports": 1,
         "digest_items": 0,
-        "timeline_events": 1
+        "timeline_events": 0
       }
     },
     {
@@ -1416,8 +1421,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1432,8 +1437,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1448,8 +1453,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1466,8 +1471,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -1484,8 +1489,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1500,8 +1505,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -1518,15 +1523,15 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
-          "id": "deda8f9f7bc640df",
-          "title": "Commission Regulation (EU) 2026/562 of 16 March 2026 declaring certain categories of aid in the rail, inland waterways and multimodal transport sector compatible with the internal market in application of Articles 93, 107 and 108 of the Treaty on the Functioning of the European Union",
+          "id": "08b4b8812a58010f",
+          "title": "Case T-108/26: Action brought on 15 February 2026 – QS v Commission",
           "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:32026R0562",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62026TN0108",
           "kind": "post",
           "source": "EUR-Lex",
           "date": "2026-03-29",
@@ -1536,15 +1541,15 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
-          "id": "4d563e308ec0d87e",
-          "title": "Prior notification of a concentration (Case M.12368 – MACQUARIE GROUP / LA CAISSE / MAPLE) – Candidate case for simplified procedure",
+          "id": "b93e42fc61bbd970",
+          "title": "Case C-572/23 P: Judgment of the Court (Third Chamber) of 5 February 2026 – Puigdemont i Casamajó and Others v Parliament (Waiver of parliamentary immunity) (Appeal – Institutional law – Members of the European Parliament – Privileges and immunities – Decision to waive parliamentary immunity of Members of the Parliament – Article 41(1) of the Charter of Fundamental Rights of the European Union – Principle of good administration – Parliament Committee on Legal Affairs – Requirement that the rapporteur be impartial)",
           "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026M12368",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62023CA0572",
           "kind": "post",
           "source": "EUR-Lex",
           "date": "2026-03-29",
@@ -1554,15 +1559,15 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
-          "id": "21a122e0c8d8e2f5",
-          "title": "Communication from the Commission – Guidelines on State aid for land and multimodal transport",
+          "id": "9552a32717b4a5f3",
+          "title": "Case T-70/26: Action brought on 3 February 2026 – Technius v Commission",
           "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026XC01656",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62026TN0070",
           "kind": "post",
           "source": "EUR-Lex",
           "date": "2026-03-29",
@@ -1572,8 +1577,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -1583,7 +1588,7 @@
         "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-29.md"
       },
       "signal_counts": {
-        "posts": 32,
+        "posts": 29,
         "reports": 1,
         "digest_items": 0,
         "timeline_events": 0
@@ -1698,9 +1703,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1715,9 +1720,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1732,9 +1737,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1749,9 +1754,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -1768,9 +1773,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1785,9 +1790,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1802,9 +1807,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "Council",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -1879,9 +1884,9 @@
             "CMU & Financial Markets"
           ],
           "tags": [
+            "CMU & Financial Markets",
             "EUR-Lex",
             "law",
-            "CMU & Financial Markets",
             "EU"
           ]
         },
@@ -1899,8 +1904,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1917,8 +1922,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1935,8 +1940,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -1955,8 +1960,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1973,8 +1978,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -1991,8 +1996,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2007,8 +2012,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         },
         {
@@ -2023,8 +2028,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         },
         {
@@ -2039,8 +2044,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         }
       ],
@@ -2116,8 +2121,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2148,8 +2153,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2166,8 +2171,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -2200,8 +2205,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2218,8 +2223,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2236,8 +2241,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2254,8 +2259,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2272,8 +2277,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -2348,8 +2353,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "CMU & Financial Markets"
+            "CMU & Financial Markets",
+            "external"
           ]
         },
         {
@@ -2366,8 +2371,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2384,8 +2389,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2402,8 +2407,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -2422,8 +2427,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2440,8 +2445,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2458,8 +2463,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2476,8 +2481,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2494,8 +2499,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2512,8 +2517,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -2606,8 +2611,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2624,8 +2629,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2640,8 +2645,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         }
       ],
@@ -2660,8 +2665,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2678,8 +2683,8 @@
           "tags": [
             "EUR-Lex",
             "law",
-            "Other",
-            "EU"
+            "EU",
+            "Other"
           ]
         },
         {
@@ -2694,8 +2699,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         },
         {
@@ -2710,8 +2715,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         },
         {
@@ -2726,8 +2731,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         },
         {
@@ -2742,8 +2747,8 @@
             "Other"
           ],
           "tags": [
-            "external",
-            "Other"
+            "Other",
+            "external"
           ]
         }
       ],

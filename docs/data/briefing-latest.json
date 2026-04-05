@@ -1,34 +1,81 @@
 {
   "date": "2026-04-05",
   "title": "Sunday 5 April 2026",
-  "headline": "Spring 2026: EU Financial System Faces Geopolitical Strains and AI Regulation Challenges",
-  "intro": "As Europe grapples with a complex web of geopolitical tensions and the rapid evolution of artificial intelligence, the latest update from the European Supervisory Authorities (ESAs) underscores the precarious state of the EU financial system. The spring 2026 Joint Committee report reveals a landscape fraught with risks, particularly from private finance and the adoption of AI technologies. With the impending activation of the AI Act and its implications for businesses, the stakes are high for firms navigating thes…",
-  "summary": "The European Supervisory Authorities (ESAs) have released their spring 2026 risk update, highlighting significant vulnerabilities in the EU financial system. Geopolitical pressures, particularly stemming from external conflicts, have intensified the risks associated with private finance. The report suggests that these external factors could destabilise the financial landscape, necessitating a closer look at regulatory frameworks and risk management strategies. In tandem with these developments, the European Parliament has announced a delayed application of the Artificial Intelligence Act, which introduces a ban on 'nudifier' applications deemed high-risk. This regulatory pause offers a moment of respite for companies, particularly small and mid-cap enterprises, which may struggle to comply with stringent AI obligations. The flexibility granted under the Act could encourage innovation while ensuring safety, albeit with the caveat that sector-specific laws may still impose varying requirements. Additionally, the ECB's Economic Bulletin sheds light on the adoption of AI technologies among euro area firms, revealing a cautious yet optimistic outlook for AI investment through 2026. This aligns with the broader trend of digital transformation in the financial sector, where firms are increasingly leveraging AI to enhance efficiency and competitiveness. However, the report also warns…",
+  "headline": "New Leadership and Regulatory Changes Signal a Shift in EU Financial Stability Focus",
+  "intro": "As François-Louis Michaud prepares to take the helm of the European Banking Authority, the EU's financial landscape braces for a recalibration of regulatory priorities. This shift, coupled with updated guidelines on insurance and the ongoing impact of climate change on economic stability, underscores a critical juncture for both banking and insurance sectors. The implications of these developments extend beyond mere compliance; they herald a new era of oversight that could redefine the EU's approach to financial r…",
+  "summary": "The appointment of François-Louis Michaud as Chair of the European Banking Authority (EBA) effective April 16, 2026, marks a significant leadership change that is poised to influence EU banking regulation. Michaud's tenure is expected to recalibrate the EBA's focus towards enhancing financial stability and consumer protection, potentially altering the regulatory landscape that governs banks across the EU. This transition comes at a time when the financial system is grappling with the dual pressures of geopolitical tensions and climate-related risks, necessitating a robust response from regulators. In parallel, the European Securities and Markets Authority (ESMA) has released updated guidelines aimed at improving supervisory reporting and public disclosure requirements under Solvency II. These changes are designed to enhance transparency and consistency within the insurance sector, which is increasingly under scrutiny as it navigates the complexities of climate change impacts on financial stability. The emphasis on clearer reporting standards is not merely bureaucratic; it reflects a growing recognition of the need for accountability in an era where financial institutions are expected to be stewards of both economic and environmental health. Moreover, a recent risk update from the European Supervisory Authorities highlights the vulnerabilities within the EU financial system, ex…",
   "key_points": [
-    "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
-    "Artificial Intelligence Act: delayed application, ban on nudifier apps",
-    "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
-    "AI adoption among euro area firms shows cautious optimism amid regulatory changes"
+    "François-Louis Michaud's appointment as Chair of the European Banking Authority (EBA) marks a significant leadership change that will influ…",
+    "The final report outlines updated supervisory reporting and public disclosure requirements under Solvency II, aiming to enhance transparenc…",
+    "Severe weather shocks negatively impact the US economy primarily during periods of financial instability, leading to significant declines i…",
+    "Severe weather shocks negatively impact real and financial variables in the US economy, particularly during periods of financial instabilit…"
   ],
   "sections": [
     {
+      "title": "Auditing of companies' financial statements",
+      "body": "The European Commission has reaffirmed its commitment to statutory audits as a cornerstone for financial integrity. This focus aims to bolster confidence in the financial markets, particularly as the EU navigates complex economic challenges."
+    },
+    {
+      "title": "Guidelines, Recommendations and Technical Standards",
+      "body": "ESMA's latest guidance seeks to refine the regulatory landscape by developing clear guidelines for financial reporting and disclosures. This initiative is crucial for enhancing market transparency and ensuring that financial institutions are held accountable."
+    },
+    {
       "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
-      "body": "The ESAs' spring 2026 update reveals a concerning landscape for the EU financial system, marked by geopolitical tensions and escalating risks from private finance. These factors threaten to destabilise the financial ecosystem, prompting a call for enhanced regulatory vigilance and risk management strategies."
-    },
-    {
-      "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
-      "body": "The European Parliament has announced a delay in the application of the AI Act, which includes a ban on high-risk 'nudifier' applications. This decision provides temporary relief for companies, particularly smaller enterprises, allowing them to navigate compliance challenges while fostering innovation in AI technologies."
-    },
-    {
-      "title": "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
-      "body": "The ECB's Economic Bulletin highlights the cautious optimism surrounding AI adoption among euro area firms, with plans for increased investment through 2026. However, the potential risks associated with unregulated AI deployment necessitate careful consideration as firms adapt to the evolving regulatory landscape."
+      "body": "The spring 2026 Joint Committee update from the ESAs underscores the pressing vulnerabilities in the EU financial system, particularly in light of geopolitical tensions. This highlights the need for a coordinated regulatory response to safeguard financial stability."
     }
   ],
   "categories": [
     "CMU & Financial Markets",
-    "AI & Digital"
+    "AI & Digital",
+    "Other/NA",
+    "daily"
   ],
   "important_documents": [
+    {
+      "id": "rep-2026-04-05-53ff83dab91f99e1",
+      "title": "EUR-Lex Daily Digest — 2026-04-05",
+      "summary": "Today's European policy briefing underscores a pivotal moment in the regulatory landscape, particularly within the banking and insurance sectors, while also addressing the broader implications of climate change on financial stability. The appointment of François-Louis Michaud as Chair of the European Banking Authority (EBA), effective April 16, 2026, signals a forthcoming shift in EU banking regulation. Michaud's leadership is anticipated to recalibrate the EBA's focus on financial stability and consumer protectio…",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-05.md",
+      "kind": "report",
+      "source": "EURLex reports",
+      "date": "2026-04-05",
+      "categories": [
+        "daily"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+      "title": "Auditing of companies' financial statements",
+      "summary": "**EU Innovation, Defence, and Capital Markets Update: Auditing for Confidence** In a move that underscores the EU's commitment to enhancing market integrity, the European Commission has reaffirmed its focus on statutory audits as a cornerstone for financial t…",
+      "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+      "kind": "Report",
+      "source": "esma_publications",
+      "date": "2026-04-05",
+      "categories": [
+        "Other/NA"
+      ],
+      "tags": [
+        "Other/NA"
+      ]
+    },
+    {
+      "id": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+      "title": "Guidelines, Recommendations and Technical Standards",
+      "summary": "**EU Innovation, Defence, and Capital Markets Update: Navigating the Future** As the European Union continues to refine its regulatory landscape, the European Securities and Markets Authority (ESMA) has been at the forefront of developing guidelines, recommen…",
+      "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+      "kind": "Guidance/Notice",
+      "source": "esma_publications",
+      "date": "2026-04-05",
+      "categories": [
+        "Other/NA"
+      ],
+      "tags": [
+        "Other/NA"
+      ]
+    },
     {
       "id": "6d74a437c2a1b5a6",
       "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
@@ -42,8 +89,8 @@
       ],
       "tags": [
         "regulation",
-        "CMU & Financial Markets",
         "EBA",
+        "CMU & Financial Markets",
         "EU"
       ]
     },
@@ -59,64 +106,8 @@
         "AI & Digital"
       ],
       "tags": [
-        "AI & Digital",
         "Parliament",
-        "EU"
-      ]
-    },
-    {
-      "id": "cf12fe4d6fb694cc",
-      "title": "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
-      "summary": "This box presents new information about the adoption of artificial intelligence (AI) technologies by euro area firms, and about their plans for AI investment up to the end of 2026. The Survey on the Access to Finance of Enterprises (SAFE) for the fourth quart…",
-      "url": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202602_06~c9f485c478.en.html",
-      "kind": "post",
-      "source": "European Central Bank",
-      "date": "2026-04-05",
-      "categories": [
-        "CMU & Financial Markets",
-        "AI & Digital"
-      ],
-      "tags": [
         "AI & Digital",
-        "CMU & Financial Markets",
-        "ECB",
-        "EU"
-      ]
-    },
-    {
-      "id": "a2f359eef6b81eaf",
-      "title": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
-      "summary": "- SPEECH AI and the euro area economy Keynote speech by Philip R. Lane, Member of the Executive Board of the ECB, at ECB-SAFE-RCEA International Conference on the Climate-Macro-Finance Interface (3CMFI) Frankfurt, 23 March 2026 Introduction Artificial intelli…",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
-      "kind": "post",
-      "source": "European Central Bank",
-      "date": "2026-04-05",
-      "categories": [
-        "CMU & Financial Markets",
-        "AI & Digital"
-      ],
-      "tags": [
-        "AI & Digital",
-        "CMU & Financial Markets",
-        "ECB",
-        "EU"
-      ]
-    },
-    {
-      "id": "a2da4cda38e00c7f",
-      "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds | European Banking Authority",
-      "summary": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the…",
-      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/suptech-can-make-anti-money-laundering-and-countering-financing-terrorism-supervision-more-effective",
-      "kind": "post",
-      "source": "European Banking Authority",
-      "date": "2026-04-05",
-      "categories": [
-        "CMU & Financial Markets"
-      ],
-      "tags": [
-        "regulation",
-        "CMU & Financial Markets",
-        "EBA",
         "EU"
       ]
     }
@@ -134,8 +125,8 @@
         "AI & Digital"
       ],
       "tags": [
-        "AI & Digital",
         "Parliament",
+        "AI & Digital",
         "EU"
       ]
     },
@@ -152,9 +143,9 @@
         "AI & Digital"
       ],
       "tags": [
-        "AI & Digital",
         "CMU & Financial Markets",
         "ECB",
+        "AI & Digital",
         "EU"
       ]
     },
@@ -171,9 +162,9 @@
         "AI & Digital"
       ],
       "tags": [
-        "AI & Digital",
         "CMU & Financial Markets",
         "ECB",
+        "AI & Digital",
         "EU"
       ]
     },
@@ -190,8 +181,8 @@
       ],
       "tags": [
         "regulation",
-        "CMU & Financial Markets",
         "EBA",
+        "CMU & Financial Markets",
         "EU"
       ]
     },
@@ -207,9 +198,9 @@
         "CMU & Financial Markets"
       ],
       "tags": [
+        "CMU & Financial Markets",
         "EUR-Lex",
         "law",
-        "CMU & Financial Markets",
         "EU"
       ]
     },
@@ -232,11 +223,15 @@
       ]
     }
   ],
-  "report": null,
+  "report": {
+    "id": "rep-2026-04-05-53ff83dab91f99e1",
+    "title": "EUR-Lex Daily Digest — 2026-04-05",
+    "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-05.md"
+  },
   "signal_counts": {
-    "posts": 1491,
-    "reports": 0,
-    "digest_items": 0,
+    "posts": 1507,
+    "reports": 1,
+    "digest_items": 2,
     "timeline_events": 0
   }
 }
