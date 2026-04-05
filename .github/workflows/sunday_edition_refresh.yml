@@ -73,20 +73,42 @@ jobs:
       - name: Commit results back to main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+          OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_WEEKLY_MODEL || secrets.OPENAI_WEEKLY_MODEL || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data docs/site docs/*.json docs/.nojekyll outputs/docs outputs/timelines reports/daily docs/digests || true
-          if git diff --cached --quiet; then
-            echo "No Sunday refresh changes to commit"
+
+          stage_and_commit() {
+            git add -A docs/data docs/site docs/*.json docs/.nojekyll outputs/docs outputs/timelines reports/daily docs/digests reports/weekly || true
+            if git diff --cached --quiet; then
+              echo "No Sunday refresh changes to commit"
+              return 1
+            fi
+            git commit -m "refresh sunday edition $(date -u +'%F %T') [auto]"
+            return 0
+          }
+
+          if ! stage_and_commit; then
             exit 0
           fi
-          git commit -m "refresh sunday edition $(date -u +'%F %T') [auto]"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && exit 0
-            git rebase --abort || true
-            echo "Retrying push ($attempt/3) after remote changed..."
-            sleep 3
-          done
-          echo "Push failed after 3 attempts" >&2
-          exit 1
+
+          if git push; then
+            exit 0
+          fi
+
+          echo "Remote changed; rebuilding Sunday outputs on top of latest main..."
+          git reset --hard origin/main
+          python scripts/build_site_data.py
+          python scripts/build_app_backend.py
+          python scripts/validate_backend_outputs.py
+          python build_site_data.py
+          mkdir -p docs
+          touch docs/.nojekyll
+
+          if ! stage_and_commit; then
+            exit 0
+          fi
+
+          git push
