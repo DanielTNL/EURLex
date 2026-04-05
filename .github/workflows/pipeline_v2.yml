@@ -114,7 +114,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/docs outputs/timelines reports state/latest_discovery.json docs/data docs/digests || true
+          git add -A outputs/docs outputs/timelines reports state/latest_discovery.json docs/data docs/digests docs/site docs/*.json docs/.nojekyll || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
