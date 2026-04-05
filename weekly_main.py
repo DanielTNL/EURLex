@@ -178,7 +178,7 @@ def call_llm(system: str, user: str, max_tokens: int, model_override: str | None
         temperature=0.2,
         messages=[{"role": "system", "content": system},
                   {"role": "user", "content": user}],
-        max_tokens=max_tokens,
+        max_completion_tokens=max_tokens,
     )
     return (r.choices[0].message.content or "").strip()
 
