@@ -175,7 +175,6 @@ def call_llm(system: str, user: str, max_tokens: int, model_override: str | None
     print(f"[llm] using model: {model}")
     r = client.chat.completions.create(
         model=model,
-        temperature=0.2,
         messages=[{"role": "system", "content": system},
                   {"role": "user", "content": user}],
         max_completion_tokens=max_tokens,
