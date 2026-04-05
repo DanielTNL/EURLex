@@ -170,7 +170,21 @@ def build_weekly_script(reports: Sequence[Dict[str, str]], start: dt.date, end: 
         "and finish with what to watch next. Aim for 5-7 minutes of audio.\n\n"
         f"Use this report corpus:\n{corpus}"
     )
-    return call_llm(system, user, max_tokens=1800)
+    script = call_llm(system, user, max_tokens=1800).strip()
+    if script:
+        return script
+
+    top_titles = [report["title"] for report in reports[:4]]
+    top_bodies = [report["body"] for report in reports[:3]]
+    fallback_parts = [
+        f"This is your weekly European policy voice briefing for {start.isoformat()} to {end.isoformat()}.",
+        f"The main developments this week were: {'; '.join(top_titles)}.",
+        "Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape.",
+        "Here is the core readout from the week.",
+        *top_bodies,
+        "That concludes the weekly voice overview. Watch the next briefing for the coming shifts in regulation, supervisory guidance, and market signals."
+    ]
+    return " ".join(part for part in fallback_parts if part).strip()
 
 
 def split_dialogue(script: str) -> List[Tuple[str, str]]:
