@@ -591,6 +591,11 @@ async def build():
             if f.suffix.lower() not in (".md",".markdown",".txt",".html",".htm"): continue
             try:
                 rel = f.relative_to(ROOT).as_posix()
+                if rel.startswith("reports/daily/"):
+                    # These lightweight daily stubs are useful as pipeline artifacts,
+                    # but the app should prefer the richer editorial reports stored in
+                    # reports/YYYY-MM-DD.md.
+                    continue
                 if rel in seen_report_paths:
                     continue
                 seen_report_paths.add(rel)

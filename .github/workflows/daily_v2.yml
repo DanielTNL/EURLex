@@ -101,6 +101,15 @@ jobs:
         run: |
           python workers/build_daily_digest.py --hours 24
 
+      # 4b) Rich editorial daily report (legacy format, delivery disabled)
+      - name: Build rich daily report
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
+          REPORT_ONLY: "1"
+        run: |
+          python main.py
+
       # 5) Build site payload
       - name: Build site payload
         run: |
@@ -139,6 +148,7 @@ jobs:
         run: |
           echo "== outputs/docs ==" && ls -lah outputs/docs || true
           echo "== outputs/timelines ==" && ls -lah outputs/timelines || true
+          echo "== reports ==" && ls -lah reports | tail -n 20 || true
           echo "== reports/daily ==" && ls -lah reports/daily || true
           echo "== docs/digests ==" && ls -lah docs/digests || true
           echo "== docs/data ==" && ls -lah docs/data || true
@@ -155,6 +165,7 @@ jobs:
           path: |
             outputs/docs/*.ndjson
             outputs/timelines/*.json
+            reports/*.md
             reports/daily/*.md
             docs/digests/*.json
             docs/data/*.json
@@ -169,7 +180,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add outputs/docs outputs/timelines reports/daily docs/digests docs/data docs/site docs/*.json docs/.nojekyll || true
+          git add outputs/docs outputs/timelines reports reports/daily docs/digests docs/data docs/site docs/*.json docs/.nojekyll state/seen.json || true
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

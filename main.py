@@ -24,6 +24,7 @@ except Exception:
 
 # ---------- OpenAI ----------
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+REPORT_ONLY = (os.getenv("REPORT_ONLY", "") or "").strip().lower() in {"1", "true", "yes", "on"}
 OPENAI_ENABLED = bool(os.getenv("OPENAI_API_KEY"))
 if OPENAI_ENABLED:
     try:
@@ -472,19 +473,22 @@ def main():
         return get_drive_service_oauth()
 
     doc_link = ""
-    drv, acct = get_drive_service_oauth_wrapper()
-    if drv:
-        try:
-            folder_id = (os.getenv("GOOGLE_DOCS_FOLDER_ID") or "").strip() or None
-            share_with = (os.getenv("GOOGLE_DOCS_SHARE_WITH") or "").strip() or None
-            html = md_to_html(f"EUR-Lex Daily Digest — {date_str}", exec_bullets, exec_paragraph, cats_cfg, by_cat)
-            print("[google] creating doc...")
-            _, doc_link = create_google_doc_from_html(drv, html, f"EUR-Lex Daily Digest — {date_str}", folder_id, share_with)
-            print("[google] doc created:", doc_link)
-        except Exception as e:
-            print("[google] creation failed:", e)
+    if REPORT_ONLY:
+        print("[google] skipped (report-only mode).")
     else:
-        print("[google] skipped (no OAuth).")
+        drv, acct = get_drive_service_oauth_wrapper()
+        if drv:
+            try:
+                folder_id = (os.getenv("GOOGLE_DOCS_FOLDER_ID") or "").strip() or None
+                share_with = (os.getenv("GOOGLE_DOCS_SHARE_WITH") or "").strip() or None
+                html = md_to_html(f"EUR-Lex Daily Digest — {date_str}", exec_bullets, exec_paragraph, cats_cfg, by_cat)
+                print("[google] creating doc...")
+                _, doc_link = create_google_doc_from_html(drv, html, f"EUR-Lex Daily Digest — {date_str}", folder_id, share_with)
+                print("[google] doc created:", doc_link)
+            except Exception as e:
+                print("[google] creation failed:", e)
+        else:
+            print("[google] skipped (no OAuth).")
 
     # Email body
     lines = ["Executive Summary","----------------"]
@@ -502,7 +506,9 @@ def main():
         lines.append("")
     body = "\n".join(lines)
 
-    if mail_service == "gmail":
+    if REPORT_ONLY:
+        print("[done] report-only mode enabled; skipping email and Google delivery")
+    elif mail_service == "gmail":
         send_email_gmail(subject, body, email_to)
     else:
         raise RuntimeError(f"Unsupported mail_service: {mail_service}")

@@ -24,6 +24,7 @@ DOCS_DATA = ROOT / 'docs' / 'data'
 DOCS_DATA.mkdir(parents=True, exist_ok=True)
 DIGESTS_DIR = ROOT / 'docs' / 'digests'
 STATE_DIR = ROOT / 'state'
+REPO_SLUG = os.getenv('GITHUB_REPOSITORY', 'DanielTNL/EURLex')
 
 POSTS_JSON = DOCS_DATA / 'posts.json'
 REPORTS_JSON = DOCS_DATA / 'reports.json'
@@ -504,6 +505,34 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
     }
 
 
+def preferred_daily_report(reports_day: List[dict]) -> dict | None:
+    if not reports_day:
+        return None
+
+    def score(report: dict) -> tuple[int, int, int]:
+        tags = report.get('tags') or []
+        key_items = report.get('key_items') or []
+        abstract = str(report.get('abstract') or '')
+        url = str(report.get('url_html') or '')
+        is_daily = 1 if 'daily' in tags else 0
+        not_stub_path = 1 if '/reports/daily/' not in url else 0
+        richness = len(key_items) * 10 + min(len(abstract), 600)
+        return (is_daily, not_stub_path, richness)
+
+    return max(reports_day, key=score)
+
+
+def root_daily_report_metadata(day: str) -> dict | None:
+    path = ROOT / 'reports' / f'{day}.md'
+    if not path.exists():
+        return None
+    return {
+        'id': f'root-report-{day}',
+        'title': f'EUR-Lex Daily Digest — {day}',
+        'url': f'https://github.com/{REPO_SLUG}/blob/main/reports/{day}.md',
+    }
+
+
 def daily_briefings(posts: List[dict], reports: List[dict], timeline: dict, digest: dict) -> dict:
     days = set()
     for post in posts:
@@ -537,7 +566,7 @@ def daily_briefings(posts: List[dict], reports: List[dict], timeline: dict, dige
         if not digest_items and digest_day == day:
             digest_items = [digest_to_common(i) for i in digest.get('items', [])[:4]]
 
-        daily_report = next((r for r in reports_day if 'daily' in (r.get('tags') or [])), reports_day[0] if reports_day else None)
+        daily_report = preferred_daily_report(reports_day)
         primary_report = report_to_common(daily_report) if daily_report else None
 
         important = unique_documents([x for x in [primary_report] if x] + digest_items + posts_day + timeline_day)[:5]
@@ -557,6 +586,19 @@ def daily_briefings(posts: List[dict], reports: List[dict], timeline: dict, dige
         if index > 0:
             editorial = fallback_daily_payload(day_label, summary, fallback_key_points, important)
 
+        report_payload = (
+            {
+                'id': daily_report.get('id'),
+                'title': daily_report.get('display_title') or daily_report.get('title'),
+                'url': daily_report.get('url_html'),
+            }
+            if daily_report
+            else None
+        )
+        root_report = root_daily_report_metadata(day)
+        if root_report and (report_payload is None or '/reports/daily/' in str(report_payload.get('url') or '')):
+            report_payload = root_report
+
         results.append(
             {
                 'date': day,
@@ -569,11 +611,7 @@ def daily_briefings(posts: List[dict], reports: List[dict], timeline: dict, dige
                 'categories': categories,
                 'important_documents': [doc.to_payload() for doc in important],
                 'related_documents': [doc.to_payload() for doc in related],
-                'report': {
-                    'id': daily_report.get('id'),
-                    'title': daily_report.get('display_title') or daily_report.get('title'),
-                    'url': daily_report.get('url_html'),
-                } if daily_report else None,
+                'report': report_payload,
                 'signal_counts': {
                     'posts': len(posts_day),
                     'reports': len(reports_day),
