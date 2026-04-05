@@ -2,8 +2,8 @@ name: Pipeline v2 (daily)
 
 on:
   schedule:
-    - cron: "0 3 * * *" # 05:00 Europe/Amsterdam during CEST, 04:00 during CET
-  workflow_dispatch: {}
+    - cron: "0 3 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,140 +24,37 @@ jobs:
       OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # Install dependencies from root + scripts (+ workers if present), fail fast
       - name: Install deps (root + scripts + workers)
         run: |
           set -euo pipefail
           python -m pip install --upgrade pip setuptools wheel
-
-          echo "== requirements files present =="
-          ls -1 requirements*.txt scripts/*.txt workers/*.txt 2>/dev/null || true
-
           for f in requirements.txt scripts/requirements.txt workers/requirements.txt; do
             if [ -f "$f" ]; then
-              echo ">>> Checking $f for trailing-dot version pins"
-              if grep -nE '==[0-9]+\.[0-9]+\.($|[^0-9])' "$f"; then
-                echo "Invalid version specifier (trailing dot) in $f"; exit 1;
-              fi
-              echo ">>> Installing from $f"
               python -m pip install -r "$f"
             fi
           done
-
           python -m pip check
 
-      # 1) Discover last 24h (capture exit code instead of continue-on-error)
-      - name: Daily discover (last 24h)
-        id: discover
-        run: |
-          set +e
-          if [ -f sources_v2.yaml ]; then
-            python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml
-            rc=$?
-          else
-            python workers/weekly_discover.py --window 1d --config config_v2.yaml
-            rc=$?
-          fi
-          echo "DISCOVER_RC=$rc" >> "$GITHUB_ENV"
-          exit 0
+      - name: Build daily outputs
+        run: bash scripts/run_daily_pipeline.sh
 
-      # 1b) Fallback only if discover failed
-      - name: "Fallback: write empty discovery"
-        if: ${{ env.DISCOVER_RC != '0' }}
-        shell: python
+      - name: Show outputs
         run: |
-          import os, json
-          from datetime import datetime, timezone
-          os.makedirs("state", exist_ok=True)
-          payload = {
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "window": "1d",
-            "items": [],
-            "documents": [],
-            "sources": []
-          }
-          with open("state/latest_discovery.json", "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False)
-          print("Wrote state/latest_discovery.json (empty fallback)")
-
-      # 2) Process documents
-      - name: Process documents
-        run: |
-          python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit 50
-
-      # 3) Build timeline (7d)
-      - name: Build timeline (rolling 7d)
-        run: |
-          python workers/build_timeline.py --window 7d --config config_v2.yaml
-
-      # 4) Daily digest
-      - name: Build daily digest
-        run: |
-          python workers/build_daily_digest.py --hours 24
-
-      # 4b) Rich editorial daily report (legacy format, delivery disabled)
-      - name: Build rich daily report
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
-          REPORT_ONLY: "1"
-        run: |
-          python main.py
-
-      # 5) Build site payload
-      - name: Build site payload
-        run: |
-          if [ -f build_site_data.py ]; then
-            python build_site_data.py || true
-          else
-            python workers/build_site_data_v2.py
-          fi
-
-      # 5b) Build app-facing editorial backend payloads
-      - name: Build app backend payload
-        run: |
-          if [ -f build_app_backend.py ]; then
-            python build_app_backend.py
-          else
-            python scripts/build_app_backend.py
-          fi
-
-      - name: Validate backend outputs
-        run: |
-          python scripts/validate_backend_outputs.py
-
-      # 6) Publish site bridge (v2 -> legacy)
-      - name: Publish site bridge (v2 -> legacy)
-        run: |
-          python workers/publish_site_bridge.py
-
-      # 6b) Ensure GitHub Pages serves raw files (skip Jekyll)
-      - name: Ensure .nojekyll in docs
-        run: |
-          mkdir -p docs
-          touch docs/.nojekyll
-
-      # 7) Show outputs in logs
-      - name: Show outputs (ls + head)
-        run: |
-          echo "== outputs/docs ==" && ls -lah outputs/docs || true
-          echo "== outputs/timelines ==" && ls -lah outputs/timelines || true
+          echo "== docs/data ==" && ls -lah docs/data || true
           echo "== reports ==" && ls -lah reports | tail -n 20 || true
           echo "== reports/daily ==" && ls -lah reports/daily || true
           echo "== docs/digests ==" && ls -lah docs/digests || true
-          echo "== docs/data ==" && ls -lah docs/data || true
-          echo "== docs/site ==" && ls -lah docs/site || true
-          echo "== docs root json ==" && ls -lah docs/*.json || true
-          for f in outputs/docs/*.ndjson; do echo "---- $f"; head -n 2 "$f" || true; done
-          for f in outputs/timelines/*.json; do echo "---- $f"; head -n 40 "$f" || true; done
 
-      # 8) Upload artifacts (optional)
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -173,14 +70,11 @@ jobs:
             docs/site/*.json
           if-no-files-found: warn
 
-      # 9) Commit results
       - name: Commit results back to main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
-          OPENAI_WEEKLY_MODEL: ${{ vars.OPENAI_MODEL_WEEKLY || secrets.OPENAI_MODEL_WEEKLY || vars.OPENAI_MODEL || secrets.OPENAI_MODEL || 'gpt-4o-mini' }}
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -194,55 +88,6 @@ jobs:
             return 0
           }
 
-          rebuild_daily_outputs() {
-            set +e
-            if [ -f sources_v2.yaml ]; then
-              python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml
-              rc=$?
-            else
-              python workers/weekly_discover.py --window 1d --config config_v2.yaml
-              rc=$?
-            fi
-            set -e
-
-            if [ "$rc" -ne 0 ]; then
-              python - <<'PY'
-import os, json
-from datetime import datetime, timezone
-os.makedirs("state", exist_ok=True)
-payload = {
-  "generated_at": datetime.now(timezone.utc).isoformat(),
-  "window": "1d",
-  "items": [],
-  "documents": [],
-  "sources": []
-}
-with open("state/latest_discovery.json", "w", encoding="utf-8") as f:
-  json.dump(payload, f, ensure_ascii=False)
-print("Wrote state/latest_discovery.json (empty fallback)")
-PY
-            fi
-
-            python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit 50
-            python workers/build_timeline.py --window 7d --config config_v2.yaml
-            python workers/build_daily_digest.py --hours 24
-            REPORT_ONLY=1 python main.py
-            if [ -f build_site_data.py ]; then
-              python build_site_data.py || true
-            else
-              python workers/build_site_data_v2.py
-            fi
-            if [ -f build_app_backend.py ]; then
-              python build_app_backend.py
-            else
-              python scripts/build_app_backend.py
-            fi
-            python scripts/validate_backend_outputs.py
-            python workers/publish_site_bridge.py
-            mkdir -p docs
-            touch docs/.nojekyll
-          }
-
           if ! stage_and_commit; then
             exit 0
           fi
@@ -254,7 +99,7 @@ PY
           echo "Remote changed; rebuilding daily outputs on top of latest main..."
           git fetch origin main
           git reset --hard origin/main
-          rebuild_daily_outputs
+          bash scripts/run_daily_pipeline.sh
 
           if ! stage_and_commit; then
             exit 0
@@ -262,9 +107,6 @@ PY
 
           git push
 
-      # 10) Warm GitHub Pages (Pages has no /api/revalidate)
       - name: Warm GitHub Pages
         run: |
-          ROOT_URL="https://danieltnl.github.io/EURLex/"
-          echo "GET $ROOT_URL"
-          curl -sS -I "$ROOT_URL" || true
+          curl -sS -I "https://danieltnl.github.io/EURLex/" || true
