@@ -1,47 +1,105 @@
 {
   "date": "2026-04-05",
   "title": "Sunday 5 April 2026",
-  "headline": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
-  "intro": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the published material, the b…",
-  "summary": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the published material, the biggest themes were ma",
+  "headline": "Spring 2026: EU Financial System Faces Geopolitical and AI-Related Challenges",
+  "intro": "As the EU grapples with a complex landscape of geopolitical tensions and the rapid evolution of artificial intelligence, the latest update from the European Supervisory Authorities (ESAs) underscores the multifaceted risks facing the financial system. The spring 2026 Joint Committee update reveals that while the adoption of AI technologies is on the rise among euro area firms, significant regulatory hurdles remain, particularly with the delayed application of the AI Act. This briefing explores the implications of…",
+  "summary": "The European Supervisory Authorities (EBA, EIOPA, and ESMA) have released their spring 2026 Joint Committee update, which paints a concerning picture of the EU financial system amid rising geopolitical pressures and increasing risks associated with private finance. The report identifies vulnerabilities exacerbated by external conflicts and economic uncertainties, prompting calls for enhanced regulatory oversight and strategic resilience from financial institutions. The implications of these findings are profound, as they signal a need for policymakers to reassess their approaches to risk management in an increasingly volatile global landscape. In parallel, the European Parliament has made significant strides in the realm of artificial intelligence regulation with the delayed application of the AI Act. This legislation, which aims to impose stricter controls on high-risk AI systems, now offers some flexibility for small and mid-cap enterprises. However, the ban on 'nudifier' applications raises questions about the balance between innovation and ethical considerations in AI deployment. The delayed activation of these rules could provide businesses with a much-needed breathing space, yet it also risks creating a fragmented regulatory environment that may stifle competition and innovation in the long run. Moreover, the ECB's Economic Bulletin has shed light on the growing adoption…",
   "key_points": [
-    "2026-04-04 | Daily Digest — 2026-04-04 | reports/daily/2026-04-04.md",
-    "2026-04-03 | EUR-Lex Daily Digest — 2026-04-03 | reports/2026-04-03.md",
-    "2026-04-03 | Daily Digest — 2026-04-03 | reports/daily/2026-04-03.md"
+    "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
+    "Artificial Intelligence Act: delayed application, ban on nudifier apps",
+    "Published as part of the ECB Economic Bulletin, Issue 2/2026",
+    "SupTech can enhance anti-money laundering supervision, EBA finds"
   ],
   "sections": [
     {
-      "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
-      "body": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the publi… Source: EURLex reports, 2026-04-05."
+      "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
+      "body": "The ESAs' spring 2026 update reveals heightened vulnerabilities in the EU financial system due to ongoing geopolitical tensions and private finance risks. This underscores the urgent need for regulatory frameworks that can adapt to a rapidly changing global landscape, ensuring financial stability amidst uncertainty."
+    },
+    {
+      "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
+      "body": "The European Parliament's decision to delay the application of the AI Act introduces flexibility for small and mid-cap enterprises while imposing a ban on certain applications. This move aims to balance innovation with ethical considerations, though it raises concerns about potential regulatory fragmentation."
     },
     {
       "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA fi…",
-      "body": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the… Source: European Banking Authority, 2026-04-05."
-    },
-    {
-      "title": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
-      "body": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017 Source: EUR-Lex, 2026-04-05."
+      "body": "The EBA's findings on the efficacy of SupTech in enhancing anti-money laundering efforts highlight the potential for technology to improve compliance. However, this also necessitates careful consideration of privacy implications and the risk of regulatory overreach in the financial sector."
     }
   ],
   "categories": [
     "CMU & Financial Markets",
-    "weekly",
     "AI & Digital"
   ],
   "important_documents": [
     {
-      "id": "rep-2026-04-05-b61377a65ff4d985",
-      "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
-      "summary": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03; Daily Digest — 2026-04-03; EUR-Lex Daily Digest — 2026-04-02. Across the publi…",
-      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-05-weekly-request.txt",
-      "kind": "report",
-      "source": "EURLex reports",
+      "id": "6d74a437c2a1b5a6",
+      "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
+      "summary": "The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published their spring 2026 Joint Committee update on risks and vulnerabilities in the EU financial system. The update focuses on the challenges arising from ongoing geopolitical tens…",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-spring-risk-update-highlights-geopolitical-pressures-and-rising-private-finance-risks",
+      "kind": "post",
+      "source": "European Banking Authority",
       "date": "2026-04-05",
       "categories": [
-        "weekly"
+        "CMU & Financial Markets"
       ],
       "tags": [
-        "weekly"
+        "EU",
+        "regulation",
+        "EBA",
+        "CMU & Financial Markets"
+      ]
+    },
+    {
+      "id": "6ee445d20445bcef",
+      "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
+      "summary": "Clear date for activation of certain rules on high-risk AI systems - Flexibility for companies on certain rules and support for small mid-cap enterprises - AI Act obligations can be less stringent for products governed by sectoral laws MEPs have agreed on pro…",
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/",
+      "kind": "post",
+      "source": "European Parliament",
+      "date": "2026-04-05",
+      "categories": [
+        "AI & Digital"
+      ],
+      "tags": [
+        "EU",
+        "AI & Digital",
+        "Parliament"
+      ]
+    },
+    {
+      "id": "cf12fe4d6fb694cc",
+      "title": "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
+      "summary": "This box presents new information about the adoption of artificial intelligence (AI) technologies by euro area firms, and about their plans for AI investment up to the end of 2026. The Survey on the Access to Finance of Enterprises (SAFE) for the fourth quart…",
+      "url": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202602_06~c9f485c478.en.html",
+      "kind": "post",
+      "source": "European Central Bank",
+      "date": "2026-04-05",
+      "categories": [
+        "CMU & Financial Markets",
+        "AI & Digital"
+      ],
+      "tags": [
+        "EU",
+        "ECB",
+        "AI & Digital",
+        "CMU & Financial Markets"
+      ]
+    },
+    {
+      "id": "a2f359eef6b81eaf",
+      "title": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
+      "summary": "- SPEECH AI and the euro area economy Keynote speech by Philip R. Lane, Member of the Executive Board of the ECB, at ECB-SAFE-RCEA International Conference on the Climate-Macro-Finance Interface (3CMFI) Frankfurt, 23 March 2026 Introduction Artificial intelli…",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
+      "kind": "post",
+      "source": "European Central Bank",
+      "date": "2026-04-05",
+      "categories": [
+        "CMU & Financial Markets",
+        "AI & Digital"
+      ],
+      "tags": [
+        "EU",
+        "ECB",
+        "AI & Digital",
+        "CMU & Financial Markets"
       ]
     },
     {
@@ -56,140 +114,85 @@
         "CMU & Financial Markets"
       ],
       "tags": [
-        "CMU & Financial Markets",
+        "EU",
         "regulation",
         "EBA",
-        "EU"
-      ]
-    },
-    {
-      "id": "0d9321fd730907cf",
-      "title": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
-      "summary": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205628",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-05",
-      "categories": [
         "CMU & Financial Markets"
-      ],
-      "tags": [
-        "CMU & Financial Markets",
-        "law",
-        "EUR-Lex",
-        "EU"
-      ]
-    },
-    {
-      "id": "c970c924134b3732",
-      "title": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12",
-      "summary": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205630",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-05",
-      "categories": [
-        "CMU & Financial Markets"
-      ],
-      "tags": [
-        "CMU & Financial Markets",
-        "law",
-        "EUR-Lex",
-        "EU"
-      ]
-    },
-    {
-      "id": "e673d429fbf7d013",
-      "title": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22",
-      "summary": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205627",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-05",
-      "categories": [
-        "CMU & Financial Markets"
-      ],
-      "tags": [
-        "CMU & Financial Markets",
-        "law",
-        "EUR-Lex",
-        "EU"
       ]
     }
   ],
   "related_documents": [
     {
-      "id": "0d9321fd730907cf",
-      "title": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
-      "summary": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205628",
+      "id": "6ee445d20445bcef",
+      "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
+      "summary": "Clear date for activation of certain rules on high-risk AI systems - Flexibility for companies on certain rules and support for small mid-cap enterprises - AI Act obligations can be less stringent for products governed by sectoral laws MEPs have agreed on pro…",
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/",
       "kind": "post",
-      "source": "EUR-Lex",
+      "source": "European Parliament",
       "date": "2026-04-05",
       "categories": [
-        "CMU & Financial Markets"
+        "AI & Digital"
       ],
       "tags": [
-        "CMU & Financial Markets",
-        "law",
-        "EUR-Lex",
-        "EU"
+        "EU",
+        "AI & Digital",
+        "Parliament"
       ]
     },
     {
-      "id": "c970c924134b3732",
-      "title": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12",
-      "summary": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205630",
+      "id": "cf12fe4d6fb694cc",
+      "title": "Published as part of the ECB Economic Bulletin, Issue 2/2026.",
+      "summary": "This box presents new information about the adoption of artificial intelligence (AI) technologies by euro area firms, and about their plans for AI investment up to the end of 2026. The Survey on the Access to Finance of Enterprises (SAFE) for the fourth quart…",
+      "url": "https://www.ecb.europa.eu//press/economic-bulletin/focus/2026/html/ecb.ebbox202602_06~c9f485c478.en.html",
       "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-05",
-      "categories": [
-        "CMU & Financial Markets"
-      ],
-      "tags": [
-        "CMU & Financial Markets",
-        "law",
-        "EUR-Lex",
-        "EU"
-      ]
-    },
-    {
-      "id": "e673d429fbf7d013",
-      "title": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22",
-      "summary": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205627",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-05",
-      "categories": [
-        "CMU & Financial Markets"
-      ],
-      "tags": [
-        "CMU & Financial Markets",
-        "law",
-        "EUR-Lex",
-        "EU"
-      ]
-    },
-    {
-      "id": "bd0526c5b1f0368b",
-      "title": "CONSIL:ST_7384_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) [15708/25 - 2025/0359 (COD)] - European Central Bank/ ECB Opinion",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_7384_2026_INIT",
-      "kind": "post",
-      "source": "EUR-Lex",
+      "source": "European Central Bank",
       "date": "2026-04-05",
       "categories": [
         "CMU & Financial Markets",
         "AI & Digital"
       ],
       "tags": [
-        "AI & Digital",
         "EU",
-        "law",
+        "ECB",
+        "AI & Digital",
+        "CMU & Financial Markets"
+      ]
+    },
+    {
+      "id": "a2f359eef6b81eaf",
+      "title": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
+      "summary": "- SPEECH AI and the euro area economy Keynote speech by Philip R. Lane, Member of the Executive Board of the ECB, at ECB-SAFE-RCEA International Conference on the Climate-Macro-Finance Interface (3CMFI) Frankfurt, 23 March 2026 Introduction Artificial intelli…",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260323_1~1e06784a89.en.html",
+      "kind": "post",
+      "source": "European Central Bank",
+      "date": "2026-04-05",
+      "categories": [
         "CMU & Financial Markets",
-        "EUR-Lex"
+        "AI & Digital"
+      ],
+      "tags": [
+        "EU",
+        "ECB",
+        "AI & Digital",
+        "CMU & Financial Markets"
+      ]
+    },
+    {
+      "id": "a2da4cda38e00c7f",
+      "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds | European Banking Authority",
+      "summary": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the…",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/suptech-can-make-anti-money-laundering-and-countering-financing-terrorism-supervision-more-effective",
+      "kind": "post",
+      "source": "European Banking Authority",
+      "date": "2026-04-05",
+      "categories": [
+        "CMU & Financial Markets"
+      ],
+      "tags": [
+        "EU",
+        "regulation",
+        "EBA",
+        "CMU & Financial Markets"
       ]
     },
     {
@@ -204,17 +207,17 @@
         "CMU & Financial Markets"
       ],
       "tags": [
-        "CMU & Financial Markets",
+        "EU",
         "law",
         "EUR-Lex",
-        "EU"
+        "CMU & Financial Markets"
       ]
     },
     {
-      "id": "d788a33ce32b415f",
-      "title": "Letter from Frank Elderson, Member of the Executive Board of the European Central Bank, to Zbynĕk Stanjura, Minister for Finance of the Czech Republic, regarding a draft law amending certain laws in the field of the fina",
-      "summary": "Letter from Frank Elderson, Member of the Executive Board of the European Central Bank, to Zbynĕk Stanjura, Minister for Finance of the Czech Republic, regarding a draft law amending certain laws in the field of the financial market as regards the establishme…",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=IMMC:LET/2024/11261",
+      "id": "0d9321fd730907cf",
+      "title": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
+      "summary": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
+      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205628",
       "kind": "post",
       "source": "EUR-Lex",
       "date": "2026-04-05",
@@ -229,14 +232,10 @@
       ]
     }
   ],
-  "report": {
-    "id": "rep-2026-04-05-b61377a65ff4d985",
-    "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
-    "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-05-weekly-request.txt"
-  },
+  "report": null,
   "signal_counts": {
-    "posts": 989,
-    "reports": 1,
+    "posts": 1491,
+    "reports": 0,
     "digest_items": 0,
     "timeline_events": 0
   }
