@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-04-06T18:42:32.937605+00:00",
+  "generated_at": "2026-04-06T19:14:13.561531+00:00",
   "latest_date": "2026-04-06",
   "items": [
     {
       "date": "2026-04-06",
       "title": "Monday 6 April 2026",
-      "headline": "ELI background",
-      "intro": "Monday 6 April 2026 is led by ELI background. 5 relevant documents are currently attached to this publication window.",
-      "summary": "ELI background: ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—say, for a cross-border regulatory filing, a due d… What is ELI?: What is ELI? (and why capital markets people should care) Today’s EU innovation-and-capital-markets angle is not a new fund or a defence contract. It’s a standards upgrade: the **European Legislation Identifier (ELI)**—… Statistics: Statistics (EUR-Lex): a small UI change with a big “data hygiene” angle If you’ve ever tried to track EU innovation, defence procurement, or capital markets developments using EUR-Lex, you’ll know the real work is rarel… Why implement ELI?: Why implement ELI?",
+      "headline": "What is ELI?",
+      "intro": "Monday 6 April 2026 is led by What is ELI?. 5 relevant documents are currently attached to this publication window.",
+      "summary": "What is ELI?: What is ELI? (and why EU innovation types should care) Today’s “innovation” item isn’t a new defence contract or a fresh tranche of venture funding. It’s something more quietly transformative: the European Legislation I… Statistics: EUR-Lex “Statistics” page: a small change with big implications for how we measure EU law (and therefore innovation, defence and markets) What happened? EUR-Lex has published (and promoted) a “Statistics” landing page t… Why implement ELI?: Why implement ELI? ELI background: ELI background",
       "key_points": [
         "1) What happened and why it matters",
-        "compliance workflows (what exactly applies, and where),",
-        "regulatory monitoring (tracking changes across jurisdictions),",
-        "and legal risk management (finding the right authoritative"
+        "automate legal monitoring and due diligence,",
+        "link obligations to specific texts,",
+        "reduce citation ambiguity across jurisdictions,"
       ],
       "sections": [
         {
-          "title": "ELI background",
-          "body": "ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—say, for a cross-border regulatory filing, a due diligence pack, or a litigation risk c… Source: eur-lex.europa.eu, 2026-04-06."
-        },
-        {
           "title": "What is ELI?",
-          "body": "What is ELI? (and why capital markets people should care) Today’s EU innovation-and-capital-markets angle is not a new fund or a defence contract. It’s a standards upgrade: the **European Legislation Identifier (ELI)**—a framework designed to make EU (and… Source: eur-lex.europa.eu, 2026-04-06."
+          "body": "What is ELI? (and why EU innovation types should care) Today’s “innovation” item isn’t a new defence contract or a fresh tranche of venture funding. It’s something more quietly transformative: the European Legislation Identifier (ELI). EUR-Lex has been exp… Source: eur-lex.europa.eu, 2026-04-06."
         },
         {
           "title": "Statistics",
-          "body": "Statistics (EUR-Lex): a small UI change with a big “data hygiene” angle If you’ve ever tried to track EU innovation, defence procurement, or capital markets developments using EUR-Lex, you’ll know the real work is rarely the reading—it’s the *finding*. Thi… Source: eur-lex.europa.eu, 2026-04-06."
+          "body": "EUR-Lex “Statistics” page: a small change with big implications for how we measure EU law (and therefore innovation, defence and markets) What happened? EUR-Lex has published (and promoted) a “Statistics” landing page that focuses on measuring the content… Source: eur-lex.europa.eu, 2026-04-06."
+        },
+        {
+          "title": "Why implement ELI?",
+          "body": "Why implement ELI? Source: eur-lex.europa.eu, 2026-04-06."
         }
       ],
       "categories": [
@@ -38,7 +38,7 @@
         {
           "id": "rep-2026-04-06-113b42caea087958",
           "title": "Daily Digest — 2026-04-06",
-          "summary": "_Items in last 24h: 52_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-06T18:31:25.044220+00:00 Programma: Other/NA Link",
+          "summary": "_Items in last 24h: 98_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-06T19:03:15.455362+00:00 Programma: Other/NA Link",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-06.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -68,7 +68,7 @@
         {
           "id": "https://eur-lex.europa.eu/eli-register/background.html",
           "title": "ELI background",
-          "summary": "## ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—say, for a cross-border regulatory filing, a due diligence pack, or a litigation risk c…",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/eli-register/background.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
@@ -83,7 +83,7 @@
         {
           "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
           "title": "What is ELI?",
-          "summary": "## What is ELI? (and why capital markets people should care) Today’s EU innovation-and-capital-markets angle is not a new fund or a defence contract. It’s a standards upgrade: the **European Legislation Identifier (ELI)**—a framework designed to make EU (and…",
+          "summary": "## What is ELI? (and why EU innovation types should care) Today’s “innovation” item isn’t a new defence contract or a fresh tranche of venture funding. It’s something more quietly transformative: the European Legislation Identifier (ELI). EUR-Lex has been exp…",
           "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
@@ -98,7 +98,7 @@
         {
           "id": "https://eur-lex.europa.eu/statistics/statistics.html",
           "title": "Statistics",
-          "summary": "## Statistics (EUR-Lex): a small UI change with a big “data hygiene” angle If you’ve ever tried to track EU innovation, defence procurement, or capital markets developments using EUR-Lex, you’ll know the real work is rarely the reading—it’s the *finding*. Thi…",
+          "summary": "## EUR-Lex “Statistics” page: a small change with big implications for how we measure EU law (and therefore innovation, defence and markets) What happened? EUR-Lex has published (and promoted) a “Statistics” landing page that focuses on measuring the content…",
           "url": "https://eur-lex.europa.eu/statistics/statistics.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
@@ -141,10 +141,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "AI & Digital"
+            "AI & Digital",
+            "EU",
+            "law"
           ]
         },
         {
@@ -159,10 +159,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         },
         {
@@ -177,10 +177,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         },
         {
@@ -195,10 +195,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         },
         {
@@ -213,10 +213,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         }
       ],
@@ -228,8 +228,8 @@
       "signal_counts": {
         "posts": 34,
         "reports": 3,
-        "digest_items": 48,
-        "timeline_events": 2
+        "digest_items": 94,
+        "timeline_events": 48
       }
     },
     {
@@ -735,10 +735,11 @@
       "date": "2026-03-31",
       "title": "Tuesday 31 March 2026",
       "headline": "Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon",
-      "intro": "Tuesday 31 March 2026 is led by Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon. 3 relevant documents are currently attached to this publication window.",
-      "summary": "Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon: Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon WK 5031 2023 INIT: Net-zero Industry Act: correspondence table between the articles and the recitals",
+      "intro": "Tuesday 31 March 2026 is led by Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon. 4 relevant documents are currently attached to this publication window.",
+      "summary": "Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon: Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon WK 5031 2023 INIT: Net-zero Industry Act: correspondence table between the articles and the recitals Your gateway to the European Union: Your gateway to the European Union",
       "key_points": [
         "WK 5031 2023 INIT",
+        "Your gateway to the European Union",
         "Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon"
       ],
       "sections": [
@@ -749,10 +750,16 @@
         {
           "title": "WK 5031 2023 INIT",
           "body": "Net-zero Industry Act: correspondence table between the articles and the recitals Source: External, 2026-03-31."
+        },
+        {
+          "title": "Your gateway to the European Union",
+          "body": "Your gateway to the European Union Source: Timeline, 2026-03-31."
         }
       ],
       "categories": [
         "Other/NA",
+        "Space/EO",
+        "Cybersecurity",
         "daily",
         "De-risking & Investment"
       ],
@@ -784,8 +791,27 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "external",
-            "De-risking & Investment"
+            "De-risking & Investment",
+            "external"
+          ]
+        },
+        {
+          "id": "https://european-union.europa.eu/index_en",
+          "title": "Your gateway to the European Union",
+          "summary": "",
+          "url": "https://european-union.europa.eu/index_en",
+          "kind": "Blog/News",
+          "source": "Timeline",
+          "date": "2026-03-31",
+          "categories": [
+            "Other/NA",
+            "Space/EO",
+            "Cybersecurity"
+          ],
+          "tags": [
+            "Other/NA",
+            "Space/EO",
+            "Cybersecurity"
           ]
         },
         {
@@ -805,6 +831,25 @@
         }
       ],
       "related_documents": [
+        {
+          "id": "https://european-union.europa.eu/index_en",
+          "title": "Your gateway to the European Union",
+          "summary": "",
+          "url": "https://european-union.europa.eu/index_en",
+          "kind": "Blog/News",
+          "source": "Timeline",
+          "date": "2026-03-31",
+          "categories": [
+            "Other/NA",
+            "Space/EO",
+            "Cybersecurity"
+          ],
+          "tags": [
+            "Other/NA",
+            "Space/EO",
+            "Cybersecurity"
+          ]
+        },
         {
           "id": "https://www.airbus.com/en/newsroom/press-releases/2026-03-heart-of-the-mission-airbus-built-esm-to-power-historic-artemis-ii-crew-to-the-moon",
           "title": "Heart of the mission: Airbus-built ESM to power historic Artemis II crew to the Moon",
@@ -830,7 +875,7 @@
         "posts": 1,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 1
+        "timeline_events": 3
       }
     },
     {

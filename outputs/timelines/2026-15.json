@@ -1,11 +1,621 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-03-30T18:31:31.378774+00:00",
-    "end": "2026-04-06T18:31:31.378774+00:00",
+    "start": "2026-03-30T19:03:22.115319+00:00",
+    "end": "2026-04-06T19:03:22.115319+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-04-06T19:03:15.455362+00:00",
+      "title": "Why implement ELI?",
+      "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Why implement ELI?",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:03:08.851009+00:00",
+      "title": "ELI background",
+      "url": "https://eur-lex.europa.eu/eli-register/background.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "ELI background",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:03:01.484616+00:00",
+      "title": "What is ELI?",
+      "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## What is ELI? (and why EU innovation types should care) Today’s “innovation” item isn’t a new defence contract or a fresh tranche of venture funding. It’s something more quietly transformative: the European Legislation Identifier (ELI). EUR-Lex has been explaining",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:55.225717+00:00",
+      "title": "Statistics",
+      "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EUR-Lex “Statistics” page: a small change with big implications for how we measure EU law (and therefore innovation, defence and markets) What happened? EUR-Lex has published (and promoted) a “Statistics” landing page that focuses on measuring the content and",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:49.051441+00:00",
+      "title": "EUR-Lex developments: July 2025",
+      "url": "https://eur-lex.europa.eu/content/development/index.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Space/EO",
+        "Positioning/Navigation/Timing"
+      ],
+      "stage": "NA",
+      "short": "## EUR-Lex developments: July 2025 — the boring bit that quietly matters If you work in EU innovation, defence or capital markets, you’ll know the real “market data” is often in the fine print: directives, implementing acts, consolidated texts, case-law,",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:40.079115+00:00",
+      "title": "The Windsor Framework",
+      "url": "https://eur-lex.europa.eu/content/news/index.html",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "The Windsor Framework",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:33.408412+00:00",
+      "title": "JURE case-law",
+      "url": "https://eur-lex.europa.eu/collection/n-law/jure.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## JURE case-law: the quiet infrastructure behind cross-border justice (and cross-border business) If you’re tracking EU innovation, defence and capital markets, you might not think of “case-law collections” as market infrastructure. But cross-border contracting, financing, and enforcement all depend on",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:25.735022+00:00",
+      "title": "National case-law",
+      "url": "https://eur-lex.europa.eu/collection/n-law/n-case-law.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "National case-law",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:18.292771+00:00",
+      "title": "National transposition",
+      "url": "https://eur-lex.europa.eu/collection/n-law/mne.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "National transposition",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:11.607813+00:00",
+      "title": "Browse by Official Journal Special Edition",
+      "url": "https://eur-lex.europa.eu/eu-enlargement/special.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Browse by Official Journal Special Edition — what’s new for EU law watchers (and why finance people should care) If you’ve ever tried to reconcile “what the EU says” with “what was actually in force when a country joined”,",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:02:05.115211+00:00",
+      "title": "Official Journal - Legally binding printed editions",
+      "url": "https://eur-lex.europa.eu/oj/all/auth-direct-access.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Official Journal - Legally binding printed editions",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:59.657089+00:00",
+      "title": "Browse the Official Journal",
+      "url": "https://eur-lex.europa.eu/oj/browse-oj.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Browse the Official Journal — and a small reminder about “experimental” (EUR-Lex edition) **What happened and why it matters** EUR-Lex has a new (or at least newly surfaced) set of **experimental features** you can enable while browsing the **Official",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:50.933347+00:00",
+      "title": "Official Journal C series daily view",
+      "url": "https://eur-lex.europa.eu/oj/daily-view/C-series/default.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EUR-Lex “Daily View” gets experimental: a small UI change with a big policy signal (06 Apr 2026) **What happened?** On **06 Apr 2026**, the **Official Journal C series daily view** page on EUR-Lex displayed a notice inviting users to",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:43.047268+00:00",
+      "title": "Official Journal L series daily view",
+      "url": "https://eur-lex.europa.eu/oj/daily-view/L-series/default.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EUR-Lex “Daily View” quietly adds experimental features (and that matters more than it sounds) **What happened:** On **6 April 2026**, the **Official Journal L series daily view** page on EUR-Lex displayed a notice that users can **enable “experimental features”**.",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:34.956978+00:00",
+      "title": "Access the Official Journal",
+      "url": "https://eur-lex.europa.eu/oj/direct-access.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Space/EO"
+      ],
+      "stage": "NA",
+      "short": "Access the Official Journal",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:28.271573+00:00",
+      "title": "Directory of European Union case-law",
+      "url": "https://eur-lex.europa.eu/browse/directories/new-case-law.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Directory of European Union case-law",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:20.629142+00:00",
+      "title": "Reports of cases",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/eu-case-law/reports.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Reports of cases",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:14.069250+00:00",
+      "title": "EU case-law",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/eu-case-law.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EU case-law: EUR-Lex search is changing (and yes, it matters for innovation, defence and markets) **What happened?** EUR-Lex has updated its **EU case-law** landing page with a heads-up for users: the **search by “subject matter”** is set to change,",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:07.411907+00:00",
+      "title": "Browse by EuroVoc",
+      "url": "https://eur-lex.europa.eu/browse/eurovoc.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Browse by EuroVoc: a small change with surprisingly big knock-on effects for EU law discovery If you’ve ever tried to track a fast-moving EU policy file—say, something touching innovation, defence procurement, or capital markets—you’ll know the real bottleneck is",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:01:00.916468+00:00",
+      "title": "European Committee of the Regions",
+      "url": "https://eur-lex.europa.eu/browse/institutions/regions.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Committee of the Regions nudges EUR-Lex: experimental features, real implications for how we track EU law **What happened (and why it matters)** The European Committee of the Regions (CoR) has surfaced an excerpt from **EUR-Lex** describing a set of",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:54.706500+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "## EESC on EUR-Lex: a small change with a big “how we work” impact (06 Apr 2026) What happened? The European Economic and Social Committee (EESC) page on EUR-Lex now includes a prompt about **experimental features** that users can enable",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:48.514357+00:00",
+      "title": "Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Court of Auditors: a small change with a big “how we work” angle If you’ve ever tried to track EU policy or finance developments at speed, you’ll know the real bottleneck isn’t always the substance—it’s the search. This week’s",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:42.155566+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## ECB, EUR-Lex and the quiet mechanics of EU finance: what changed and why you should care If you’ve ever tried to track a specific European Central Bank (ECB) legal act, amendment, corrigendum or consolidated version across EU languages, you’ll",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:35.393760+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## CJEU on EUR-Lex: a small interface change with big “how we find law” consequences **What happened?** The Court of Justice of the European Union (CJEU) has a page on **EUR-Lex** that’s essentially a quiet reminder to users: EUR-Lex is",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:29.250348+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## European Commission (EUR-Lex) — a small change with a big “plumbing” message for EU markets **What happened?** The European Commission’s EUR-Lex page now includes a prompt about **“experimental features”** that users can enable on EUR-Lex. The notice is explicit:",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:23.114682+00:00",
+      "title": "Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Council: EUR-Lex “experimental features” — a small UI change with a big policy-data signal **What happened?** The Council page on EUR-Lex now includes a prompt about **“experimental features”** that users can enable. These features are **still under development**, **not",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:15.841726+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## European Council: a small interface change with a big “how we work” impact **What happened?** The European Council’s EUR-Lex landing page now includes a prompt about **“experimental features”** that users can enable to help improve EUR-Lex. The message is",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:10.251156+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EUR-Lex “experimental features” are now live — a small UI change with a real policy/market impact **What happened and why it matters** The European Parliament’s EUR-Lex portal has introduced a set of **experimental features** that users can enable. The",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T19:00:03.822697+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Summaries of EU legislation: a small change with a big “how you find the law” impact If you spend your days navigating EU innovation, defence and capital markets, you’ll know the real bottleneck isn’t always *what* the EU decides—it’s",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:56.580989+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Lawmaking procedures",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:46.559122+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "EFTA documents",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:40.598300+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Preparatory documents: the unglamorous gear-change behind EU law (and why finance people should care) **What happened and why it matters** EUR-Lex has published an excerpted page on **“pre-acts”**—documents used to prepare EU legislation, produced across the different stages of",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:33.471959+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## International agreements: the quiet machinery behind EU innovation, defence and markets If you’ve ever wondered why EU rules sometimes look like they “arrive” fully formed—complete with legal analysis, dates of effect, and cross-references—it’s because a lot of the heavy",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:26.270785+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Consolidated texts",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:19.341648+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Legal acts",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:13.685740+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Chronological overview — what it is, what it isn’t, and why it matters for EU finance & innovation watchers **What happened and why it matters** EUR-Lex has published an “**experimental features**” note tied to a **“Chronological overview”** page. The",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:08.251355+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Other treaties and protocols: a small EUR-Lex update with big “findability” implications What happened? EUR-Lex has published an “Other treaties and protocols” page—part of its broader collection of EU law materials—alongside a note that the site is experimenting with",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:59:01.679884+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Accession Treaties: the quiet plumbing behind EU expansion (and why finance people should care) If you’ve been tracking EU innovation, defence and capital markets, you might not expect a page about “Accession Treaties” to make your radar. But it’s",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:56.149669+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Founding Treaties: a small EUR-Lex tweak with a big “how we read law” impact **What happened and why it matters** EUR-Lex has published a page about **“experimental features”** you can enable on the platform. The message is clear: these",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:50.066798+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Treaties currently in force — the unglamorous backbone of EU innovation, defence and capital markets (and why you should care) If you’ve been tracking EU innovation, defence and capital markets, you’ll know the headlines tend to be about programmes,",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:44.836834+00:00",
+      "title": "Help - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EUR-Lex “Help” page adds experimental features — a small change with big downstream effects If you spend your days tracking EU innovation, defence and capital markets, you probably rely on EUR-Lex more than you realise. It’s the place where",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:38.207870+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EUR-Lex is testing “experimental features” — a small change with big downstream effects for EU finance & innovation watchers **What happened?** EUR-Lex has published a notice inviting users to enable **experimental features** on the platform. The message is clear:",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:25.359646+00:00",
+      "title": "Feedback",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Feedback: EUR-Lex “Experimental Features” — a small change with big downstream effects If you work in EU innovation, defence or capital markets, you probably spend a non-trivial chunk of your week in EUR-Lex: checking legal texts, tracking amendments, and",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:17.489257+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EUR-Lex experiments: a small UI change with a big “trust” footprint for EU finance & innovation **What happened and why it matters** EUR-Lex has published a short note inviting users to **enable “experimental features”** on the platform. The message",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:11.890066+00:00",
+      "title": "My searches",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## My searches: a small change with a surprisingly big “process” signal for EU policy intelligence What happened? EUR-Lex has surfaced a set of **experimental features** you can enable in “My searches”. The page is explicit: these options are **still",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-06T18:58:05.411796+00:00",
+      "title": "Redirecting To ECAS",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Redirecting To ECAS — a small technical hiccup with big policy consequences **What happened:** The source material you provided doesn’t contain the underlying EU legal or policy text. Instead, it returns a **“Redirecting To ECAS”** page stating that **ECAS",
+      "amounts": []
+    },
     {
       "date": "2026-04-06T18:31:25.044220+00:00",
       "title": "Why implement ELI?",
@@ -750,6 +1360,38 @@
       ],
       "stage": "NA",
       "short": "## Your gateway to the European Union Here’s what’s been moving in the EU lately—and why it matters for innovation, defence-adjacent resilience, and capital markets. ### 1) What happened and why it matters **First up: the 2025 fire season was",
+      "amounts": []
+    },
+    {
+      "date": "2026-03-31T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Space/EO",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "## Your gateway to the European Union ### What happened (and why it matters) A few notable EU updates landed together—less “innovation hype”, more the unglamorous plumbing that shapes risk, capital and consumer trust. **First: the 2025 fire season was",
+      "amounts": []
+    },
+    {
+      "date": "2026-03-31T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Space/EO",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Your gateway to the European Union",
       "amounts": []
     },
     {

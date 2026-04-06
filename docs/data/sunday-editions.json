@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T18:42:34.280147+00:00",
+  "generated_at": "2026-04-06T19:14:14.993804+00:00",
   "latest_end_date": "2026-04-06",
   "items": [
     {
@@ -34,20 +34,20 @@
         }
       ],
       "categories": [
+        "Other/NA",
         "AI & Digital",
         "CMU & Financial Markets",
         "daily",
         "Defence & Security",
         "Other",
         "De-risking & Investment",
-        "Other/NA",
-        "weekly"
+        "Cybersecurity"
       ],
       "important_documents": [
         {
           "id": "rep-2026-04-06-113b42caea087958",
           "title": "Daily Digest — 2026-04-06",
-          "summary": "_Items in last 24h: 52_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-06T18:31:25.044220+00:00 Programma: Other/NA Link",
+          "summary": "_Items in last 24h: 98_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-06T19:03:15.455362+00:00 Programma: Other/NA Link",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-06.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -137,10 +137,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "AI & Digital"
+            "AI & Digital",
+            "EU",
+            "law"
           ]
         },
         {
@@ -155,10 +155,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         },
         {
@@ -173,10 +173,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         },
         {
@@ -191,10 +191,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         },
         {
@@ -209,10 +209,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "law",
             "EUR-Lex",
-            "Defence & Security"
+            "EU",
+            "Defence & Security",
+            "law"
           ]
         },
         {
@@ -227,10 +227,10 @@
             "Other"
           ],
           "tags": [
+            "EUR-Lex",
             "EU",
             "Other",
-            "law",
-            "EUR-Lex"
+            "law"
           ]
         }
       ],
