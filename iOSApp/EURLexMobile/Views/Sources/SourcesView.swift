@@ -117,6 +117,12 @@ struct SourcesView: View {
         .sheet(item: $selectedIntakeMode) { mode in
             intakeModeSheet(mode)
         }
+        .fileImporter(
+            isPresented: $isImportingDocument,
+            allowedContentTypes: supportedImportTypes,
+            allowsMultipleSelection: false,
+            onCompletion: handleImportedDocument
+        )
         .task {
             guard !hasLoaded else { return }
             hasLoaded = true
@@ -149,7 +155,7 @@ struct SourcesView: View {
                 title: "Intake paths",
                 subtitle: "The app now has real routes for feeds, links, notes, and uploads.",
                 accent: AppTheme.lavender,
-                tone: .card
+                tone: .page
             )
 
             VStack(spacing: 12) {
@@ -190,7 +196,7 @@ struct SourcesView: View {
 
             Text(backend.isConfigured ? "GitHub remains the storage and processing layer, while the app handles clean intake." : "Once the backend URL is configured, these tiles become live GitHub-backed actions.")
                 .font(.subheadline)
-                .foregroundStyle(AppTheme.heroSubtext)
+                .foregroundStyle(AppTheme.pageBody)
         }
         .glassCard(cornerRadius: 30, tint: AppTheme.lavender, padding: 20)
     }
@@ -328,11 +334,11 @@ struct SourcesView: View {
 
                     Text("What GitHub can safely carry")
                         .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(AppTheme.ink)
+                        .foregroundStyle(AppTheme.pageTitle)
 
                     Text("Public feeds, modest documents, app-ready JSON, and scheduled refreshes are a strong fit. Large private archives still belong in dedicated storage later on.")
                         .font(.subheadline)
-                        .foregroundStyle(AppTheme.heroSubtext)
+                        .foregroundStyle(AppTheme.pageBody)
                 }
                 .glassCard(cornerRadius: 26, tint: AppTheme.mint, padding: 16)
             }
@@ -516,19 +522,6 @@ struct SourcesView: View {
                 .padding(.bottom, 32)
             }
             .background(AmbientBackground())
-            .sheet(isPresented: $isImportingDocument) {
-                DocumentPicker(
-                    allowedContentTypes: supportedImportTypes,
-                    onPick: { url in
-                        importedDocumentURL = url
-                        errorMessage = nil
-                        isImportingDocument = false
-                    },
-                    onCancel: {
-                        isImportingDocument = false
-                    }
-                )
-            }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") {
@@ -601,7 +594,6 @@ struct SourcesView: View {
                         isImportingDocument = true
                     }
                     .buttonStyle(SecondaryCapsuleButtonStyle())
-                    .contentShape(Rectangle())
 
                     Button {
                         Task { await uploadSelectedDocument() }
@@ -638,8 +630,6 @@ struct SourcesView: View {
 
                 TextEditor(text: $noteText)
                     .font(.body)
-                    .foregroundStyle(AppTheme.pageTitle)
-                    .tint(AppTheme.cobalt)
                     .scrollContentBackground(.hidden)
                     .frame(minHeight: 180)
                     .padding(12)
@@ -703,8 +693,6 @@ struct SourcesView: View {
                 .autocorrectionDisabled()
                 .keyboardType(keyboard)
                 .textFieldStyle(.plain)
-                .foregroundStyle(AppTheme.pageTitle)
-                .tint(AppTheme.cobalt)
                 .focused($focusedField, equals: field)
                 .padding(.horizontal, 14)
                 .padding(.vertical, 14)
@@ -729,8 +717,6 @@ struct SourcesView: View {
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
                 .keyboardType(keyboard)
-                .foregroundStyle(AppTheme.pageTitle)
-                .tint(AppTheme.cobalt)
                 .padding(.horizontal, 14)
                 .padding(.vertical, 14)
                 .background(
@@ -981,4 +967,13 @@ struct SourcesView: View {
         }
     }
 
+    private func handleImportedDocument(_ result: Result<[URL], Error>) {
+        switch result {
+        case .success(let urls):
+            importedDocumentURL = urls.first
+            errorMessage = nil
+        case .failure(let error):
+            errorMessage = error.localizedDescription
+        }
+    }
 }
