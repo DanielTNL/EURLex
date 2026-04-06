@@ -62,6 +62,8 @@ REQ_TIMEOUT = 20
 MAX_HTML_LINKS = 200  # soft cap per page
 CUSTOM_FEEDS_PATH = "state/custom_feeds.json"
 SOURCE_OVERRIDES_PATH = "state/source_overrides.json"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+LEGACY_SOURCES_PATH = os.path.join(ROOT, "scripts", "sources.yaml")
 
 
 # -------------------------- helpers: parsing & robustness --------------------------
@@ -286,6 +288,45 @@ def load_custom_feeds(path: str = CUSTOM_FEEDS_PATH) -> List[Source]:
     return found
 
 
+def load_legacy_feed_sources(path: str = LEGACY_SOURCES_PATH) -> List[Source]:
+    if not os.path.exists(path):
+        return []
+
+    try:
+        payload = load_yaml(path)
+    except Exception:
+        return []
+
+    domains = payload.get("domains", {}) if isinstance(payload, dict) else {}
+    raw_feeds = payload.get("feeds", []) if isinstance(payload, dict) else []
+    found: List[Source] = []
+
+    if isinstance(raw_feeds, list):
+        for item in raw_feeds:
+            if isinstance(item, str):
+                url = item.strip()
+                if not url:
+                    continue
+                host = urlparse(url).netloc.lower().lstrip("www.") or url
+                meta = domains.get(host, {}) if isinstance(domains, dict) else {}
+                found.append(
+                    Source(
+                        source_id=host,
+                        name=str(meta.get("source") or host).strip(),
+                        url=url,
+                        type="feed",
+                        tags=list(meta.get("tags") or []),
+                        enabled=True,
+                    )
+                )
+            else:
+                source = Source.from_any(item)
+                if source and source.enabled:
+                    found.append(source)
+
+    return found
+
+
 def load_source_overrides(path: str = SOURCE_OVERRIDES_PATH) -> Dict[str, Dict[str, Any]]:
     if not os.path.exists(path):
         return {}
@@ -351,6 +392,10 @@ def apply_source_overrides(found: List[Source]) -> List[Source]:
 def pick_sources(sources_path: Optional[str], config_path: Optional[str]) -> List[Source]:
     found: List[Source] = []
 
+    # Always include the canonical RSS/Atom registry from scripts/sources.yaml so
+    # discovery stays aligned with the published source catalog surfaced in the app.
+    found.extend(load_legacy_feed_sources())
+
     if sources_path and os.path.exists(sources_path):
         y = load_yaml(sources_path)
         raw = y.get("sources", y)  # either {"sources":[...]} or a plain list
@@ -373,10 +418,11 @@ def pick_sources(sources_path: Optional[str], config_path: Optional[str]) -> Lis
     found.extend(load_custom_feeds())
     found = apply_source_overrides(found)
 
-    # de-dup by (name,url)
+    # de-dup by stable registry identity so the app-facing source registry and the
+    # discovery pipeline treat edited/overridden sources as the same entry.
     uniq: Dict[Tuple[str, str], Source] = {}
     for s in found:
-        uniq[(s.name, s.url)] = s
+        uniq[(s.source_id, s.url)] = s
     return list(uniq.values())
 
 
