@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T15:20:59.501Z",
+  "updated_at": "2026-04-06T15:21:32.008Z",
   "feeds": [
     {
       "id": "3ae57466b592",
@@ -23,6 +23,13 @@
       "url": "https://feeds.rijksoverheid.nl/besluiten.rss",
       "tags": [],
       "added_at": "2026-04-06T15:20:59.501Z"
+    },
+    {
+      "id": "8a729aef31ba",
+      "name": "Rijksoverheid Kamerstukken",
+      "url": "https://feeds.rijksoverheid.nl/kamerstukken.rss",
+      "tags": [],
+      "added_at": "2026-04-06T15:21:32.008Z"
     }
   ]
 }
