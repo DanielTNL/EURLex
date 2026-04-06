@@ -1,945 +1,507 @@
 {
-  "generated_at": "2026-04-06T12:37:53.359865+00:00",
-  "latest_end_date": "2026-04-05",
+  "generated_at": "2026-04-06T18:42:34.280147+00:00",
+  "latest_end_date": "2026-04-06",
   "items": [
+    {
+      "edition_date": "2026-04-06",
+      "week_start": "2026-03-31",
+      "week_end": "2026-04-06",
+      "title": "Sunday Edition — 2026-03-31 to 2026-04-06",
+      "headline": "Requested Weekly Voice Brief — 2026-03-31 to 2026-04-06",
+      "intro": "Sunday Edition — 2026-03-31 to 2026-04-06 is led by Requested Weekly Voice Brief — 2026-03-31 to 2026-04-06. 8 relevant documents are currently attached to this publication window.",
+      "summary": "Requested Weekly Voice Brief — 2026-03-31 to 2026-04-06: This is your weekly European policy voice briefing for 2026-03-31 to 2026-04-06. The main developments this week were: EUR-Lex Daily Digest — 2026-04-06; Daily Digest — 2026-04-06; EUR-Lex Daily Digest — 2026-04-05; Dai… MEPs support postponement of certain rules on artificial intelligence | News | European Parliament: Set clear date for activation of certain rules on high-risk AI systems - Stimulate take-up of AI by EU companies by introducing flexibility - Clarify interaction with other EU laws MEPs agree on proposals to simplify ar… Artificial Intelligence Act: delayed application, ban on nudifier apps: Clear date for activation of certain rules on high-risk AI systems - Flexibility for companies on certain rules and support for small mid-cap enterprises - AI Act obligations can be less stringent for products governed… CONSIL:ST_5638_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of…",
+      "key_points": [
+        "Requested Weekly Voice Brief — 2026-03-31 to 2026-04-06",
+        "Artificial Intelligence Act: delayed application, ban on nudifier apps",
+        "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament"
+      ],
+      "sections": [
+        {
+          "title": "Requested Weekly Voice Brief — 2026-03-31 to 2026-04-06",
+          "body": "This is your weekly European policy voice briefing for 2026-03-31 to 2026-04-06. The main developments this week were: EUR-Lex Daily Digest — 2026-04-06; Daily Digest — 2026-04-06; EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026… Source: EURLex reports, 2026-04-06."
+        },
+        {
+          "title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
+          "body": "Set clear date for activation of certain rules on high-risk AI systems - Stimulate take-up of AI by EU companies by introducing flexibility - Clarify interaction with other EU laws MEPs agree on proposals to simplify artificial intelligence rules and propos… Source: European Parliament, 2026-04-06."
+        },
+        {
+          "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
+          "body": "Clear date for activation of certain rules on high-risk AI systems - Flexibility for companies on certain rules and support for small mid-cap enterprises - AI Act obligations can be less stringent for products governed by sectoral laws MEPs have agreed on pro… Source: European Parliament, 2026-04-06."
+        },
+        {
+          "title": "CONSIL:ST_5638_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations…",
+          "body": "CONSIL:ST_5638_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplificat… Source: EUR-Lex, 2026-04-06."
+        }
+      ],
+      "categories": [
+        "AI & Digital",
+        "CMU & Financial Markets",
+        "daily",
+        "Defence & Security",
+        "Other",
+        "De-risking & Investment",
+        "Other/NA",
+        "weekly"
+      ],
+      "important_documents": [
+        {
+          "id": "rep-2026-04-06-113b42caea087958",
+          "title": "Daily Digest — 2026-04-06",
+          "summary": "_Items in last 24h: 52_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-06T18:31:25.044220+00:00 Programma: Other/NA Link",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-06.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-06",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2026-04-06-bf5f5aec83c5dbf8",
+          "title": "Requested Weekly Voice Brief — 2026-03-31 to 2026-04-06",
+          "summary": "This is your weekly European policy voice briefing for 2026-03-31 to 2026-04-06. The main developments this week were: EUR-Lex Daily Digest — 2026-04-06; Daily Digest — 2026-04-06; EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026-04-06 ## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-06-weekly-request.txt",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-06",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
+        {
+          "id": "rep-2026-04-06-92d9b97d9fc78907",
+          "title": "EUR-Lex Daily Digest — 2026-04-06",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-06.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-06",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "6ee445d20445bcef",
+          "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
+          "summary": "Clear date for activation of certain rules on high-risk AI systems - Flexibility for companies on certain rules and support for small mid-cap enterprises - AI Act obligations can be less stringent for products governed by sectoral laws MEPs have agreed on pro…",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/",
+          "kind": "post",
+          "source": "European Parliament",
+          "date": "2026-04-06",
+          "categories": [
+            "AI & Digital"
+          ],
+          "tags": [
+            "EU",
+            "Parliament",
+            "AI & Digital"
+          ]
+        },
+        {
+          "id": "c1dea845b0d3e988",
+          "title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
+          "summary": "- Set clear date for activation of certain rules on high-risk AI systems - Stimulate take-up of AI by EU companies by introducing flexibility - Clarify interaction with other EU laws MEPs agree on proposals to simplify artificial intelligence rules and propos…",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20260316IPR38219/",
+          "kind": "post",
+          "source": "European Parliament",
+          "date": "2026-04-06",
+          "categories": [
+            "AI & Digital"
+          ],
+          "tags": [
+            "EU",
+            "Parliament",
+            "AI & Digital"
+          ]
+        }
+      ],
+      "related_documents": [
+        {
+          "id": "88d5350b22b7a01f",
+          "title": "CONSIL:ST_5638_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI). - Presidency compromise text",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_5638_2026_INIT",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-04-06",
+          "categories": [
+            "AI & Digital"
+          ],
+          "tags": [
+            "EU",
+            "law",
+            "EUR-Lex",
+            "AI & Digital"
+          ]
+        },
+        {
+          "id": "f4719d2e6ec998c4",
+          "title": "COMMISSION STAFF WORKING DOCUMENT EVALUATION Interim Evaluation of the European Defence Fund Accompanying the document REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS The European Defence Fund: supporting the development of the defence capabilities of tomorrow Interim evaluation of the European Defence Fund",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025SC0151",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-04-06",
+          "categories": [
+            "Defence & Security"
+          ],
+          "tags": [
+            "EU",
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
+          ]
+        },
+        {
+          "id": "3daaa37cbe9ee7b8",
+          "title": "REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS The European Defence Fund: supporting the development of the defence capabilities of tomorrow Interim evaluation of the European Defence Fund",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0299",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-04-06",
+          "categories": [
+            "Defence & Security"
+          ],
+          "tags": [
+            "EU",
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
+          ]
+        },
+        {
+          "id": "bd10c981e21028fc",
+          "title": "Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealing Regulation (EU) 2018/1092 (Text with EEA relevance)",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:02021R0697-20251223",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-04-06",
+          "categories": [
+            "Defence & Security"
+          ],
+          "tags": [
+            "EU",
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
+          ]
+        },
+        {
+          "id": "681a8aad96e26277",
+          "title": "CONSIL:ST_5793_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - 4-column table",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_5793_2026_INIT",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-04-06",
+          "categories": [
+            "Defence & Security"
+          ],
+          "tags": [
+            "EU",
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
+          ]
+        },
+        {
+          "id": "4f0e1e3ec63b3e04",
+          "title": "Opinion of the European Central Bank of 30 March 2026 on an increase in a tax imposed on credit institutions (CON/2026/11)",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AB0011",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-04-06",
+          "categories": [
+            "Other"
+          ],
+          "tags": [
+            "EU",
+            "Other",
+            "law",
+            "EUR-Lex"
+          ]
+        }
+      ],
+      "report": null
+    },
     {
       "edition_date": "2026-04-05",
       "week_start": "2026-03-30",
       "week_end": "2026-04-05",
       "title": "Sunday Edition — 2026-03-30 to 2026-04-05",
-      "headline": "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single…",
-      "intro": "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and certain investment… %PDF-1.7 %���� 1 0 obj < >/Lang(en-IE)/Metadata 450 0 R >> endobj 3 0 obj < >>> endobj 16 0 obj < >>> endobj 27 0 obj < >>> endobj 37 0 obj < >>> endobj 45 0 obj < >>> endobj 48 0…",
-      "summary": "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and certain investment… %PDF-1.7 %���� 1 0 obj < >/Lang(en-IE)/Metadata 450 0 R >> endobj 3 0 obj < >>> endobj 16 0 obj < >>> endobj 27 0 obj < >>> endobj 37 0 obj < >>> endobj 45 0 obj < >>> endobj 48 0 obj < >>> endobj 52 0 obj < >>> endobj 54 0 obj < >>>… Details - Publication date - 15 December 2025 Description The three European Supervisory Authorities (EBA, EIOPA and ESMA – ESAs) today published two factsheets designed to help consumers protect themselves from crypto and other online… ANNEX to the Commission Delegated Regulation amending Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the…",
+      "headline": "Sunday Edition — 2026-03-30 to 2026-04-05",
+      "intro": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05; Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03. Across the published material, the b…",
+      "summary": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05; Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026-04-05 ## Executive Summary",
       "key_points": [
-        "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions) (Economic and monetary…",
-        "ST 7952 2026 ADD 1",
-        "ST 7952 2026 INIT"
+        "2026-04-05 | EUR-Lex Daily Digest — 2026-04-05 | reports/2026-04-05.md",
+        "2026-04-05 | Daily Digest — 2026-04-05 | reports/daily/2026-04-05.md",
+        "2026-04-04 | Daily Digest — 2026-04-04 | reports/daily/2026-04-04.md",
+        "2026-04-03 | EUR-Lex Daily Digest — 2026-04-03 | reports/2026-04-03.md"
       ],
       "sections": [
         {
-          "title": "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions)…",
-          "body": "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and certain investment firms (SRM) – Single Resolution Fund (SRF) – Decision of the SRB on the calculation of the 2020 ex… Source: EUR-Lex, 2026-04-05."
+          "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+          "body": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05; Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026… Source: EURLex reports, 2026-04-05."
         },
         {
-          "title": "https://data.consilium.europa.eu/doc/document/ST-6801-2026-INIT/en/pdf",
-          "body": "%PDF-1.7 %���� 1 0 obj < >/Lang(en-IE)/Metadata 450 0 R >> endobj 3 0 obj < >>> endobj 16 0 obj < >>> endobj 27 0 obj < >>> endobj 37 0 obj < >>> endobj 45 0 obj < >>> endobj 48 0 obj < >>> endobj 52 0 obj < >>> endobj 54 0 obj < >>> endobj 58 0 obj < >>> endobj 61 0 obj < >>> endobj 64 0 obj < >>> endobj 66 0 obj < >>> endobj 579 0 obj… Source: External, 2026-04-05."
+          "title": "The ESAs note greater effort from financial market participants in their disclosure of principal adverse impacts",
+          "body": "The Joint Committee of the three European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published their fourth annual Report on the extent of voluntary disclosure of principal adverse impacts (PAIs) under the Sustainable Finance Disclosure Re… Source: European Banking Authority, 2026-04-04."
         },
         {
-          "title": "https://www.eiopa.europa.eu/publications/esas-factsheets-crypto-scams-and-ai-assisted-online-financial-scams_en",
-          "body": "Details - Publication date - 15 December 2025 Description The three European Supervisory Authorities (EBA, EIOPA and ESMA – ESAs) today published two factsheets designed to help consumers protect themselves from crypto and other online frauds and scams and explain how fraudsters increasingly use artificial intelligence (AI) to deceive… Source: European Insurance and Occupational Pensions Authority, 2026-04-04."
+          "title": "https://www.eiopa.europa.eu/publications/joint-committee-report-principal-adverse-impact-disclosures-under-sustainable…",
+          "body": "Details - Publication date - 9 September 2025 Description Fourth annual Report on the extent of voluntary disclosure of principal adverse impacts (PAIs) under the Sustainable Finance Disclosure Regulation (SFDR). The three European Supervisory Authorities (EB… Source: European Insurance and Occupational Pensions Authority, 2026-04-04."
         },
         {
-          "title": "ST 7952 2026 ADD 1",
-          "body": "ANNEX to the Commission Delegated Regulation amending Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the standardised access to vehicle on-board diagnostics information and repair and maintenance information, and the requirements and procedures for secure access to on-board diagnostic information Source: External, 2026-03-31."
+          "title": "Guidelines, Recommendations and Technical Standards",
+          "body": "Guidelines, Recommendations and Technical Standards Source: Timeline, 2026-04-05."
         }
       ],
       "categories": [
-        "Other",
+        "daily",
+        "Other/NA",
         "CMU & Financial Markets",
-        "AI & Digital"
+        "weekly"
       ],
       "important_documents": [
         {
-          "id": "8bfd7b46ca410176",
-          "title": "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and c",
-          "summary": "Case T-411/20: Order of the General Court of 14 May 2025 – Bayerische Landesbank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and certain investment firms (SRM) – Single Resolution Fund (SRF) – Decision of the SRB on the calculation of the 2020 ex…",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62020TB0411",
-          "kind": "post",
-          "source": "EUR-Lex",
+          "id": "rep-2026-04-05-b61377a65ff4d985",
+          "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+          "summary": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05; Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026-04-05 ## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-05-weekly-request.txt",
+          "kind": "report",
+          "source": "EURLex reports",
           "date": "2026-04-05",
           "categories": [
-            "CMU & Financial Markets"
+            "weekly"
           ],
           "tags": [
-            "CMU & Financial Markets",
-            "law",
-            "EUR-Lex",
-            "EU"
+            "weekly"
           ]
         },
         {
-          "id": "7edae8c614a00d15",
-          "title": "https://data.consilium.europa.eu/doc/document/ST-6801-2026-INIT/en/pdf",
-          "summary": "%PDF-1.7 %���� 1 0 obj < >/Lang(en-IE)/Metadata 450 0 R >> endobj 3 0 obj < >>> endobj 16 0 obj < >>> endobj 27 0 obj < >>> endobj 37 0 obj < >>> endobj 45 0 obj < >>> endobj 48 0 obj < >>> endobj 52 0 obj < >>> endobj 54 0 obj < >>> endobj 58 0 obj < >>> endobj 61 0 obj < >>> endobj 64 0 obj < >>> endobj 66 0 obj < >>> endobj 579 0 obj…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-6801-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
+          "id": "rep-2026-04-05-0667fa746e8f5c83",
+          "title": "Daily Digest — 2026-04-05",
+          "summary": "_Items in last 24h: 4_ 1. Auditing of companies' financial statements Bron: esma_publications · Datum: 2026-04-05T22:19:03.560056+00:00 Programma: Other/NA Link",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-05.md",
+          "kind": "report",
+          "source": "EURLex reports",
           "date": "2026-04-05",
           "categories": [
-            "Other"
+            "daily"
           ],
           "tags": [
-            "external",
-            "Other"
+            "daily"
           ]
         },
         {
-          "id": "0d0b48af57259d39",
-          "title": "https://www.eiopa.europa.eu/publications/esas-factsheets-crypto-scams-and-ai-assisted-online-financial-scams_en",
-          "summary": "Details - Publication date - 15 December 2025 Description The three European Supervisory Authorities (EBA, EIOPA and ESMA – ESAs) today published two factsheets designed to help consumers protect themselves from crypto and other online frauds and scams and explain how fraudsters increasingly use artificial intelligence (AI) to deceive…",
-          "url": "https://www.eiopa.europa.eu/publications/esas-factsheets-crypto-scams-and-ai-assisted-online-financial-scams_en",
-          "kind": "post",
-          "source": "European Insurance and Occupational Pensions Authority",
+          "id": "rep-2026-04-05-53ff83dab91f99e1",
+          "title": "EUR-Lex Daily Digest — 2026-04-05",
+          "summary": "Today's European policy briefing underscores a pivotal moment in the regulatory landscape, particularly within the banking and insurance sectors, while also addressing the broader implications of climate change on financial stability. The appointment of François-Louis Michaud as Chair of the European Banking Authority (EBA), effective April 16, 2026, signals a forthcoming shift in EU banking regulation. Michaud's leadership is anticipated to recalibrate the EBA's focus on financial stability and consumer protectio…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-05.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-05",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+          "title": "Auditing of companies' financial statements",
+          "summary": "",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+          "kind": "Report",
+          "source": "Timeline",
+          "date": "2026-04-05",
+          "categories": [
+            "Other/NA"
+          ],
+          "tags": [
+            "Other/NA"
+          ]
+        },
+        {
+          "id": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+          "title": "Guidelines, Recommendations and Technical Standards",
+          "summary": "",
+          "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+          "kind": "Guidance/Notice",
+          "source": "Timeline",
+          "date": "2026-04-05",
+          "categories": [
+            "Other/NA"
+          ],
+          "tags": [
+            "Other/NA"
+          ]
+        }
+      ],
+      "related_documents": [
+        {
+          "id": "rep-2026-04-05-b61377a65ff4d985",
+          "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+          "summary": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05; Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026-04-05 ## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-05-weekly-request.txt",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-05",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
+        {
+          "id": "rep-2026-04-05-53ff83dab91f99e1",
+          "title": "EUR-Lex Daily Digest — 2026-04-05",
+          "summary": "Today's European policy briefing underscores a pivotal moment in the regulatory landscape, particularly within the banking and insurance sectors, while also addressing the broader implications of climate change on financial stability. The appointment of François-Louis Michaud as Chair of the European Banking Authority (EBA), effective April 16, 2026, signals a forthcoming shift in EU banking regulation. Michaud's leadership is anticipated to recalibrate the EBA's focus on financial stability and consumer protectio…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-05.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-05",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+          "title": "Auditing of companies' financial statements",
+          "summary": "",
+          "url": "https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/auditing-companies-financial-statements_en",
+          "kind": "Report",
+          "source": "Timeline",
+          "date": "2026-04-05",
+          "categories": [
+            "Other/NA"
+          ],
+          "tags": [
+            "Other/NA"
+          ]
+        },
+        {
+          "id": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+          "title": "Guidelines, Recommendations and Technical Standards",
+          "summary": "",
+          "url": "https://www.esma.europa.eu/publications-and-data/guidelines-recommendations-and-technical-standards",
+          "kind": "Guidance/Notice",
+          "source": "Timeline",
+          "date": "2026-04-05",
+          "categories": [
+            "Other/NA"
+          ],
+          "tags": [
+            "Other/NA"
+          ]
+        },
+        {
+          "id": "rep-2026-04-04-9282b1dd12fb619d",
+          "title": "Daily Digest — 2026-04-04",
+          "summary": "_Items in last 24h: 0_",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-04.md",
+          "kind": "report",
+          "source": "EURLex reports",
           "date": "2026-04-04",
           "categories": [
-            "CMU & Financial Markets",
-            "AI & Digital"
+            "daily"
           ],
           "tags": [
-            "EU",
-            "EIOPA",
-            "AI & Digital",
-            "CMU & Financial Markets",
-            "regulation"
+            "daily"
           ]
         },
         {
-          "id": "f5a5bcadbc974046",
-          "title": "ST 7952 2026 ADD 1",
-          "summary": "ANNEX to the Commission Delegated Regulation amending Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the standardised access to vehicle on-board diagnostics information and repair and maintenance information, and the requirements and procedures for secure access to on-board diagnostic information",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7952-2026-ADD-1/en/pdf",
+          "id": "f1c02974c76bc5b3",
+          "title": "The ESAs note greater effort from financial market participants in their disclosure of principal adverse impacts",
+          "summary": "The Joint Committee of the three European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published their fourth annual Report on the extent of voluntary disclosure of principal adverse impacts (PAIs) under the Sustainable Finance Disclosure Re…",
+          "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-note-greater-effort-financial-market-participants-their-disclosure-principal-adverse-impacts",
           "kind": "post",
-          "source": "External",
-          "date": "2026-03-31",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "a1a02e43ca82852e",
-          "title": "ST 7952 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) …/... of 23.3.2026 amending Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the standardised access to vehicle on-board diagnostics information and repair and maintenance information, and the requirements and procedures for secure access to on-board diagnostic…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7952-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-31",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        }
-      ],
-      "related_documents": [
-        {
-          "id": "7edae8c614a00d15",
-          "title": "https://data.consilium.europa.eu/doc/document/ST-6801-2026-INIT/en/pdf",
-          "summary": "%PDF-1.7 %���� 1 0 obj < >/Lang(en-IE)/Metadata 450 0 R >> endobj 3 0 obj < >>> endobj 16 0 obj < >>> endobj 27 0 obj < >>> endobj 37 0 obj < >>> endobj 45 0 obj < >>> endobj 48 0 obj < >>> endobj 52 0 obj < >>> endobj 54 0 obj < >>> endobj 58 0 obj < >>> endobj 61 0 obj < >>> endobj 64 0 obj < >>> endobj 66 0 obj < >>> endobj 579 0 obj…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-6801-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-04-05",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "0d0b48af57259d39",
-          "title": "https://www.eiopa.europa.eu/publications/esas-factsheets-crypto-scams-and-ai-assisted-online-financial-scams_en",
-          "summary": "Details - Publication date - 15 December 2025 Description The three European Supervisory Authorities (EBA, EIOPA and ESMA – ESAs) today published two factsheets designed to help consumers protect themselves from crypto and other online frauds and scams and explain how fraudsters increasingly use artificial intelligence (AI) to deceive…",
-          "url": "https://www.eiopa.europa.eu/publications/esas-factsheets-crypto-scams-and-ai-assisted-online-financial-scams_en",
-          "kind": "post",
-          "source": "European Insurance and Occupational Pensions Authority",
+          "source": "European Banking Authority",
           "date": "2026-04-04",
           "categories": [
+            "CMU & Financial Markets"
+          ],
+          "tags": [
+            "EU",
             "CMU & Financial Markets",
-            "AI & Digital"
-          ],
-          "tags": [
-            "EU",
-            "EIOPA",
-            "AI & Digital",
-            "CMU & Financial Markets",
-            "regulation"
-          ]
-        },
-        {
-          "id": "f5a5bcadbc974046",
-          "title": "ST 7952 2026 ADD 1",
-          "summary": "ANNEX to the Commission Delegated Regulation amending Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the standardised access to vehicle on-board diagnostics information and repair and maintenance information, and the requirements and procedures for secure access to on-board diagnostic information",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7952-2026-ADD-1/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-31",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "a1a02e43ca82852e",
-          "title": "ST 7952 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) …/... of 23.3.2026 amending Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the standardised access to vehicle on-board diagnostics information and repair and maintenance information, and the requirements and procedures for secure access to on-board diagnostic…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7952-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-31",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "dab3bff970b30474",
-          "title": "ST 7940 2026 INIT",
-          "summary": "REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL on the overall annual costs incurred for the fulfilment of the Commission’s tasks pursuant to Regulation (EU) 2022/2065 in the period from 1 January 2025 until 31 December 2025 and the total amount of the annual supervisory fees charged pursuant to Article 6(4) of…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7940-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-31",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "062138170bd42a9b",
-          "title": "Case T-394/20: Order of the General Court of 14 May 2025 – Hypo Vorarlberg Bank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and ce",
-          "summary": "Case T-394/20: Order of the General Court of 14 May 2025 – Hypo Vorarlberg Bank v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and certain investment firms (SRM) – Single Resolution Fund (SRF) – Decision of the SRB on the calculation of the 2020 ex…",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62020TB0394",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-04-05",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "CMU & Financial Markets",
-            "law",
-            "EUR-Lex",
-            "EU"
+            "regulation",
+            "EBA"
           ]
         }
       ],
-      "report": null
+      "report": {
+        "id": "rep-2026-04-05-b61377a65ff4d985",
+        "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+        "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/audio/requests/2026-04-05-weekly-request.txt"
+      }
     },
     {
-      "edition_date": "2026-03-29",
-      "week_start": "2026-03-23",
-      "week_end": "2026-03-29",
-      "title": "Sunday Edition — 2026-03-23 to 2026-03-29",
-      "headline": "ST 7609 2026 INIT",
-      "intro": "ADOPTION OF LEGISLATIVE ACTS FOLLOWING THE EUROPEAN PARLIAMENT'S SECOND READING Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) No 806/2014 as regards early intervention measures… COMMISSION DELEGATED REGULATION (EU) …/...",
-      "summary": "ADOPTION OF LEGISLATIVE ACTS FOLLOWING THE EUROPEAN PARLIAMENT'S SECOND READING Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) No 806/2014 as regards early intervention measures… COMMISSION DELEGATED REGULATION (EU) …/... of 23.3.2026 amending Annex II to Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the environmental performance and emission requirements for vehicles produced… The President of the European Council, António Costa, together with the President of the European Commission, Ursula von der Leyen, will represent the EU at the EU-Armenia summit taking place in Yerevan on 4 and 5 May 2026.",
+      "edition_date": "2025-08-15",
+      "week_start": "2025-08-09",
+      "week_end": "2025-08-15",
+      "title": "Sunday Edition — 2025-08-09 to 2025-08-15",
+      "headline": "Sunday Edition — 2025-08-09 to 2025-08-15",
+      "intro": "This week, the European Union (EU) witnessed significant developments across various sectors, including monetary policy, financial markets, banking, digitalization, and geopolitical dynamics. The ongoing challenges posed by inflation and supply chain disruptions continue to shap…",
+      "summary": "This week, the European Union (EU) witnessed significant developments across various sectors, including monetary policy, financial markets, banking, digitalization, and geopolitical dynamics. The ongoing challenges posed by inflation and supply chain disruptions continue to shape economic discourse, while the banking sector grapples with regulatory scrutiny and evolving risk management practices. Additionally, the intersection of technology and finance is becoming increasingly relevant, particularly in the context of anti-money laundering efforts and the impact of digitalization on banking behaviors. Monetary Policy and Inflation Dynamics",
       "key_points": [
-        "ST 7609 2026 INIT",
-        "ST 7761 2026 INIT",
-        "First ever EU-Armenia summit to take place on 4 and 5 May 2026",
-        "ST 7809 2026 INIT",
-        "Remarks by Kyriakos Pierrakakis following the Eurogroup meeting of 27 March 2026"
+        "Weekly — EU Finance & Defence — 2025-08-08 to 2025-08-15 (W33)",
+        "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)"
       ],
       "sections": [
         {
-          "title": "ST 7609 2026 INIT",
-          "body": "ADOPTION OF LEGISLATIVE ACTS FOLLOWING THE EUROPEAN PARLIAMENT'S SECOND READING Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) No 806/2014 as regards early intervention measures, conditions for resolution and funding of resolution action - Outcome of the European Parliament's second… Source: External, 2026-03-26."
+          "title": "Weekly — EU Finance & Defence — 2025-08-08 to 2025-08-15 (W33)",
+          "body": "This week, the European Union (EU) witnessed significant developments across various sectors, including monetary policy, financial markets, banking, digitalization, and geopolitical dynamics. The ongoing challenges posed by inflation and supply chain disruptions continue to shape economic discourse, while the banking sector grapples with regulatory scrutiny and evolving risk management practices. Additionally, the intersection of technology and finance is becoming increasing… Source: EURLex reports, 2025-08-15."
         },
         {
-          "title": "ST 7761 2026 INIT",
-          "body": "COMMISSION DELEGATED REGULATION (EU) …/... of 23.3.2026 amending Annex II to Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the environmental performance and emission requirements for vehicles produced in unlimited series and for special purpose vehicles, the automated valet parking for vehicles… Source: External, 2026-03-25."
-        },
-        {
-          "title": "First ever EU-Armenia summit to take place on 4 and 5 May 2026",
-          "body": "The President of the European Council, António Costa, together with the President of the European Commission, Ursula von der Leyen, will represent the EU at the EU-Armenia summit taking place in Yerevan on 4 and 5 May 2026. Prime Minister Nikol Pashinyan will represent Armenia. Source: Council of the EU, 2026-03-26."
-        },
-        {
-          "title": "ST 7809 2026 INIT",
-          "body": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - Opinion of the European Economic and Social Committee Source: External, 2026-03-29."
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "body": "The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union continues to navigate complex challenges, particularly in the context of inflationary pressures, banking sector resilience, and the ongoing geopolitical situation in Ukraine. The interplay between these factors is shaping the EU's economic landscape and… Source: EURLex reports, 2025-08-14."
         }
       ],
       "categories": [
-        "Other"
+        "daily",
+        "weekly"
       ],
       "important_documents": [
         {
-          "id": "ecbf84d586a00ebe",
-          "title": "ST 7609 2026 INIT",
-          "summary": "ADOPTION OF LEGISLATIVE ACTS FOLLOWING THE EUROPEAN PARLIAMENT'S SECOND READING Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) No 806/2014 as regards early intervention measures, conditions for resolution and funding of resolution action - Outcome of the European Parliament's second…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7609-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-26",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "236894d26446000a",
-          "title": "ST 7761 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) …/... of 23.3.2026 amending Annex II to Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the environmental performance and emission requirements for vehicles produced in unlimited series and for special purpose vehicles, the automated valet parking for vehicles…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7761-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-25",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "64a2789886c39128",
-          "title": "First ever EU-Armenia summit to take place on 4 and 5 May 2026",
-          "summary": "The President of the European Council, António Costa, together with the President of the European Commission, Ursula von der Leyen, will represent the EU at the EU-Armenia summit taking place in Yerevan on 4 and 5 May 2026. Prime Minister Nikol Pashinyan will represent Armenia.",
-          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/03/26/first-ever-eu-armenia-summit-to-take-place-on-4-and-5-may-2026/",
-          "kind": "post",
-          "source": "Council of the EU",
-          "date": "2026-03-26",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EU",
-            "Council",
-            "Other"
-          ]
-        },
-        {
-          "id": "44e47a9c76540961",
-          "title": "ST 7809 2026 INIT",
-          "summary": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - Opinion of the European Economic and Social Committee",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7809-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-29",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "62a1189d7a8debfb",
-          "title": "Remarks by Kyriakos Pierrakakis following the Eurogroup meeting of 27 March 2026",
-          "summary": "Remarks by Eurogroup President Kyriakos Pierrakakis on the economic impact of the situation in the Middle East, the energy transition, development of the Savings and Investments Union and preparation ahead of the IMF and G7 international meetings.",
-          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/03/27/remarks-by-kyriakos-pierrakakis-following-the-eurogroup-meeting-of-27-march-2026/",
-          "kind": "post",
-          "source": "Council of the EU",
-          "date": "2026-03-27",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EU",
-            "Council",
-            "Other"
-          ]
-        }
-      ],
-      "related_documents": [
-        {
-          "id": "236894d26446000a",
-          "title": "ST 7761 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) …/... of 23.3.2026 amending Annex II to Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the environmental performance and emission requirements for vehicles produced in unlimited series and for special purpose vehicles, the automated valet parking for vehicles…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7761-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-25",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "64a2789886c39128",
-          "title": "First ever EU-Armenia summit to take place on 4 and 5 May 2026",
-          "summary": "The President of the European Council, António Costa, together with the President of the European Commission, Ursula von der Leyen, will represent the EU at the EU-Armenia summit taking place in Yerevan on 4 and 5 May 2026. Prime Minister Nikol Pashinyan will represent Armenia.",
-          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/03/26/first-ever-eu-armenia-summit-to-take-place-on-4-and-5-may-2026/",
-          "kind": "post",
-          "source": "Council of the EU",
-          "date": "2026-03-26",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EU",
-            "Council",
-            "Other"
-          ]
-        },
-        {
-          "id": "44e47a9c76540961",
-          "title": "ST 7809 2026 INIT",
-          "summary": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - Opinion of the European Economic and Social Committee",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7809-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-29",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "62a1189d7a8debfb",
-          "title": "Remarks by Kyriakos Pierrakakis following the Eurogroup meeting of 27 March 2026",
-          "summary": "Remarks by Eurogroup President Kyriakos Pierrakakis on the economic impact of the situation in the Middle East, the energy transition, development of the Savings and Investments Union and preparation ahead of the IMF and G7 international meetings.",
-          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/03/27/remarks-by-kyriakos-pierrakakis-following-the-eurogroup-meeting-of-27-march-2026/",
-          "kind": "post",
-          "source": "Council of the EU",
-          "date": "2026-03-27",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EU",
-            "Council",
-            "Other"
-          ]
-        },
-        {
-          "id": "4f1394244e738bbf",
-          "title": "ST 7695 2026 INIT",
-          "summary": "AOB item for the meeting of the “Agriculture and Fisheries” Council on 30 March 2026: CAP Strategic Plans - National Partnership Plans: transitional provisions for sectoral interventions in the wine sector and in the fruit and vegetable sector - Information from Spain and Portugal, supported by Austria, Bulgaria, Czechia, France…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7695-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-25",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "be4feb0876e31faf",
-          "title": "ST 7761 2026 ADD 1",
-          "summary": "ANNEX to the Commission Delegated Regulation amending Annex II to Regulation (EU) 2018/858 of the European Parliament and of the Council as regards the environmental performance and emission requirements for vehicles produced in unlimited series and for special purpose vehicles, the automated valet parking for vehicles produced in…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7761-2026-ADD-1/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-25",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        }
-      ],
-      "report": null
-    },
-    {
-      "edition_date": "2026-03-22",
-      "week_start": "2026-03-16",
-      "week_end": "2026-03-22",
-      "title": "Sunday Edition — 2026-03-16 to 2026-03-22",
-      "headline": "ST 12503 2024 COR 1",
-      "intro": "CORRIGENDUM to Commission Delegated Regulation (EU) 2024/2770 of 15 July 2024 amending Regulation (EU) 2019/1009 of the European Parliament and of the Council as regards biodegradability criteria for coating agents and water retention… COMMISSION DELEGATED REGULATION (EU) â€¦/...",
-      "summary": "CORRIGENDUM to Commission Delegated Regulation (EU) 2024/2770 of 15 July 2024 amending Regulation (EU) 2019/1009 of the European Parliament and of the Council as regards biodegradability criteria for coating agents and water retention… COMMISSION DELEGATED REGULATION (EU) â€¦/... amending Regulation (EU) 2017/745 of the European Parliament and of the Council as regards the list of implantable devices and class III devices exempted from the obligation to perform clinical… COMMISSION DELEGATED REGULATION (EU) .../...",
-      "key_points": [
-        "ST 12503 2024 COR 1",
-        "ST 7571 2026 INIT",
-        "ST 7573 2026 INIT",
-        "ST 6962 2026 INIT",
-        "ST 7301 2026 INIT"
-      ],
-      "sections": [
-        {
-          "title": "ST 12503 2024 COR 1",
-          "body": "CORRIGENDUM to Commission Delegated Regulation (EU) 2024/2770 of 15 July 2024 amending Regulation (EU) 2019/1009 of the European Parliament and of the Council as regards biodegradability criteria for coating agents and water retention polymers ( Source: External, 2026-03-22."
-        },
-        {
-          "title": "ST 7571 2026 INIT",
-          "body": "COMMISSION DELEGATED REGULATION (EU) â€¦/... amending Regulation (EU) 2017/745 of the European Parliament and of the Council as regards the list of implantable devices and class III devices exempted from the obligation to perform clinical investigations Source: External, 2026-03-22."
-        },
-        {
-          "title": "ST 7573 2026 INIT",
-          "body": "COMMISSION DELEGATED REGULATION (EU) .../... amending Regulation (EU) 2017/745 of the European Parliament and of the Council as regards the list of class IIb implantable devices exempted from the obligation to perform an assessment of the technical documentation for every device Source: External, 2026-03-22."
-        },
-        {
-          "title": "ST 6962 2026 INIT",
-          "body": "Directive (EU) 2019/1023 of the European Parliament and of the Council of 20 June 2019 on preventive restructuring frameworks, on discharge of debt and disqualifications, and on measures to increase the efficiency of procedures concerning restructuring, insolvency and discharge of debt, and amending Directive (EU) 2017/1132 (Directive… Source: External, 2026-03-22."
-        }
-      ],
-      "categories": [
-        "Other"
-      ],
-      "important_documents": [
-        {
-          "id": "1b307f6f81375e2d",
-          "title": "ST 12503 2024 COR 1",
-          "summary": "CORRIGENDUM to Commission Delegated Regulation (EU) 2024/2770 of 15 July 2024 amending Regulation (EU) 2019/1009 of the European Parliament and of the Council as regards biodegradability criteria for coating agents and water retention polymers (",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-12503-2024-COR-1/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "c74af242eae91133",
-          "title": "ST 7571 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) â€¦/... amending Regulation (EU) 2017/745 of the European Parliament and of the Council as regards the list of implantable devices and class III devices exempted from the obligation to perform clinical investigations",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7571-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "35c6d3353a9ec0e3",
-          "title": "ST 7573 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) .../... amending Regulation (EU) 2017/745 of the European Parliament and of the Council as regards the list of class IIb implantable devices exempted from the obligation to perform an assessment of the technical documentation for every device",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7573-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "bdd5cfba05083e88",
-          "title": "ST 6962 2026 INIT",
-          "summary": "Directive (EU) 2019/1023 of the European Parliament and of the Council of 20 June 2019 on preventive restructuring frameworks, on discharge of debt and disqualifications, and on measures to increase the efficiency of procedures concerning restructuring, insolvency and discharge of debt, and amending Directive (EU) 2017/1132 (Directive…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-6962-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "eba4b0faaf5eb552",
-          "title": "ST 7301 2026 INIT",
-          "summary": "Draft DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive (EU) 2015/2302 to make the protection of travellers more effective and to simplify and clarify certain aspects of that Directive (first reading) - Adoption of the legislative act",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7301-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-19",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        }
-      ],
-      "related_documents": [
-        {
-          "id": "c74af242eae91133",
-          "title": "ST 7571 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) â€¦/... amending Regulation (EU) 2017/745 of the European Parliament and of the Council as regards the list of implantable devices and class III devices exempted from the obligation to perform clinical investigations",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7571-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "35c6d3353a9ec0e3",
-          "title": "ST 7573 2026 INIT",
-          "summary": "COMMISSION DELEGATED REGULATION (EU) .../... amending Regulation (EU) 2017/745 of the European Parliament and of the Council as regards the list of class IIb implantable devices exempted from the obligation to perform an assessment of the technical documentation for every device",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7573-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "bdd5cfba05083e88",
-          "title": "ST 6962 2026 INIT",
-          "summary": "Directive (EU) 2019/1023 of the European Parliament and of the Council of 20 June 2019 on preventive restructuring frameworks, on discharge of debt and disqualifications, and on measures to increase the efficiency of procedures concerning restructuring, insolvency and discharge of debt, and amending Directive (EU) 2017/1132 (Directive…",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-6962-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "eba4b0faaf5eb552",
-          "title": "ST 7301 2026 INIT",
-          "summary": "Draft DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive (EU) 2015/2302 to make the protection of travellers more effective and to simplify and clarify certain aspects of that Directive (first reading) - Adoption of the legislative act",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7301-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-19",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "235536b0aa617455",
-          "title": "ST 7209 2026 INIT",
-          "summary": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2019/1242 as regards the calculation of emission credits for heavy-duty vehicles for the reporting periods of the years 2025 to 2029 - Outcome of the European Parliament's first reading (Strasbourg, 9 to 12 March 2026)",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7209-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-16",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "6b2267f103c0f164",
-          "title": "ST 7430 2026 ADD 1",
-          "summary": "Draft REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2019/1242 as regards the calculation of emission credits for heavy-duty vehicles for the reporting periods of the years 2025 to 2029 (first reading) - Adoption of the legislative act = Statements",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7430-2026-ADD-1/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-22",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        }
-      ],
-      "report": null
-    },
-    {
-      "edition_date": "2026-03-15",
-      "week_start": "2026-03-09",
-      "week_end": "2026-03-15",
-      "title": "Sunday Edition — 2026-03-09 to 2026-03-15",
-      "headline": "ST 7295 2026 INIT",
-      "intro": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on amending Regulation (EU) 2021/947 as regards increased efficiency of the External Action Guarantee - Outcome of the European Parliament’s first reading… Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive (EU) 2015/2302 to make the protection of travellers more effective and to simplify and clarify…",
-      "summary": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on amending Regulation (EU) 2021/947 as regards increased efficiency of the External Action Guarantee - Outcome of the European Parliament’s first reading… Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive (EU) 2015/2302 to make the protection of travellers more effective and to simplify and clarify certain aspects of the Directive - Outcome of the… Regulation amending Regulation (EU) No 1308/2013 (CMO) as regards the school scheme, sectoral interventions, the protein sector, hemp, marketing standards, import duties, the availability of supplies and securities - Presidency suggested…",
-      "key_points": [
-        "ST 7295 2026 INIT",
-        "ST 7261 2026 INIT",
-        "ST 7184 2026 INIT",
-        "Corrigendum to the Commission Notice of 6 November 2025 on the interpretation and implementation of certain legal provisions of the…",
-        "WK 4104 2026 INIT"
-      ],
-      "sections": [
-        {
-          "title": "ST 7295 2026 INIT",
-          "body": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on amending Regulation (EU) 2021/947 as regards increased efficiency of the External Action Guarantee - Outcome of the European Parliament’s first reading (Strasbourg, 9 to 12 March 2026) Source: External, 2026-03-15."
-        },
-        {
-          "title": "ST 7261 2026 INIT",
-          "body": "Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive (EU) 2015/2302 to make the protection of travellers more effective and to simplify and clarify certain aspects of the Directive - Outcome of the European Parliament’s first reading (Strasbourg, 9 to 12 March 2026) Source: External, 2026-03-15."
-        },
-        {
-          "title": "ST 7184 2026 INIT",
-          "body": "Regulation amending Regulation (EU) No 1308/2013 (CMO) as regards the school scheme, sectoral interventions, the protein sector, hemp, marketing standards, import duties, the availability of supplies and securities - Presidency suggested amendments on Block 3, regarding sectoral interventions Source: External, 2026-03-15."
-        },
-        {
-          "title": "Corrigendum to the Commission Notice of 6 November 2025 on the interpretation and implementation of certain legal…",
-          "body": "Corrigendum to the Commission Notice of 6 November 2025 on the interpretation and implementation of certain legal provisions of the European Green Bond Regulation (OJ C… Source: EUR-Lex, 2026-03-15."
-        }
-      ],
-      "categories": [
-        "Other",
-        "CMU & Financial Markets"
-      ],
-      "important_documents": [
-        {
-          "id": "2d51e1a2b00a8337",
-          "title": "ST 7295 2026 INIT",
-          "summary": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on amending Regulation (EU) 2021/947 as regards increased efficiency of the External Action Guarantee - Outcome of the European Parliament’s first reading (Strasbourg, 9 to 12 March 2026)",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7295-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "d127a1a8c26c67f9",
-          "title": "ST 7261 2026 INIT",
-          "summary": "Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive (EU) 2015/2302 to make the protection of travellers more effective and to simplify and clarify certain aspects of the Directive - Outcome of the European Parliament’s first reading (Strasbourg, 9 to 12 March 2026)",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7261-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "5fde5386d6c01b39",
-          "title": "ST 7184 2026 INIT",
-          "summary": "Regulation amending Regulation (EU) No 1308/2013 (CMO) as regards the school scheme, sectoral interventions, the protein sector, hemp, marketing standards, import duties, the availability of supplies and securities - Presidency suggested amendments on Block 3, regarding sectoral interventions",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7184-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "ac051d788184f26b",
-          "title": "Corrigendum to the Commission Notice of 6 November 2025 on the interpretation and implementation of certain legal provisions of the European Green Bond Regulation (OJ C, C/2025/5885, 6.11.2025)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025XC05885R(01)",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EU",
-            "EUR-Lex",
-            "law",
-            "Other"
-          ]
-        },
-        {
-          "id": "6c25ce4943f9e96d",
-          "title": "WK 4104 2026 INIT",
-          "summary": "SFDR Review - CWP 17 March 2026 - Spanish non-paper on the treatment of general-purpose sovereign bonds under the SFDR categorisation framework",
-          "url": "https://data.consilium.europa.eu/doc/document/WK-4104-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "external",
-            "CMU & Financial Markets"
-          ]
-        }
-      ],
-      "related_documents": [
-        {
-          "id": "d127a1a8c26c67f9",
-          "title": "ST 7261 2026 INIT",
-          "summary": "Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive (EU) 2015/2302 to make the protection of travellers more effective and to simplify and clarify certain aspects of the Directive - Outcome of the European Parliament’s first reading (Strasbourg, 9 to 12 March 2026)",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7261-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "5fde5386d6c01b39",
-          "title": "ST 7184 2026 INIT",
-          "summary": "Regulation amending Regulation (EU) No 1308/2013 (CMO) as regards the school scheme, sectoral interventions, the protein sector, hemp, marketing standards, import duties, the availability of supplies and securities - Presidency suggested amendments on Block 3, regarding sectoral interventions",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7184-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "ac051d788184f26b",
-          "title": "Corrigendum to the Commission Notice of 6 November 2025 on the interpretation and implementation of certain legal provisions of the European Green Bond Regulation (OJ C, C/2025/5885, 6.11.2025)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025XC05885R(01)",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EU",
-            "EUR-Lex",
-            "law",
-            "Other"
-          ]
-        },
-        {
-          "id": "6c25ce4943f9e96d",
-          "title": "WK 4104 2026 INIT",
-          "summary": "SFDR Review - CWP 17 March 2026 - Spanish non-paper on the treatment of general-purpose sovereign bonds under the SFDR categorisation framework",
-          "url": "https://data.consilium.europa.eu/doc/document/WK-4104-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "CMU & Financial Markets"
-          ],
-          "tags": [
-            "external",
-            "CMU & Financial Markets"
-          ]
-        },
-        {
-          "id": "9cda96181b0e3374",
-          "title": "WK 4107 2026 INIT",
-          "summary": "PEPP Regulation Review - WP meeting on 23 March 2026 - Presidency discussion paper on amendments to PEPP Regulation",
-          "url": "https://data.consilium.europa.eu/doc/document/WK-4107-2026-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        },
-        {
-          "id": "f068c2866d85d1c7",
-          "title": "ST 7156 2026 COR 1",
-          "summary": "Draft Council conclusions on a Strategic Framework for a Competitive and Sustainable EU Bioeconomy - Approval",
-          "url": "https://data.consilium.europa.eu/doc/document/ST-7156-2026-COR-1/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-03-15",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "external",
-            "Other"
-          ]
-        }
-      ],
-      "report": null
-    },
-    {
-      "edition_date": "2026-03-08",
-      "week_start": "2026-03-02",
-      "week_end": "2026-03-08",
-      "title": "Sunday Edition — 2026-03-02 to 2026-03-08",
-      "headline": "Sunday Edition — 2026-03-02 to 2026-03-08",
-      "intro": "Att.; Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Defence Industry Programme and a framework of measures to… Letter from the ECB President to Mr Fabio de Masi, MEP, on institutional matters; CALL FOR TECHNICAL ADVICE TO THE EUROPEAN SUPERVISORY ; CELEX:52026XC01431: Reorganisation measures –…",
-      "summary": "Att.; Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Defence Industry Programme and a framework of measures to… Letter from the ECB President to Mr Fabio de Masi, MEP, on institutional matters; CALL FOR TECHNICAL ADVICE TO THE EUROPEAN SUPERVISORY ; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of… The European Banking Authority (EBA) has published its final Report on the draft Implementing Technical Standards (ITS) on the supervisory reporting of third country branches under the Capital Requirements Directive (CRD VI).… CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to…",
-      "key_points": [
-        "EUR-Lex Daily Digest — 2026-03-08",
-        "EUR-Lex Daily Digest — 2026-03-07",
-        "EUR-Lex Daily Digest — 2026-03-06",
-        "EUR-Lex Daily Digest — 2026-03-05",
-        "EUR-Lex Daily Digest — 2026-03-04"
-      ],
-      "sections": [
-        {
-          "title": "EUR-Lex Daily Digest — 2026-03-08",
-          "body": "Att.; Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products (EDIP): – Legislative Financial and Digital Statement by the Commission; Informal Videoconference of the Members of the Att.&Exp. Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products (EDIP): – Legislative Financial and Digital Statement by the Commission; CONSIL:ST 7055 2026 INIT: AOB… Source: EURLex reports, 2026-03-08."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-03-07",
-          "body": "Letter from the ECB President to Mr Fabio de Masi, MEP, on institutional matters; CALL FOR TECHNICAL ADVICE TO THE EUROPEAN SUPERVISORY ; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A. Source: EURLex reports, 2026-03-07."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-03-06",
-          "body": "The European Banking Authority (EBA) has published its final Report on the draft Implementing Technical Standards (ITS) on the supervisory reporting of third country branches under the Capital Requirements Directive (CRD VI).; CELEX:32026D0414: Council Implementing Decision (EU) 2026/414 of 17 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Slovakia; CELEX:32026D0412: Council Implementing Decision (EU) 2026/412 of 17 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Poland; CELEX:32026D0436: Council Implementing Decision (EU) 2026/436 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Belgium; CELEX:32026D0435: Council Implementing Decision (EU) 2026/435 of 11 February… Source: EURLex reports, 2026-03-06."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-03-05",
-          "body": "CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; CELEX:32026D0418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; CELEX:32026D0418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation… Source: EURLex reports, 2026-03-05."
-        }
-      ],
-      "categories": [
-        "daily"
-      ],
-      "important_documents": [
-        {
-          "id": "rep-2026-03-08-ffa3436226fb19e7",
-          "title": "EUR-Lex Daily Digest — 2026-03-08",
-          "summary": "Att.; Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products (EDIP): – Legislative Financial and Digital Statement by the Commission; Informal Videoconference of the Members of the Att.&Exp. Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Defence Industry Programme and a framework of measures to ensure the timely availability and supply of defence products (EDIP): – Legislative Financial and Digital Statement by the Commission; CONSIL:ST_7055_2026_INIT: AOB for the meeting of the Economic and…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-08.md",
+          "id": "rep-2025-08-15-7e044ac6c5177689",
+          "title": "Weekly — EU Finance & Defence — 2025-08-08 to 2025-08-15 (W33)",
+          "summary": "This week, the European Union (EU) witnessed significant developments across various sectors, including monetary policy, financial markets, banking, digitalization, and geopolitical dynamics. The ongoing challenges posed by inflation and supply chain disruptions continue to shape economic discourse, while the banking sector grapples with regulatory scrutiny and evolving risk management practices. Additionally, the intersection of technology and finance is becoming increasingly relevant, particularly in the context…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-15-weekly.txt",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-03-08",
+          "date": "2025-08-15",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
+        {
+          "id": "rep-2025-08-15-0dc6b8bde243bddf",
+          "title": "EUR-Lex Daily Digest — 2025-08-15",
+          "summary": "CELEX:62020TB0449: Case T-449/20: Order of the General Court of 14 May 2025 – Banque postale v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and certain investment firms (SRM) – Single Resolution Fund (SRF) – Decision of the SRB on the calculation of the 2020 ex ante contributions – Article 70(2) of Regulation (EU) No 806/2014 – Action manifestly well founded – Limitation of the temporal effects of the order); CELEX:62020TB0405…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-15.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-15",
           "categories": [
             "daily"
           ],
@@ -948,13 +510,28 @@
           ]
         },
         {
-          "id": "rep-2026-03-07-f190aba9048edfea",
-          "title": "EUR-Lex Daily Digest — 2026-03-07",
-          "summary": "Letter from the ECB President to Mr Fabio de Masi, MEP, on institutional matters; CALL FOR TECHNICAL ADVICE TO THE EUROPEAN SUPERVISORY ; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-07.md",
+          "id": "rep-2025-08-14-b1a3bb528088c3bf",
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "summary": "The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union continues to navigate complex challenges, particularly in the context of inflationary pressures, banking sector resilience, and the ongoing geopolitical situation in Ukraine. The interplay between these factors is shaping the EU's economic landscape and influencing policy decisions at both the…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-14-weekly.txt",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-03-07",
+          "date": "2025-08-14",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
+        {
+          "id": "rep-2025-08-14-d52a4ac2ee33c262",
+          "title": "EUR-Lex Daily Digest — 2025-08-14",
+          "summary": "This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; ECB and Frankfurt Radio Symphony to hold Europa Open Air concert on 21 August 2025; Procurement: Design Contest Notice: ECB - Design Contest for the future euro banknotes (461742-2025).; We introduce a mixed-f…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-14.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-14",
           "categories": [
             "daily"
           ],
@@ -963,43 +540,13 @@
           ]
         },
         {
-          "id": "rep-2026-03-06-4d315a4a1f3c9840",
-          "title": "EUR-Lex Daily Digest — 2026-03-06",
-          "summary": "The European Banking Authority (EBA) has published its final Report on the draft Implementing Technical Standards (ITS) on the supervisory reporting of third country branches under the Capital Requirements Directive (CRD VI).; CELEX:32026D0414: Council Implementing Decision (EU) 2026/414 of 17 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Slovakia; CELEX:32026D0412: Council Implementing Decision (EU) 2026/412 of 17 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Poland; CELEX:32026D0436: Council Implementing Decision (EU) 2026/436 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Belgium; CELEX:32026D0435: Council Implementing Decision (EU) 2026/435 of 11 February 2026 on making the financial assistance…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-06.md",
+          "id": "rep-2025-08-13-81c25359b52721c3",
+          "title": "EUR-Lex Daily Digest — 2025-08-13",
+          "summary": "## Executive Summary ## Categories",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-13.md",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-03-06",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-03-05-2e858c3333ec8fd3",
-          "title": "EUR-Lex Daily Digest — 2026-03-05",
-          "summary": "CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; CELEX:32026D0418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; CELEX:32026D0418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-05.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-03-05",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-03-04-727e1e2f44e3a06b",
-          "title": "EUR-Lex Daily Digest — 2026-03-04",
-          "summary": "OJ:L_202600417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; OJ:L_202600418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; OJ:L_202600417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; OJ:L_202600418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; OJ:L_202600417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-04.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-03-04",
+          "date": "2025-08-13",
           "categories": [
             "daily"
           ],
@@ -1010,13 +557,13 @@
       ],
       "related_documents": [
         {
-          "id": "rep-2026-03-07-f190aba9048edfea",
-          "title": "EUR-Lex Daily Digest — 2026-03-07",
-          "summary": "Letter from the ECB President to Mr Fabio de Masi, MEP, on institutional matters; CALL FOR TECHNICAL ADVICE TO THE EUROPEAN SUPERVISORY ; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.; CELEX:52026XC01431: Reorganisation measures – Decision on reorganisation measures in respect of Assicurazioni Rischi Agricoli VMG 1857 S.p.A., insurance company, and FINASS VMG 1857 S.p.A.",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-07.md",
+          "id": "rep-2025-08-15-0dc6b8bde243bddf",
+          "title": "EUR-Lex Daily Digest — 2025-08-15",
+          "summary": "CELEX:62020TB0449: Case T-449/20: Order of the General Court of 14 May 2025 – Banque postale v SRB (2020 ex ante contributions) (Economic and monetary union – Banking union – Single resolution mechanism for credit institutions and certain investment firms (SRM) – Single Resolution Fund (SRF) – Decision of the SRB on the calculation of the 2020 ex ante contributions – Article 70(2) of Regulation (EU) No 806/2014 – Action manifestly well founded – Limitation of the temporal effects of the order); CELEX:62020TB0405…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-15.md",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-03-07",
+          "date": "2025-08-15",
           "categories": [
             "daily"
           ],
@@ -1025,13 +572,28 @@
           ]
         },
         {
-          "id": "rep-2026-03-06-4d315a4a1f3c9840",
-          "title": "EUR-Lex Daily Digest — 2026-03-06",
-          "summary": "The European Banking Authority (EBA) has published its final Report on the draft Implementing Technical Standards (ITS) on the supervisory reporting of third country branches under the Capital Requirements Directive (CRD VI).; CELEX:32026D0414: Council Implementing Decision (EU) 2026/414 of 17 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Slovakia; CELEX:32026D0412: Council Implementing Decision (EU) 2026/412 of 17 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Poland; CELEX:32026D0436: Council Implementing Decision (EU) 2026/436 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Belgium; CELEX:32026D0435: Council Implementing Decision (EU) 2026/435 of 11 February 2026 on making the financial assistance…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-06.md",
+          "id": "rep-2025-08-14-b1a3bb528088c3bf",
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "summary": "The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union continues to navigate complex challenges, particularly in the context of inflationary pressures, banking sector resilience, and the ongoing geopolitical situation in Ukraine. The interplay between these factors is shaping the EU's economic landscape and influencing policy decisions at both the…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-14-weekly.txt",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-03-06",
+          "date": "2025-08-14",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
+        {
+          "id": "rep-2025-08-14-d52a4ac2ee33c262",
+          "title": "EUR-Lex Daily Digest — 2025-08-14",
+          "summary": "This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; ECB and Frankfurt Radio Symphony to hold Europa Open Air concert on 21 August 2025; Procurement: Design Contest Notice: ECB - Design Contest for the future euro banknotes (461742-2025).; We introduce a mixed-f…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-14.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-14",
           "categories": [
             "daily"
           ],
@@ -1040,58 +602,13 @@
           ]
         },
         {
-          "id": "rep-2026-03-05-2e858c3333ec8fd3",
-          "title": "EUR-Lex Daily Digest — 2026-03-05",
-          "summary": "CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; CELEX:32026D0418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; CELEX:32026D0418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; CELEX:32026D0417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-05.md",
+          "id": "rep-2025-08-13-81c25359b52721c3",
+          "title": "EUR-Lex Daily Digest — 2025-08-13",
+          "summary": "## Executive Summary ## Categories",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-13.md",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-03-05",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-03-04-727e1e2f44e3a06b",
-          "title": "EUR-Lex Daily Digest — 2026-03-04",
-          "summary": "OJ:L_202600417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; OJ:L_202600418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; OJ:L_202600417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia; OJ:L_202600418: Council Implementing Decision (EU) 2026/418 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Denmark; OJ:L_202600417: Council Implementing Decision (EU) 2026/417 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Croatia",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-04.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-03-04",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-03-03-30174ecf148ab275",
-          "title": "EUR-Lex Daily Digest — 2026-03-03",
-          "summary": "Philip R.; ECB report on gender diversity in the period 2013-25; President Lagarde launches EuroSteps Walking Challenge at event promoting women’s financial literacy; The European Banking Authority (EBA) today published its final Guidelines on instruments for the capital endowment requirement for third-country branches under the Capital Requirements Directive (CRD).; CELEX:32026D0480: Council Implementing Decision (EU) 2026/480 of 23 February 2026 amending Implementing Decision (EU) 2024/1447 as regards the additional financial contribution from Sweden",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-03.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-03-03",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-03-02-99102a97bae65c43",
-          "title": "EUR-Lex Daily Digest — 2026-03-02",
-          "summary": "CELEX:62024TA0232: Case T-232/24: Judgment of the General Court of 14 January 2026 – Euro Asia Cargo v Council (Common foreign and security policy – Restrictive measures adopted in view of Russia’s actions destabilising the situation in Ukraine – Prohibitions relating to dual-use goods and technology – Lists of persons, entities and bodies subject to the prohibitions – Inclusion and maintenance of the applicant’s name on the lists – Annex IV to Decision (CFSP) 2014/512 and Annex IV to Regulation (EU) No 833/2014 – Right to be heard – Obligation to state reasons – Error of assessment – Freedom to conduct a business); CELEX:62024CA0366: Case C-366/24, Amazon EU (Minimum charges for the delivery of books): Judgment of the Court (Third Chamber) of 18 December 2025 (request for a preliminary ruling from the Conseil d’État – France) – Amazon EU Sàrl v…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-02.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-03-02",
+          "date": "2025-08-13",
           "categories": [
             "daily"
           ],
@@ -1100,53 +617,57 @@
           ]
         }
       ],
-      "report": null
+      "report": {
+        "id": "rep-2025-08-15-7e044ac6c5177689",
+        "title": "Weekly — EU Finance & Defence — 2025-08-08 to 2025-08-15 (W33)",
+        "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-15-weekly.txt"
+      }
     },
     {
-      "edition_date": "2026-03-01",
-      "week_start": "2026-02-23",
-      "week_end": "2026-03-01",
-      "title": "Sunday Edition — 2026-02-23 to 2026-03-01",
-      "headline": "Sunday Edition — 2026-02-23 to 2026-03-01",
-      "intro": "CELEX:32026B00572: Statement of revenue and expenditure for the 2025 financial year – European Union Agency for the Cooperation of Energy Regulators (ACER) – amending budget No 1; CELEX:32026B00722: Statement of revenue and expenditure… Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates); ECB Consumer Expectations Survey results – January 2026; CELEX:32026B00691…",
-      "summary": "CELEX:32026B00572: Statement of revenue and expenditure for the 2025 financial year – European Union Agency for the Cooperation of Energy Regulators (ACER) – amending budget No 1; CELEX:32026B00722: Statement of revenue and expenditure… Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates); ECB Consumer Expectations Survey results – January 2026; CELEX:32026B00691: Statement of revenue and expenditure for the 2025 financial… OJ:C 202600691: Statement of revenue and expenditure for the 2025 financial year – European Centre for the Development of Vocational Training (Cedefop) – amending budget No 1; OJ:C 202600904: Statement of revenue and expenditure for the… OJ:L 202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L 202600072…",
+      "edition_date": "2025-08-14",
+      "week_start": "2025-08-08",
+      "week_end": "2025-08-14",
+      "title": "Sunday Edition — 2025-08-08 to 2025-08-14",
+      "headline": "Sunday Edition — 2025-08-08 to 2025-08-14",
+      "intro": "The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union continues to navigate complex challenges, particularly…",
+      "summary": "The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union continues to navigate complex challenges, particularly in the context of inflationary pressures, banking sector resilience, and the ongoing geopolitical situation in Ukraine. The interplay between these factors is shaping the EU's economic landscape and influencing policy decisions at both the national and EU levels. In monetary policy, the European Central Bank (ECB) is closely monitoring inflation trends, which remain a pressing concern. Recent analyses indicate that s…",
       "key_points": [
-        "EUR-Lex Daily Digest — 2026-03-01",
-        "EUR-Lex Daily Digest — 2026-02-28",
-        "EUR-Lex Daily Digest — 2026-02-27",
-        "EUR-Lex Daily Digest — 2026-02-26",
-        "EUR-Lex Daily Digest — 2026-02-25"
+        "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)"
       ],
       "sections": [
         {
-          "title": "EUR-Lex Daily Digest — 2026-03-01",
-          "body": "CELEX:32026B00572: Statement of revenue and expenditure for the 2025 financial year – European Union Agency for the Cooperation of Energy Regulators (ACER) – amending budget No 1; CELEX:32026B00722: Statement of revenue and expenditure for the 2025 financial year – European Maritime Safety Agency (EMSA) – amending budget No 2; CELEX:32026B00566: Statement of revenue and expenditure for the 2025 financial year – European Union Drugs Agency (EUDA) – amending budget No 1; CELEX:32026B00861: Statement of revenue and expenditure for the 2026 financial year – European Union Agency for Cybersecurity (ENISA); CELEX:32026B00719: Statement of revenue and expenditure for the 2025 financial year – European Institute of Innovation and Technology (EIT) – amending budget No 3 Source: EURLex reports, 2026-03-01."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-28",
-          "body": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates); ECB Consumer Expectations Survey results – January 2026; CELEX:32026B00691: Statement of revenue and expenditure for the 2025 financial year – European Centre for the Development of Vocational Training (Cedefop) – amending budget No 1; CELEX:32026B00904: Statement of revenue and expenditure for the 2026 financial year – European Centre for the Development of Vocational Training (Cedefop); CELEX:52025AE1859: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions – The Single Market: our European home market in an uncertain world – A Strategy for… Source: EURLex reports, 2026-02-28."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-27",
-          "body": "OJ:C 202600691: Statement of revenue and expenditure for the 2025 financial year – European Centre for the Development of Vocational Training (Cedefop) – amending budget No 1; OJ:C 202600904: Statement of revenue and expenditure for the 2026 financial year – European Centre for the Development of Vocational Training (Cedefop); OJ:C 202600871: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions – The Single Market: our European home market in an uncertain world – A Strategy for making the Single Market simple, seamless and strong (COM(2025) 500 final); OJ:C 202600871: Opinion of the European Economic and Social Committee – Communication from the… Source: EURLex reports, 2026-02-27."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-26",
-          "body": "OJ:L 202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L 202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L 202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L 202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L 202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026 Source: EURLex reports, 2026-02-26."
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "body": "The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union continues to navigate complex challenges, particularly in the context of inflationary pressures, banking sector resilience, and the ongoing geopolitical situation in Ukraine. The interplay between these factors is shaping the EU's economic landscape and… Source: EURLex reports, 2025-08-14."
         }
       ],
       "categories": [
-        "daily"
+        "daily",
+        "weekly"
       ],
       "important_documents": [
         {
-          "id": "rep-2026-03-01-b804188e3e304f36",
-          "title": "EUR-Lex Daily Digest — 2026-03-01",
-          "summary": "CELEX:32026B00572: Statement of revenue and expenditure for the 2025 financial year – European Union Agency for the Cooperation of Energy Regulators (ACER) – amending budget No 1; CELEX:32026B00722: Statement of revenue and expenditure for the 2025 financial year – European Maritime Safety Agency (EMSA) – amending budget No 2; CELEX:32026B00566: Statement of revenue and expenditure for the 2025 financial year – European Union Drugs Agency (EUDA) – amending budget No 1; CELEX:32026B00861: Statement of revenue and expenditure for the 2026 financial year – European Union Agency for Cybersecurity (ENISA); CELEX:32026B00719: Statement of revenue and expenditure for the 2025 financial year – European Institute of Innovation and Technology (EIT) – amending budget No 3",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-03-01.md",
+          "id": "rep-2025-08-14-b1a3bb528088c3bf",
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "summary": "The week of August 7 to August 14, 2025, was marked by significant developments across various sectors, including monetary policy, financial markets, banking, digital innovation, and geopolitical dynamics. The European Union continues to navigate complex challenges, particularly in the context of inflationary pressures, banking sector resilience, and the ongoing geopolitical situation in Ukraine. The interplay between these factors is shaping the EU's economic landscape and influencing policy decisions at both the…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-14-weekly.txt",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-03-01",
+          "date": "2025-08-14",
+          "categories": [
+            "weekly"
+          ],
+          "tags": [
+            "weekly"
+          ]
+        },
+        {
+          "id": "rep-2025-08-14-d52a4ac2ee33c262",
+          "title": "EUR-Lex Daily Digest — 2025-08-14",
+          "summary": "This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; ECB and Frankfurt Radio Symphony to hold Europa Open Air concert on 21 August 2025; Procurement: Design Contest Notice: ECB - Design Contest for the future euro banknotes (461742-2025).; We introduce a mixed-f…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-14.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2025-08-14",
           "categories": [
             "daily"
           ],
@@ -1155,58 +676,13 @@
           ]
         },
         {
-          "id": "rep-2026-02-28-0623addbc3b2536e",
-          "title": "EUR-Lex Daily Digest — 2026-02-28",
-          "summary": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates); ECB Consumer Expectations Survey results – January 2026; CELEX:32026B00691: Statement of revenue and expenditure for the 2025 financial year – European Centre for the Development of Vocational Training (Cedefop) – amending budget No 1; CELEX:32026B00904: Statement of revenue and expenditure for the 2026 financial year – European Centre for the Development of Vocational Training (Cedefop); CELEX:52025AE1859: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions – The Single Market: our European home market in an uncertain world – A Strategy for making the Single Market simple, seamless…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-28.md",
+          "id": "rep-2025-08-13-81c25359b52721c3",
+          "title": "EUR-Lex Daily Digest — 2025-08-13",
+          "summary": "## Executive Summary ## Categories",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-13.md",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-02-28",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-27-9011618744de4cc7",
-          "title": "EUR-Lex Daily Digest — 2026-02-27",
-          "summary": "OJ:C_202600691: Statement of revenue and expenditure for the 2025 financial year – European Centre for the Development of Vocational Training (Cedefop) – amending budget No 1; OJ:C_202600904: Statement of revenue and expenditure for the 2026 financial year – European Centre for the Development of Vocational Training (Cedefop); OJ:C_202600871: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions – The Single Market: our European home market in an uncertain world – A Strategy for making the Single Market simple, seamless and strong (COM(2025) 500 final); OJ:C_202600871: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-27.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-27",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-26-b54c5b3369b406c2",
-          "title": "EUR-Lex Daily Digest — 2026-02-26",
-          "summary": "OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-26.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-26",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-25-92a2da10ecb48d69",
-          "title": "EUR-Lex Daily Digest — 2026-02-25",
-          "summary": "Financial Conditions Indices (FCIs) are a widely used tool for assessing the broader monetary policy stance beyond the central bank’s direct control.; Financial Conditions Indices (FCIs) are a widely used tool for assessing the broader monetary policy stance beyond the central bank’s direct control.; CELEX:52025IP0075: P10_TA(2025)0075 – Protection of the European Union’s financial interests – combating fraud – annual report 2023 – European Parliament resolution of 6 May 2025 on the protection of the European Union’s financial interests – combating fraud – annual report 2023 (2024/2083(INI)); CELEX:52025IP0105: P10_TA(2025)0105 – Banking Union – annual report 2024 – European Parliament resolution of 8 May 2025 on Banking Union – annual report 2024 (2024/2055(INI)); CELEX:52025IP0076: P10_TA(2025)0076 – Control of the financial activities of the…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-25.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-25",
+          "date": "2025-08-13",
           "categories": [
             "daily"
           ],
@@ -1217,13 +693,13 @@
       ],
       "related_documents": [
         {
-          "id": "rep-2026-02-28-0623addbc3b2536e",
-          "title": "EUR-Lex Daily Digest — 2026-02-28",
-          "summary": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates); ECB Consumer Expectations Survey results – January 2026; CELEX:32026B00691: Statement of revenue and expenditure for the 2025 financial year – European Centre for the Development of Vocational Training (Cedefop) – amending budget No 1; CELEX:32026B00904: Statement of revenue and expenditure for the 2026 financial year – European Centre for the Development of Vocational Training (Cedefop); CELEX:52025AE1859: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions – The Single Market: our European home market in an uncertain world – A Strategy for making the Single Market simple, seamless…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-28.md",
+          "id": "rep-2025-08-14-d52a4ac2ee33c262",
+          "title": "EUR-Lex Daily Digest — 2025-08-14",
+          "summary": "This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; This paper explores empirically the cost channel of monetary policy transmission during the recent period of monetary policy tightening in the euro area.; ECB and Frankfurt Radio Symphony to hold Europa Open Air concert on 21 August 2025; Procurement: Design Contest Notice: ECB - Design Contest for the future euro banknotes (461742-2025).; We introduce a mixed-f…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-14.md",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-02-28",
+          "date": "2025-08-14",
           "categories": [
             "daily"
           ],
@@ -1232,73 +708,13 @@
           ]
         },
         {
-          "id": "rep-2026-02-27-9011618744de4cc7",
-          "title": "EUR-Lex Daily Digest — 2026-02-27",
-          "summary": "OJ:C_202600691: Statement of revenue and expenditure for the 2025 financial year – European Centre for the Development of Vocational Training (Cedefop) – amending budget No 1; OJ:C_202600904: Statement of revenue and expenditure for the 2026 financial year – European Centre for the Development of Vocational Training (Cedefop); OJ:C_202600871: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions – The Single Market: our European home market in an uncertain world – A Strategy for making the Single Market simple, seamless and strong (COM(2025) 500 final); OJ:C_202600871: Opinion of the European Economic and Social Committee – Communication from the European Commission to the European…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-27.md",
+          "id": "rep-2025-08-13-81c25359b52721c3",
+          "title": "EUR-Lex Daily Digest — 2025-08-13",
+          "summary": "## Executive Summary ## Categories",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2025-08-13.md",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-02-27",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-26-b54c5b3369b406c2",
-          "title": "EUR-Lex Daily Digest — 2026-02-26",
-          "summary": "OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026; OJ:L_202600072: Definitive adoption (EU, Euratom) 2026/72 of the European Union’s annual budget for the financial year 2026",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-26.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-26",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-25-92a2da10ecb48d69",
-          "title": "EUR-Lex Daily Digest — 2026-02-25",
-          "summary": "Financial Conditions Indices (FCIs) are a widely used tool for assessing the broader monetary policy stance beyond the central bank’s direct control.; Financial Conditions Indices (FCIs) are a widely used tool for assessing the broader monetary policy stance beyond the central bank’s direct control.; CELEX:52025IP0075: P10_TA(2025)0075 – Protection of the European Union’s financial interests – combating fraud – annual report 2023 – European Parliament resolution of 6 May 2025 on the protection of the European Union’s financial interests – combating fraud – annual report 2023 (2024/2083(INI)); CELEX:52025IP0105: P10_TA(2025)0105 – Banking Union – annual report 2024 – European Parliament resolution of 8 May 2025 on Banking Union – annual report 2024 (2024/2055(INI)); CELEX:52025IP0076: P10_TA(2025)0076 – Control of the financial activities of the…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-25.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-25",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-24-2bdf06d83d6f0880",
-          "title": "EUR-Lex Daily Digest — 2026-02-24",
-          "summary": "OJ:C_202600573: P10_TA(2025)0075 – Protection of the European Union’s financial interests – combating fraud – annual report 2023 – European Parliament resolution of 6 May 2025 on the protection of the European Union’s financial interests – combating fraud – annual report 2023 (2024/2083(INI)); OJ:C_202600574: P10_TA(2025)0076 – Control of the financial activities of the European Investment Bank – annual report 2023 – European Parliament resolution of 6 May 2025 on the control of the financial activities of the European Investment Bank – annual report 2023 (2024/2052(INI)); OJ:C_202600585: P10_TA(2025)0105 – Banking Union – annual report 2024 – European Parliament resolution of 8 May 2025 on Banking Union – annual report 2024 (2024/2055(INI)); OJ:C_202600573: P10_TA(2025)0075 – Protection of the European Union’s financial interests – combating…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-24.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-24",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-23-43ee72f43cbf1e2e",
-          "title": "EUR-Lex Daily Digest — 2026-02-23",
-          "summary": "CELEX:62024CA0245: Case C-245/24, Lukoil Bulgaria and Lukoil Neftohim Burgas: Judgment of the Court (Third Chamber) of 18 December 2025 (request for a preliminary ruling from the Administrativen sad Sofia-oblast – Bulgaria) – Lukoil Bulgaria EOOD, Lukoil Neftohim Burgas AD v Komisia za zashtita na konkurentsiata (Reference for a preliminary ruling – Competition – Article 102 TFEU – Abuse of a dominant position – Market for the storage of automotive fuels – Abuse – Refusal of access to essential infrastructure for third-party undertakings – Infrastructure financed by public funds – Privatisation of that infrastructure); CONSIL:ST_5600_2026_ADD_2: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on digital networks, amending…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-23.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-23",
+          "date": "2025-08-13",
           "categories": [
             "daily"
           ],
@@ -1307,421 +723,58 @@
           ]
         }
       ],
-      "report": null
+      "report": {
+        "id": "rep-2025-08-14-b1a3bb528088c3bf",
+        "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+        "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-14-weekly.txt"
+      }
     },
     {
-      "edition_date": "2026-02-22",
-      "week_start": "2026-02-16",
-      "week_end": "2026-02-22",
-      "title": "Sunday Edition — 2026-02-16 to 2026-02-22",
-      "headline": "Sunday Edition — 2026-02-16 to 2026-02-22",
-      "intro": "CONSIL:CM 1553 2026 INIT: Att.; Att.; Poss.Att.; Working Party on Financial Services and the Banking Union (PEPP) - 29 January 2026; Att. Letter from the ECB President to Mr Fabio de Masi and Mr Dick Erixon, MEPs, on institutional matters; CELEX:32026D0416: Council Implementing Decision (EU) 2026/416 of 17 February 2026 on the appointment of the Vice-Chair of the ECB… This box examines how economic uncertainty…",
-      "summary": "CONSIL:CM 1553 2026 INIT: Att.; Att.; Poss.Att.; Working Party on Financial Services and the Banking Union (PEPP) - 29 January 2026; Att. Letter from the ECB President to Mr Fabio de Masi and Mr Dick Erixon, MEPs, on institutional matters; CELEX:32026D0416: Council Implementing Decision (EU) 2026/416 of 17 February 2026 on the appointment of the Vice-Chair of the ECB… This box examines how economic uncertainty influences the consumption and saving behaviour of euro area households, drawing on recent insights from the ECB’s Consumer Expectations Survey (CES).; CELEX:32026D0370: Council Implementing… OJ:L 202600370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; OJ:L 202600368: Council Implementing Decision (EU) 2026/368 of 11…",
+      "edition_date": "2025-08-07",
+      "week_start": "2025-08-01",
+      "week_end": "2025-08-07",
+      "title": "Sunday Edition — 2025-08-01 to 2025-08-07",
+      "headline": "Sunday Edition — 2025-08-01 to 2025-08-07",
+      "intro": "This week, the European Union (EU) faced a range of economic and policy developments that reflect ongoing challenges and opportunities within its member states. Key areas of focus included monetary policy, private investment, regulatory actions, and cultural initiatives. This na…",
+      "summary": "This week, the European Union (EU) faced a range of economic and policy developments that reflect ongoing challenges and opportunities within its member states. Key areas of focus included monetary policy, private investment, regulatory actions, and cultural initiatives. This narrative synthesizes these developments to provide a comprehensive overview of the current state of the EU's economic landscape.",
       "key_points": [
-        "EUR-Lex Daily Digest — 2026-02-22",
-        "EUR-Lex Daily Digest — 2026-02-21",
-        "EUR-Lex Daily Digest — 2026-02-20",
-        "EUR-Lex Daily Digest — 2026-02-19",
-        "EUR-Lex Daily Digest — 2026-02-18"
+        "Monetary Policy and Economic Impacts",
+        "Private Investment and Structural Funds",
+        "Regulatory Developments",
+        "Financial Markets and Liquidity Provisions"
       ],
       "sections": [
         {
-          "title": "EUR-Lex Daily Digest — 2026-02-22",
-          "body": "CONSIL:CM 1553 2026 INIT: Att.; Att.; Poss.Att.; Working Party on Financial Services and the Banking Union (PEPP) - 29 January 2026; Att. Source: EURLex reports, 2026-02-22."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-21",
-          "body": "Letter from the ECB President to Mr Fabio de Masi and Mr Dick Erixon, MEPs, on institutional matters; CELEX:32026D0416: Council Implementing Decision (EU) 2026/416 of 17 February 2026 on the appointment of the Vice-Chair of the ECB Supervisory Board; The European Banking Authority (EBA) today published the latest edition of its ESG risk dashboard, integrating data up to the second quarter of 2025.; ​The European Banking Authority (EBA) published today an Opinion on the draft amended European Sustainability Reporting Standards (ESRS) developed by the European Financial Reporting Advisory Group (EFRAG).; ECB and ONCE Foundation launch collaboration to ensure digital euro is accessible for everyone Source: EURLex reports, 2026-02-21."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-20",
-          "body": "This box examines how economic uncertainty influences the consumption and saving behaviour of euro area households, drawing on recent insights from the ECB’s Consumer Expectations Survey (CES).; CELEX:32026D0370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; CELEX:32026D0368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania; CELEX:32026D0369: Council Implementing Decision (EU) 2026/369 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Portugal; CELEX:32026D0370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial… Source: EURLex reports, 2026-02-20."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-19",
-          "body": "OJ:L 202600370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; OJ:L 202600368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania; OJ:L 202600369: Council Implementing Decision (EU) 2026/369 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Portugal; OJ:L 202600370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; OJ:L 202600368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU)… Source: EURLex reports, 2026-02-19."
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "body": "This week, the European Union (EU) faced a range of economic and policy developments that reflect ongoing challenges and opportunities within its member states. Key areas of focus included monetary policy, private investment, regulatory actions, and cultural initiatives. This narrative synthesizes these developments to provide a comprehensive overview of the current state of the EU's economic landscape. Source: EURLex reports, 2025-08-07."
         }
       ],
       "categories": [
-        "daily"
+        "weekly"
       ],
       "important_documents": [
         {
-          "id": "rep-2026-02-22-34e4c03435816712",
-          "title": "EUR-Lex Daily Digest — 2026-02-22",
-          "summary": "CONSIL:CM_1553_2026_INIT: Att.; Att.; Poss.Att.; Working Party on Financial Services and the Banking Union (PEPP) - 29 January 2026; Att.",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-22.md",
+          "id": "rep-2025-08-07-4afa0aa5cd66d334",
+          "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+          "summary": "This week, the European Union (EU) faced a range of economic and policy developments that reflect ongoing challenges and opportunities within its member states. Key areas of focus included monetary policy, private investment, regulatory actions, and cultural initiatives. This narrative synthesizes these developments to provide a comprehensive overview of the current state of the EU's economic landscape.",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-07_to_2025-08-14_W33.md",
           "kind": "report",
           "source": "EURLex reports",
-          "date": "2026-02-22",
+          "date": "2025-08-07",
           "categories": [
-            "daily"
+            "weekly"
           ],
           "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-21-26455ec955fa3f8e",
-          "title": "EUR-Lex Daily Digest — 2026-02-21",
-          "summary": "Letter from the ECB President to Mr Fabio de Masi and Mr Dick Erixon, MEPs, on institutional matters; CELEX:32026D0416: Council Implementing Decision (EU) 2026/416 of 17 February 2026 on the appointment of the Vice-Chair of the ECB Supervisory Board; The European Banking Authority (EBA) today published the latest edition of its ESG risk dashboard, integrating data up to the second quarter of 2025.; ​The European Banking Authority (EBA) published today an Opinion on the draft amended European Sustainability Reporting Standards (ESRS) developed by the European Financial Reporting Advisory Group (EFRAG).; ECB and ONCE Foundation launch collaboration to ensure digital euro is accessible for everyone",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-21.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-21",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-20-ba0f7c2287646c4d",
-          "title": "EUR-Lex Daily Digest — 2026-02-20",
-          "summary": "This box examines how economic uncertainty influences the consumption and saving behaviour of euro area households, drawing on recent insights from the ECB’s Consumer Expectations Survey (CES).; CELEX:32026D0370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; CELEX:32026D0368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania; CELEX:32026D0369: Council Implementing Decision (EU) 2026/369 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Portugal; CELEX:32026D0370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-20.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-20",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-19-1fa6a985f3432de3",
-          "title": "EUR-Lex Daily Digest — 2026-02-19",
-          "summary": "OJ:L_202600370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; OJ:L_202600368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania; OJ:L_202600369: Council Implementing Decision (EU) 2026/369 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Portugal; OJ:L_202600370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; OJ:L_202600368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-19.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-19",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-18-a80d3803eaaec964",
-          "title": "EUR-Lex Daily Digest — 2026-02-18",
-          "summary": "OJ:L_202600269: Commission Delegated Regulation (EU) 2026/269 of 29 October 2025 amending Delegated Regulation (EU) 2015/35 as regards technical provisions, long-term guarantee measures, own funds, equity risk, spread risk on securitisation positions, other standard formula capital requirements, reporting and disclosure, proportionality and group solvency; OJ:L_202600269: Commission Delegated Regulation (EU) 2026/269 of 29 October 2025 amending Delegated Regulation (EU) 2015/35 as regards technical provisions, long-term guarantee measures, own funds, equity risk, spread risk on securitisation positions, other standard formula capital requirements, reporting and disclosure, proportionality and group solvency; OJ:L_202600269: Commission Delegated Regulation (EU) 2026/269 of 29 October 2025 amending Delegated Regulation (EU) 2015/35 as regards…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-18.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-18",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
+            "weekly"
           ]
         }
       ],
-      "related_documents": [
-        {
-          "id": "rep-2026-02-21-26455ec955fa3f8e",
-          "title": "EUR-Lex Daily Digest — 2026-02-21",
-          "summary": "Letter from the ECB President to Mr Fabio de Masi and Mr Dick Erixon, MEPs, on institutional matters; CELEX:32026D0416: Council Implementing Decision (EU) 2026/416 of 17 February 2026 on the appointment of the Vice-Chair of the ECB Supervisory Board; The European Banking Authority (EBA) today published the latest edition of its ESG risk dashboard, integrating data up to the second quarter of 2025.; ​The European Banking Authority (EBA) published today an Opinion on the draft amended European Sustainability Reporting Standards (ESRS) developed by the European Financial Reporting Advisory Group (EFRAG).; ECB and ONCE Foundation launch collaboration to ensure digital euro is accessible for everyone",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-21.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-21",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-20-ba0f7c2287646c4d",
-          "title": "EUR-Lex Daily Digest — 2026-02-20",
-          "summary": "This box examines how economic uncertainty influences the consumption and saving behaviour of euro area households, drawing on recent insights from the ECB’s Consumer Expectations Survey (CES).; CELEX:32026D0370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; CELEX:32026D0368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania; CELEX:32026D0369: Council Implementing Decision (EU) 2026/369 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Portugal; CELEX:32026D0370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-20.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-20",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-19-1fa6a985f3432de3",
-          "title": "EUR-Lex Daily Digest — 2026-02-19",
-          "summary": "OJ:L_202600370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; OJ:L_202600368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania; OJ:L_202600369: Council Implementing Decision (EU) 2026/369 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Portugal; OJ:L_202600370: Council Implementing Decision (EU) 2026/370 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Spain; OJ:L_202600368: Council Implementing Decision (EU) 2026/368 of 11 February 2026 on making the financial assistance under Regulation (EU) 2025/1106 available to Romania",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-19.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-19",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-18-a80d3803eaaec964",
-          "title": "EUR-Lex Daily Digest — 2026-02-18",
-          "summary": "OJ:L_202600269: Commission Delegated Regulation (EU) 2026/269 of 29 October 2025 amending Delegated Regulation (EU) 2015/35 as regards technical provisions, long-term guarantee measures, own funds, equity risk, spread risk on securitisation positions, other standard formula capital requirements, reporting and disclosure, proportionality and group solvency; OJ:L_202600269: Commission Delegated Regulation (EU) 2026/269 of 29 October 2025 amending Delegated Regulation (EU) 2015/35 as regards technical provisions, long-term guarantee measures, own funds, equity risk, spread risk on securitisation positions, other standard formula capital requirements, reporting and disclosure, proportionality and group solvency; OJ:L_202600269: Commission Delegated Regulation (EU) 2026/269 of 29 October 2025 amending Delegated Regulation (EU) 2015/35 as regards…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-18.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-18",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-17-5dca8e962b6764ef",
-          "title": "EUR-Lex Daily Digest — 2026-02-17",
-          "summary": "The Guidelines further specify the criteria for the assessment of the resolvability of undertakings or groups, including regarding the feasibility and credibility of the selected resolution strategy, with a focus on the resolvability dimensions specified in the Annex of the IRRD. ; The Guidelines set out the criteria for the identification of critical functions, the disruption of which could have a severe impact on policyholders, beneficiaries and the broader economy, including financial stability. ; Using AI to transform the ECB’s Corporate Telephone Survey; This article assesses the state of play for green innovation in the EU and identifies the structural barriers that are constraining the adoption and scaling- up of low-carbon technologies.; CELEX:32026R0338: Commission Regulation (EU) 2026/338 of 13 February 2026 amending Regulation (EU)…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-17.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-17",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-16-e5bf01f60db040d7",
-          "title": "EUR-Lex Daily Digest — 2026-02-16",
-          "summary": "CELEX:62024TA0367: Case T-367/24: Judgment of the General Court of 17 December 2025 – Evroins inshurans grup v EIOPA (European System of Financial Supervision – Request not to publish a decision of the Board of Appeal of the European Supervisory Authorities or to treat certain information as confidential – Refusal of the request – Action for annulment – Partial lack of jurisdiction – Regulation (EU) No 1094/2010 – Independence – Impartiality); OJ:L_202600338: Commission Regulation (EU) 2026/338 of 13 February 2026 amending Regulation (EU) 2023/1803 as regards International Financial Reporting Standard 18; OJ:L_202600338: Commission Regulation (EU) 2026/338 of 13 February 2026 amending Regulation (EU) 2023/1803 as regards International Financial Reporting Standard 18; OJ:L_202600338: Commission Regulation (EU) 2026/338 of 13 February 2026 amending…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-16.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-16",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        }
-      ],
-      "report": null
-    },
-    {
-      "edition_date": "2026-02-15",
-      "week_start": "2026-02-09",
-      "week_end": "2026-02-15",
-      "title": "Sunday Edition — 2026-02-09 to 2026-02-15",
-      "headline": "Sunday Edition — 2026-02-09 to 2026-02-15",
-      "intro": "ECB enhances repo facility for central banks; IMMC:LET/2026/02091: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Márton Nagy, Minister for National Economy of Hungary, regarding certain… The European Banking Authority (EBA) today published its final Guidelines on proportionate retail diversification methods under the Capital Requirements Regulation (CRR).; ECB…",
-      "summary": "ECB enhances repo facility for central banks; IMMC:LET/2026/02091: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Márton Nagy, Minister for National Economy of Hungary, regarding certain… The European Banking Authority (EBA) today published its final Guidelines on proportionate retail diversification methods under the Capital Requirements Regulation (CRR).; ECB publishes consolidated banking data for end-September 2025… The European Banking Authority (EBA) published today an Opinion advising national competent authorities (NCAs) under the Revised Payment Services Directive (PSD2) on how to proceed once the transition period that is set in the EBA’s… OJ:L 202600204: Decision of the EEA Joint Committee No 244/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement…",
-      "key_points": [
-        "EUR-Lex Daily Digest — 2026-02-15",
-        "EUR-Lex Daily Digest — 2026-02-14",
-        "EUR-Lex Daily Digest — 2026-02-13",
-        "EUR-Lex Daily Digest — 2026-02-12",
-        "EUR-Lex Daily Digest — 2026-02-11"
-      ],
-      "sections": [
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-15",
-          "body": "ECB enhances repo facility for central banks; IMMC:LET/2026/02091: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Márton Nagy, Minister for National Economy of Hungary, regarding certain amendments to the Law on Magyar Nemzeti Bank; IMMC:LET/2026/02101: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Richard Raši, Speaker of the National Council of the Slovak Republic, regarding certain amendments to the law on restrictions on cash payments; IMMC:LET/2026/02091: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Márton Nagy, Minister for National Economy of Hungary, regarding certain amendments to the Law on Magyar Nemzeti Bank; IMMC:LET/2026/02101: Letter from… Source: EURLex reports, 2026-02-15."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-14",
-          "body": "The European Banking Authority (EBA) today published its final Guidelines on proportionate retail diversification methods under the Capital Requirements Regulation (CRR).; ECB publishes consolidated banking data for end-September 2025; CELEX:22026D0201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]; CELEX:22026D0200: Decision of the EEA Joint Committee No 242/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/200]; CELEX:22026D0201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201] Source: EURLex reports, 2026-02-14."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-13",
-          "body": "The European Banking Authority (EBA) published today an Opinion advising national competent authorities (NCAs) under the Revised Payment Services Directive (PSD2) on how to proceed once the transition period that is set in the EBA’s No-Action Letter of 2 June 2025 (EBA/Op/2025/08) comes to an end on 2 March 2026.; ECB and ESRB issue joint report analysing financial stability risks from linkages between banks and the non-bank financial intermediation sector; Financial stability risks from linkages between banks and the non-bank financial intermediation sector; We design a Bayesian Mixed-Frequency vector autoregression (VAR) model for fiscal monitoring, i.e., to nowcast the government deficit-to-GDP ratio in real time and provide a narrative for its dynamics.; We design a Bayesian Mixed-Frequency vector… Source: EURLex reports, 2026-02-13."
-        },
-        {
-          "title": "EUR-Lex Daily Digest — 2026-02-12",
-          "body": "OJ:L 202600204: Decision of the EEA Joint Committee No 244/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/204]; OJ:L 202600201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]; OJ:L 202600200: Decision of the EEA Joint Committee No 242/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/200]; OJ:L 202600206: Decision of the EEA Joint Committee No 245/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/206]; OJ:L 202600233: Decision of the EEA Joint Committee No 240/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/233] Source: EURLex reports, 2026-02-12."
-        }
-      ],
-      "categories": [
-        "daily"
-      ],
-      "important_documents": [
-        {
-          "id": "rep-2026-02-15-7ea4970b9f906ddd",
-          "title": "EUR-Lex Daily Digest — 2026-02-15",
-          "summary": "ECB enhances repo facility for central banks; IMMC:LET/2026/02091: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Márton Nagy, Minister for National Economy of Hungary, regarding certain amendments to the Law on Magyar Nemzeti Bank; IMMC:LET/2026/02101: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Richard Raši, Speaker of the National Council of the Slovak Republic, regarding certain amendments to the law on restrictions on cash payments; IMMC:LET/2026/02091: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Márton Nagy, Minister for National Economy of Hungary, regarding certain amendments to the Law on Magyar Nemzeti Bank; IMMC:LET/2026/02101: Letter from Frank Elderson, Member of the Executive…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-15.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-15",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-14-73b95f667accc563",
-          "title": "EUR-Lex Daily Digest — 2026-02-14",
-          "summary": "The European Banking Authority (EBA) today published its final Guidelines on proportionate retail diversification methods under the Capital Requirements Regulation (CRR).; ECB publishes consolidated banking data for end-September 2025; CELEX:22026D0201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]; CELEX:22026D0200: Decision of the EEA Joint Committee No 242/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/200]; CELEX:22026D0201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-14.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-14",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-13-03bfcd6e00439d60",
-          "title": "EUR-Lex Daily Digest — 2026-02-13",
-          "summary": "The European Banking Authority (EBA) published today an Opinion advising national competent authorities (NCAs) under the Revised Payment Services Directive (PSD2) on how to proceed once the transition period that is set in the EBA’s No-Action Letter of 2 June 2025 (EBA/Op/2025/08) comes to an end on 2 March 2026.; ECB and ESRB issue joint report analysing financial stability risks from linkages between banks and the non-bank financial intermediation sector; Financial stability risks from linkages between banks and the non-bank financial intermediation sector; We design a Bayesian Mixed-Frequency vector autoregression (VAR) model for fiscal monitoring, i.e., to nowcast the government deficit-to-GDP ratio in real time and provide a narrative for its dynamics.; We design a Bayesian Mixed-Frequency vector autoregression (VAR) model for fiscal…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-13.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-13",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-12-5d55900f9ba6e47c",
-          "title": "EUR-Lex Daily Digest — 2026-02-12",
-          "summary": "OJ:L_202600204: Decision of the EEA Joint Committee No 244/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/204]; OJ:L_202600201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]; OJ:L_202600200: Decision of the EEA Joint Committee No 242/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/200]; OJ:L_202600206: Decision of the EEA Joint Committee No 245/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/206]; OJ:L_202600233: Decision of the EEA Joint Committee No 240/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/233]",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-12.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-12",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-11-cd38920e043173cb",
-          "title": "EUR-Lex Daily Digest — 2026-02-11",
-          "summary": "On Tuesday, Parliament adopted its annual review of the European Central Bank’s policies and its recommendations for 2026.; On Tuesday, Parliament adopted its annual review of the European Central Bank’s policies and its recommendations for 2026.; We document empirically the money demand by European non-financial corporations by exploiting a unique and brand-new survey on their cash usage in a stress period.; We document empirically the money demand by European non-financial corporations by exploiting a unique and brand-new survey on their cash usage in a stress period.; CELEX:62024TB0613: Case T-613/24: Order of the General Court of 8 December 2025 – Alpha Panareti Public and Others v ECB",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-11.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-11",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        }
-      ],
-      "related_documents": [
-        {
-          "id": "rep-2026-02-14-73b95f667accc563",
-          "title": "EUR-Lex Daily Digest — 2026-02-14",
-          "summary": "The European Banking Authority (EBA) today published its final Guidelines on proportionate retail diversification methods under the Capital Requirements Regulation (CRR).; ECB publishes consolidated banking data for end-September 2025; CELEX:22026D0201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]; CELEX:22026D0200: Decision of the EEA Joint Committee No 242/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/200]; CELEX:22026D0201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-14.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-14",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-13-03bfcd6e00439d60",
-          "title": "EUR-Lex Daily Digest — 2026-02-13",
-          "summary": "The European Banking Authority (EBA) published today an Opinion advising national competent authorities (NCAs) under the Revised Payment Services Directive (PSD2) on how to proceed once the transition period that is set in the EBA’s No-Action Letter of 2 June 2025 (EBA/Op/2025/08) comes to an end on 2 March 2026.; ECB and ESRB issue joint report analysing financial stability risks from linkages between banks and the non-bank financial intermediation sector; Financial stability risks from linkages between banks and the non-bank financial intermediation sector; We design a Bayesian Mixed-Frequency vector autoregression (VAR) model for fiscal monitoring, i.e., to nowcast the government deficit-to-GDP ratio in real time and provide a narrative for its dynamics.; We design a Bayesian Mixed-Frequency vector autoregression (VAR) model for fiscal…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-13.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-13",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-12-5d55900f9ba6e47c",
-          "title": "EUR-Lex Daily Digest — 2026-02-12",
-          "summary": "OJ:L_202600204: Decision of the EEA Joint Committee No 244/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/204]; OJ:L_202600201: Decision of the EEA Joint Committee No 243/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/201]; OJ:L_202600200: Decision of the EEA Joint Committee No 242/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/200]; OJ:L_202600206: Decision of the EEA Joint Committee No 245/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/206]; OJ:L_202600233: Decision of the EEA Joint Committee No 240/2025 of 24 October 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/233]",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-12.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-12",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-11-cd38920e043173cb",
-          "title": "EUR-Lex Daily Digest — 2026-02-11",
-          "summary": "On Tuesday, Parliament adopted its annual review of the European Central Bank’s policies and its recommendations for 2026.; On Tuesday, Parliament adopted its annual review of the European Central Bank’s policies and its recommendations for 2026.; We document empirically the money demand by European non-financial corporations by exploiting a unique and brand-new survey on their cash usage in a stress period.; We document empirically the money demand by European non-financial corporations by exploiting a unique and brand-new survey on their cash usage in a stress period.; CELEX:62024TB0613: Case T-613/24: Order of the General Court of 8 December 2025 – Alpha Panareti Public and Others v ECB",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-11.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-11",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-10-6e8f652928e138ce",
-          "title": "EUR-Lex Daily Digest — 2026-02-10",
-          "summary": "Christine Lagarde: European Parliament plenary debate on the ECB Annual Report; The European Banking Authority (EBA) launched today a public consultation on its Discussion Paper on the simplification and assessment of the credit risk framework. The Paper sets out preliminary ideas to enhance the usability, efficiency and simplicity of the credit risk framework, aiming to stimulate a broader discussion on how to better structure the EBA’s future work in this area.; Philip R.; Procurement: Contract Notice ECB: PRO-2883572943 - Provision of administrative temporary labour (91137-2026).; COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT accompanying the Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) 2019/2088 on sustainability-related disclosures in the financial services…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-10.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-10",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        },
-        {
-          "id": "rep-2026-02-09-96da1bc025a96fa9",
-          "title": "EUR-Lex Daily Digest — 2026-02-09",
-          "summary": "CELEX:62022CA0602: Case C-602/22 P: Judgment of the Court (Grand Chamber) of 11 December 2025 – ABLV Bank v SRB (Appeal – Economic and monetary policy – Banking union – Regulation (EU) No 806/2014 – Single Resolution Mechanism for credit institutions and certain investment firms – Article 7 – Division of tasks within the Single Resolution Mechanism – Article 18 – Resolution procedure – Conditions – Decision of the Single Resolution Board (SRB) not to adopt a resolution scheme – Competence of the SRB); CELEX:52026PC0065: Proposal for a COUNCIL IMPLEMENTING DECISION amending Implementing Decision (EU) 2024/1447 as regards the additional financial contribution from Sweden; 2026/0040/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending Implementing Decision (EU) 2024/1447 as regards the additional financial contribution from Sweden…",
-          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-02-09.md",
-          "kind": "report",
-          "source": "EURLex reports",
-          "date": "2026-02-09",
-          "categories": [
-            "daily"
-          ],
-          "tags": [
-            "daily"
-          ]
-        }
-      ],
-      "report": null
+      "related_documents": [],
+      "report": {
+        "id": "rep-2025-08-07-4afa0aa5cd66d334",
+        "title": "Weekly — EU Finance & Defence — 2025-08-07 to 2025-08-14 (W33)",
+        "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/weekly/2025-08-07_to_2025-08-14_W33.md"
+      }
     }
   ]
 }
