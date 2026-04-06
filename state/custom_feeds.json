@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T15:40:05.160Z",
+  "updated_at": "2026-04-06T15:42:23.446Z",
   "feeds": [
     {
       "id": "fc0770458317",
@@ -7,6 +7,13 @@
       "url": "https://www.dnb.nl/en/rss/16451/6882",
       "tags": [],
       "added_at": "2026-04-06T15:38:51.949Z"
+    },
+    {
+      "id": "b68bfc447555",
+      "name": "Defence News Industry",
+      "url": "https://www.defensenews.com/arc/outboundfeeds/rss/category/industry/?outputType=xml",
+      "tags": [],
+      "added_at": "2026-04-06T15:42:23.446Z"
     },
     {
       "id": "08d50b92393e",
