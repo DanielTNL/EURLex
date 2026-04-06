@@ -1,0 +1,390 @@
+{
+  "updated_at": "2026-04-06T20:45:00Z",
+  "entries": [
+    {
+      "id": "48416b97a6e0",
+      "source_id": "eurlex_mifid",
+      "name": "EUR-Lex - MiFID",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMqxgwKHzTIEhhaN288u%2FA%2Bk%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "MiFID"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "d3134d6a1155",
+      "source_id": "eurlex_financial_markets",
+      "name": "EUR-Lex - Financial Markets",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTMxf2yPGvU%2B2DKvmj375b2fI%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "markets"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "e814d547e0a3",
+      "source_id": "eurlex_financial",
+      "name": "EUR-Lex - Financial",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPCOks8Lb9I%2F7HKsheVjDD24%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "fe5395e37cab",
+      "source_id": "eurlex_finance",
+      "name": "EUR-Lex - Finance",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPZgyu5KH6%2BNZs%2FH0VS0n1XU%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "092710859d8d",
+      "source_id": "eurlex_capital_markets_union",
+      "name": "EUR-Lex - Capital Markets Union",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xTPpaIo2Jjyla%2BQh6LIbMKu1k%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "capital markets"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "0c6aed40ee1c",
+      "source_id": "eurlex_defence",
+      "name": "EUR-Lex - Defence",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUM%2BfPeWXzVIDPrtJmlgBdmhs%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "defence"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "93c3f3b36e64",
+      "source_id": "eurlex_defense",
+      "name": "EUR-Lex - Defense",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUMlxZcTWvS%2BxtAYizunW5QAA%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "defence"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "fe8535d1ef9c",
+      "source_id": "eurlex_mifir",
+      "name": "EUR-Lex - MiFIR",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUO3V%2FO%2BcTr%2BXa1ATP9a97SsQ%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "MiFIR"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "0a805f4d78b7",
+      "source_id": "eurlex_prospectus",
+      "name": "EUR-Lex - Prospectus",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOHvFIxf3jlA9JeuwgTFWJOg%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "prospectus"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "290fe59fa527",
+      "source_id": "eurlex_consolidated_tape",
+      "name": "EUR-Lex - Consolidated Tape",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOcBTK0erkTyfirFlrUSy%2FvM%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "markets"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "c5d69ae98fe3",
+      "source_id": "eurlex_esap",
+      "name": "EUR-Lex - ESAP",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUOs7pM7dPsIl4e14a2dqfkN8%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "ESAP"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "ed520c30e03c",
+      "source_id": "eurlex_securitisation",
+      "name": "EUR-Lex - Securitisation",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUP90nGqZj0ldQaW%2BbRHjoIqs%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "securitisation"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "a0cc94306e11",
+      "source_id": "eurlex_high_risk_ai",
+      "name": "EUR-Lex - High-risk AI",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPNOdAlaH8%2BK3mIDkMObFTIc%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "AI",
+        "regulation"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "a40ad544ed3e",
+      "source_id": "eurlex_artificial_intelligence",
+      "name": "EUR-Lex - Artificial Intelligence",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xUPWgLCgbb7I4VN9oxHJMhlpw%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "AI"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "11927538895e",
+      "source_id": "eurlex_blending",
+      "name": "EUR-Lex - Blending",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVM4HHKTnsOCJg9AdK4%2BSHgeM%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "investment"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "e1f53d0a1925",
+      "source_id": "eurlex_investment_platform",
+      "name": "EUR-Lex - Investment Platform",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVMjpRIWmwJ07CW12fz5FjW%2Fg%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "investment"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "5b136e4c167a",
+      "source_id": "eurlex_dual_use",
+      "name": "EUR-Lex - Dual-use",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOB3Nc0vo4vKSfz6c9NWMPxA%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "defence",
+        "trade"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "765f97695382",
+      "source_id": "eurlex_edis",
+      "name": "EUR-Lex - EDIS",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOaZbexu0%2FZ4w0GRJ2KBo5Qs%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "banking",
+        "EDIS"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "d3bc5be19e36",
+      "source_id": "eurlex_eda",
+      "name": "EUR-Lex - EDA",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOqjhY%2BtQ3CvXIYs2rD5Fiyc%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "defence",
+        "EDA"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "67ec47f00067",
+      "source_id": "eurlex_security_and_defence",
+      "name": "EUR-Lex - Security and Defence",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVOxN3a7sMw0d1jtHjgEuhUTw%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "security",
+        "defence"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "d04bba53385d",
+      "source_id": "eurlex_derisking",
+      "name": "EUR-Lex - Derisking",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVP7svSvp8vvX%2FM7q3MZwyOVM%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "geopolitics",
+        "risk"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "6ebb6f388505",
+      "source_id": "eurlex_risk_sharing",
+      "name": "EUR-Lex - Risk Sharing",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPQ4DWlrEgCy6bQ8daXf7jWQ%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "risk"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "9bdfd6b35095",
+      "source_id": "eurlex_de_risking",
+      "name": "EUR-Lex - De-risking",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xVPgC5QqogoZldnOBiHenW40g%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "geopolitics",
+        "risk"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "eed5b3ea7328",
+      "source_id": "eurlex_investment",
+      "name": "EUR-Lex - Investment",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?myRssId=zqe4qoY29UEwdPmk33xWO7lvm18tdqCEYa6XHmbPfTQ%3D",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "finance",
+        "investment"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "9c29504076e7",
+      "source_id": "eurlex_official_journal_c",
+      "name": "EUR-Lex - Official Journal C",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=221",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "official journal",
+        "notices"
+      ],
+      "kind": "rss",
+      "enabled": true
+    },
+    {
+      "id": "768c621d1e16",
+      "source_id": "eurlex_official_journal_l",
+      "name": "EUR-Lex - Official Journal L",
+      "url": "https://eur-lex.europa.eu/EN/display-feed.rss?rssId=222",
+      "tags": [
+        "EU",
+        "law",
+        "EUR-Lex",
+        "official journal",
+        "legislation"
+      ],
+      "kind": "rss",
+      "enabled": true
+    }
+  ]
+}
