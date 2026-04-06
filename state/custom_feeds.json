@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-04-06T15:33:00.025Z",
+  "updated_at": "2026-04-06T15:33:24.106Z",
   "feeds": [
+    {
+      "id": "e14971bdafbe",
+      "name": "NOS Economie",
+      "url": "https://feeds.nos.nl/nosnieuwseconomie",
+      "tags": [
+        "Nieuws"
+      ],
+      "added_at": "2026-04-06T15:33:24.106Z"
+    },
     {
       "id": "fba4826ac63a",
       "name": "NOS Politiek",
