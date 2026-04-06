@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T15:38:51.949Z",
+  "updated_at": "2026-04-06T15:39:38.384Z",
   "feeds": [
     {
       "id": "fc0770458317",
@@ -7,6 +7,13 @@
       "url": "https://www.dnb.nl/en/rss/16451/6882",
       "tags": [],
       "added_at": "2026-04-06T15:38:51.949Z"
+    },
+    {
+      "id": "8152eeaf59ab",
+      "name": "Investing News Economy",
+      "url": "https://www.investing.com/rss/news_14.rss",
+      "tags": [],
+      "added_at": "2026-04-06T15:39:38.384Z"
     },
     {
       "id": "e14971bdafbe",
