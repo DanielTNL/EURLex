@@ -1,4 +1,14 @@
 {
-  "updated_at": "2026-04-04T10:42:44.481Z",
-  "feeds": []
+  "updated_at": "2026-04-06T15:19:00.569Z",
+  "feeds": [
+    {
+      "id": "3ae57466b592",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "tags": [
+        "AI"
+      ],
+      "added_at": "2026-04-06T15:19:00.569Z"
+    }
+  ]
 }
