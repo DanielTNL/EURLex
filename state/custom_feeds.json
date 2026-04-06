@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T15:19:00.569Z",
+  "updated_at": "2026-04-06T15:20:29.973Z",
   "feeds": [
     {
       "id": "3ae57466b592",
@@ -9,6 +9,13 @@
         "AI"
       ],
       "added_at": "2026-04-06T15:19:00.569Z"
+    },
+    {
+      "id": "1f6b2bf51698",
+      "name": "Rijksoverheid Algemeen",
+      "url": "https://feeds.rijksoverheid.nl/nieuws.rss",
+      "tags": [],
+      "added_at": "2026-04-06T15:20:29.959Z"
     }
   ]
 }
