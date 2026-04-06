@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T15:33:45.527Z",
+  "updated_at": "2026-04-06T15:37:12.806Z",
   "feeds": [
     {
       "id": "e14971bdafbe",
@@ -36,6 +36,13 @@
         "AI"
       ],
       "added_at": "2026-04-06T15:19:00.569Z"
+    },
+    {
+      "id": "516e87579b61",
+      "name": "PwC Global",
+      "url": "http://feeds.feedburner.com/GlobalPressRoom",
+      "tags": [],
+      "added_at": "2026-04-06T15:37:12.806Z"
     },
     {
       "id": "1f6b2bf51698",
