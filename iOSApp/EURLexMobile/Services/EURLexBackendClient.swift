@@ -32,33 +32,68 @@ struct WeeklyAudioRequestResponse: Decodable {
     let workflow: String?
 }
 
-struct CustomFeed: Decodable, Hashable, Identifiable {
+struct ManagedSource: Decodable, Hashable, Identifiable {
     let id: String
+    let sourceId: String?
     let name: String
     let url: String
     let tags: [String]
+    let kind: String?
+    let origin: String?
+    let enabled: Bool?
     let addedAt: String?
+    let updatedAt: String?
 
     enum CodingKeys: String, CodingKey {
         case id
+        case sourceId = "source_id"
         case name
         case url
         case tags
+        case kind
+        case origin
+        case enabled
         case addedAt = "added_at"
+        case updatedAt = "updated_at"
+    }
+
+    var isCustom: Bool { (origin ?? "").lowercased() == "custom" }
+    var isEnabled: Bool { enabled ?? true }
+    var displayOrigin: String { isCustom ? "Custom" : "Built-in" }
+    var displayKind: String {
+        switch (kind ?? "").lowercased() {
+        case "rss", "feed", "atom":
+            return "RSS"
+        case "html", "html_list":
+            return "HTML"
+        default:
+            return (kind?.isEmpty == false ? kind! : "Source").uppercased()
+        }
     }
 }
 
 struct CustomFeedsResponse: Decodable {
     let updatedAt: String?
-    let feeds: [CustomFeed]
+    let feeds: [ManagedSource]
+    let sources: [ManagedSource]?
     let queuedProcessing: Bool?
     let message: String?
 
     enum CodingKeys: String, CodingKey {
         case updatedAt = "updated_at"
         case feeds
+        case sources
         case queuedProcessing = "queued_processing"
         case message
+    }
+
+    init(from decoder: any Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt)
+        feeds = try container.decodeIfPresent([ManagedSource].self, forKey: .feeds) ?? []
+        sources = try container.decodeIfPresent([ManagedSource].self, forKey: .sources)
+        queuedProcessing = try container.decodeIfPresent(Bool.self, forKey: .queuedProcessing)
+        message = try container.decodeIfPresent(String.self, forKey: .message)
     }
 }
 
@@ -67,6 +102,7 @@ enum EURLexBackendError: LocalizedError {
     case invalidURL(String)
     case badStatusCode(Int)
     case missingAnswer
+    case uploadTooLarge(Int)
 
     var errorDescription: String? {
         switch self {
@@ -78,11 +114,16 @@ enum EURLexBackendError: LocalizedError {
             return "The backend returned HTTP \(code)."
         case .missingAnswer:
             return "The backend responded, but did not include an answer."
+        case .uploadTooLarge(let bytes):
+            let mb = Double(bytes) / 1_000_000
+            return String(format: "This file is too large for the current GitHub-backed upload route. Please keep uploads under %.1f MB for now.", mb)
         }
     }
 }
 
 struct EURLexBackendClient {
+    static let safeUploadLimitBytes = 2_750_000
+
     let baseURL: URL?
     let session: URLSession
 
@@ -123,14 +164,14 @@ struct EURLexBackendClient {
         return try decoder.decode(WeeklyAudioRequestResponse.self, from: data)
     }
 
-    func fetchSources() async throws -> [CustomFeed] {
+    func fetchSources() async throws -> [ManagedSource] {
         let data = try await sendJSON(path: "api/sources", method: "GET")
         let decoder = configuredDecoder()
         let response = try decoder.decode(CustomFeedsResponse.self, from: data)
-        return response.feeds
+        return response.sources ?? response.feeds
     }
 
-    func addSource(name: String, url: String, tags: [String]) async throws -> [CustomFeed] {
+    func addSource(name: String, url: String, tags: [String]) async throws -> [ManagedSource] {
         let data = try await sendJSON(
             path: "api/sources",
             method: "POST",
@@ -142,10 +183,29 @@ struct EURLexBackendClient {
         )
         let decoder = configuredDecoder()
         let response = try decoder.decode(CustomFeedsResponse.self, from: data)
-        return response.feeds
+        return response.sources ?? response.feeds
     }
 
-    func deleteSource(id: String) async throws -> [CustomFeed] {
+    func updateSource(_ source: ManagedSource, name: String, url: String, tags: [String]) async throws -> [ManagedSource] {
+        let data = try await sendJSON(
+            path: "api/sources",
+            method: "POST",
+            body: [
+                "id": source.id,
+                "source_id": source.sourceId ?? source.name,
+                "origin": source.origin ?? "",
+                "kind": source.kind ?? "",
+                "name": name,
+                "url": url,
+                "tags": tags
+            ]
+        )
+        let decoder = configuredDecoder()
+        let response = try decoder.decode(CustomFeedsResponse.self, from: data)
+        return response.sources ?? response.feeds
+    }
+
+    func deleteSource(id: String) async throws -> [ManagedSource] {
         let data = try await sendJSON(
             path: "api/sources",
             method: "DELETE",
@@ -153,7 +213,7 @@ struct EURLexBackendClient {
         )
         let decoder = configuredDecoder()
         let response = try decoder.decode(CustomFeedsResponse.self, from: data)
-        return response.feeds
+        return response.sources ?? response.feeds
     }
 
     func fetchDocuments() async throws -> BackendDocumentsResponse {
@@ -189,6 +249,9 @@ struct EURLexBackendClient {
 
     func uploadDocument(fileURL: URL, title: String, tags: [String]) async throws -> BackendDocumentsResponse {
         let data = try Data(contentsOf: fileURL)
+        guard data.count <= Self.safeUploadLimitBytes else {
+            throw EURLexBackendError.uploadTooLarge(Self.safeUploadLimitBytes)
+        }
         let payload: [String: Any] = [
             "title": title,
             "filename": fileURL.lastPathComponent,

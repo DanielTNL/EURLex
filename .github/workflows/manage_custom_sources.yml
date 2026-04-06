@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - state/custom_feeds.json
+      - state/source_overrides.json
   workflow_dispatch:
     inputs:
       action:
@@ -85,7 +86,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/custom_feeds.json state/latest_discovery.json outputs/docs outputs/timelines docs/data docs/digests
+          git add state/custom_feeds.json state/source_overrides.json state/latest_discovery.json outputs/docs outputs/timelines docs/data docs/digests
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0

@@ -61,6 +61,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; PipelineV2/1.0; +https://example.com)"
 REQ_TIMEOUT = 20
 MAX_HTML_LINKS = 200  # soft cap per page
 CUSTOM_FEEDS_PATH = "state/custom_feeds.json"
+SOURCE_OVERRIDES_PATH = "state/source_overrides.json"
 
 
 # -------------------------- helpers: parsing & robustness --------------------------
@@ -157,6 +158,10 @@ def matches_url_patterns(url: str, include_patterns: Iterable[str] | None, exclu
 
 def stable_id(u: str) -> str:
     return hashlib.sha1(u.encode("utf-8", "ignore")).hexdigest()
+
+
+def source_registry_id(source_id: str, url: str) -> str:
+    return stable_id(f"{(source_id or '').strip()}|{(url or '').strip()}")
 
 
 def parse_date_to_iso(s: str) -> str:
@@ -281,6 +286,68 @@ def load_custom_feeds(path: str = CUSTOM_FEEDS_PATH) -> List[Source]:
     return found
 
 
+def load_source_overrides(path: str = SOURCE_OVERRIDES_PATH) -> Dict[str, Dict[str, Any]]:
+    if not os.path.exists(path):
+        return {}
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f) or {}
+    except Exception:
+        return {}
+
+    entries = payload.get("entries") if isinstance(payload, dict) else []
+    overrides: Dict[str, Dict[str, Any]] = {}
+    if isinstance(entries, list):
+        for item in entries:
+            if not isinstance(item, dict):
+                continue
+            source_id = str(item.get("source_id") or item.get("name") or item.get("url") or "").strip()
+            url = str(item.get("url") or "").strip()
+            item_id = str(item.get("id") or source_registry_id(source_id, url)).strip()
+            if item_id:
+                overrides[item_id] = item
+    return overrides
+
+
+def apply_source_overrides(found: List[Source]) -> List[Source]:
+    overrides = load_source_overrides()
+    if not overrides:
+        return found
+
+    adjusted: List[Source] = []
+    for source in found:
+        item_id = source_registry_id(source.source_id, source.url)
+        override = overrides.get(item_id)
+        if override and override.get("enabled") is False:
+            continue
+        if override:
+            source = Source(
+                source_id=str(override.get("source_id") or source.source_id).strip(),
+                name=str(override.get("name") or source.name).strip(),
+                url=str(override.get("url") or source.url).strip(),
+                type=str(override.get("kind") or override.get("type") or source.type or "").strip() or source.type,
+                selector=source.selector,
+                link_attr=source.link_attr,
+                title_selector=source.title_selector,
+                time_selector=source.time_selector,
+                time_attr=source.time_attr,
+                time_format=source.time_format,
+                tags=override.get("tags") or source.tags,
+                enabled=bool(override.get("enabled", source.enabled)),
+                base=source.base,
+                list_selectors=source.list_selectors,
+                date_selectors=source.date_selectors,
+                include_url_patterns=source.include_url_patterns,
+                exclude_url_patterns=source.exclude_url_patterns,
+                next_selector=source.next_selector,
+                max_pages=source.max_pages,
+            )
+        if source.enabled:
+            adjusted.append(source)
+    return adjusted
+
+
 def pick_sources(sources_path: Optional[str], config_path: Optional[str]) -> List[Source]:
     found: List[Source] = []
 
@@ -304,6 +371,7 @@ def pick_sources(sources_path: Optional[str], config_path: Optional[str]) -> Lis
                     found.append(s)
 
     found.extend(load_custom_feeds())
+    found = apply_source_overrides(found)
 
     # de-dup by (name,url)
     uniq: Dict[Tuple[str, str], Source] = {}

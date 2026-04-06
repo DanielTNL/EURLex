@@ -5,8 +5,11 @@ struct SourcesView: View {
     @ObservedObject var model: AppModel
 
     @State private var selectedIntakeMode: IntakeMode?
-    @State private var backendFeeds: [CustomFeed] = []
+    @State private var selectedExternalURL: IdentifiedURL?
+    @State private var isDocumentViewerPresented = false
+    @State private var backendSources: [ManagedSource] = []
     @State private var backendDocuments: [LibraryDocument] = []
+    @State private var editingSource: ManagedSource?
 
     @State private var draftName = ""
     @State private var draftURL = ""
@@ -71,8 +74,19 @@ struct SourcesView: View {
         }
     }
 
+    private enum SourceScrollTarget: String {
+        case addSource
+        case customFeeds
+        case documents
+        case githubSources
+    }
+
     private var activeDocuments: [LibraryDocument] {
         backendDocuments.isEmpty ? model.libraryDocuments : backendDocuments
+    }
+
+    private var customSourceCount: Int {
+        backendSources.filter(\.isCustom).count
     }
 
     private var supportedImportTypes: [UTType] {
@@ -87,28 +101,34 @@ struct SourcesView: View {
     }
 
     var body: some View {
-        GeometryReader { proxy in
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    PageHeroHeader(
-                        title: "Sources",
-                        subtitle: "Grow the platform with feeds, links, and documents that the daily refresh and Ask AI can both use.",
-                        accent: AppTheme.coral
-                    )
+        ScrollViewReader { reader in
+            GeometryReader { proxy in
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 24) {
+                        PageHeroHeader(
+                            title: "Sources",
+                            subtitle: "Grow the platform with feeds, links, and documents that the daily refresh and Ask AI can both use.",
+                            accent: AppTheme.coral
+                        )
 
-                    heroCard
-                    intakeModesCard
-                    addSourceCard
-                    customSourcesSection
-                    recentDocumentsSection
-                    currentSources
-                    bottomSpacer
+                        heroCard(reader: reader)
+                        intakeModesCard
+                        addSourceCard
+                            .id(SourceScrollTarget.addSource.rawValue)
+                        customSourcesSection
+                            .id(SourceScrollTarget.customFeeds.rawValue)
+                        recentDocumentsSection
+                            .id(SourceScrollTarget.documents.rawValue)
+                        currentSources
+                            .id(SourceScrollTarget.githubSources.rawValue)
+                        bottomSpacer
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 20)
+                    .padding(.top, 12)
+                    .padding(.bottom, AppTheme.screenBottomClearance)
+                    .frame(width: proxy.size.width, alignment: .leading)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 20)
-                .padding(.top, 12)
-                .padding(.bottom, AppTheme.screenBottomClearance)
-                .frame(width: proxy.size.width, alignment: .leading)
             }
         }
         .navigationTitle("")
@@ -123,6 +143,21 @@ struct SourcesView: View {
             allowsMultipleSelection: false,
             onCompletion: handleImportedDocument
         )
+        .sheet(item: $selectedExternalURL) { destination in
+            SafariSheet(url: destination.url)
+        }
+        .sheet(isPresented: $isDocumentViewerPresented) {
+            SourceDocumentsViewerSheet(
+                documents: activeDocuments,
+                backendConfigured: backend.isConfigured,
+                onDelete: { document in
+                    Task { await deleteDocument(document) }
+                }
+            )
+        }
+        .sheet(item: $editingSource) { source in
+            editSourceSheet(source)
+        }
         .task {
             guard !hasLoaded else { return }
             hasLoaded = true
@@ -130,10 +165,10 @@ struct SourcesView: View {
         }
     }
 
-    private var heroCard: some View {
+    private func heroCard(reader: ScrollViewProxy) -> some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Grow the intake")
-                .font(.system(size: 34, weight: .bold, design: .serif))
+                .font(.system(size: 34, weight: .bold, design: .rounded))
                 .foregroundStyle(AppTheme.ink)
 
             Text(backend.isConfigured ? "Feeds and documents added here are written back into GitHub, then turned into app-ready data by Actions." : "The screen is ready. Once the backend URL is configured, this becomes your live source and document control room.")
@@ -141,9 +176,20 @@ struct SourcesView: View {
                 .foregroundStyle(AppTheme.slate)
 
             HStack(spacing: 12) {
-                sourceStat(title: "GitHub-fed", value: "\(model.availableSources.count)", tint: AppTheme.coral)
-                sourceStat(title: "Custom feeds", value: "\(backendFeeds.count)", tint: AppTheme.cobalt)
-                sourceStat(title: "Documents", value: "\(activeDocuments.count)", tint: AppTheme.lavender)
+                sourceStat(title: "GitHub-fed", value: "\(model.availableSources.count)", tint: AppTheme.coral) {
+                    if let url = URL(string: "https://github.com/DanielTNL/EURLex") {
+                        selectedExternalURL = IdentifiedURL(url: url)
+                    }
+                }
+                sourceStat(title: "Sources", value: "\(backendSources.count)", tint: AppTheme.cobalt) {
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.85)) {
+                        reader.scrollTo(SourceScrollTarget.addSource.rawValue, anchor: .top)
+                    }
+                    focusedField = .url
+                }
+                sourceStat(title: "Documents", value: "\(activeDocuments.count)", tint: AppTheme.lavender) {
+                    isDocumentViewerPresented = true
+                }
             }
         }
         .glassCard(cornerRadius: 34, tint: AppTheme.coral, padding: 22)
@@ -264,8 +310,8 @@ struct SourcesView: View {
     private var customSourcesSection: some View {
         VStack(alignment: .leading, spacing: 14) {
             SectionTitle(
-                title: "Custom feeds",
-                subtitle: backend.isConfigured ? "These are the app-managed feeds saved back into GitHub." : "These appear once the backend is deployed and configured.",
+                title: "Source registry",
+                subtitle: backend.isConfigured ? "All managed sources are shown here and synced with GitHub." : "These appear once the backend is deployed and configured.",
                 accent: AppTheme.cobalt,
                 tone: .page
             )
@@ -279,14 +325,14 @@ struct SourcesView: View {
                         .foregroundStyle(AppTheme.slate)
                 }
                 .glassCard(cornerRadius: 24, tint: AppTheme.cobalt, padding: 16)
-            } else if backendFeeds.isEmpty {
-                Text(backend.isConfigured ? "No custom feeds yet. Add your first source above." : "Backend not configured in the app yet.")
+            } else if backendSources.isEmpty {
+                Text(backend.isConfigured ? "No sources are visible yet. Add your first feed above or wait for the registry to load." : "Backend not configured in the app yet.")
                     .font(.subheadline)
                     .foregroundStyle(AppTheme.slate)
                     .glassCard(cornerRadius: 24, tint: AppTheme.cobalt, padding: 16)
             } else {
-                ForEach(backendFeeds) { feed in
-                    customFeedCard(feed)
+                ForEach(backendSources) { source in
+                    customFeedCard(source)
                 }
             }
         }
@@ -351,7 +397,7 @@ struct SourcesView: View {
             .accessibilityHidden(true)
     }
 
-    private func customFeedCard(_ feed: CustomFeed) -> some View {
+    private func customFeedCard(_ feed: ManagedSource) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack(alignment: .top, spacing: 12) {
                 VStack(alignment: .leading, spacing: 4) {
@@ -368,6 +414,18 @@ struct SourcesView: View {
                 Spacer(minLength: 0)
 
                 if backend.isConfigured {
+                    Button {
+                        editingSource = feed
+                    } label: {
+                        Image(systemName: "pencil")
+                            .font(.subheadline.weight(.bold))
+                            .foregroundStyle(AppTheme.pageTitle)
+                            .frame(width: 34, height: 34)
+                            .background(Color.white.opacity(0.58), in: Circle())
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(isSaving)
+
                     Button(role: .destructive) {
                         Task { await removeSource(feed) }
                     } label: {
@@ -382,12 +440,30 @@ struct SourcesView: View {
                 }
             }
 
+            HStack(spacing: 8) {
+                registryBadge(feed.displayOrigin, tint: feed.isCustom ? AppTheme.cobalt : AppTheme.mint)
+                registryBadge(feed.displayKind, tint: AppTheme.coral)
+            }
+
             if !feed.tags.isEmpty {
                 TagStrip(tags: feed.tags)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .glassCard(cornerRadius: 24, tint: AppTheme.cobalt, padding: 16)
+    }
+
+    private func registryBadge(_ text: String, tint: Color) -> some View {
+        Text(text)
+            .font(.caption.weight(.bold))
+            .foregroundStyle(tint)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6)
+            .background(Color.white.opacity(0.55), in: Capsule())
+            .overlay(
+                Capsule()
+                    .strokeBorder(Color.white.opacity(0.75), lineWidth: 1)
+            )
     }
 
     private func documentCard(_ document: LibraryDocument) -> some View {
@@ -491,12 +567,12 @@ struct SourcesView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
                     Text(mode.title)
-                        .font(.system(size: 32, weight: .bold, design: .serif))
-                        .foregroundStyle(AppTheme.ink)
+                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .foregroundStyle(AppTheme.heroText)
 
                     Text(mode.bodyText)
                         .font(.body)
-                        .foregroundStyle(AppTheme.slate)
+                        .foregroundStyle(AppTheme.heroSubtext)
                         .lineSpacing(4)
 
                     if let errorMessage {
@@ -541,7 +617,7 @@ struct SourcesView: View {
 
             Text("Jump back into the feed fields and we’ll focus the RSS URL immediately.")
                 .font(.subheadline)
-                .foregroundStyle(AppTheme.pageBody)
+                .foregroundStyle(AppTheme.heroSubtext)
 
             Button("Jump to feed form") {
                 selectedIntakeMode = nil
@@ -626,7 +702,7 @@ struct SourcesView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text("Note text")
                     .font(.caption.weight(.bold))
-                    .foregroundStyle(AppTheme.pageBody)
+                    .foregroundStyle(AppTheme.heroSubtext)
 
                 TextEditor(text: $noteText)
                     .font(.body)
@@ -664,22 +740,25 @@ struct SourcesView: View {
         .glassCard(cornerRadius: 28, tint: AppTheme.coral, padding: 18)
     }
 
-    private func sourceStat(title: String, value: String, tint: Color) -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(value)
-                .font(.title2.weight(.bold))
-                .foregroundStyle(AppTheme.ink)
-            Text(title)
-                .font(.caption.weight(.bold))
-                .foregroundStyle(tint)
+    private func sourceStat(title: String, value: String, tint: Color, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(value)
+                    .font(.title2.weight(.bold))
+                    .foregroundStyle(AppTheme.ink)
+                Text(title)
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(tint)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(14)
+            .background(Color.white.opacity(0.58), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: 22, style: .continuous)
+                    .strokeBorder(Color.white.opacity(0.76), lineWidth: 1)
+            )
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(14)
-        .background(Color.white.opacity(0.58), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 22, style: .continuous)
-                .strokeBorder(Color.white.opacity(0.76), lineWidth: 1)
-        )
+        .buttonStyle(.plain)
     }
 
     private func sourceField(_ title: String, text: Binding<String>, field: Field, keyboard: UIKeyboardType) -> some View {
@@ -696,14 +775,7 @@ struct SourcesView: View {
                 .focused($focusedField, equals: field)
                 .padding(.horizontal, 14)
                 .padding(.vertical, 14)
-                .background(
-                    RoundedRectangle(cornerRadius: 18, style: .continuous)
-                        .fill(Color.white.opacity(0.58))
-                )
-                .overlay {
-                    RoundedRectangle(cornerRadius: 18, style: .continuous)
-                        .strokeBorder(Color.white.opacity(0.76), lineWidth: 1)
-                }
+                .glassFieldBackground(cornerRadius: 18, tint: AppTheme.cobalt)
         }
     }
 
@@ -711,7 +783,7 @@ struct SourcesView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title)
                 .font(.caption.weight(.bold))
-                .foregroundStyle(AppTheme.pageBody)
+                .foregroundStyle(AppTheme.heroSubtext)
 
             TextField(placeholder, text: text)
                 .textInputAutocapitalization(.never)
@@ -735,6 +807,19 @@ struct SourcesView: View {
             .font(.subheadline)
             .foregroundStyle(AppTheme.pageTitle)
             .glassCard(cornerRadius: 22, tint: tint, padding: 14)
+    }
+
+    private func editSourceSheet(_ source: ManagedSource) -> some View {
+        EditManagedSourceSheet(
+            source: source,
+            isSaving: isSaving,
+            onSave: { name, url, tags in
+                Task { await updateSource(source, name: name, url: url, tags: tags) }
+            },
+            onDelete: {
+                Task { await removeSource(source) }
+            }
+        )
     }
 
     private var trimmedURL: String {
@@ -792,14 +877,14 @@ struct SourcesView: View {
             errorMessage = nil
         }
 
-        async let sources: [CustomFeed] = backend.fetchSources()
+        async let sources: [ManagedSource] = backend.fetchSources()
         async let documents: BackendDocumentsResponse = backend.fetchDocuments()
 
         do {
             let feeds = try await sources
             let registry = try await documents
             await MainActor.run {
-                backendFeeds = feeds
+                backendSources = feeds
                 backendDocuments = registry.items
                 isLoading = false
             }
@@ -832,7 +917,7 @@ struct SourcesView: View {
         do {
             let feeds = try await backend.addSource(name: name, url: url, tags: parsedTags)
             await MainActor.run {
-                backendFeeds = feeds
+                backendSources = feeds
                 isSaving = false
                 intakeMessage = "The feed has been saved to GitHub and queued for the next ingestion refresh."
                 clearFeedDraft()
@@ -845,7 +930,7 @@ struct SourcesView: View {
         }
     }
 
-    private func removeSource(_ feed: CustomFeed) async {
+    private func removeSource(_ feed: ManagedSource) async {
         guard backend.isConfigured else { return }
 
         await MainActor.run {
@@ -857,9 +942,35 @@ struct SourcesView: View {
         do {
             let feeds = try await backend.deleteSource(id: feed.id)
             await MainActor.run {
-                backendFeeds = feeds
+                backendSources = feeds
                 isSaving = false
-                intakeMessage = "The feed has been removed from GitHub and the next refresh will drop it from the custom registry."
+                editingSource = nil
+                intakeMessage = "The source registry has been updated in GitHub and the next refresh will reflect the change."
+            }
+        } catch {
+            await MainActor.run {
+                isSaving = false
+                errorMessage = error.localizedDescription
+            }
+        }
+    }
+
+    private func updateSource(_ source: ManagedSource, name: String, url: String, tags: [String]) async {
+        guard backend.isConfigured else { return }
+
+        await MainActor.run {
+            isSaving = true
+            errorMessage = nil
+            intakeMessage = nil
+        }
+
+        do {
+            let sources = try await backend.updateSource(source, name: name, url: url, tags: tags)
+            await MainActor.run {
+                backendSources = sources
+                editingSource = nil
+                isSaving = false
+                intakeMessage = "The source has been updated in GitHub and queued for the next refresh."
             }
         } catch {
             await MainActor.run {
@@ -975,5 +1086,242 @@ struct SourcesView: View {
         case .failure(let error):
             errorMessage = error.localizedDescription
         }
+    }
+
+    private func deleteDocument(_ document: LibraryDocument) async {
+        guard backend.isConfigured else { return }
+
+        await MainActor.run {
+            isSaving = true
+            errorMessage = nil
+            intakeMessage = nil
+        }
+
+        do {
+            let response = try await backend.deleteDocument(id: document.id)
+            await MainActor.run {
+                backendDocuments = response.items
+                isSaving = false
+                intakeMessage = response.message ?? "The document has been removed from the GitHub-backed library."
+            }
+        } catch {
+            await MainActor.run {
+                isSaving = false
+                errorMessage = error.localizedDescription
+            }
+        }
+    }
+}
+
+private struct SourceDocumentsViewerSheet: View {
+    let documents: [LibraryDocument]
+    let backendConfigured: Bool
+    let onDelete: (LibraryDocument) -> Void
+
+    @Environment(\.dismiss) private var dismiss
+    @State private var selectedURL: IdentifiedURL?
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("Documents")
+                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .foregroundStyle(AppTheme.heroText)
+
+                    Text("Everything you’ve added through links, notes, and uploads lives here.")
+                        .font(.body)
+                        .foregroundStyle(AppTheme.heroSubtext)
+
+                    if documents.isEmpty {
+                        Text("No uploaded or linked documents are available yet.")
+                            .font(.subheadline)
+                            .foregroundStyle(AppTheme.ink)
+                            .glassCard(cornerRadius: 24, tint: AppTheme.lavender, padding: 16)
+                    } else {
+                        ForEach(documents) { document in
+                            VStack(alignment: .leading, spacing: 10) {
+                                HStack(alignment: .top, spacing: 12) {
+                                    VStack(alignment: .leading, spacing: 4) {
+                                        Text(document.title)
+                                            .font(.headline.weight(.semibold))
+                                            .foregroundStyle(AppTheme.ink)
+
+                                        Text("\(document.displayStatus) • \(document.sizeText)")
+                                            .font(.caption.weight(.bold))
+                                            .foregroundStyle(AppTheme.lavender)
+                                    }
+
+                                    Spacer()
+
+                                    if backendConfigured {
+                                        Button(role: .destructive) {
+                                            onDelete(document)
+                                        } label: {
+                                            Image(systemName: "trash")
+                                                .font(.subheadline.weight(.bold))
+                                                .foregroundStyle(AppTheme.heroText)
+                                                .frame(width: 34, height: 34)
+                                                .background(Color.white.opacity(0.08), in: Circle())
+                                        }
+                                        .buttonStyle(.plain)
+                                    }
+                                }
+
+                                Text(document.summaryPreview)
+                                    .font(.subheadline)
+                                    .foregroundStyle(AppTheme.heroSubtext)
+
+                                if let url = document.destinationURL {
+                                    HStack(spacing: 12) {
+                                        Button {
+                                            selectedURL = IdentifiedURL(url: url)
+                                        } label: {
+                                            Label("Open", systemImage: "arrow.up.forward.app")
+                                        }
+                                        .buttonStyle(PrimaryCapsuleButtonStyle())
+
+                                        ShareLink(item: url) {
+                                            Label("Share", systemImage: "square.and.arrow.up")
+                                        }
+                                        .buttonStyle(SecondaryCapsuleButtonStyle())
+                                    }
+                                }
+                            }
+                            .glassCard(cornerRadius: 26, tint: AppTheme.lavender, padding: 16)
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(24)
+                .padding(.bottom, 32)
+            }
+            .background(AmbientEditorialBackground())
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { dismiss() }
+                        .tint(AppTheme.cobalt)
+                }
+            }
+            .sheet(item: $selectedURL) { destination in
+                SafariSheet(url: destination.url)
+            }
+        }
+    }
+}
+
+private struct EditManagedSourceSheet: View {
+    let source: ManagedSource
+    let isSaving: Bool
+    let onSave: (String, String, [String]) -> Void
+    let onDelete: () -> Void
+
+    @Environment(\.dismiss) private var dismiss
+    @State private var name: String
+    @State private var url: String
+    @State private var tags: String
+
+    init(
+        source: ManagedSource,
+        isSaving: Bool,
+        onSave: @escaping (String, String, [String]) -> Void,
+        onDelete: @escaping () -> Void
+    ) {
+        self.source = source
+        self.isSaving = isSaving
+        self.onSave = onSave
+        self.onDelete = onDelete
+        _name = State(initialValue: source.name)
+        _url = State(initialValue: source.url)
+        _tags = State(initialValue: source.tags.joined(separator: ", "))
+    }
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    Text("Edit source")
+                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .foregroundStyle(AppTheme.heroText)
+
+                    Text("This source is synced with GitHub. Changes here will affect the next discovery and publishing refresh.")
+                        .font(.body)
+                        .foregroundStyle(AppTheme.heroSubtext)
+
+                    VStack(alignment: .leading, spacing: 14) {
+                        editableField("Name", text: $name, placeholder: "Source name")
+                        editableField("URL", text: $url, placeholder: "https://example.com/feed.xml")
+                        editableField("Tags", text: $tags, placeholder: "finance, defence, ai")
+
+                        HStack(spacing: 12) {
+                            Button {
+                                onSave(trimmed(name), trimmed(url), parseTags(tags))
+                            } label: {
+                                HStack(spacing: 8) {
+                                    if isSaving {
+                                        ProgressView().tint(.white)
+                                    } else {
+                                        Image(systemName: "checkmark")
+                                    }
+                                    Text(isSaving ? "Saving..." : "Save changes")
+                                        .font(.headline.weight(.semibold))
+                                }
+                                .frame(maxWidth: .infinity)
+                            }
+                            .buttonStyle(PrimaryCapsuleButtonStyle())
+                            .disabled(isSaving || trimmed(url).isEmpty)
+                            .opacity(isSaving || trimmed(url).isEmpty ? 0.55 : 1)
+
+                            Button(role: .destructive) {
+                                onDelete()
+                            } label: {
+                                Label("Delete", systemImage: "trash")
+                            }
+                            .buttonStyle(SecondaryCapsuleButtonStyle())
+                            .disabled(isSaving)
+                        }
+                    }
+                    .glassCard(cornerRadius: 28, tint: source.isCustom ? AppTheme.cobalt : AppTheme.mint, padding: 18)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(24)
+                .padding(.bottom, 32)
+            }
+            .background(AmbientEditorialBackground())
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") { dismiss() }
+                        .tint(AppTheme.cobalt)
+                }
+            }
+        }
+    }
+
+    private func editableField(_ title: String, text: Binding<String>, placeholder: String) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(title)
+                .font(.caption.weight(.bold))
+                .foregroundStyle(AppTheme.heroSubtext)
+
+            TextField(placeholder, text: text)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+                .foregroundStyle(AppTheme.pageTitle)
+                .tint(AppTheme.cobalt)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 14)
+                .glassFieldBackground(cornerRadius: 18, tint: AppTheme.cobalt)
+        }
+    }
+
+    private func trimmed(_ value: String) -> String {
+        value.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private func parseTags(_ raw: String) -> [String] {
+        raw
+            .split(separator: ",")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
     }
 }

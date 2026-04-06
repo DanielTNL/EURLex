@@ -33,6 +33,7 @@ DIGEST_LATEST_JSON = DIGESTS_DIR / 'latest.json'
 SOURCES_YAML = ROOT / 'scripts' / 'sources.yaml'
 SOURCES_V2_YAML = ROOT / 'sources_v2.yaml'
 CUSTOM_FEEDS_JSON = STATE_DIR / 'custom_feeds.json'
+SOURCE_OVERRIDES_JSON = STATE_DIR / 'source_overrides.json'
 LIBRARY_STATE_JSON = STATE_DIR / 'library_documents.json'
 
 BRIEFINGS_JSON = DOCS_DATA / 'briefings.json'
@@ -52,6 +53,8 @@ LIBRARY_DIRS = [
 LIBRARY_EXTENSIONS = {'.pdf', '.txt', '.md', '.markdown', '.docx'}
 MAX_BRIEFING_DAYS = 14
 MAX_SUNDAY_EDITIONS = 8
+MAX_AI_DAILY_DAYS = 7
+MAX_AI_SUNDAY_EDITIONS = 4
 
 
 def load_json(path: pathlib.Path, default: Any) -> Any:
@@ -120,6 +123,26 @@ def domain_name(url: str) -> str:
     return host or url
 
 
+def source_registry_id(source_id: str, url: str) -> str:
+    import hashlib
+    return hashlib.sha1(f"{(source_id or '').strip()}|{(url or '').strip()}".encode('utf-8', 'ignore')).hexdigest()[:12]
+
+
+def load_source_overrides() -> dict[str, dict]:
+    payload = load_json(SOURCE_OVERRIDES_JSON, {'entries': []})
+    entries = payload.get('entries', []) if isinstance(payload, dict) else []
+    overrides: dict[str, dict] = {}
+    for item in entries:
+        if not isinstance(item, dict):
+            continue
+        source_id = str(item.get('source_id') or item.get('name') or item.get('url') or '').strip()
+        url = str(item.get('url') or '').strip()
+        item_id = str(item.get('id') or source_registry_id(source_id, url)).strip()
+        if item_id:
+            overrides[item_id] = item
+    return overrides
+
+
 def openai_client() -> Optional[OpenAI]:
     if OpenAI is None:
         return None
@@ -170,7 +193,7 @@ def llm_json(system: str, user: str, prefer_weekly: bool = False) -> Optional[di
                 {'role': 'system', 'content': system},
                 {'role': 'user', 'content': user},
             ],
-            max_tokens=900,
+            max_tokens=1800,
             response_format={'type': 'json_object'},
         )
         content = response.choices[0].message.content or ''
@@ -223,7 +246,7 @@ def report_to_common(report: dict) -> CommonDocument:
     return CommonDocument(
         id=str(report.get('id') or report.get('url_html') or ''),
         title=report.get('display_title') or report.get('title') or 'Untitled report',
-        summary=clean_text(report.get('abstract') or '', 260),
+        summary=clean_text(report.get('briefing') or report.get('abstract') or '', 520),
         url=report.get('url_html') or '',
         kind='report',
         source='EURLex reports',
@@ -297,6 +320,15 @@ def strip_markdown_noise(text: str) -> str:
 
 def cleaned_doc_summary(doc: CommonDocument, limit: int = 320) -> str:
     base = strip_markdown_noise(doc.summary)
+    lowered_base = re.sub(r'\s+', ' ', base).strip().lower()
+    lowered_title = re.sub(r'\s+', ' ', doc.title).strip().lower()
+    if lowered_base and lowered_title:
+        if lowered_base == lowered_title:
+            return ''
+        if lowered_base.startswith(lowered_title) and len(lowered_base) <= len(lowered_title) + 60:
+            return ''
+    if lowered_base.startswith('http://') or lowered_base.startswith('https://'):
+        return ''
     if base:
         return clean_text(base, limit)
     return clean_text(doc.title, min(limit, 180))
@@ -315,19 +347,27 @@ def is_synthetic_digest(doc: CommonDocument) -> bool:
 
 def editorial_documents(documents: List[CommonDocument]) -> List[CommonDocument]:
     preferred = [doc for doc in documents if not is_synthetic_digest(doc)]
+    preferred.sort(
+        key=lambda doc: (
+            1 if cleaned_doc_summary(doc, 220) else 0,
+            len(cleaned_doc_summary(doc, 220)),
+            doc.date or '',
+        ),
+        reverse=True,
+    )
     return preferred or documents
 
 
 def fallback_sections_from_documents(documents: List[CommonDocument], count: int = 3) -> List[dict]:
     sections = []
     for doc in editorial_documents(documents)[:count]:
+        body = cleaned_doc_summary(doc, 480)
+        if not body:
+            continue
         sections.append(
             {
                 'title': clean_text(doc.title, 120),
-                'body': clean_text(
-                    f"{cleaned_doc_summary(doc, 280)} Source: {doc.source}, {doc.date or 'undated'}.",
-                    340,
-                ),
+                'body': clean_text(f"{body} Source: {doc.source}, {doc.date or 'undated'}.", 520),
             }
         )
     return sections
@@ -337,7 +377,7 @@ def compact_key_points(key_points: List[str], documents: List[CommonDocument], l
     cleaned = []
     for item in key_points:
         value = clean_text(strip_markdown_noise(item), 140)
-        if value:
+        if value and value.lower() not in {'(none)', 'none'} and not value.lower().startswith(('http://', 'https://')):
             cleaned.append(value)
     preferred_cleaned = [
         item for item in cleaned
@@ -393,7 +433,7 @@ def fallback_daily_payload(day_label: str, summary: str, key_points: List[str], 
     return {
         'headline': clean_text(headline, 160),
         'intro': build_intro(summary, documents, day_label),
-        'summary': clean_text(fallback_summary or build_intro(summary, documents, day_label), 760),
+        'summary': clean_text(fallback_summary or build_intro(summary, documents, day_label), 1800),
         'key_points': compact_key_points(key_points, documents, 4),
         'sections': fallback_sections_from_documents(documents, count=3),
     }
@@ -411,19 +451,23 @@ def maybe_ai_daily(day_label: str, summary: str, key_points: List[str], document
     )
     prompt = (
         f"Create a premium daily policy briefing for {day_label}. Return JSON only with keys headline, intro, summary, key_points, sections. "
-        "Use only the supplied material. Write in precise UK English with an academic but readable tone. "
-        "Do not invent facts, dates, figures, institutional positions, or causal claims. "
-        "headline must be 8-18 words. intro must be one paragraph of 70-110 words. "
-        "summary must be 2-4 short paragraphs, richly detailed but readable on mobile. "
-        "key_points must be an array of 3 or 4 short bullets without numbering or markdown bullets. "
-        "sections must be an array of exactly 3 objects with keys title and body. Each body should be one compact paragraph. "
-        "Avoid markdown headings, asterisks, or links in the prose. When useful, preserve original document titles verbatim in the prose.\n\n"
+        "Use only the supplied material. Write in precise UK English with a witty, academically literate newspaper-analysis tone. "
+        "Be concrete, sceptical, and explanatory. Do not invent facts, dates, figures, institutional positions, motives, or causal claims. "
+        "Do not merely rewrite titles. Explain what changed, why it matters, who is affected, and how the items connect across categories. "
+        "Where the material supports it, surface links across finance, regulation, defence, AI, industrial policy, strategic autonomy, and geopolitical developments rather than treating them as separate silos. "
+        "headline must be 8-18 words and should sound like a strong front-page standfirst, not a filename. "
+        "intro must be one paragraph of 110-160 words with a clear thesis for the day. "
+        "summary must be 4-6 short paragraphs totalling roughly 450-650 words. It should read like a sharp morning newspaper article for a policy reader. "
+        "key_points must be an array of exactly 4 short, concrete takeaways without numbering or markdown bullets. "
+        "sections must be an array of exactly 3 objects with keys title and body. Each title should usually preserve the original source-document title. "
+        "Each body must be 2-4 sentences that summarize the document's substance and then state why it matters. "
+        "Avoid markdown headings, asterisks, raw URLs, or references to 'the supplied material', 'the corpus', or filenames.\n\n"
         f"Base summary: {fallback['summary']}\n"
         f"Known key points: {key_points[:4]}\n"
         f"Documents:\n{corpus}"
     )
     response = llm_json(
-        'You write compact editorial mobile briefings for European policy readers.',
+        'You write compact but substantial editorial briefings for a premium European and geopolitical policy app.',
         prompt,
         prefer_weekly=False,
     )
@@ -431,18 +475,18 @@ def maybe_ai_daily(day_label: str, summary: str, key_points: List[str], document
         return fallback
     return {
         'headline': clean_text(response.get('headline') or fallback['headline'], 160),
-        'intro': clean_text(response.get('intro') or fallback['intro'], 360),
-        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 900),
+        'intro': clean_text(response.get('intro') or fallback['intro'], 520),
+        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 2400),
         'key_points': compact_key_points(response.get('key_points') or fallback['key_points'], documents, 4),
         'sections': [
             {
                 'title': clean_text(str(item.get('title') or ''), 120),
-                'body': clean_text(strip_markdown_noise(str(item.get('body') or '')), 340),
+                'body': clean_text(strip_markdown_noise(str(item.get('body') or '')), 620),
             }
             for item in (response.get('sections') or [])
             if isinstance(item, dict)
             and clean_text(str(item.get('title') or ''), 120)
-            and clean_text(strip_markdown_noise(str(item.get('body') or '')), 340)
+            and clean_text(strip_markdown_noise(str(item.get('body') or '')), 620)
         ][:3] or fallback['sections'],
     }
 
@@ -456,7 +500,7 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
     fallback = {
         'headline': clean_text((lead_documents[0].title if lead_documents else title), 180),
         'intro': build_intro(summary, documents, title),
-        'summary': clean_text(cleaned_summary or build_intro(summary, documents, title), 980),
+        'summary': clean_text(cleaned_summary or build_intro(summary, documents, title), 2200),
         'key_points': compact_key_points(key_points, documents, 5),
         'sections': fallback_sections,
     }
@@ -470,18 +514,21 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
     )
     prompt = (
         f"Create a Sunday morning newspaper-style weekly edition titled '{title}'. Return JSON only with keys headline, intro, summary, key_points, sections. "
-        "Use only the supplied material. Write in precise UK English with a polished newspaper-analysis tone. "
-        "Do not invent facts or smooth over uncertainty. headline must be 8-18 words. "
-        "intro must be one paragraph of 90-140 words. summary must be 4-6 short paragraphs with academic detail but strong readability. "
-        "key_points must be an array of 4 or 5 short bullets without numbering or markdown bullets. "
-        "sections must be an array of exactly 4 objects with keys title and body. Each body should be one compact but information-dense paragraph. "
-        "Avoid markdown headings, bullets in prose, or links. Preserve original document titles when useful so readers can look them up easily.\n\n"
+        "Use only the supplied material. Write in precise UK English with a polished, witty, critically minded weekend-newspaper tone. "
+        "Do not invent facts or smooth over uncertainty. Find the red thread across the week: what kept resurfacing, what shifted, where institutions are converging, and where the pressure points remain. "
+        "Where the material supports it, connect European developments to broader finance, defence, technology, industrial strategy, and geopolitical change. "
+        "headline must be 8-18 words. intro must be one paragraph of 120-170 words with a strong thesis. "
+        "summary must be 6-8 short paragraphs totalling roughly 700-1100 words. It should feel like a smart Sunday front-page analysis, not a list of items. "
+        "key_points must be an array of exactly 5 concrete takeaways without numbering or markdown bullets. "
+        "sections must be an array of exactly 4 objects with keys title and body. Each title should usually preserve the original source-document title. "
+        "Each body must summarize the document substance and explain why it matters in the wider weekly pattern. "
+        "Avoid markdown headings, bullets in prose, raw URLs, or references to filenames or the corpus. Preserve original document titles when useful so readers can look them up easily.\n\n"
         f"Base summary: {fallback['summary']}\n"
         f"Known key points: {key_points[:5]}\n"
         f"Documents:\n{corpus}"
     )
     response = llm_json(
-        'You write elegant weekly front-page briefings for a premium European policy app.',
+        'You write elegant weekly front-page briefings for a premium European and geopolitical policy app.',
         prompt,
         prefer_weekly=True,
     )
@@ -492,13 +539,13 @@ def maybe_ai_sunday(title: str, summary: str, key_points: List[str], documents: 
         if not isinstance(item, dict):
             continue
         title_text = clean_text(str(item.get('title') or ''), 140)
-        body_text = clean_text(str(item.get('body') or ''), 320)
+        body_text = clean_text(strip_markdown_noise(str(item.get('body') or '')), 700)
         if title_text and body_text:
             sections.append({'title': title_text, 'body': body_text})
     return {
         'headline': clean_text(response.get('headline') or fallback['headline'], 180),
-        'intro': clean_text(response.get('intro') or fallback['intro'], 420),
-        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 1400),
+        'intro': clean_text(response.get('intro') or fallback['intro'], 620),
+        'summary': clean_text(strip_markdown_noise(response.get('summary') or fallback['summary']), 3200),
         'key_points': compact_key_points(response.get('key_points') or fallback['key_points'], documents, 5),
         'sections': sections[:4] or fallback['sections'],
     }
@@ -712,21 +759,32 @@ def load_source_catalog() -> dict:
     custom_feeds = custom_payload.get('feeds', []) if isinstance(custom_payload, dict) else []
     v2_payload = load_yaml(SOURCES_V2_YAML) if SOURCES_V2_YAML.exists() else {}
     v2_sources = v2_payload.get('sources', []) if isinstance(v2_payload, dict) else []
+    overrides = load_source_overrides()
 
     entries = []
     for feed in feed_urls:
         host = domain_name(feed)
         display = (domains.get(host, {}) or {}).get('source') or host
-        entries.append(
-            {
-                'source_id': host,
-                'name': display,
-                'url': feed,
-                'kind': 'rss',
-                'origin': 'built_in',
-                'enabled': True,
-            }
-        )
+        entry = {
+            'id': source_registry_id(host, feed),
+            'source_id': host,
+            'name': display,
+            'url': feed,
+            'kind': 'rss',
+            'origin': 'built_in',
+            'enabled': True,
+            'tags': [],
+        }
+        override = overrides.get(entry['id'])
+        if override and override.get('enabled') is False:
+            continue
+        if override:
+            entry['name'] = str(override.get('name') or entry['name']).strip()
+            entry['url'] = str(override.get('url') or entry['url']).strip()
+            entry['tags'] = list(override.get('tags') or entry['tags'])
+            entry['kind'] = str(override.get('kind') or entry['kind']).strip() or entry['kind']
+            entry['enabled'] = bool(override.get('enabled', entry['enabled']))
+        entries.append(entry)
 
     for item in v2_sources:
         if not isinstance(item, dict):
@@ -735,40 +793,64 @@ def load_source_catalog() -> dict:
         base_url = str(item.get('base_url') or item.get('url') or '').strip()
         if not source_id or not base_url:
             continue
-        entries.append(
-            {
-                'source_id': source_id,
-                'name': title_case_source(source_id),
-                'url': base_url,
-                'kind': item.get('type') or 'html_list',
-                'origin': 'built_in',
-                'enabled': bool(item.get('enabled', True)),
-            }
-        )
+        entry = {
+            'id': source_registry_id(source_id, base_url),
+            'source_id': source_id,
+            'name': title_case_source(source_id),
+            'url': base_url,
+            'kind': item.get('type') or 'html_list',
+            'origin': 'built_in',
+            'enabled': bool(item.get('enabled', True)),
+            'tags': list(item.get('tags') or []),
+        }
+        override = overrides.get(entry['id'])
+        if override and override.get('enabled') is False:
+            continue
+        if override:
+            entry['name'] = str(override.get('name') or entry['name']).strip()
+            entry['url'] = str(override.get('url') or entry['url']).strip()
+            entry['tags'] = list(override.get('tags') or entry['tags'])
+            entry['kind'] = str(override.get('kind') or entry['kind']).strip() or entry['kind']
+            entry['enabled'] = bool(override.get('enabled', entry['enabled']))
+        entries.append(entry)
 
     for item in custom_feeds:
         if isinstance(item, str):
             url = item.strip()
             name = domain_name(url)
             source_id = name
+            tags = []
+            entry_id = source_registry_id(source_id, url)
         elif isinstance(item, dict):
             url = str(item.get('url') or '').strip()
             name = str(item.get('name') or domain_name(url)).strip()
             source_id = str(item.get('source_id') or name).strip()
+            tags = list(item.get('tags') or [])
+            entry_id = str(item.get('id') or source_registry_id(source_id, url))
         else:
             continue
         if not url:
             continue
-        entries.append(
-            {
-                'source_id': source_id,
-                'name': name,
-                'url': url,
-                'kind': 'rss',
-                'origin': 'custom',
-                'enabled': True,
-            }
-        )
+        entry = {
+            'id': entry_id,
+            'source_id': source_id,
+            'name': name,
+            'url': url,
+            'kind': 'rss',
+            'origin': 'custom',
+            'enabled': True,
+            'tags': tags,
+        }
+        override = overrides.get(entry['id'])
+        if override and override.get('enabled') is False:
+            continue
+        if override:
+            entry['name'] = str(override.get('name') or entry['name']).strip()
+            entry['url'] = str(override.get('url') or entry['url']).strip()
+            entry['tags'] = list(override.get('tags') or entry['tags'])
+            entry['kind'] = str(override.get('kind') or entry['kind']).strip() or entry['kind']
+            entry['enabled'] = bool(override.get('enabled', entry['enabled']))
+        entries.append(entry)
 
     deduped = {}
     for entry in entries:

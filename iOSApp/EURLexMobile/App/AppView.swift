@@ -42,13 +42,13 @@ enum AppTab: String, CaseIterable, Identifiable {
     var accent: Color {
         switch self {
         case .briefing:
-            return AppTheme.amber
+            return AppTheme.coral
         case .feed:
             return AppTheme.cobalt
         case .askAI:
             return AppTheme.mint
         case .sources:
-            return AppTheme.coral
+            return AppTheme.amber
         case .library:
             return AppTheme.lavender
         }
@@ -58,6 +58,7 @@ enum AppTab: String, CaseIterable, Identifiable {
 struct AppView: View {
     @StateObject private var model = AppModel()
     @State private var selectedTab: AppTab = .briefing
+    @State private var loadedTabs: Set<AppTab> = [.briefing]
     @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
@@ -81,6 +82,9 @@ struct AppView: View {
                 await model.reload()
             }
         }
+        .onChange(of: selectedTab) { _, newValue in
+            loadedTabs.insert(newValue)
+        }
         .onChange(of: scenePhase) { _, newPhase in
             guard newPhase == .active else { return }
             Task { await model.reload() }
@@ -89,25 +93,14 @@ struct AppView: View {
 
     private var tabShell: some View {
         ZStack {
-            tabScreen(.briefing)
-                .opacity(selectedTab == .briefing ? 1 : 0)
-                .allowsHitTesting(selectedTab == .briefing)
-
-            tabScreen(.feed)
-                .opacity(selectedTab == .feed ? 1 : 0)
-                .allowsHitTesting(selectedTab == .feed)
-
-            tabScreen(.askAI)
-                .opacity(selectedTab == .askAI ? 1 : 0)
-                .allowsHitTesting(selectedTab == .askAI)
-
-            tabScreen(.sources)
-                .opacity(selectedTab == .sources ? 1 : 0)
-                .allowsHitTesting(selectedTab == .sources)
-
-            tabScreen(.library)
-                .opacity(selectedTab == .library ? 1 : 0)
-                .allowsHitTesting(selectedTab == .library)
+            ForEach(AppTab.allCases) { tab in
+                if loadedTabs.contains(tab) {
+                    tabScreen(tab)
+                        .opacity(selectedTab == tab ? 1 : 0)
+                        .allowsHitTesting(selectedTab == tab)
+                        .zIndex(selectedTab == tab ? 1 : 0)
+                }
+            }
         }
         .safeAreaInset(edge: .bottom) {
             BottomDock(selectedTab: $selectedTab)
@@ -138,7 +131,7 @@ struct AppView: View {
             }
         case .library:
             NavigationStack {
-                LibraryView(model: model)
+                LibraryView(model: model, selectedTab: $selectedTab)
             }
         }
     }
@@ -161,6 +154,23 @@ struct BottomDock: View {
     @Binding var selectedTab: AppTab
 
     var body: some View {
+        Group {
+            if #available(iOS 26, *) {
+                GlassEffectContainer(spacing: 8) {
+                    dockContent
+                }
+            } else {
+                dockContent
+            }
+        }
+        .padding(8)
+        .background {
+            GlassCapsuleBackground(tint: AppTheme.cobalt, isSelected: false, interactive: false)
+        }
+        .shadow(color: AppTheme.shadow, radius: 24, x: 0, y: 12)
+    }
+
+    private var dockContent: some View {
         HStack(spacing: 8) {
             ForEach(AppTab.allCases) { tab in
                 Button {
@@ -175,44 +185,48 @@ struct BottomDock: View {
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 11)
-                    .foregroundStyle(selectedTab == tab ? Color.white : AppTheme.ink)
+                    .foregroundStyle(selectedTab == tab ? Color.white : AppTheme.pageBody)
                     .background {
                         if selectedTab == tab {
                             Capsule(style: .continuous)
-                                .fill(tab.accent.opacity(0.86))
+                                .fill(
+                                    LinearGradient(
+                                        colors: [tab.accent, tab.accent.opacity(0.80)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
                                 .overlay {
                                     Capsule(style: .continuous)
                                         .fill(.ultraThinMaterial)
-                                        .opacity(0.12)
+                                        .opacity(0.10)
+                                }
+                                .overlay(alignment: .topLeading) {
+                                    Capsule(style: .continuous)
+                                        .strokeBorder(
+                                            LinearGradient(
+                                                colors: [
+                                                    Color.white.opacity(0.48),
+                                                    Color.white.opacity(0.14),
+                                                    Color.clear
+                                                ],
+                                                startPoint: .topLeading,
+                                                endPoint: .bottomTrailing
+                                            ),
+                                            lineWidth: 1
+                                        )
+                                }
+                                .overlay {
+                                    Capsule(style: .continuous)
+                                        .strokeBorder(Color.white.opacity(0.28), lineWidth: 1)
                                 }
                         }
                     }
-                    .overlay {
-                        if selectedTab == tab {
-                            Capsule(style: .continuous)
-                                .strokeBorder(Color.white.opacity(0.18), lineWidth: 1)
-                        }
-                    }
-                    .shadow(color: selectedTab == tab ? tab.accent.opacity(0.20) : .clear, radius: 10, x: 0, y: 6)
+                    .shadow(color: selectedTab == tab ? tab.accent.opacity(0.18) : .clear, radius: 10, x: 0, y: 6)
                 }
                 .buttonStyle(.plain)
             }
         }
-        .padding(8)
-        .background {
-            Capsule(style: .continuous)
-                .fill(AppTheme.panel)
-                .overlay {
-                    Capsule(style: .continuous)
-                        .fill(.ultraThinMaterial)
-                        .opacity(0.55)
-                }
-        }
-        .overlay {
-            Capsule(style: .continuous)
-                .strokeBorder(AppTheme.border, lineWidth: 1)
-        }
-        .shadow(color: AppTheme.shadow, radius: 24, x: 0, y: 12)
     }
 }
 
@@ -231,32 +245,32 @@ private struct LaunchOverlay: View {
             case .loading:
                 ProgressView()
                     .controlSize(.large)
-                    .tint(.white)
+                    .tint(AppTheme.cobalt)
 
                 Text("Loading EURLex")
                     .font(.title3.weight(.semibold))
-                    .fontDesign(.serif)
-                    .foregroundStyle(AppTheme.ink)
+                    .fontDesign(.rounded)
+                    .foregroundStyle(AppTheme.pageTitle)
 
                 Text("Pulling the latest GitHub briefing feed. The first simulator launch can take a little while after a fresh Xcode install.")
                     .font(.subheadline)
                     .multilineTextAlignment(.center)
-                    .foregroundStyle(AppTheme.slate)
+                    .foregroundStyle(AppTheme.pageBody)
                     .lineSpacing(4)
             case .error(let message):
                 Image(systemName: "wifi.exclamationmark")
                     .font(.system(size: 42))
-                    .foregroundStyle(AppTheme.ink)
+                    .foregroundStyle(AppTheme.pageTitle)
 
                 Text("Could not reach the published feeds")
                     .font(.title2.weight(.semibold))
-                    .fontDesign(.serif)
-                    .foregroundStyle(AppTheme.ink)
+                    .fontDesign(.rounded)
+                    .foregroundStyle(AppTheme.pageTitle)
 
                 Text(message)
                     .font(.subheadline)
                     .multilineTextAlignment(.center)
-                    .foregroundStyle(AppTheme.slate)
+                    .foregroundStyle(AppTheme.pageBody)
                     .lineSpacing(4)
 
                 Button("Retry", action: retry)
