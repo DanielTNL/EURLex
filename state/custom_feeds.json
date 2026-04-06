@@ -1,6 +1,13 @@
 {
-  "updated_at": "2026-04-06T15:37:12.806Z",
+  "updated_at": "2026-04-06T15:38:51.949Z",
   "feeds": [
+    {
+      "id": "fc0770458317",
+      "name": "De Nederlandse Bank",
+      "url": "https://www.dnb.nl/en/rss/16451/6882",
+      "tags": [],
+      "added_at": "2026-04-06T15:38:51.949Z"
+    },
     {
       "id": "e14971bdafbe",
       "name": "NOS Economie",
