@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-06T15:42:45.952Z",
+  "updated_at": "2026-04-06T15:43:04.377Z",
   "feeds": [
     {
       "id": "fc0770458317",
@@ -21,6 +21,13 @@
       "url": "https://www.defensenews.com/arc/outboundfeeds/rss/category/global/?outputType=xml",
       "tags": [],
       "added_at": "2026-04-06T15:42:45.952Z"
+    },
+    {
+      "id": "6af48d79f454",
+      "name": "Defense News Unmanned",
+      "url": "https://www.defensenews.com/arc/outboundfeeds/rss/category/unmanned/?outputType=xml",
+      "tags": [],
+      "added_at": "2026-04-06T15:43:04.377Z"
     },
     {
       "id": "08d50b92393e",
