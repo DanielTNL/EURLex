@@ -1,27 +1,27 @@
 {
-  "date": "2026-04-07",
-  "title": "Tuesday 7 April 2026",
-  "headline": "Statistics",
-  "intro": "Tuesday 7 April 2026 is led by Statistics. 5 relevant documents are currently attached to this publication window.",
-  "summary": "Statistics: EUR-Lex “Statistics” page: a small change with a big signal for how EU legal data is measured **What happened and why it matters** EUR-Lex has published a “Statistics” page that, at first glance, looks like the usual ho… What is ELI?: What is ELI? (and why EU innovation and capital markets should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—say, for compliance, product approvals, or contract terms—you’ll know the pain… Why implement ELI?: Why implement ELI? ELI background: ELI background",
+  "date": "2026-04-08",
+  "title": "Wednesday 8 April 2026",
+  "headline": "ELI background",
+  "intro": "Wednesday 8 April 2026 is led by ELI background. 5 relevant documents are currently attached to this publication window.",
+  "summary": "ELI background: ELI background: the unglamorous plumbing behind “findable” EU law If you’ve ever tried to build a legal-tech product that depends on EU legislation and case-law, you’ll know the problem: legal data is everywhere, but it… Statistics: Statistics If you’ve ever tried to track EU law, case-law, or Official Journal updates for policy work, you’ll know the drill: the hard part isn’t finding the page—it’s knowing what’s *changing*, *how much*, and *whethe… Why implement ELI?: Why implement ELI? What is ELI?: What is ELI?",
   "key_points": [
     "1) What happened and why it matters",
-    "build compliance and regulatory monitoring tools that track changes reliably,",
-    "automate legal research and due diligence workflows,",
-    "reduce friction for cross-border operations (including SMEs scaling into new markets),"
+    "2) Programme/instrument links (only what’s in the text)",
+    "3) € amounts, timelines, eligibility/financing changes",
+    "2010: Original idea born at the European Forum of Official Gazettes in Rome, with immediate support from the Publications Office of the Eur…"
   ],
   "sections": [
     {
-      "title": "Statistics",
-      "body": "EUR-Lex “Statistics” page: a small change with a big signal for how EU legal data is measured **What happened and why it matters** EUR-Lex has published a “Statistics” page that, at first glance, looks like the usual housekeeping: content counts, legal act… Source: eur-lex.europa.eu, 2026-04-07."
+      "title": "ELI background",
+      "body": "ELI background: the unglamorous plumbing behind “findable” EU law If you’ve ever tried to build a legal-tech product that depends on EU legislation and case-law, you’ll know the problem: legal data is everywhere, but it’s not always *interoperable*. Enter… Source: eur-lex.europa.eu, 2026-04-08."
     },
     {
-      "title": "What is ELI?",
-      "body": "What is ELI? (and why EU innovation and capital markets should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—say, for compliance, product approvals, or contract terms—you’ll know the pain: the law is published, but it’s not al… Source: eur-lex.europa.eu, 2026-04-07."
+      "title": "Statistics",
+      "body": "Statistics If you’ve ever tried to track EU law, case-law, or Official Journal updates for policy work, you’ll know the drill: the hard part isn’t finding the page—it’s knowing what’s *changing*, *how much*, and *whether your search strategy is still fit f… Source: eur-lex.europa.eu, 2026-04-08."
     },
     {
       "title": "Why implement ELI?",
-      "body": "Why implement ELI? Source: eur-lex.europa.eu, 2026-04-07."
+      "body": "Why implement ELI? Source: eur-lex.europa.eu, 2026-04-08."
     }
   ],
   "categories": [
@@ -32,13 +32,13 @@
   ],
   "important_documents": [
     {
-      "id": "rep-2026-04-07-02641425d4abc9e6",
-      "title": "Daily Digest — 2026-04-07",
-      "summary": "_Items in last 24h: 140_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-07T05:24:08.177469+00:00 Programma: Other/NA Link",
-      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-07.md",
+      "id": "rep-2026-04-08-90eb7af85f3601ec",
+      "title": "Daily Digest — 2026-04-08",
+      "summary": "_Items in last 24h: 46_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-08T05:26:40.809514+00:00 Programma: Other/NA Link",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-08.md",
       "kind": "report",
       "source": "EURLex reports",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "daily"
       ],
@@ -53,7 +53,7 @@
       "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Other/NA"
       ],
@@ -64,11 +64,11 @@
     {
       "id": "https://eur-lex.europa.eu/eli-register/background.html",
       "title": "ELI background",
-      "summary": "",
+      "summary": "## ELI background: the unglamorous plumbing behind “findable” EU law If you’ve ever tried to build a legal-tech product that depends on EU legislation and case-law, you’ll know the problem: legal data is everywhere, but it’s not always *interoperable*. Enter…",
       "url": "https://eur-lex.europa.eu/eli-register/background.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Other/NA"
       ],
@@ -79,11 +79,11 @@
     {
       "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
       "title": "What is ELI?",
-      "summary": "## What is ELI? (and why EU innovation and capital markets should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—say, for compliance, product approvals, or contract terms—you’ll know the pain: the law is published, but it’s not al…",
+      "summary": "",
       "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Other/NA"
       ],
@@ -94,11 +94,11 @@
     {
       "id": "https://eur-lex.europa.eu/statistics/statistics.html",
       "title": "Statistics",
-      "summary": "## EUR-Lex “Statistics” page: a small change with a big signal for how EU legal data is measured **What happened and why it matters** EUR-Lex has published a “Statistics” page that, at first glance, looks like the usual housekeeping: content counts, legal act…",
+      "summary": "## Statistics If you’ve ever tried to track EU law, case-law, or Official Journal updates for policy work, you’ll know the drill: the hard part isn’t finding the page—it’s knowing what’s *changing*, *how much*, and *whether your search strategy is still fit f…",
       "url": "https://eur-lex.europa.eu/statistics/statistics.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Other/NA"
       ],
@@ -115,14 +115,14 @@
       "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025SC0151",
       "kind": "post",
       "source": "EUR-Lex",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "EU",
         "Defence & Security",
+        "EUR-Lex",
         "law"
       ]
     },
@@ -133,14 +133,14 @@
       "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0299",
       "kind": "post",
       "source": "EUR-Lex",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "EU",
         "Defence & Security",
+        "EUR-Lex",
         "law"
       ]
     },
@@ -151,14 +151,14 @@
       "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:02021R0697-20251223",
       "kind": "post",
       "source": "EUR-Lex",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "EU",
         "Defence & Security",
+        "EUR-Lex",
         "law"
       ]
     },
@@ -169,14 +169,14 @@
       "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_5793_2026_INIT",
       "kind": "post",
       "source": "EUR-Lex",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "EU",
         "Defence & Security",
+        "EUR-Lex",
         "law"
       ]
     },
@@ -187,14 +187,14 @@
       "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AB0011",
       "kind": "post",
       "source": "EUR-Lex",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
         "EU",
         "Other",
+        "EUR-Lex",
         "law"
       ]
     },
@@ -205,22 +205,22 @@
       "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_TA(2020)0021",
       "kind": "post",
       "source": "EUR-Lex",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "categories": [
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
         "EU",
         "Other",
+        "EUR-Lex",
         "law"
       ]
     }
   ],
   "report": {
-    "id": "rep-2026-04-07-02641425d4abc9e6",
-    "title": "Daily Digest — 2026-04-07",
-    "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-07.md"
+    "id": "rep-2026-04-08-90eb7af85f3601ec",
+    "title": "Daily Digest — 2026-04-08",
+    "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-08.md"
   },
   "signal_counts": {
     "posts": 28,
