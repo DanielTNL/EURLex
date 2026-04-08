@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+DISCOVERY_WINDOW="${DISCOVERY_WINDOW:-1d}"
+DOC_LIMIT="${DOC_LIMIT:-50}"
+RUN_REPORT_ONLY="${RUN_REPORT_ONLY:-1}"
+
 if [ -f sources_v2.yaml ]; then
-  python workers/weekly_discover.py --window 1d --sources sources_v2.yaml --config config_v2.yaml || true
+  python workers/weekly_discover.py --window "${DISCOVERY_WINDOW}" --sources sources_v2.yaml --config config_v2.yaml || true
 else
-  python workers/weekly_discover.py --window 1d --config config_v2.yaml || true
+  python workers/weekly_discover.py --window "${DISCOVERY_WINDOW}" --config config_v2.yaml || true
 fi
 
 if [ ! -f state/latest_discovery.json ]; then
@@ -27,10 +31,15 @@ print("Wrote state/latest_discovery.json (empty fallback)")
 PY
 fi
 
-python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit 50
+python workers/process_document.py --from state/latest_discovery.json --config config_v2.yaml --limit "${DOC_LIMIT}"
 python workers/build_timeline.py --window 7d --config config_v2.yaml
 python workers/build_daily_digest.py --hours 24
-REPORT_ONLY=1 python main.py
+
+if [ "${RUN_REPORT_ONLY}" = "1" ]; then
+  REPORT_ONLY=1 python main.py
+else
+  echo "Skipping rich daily report for lighter midday refresh"
+fi
 
 if [ -f build_site_data.py ]; then
   python build_site_data.py || true

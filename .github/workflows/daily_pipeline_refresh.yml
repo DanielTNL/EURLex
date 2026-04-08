@@ -2,7 +2,8 @@ name: Pipeline v2 (daily)
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "45 2 * * *" # 04:45 Europe/Amsterdam during CEST, 03:45 during CET
+    - cron: "0 10 * * *" # 12:00 Europe/Amsterdam during CEST, 11:00 during CET
   workflow_dispatch:
 
 permissions:
@@ -46,6 +47,35 @@ jobs:
           done
           python -m pip check
 
+      - name: Select refresh mode
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "0 10 * * *" ]; then
+            PIPELINE_MODE="midday-light"
+            RUN_LABEL="midday"
+            DISCOVERY_WINDOW="1d"
+            DOC_LIMIT="30"
+            RUN_REPORT_ONLY="0"
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            PIPELINE_MODE="morning-full"
+            RUN_LABEL="auto"
+            DISCOVERY_WINDOW="1d"
+            DOC_LIMIT="50"
+            RUN_REPORT_ONLY="1"
+          else
+            PIPELINE_MODE="manual-full"
+            RUN_LABEL="manual"
+            DISCOVERY_WINDOW="1d"
+            DOC_LIMIT="50"
+            RUN_REPORT_ONLY="1"
+          fi
+          echo "PIPELINE_MODE=${PIPELINE_MODE}" >> "$GITHUB_ENV"
+          echo "RUN_LABEL=${RUN_LABEL}" >> "$GITHUB_ENV"
+          echo "DISCOVERY_WINDOW=${DISCOVERY_WINDOW}" >> "$GITHUB_ENV"
+          echo "DOC_LIMIT=${DOC_LIMIT}" >> "$GITHUB_ENV"
+          echo "RUN_REPORT_ONLY=${RUN_REPORT_ONLY}" >> "$GITHUB_ENV"
+          echo "Selected mode: ${PIPELINE_MODE}"
+
       - name: Build daily outputs
         run: bash scripts/run_daily_pipeline.sh
 
@@ -85,7 +115,7 @@ jobs:
               echo "No changes to commit"
               return 1
             fi
-            git commit -m "daily pipeline v2 $(date -u +'%F %T') [auto]"
+            git commit -m "daily pipeline v2 $(date -u +'%F %T') [${RUN_LABEL:-auto}]"
             return 0
           }
 
