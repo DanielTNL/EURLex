@@ -1,11 +1,206 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-04-02T05:09:21.202211+00:00",
-    "end": "2026-04-09T05:09:21.202211+00:00",
+    "start": "2026-04-02T11:00:29.985165+00:00",
+    "end": "2026-04-09T11:00:29.985165+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-04-09T11:00:23.764730+00:00",
+      "title": "CELEX:02023D2135-20260129: Council Decision (CFSP) 2023/2135 of 9 October 2023 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D2135-20260129",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CELEX:02023D2135-20260129: Council Decision (CFSP) 2023/2135 of 9 October 2023 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T11:00:17.946069+00:00",
+      "title": "CELEX:02006A1229(04)-20251121: Euro-Mediterranean aviation agreement between the European Community and its Member States, of the one part and the Kingdom of Morocco, of the other part",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02006A1229(04)-20251121",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EU–Morocco Euro‑Mediterranean aviation agreement: what it is, what it changes, and why finance people should care **What happened?** A consolidated legal text has been published on EUR‑Lex for the **Euro‑Mediterranean aviation agreement** between the **European Community and its Member",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T11:00:12.031456+00:00",
+      "title": "CELEX:02006R0765-20260227: Council Regulation (EC) No 765/2006 of 18 May 2006 concerning restrictive measures in view of the situation in Belarus and the involvement of Belarus in the Russian aggression against Ukraine",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02006R0765-20260227",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CELEX:02006R0765-20260227: Council Regulation (EC) No 765/2006 of 18 May 2006 concerning restrictive measures in view of the situation in Belarus and the involvement of Belarus in the Russian aggression against Ukraine",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T11:00:05.303463+00:00",
+      "title": "CELEX:02024D0385-20260117: Council Decision (CFSP) 2024/385 of 19 January 2024 establishing restrictive measures against those who support, facilitate or enable violent actions by Hamas and the Palestinian Islamic Jihad",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024D0385-20260117",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CELEX:02024D0385-20260117: Council Decision (CFSP) 2024/385 of 19 January 2024 establishing restrictive measures against those who support, facilitate or enable violent actions by Hamas and the Palestinian Islamic Jihad",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:59.373487+00:00",
+      "title": "CELEX:02022R0128-20260125: Commission Implementing Regulation (EU) 2022/128 of 21 December 2021 laying down rules for the application of Regulation (EU) 2021/2116 of the European Parliament and of the Council on paying agencies and other bodies, financial management, clearance of accounts, checks, securities and transparency",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02022R0128-20260125",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## EU finance admin gets a tune-up: new rules for paying agencies, checks and transparency (what it means for innovation & defence finance) If you’ve ever wondered why EU money sometimes moves at the speed of a committee, this one",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:53.291878+00:00",
+      "title": "CONSIL:PE_17_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2014/59/EU AS REGARDS EARLY INTERVENTION MEASURES, CONDITIONS FOR RESOLUTION AND FUNDING OF RESOLUTION ACTION AND DIRECTIVE 2014/24/EU AS REGARDS VALUATION SERVICES IN RESOLUTION",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_17_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CONSIL:PE_17_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2014/59/EU AS REGARDS EARLY INTERVENTION MEASURES, CONDITIONS FOR RESOLUTION AND FUNDING OF RESOLUTION ACTION AND DIRECTIVE 2014/24/EU AS REGARDS VALUATION SERVICES IN RESOLUTION",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:46.611891+00:00",
+      "title": "CELEX:52026PC0152: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Space Services Agency and amending Regulation (EU) 2021/696",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0152",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CELEX:52026PC0152: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Space Services Agency and amending Regulation (EU) 2021/696",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:40.613707+00:00",
+      "title": "PI_COM:C(2026)2119: COMMISSION DELEGATED REGULATION (EU) …/... amending Commission Delegated Regulation (EU) 2023/2830 as regards rules on the timing, administration and other aspects of auctioning of greenhouse gas emission allowances. (Text with EEA relevance)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2119",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "PI_COM:C(2026)2119: COMMISSION DELEGATED REGULATION (EU) …/... amending Commission Delegated Regulation (EU) 2023/2830 as regards rules on the timing, administration and other aspects of auctioning of greenhouse gas emission allowances. (Text with EEA relevance)",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:34.586457+00:00",
+      "title": "CONSIL:ST_7998_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Space Services Agency and amending Regulation (EU) 2021/696",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7998_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CONSIL:ST_7998_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Space Services Agency and amending Regulation (EU) 2021/696",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:28.609686+00:00",
+      "title": "CELEX:02024R0386-20260117: Council Regulation (EU) 2024/386 of 19 January 2024 establishing restrictive measures against those who support, facilitate or enable violent actions by Hamas and the Palestinian Islamic Jihad",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R0386-20260117",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CELEX:02024R0386-20260117: Council Regulation (EU) 2024/386 of 19 January 2024 establishing restrictive measures against those who support, facilitate or enable violent actions by Hamas and the Palestinian Islamic Jihad",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:21.337496+00:00",
+      "title": "CONSIL:ST_16833_2025_INIT: Position of the Council at first reading with a view to the adoption of a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the use of railway infrastructure capacity in the single European railway area, amending Directive 2012/34/EU and repealing Regulation (EU) No 913/2010",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16833_2025_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "## Council position adopted on rail capacity rules: fewer bottlenecks, clearer access — and a nudge for EU competitiveness **What happened and why it matters** On **9 April 2026**, the Council adopted its **position at first reading** on a proposed",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:15.160216+00:00",
+      "title": "PI_COM:C(2026)2149: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) No 596/2014 of the European Parliament and of the Council as regards disclosure of inside information in protracted processes and delay of disclosure",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2149",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "PI_COM:C(2026)2149: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) No 596/2014 of the European Parliament and of the Council as regards disclosure of inside information in protracted processes and delay of disclosure",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:59:08.769687+00:00",
+      "title": "CELEX:02023R2147-20260129: Council Regulation (EU) 2023/2147 of 9 October 2023 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023R2147-20260129",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CELEX:02023R2147-20260129: Council Regulation (EU) 2023/2147 of 9 October 2023 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:58:41.698953+00:00",
+      "title": "CONSIL:PE_19_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2014/49/EU AS REGARDS THE SCOPE OF DEPOSIT PROTECTION, THE USE OF DEPOSIT GUARANTEE SCHEMES FUNDS, CROSS-BORDER COOPERATION, AND TRANSPARENCY",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_19_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CONSIL:PE_19_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2014/49/EU AS REGARDS THE SCOPE OF DEPOSIT PROTECTION, THE USE OF DEPOSIT GUARANTEE SCHEMES FUNDS, CROSS-BORDER COOPERATION, AND TRANSPARENCY",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-09T10:57:33.018089+00:00",
+      "title": "CONSIL:PE_18_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2000/60/EC ESTABLISHING A FRAMEWORK FOR COMMUNITY ACTION IN THE FIELD OF WATER POLICY, DIRECTIVE 2006/118/EC ON THE PROTECTION OF GROUNDWATER AGAINST POLLUTION AND DETERIORATION AND DIRECTIVE 2008/105/EC ON ENVIRONMENTAL QUALITY STANDARDS IN THE FIELD OF WATER POLICY",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_18_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CONSIL:PE_18_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2000/60/EC ESTABLISHING A FRAMEWORK FOR COMMUNITY ACTION IN THE FIELD OF WATER POLICY, DIRECTIVE 2006/118/EC ON THE PROTECTION OF GROUNDWATER AGAINST POLLUTION AND DETERIORATION AND DIRECTIVE 2008/105/EC ON",
+      "amounts": []
+    },
     {
       "date": "2026-04-09T05:09:14.956065+00:00",
       "title": "Why implement ELI?",
