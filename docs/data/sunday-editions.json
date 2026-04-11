@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T05:06:15.559463+00:00",
+  "generated_at": "2026-04-11T10:36:25.211081+00:00",
   "latest_end_date": "2026-04-11",
   "items": [
     {
@@ -37,17 +37,17 @@
         "Other/NA",
         "AI & Digital",
         "daily",
+        "Cybersecurity",
         "CMU & Financial Markets",
         "Other",
         "De-risking & Investment",
-        "Defence & Security",
-        "Cybersecurity"
+        "Space/EO"
       ],
       "important_documents": [
         {
           "id": "rep-2026-04-11-28de910eb439fc8f",
           "title": "Daily Digest — 2026-04-11",
-          "summary": "_Items in last 24h: 168_ 1. CELEX:52025DC0758R(01): REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL on the activities of the IFRS Foundation, EFRAG and PIOB in 2024 Bron: eur-lex.europa.eu · Datum: 2026-04-11T04:56:15.921838+00:00 Programma: Other/NA Link)",
+          "summary": "_Items in last 24h: 106_ 1. CELEX:32026M12305: Commission Decision of 12/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12305 - BRIDGEPOINT / POLARIS MANAGEMENT / PDSVISION) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic) Bron: eur-lex.europa.eu · Datum: 2026-04-11T10:32:22.593987+00:00 Programma: Other/NA Link",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-11.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,10 +86,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
-            "EUR-Lex",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "AI & Digital"
           ]
         },
         {
@@ -104,10 +104,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
-            "Defence & Security",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
           ]
         },
         {
@@ -122,10 +122,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
-            "Defence & Security",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
           ]
         }
       ],
@@ -142,10 +142,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
-            "Defence & Security",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
           ]
         },
         {
@@ -160,10 +160,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
-            "Defence & Security",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Defence & Security"
           ]
         },
         {
@@ -178,10 +178,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Other"
           ]
         },
         {
@@ -196,10 +196,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Other"
           ]
         },
         {
@@ -214,10 +214,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Other"
           ]
         },
         {
@@ -232,10 +232,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "law",
+            "EUR-Lex",
+            "Other"
           ]
         }
       ],
