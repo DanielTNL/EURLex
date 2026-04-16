@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-04-16T05:39:24.371166+00:00",
+  "generated_at": "2026-04-16T11:08:08.951164+00:00",
   "latest_date": "2026-04-16",
   "items": [
     {
       "date": "2026-04-16",
       "title": "Thursday 16 April 2026",
-      "headline": "ELI background",
-      "intro": "Thursday 16 April 2026 is led by ELI background. 5 relevant documents are currently attached to this publication window.",
-      "summary": "ELI background: ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions, you’ll know the pain: versions differ, identifier… What is ELI?: What is ELI? (and why EU innovation teams should care) If you’ve ever tried to build a “single pane of glass” for EU law—say, to power compliance workflows, contract analytics, or regulatory monitoring—you’ll know the p… Statistics: Statistics (and why it matters for EU innovation, defence and capital markets) If you’ve ever tried to track a piece of EU legislation from proposal to Official Journal to case-law, you’ll know the feeling: the rules ar… Why implement ELI?: Why implement ELI? (and why capita…",
+      "headline": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWI…",
+      "intro": "Thursday 16 April 2026 is led by CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text i…",
+      "summary": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic): EU competition clearance: SK Capital’s nod to buy Swixx Biopharma (and what it signals for innovation finance) **What happened and why it matters** On **31 March 2026**, the European Commission adopted a decision declar… CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support - Policy debate: CONSIL:ST 8212 2026 INIT: The Common Agricultural Policy after 2027 – Key design choices for income support (Policy debate) — 16 Apr 2026 If you track EU…",
       "key_points": [
-        "1) What happened and why it matters",
-        "Legislation becomes machine-actionable. When identifiers and metadata are consistent, software can reliably link “the same thing” across sy…",
-        "Search and discovery improve. The page says ELI improves search engine visibility, making it easier to find legislation and draft proposals.",
-        "Publication workflows get faster and cheaper. The page gives a concrete example: national official journals can retrieve ELI metadata from…"
+        "Decision date: 31/03/2026",
+        "Publication/CELEX metadata date: 16 Apr 2026",
+        "Legal basis: Council Regulation (EC) No 139/2004 (Merger Regulation)",
+        "Case reference: COMP/M.12332 – SK CAPITAL / SWIXX BIOPHARMA"
       ],
       "sections": [
         {
-          "title": "ELI background",
-          "body": "ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions, you’ll know the pain: versions differ, identifiers don’t line up neatly, and “the same… Source: eur-lex.europa.eu, 2026-04-16."
+          "title": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market…",
+          "body": "EU competition clearance: SK Capital’s nod to buy Swixx Biopharma (and what it signals for innovation finance) **What happened and why it matters** On **31 March 2026**, the European Commission adopted a decision declaring a specific merger **compatible wi… Source: eur-lex.europa.eu, 2026-04-16."
         },
         {
-          "title": "What is ELI?",
-          "body": "What is ELI? (and why EU innovation teams should care) If you’ve ever tried to build a “single pane of glass” for EU law—say, to power compliance workflows, contract analytics, or regulatory monitoring—you’ll know the pain: identifiers are inconsistent, me… Source: eur-lex.europa.eu, 2026-04-16."
+          "title": "CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support - Policy de…",
+          "body": "CONSIL:ST 8212 2026 INIT: The Common Agricultural Policy after 2027 – Key design choices for income support (Policy debate) — 16 Apr 2026 If you track EU innovation, defence and capital markets, you might not expect a Common Agricultural Policy (CAP) desig… Source: eur-lex.europa.eu, 2026-04-16."
         },
         {
-          "title": "Statistics",
-          "body": "Statistics (and why it matters for EU innovation, defence and capital markets) If you’ve ever tried to track a piece of EU legislation from proposal to Official Journal to case-law, you’ll know the feeling: the rules are there, but the signal-to-noise rati… Source: eur-lex.europa.eu, 2026-04-16."
+          "title": "CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market…",
+          "body": "EU competition green light for EFMS / Blackstone / Urbaser — a quiet but important signal for defence-adjacent industrial capacity **What happened:** On **31 March 2026**, the European Commission adopted a **Decision declaring a concentration compatible wi… Source: eur-lex.europa.eu, 2026-04-16."
         }
       ],
       "categories": [
@@ -38,7 +38,7 @@
         {
           "id": "rep-2026-04-16-8beccd4e0f20f4ea",
           "title": "Daily Digest — 2026-04-16",
-          "summary": "_Items in last 24h: 60_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-16T05:29:14.372831+00:00 Programma: Other/NA",
+          "summary": "_Items in last 24h: 78_ 1. CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic) Bron: eur-lex.europa.eu · Datum: 2026-04-16T11:04:02.617054+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-16.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -51,10 +51,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/benefits.html",
-          "title": "Why implement ELI?",
-          "summary": "## Why implement ELI? (and why capital markets people should care) If you’ve ever tried to track a piece of EU legislation across time, jurisdictions and publication formats, you’ll know the feeling: the law is there, but the *data* isn’t always. That’s the p…",
-          "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12332",
+          "title": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
+          "summary": "## EU competition clearance: SK Capital’s nod to buy Swixx Biopharma (and what it signals for innovation finance) **What happened and why it matters** On **31 March 2026**, the European Commission adopted a decision declaring a specific merger **compatible wi…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12332",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-16",
@@ -66,10 +66,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/background.html",
-          "title": "ELI background",
-          "summary": "## ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions, you’ll know the pain: versions differ, identifiers don’t line up neatly, and “the same…",
-          "url": "https://eur-lex.europa.eu/eli-register/background.html",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8212_2026_INIT",
+          "title": "CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support - Policy debate",
+          "summary": "## CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support (Policy debate) — 16 Apr 2026 If you track EU innovation, defence and capital markets, you might not expect a Common Agricultural Policy (CAP) desig…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8212_2026_INIT",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-16",
@@ -81,10 +81,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-          "title": "What is ELI?",
-          "summary": "## What is ELI? (and why EU innovation teams should care) If you’ve ever tried to build a “single pane of glass” for EU law—say, to power compliance workflows, contract analytics, or regulatory monitoring—you’ll know the pain: identifiers are inconsistent, me…",
-          "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
+          "title": "CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12371 - EFMS / BLACKSTONE / URBASER) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
+          "summary": "## EU competition green light for EFMS / Blackstone / Urbaser — a quiet but important signal for defence-adjacent industrial capacity **What happened:** On **31 March 2026**, the European Commission adopted a **Decision declaring a concentration compatible wi…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-16",
@@ -96,10 +96,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/statistics/statistics.html",
-          "title": "Statistics",
-          "summary": "## Statistics (and why it matters for EU innovation, defence and capital markets) If you’ve ever tried to track a piece of EU legislation from proposal to Official Journal to case-law, you’ll know the feeling: the rules are there, but the signal-to-noise rati…",
-          "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
+          "title": "CONSIL:ST_8218_2026_INIT: OPINION of the European Economic and Social Committee on EU market integration and efficient supervision",
+          "summary": "## CONSIL:ST_8218_2026_INIT — EESC opinion on EU market integration and efficient supervision (16 April 2026) **What happened?** The European Economic and Social Committee (EESC) has issued an **opinion** on **EU market integration and efficient supervision**…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-16",
@@ -124,9 +124,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "EU",
             "Defence & Security",
             "EUR-Lex",
-            "EU",
             "law"
           ]
         },
@@ -142,9 +142,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "EU",
             "Defence & Security",
             "EUR-Lex",
-            "EU",
             "law"
           ]
         },
@@ -160,9 +160,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "EU",
             "Defence & Security",
             "EUR-Lex",
-            "EU",
             "law"
           ]
         },
@@ -178,9 +178,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "EU",
             "Defence & Security",
             "EUR-Lex",
-            "EU",
             "law"
           ]
         },
@@ -197,8 +197,8 @@
           ],
           "tags": [
             "Other",
-            "EUR-Lex",
             "EU",
+            "EUR-Lex",
             "law"
           ]
         },
@@ -215,8 +215,8 @@
           ],
           "tags": [
             "Other",
-            "EUR-Lex",
             "EU",
+            "EUR-Lex",
             "law"
           ]
         }
@@ -229,16 +229,16 @@
       "signal_counts": {
         "posts": 27,
         "reports": 2,
-        "digest_items": 46,
-        "timeline_events": 0
+        "digest_items": 69,
+        "timeline_events": 46
       }
     },
     {
       "date": "2026-04-15",
       "title": "Wednesday 15 April 2026",
-      "headline": "CELEX:32026M12295: Commission Decision of 27/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12295 - VALEA / ROCKAWAY…",
-      "intro": "Wednesday 15 April 2026 is led by CELEX:32026M12295: Commission Decision of 27/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12295 - VALEA / ROCKAWAY MEDIA / ROCKAWAY ARTS) according to Council Regulation (EC) No 139/2004 (Only the Eng…",
-      "summary": "CELEX:32026M12295: Commission Decision of 27/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12295 - VALEA / ROCKAWAY MEDIA / ROCKAWAY ARTS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic): EU competition watch: Commission clears VALEA / Rockaway Media / Rockaway Arts (Case COMP/M.12295) — what it signals for innovation, defence-adjacent markets, and capital flows **What happened?** On **27 March 2026**, t… CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12371 - EFMS / BLACKSTONE / URBASER) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic): EU compet…",
+      "headline": "CELEX:52026M12373(01): Non-opposition to a notified concentration (Case M.12373 – CPP INVESTMENTS / I SQUARED / INKIA ENERGY)",
+      "intro": "Wednesday 15 April 2026 is led by CELEX:52026M12373(01): Non-opposition to a notified concentration (Case M.12373 – CPP INVESTMENTS / I SQUARED / INKIA ENERGY). 5 relevant documents are currently attached to this publication window.",
+      "summary": "CELEX:52026M12373(01): Non-opposition to a notified concentration (Case M.12373 – CPP INVESTMENTS / I SQUARED / INKIA ENERGY): EU competition watch: Commission non-opposes CPP Investments / i Squared / Inkia Energy (Case M.12373) **What happened?** On **15 April 2026**, the European Commission issued a **decision of non-opposition** to a notifi… CELEX:52026M12237: Prior notification of a concentration (Case M.12237 – CARLYLE / BASF COATINGS): Carlyle / BASF Coatings: EU merger control quietly reshapes the defence-adjacent materials supply chain (and why you should care) **What happened?** The Commission has published a **prior notification of a concentration… CELEX:22026D0640: Decision of the EEA Joint Committee No 298/2025 of 5 December 2025 amendi…",
       "key_points": [
         "Market entry and bargaining power: If the deal consolidates key assets or audiences, it can change how smaller firms negotiate distribution…",
         "Investment and risk appetite: Clearances reduce regulatory uncertainty, which can improve deal certainty for investors and lenders—especial…",
@@ -247,16 +247,16 @@
       ],
       "sections": [
         {
-          "title": "CELEX:32026M12295: Commission Decision of 27/03/2026 declaring a concentration to be compatible with the common market…",
-          "body": "EU competition watch: Commission clears VALEA / Rockaway Media / Rockaway Arts (Case COMP/M.12295) — what it signals for innovation, defence-adjacent markets, and capital flows **What happened?** On **27 March 2026**, the European Commission adopted a deci… Source: eur-lex.europa.eu, 2026-04-15."
+          "title": "CELEX:52026M12373(01): Non-opposition to a notified concentration (Case M.12373 – CPP INVESTMENTS / I SQUARED / INKIA E…",
+          "body": "EU competition watch: Commission non-opposes CPP Investments / i Squared / Inkia Energy (Case M.12373) **What happened?** On **15 April 2026**, the European Commission issued a **decision of non-opposition** to a notified concentration: **Case M.12373 – CP… Source: eur-lex.europa.eu, 2026-04-15."
         },
         {
-          "title": "CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market…",
-          "body": "EU competition green light for EFMS / Blackstone / Urbaser — what it signals for innovation, defence and capital markets **What happened?** On **31 March 2026**, the European Commission adopted **Commission Decision (Case No COMP/M.12371)** declaring the p… Source: eur-lex.europa.eu, 2026-04-15."
+          "title": "CELEX:52026M12237: Prior notification of a concentration (Case M.12237 – CARLYLE / BASF COATINGS)",
+          "body": "Carlyle / BASF Coatings: EU merger control quietly reshapes the defence-adjacent materials supply chain (and why you should care) **What happened?** The Commission has published a **prior notification of a concentration** under the EU Merger Regulation: **… Source: eur-lex.europa.eu, 2026-04-15."
         },
         {
-          "title": "CONSIL:ST_8218_2026_INIT: OPINION of the European Economic and Social Committee on EU market integration and efficient…",
-          "body": "CONSIL:ST 8218 2026 INIT: EESC opinion on EU market integration and efficient supervision — what it signals for innovation, defence and capital markets **What happened (and why it matters)** The European Economic and Social Committee (EESC) has issued an *… Source: eur-lex.europa.eu, 2026-04-15."
+          "title": "CELEX:22026D0640: Decision of the EEA Joint Committee No 298/2025 of 5 December 2025 amending Annex IX (Financial servi…",
+          "body": "EEA “CMU-lite” moment: Financial services updated via EEA Joint Committee Decision (298/2025) **What happened?** The EEA Joint Committee adopted **Decision No 298/2025 (5 December 2025)** amending **Annex IX (Financial services)** to the **EEA Agreement**.… Source: eur-lex.europa.eu, 2026-04-15."
         }
       ],
       "categories": [
@@ -280,10 +280,10 @@
           ]
         },
         {
-          "id": "https://european-union.europa.eu/index_en",
-          "title": "Your gateway to the European Union",
-          "summary": "## Your gateway to the European Union Welcome to this week’s EU “what’s new” roundup—less about markets in the narrow sense, more about the policy plumbing that shapes risk, mobility and long-run competitiveness. No hype, just the dots. ### 1) What happened—a…",
-          "url": "https://european-union.europa.eu/index_en",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D0634",
+          "title": "CELEX:22026D0634: Decision of the EEA Joint Committee No 297/2025 of 5 December 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/634]",
+          "summary": "## EEA update: Financial services rules get a targeted tweak (and why EU/EEA fintech & capital markets people should care) **What happened?** The **EEA Joint Committee** adopted **Decision No 297/2025 (5 December 2025)**, amending **Annex IX (Financial servic…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D0634",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -295,10 +295,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12295",
-          "title": "CELEX:32026M12295: Commission Decision of 27/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12295 - VALEA / ROCKAWAY MEDIA / ROCKAWAY ARTS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-          "summary": "## EU competition watch: Commission clears VALEA / Rockaway Media / Rockaway Arts (Case COMP/M.12295) — what it signals for innovation, defence-adjacent markets, and capital flows **What happened?** On **27 March 2026**, the European Commission adopted a deci…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12295",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12373(01)",
+          "title": "CELEX:52026M12373(01): Non-opposition to a notified concentration (Case M.12373 – CPP INVESTMENTS / I SQUARED / INKIA ENERGY)",
+          "summary": "## EU competition watch: Commission non-opposes CPP Investments / i Squared / Inkia Energy (Case M.12373) **What happened?** On **15 April 2026**, the European Commission issued a **decision of non-opposition** to a notified concentration: **Case M.12373 – CP…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12373(01)",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -310,10 +310,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
-          "title": "CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12371 - EFMS / BLACKSTONE / URBASER) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-          "summary": "## EU competition green light for EFMS / Blackstone / Urbaser — what it signals for innovation, defence and capital markets **What happened?** On **31 March 2026**, the European Commission adopted **Commission Decision (Case No COMP/M.12371)** declaring the p…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12237",
+          "title": "CELEX:52026M12237: Prior notification of a concentration (Case M.12237 – CARLYLE / BASF COATINGS)",
+          "summary": "## Carlyle / BASF Coatings: EU merger control quietly reshapes the defence-adjacent materials supply chain (and why you should care) **What happened?** The Commission has published a **prior notification of a concentration** under the EU Merger Regulation: **…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12237",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -325,10 +325,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
-          "title": "CONSIL:ST_8218_2026_INIT: OPINION of the European Economic and Social Committee on EU market integration and efficient supervision",
-          "summary": "## CONSIL:ST_8218_2026_INIT: EESC opinion on EU market integration and efficient supervision — what it signals for innovation, defence and capital markets **What happened (and why it matters)** The European Economic and Social Committee (EESC) has issued an *…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D0640",
+          "title": "CELEX:22026D0640: Decision of the EEA Joint Committee No 298/2025 of 5 December 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/640]",
+          "summary": "## EEA “CMU-lite” moment: Financial services updated via EEA Joint Committee Decision (298/2025) **What happened?** The EEA Joint Committee adopted **Decision No 298/2025 (5 December 2025)** amending **Annex IX (Financial services)** to the **EEA Agreement**.…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D0640",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -342,10 +342,10 @@
       ],
       "related_documents": [
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12295",
-          "title": "CELEX:32026M12295: Commission Decision of 27/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12295 - VALEA / ROCKAWAY MEDIA / ROCKAWAY ARTS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-          "summary": "## EU competition watch: Commission clears VALEA / Rockaway Media / Rockaway Arts (Case COMP/M.12295) — what it signals for innovation, defence-adjacent markets, and capital flows **What happened?** On **27 March 2026**, the European Commission adopted a deci…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12295",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12373(01)",
+          "title": "CELEX:52026M12373(01): Non-opposition to a notified concentration (Case M.12373 – CPP INVESTMENTS / I SQUARED / INKIA ENERGY)",
+          "summary": "## EU competition watch: Commission non-opposes CPP Investments / i Squared / Inkia Energy (Case M.12373) **What happened?** On **15 April 2026**, the European Commission issued a **decision of non-opposition** to a notified concentration: **Case M.12373 – CP…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12373(01)",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -357,10 +357,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
-          "title": "CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12371 - EFMS / BLACKSTONE / URBASER) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-          "summary": "## EU competition green light for EFMS / Blackstone / Urbaser — what it signals for innovation, defence and capital markets **What happened?** On **31 March 2026**, the European Commission adopted **Commission Decision (Case No COMP/M.12371)** declaring the p…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12237",
+          "title": "CELEX:52026M12237: Prior notification of a concentration (Case M.12237 – CARLYLE / BASF COATINGS)",
+          "summary": "## Carlyle / BASF Coatings: EU merger control quietly reshapes the defence-adjacent materials supply chain (and why you should care) **What happened?** The Commission has published a **prior notification of a concentration** under the EU Merger Regulation: **…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12237",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -372,10 +372,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
-          "title": "CONSIL:ST_8218_2026_INIT: OPINION of the European Economic and Social Committee on EU market integration and efficient supervision",
-          "summary": "## CONSIL:ST_8218_2026_INIT: EESC opinion on EU market integration and efficient supervision — what it signals for innovation, defence and capital markets **What happened (and why it matters)** The European Economic and Social Committee (EESC) has issued an *…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D0640",
+          "title": "CELEX:22026D0640: Decision of the EEA Joint Committee No 298/2025 of 5 December 2025 amending Annex IX (Financial services) to the EEA Agreement [2026/640]",
+          "summary": "## EEA “CMU-lite” moment: Financial services updated via EEA Joint Committee Decision (298/2025) **What happened?** The EEA Joint Committee adopted **Decision No 298/2025 (5 December 2025)** amending **Annex IX (Financial services)** to the **EEA Agreement**.…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D0640",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -387,10 +387,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12367",
-          "title": "CELEX:32026M12367: Commission Decision of 30/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12367 - LIBERTY GLOBAL / TELEFONICA / INFRAVIA / NETOMNIA AND BRSK ASSETS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-          "summary": "## EU competition clearance: Liberty Global meets Telefonica (via Infravia/Netomnia/BRSK) — what the Commission’s “compatible” decision signals **What happened?** On **30 March 2026**, the European Commission adopted a decision declaring a proposed concentrat…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12367",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS119750",
+          "title": "CELEX:52026AS119750: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objections – SA.119750",
+          "summary": "## CELEX SA.119750: Commission “no objections” on State aid — a quiet but important signal for EU innovation finance **What happened?** On **15 April 2026**, the Commission published **CELEX:52026AS119750 (SA.119750)**: an **authorisation for State aid** unde…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS119750",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -402,10 +402,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32025M12122",
-          "title": "CELEX:32025M12122: Commission Decision of 09/12/2025 declaring a concentration to be compatible with the common market (Case No COMP/M.12122 - COMPASS / VERMAAT) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-          "summary": "## Competition clearance meets industrial reality: Commission clears COMPASS / VERMAAT (Case COMP/M.12122) **What happened?** On **9 December 2025**, the European Commission adopted a decision declaring the proposed concentration **compatible with the common…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32025M12122",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H0839",
+          "title": "CELEX:32026H0839: Commission Recommendation (EU) 2026/839 of 11 March 2026 setting out guidelines for the design of cost-benefit methodologies for the application of the energy efficiency first principle pursuant to Article 3(6) of Directive (EU) 2023/1791 of the European Parliament and of the Council",
+          "summary": "## CELEX 32026H0839: Energy Efficiency First gets a methodology backbone (and that matters for innovation, defence and capital markets) **What happened?** On **11 March 2026**, the Commission issued **Recommendation (EU) 2026/839** setting out **guidelines fo…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H0839",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -417,10 +417,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12378",
-          "title": "CELEX:32026M12378: Commission Decision of 13/04/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12378 - EFMS / GIC ACQUIRERS / KELDA GROUP) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-          "summary": "## Deal watch: EFMS / GIC Acquirers / Kelda Group — what the Commission’s “green light” really signals **What happened?** On **13 April 2026**, the European Commission adopted a decision declaring a specific corporate **concentration compatible with the commo…",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12378",
+          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12380(01)",
+          "title": "CELEX:52026M12380(01): Non-opposition to a notified concentration (Case M.12380 – CAPVEST / TSG)",
+          "summary": "## CELEX update: Commission non-opposition in **CAPVEST / TSG** — a quiet signal for EU dealflow **What happened?** On **15 April 2026**, the European Commission published a decision of **non-opposition** to a notified concentration in **Case M.12380 – CAPVES…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12380(01)",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-04-15",
@@ -440,8 +440,8 @@
       "signal_counts": {
         "posts": 0,
         "reports": 2,
-        "digest_items": 14,
-        "timeline_events": 48
+        "digest_items": 9,
+        "timeline_events": 50
       }
     },
     {
@@ -1707,7 +1707,7 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 61
+        "timeline_events": 15
       }
     },
     {
@@ -1906,8 +1906,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "De-risking & Investment",
-            "external"
+            "external",
+            "De-risking & Investment"
           ]
         },
         {
@@ -1922,8 +1922,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "De-risking & Investment",
-            "external"
+            "external",
+            "De-risking & Investment"
           ]
         }
       ],
@@ -1957,8 +1957,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "De-risking & Investment",
-            "external"
+            "external",
+            "De-risking & Investment"
           ]
         },
         {
@@ -1973,8 +1973,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "De-risking & Investment",
-            "external"
+            "external",
+            "De-risking & Investment"
           ]
         },
         {

@@ -1,27 +1,27 @@
 {
   "date": "2026-04-16",
   "title": "Thursday 16 April 2026",
-  "headline": "ELI background",
-  "intro": "Thursday 16 April 2026 is led by ELI background. 5 relevant documents are currently attached to this publication window.",
-  "summary": "ELI background: ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions, you’ll know the pain: versions differ, identifier… What is ELI?: What is ELI? (and why EU innovation teams should care) If you’ve ever tried to build a “single pane of glass” for EU law—say, to power compliance workflows, contract analytics, or regulatory monitoring—you’ll know the p… Statistics: Statistics (and why it matters for EU innovation, defence and capital markets) If you’ve ever tried to track a piece of EU legislation from proposal to Official Journal to case-law, you’ll know the feeling: the rules ar… Why implement ELI?: Why implement ELI? (and why capita…",
+  "headline": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWI…",
+  "intro": "Thursday 16 April 2026 is led by CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text i…",
+  "summary": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic): EU competition clearance: SK Capital’s nod to buy Swixx Biopharma (and what it signals for innovation finance) **What happened and why it matters** On **31 March 2026**, the European Commission adopted a decision declar… CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support - Policy debate: CONSIL:ST 8212 2026 INIT: The Common Agricultural Policy after 2027 – Key design choices for income support (Policy debate) — 16 Apr 2026 If you track EU…",
   "key_points": [
-    "1) What happened and why it matters",
-    "Legislation becomes machine-actionable. When identifiers and metadata are consistent, software can reliably link “the same thing” across sy…",
-    "Search and discovery improve. The page says ELI improves search engine visibility, making it easier to find legislation and draft proposals.",
-    "Publication workflows get faster and cheaper. The page gives a concrete example: national official journals can retrieve ELI metadata from…"
+    "Decision date: 31/03/2026",
+    "Publication/CELEX metadata date: 16 Apr 2026",
+    "Legal basis: Council Regulation (EC) No 139/2004 (Merger Regulation)",
+    "Case reference: COMP/M.12332 – SK CAPITAL / SWIXX BIOPHARMA"
   ],
   "sections": [
     {
-      "title": "ELI background",
-      "body": "ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions, you’ll know the pain: versions differ, identifiers don’t line up neatly, and “the same… Source: eur-lex.europa.eu, 2026-04-16."
+      "title": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market…",
+      "body": "EU competition clearance: SK Capital’s nod to buy Swixx Biopharma (and what it signals for innovation finance) **What happened and why it matters** On **31 March 2026**, the European Commission adopted a decision declaring a specific merger **compatible wi… Source: eur-lex.europa.eu, 2026-04-16."
     },
     {
-      "title": "What is ELI?",
-      "body": "What is ELI? (and why EU innovation teams should care) If you’ve ever tried to build a “single pane of glass” for EU law—say, to power compliance workflows, contract analytics, or regulatory monitoring—you’ll know the pain: identifiers are inconsistent, me… Source: eur-lex.europa.eu, 2026-04-16."
+      "title": "CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support - Policy de…",
+      "body": "CONSIL:ST 8212 2026 INIT: The Common Agricultural Policy after 2027 – Key design choices for income support (Policy debate) — 16 Apr 2026 If you track EU innovation, defence and capital markets, you might not expect a Common Agricultural Policy (CAP) desig… Source: eur-lex.europa.eu, 2026-04-16."
     },
     {
-      "title": "Statistics",
-      "body": "Statistics (and why it matters for EU innovation, defence and capital markets) If you’ve ever tried to track a piece of EU legislation from proposal to Official Journal to case-law, you’ll know the feeling: the rules are there, but the signal-to-noise rati… Source: eur-lex.europa.eu, 2026-04-16."
+      "title": "CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market…",
+      "body": "EU competition green light for EFMS / Blackstone / Urbaser — a quiet but important signal for defence-adjacent industrial capacity **What happened:** On **31 March 2026**, the European Commission adopted a **Decision declaring a concentration compatible wi… Source: eur-lex.europa.eu, 2026-04-16."
     }
   ],
   "categories": [
@@ -34,7 +34,7 @@
     {
       "id": "rep-2026-04-16-8beccd4e0f20f4ea",
       "title": "Daily Digest — 2026-04-16",
-      "summary": "_Items in last 24h: 60_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-16T05:29:14.372831+00:00 Programma: Other/NA",
+      "summary": "_Items in last 24h: 78_ 1. CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic) Bron: eur-lex.europa.eu · Datum: 2026-04-16T11:04:02.617054+00:00 Programma: Other/NA",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-16.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -47,10 +47,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/benefits.html",
-      "title": "Why implement ELI?",
-      "summary": "## Why implement ELI? (and why capital markets people should care) If you’ve ever tried to track a piece of EU legislation across time, jurisdictions and publication formats, you’ll know the feeling: the law is there, but the *data* isn’t always. That’s the p…",
-      "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+      "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12332",
+      "title": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
+      "summary": "## EU competition clearance: SK Capital’s nod to buy Swixx Biopharma (and what it signals for innovation finance) **What happened and why it matters** On **31 March 2026**, the European Commission adopted a decision declaring a specific merger **compatible wi…",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12332",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-16",
@@ -62,10 +62,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/background.html",
-      "title": "ELI background",
-      "summary": "## ELI background: the unglamorous plumbing behind EU legal data (and why finance people should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions, you’ll know the pain: versions differ, identifiers don’t line up neatly, and “the same…",
-      "url": "https://eur-lex.europa.eu/eli-register/background.html",
+      "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8212_2026_INIT",
+      "title": "CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support - Policy debate",
+      "summary": "## CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support (Policy debate) — 16 Apr 2026 If you track EU innovation, defence and capital markets, you might not expect a Common Agricultural Policy (CAP) desig…",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8212_2026_INIT",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-16",
@@ -77,10 +77,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-      "title": "What is ELI?",
-      "summary": "## What is ELI? (and why EU innovation teams should care) If you’ve ever tried to build a “single pane of glass” for EU law—say, to power compliance workflows, contract analytics, or regulatory monitoring—you’ll know the pain: identifiers are inconsistent, me…",
-      "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
+      "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
+      "title": "CELEX:32026M12371: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12371 - EFMS / BLACKSTONE / URBASER) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
+      "summary": "## EU competition green light for EFMS / Blackstone / Urbaser — a quiet but important signal for defence-adjacent industrial capacity **What happened:** On **31 March 2026**, the European Commission adopted a **Decision declaring a concentration compatible wi…",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12371",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-16",
@@ -92,10 +92,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/statistics/statistics.html",
-      "title": "Statistics",
-      "summary": "## Statistics (and why it matters for EU innovation, defence and capital markets) If you’ve ever tried to track a piece of EU legislation from proposal to Official Journal to case-law, you’ll know the feeling: the rules are there, but the signal-to-noise rati…",
-      "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+      "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
+      "title": "CONSIL:ST_8218_2026_INIT: OPINION of the European Economic and Social Committee on EU market integration and efficient supervision",
+      "summary": "## CONSIL:ST_8218_2026_INIT — EESC opinion on EU market integration and efficient supervision (16 April 2026) **What happened?** The European Economic and Social Committee (EESC) has issued an **opinion** on **EU market integration and efficient supervision**…",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-16",
@@ -120,9 +120,9 @@
         "Defence & Security"
       ],
       "tags": [
+        "EU",
         "Defence & Security",
         "EUR-Lex",
-        "EU",
         "law"
       ]
     },
@@ -138,9 +138,9 @@
         "Defence & Security"
       ],
       "tags": [
+        "EU",
         "Defence & Security",
         "EUR-Lex",
-        "EU",
         "law"
       ]
     },
@@ -156,9 +156,9 @@
         "Defence & Security"
       ],
       "tags": [
+        "EU",
         "Defence & Security",
         "EUR-Lex",
-        "EU",
         "law"
       ]
     },
@@ -174,9 +174,9 @@
         "Defence & Security"
       ],
       "tags": [
+        "EU",
         "Defence & Security",
         "EUR-Lex",
-        "EU",
         "law"
       ]
     },
@@ -193,8 +193,8 @@
       ],
       "tags": [
         "Other",
-        "EUR-Lex",
         "EU",
+        "EUR-Lex",
         "law"
       ]
     },
@@ -211,8 +211,8 @@
       ],
       "tags": [
         "Other",
-        "EUR-Lex",
         "EU",
+        "EUR-Lex",
         "law"
       ]
     }
@@ -225,7 +225,7 @@
   "signal_counts": {
     "posts": 27,
     "reports": 2,
-    "digest_items": 46,
-    "timeline_events": 0
+    "digest_items": 69,
+    "timeline_events": 46
   }
 }
