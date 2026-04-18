@@ -1,27 +1,27 @@
 {
   "date": "2026-04-18",
   "title": "Saturday 18 April 2026",
-  "headline": "Why implement ELI?",
-  "intro": "Saturday 18 April 2026 is led by Why implement ELI?. 5 relevant documents are currently attached to this publication window.",
-  "summary": "Why implement ELI?: Why implement ELI? If you’ve ever tried to track down the “same” piece of EU law across different platforms—or across languages, jurisdictions, and publication formats—you’ll know the pain: identifiers don’t always matc… ELI background: ELI background: the unglamorous plumbing behind EU legal tech (and why finance folks should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—especially when you’re dealing with cross-border en… What is ELI?: What is ELI? (and why EU legal “plumbing” matters for innovation, defence and markets) If you’ve ever tried to build a product that relies on EU law—say, a compliance workflow for a dual‑use startup, a contract analytic… Statistics: Statistics (EUR-Lex): a small chan…",
+  "headline": "European Economic and Social Committee",
+  "intro": "Saturday 18 April 2026 is led by European Economic and Social Committee. 5 relevant documents are currently attached to this publication window.",
+  "summary": "European Economic and Social Committee: European Economic and Social Committee: what it means for EU innovation, defence and capital markets (and why you should care) **What happened?** The latest update comes from the **European Economic and Social Committee… European Court of Auditors: European Court of Auditors: the quiet “how well are we spending?” check on EU innovation, defence and markets If you track EU innovation, defence and capital markets, you’ll know the story is rarely just about new progr… European Central Bank: ECB: the “centre of gravity” for EU capital markets (and why innovation/defence finance still depends on it) **What happened and why it matters** The European Central Bank (ECB) remains the key macro-finance reference p… Court…",
   "key_points": [
-    "1) What happened—and why it matters",
-    "build tools that reliably link legal texts to related materials,",
-    "automate monitoring of changes (e.g., directives, implementing acts, amendments),",
-    "and support cross-border compliance workflows for businesses operating in the single market."
+    "1) Startups and SMEs: expect “implementation realism”",
+    "clearer expectations on what qualifies as innovation or capability,",
+    "more proportionate compliance and reporting,",
+    "and better alignment between policy intent and operational reality."
   ],
   "sections": [
     {
-      "title": "Why implement ELI?",
-      "body": "Why implement ELI? If you’ve ever tried to track down the “same” piece of EU law across different platforms—or across languages, jurisdictions, and publication formats—you’ll know the pain: identifiers don’t always match, metadata is inconsistent, and sear… Source: eur-lex.europa.eu, 2026-04-18."
+      "title": "European Economic and Social Committee",
+      "body": "European Economic and Social Committee: what it means for EU innovation, defence and capital markets (and why you should care) **What happened?** The latest update comes from the **European Economic and Social Committee (EESC)**—an EU advisory body that, w… Source: eur-lex.europa.eu, 2026-04-18."
     },
     {
-      "title": "ELI background",
-      "body": "ELI background: the unglamorous plumbing behind EU legal tech (and why finance folks should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—especially when you’re dealing with cross-border enforcement, regulatory interpretation… Source: eur-lex.europa.eu, 2026-04-18."
+      "title": "European Court of Auditors",
+      "body": "European Court of Auditors: the quiet “how well are we spending?” check on EU innovation, defence and markets If you track EU innovation, defence and capital markets, you’ll know the story is rarely just about new programmes—it’s about whether they deliver… Source: eur-lex.europa.eu, 2026-04-18."
     },
     {
-      "title": "What is ELI?",
-      "body": "What is ELI? (and why EU legal “plumbing” matters for innovation, defence and markets) If you’ve ever tried to build a product that relies on EU law—say, a compliance workflow for a dual‑use startup, a contract analytics tool for a defence supplier, or a c… Source: eur-lex.europa.eu, 2026-04-18."
+      "title": "European Central Bank",
+      "body": "ECB: the “centre of gravity” for EU capital markets (and why innovation/defence finance still depends on it) **What happened and why it matters** The European Central Bank (ECB) remains the key macro-finance reference point for the EU’s innovation and defe… Source: eur-lex.europa.eu, 2026-04-18."
     }
   ],
   "categories": [
@@ -34,7 +34,7 @@
     {
       "id": "rep-2026-04-18-0aa521fb9f6d9322",
       "title": "Daily Digest — 2026-04-18",
-      "summary": "_Items in last 24h: 118_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-18T05:08:19.120742+00:00 Programma: Other/NA",
+      "summary": "_Items in last 24h: 100_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-04-18T10:39:02.907555+00:00 Programma: Other/NA",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-18.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -47,10 +47,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/benefits.html",
-      "title": "Why implement ELI?",
-      "summary": "## Why implement ELI? If you’ve ever tried to track down the “same” piece of EU law across different platforms—or across languages, jurisdictions, and publication formats—you’ll know the pain: identifiers don’t always match, metadata is inconsistent, and sear…",
-      "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+      "id": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "title": "European Economic and Social Committee",
+      "summary": "## European Economic and Social Committee: what it means for EU innovation, defence and capital markets (and why you should care) **What happened?** The latest update comes from the **European Economic and Social Committee (EESC)**—an EU advisory body that, w…",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-18",
@@ -62,10 +62,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/background.html",
-      "title": "ELI background",
-      "summary": "## ELI background: the unglamorous plumbing behind EU legal tech (and why finance folks should care) If you’ve ever tried to reconcile EU legal texts across jurisdictions—especially when you’re dealing with cross-border enforcement, regulatory interpretation…",
-      "url": "https://eur-lex.europa.eu/eli-register/background.html",
+      "id": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "title": "European Court of Auditors",
+      "summary": "## European Court of Auditors: the quiet “how well are we spending?” check on EU innovation, defence and markets If you track EU innovation, defence and capital markets, you’ll know the story is rarely just about new programmes—it’s about whether they deliver…",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-18",
@@ -77,10 +77,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-      "title": "What is ELI?",
-      "summary": "## What is ELI? (and why EU legal “plumbing” matters for innovation, defence and markets) If you’ve ever tried to build a product that relies on EU law—say, a compliance workflow for a dual‑use startup, a contract analytics tool for a defence supplier, or a c…",
-      "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
+      "id": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "title": "European Central Bank",
+      "summary": "## ECB: the “centre of gravity” for EU capital markets (and why innovation/defence finance still depends on it) **What happened and why it matters** The European Central Bank (ECB) remains the key macro-finance reference point for the EU’s innovation and defe…",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-18",
@@ -92,10 +92,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/statistics/statistics.html",
-      "title": "Statistics",
-      "summary": "## Statistics (EUR-Lex): a small change with a big “data plumbing” angle What happened? EUR-Lex has published an update that’s easy to miss if you’re not looking for it: a page inviting users to enable **experimental features** on the EUR-Lex platform. The pa…",
-      "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+      "id": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "title": "Court of Justice of the European Union",
+      "summary": "## CJEU on the beat: why “institutional housekeeping” matters for EU innovation, defence and markets **What happened?** The Court of Justice of the European Union (CJEU) has published/maintained its institutional page listing its work and access points for de…",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-04-18",
@@ -120,10 +120,10 @@
         "Defence & Security"
       ],
       "tags": [
+        "Defence & Security",
         "EUR-Lex",
         "EU",
-        "law",
-        "Defence & Security"
+        "law"
       ]
     },
     {
@@ -138,10 +138,10 @@
         "Defence & Security"
       ],
       "tags": [
+        "Defence & Security",
         "EUR-Lex",
         "EU",
-        "law",
-        "Defence & Security"
+        "law"
       ]
     },
     {
@@ -156,10 +156,10 @@
         "Defence & Security"
       ],
       "tags": [
+        "Defence & Security",
         "EUR-Lex",
         "EU",
-        "law",
-        "Defence & Security"
+        "law"
       ]
     },
     {
@@ -174,10 +174,28 @@
         "Defence & Security"
       ],
       "tags": [
+        "Defence & Security",
         "EUR-Lex",
         "EU",
-        "law",
-        "Defence & Security"
+        "law"
+      ]
+    },
+    {
+      "id": "d959245c5c490cab",
+      "title": "European Central Bank - EUR-Lex",
+      "summary": "× Skip to main content Log in My EUR-Lex My EUR-Lex Sign in Register My recent searches (0) English English Select your language Official EU languages: bg български es Español cs Čeština da Dansk de Deutsch et Eesti keel el Ελληνικά en English fr Français ga…",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "kind": "post",
+      "source": "EUR-Lex",
+      "date": "2026-04-18",
+      "categories": [
+        "Other"
+      ],
+      "tags": [
+        "Other",
+        "EUR-Lex",
+        "EU",
+        "law"
       ]
     },
     {
@@ -192,28 +210,10 @@
         "Other"
       ],
       "tags": [
+        "Other",
         "EUR-Lex",
         "EU",
-        "law",
-        "Other"
-      ]
-    },
-    {
-      "id": "53cf65938fb6dec0",
-      "title": "EP:P9_A(2020)0009: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0009/2020 - 2020/0902(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_A(2020)0009",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-18",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
-        "EUR-Lex",
-        "EU",
-        "law",
-        "Other"
+        "law"
       ]
     }
   ],
@@ -223,9 +223,9 @@
     "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-18.md"
   },
   "signal_counts": {
-    "posts": 27,
+    "posts": 30,
     "reports": 2,
-    "digest_items": 46,
-    "timeline_events": 0
+    "digest_items": 72,
+    "timeline_events": 46
   }
 }
