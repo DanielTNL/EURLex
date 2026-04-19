@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T06:07:33.623649+00:00",
+  "generated_at": "2026-04-19T10:46:25.341175+00:00",
   "latest_end_date": "2026-04-19",
   "items": [
     {
@@ -38,16 +38,16 @@
         "daily",
         "AI & Digital",
         "CMU & Financial Markets",
+        "Cybersecurity",
         "Other",
-        "Defence & Security",
-        "De-risking & Investment",
-        "Space/EO"
+        "Space/EO",
+        "Defence & Security"
       ],
       "important_documents": [
         {
           "id": "rep-2026-04-19-b06f635a52d0f53f",
           "title": "Daily Digest — 2026-04-19",
-          "summary": "_Items in last 24h: 76_ 1. EUR-Lex - ST_16833_2025_INIT - EN - EUR-Lex Bron: eur-lex.europa.eu · Datum: 2026-04-19T05:54:33.010647+00:00 Programma: Other/NA",
+          "summary": "_Items in last 24h: 78_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-04-19T10:38:44.916053+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-19.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,9 +86,9 @@
             "AI & Digital"
           ],
           "tags": [
-            "law",
             "AI & Digital",
             "EUR-Lex",
+            "law",
             "EU"
           ]
         },
@@ -104,9 +104,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
             "EUR-Lex",
+            "law",
             "EU"
           ]
         },
@@ -122,9 +122,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
             "EUR-Lex",
+            "law",
             "EU"
           ]
         }
@@ -142,9 +142,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
             "EUR-Lex",
+            "law",
             "EU"
           ]
         },
@@ -160,9 +160,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
             "EUR-Lex",
+            "law",
             "EU"
           ]
         },
@@ -178,10 +178,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "Other",
             "EUR-Lex",
-            "EU"
+            "law",
+            "EU",
+            "Other"
           ]
         },
         {
@@ -196,10 +196,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "Other",
             "EUR-Lex",
-            "EU"
+            "law",
+            "EU",
+            "Other"
           ]
         },
         {
@@ -214,10 +214,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "Other",
             "EUR-Lex",
-            "EU"
+            "law",
+            "EU",
+            "Other"
           ]
         },
         {
@@ -232,10 +232,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "Other",
             "EUR-Lex",
-            "EU"
+            "law",
+            "EU",
+            "Other"
           ]
         }
       ],
@@ -650,8 +650,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "external",
-            "De-risking & Investment"
+            "De-risking & Investment",
+            "external"
           ]
         },
         {
@@ -666,8 +666,8 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "external",
-            "De-risking & Investment"
+            "De-risking & Investment",
+            "external"
           ]
         }
       ],
