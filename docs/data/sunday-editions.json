@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T05:39:08.287026+00:00",
+  "generated_at": "2026-04-22T11:07:18.781782+00:00",
   "latest_end_date": "2026-04-22",
   "items": [
     {
@@ -47,7 +47,7 @@
         {
           "id": "rep-2026-04-22-59017e7b0757f08d",
           "title": "Daily Digest — 2026-04-22",
-          "summary": "_Items in last 24h: 87_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-04-22T05:24:32.296348+00:00 Programma: Other/NA",
+          "summary": "_Items in last 24h: 102_ 1. CELEX:02014R0596-20260605: Regulation (EU) No 596/2014 of the European Parliament and of the Council of 16 April 2014 on market abuse (market abuse regulation) and repealing Directive 2003/6/EC of the European Parliament and of the Council and Commission Directives 2003/124/EC, 2003/125/EC and 2004/72/EC (Text with EEA relevance) Bron: eur-lex.europa.eu · Datum: 2026-04-22T11:02:39.337448+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-22.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,10 +86,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law",
+            "AI & Digital"
           ]
         },
         {
@@ -104,10 +104,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "Defence & Security",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law",
+            "Defence & Security"
           ]
         },
         {
@@ -122,10 +122,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "Defence & Security",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law",
+            "Defence & Security"
           ]
         }
       ],
@@ -142,10 +142,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "Defence & Security",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law",
+            "Defence & Security"
           ]
         },
         {
@@ -160,10 +160,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "Defence & Security",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law",
+            "Defence & Security"
           ]
         },
         {
@@ -179,9 +179,9 @@
           ],
           "tags": [
             "Other",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -197,9 +197,9 @@
           ],
           "tags": [
             "Other",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -215,9 +215,9 @@
           ],
           "tags": [
             "Other",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -233,9 +233,9 @@
           ],
           "tags": [
             "Other",
-            "law",
             "EU",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         }
       ],
@@ -259,22 +259,9 @@
         {
           "title": "Requested Weekly Voice Brief — 2026-04-08 to 2026-04-14",
           "body": "This is your weekly European policy voice briefing for 2026-04-08 to 2026-04-14. The main developments this week were: EUR-Lex Daily Digest — 2026-04-14; Daily Digest — 2026-04-14; EUR-Lex Daily Digest — 2026-04-13; Daily Digest — 2026-04-13. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026… Source: EURLex reports, 2026-04-14."
-        },
-        {
-          "title": "OJ:L_202600693: Commission Implementing Regulation (EU) 2026/693 of 19 March 2026 amending Implementing Regulation (EU)…",
-          "body": "OJ:L_202600693: Commission Implementing Regulation (EU) 2026/693 of 19 March 2026 amending Implementing Regulation (EU) 2023/1695 as regards new testing specifications, a set of r… Source: Timeline, 2026-04-14."
-        },
-        {
-          "title": "OJ:C_202601521: P10_TA(2025)0212 – Role of EU policies in shaping the European Sport Model – European Parliament resolu…",
-          "body": "OJ:C_202601521: P10_TA(2025)0212 – Role of EU policies in shaping the European Sport Model – European Parliament resolution of 7 October 2025 on the role of EU policies in shaping… Source: Timeline, 2026-04-14."
-        },
-        {
-          "title": "OJ:C_202601527: P10_TA(2025)0227 – The role of simple tax rules and tax fragmentation in European competitiveness – Eur…",
-          "body": "OJ:C_202601527: P10_TA(2025)0227 – The role of simple tax rules and tax fragmentation in European competitiveness – European Parliament resolution of 9 October 2025 on the role of… Source: Timeline, 2026-04-14."
         }
       ],
       "categories": [
-        "Other/NA",
         "daily",
         "weekly"
       ],
@@ -325,33 +312,33 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600693",
-          "title": "OJ:L_202600693: Commission Implementing Regulation (EU) 2026/693 of 19 March 2026 amending Implementing Regulation (EU) 2023/1695 as regards new testing specifications, a set of reduced specifications and transitional measures",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600693",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-04-14",
+          "id": "rep-2026-04-13-9e353d36be44944f",
+          "title": "Daily Digest — 2026-04-13",
+          "summary": "_Items in last 24h: 67_ 1. CONSIL:PE_17_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2014/59/EU AS REGARDS EARLY INTERVENTION MEASURES, CONDITIONS FOR RESOLUTION AND FUNDING OF RESOLUTION ACTION AND DIRECTIVE 2014/24/EU AS REGARDS VALUATION SERVICES IN RESOLUTION Bron: eur-lex.europa.eu · Datum: 2026-04-13T11:17:04.303147+00:00 Programma: Other/NA Link",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-13.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-13",
           "categories": [
-            "Other/NA"
+            "daily"
           ],
           "tags": [
-            "Other/NA"
+            "daily"
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601521",
-          "title": "OJ:C_202601521: P10_TA(2025)0212 – Role of EU policies in shaping the European Sport Model – European Parliament resolution of 7 October 2025 on the role of EU policies in shaping the European Sport Model (2025/2035(INI))",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601521",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-04-14",
+          "id": "rep-2026-04-13-3236ca6a280f6d53",
+          "title": "EUR-Lex Daily Digest — 2026-04-13",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-13.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-13",
           "categories": [
-            "Other/NA"
+            "daily"
           ],
           "tags": [
-            "Other/NA"
+            "daily"
           ]
         }
       ],
@@ -387,63 +374,63 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600693",
-          "title": "OJ:L_202600693: Commission Implementing Regulation (EU) 2026/693 of 19 March 2026 amending Implementing Regulation (EU) 2023/1695 as regards new testing specifications, a set of reduced specifications and transitional measures",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600693",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-04-14",
+          "id": "rep-2026-04-13-9e353d36be44944f",
+          "title": "Daily Digest — 2026-04-13",
+          "summary": "_Items in last 24h: 67_ 1. CONSIL:PE_17_2026_INIT: DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL AMENDING DIRECTIVE 2014/59/EU AS REGARDS EARLY INTERVENTION MEASURES, CONDITIONS FOR RESOLUTION AND FUNDING OF RESOLUTION ACTION AND DIRECTIVE 2014/24/EU AS REGARDS VALUATION SERVICES IN RESOLUTION Bron: eur-lex.europa.eu · Datum: 2026-04-13T11:17:04.303147+00:00 Programma: Other/NA Link",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-13.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-13",
           "categories": [
-            "Other/NA"
+            "daily"
           ],
           "tags": [
-            "Other/NA"
+            "daily"
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601521",
-          "title": "OJ:C_202601521: P10_TA(2025)0212 – Role of EU policies in shaping the European Sport Model – European Parliament resolution of 7 October 2025 on the role of EU policies in shaping the European Sport Model (2025/2035(INI))",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601521",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-04-14",
+          "id": "rep-2026-04-13-3236ca6a280f6d53",
+          "title": "EUR-Lex Daily Digest — 2026-04-13",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-13.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-13",
           "categories": [
-            "Other/NA"
+            "daily"
           ],
           "tags": [
-            "Other/NA"
+            "daily"
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601549",
-          "title": "OJ:C_202601549: P10_TA(2025)0218 – Draft amending budget No 2/2025: update of revenue (own resources) and adjustments to expenditure – European Parliament resolution of 8 October 2025 on the Council position on Draft amending budget No 2/2025 of the European Union for the financial year 2025 - Update of revenue (own resources) and adjustments to expenditure (12353/2025 – C10-0209/2025 – 2025/0206(BUD))",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601549",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-04-14",
+          "id": "rep-2026-04-12-c0e9023ed6d043e5",
+          "title": "Daily Digest — 2026-04-12",
+          "summary": "_Items in last 24h: 80_ 1. CELEX:32026M12305: Commission Decision of 12/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12305 - BRIDGEPOINT / POLARIS MANAGEMENT / PDSVISION) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic) Bron: eur-lex.europa.eu · Datum: 2026-04-12T10:37:55.804931+00:00 Programma: Other/NA Link",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-12.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-12",
           "categories": [
-            "Other/NA"
+            "daily"
           ],
           "tags": [
-            "Other/NA"
+            "daily"
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601527",
-          "title": "OJ:C_202601527: P10_TA(2025)0227 – The role of simple tax rules and tax fragmentation in European competitiveness – European Parliament resolution of 9 October 2025 on the role of simple tax rules and tax fragmentation in European competitiveness (2024/2118(INI))",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202601527",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-04-14",
+          "id": "rep-2026-04-12-ce386b614048eff5",
+          "title": "EUR-Lex Daily Digest — 2026-04-12",
+          "summary": "## Executive Summary",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-12.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-12",
           "categories": [
-            "Other/NA"
+            "daily"
           ],
           "tags": [
-            "Other/NA"
+            "daily"
           ]
         }
       ],
