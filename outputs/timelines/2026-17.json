@@ -1,11 +1,356 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-04-19T05:50:29.041847+00:00",
-    "end": "2026-04-26T05:50:29.041847+00:00",
+    "start": "2026-04-19T10:42:41.077580+00:00",
+    "end": "2026-04-26T10:42:41.077580+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-04-26T10:42:39.399504+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:36.897981+00:00",
+      "title": "Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:34.245350+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:31.834485+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:29.107559+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:26.118542+00:00",
+      "title": "Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:23.485599+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:21.116690+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:18.442441+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:16.486909+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:14.289805+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:12.367364+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:09.968777+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:07.766014+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:05.524194+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:03.684385+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:42:01.426494+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:59.448141+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:57.290270+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:54.870460+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:52.797213+00:00",
+      "title": "Help - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:50.981064+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:46.967147+00:00",
+      "title": "Feedback",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:45.055712+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:41.729827+00:00",
+      "title": "My searches",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-26T10:41:39.017603+00:00",
+      "title": "Redirecting To ECAS",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 26 Apr 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
     {
       "date": "2026-04-26T05:50:27.502610+00:00",
       "title": "IMMC:LET/2026/04171: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Jorge Serrote, Chief of Staff, Cabinet of the Secretary of State for Energy, regarding a request for an ECB opinion on a draft decree-law transposing Directive (EU) 2023/1791 of the European Parliament and of the Council of 13 September 2023 on energy efficiency and conferring on Banco de Portugal the responsibility for supervising compliance by credit institutions with certain requirements in relation to credit products aimed at financing energy efficiency measures",
@@ -1609,6 +1954,32 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 25 Apr 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-24T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. European Youth Week 2026 takes place from 24 April to 1 May 2026. It promotes youth engagement, participation, and active citizenship across Europe and beyond. This",
+      "amounts": []
+    },
+    {
+      "date": "2026-04-24T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. European Youth Week 2026 takes place from 24 April to 1 May 2026. It promotes youth engagement, participation, and active citizenship across Europe and beyond. This",
       "amounts": []
     },
     {
@@ -6852,642 +7223,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "## EU competition watch: Commission non-opposition in EFMS / Blackstone / Urbaser (Case M.12371) **What happened?** On **19 April 2026**, the European Commission issued a **decision of non-opposition** to a notified concentration in **Case M.12371 – EFMS / BLACKSTONE /",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:38:44.916053+00:00",
-      "title": "European Economic and Social Committee",
-      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## European Economic and Social Committee: what it signals for EU innovation, defence and capital markets (and what to watch next) **What happened and why it matters** The European Economic and Social Committee (EESC) has published an institutional page on",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:38:37.534373+00:00",
-      "title": "European Court of Auditors",
-      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## European Court of Auditors: what it is, why it matters, and how to read its signals for EU innovation, defence and markets If you track EU innovation, defence procurement, and capital markets, you’ll know the pattern: money gets allocated,",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:38:30.935880+00:00",
-      "title": "European Central Bank",
-      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## ECB: the “boring” bit that moves markets — and why innovation and defence funding care **What happened and why it matters** The European Central Bank (ECB) page you provided is a **directory-style hub** for the ECB’s institutional materials. In",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:38:23.333310+00:00",
-      "title": "Court of Justice of the European Union",
-      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## CJEU on EUR-Lex: a small change with a big “plumbing” message for EU legal tech **What happened and why it matters** The Court of Justice of the European Union (CJEU) page on EUR-Lex has been updated to include an",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:38:15.482769+00:00",
-      "title": "European Commission",
-      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## European Commission (EUR-Lex) — a small change with a big “plumbing” angle **What happened and why it matters** The European Commission page on EUR-Lex is currently highlighting an **experimental set of features** that users can enable to help improve",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:38:08.355519+00:00",
-      "title": "Council",
-      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Council (EUR-Lex): experimental features land — small change, real implications for how you track EU law **What happened and why it matters** A new page on the **Council** section of **EUR-Lex** is prompting users to enable **“experimental features”** on",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:38:01.945136+00:00",
-      "title": "European Council",
-      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## European Council page update: a small change with a big “how we work” signal **What happened?** The European Council’s EUR-Lex landing page now includes a prompt about **“experimental features”** that users can enable on EUR-Lex. The message is clear:",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:54.775499+00:00",
-      "title": "European Parliament",
-      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## European Parliament: EUR-Lex “experimental features” — a small change with a big downstream impact **What happened and why it matters** The European Parliament page you’re tracking is currently showing a notice about **experimental features on EUR-Lex**—the EU’s main legal",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:47.790511+00:00",
-      "title": "Summaries of EU legislation",
-      "url": "https://eur-lex.europa.eu/browse/summaries.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Summaries of EU legislation: a small change with a big “how you find the rules” impact **What happened and why it matters** EUR-Lex has published (and highlighted) an updated page describing **“Summaries of EU legislation”**—short, plain-language explanations of key",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:40.957468+00:00",
-      "title": "Lawmaking procedures",
-      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "## Lawmaking procedures: the EU’s “how it’s made” dashboard (and why finance people should care) If you’ve ever wondered why an EU rule takes so long to land—or why the same proposal seems to bounce between institutions like a pinball—you’re",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:32.680466+00:00",
-      "title": "EFTA documents",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "## EFTA documents: the quiet machinery behind the EEA’s “same rules, different flags” (19 Apr 2026) If you track EU innovation, defence and capital markets, you already know the headline story: EU law moves markets. But there’s a second story",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:25.855823+00:00",
-      "title": "Preparatory documents",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Preparatory documents: the quiet infrastructure behind EU innovation, defence and capital markets If you follow EU policy and finance, you’ll know the headlines are only the visible part of the machine. What’s less visible—but often more consequential—is the *paper",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:15.680927+00:00",
-      "title": "International agreements",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## International agreements: the quiet machinery behind EU innovation, defence and markets **What happened (and what it means):** EUR-Lex has published (and continues to curate) a dedicated collection page on **EU international agreements**—legally binding arrangements between the EU and non-EU",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:07.529878+00:00",
-      "title": "Consolidated texts",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Consolidated texts: the unglamorous update that keeps EU innovation and capital markets legible If you track EU innovation, defence and capital markets, you already know the real work is often done in the footnotes: amendments, corrigenda, and “as applicable",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:37:00.536177+00:00",
-      "title": "Legal acts",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Legal acts: EUR-Lex quietly upgrades the way EU law is found (and why you should care) If you track EU innovation, defence and capital markets, you already know the drill: the “real” work often starts after the headline press",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:53.770877+00:00",
-      "title": "Chronological overview",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Chronological overview — what it is, why it matters (and what it doesn’t) **What happened?** EUR-Lex has published an “**experimental features**” excerpt alongside a **Chronological overview** page. The key message is straightforward: these are **optional, still-under-development features** that you",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:46.878935+00:00",
-      "title": "Other treaties and protocols",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Other treaties and protocols: a small EUR-Lex tweak with a big “how we find law” impact **What happened and why it matters** EUR-Lex has published an update about **“experimental features”** that users can enable on the platform. The message",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:41.468172+00:00",
-      "title": "Accession Treaties",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Accession Treaties: the quiet plumbing behind EU expansion (and why markets should care) **What happened and why it matters** EUR-Lex has published an **accession treaties collection page**—a curated index of the treaties that govern how new countries join the",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:34.677810+00:00",
-      "title": "Founding Treaties",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Founding Treaties: a small technical update with a surprisingly big “how we govern” angle **What happened?** EUR-Lex has published an excerpted page under its “Founding Treaties” collection that’s less about treaty content and more about **how the site itself",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:28.417949+00:00",
-      "title": "Treaties currently in force",
-      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Treaties currently in force — the unglamorous backbone of EU innovation, defence and capital markets **What happened and why it matters** EUR-Lex has published (and helpfully surfaced) a page listing **“Treaties currently in force”**—a reminder that, for all the",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:21.893271+00:00",
-      "title": "Help - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/content/help.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EUR-Lex “Help” page adds experimental features — small change, real implications for how EU law is accessed If you track EU innovation, defence, or capital markets, you’ll know the unglamorous truth: a lot of decision-making starts with finding the",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:14.800725+00:00",
-      "title": "EU law - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/homepage.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EUR-Lex “experimental features” — a small interface change with real downstream effects (19 Apr 2026) **What happened and why it matters** EUR-Lex has published a short notice inviting users to enable **experimental features** on the platform. The message is",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:36:01.389355+00:00",
-      "title": "Feedback",
-      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Feedback: EUR-Lex “Experimental Features” — a small change with big downstream effects **What happened and why it matters** EUR-Lex has published a page inviting users to **enable “experimental features”** on the platform. The message is refreshingly candid: these features",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:35:54.325670+00:00",
-      "title": "EU law - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EUR-Lex gets a “beta” makeover — and that matters for how fast EU finance and defence intelligence travels If you track EU innovation, defence and capital markets, you live and die by access to legal text: directives, case-law, Official",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:35:48.853713+00:00",
-      "title": "My searches",
-      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## My searches: a small change with a surprisingly big “process” signal for EU policy watchers **What happened and why it matters** EUR-Lex has surfaced an “experimental features” list tied to its **My searches** functionality. In plain terms: users can",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T10:35:41.567734+00:00",
-      "title": "Redirecting To ECAS",
-      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Redirecting To ECAS: A Small Technical Glitch With Big Policy Consequences **What happened:** The provided “ARTICLE_TEXT” doesn’t contain policy content. Instead, it shows an access barrier: *“This document … requires ECAS authentication”* and instructs the user to click **“Proceed”**.",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:54:33.010647+00:00",
-      "title": "EUR-Lex - ST_16833_2025_INIT - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_16833_2025_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Council moves to reshape how rail capacity is allocated across the single European railway area (and why capital markets should care) **What happened?** On **19 April 2026**, the Council published its **position at first reading** on a proposed **Regulation**",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:54:20.530109+00:00",
-      "title": "EUR-Lex - ST_17037_2025_INIT - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_17037_2025_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Council position kicks off a new EU ruleset for “certain new genomic techniques” — and it’s a reminder that innovation policy starts in the lab, not the pitch deck **What happened (and why it matters)** On **19 April 2026**,",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:54:08.791403+00:00",
-      "title": "EUR-Lex - PE_18_2026_INIT - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3APE_18_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EUR-Lex goes “beta”: an experimental interface update (and what it signals for EU policy tracking) If you’ve ever tried to keep up with EU innovation, defence and capital markets policy, you’ll know the real bottleneck isn’t just the substance—it’s",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:53:56.715648+00:00",
-      "title": "EUR-Lex - 52026PC0162 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0162",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "## Denmark’s RRF tweak: 12 measures reshuffled, climate share nudged, and the clock keeps ticking (EUR-Lex COM(2026) 162) **What happened?** The European Commission has tabled a **proposal for a Council Implementing Decision (COM(2026) 162 final, 10 April 2026)** to **amend",
-      "amounts": [
-        {
-          "amount": 1781489765.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 1625890885.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 0.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 417256930.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-04-19T05:53:42.273737+00:00",
-      "title": "CONSIL:ST_8132_2026_INIT: Draft amending budget No 1 to the general budget 2026: Entering the surplus of the financial year 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8132_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## CONSIL:ST_8132_2026_INIT — Draft amending budget No 1 to the general budget 2026: entering the surplus of the financial year 2025 (19 Apr 2026) ### What happened—and why it matters The Council has tabled **Draft amending budget No 1 to",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:53:28.200556+00:00",
-      "title": "CELEX:52026SC0113: COMMISSION STAFF WORKING DOCUMENT Updated climate and digital tagging of the Recovery and Resilience Plan of Denmark Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Denmark",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0113",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Denmark’s RRP gets a climate + digital “tag” refresh — and the money follows the labels (CELEX:52026SC0113) **What happened and why it matters** The European Commission has published a **Commission Staff Working Document** updating the **climate and digital tagging**",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:53:17.071005+00:00",
-      "title": "CELEX:52026DC0450: DRAFT AMENDING BUDGET No 1 TO THE GENERAL BUDGET 2026 ENTERING THE SURPLUS OF THE FINANCIAL YEAR 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0450",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Draft Amending Budget No 1/2026: the EU’s 2025 surplus finds a new home (and why markets should care) **What happened:** On **19 April 2026**, the Commission published **CELEX:52026DC0450**, a **draft amending budget (No 1) to the General Budget 2026**,",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:53:05.449879+00:00",
-      "title": "CELEX:52026PC0130: Proposal for a COUNCIL DECISION on the position to be taken on behalf of the European Union within the CETA Joint Committee established under the Comprehensive Economic and Trade Agreement (CETA) between Canada, of the one part, and the European Union and its Member States, of the other part, as regards the adoption of a decision concerning the inclusion of active pharmaceutical ingredients as the medicinal products or drugs listed in paragraph 2 of the Annex 1 to the Protocol on the mutual recognition of the compliance and enforcement programme regarding good manufacturing practices for pharmaceutical products",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0130",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EU–Canada trade tweak: active pharmaceutical ingredients (APIs) move closer to mutual recognition (CETA) **What happened and why it matters** The European Commission has published a **proposal for a Council Decision** setting out the **EU position in the CETA Joint",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:52:54.210998+00:00",
-      "title": "EUR-Lex - ST_8126_2026_ADD_1 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_8126_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Denmark’s RRP tweak: a small legal annex with big downstream consequences for EU capital allocation **What happened?** A new EUR-Lex document (an **annex** to a **Council Implementing Decision**) has been published: **ST_8126_2026_ADD_1**. It is explicitly described as an **annex",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:52:41.857946+00:00",
-      "title": "EUR-Lex - 2026_88 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_88",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Denmark’s RRP assessment gets amended — a small procedural move with real downstream effects If you’ve been tracking EU innovation and defence financing, you’ll know the “capital markets meets real-economy delivery” story often runs through a less glamorous channel:",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:52:30.175951+00:00",
-      "title": "CONSIL:ST_8120_2026_INIT: Proposal for a COUNCIL RECOMMENDATION on a European Union framework for science diplomacy - Second Presidency compromise text",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8120_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## CONSIL:ST_8120_2026_INIT — EU framework for science diplomacy: the “second presidency compromise” that could quietly reshape innovation outreach **What happened (and why it matters)** A new **compromise text** has been circulated for a **Council Recommendation** on establishing a **European Union",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:52:18.286493+00:00",
-      "title": "CONSIL:ST_7559_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2019/2088 on sustainability-related disclosures in the financial services sector (SFDR), Regulation (EU) No 1286/2014 on key information documents for packaged retail and insurance-based investment products (PRIIPs) and repealing Commission Delegated Regulation (EU) 2022/1288 - [15751/25 - COM(2025)841final] - Opinion on the application of the Principles of Subsidiarity and Proportionality",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7559_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EU capital markets meets sustainability disclosure: CONSIL opinion tees up SFDR/PRIIPs tweaks (and a compliance reality check) **What happened and why it matters** On **19 April 2026**, the Council’s legal process published an **opinion on the application of the",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:52:07.314746+00:00",
-      "title": "CONSIL:ST_17102_2025_INIT: Position of the Council at first reading with a view to the adoption of a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the production and marketing of forest reproductive material, amending Regulations (EU) 2016/2031 and (EU) 2017/625 of the European Parliament and of the Council and repealing Council Directive 1999/105/EC (FRM Regulation)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_17102_2025_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Forest reproductive material gets a new EU rulebook (and a clearer market) — what it means for innovation, compliance and capital **What happened and why it matters** On **19 April 2026**, the Council published its **position at first reading**",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:51:57.084679+00:00",
-      "title": "CONSIL:ST_8212_2026_INIT: The Common Agricultural Policy after 2027 – Key design choices for income support - Policy debate",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8212_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## CONSIL:ST_8212_2026_INIT — CAP after 2027: key design choices for income support (policy debate) **What happened and why it matters** On **19 April 2026**, the Council’s debate draft **CONSIL:ST_8212_2026_INIT** set out **key design choices for income support under the Common",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:51:46.452366+00:00",
-      "title": "CELEX:32026M12373: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12373 - CPP INVESTMENTS / I SQUARED / INKIA ENERGY) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12373",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EU competition green light: CPP Investments / I Squared / Inkia Energy cleared (31 March 2026) **What happened?** On **31/03/2026**, the European Commission adopted a decision declaring a specific merger/concentration **compatible with the common market** under **Council Regulation (EC)",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:51:36.323737+00:00",
-      "title": "CELEX:32026M12332: Commission Decision of 31/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12332 - SK CAPITAL / SWIXX BIOPHARMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12332",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EU competition watch: SK Capital’s nod for Swixx Biopharma—what it signals for innovation and capital **What happened?** On **31 March 2026**, the European Commission adopted a decision declaring a concentration **compatible with the common market** under the EU Merger",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:51:26.136734+00:00",
-      "title": "CONSIL:ST_8218_2026_INIT: OPINION of the European Economic and Social Committee on EU market integration and efficient supervision",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## CONSIL:ST_8218_2026_INIT: EESC opinion on EU market integration and efficient supervision (19 Apr 2026) **What happened?** The European Economic and Social Committee (EESC) has issued an **opinion** on **EU market integration and efficient supervision**. The document is published under the",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:51:14.972135+00:00",
-      "title": "Decision - 31 March 2026 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026M12371",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EU competition watch: Commission clears EFMS / Blackstone / Urbaser deal (31 March 2026) — and why capital-market players should care **What happened?** On **31 March 2026**, the European Commission adopted a **decision declaring a concentration compatible with the",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:51:03.064055+00:00",
-      "title": "Decision - 27 March 2026 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026M12295",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Merger watch: Commission clears VALEA / Rockaway Media / Rockaway Arts (27 March 2026) — and what it signals for EU capital markets **What happened (the headline):** On **27 March 2026**, the European Commission adopted a **decision declaring a",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:50:49.966345+00:00",
-      "title": "Decision - 30 March 2026 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026M12367",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## EU competition watch: Commission clears a major telecom asset deal (30 March 2026) **What happened?** On **30 March 2026**, the European Commission adopted a **decision declaring a concentration compatible with the common market** under **Council Regulation (EC) No 139/2004**.",
-      "amounts": []
-    },
-    {
-      "date": "2026-04-19T05:50:36.867519+00:00",
-      "title": "Decision - 9 December 2025 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32025M12122",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "## Competition Commission nods through COMPASS / VERMAAT — what it signals for EU innovation and capital markets **What happened?** On **9 December 2025**, the European Commission adopted a **decision declaring a concentration compatible with the common market** under **Council",
       "amounts": []
     }
   ]
