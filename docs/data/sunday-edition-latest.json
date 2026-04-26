@@ -9,9 +9,7 @@
   "key_points": [
     "CONSIL:ST 5638 2026 INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (…",
     "COMMISSION STAFF WORKING DOCUMENT EVALUATION Interim Evaluation of the European Defence Fund Accompanying the document REPORT FROM THE COMM…",
-    "REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REG…",
-    "Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealin…",
-    "CONSIL:ST 5793 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81…"
+    "REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REG…"
   ],
   "sections": [
     {
@@ -32,16 +30,44 @@
     }
   ],
   "categories": [
-    "Other/NA",
-    "AI & Digital",
     "daily",
+    "AI & Digital",
     "CMU & Financial Markets",
     "Other",
     "Defence & Security",
-    "Cybersecurity",
     "De-risking & Investment"
   ],
   "important_documents": [
+    {
+      "id": "rep-2026-04-26-88e1f9b23923d5a9",
+      "title": "Daily Digest — 2026-04-26",
+      "summary": "_Items in last 24h: 76_ 1. IMMC:LET/2026/04171: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Jorge Serrote, Chief of Staff, Cabinet of the Secretary of State for Energy, regarding a request for an ECB opinion on a draft decree-law transposing Directive (EU) 2023/1791 of the European Parliament and of the Council of 13 September 2023 on energy efficiency and conferring on Banco de Portugal the responsibility for supervising compliance by credit institutions with c…",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-26.md",
+      "kind": "report",
+      "source": "EURLex reports",
+      "date": "2026-04-26",
+      "categories": [
+        "daily"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "rep-2026-04-26-b5e3df7590648e0d",
+      "title": "EUR-Lex Daily Digest — 2026-04-26",
+      "summary": "The European Banking Authority (EBA) has today published an Opinion on the European Commission’s proposed amendments to the final draft Regulatory Technical Standards (RTS)[1],[2] specifying operational risk requirements under the Capital Requirements Regulation (CRR).; The European Banking Authority (EBA) publishes today the results of its benchmarking analysis on diversity practices in the management bodies of more than 850 institutions credit institutions and investment firms across the European Union (EU).; CE…",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-04-26.md",
+      "kind": "report",
+      "source": "EURLex reports",
+      "date": "2026-04-26",
+      "categories": [
+        "daily"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
     {
       "id": "88d5350b22b7a01f",
       "title": "CONSIL:ST_5638_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI). - Presidency compromise text",
@@ -54,10 +80,10 @@
         "AI & Digital"
       ],
       "tags": [
-        "law",
-        "EU",
+        "EUR-Lex",
         "AI & Digital",
-        "EUR-Lex"
+        "law",
+        "EU"
       ]
     },
     {
@@ -72,10 +98,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
+        "EUR-Lex",
         "Defence & Security",
-        "EU",
-        "EUR-Lex"
+        "law",
+        "EU"
       ]
     },
     {
@@ -90,12 +116,14 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
+        "EUR-Lex",
         "Defence & Security",
-        "EU",
-        "EUR-Lex"
+        "law",
+        "EU"
       ]
-    },
+    }
+  ],
+  "related_documents": [
     {
       "id": "bd10c981e21028fc",
       "title": "Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealing Regulation (EU) 2018/1092 (Text with EEA relevance)",
@@ -108,10 +136,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
+        "EUR-Lex",
         "Defence & Security",
-        "EU",
-        "EUR-Lex"
+        "law",
+        "EU"
       ]
     },
     {
@@ -126,14 +154,12 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
+        "EUR-Lex",
         "Defence & Security",
-        "EU",
-        "EUR-Lex"
+        "law",
+        "EU"
       ]
-    }
-  ],
-  "related_documents": [
+    },
     {
       "id": "8b1f7e51e0b295ab",
       "title": "EP:P9_TA(2020)0021: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[2] – C9-0010/2020 – 2020/0903(NLE))",
@@ -146,10 +172,10 @@
         "Other"
       ],
       "tags": [
+        "EUR-Lex",
         "law",
         "EU",
-        "Other",
-        "EUR-Lex"
+        "Other"
       ]
     },
     {
@@ -164,10 +190,10 @@
         "Other"
       ],
       "tags": [
+        "EUR-Lex",
         "law",
         "EU",
-        "Other",
-        "EUR-Lex"
+        "Other"
       ]
     },
     {
@@ -182,10 +208,10 @@
         "Other"
       ],
       "tags": [
+        "EUR-Lex",
         "law",
         "EU",
-        "Other",
-        "EUR-Lex"
+        "Other"
       ]
     },
     {
@@ -200,46 +226,10 @@
         "Other"
       ],
       "tags": [
+        "EUR-Lex",
         "law",
         "EU",
-        "Other",
-        "EUR-Lex"
-      ]
-    },
-    {
-      "id": "5e009b6ee3db9857",
-      "title": "CONSIL:ST_8216_2026_INIT: OPINION OF THE EUROPEAN CENTRAL BANK of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_8216_2026_INIT",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-26",
-      "categories": [
         "Other"
-      ],
-      "tags": [
-        "law",
-        "EU",
-        "Other",
-        "EUR-Lex"
-      ]
-    },
-    {
-      "id": "51e6523769c9d0ac",
-      "title": "PI_COM:Ares(2026)1948990: 2026 Review report on the implementation and enforcement of the European Parliament and Council Regulation (EU) 2022/2560 of 14 December 2022 on foreign subsidies distorting the internal market",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)1948990",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-04-26",
-      "categories": [
-        "De-risking & Investment"
-      ],
-      "tags": [
-        "law",
-        "EU",
-        "De-risking & Investment",
-        "EUR-Lex"
       ]
     }
   ],
