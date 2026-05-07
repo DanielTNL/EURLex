@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T06:06:43.565569+00:00",
+  "generated_at": "2026-05-07T11:52:38.368483+00:00",
   "latest_end_date": "2026-05-07",
   "items": [
     {
@@ -47,7 +47,7 @@
         {
           "id": "rep-2026-05-07-dea7294e9825f322",
           "title": "Daily Digest — 2026-05-07",
-          "summary": "_Items in last 24h: 67_ 1. CONSIL:ST_8631_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EC) No 883/2004 on the coordination of social security systems and regulation (EC) No 987/2009 laying down the procedure for implementing Regulation (EC) No 883/2004 (Text with relevance for the EEA and Switzerland) - Letter to the Chair of the European Parliament Committee on Employment and Social Affairs (EMPL) Bron: eur-lex.europa.eu · Datum: 2026-05-07T05:54:55.84470…",
+          "summary": "_Items in last 24h: 95_ 1. CONSIL:ST_8903_2026_INIT: Proposal for a COUNCIL IMPLEMENTING DECISION authorising Sweden to apply reduced rates of excise duty to gas oil and unleaded petrol used as motor fuels, pursuant to Article 19 of Directive 2003/96/EC Bron: eur-lex.europa.eu · Datum: 2026-05-07T11:47:25.000707+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-07.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,9 +86,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
+            "Defence & Security",
+            "EU",
             "EUR-Lex"
           ]
         },
@@ -104,9 +104,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
+            "Defence & Security",
+            "EU",
             "EUR-Lex"
           ]
         },
@@ -122,9 +122,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
+            "Defence & Security",
+            "EU",
             "EUR-Lex"
           ]
         }
@@ -142,9 +142,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
+            "Defence & Security",
+            "EU",
             "EUR-Lex"
           ]
         },
@@ -160,10 +160,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
+            "Other",
             "law",
-            "EUR-Lex",
-            "Other"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -178,10 +178,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
+            "Other",
             "law",
-            "EUR-Lex",
-            "Other"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -196,10 +196,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
+            "Other",
             "law",
-            "EUR-Lex",
-            "Other"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -214,10 +214,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
+            "Other",
             "law",
-            "EUR-Lex",
-            "Other"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -232,10 +232,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
+            "Other",
             "law",
-            "EUR-Lex",
-            "Other"
+            "EU",
+            "EUR-Lex"
           ]
         }
       ],
@@ -473,10 +473,10 @@
         }
       ],
       "categories": [
-        "AI & Digital",
-        "De-risking & Investment",
         "daily",
+        "AI & Digital",
         "weekly",
+        "De-risking & Investment",
         "CMU & Financial Markets"
       ],
       "important_documents": [
@@ -642,19 +642,21 @@
           ]
         },
         {
-          "id": "2af845d5ef749226",
-          "title": "WK 5253 2023 INIT",
-          "summary": "MS questions and written comments on the proposal for a draft Regulation on the Critical Raw Materials Act",
-          "url": "https://data.consilium.europa.eu/doc/document/WK-5253-2023-INIT/en/pdf",
+          "id": "6d74a437c2a1b5a6",
+          "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
+          "summary": "The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published their spring 2026 Joint Committee update on risks and vulnerabilities in the EU financial system. The update focuses on the challenges arising from ongoing geopolitical tens…",
+          "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-spring-risk-update-highlights-geopolitical-pressures-and-rising-private-finance-risks",
           "kind": "post",
-          "source": "External",
+          "source": "European Banking Authority",
           "date": "2026-04-06",
           "categories": [
-            "De-risking & Investment"
+            "CMU & Financial Markets"
           ],
           "tags": [
-            "external",
-            "De-risking & Investment"
+            "EU",
+            "CMU & Financial Markets",
+            "EBA",
+            "regulation"
           ]
         }
       ],
