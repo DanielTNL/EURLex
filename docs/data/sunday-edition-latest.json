@@ -33,9 +33,9 @@
     "Other/NA",
     "daily",
     "Defence & Security",
+    "CMU & Financial Markets",
     "AI & Digital",
     "Other",
-    "CMU & Financial Markets",
     "De-risking & Investment",
     "Cybersecurity"
   ],
@@ -43,7 +43,7 @@
     {
       "id": "rep-2026-05-10-ab7baa4fe15f7cdb",
       "title": "Daily Digest — 2026-05-10",
-      "summary": "_Items in last 24h: 76_ 1. CELEX:02012A1013(01)-20260324: Monetary Agreement between the European Union and the Principality of Monaco Bron: eur-lex.europa.eu · Datum: 2026-05-10T06:14:34.259337+00:00 Programma: Other/NA",
+      "summary": "_Items in last 24h: 76_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-05-10T11:00:00.644711+00:00 Programma: Other/NA",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-10.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -82,10 +82,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
-        "Defence & Security"
+        "Defence & Security",
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -100,10 +100,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
-        "Defence & Security"
+        "Defence & Security",
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -118,10 +118,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
-        "Defence & Security"
+        "Defence & Security",
+        "EUR-Lex",
+        "EU"
       ]
     }
   ],
@@ -138,10 +138,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
-        "Defence & Security"
+        "Defence & Security",
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -156,10 +156,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
+        "law",
         "EUR-Lex",
-        "Other",
-        "law"
+        "EU",
+        "Other"
       ]
     },
     {
@@ -174,10 +174,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
+        "law",
         "EUR-Lex",
-        "Other",
-        "law"
+        "EU",
+        "Other"
       ]
     },
     {
@@ -192,10 +192,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
+        "law",
         "EUR-Lex",
-        "Other",
-        "law"
+        "EU",
+        "Other"
       ]
     },
     {
@@ -210,10 +210,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
+        "law",
         "EUR-Lex",
-        "Other",
-        "law"
+        "EU",
+        "Other"
       ]
     },
     {
@@ -228,10 +228,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
+        "law",
         "EUR-Lex",
-        "Other",
-        "law"
+        "EU",
+        "Other"
       ]
     }
   ],
