@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T06:02:43.568380+00:00",
+  "generated_at": "2026-05-10T06:25:37.361574+00:00",
   "latest_end_date": "2026-05-10",
   "items": [
     {
@@ -13,9 +13,7 @@
       "key_points": [
         "COMMISSION STAFF WORKING DOCUMENT EVALUATION Interim Evaluation of the European Defence Fund Accompanying the document REPORT FROM THE COMM…",
         "REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REG…",
-        "Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealin…",
-        "CONSIL:ST 5793 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81…",
-        "EP:P9 TA(2020)0021: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolutio…"
+        "Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealin…"
       ],
       "sections": [
         {
@@ -47,6 +45,36 @@
       ],
       "important_documents": [
         {
+          "id": "rep-2026-05-10-ab7baa4fe15f7cdb",
+          "title": "Daily Digest — 2026-05-10",
+          "summary": "_Items in last 24h: 76_ 1. CELEX:02012A1013(01)-20260324: Monetary Agreement between the European Union and the Principality of Monaco Bron: eur-lex.europa.eu · Datum: 2026-05-10T06:14:34.259337+00:00 Programma: Other/NA",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-10.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-05-10",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2026-05-10-c4842af7816e9fda",
+          "title": "EUR-Lex Daily Digest — 2026-05-10",
+          "summary": "Luis de Guindos: Deepening financial integration to support Europe’s prosperity; Euro area financial integration improves despite persistent fragmentation, ECB report shows; Financial integration and structure in the euro area; Procurement: Contract Notice: ECB – Provision of transportation services (313878-2026).; CELEX:52025DP0334: P10_TA(2025)0334 – Appointment of the Executive Director of the European Insurance and Occupational Pensions Authority (EIOPA) – European Parliament decision of 17 December 2025 on th…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-05-10.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-05-10",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
           "id": "f4719d2e6ec998c4",
           "title": "COMMISSION STAFF WORKING DOCUMENT EVALUATION Interim Evaluation of the European Defence Fund Accompanying the document REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS The European Defence Fund: supporting the development of the defence capabilities of tomorrow Interim evaluation of the European Defence Fund",
           "summary": "",
@@ -59,9 +87,9 @@
           ],
           "tags": [
             "EU",
-            "Defence & Security",
+            "EUR-Lex",
             "law",
-            "EUR-Lex"
+            "Defence & Security"
           ]
         },
         {
@@ -77,9 +105,9 @@
           ],
           "tags": [
             "EU",
-            "Defence & Security",
+            "EUR-Lex",
             "law",
-            "EUR-Lex"
+            "Defence & Security"
           ]
         },
         {
@@ -95,11 +123,13 @@
           ],
           "tags": [
             "EU",
-            "Defence & Security",
+            "EUR-Lex",
             "law",
-            "EUR-Lex"
+            "Defence & Security"
           ]
-        },
+        }
+      ],
+      "related_documents": [
         {
           "id": "681a8aad96e26277",
           "title": "CONSIL:ST_5793_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - 4-column table",
@@ -113,9 +143,9 @@
           ],
           "tags": [
             "EU",
-            "Defence & Security",
+            "EUR-Lex",
             "law",
-            "EUR-Lex"
+            "Defence & Security"
           ]
         },
         {
@@ -130,14 +160,12 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "Other",
+            "law"
           ]
-        }
-      ],
-      "related_documents": [
+        },
         {
           "id": "53cf65938fb6dec0",
           "title": "EP:P9_A(2020)0009: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0009/2020 - 2020/0902(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
@@ -150,10 +178,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "Other",
+            "law"
           ]
         },
         {
@@ -168,10 +196,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "Other",
+            "law"
           ]
         },
         {
@@ -186,10 +214,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "Other",
+            "law"
           ]
         },
         {
@@ -204,46 +232,10 @@
             "Other"
           ],
           "tags": [
+            "EU",
+            "EUR-Lex",
             "Other",
-            "EU",
-            "law",
-            "EUR-Lex"
-          ]
-        },
-        {
-          "id": "51e6523769c9d0ac",
-          "title": "PI_COM:Ares(2026)1948990: 2026 Review report on the implementation and enforcement of the European Parliament and Council Regulation (EU) 2022/2560 of 14 December 2022 on foreign subsidies distorting the internal market",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)1948990",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-05-10",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "EU",
-            "De-risking & Investment",
-            "law",
-            "EUR-Lex"
-          ]
-        },
-        {
-          "id": "96939d592604ab94",
-          "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0945",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-05-10",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "EU",
-            "De-risking & Investment",
-            "law",
-            "EUR-Lex"
+            "law"
           ]
         }
       ],
