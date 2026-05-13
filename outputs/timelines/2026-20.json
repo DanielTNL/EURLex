@@ -1,11 +1,401 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-05-06T06:10:20.583677+00:00",
-    "end": "2026-05-13T06:10:20.583677+00:00",
+    "start": "2026-05-06T12:04:13.371303+00:00",
+    "end": "2026-05-13T12:04:13.371303+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-05-13T12:04:11.900029+00:00",
+      "title": "PI_EESC:EESC-2025-01910-AS: Omnibus on small mid-caps",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-01910-AS",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-01910-AS",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:04:10.430481+00:00",
+      "title": "CELEX:52025SC6800: COMMISSION STAFF WORKING DOCUMENT accompanying the COMMISSION RECOMMENDATION on Increasing the Availability of Savings and Investment Accounts with Simplified and Advantageous Tax Treatment",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC6800",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC6800",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:04:08.818922+00:00",
+      "title": "CELEX:72024L0790MLT_202505480: Investment Services Act and Banking Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) (Amendment) Regulations, 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72024L0790MLT_202505480",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72024L0790MLT_202505480",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:04:07.209680+00:00",
+      "title": "CELEX:72024L0790MLT_202505478: Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) (Amendment) Regulations, 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72024L0790MLT_202505478",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72024L0790MLT_202505478",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:04:05.550078+00:00",
+      "title": "CELEX:52025PC0657: Proposal for a COUNCIL DECISION on the position to be taken on behalf of the European Union in the Joint Committee established by the Agreement between the European Union and the Swiss Confederation on the linking of their greenhouse gas emissions trading systems as regards amending Annex I to the Agreement",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025PC0657",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025PC0657",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:04:04.155619+00:00",
+      "title": "CONSIL:ST_14801_2025_ADD_1: ANNEX to the Proposal for a Council Decision on the position to be taken on behalf of the European Union in the Joint Committee established by the Agreement between the European Union and the Swiss Confederation on the linking of their greenhouse gas emissions trading systems as regards amending Annex I to the Agreement",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_14801_2025_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_14801_2025_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:04:02.621791+00:00",
+      "title": "CONSIL:ST_15751_2025_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2019/2088 on sustainability-related disclosures in the financial services sector (SFDR), Regulation (EU) No 1286/2014 on key information documents for packaged retail and insurance-based investment products (PRIIPs) and repealing Commission Delegated Regulation (EU) 2022/1288",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15751_2025_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15751_2025_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:04:01.092411+00:00",
+      "title": "CELEX:52025PC0841: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2019/2088 on sustainability-related disclosures in the financial services sector (SFDR), Regulation (EU) No 1286/2014 on key information documents for packaged retail and insurance-based investment products (PRIIPs) and repealing Commission Delegated Regulation (EU) 2022/1288",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025PC0841",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025PC0841",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:59.718974+00:00",
+      "title": "CELEX:52025SC0838: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT accompanying the Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) 2019/2088 on sustainability-related disclosures in the financial services sector (SFDR), Regulation (EU) No 1286/2014 on key information documents for packaged retail and insurance-based investment products (PRIIPs) and repealing Commission Delegated Regulation (EU) 2022/1288",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0838",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0838",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:58.067534+00:00",
+      "title": "CELEX:52025SC0367: COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE EUROPEAN COUNCIL, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Enhancing the capacity of the EU supplementary pension sector to improve retirement income and supply long-term capital to the EU economy",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0367",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0367",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:56.547672+00:00",
+      "title": "CONSIL:ST_15751_2025_ADD_1: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT accompanying the Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) 2019/2088 on sustainability-related disclosures in the financial services sector (SFDR), Regulation (EU) No 1286/2014 on key information documents for packaged retail and insurance-based investment products (PRIIPs) and repealing Commission Delegated Regulation (EU) 2022/1288",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15751_2025_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15751_2025_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:55.140836+00:00",
+      "title": "PI_COM:C(2025)7810: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2017/567 as regards the determination of what constitutes a liquid market for equity instruments, the obligation to provide market data on a reasonable commercial basis, the size specific to the instrument for the purposes of obligations for systematic internalisers, and the definition of and disclosure for post-trade risk reduction services",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2025)7810",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2025)7810",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:53.704701+00:00",
+      "title": "CELEX:52025AB0038: Opinion of the European Central Bank of 25 November 2025 on the prevention of conflicts of interest among the staff of the Central Bank of Cyprus (CON/2025/38)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025AB0038",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025AB0038",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:52.144188+00:00",
+      "title": "CONSIL:ST_15625_2025_ADD_1: Draft DECISION OF THE JOINT COMMITTEE ESTABLISHED BY THE AGREEMENT BETWEEN THE EUROPEAN UNION AND THE SWISS CONFEDERATION ON THE LINKING OF THEIR GREENHOUSE GAS EMISSIONS TRADING SYSTEMS as regards the amendment of Annex I to the Agreement",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15625_2025_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15625_2025_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:50.534462+00:00",
+      "title": "CELEX:52025DC0735: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL on the functioning of the European carbon market in 2024",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025DC0735",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025DC0735",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:48.904558+00:00",
+      "title": "PI_COM:SEC(2025)943:",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:SEC(2025)943",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:SEC(2025)943",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:47.589615+00:00",
+      "title": "PI_COM:Ares(2025)10721957: COMMISSION DELEGATED DIRECTIVE (EU) .../… amending Delegated Directive (EU) 2017/593 as regards the conditions for the provision of third-party execution and research services to investment firms that provide portfolio management or other investment or ancillary services",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2025)10721957",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2025)10721957",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:46.068969+00:00",
+      "title": "CELEX:52025SC0943: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the documents Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) No 1095/2010, No 648/2012, No 600/2014, No 909/2014, 2015/2365, 2019/1156, 2021/23, 2022/858, 2023/1114, No 1060/2009, 2016/1011, 2017/2402, 2023/2631 and 2024/3005 as regards the further development of capital market integration and supervision within the Union Proposal for DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/65/EC, 2011/61/EU and 2014/65/EU as regards the further development of capital market integration and supervision within the Union Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on settlement finality and repealing Directive 98/26/EC and amending Directive 2002/47/EC on financial collateral arrangements",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0943",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0943",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:44.538937+00:00",
+      "title": "CELEX:52025PC0942: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/65/EC, 2011/61/EU and 2014/65/EU as regards the further development of capital market integration and supervision within the Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025PC0942",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025PC0942",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:43.107757+00:00",
+      "title": "CONSIL:ST_16347_2025_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/65/EC, 2011/61/EU and 2014/65/EU as regards the further development of capital market integration and supervision within the Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16347_2025_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16347_2025_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:41.725740+00:00",
+      "title": "PI_COM:C(2026)994: COMMISSION DELEGATED DIRECTIVE (EU) .../… amending Delegated Directive (EU) 2017/593 as regards the conditions for the provision of third-party execution and research services to investment firms that provide portfolio management or other investment or ancillary services",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)994",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)994",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:40.061767+00:00",
+      "title": "CELEX:72017L0828MLT_202601512: Investment Services Rules for Investment Services Providers Part BII: Standard Licence Conditions applicable to Investment Services Licence Holders which  qualify as UCITS Management Companies",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72017L0828MLT_202601512",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72017L0828MLT_202601512",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:38.441528+00:00",
+      "title": "CELEX:52026DC0119: REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the preparedness in the EU financial sector",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0119",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0119",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:36.934754+00:00",
+      "title": "CELEX:62025CC0339: Opinion of Advocate General Campos Sánchez-Bordona delivered on 19 March 2026.###",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0339",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0339",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:35.531637+00:00",
+      "title": "CONSIL:ST_7554_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives (EU) 2009/65/EC, 2009/138/EC, 2011/61/EU, 2014/65/EU and (EU) 2016/97 as regards the Union retail investor protection rules Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) No 1286/2014 as regards the modernisation of the key information document - revised legislative financial statement",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7554_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7554_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:34.066899+00:00",
+      "title": "CONSIL:ST_7861_2026_INIT: Opinion of the European Economic and Social Committee on Sustainable Finance Disclosure Regulation review",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7861_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7861_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:31.348044+00:00",
+      "title": "PI_COM:C(2026)2152: COMMISSION DELEGATED REGULATION (EU) …/... amending Commission Delegated Regulation (EU) 2016/522 as regards the permission for trading during closed periods, the list of designated trading venues that have a significant cross-border dimension in the supervision of market abuse, and the indicators of market manipulation",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2152",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2152",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:29.305129+00:00",
+      "title": "PI_COM:C(2026)2149: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Regulation (EU) No 596/2014 of the European Parliament and of the Council as regards disclosure of inside information in protracted processes and delay of disclosure",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2149",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2149",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:26.643572+00:00",
+      "title": "CONSIL:ST_8218_2026_INIT: OPINION of the European Economic and Social Committee on EU market integration and efficient supervision",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8218_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-13T12:03:23.694849+00:00",
+      "title": "CONSIL:ST_8216_2026_INIT: OPINION OF THE EUROPEAN CENTRAL BANK of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8216_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 13 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8216_2026_INIT",
+      "amounts": []
+    },
     {
       "date": "2026-05-13T06:10:19.202994+00:00",
       "title": "CONSIL:PE_3_2026_INIT: REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on applying a generalised scheme of tariff preferences and repealing Regulation (EU) No 978/2012",
@@ -6295,227 +6685,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 07 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8950_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:55.209233+00:00",
-      "title": "CONSIL:ST_8546_2026_INIT: COUNCIL DECISION repealing Decision 2011/523/EU partially suspending the application of the Cooperation Agreement between the European Economic Community and the Syrian Arab Republic",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8546_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8546_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:53.557726+00:00",
-      "title": "CELEX:32026M12386: Commission Decision of 24/04/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12386 - ADVENT / AFK / TA / VOLUE) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12386",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12386",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:51.861424+00:00",
-      "title": "CELEX:32026M11952: Commission Decision of 09/01/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.11952 - VOLVO / SWECON) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M11952",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M11952",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:50.289824+00:00",
-      "title": "CELEX:32026M12331: Commission Decision of 30/04/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12331 - EEE / EDF RP / ME KOBIERNICE) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12331",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12331",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:48.683364+00:00",
-      "title": "CELEX:02025R1981-20260207: Commission Implementing Regulation (EU) 2025/1981 of 7 October 2025 imposing a definitive anti-dumping duty on imports of ceramic tableware and kitchenware originating in the People’s Republic of China following an expiry review pursuant to Article 11(2) of Regulation (EU) 2016/1036 of the European Parliament and of the Council",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02025R1981-20260207",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02025R1981-20260207",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:47.166561+00:00",
-      "title": "CONSIL:ST_8903_2026_INIT: Proposal for a COUNCIL IMPLEMENTING DECISION authorising Sweden to apply reduced rates of excise duty to gas oil and unleaded petrol used as motor fuels, pursuant to Article 19 of Directive 2003/96/EC",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8903_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8903_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:45.699528+00:00",
-      "title": "CELEX:62024TJ0222_INF: Judgment of the General Court (Fourth Chamber) of 24 September 2025.#KF v European Investment Bank.#Case T-222/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0222_INF",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0222_INF",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:44.068015+00:00",
-      "title": "CELEX:32026M12368: Commission Decision of 17/04/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12368 - MACQUARIE GROUP / LA CAISSE / MAPLE) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12368",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12368",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:42.442184+00:00",
-      "title": "CELEX:32026M12335: Commission Decision of 21/04/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12335 - ARMIRA / INVEST KG / AVILOO) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12335",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12335",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:40.987475+00:00",
-      "title": "CELEX:32026M12363: Commission Decision of 28/04/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12363 - GBL / CVC / RAYNER) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12363",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12363",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:39.355152+00:00",
-      "title": "CELEX:02023R2147-20260422: Council Regulation (EU) 2023/2147 of 9 October 2023 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023R2147-20260422",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023R2147-20260422",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:37.613585+00:00",
-      "title": "CELEX:02024R2642-20260421: Council Regulation (EU) 2024/2642 of 8 October 2024 concerning restrictive measures in view of Russia’s destabilising activities",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2642-20260421",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2642-20260421",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:35.945179+00:00",
-      "title": "CELEX:02023D2135-20260422: Council Decision (CFSP) 2023/2135 of 9 October 2023 concerning restrictive measures in view of activities undermining the stability and political transition of Sudan",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D2135-20260422",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D2135-20260422",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:29.482500+00:00",
-      "title": "CONSIL:ST_8265_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council establishing the Erasmus+ programme for the period 2028-2034, and repealing Regulations (EU) 2021/817 and (EU) 2021/888 - Partial general approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8265_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_8265_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:24.891233+00:00",
-      "title": "PI_COM:Ares(2026)4622284: Communication from the Commission to the European Parliament, the Council and the European Economic and Social Committee and the Committee of the Regions on a strategy supporting the Right to Stay",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)4622284",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)4622284",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:19.824848+00:00",
-      "title": "PI_COM:Ares(2026)4623964: COMMISSION DELEGATED REGULATION (EU) …/... amending Delegated Regulation (EU) 2023/2772 as regards the simplification of certain sustainability reporting standards",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)4623964",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)4623964",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-06T11:48:17.973568+00:00",
-      "title": "PI_COM:Ares(2026)4624010: COMMISSION DELEGATED REGULATION (EU) …/... supplementing Directive 2013/34/EU of the European Parliament and of the Council by establishing sustainability reporting standards for voluntary use by undertakings protected by the value chain cap",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)4624010",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)4624010",
       "amounts": []
     }
   ]
