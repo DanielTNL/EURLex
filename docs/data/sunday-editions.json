@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T06:36:10.927306+00:00",
+  "generated_at": "2026-05-15T11:56:54.333455+00:00",
   "latest_end_date": "2026-05-15",
   "items": [
     {
@@ -47,7 +47,7 @@
         {
           "id": "rep-2026-05-15-e821d21ac8852f39",
           "title": "Daily Digest — 2026-05-15",
-          "summary": "_Items in last 24h: 80_ 1. CONSIL:PE_29_2020_INIT: REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL laying down certain transitional provisions for support from the European Agricultural Fund for Rural Development (EAFRD) and from the European Agricultural Guarantee Fund (EAGF) in the years 2021 and 2022 and amending Regulations (EU) No 1305/2013, (EU) No 1306/2013 and (EU) No 1307/2013 as regards resources and application in the years 2021 and 2022 and Regulation (EU) No 1308/2013 as regards resources and…",
+          "summary": "_Items in last 24h: 80_ 1. CELEX:32026M12391: Commission Decision of 04/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12391 - OAI / SBG / SB OAI JV) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic) Bron: eur-lex.europa.eu · Datum: 2026-05-15T11:52:11.518999+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-15.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,9 +86,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "Defence & Security",
             "EUR-Lex",
+            "Defence & Security",
+            "law",
             "EU"
           ]
         },
@@ -104,9 +104,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "Defence & Security",
             "EUR-Lex",
+            "Defence & Security",
+            "law",
             "EU"
           ]
         },
@@ -122,9 +122,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "Defence & Security",
             "EUR-Lex",
+            "Defence & Security",
+            "law",
             "EU"
           ]
         }
@@ -142,9 +142,9 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "Defence & Security",
             "EUR-Lex",
+            "Defence & Security",
+            "law",
             "EU"
           ]
         },
@@ -160,10 +160,10 @@
             "Other"
           ],
           "tags": [
-            "law",
             "EUR-Lex",
-            "EU",
-            "Other"
+            "Other",
+            "law",
+            "EU"
           ]
         },
         {
@@ -178,10 +178,10 @@
             "Other"
           ],
           "tags": [
-            "law",
             "EUR-Lex",
-            "EU",
-            "Other"
+            "Other",
+            "law",
+            "EU"
           ]
         },
         {
@@ -196,10 +196,10 @@
             "Other"
           ],
           "tags": [
-            "law",
             "EUR-Lex",
-            "EU",
-            "Other"
+            "Other",
+            "law",
+            "EU"
           ]
         },
         {
@@ -214,10 +214,10 @@
             "Other"
           ],
           "tags": [
-            "law",
             "EUR-Lex",
-            "EU",
-            "Other"
+            "Other",
+            "law",
+            "EU"
           ]
         },
         {
@@ -232,10 +232,10 @@
             "Other"
           ],
           "tags": [
-            "law",
             "EUR-Lex",
-            "EU",
-            "Other"
+            "Other",
+            "law",
+            "EU"
           ]
         }
       ],
@@ -468,15 +468,14 @@
           "body": "The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published their spring 2026 Joint Committee update on risks and vulnerabilities in the EU financial system. The update focuses on the challenges arising from ongoing geopolitical tens… Source: European Banking Authority, 2026-04-06."
         },
         {
-          "title": "Artificial Intelligence Act: delayed application, ban on nudifier apps",
-          "body": "Clear date for activation of certain rules on high-risk AI systems - Flexibility for companies on certain rules and support for small mid-cap enterprises - AI Act obligations can be less stringent for products governed by sectoral laws MEPs have agreed on pro… Source: European Parliament, 2026-04-06."
+          "title": "Requested Weekly Voice Brief — 2026-03-30 to 2026-04-05",
+          "body": "This is your weekly European policy voice briefing for 2026-03-30 to 2026-04-05. The main developments this week were: EUR-Lex Daily Digest — 2026-04-05; Daily Digest — 2026-04-05; Daily Digest — 2026-04-04; EUR-Lex Daily Digest — 2026-04-03. Across the published material, the biggest themes were market oversight, financial disclosures, and policy implementation across the European institutional landscape. Here is the core readout from the week. # EUR-Lex Daily Digest — 2026… Source: EURLex reports, 2026-04-05."
         }
       ],
       "categories": [
         "daily",
         "AI & Digital",
         "weekly",
-        "De-risking & Investment",
         "CMU & Financial Markets"
       ],
       "important_documents": [
@@ -626,22 +625,6 @@
           ]
         },
         {
-          "id": "1c665cfbf2d0822f",
-          "title": "WK 12768 2023 INIT",
-          "summary": "Presentation on the Interactions of the Critical Raw Materials Act with motor vehicle harmonisation",
-          "url": "https://data.consilium.europa.eu/doc/document/WK-12768-2023-INIT/en/pdf",
-          "kind": "post",
-          "source": "External",
-          "date": "2026-04-06",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "external",
-            "De-risking & Investment"
-          ]
-        },
-        {
           "id": "6d74a437c2a1b5a6",
           "title": "ESAs spring risk update highlights geopolitical pressures and rising private finance risks",
           "summary": "The European Supervisory Authorities (EBA, EIOPA and ESMA – the ESAs) today published their spring 2026 Joint Committee update on risks and vulnerabilities in the EU financial system. The update focuses on the challenges arising from ongoing geopolitical tens…",
@@ -657,6 +640,21 @@
             "CMU & Financial Markets",
             "EBA",
             "regulation"
+          ]
+        },
+        {
+          "id": "rep-2026-04-05-0667fa746e8f5c83",
+          "title": "Daily Digest — 2026-04-05",
+          "summary": "_Items in last 24h: 4_ 1. Auditing of companies' financial statements Bron: esma_publications · Datum: 2026-04-05T22:19:03.560056+00:00 Programma: Other/NA Link",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-04-05.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-04-05",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
           ]
         }
       ],
