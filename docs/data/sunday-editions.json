@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T06:50:58.143803+00:00",
+  "generated_at": "2026-05-24T11:19:27.543512+00:00",
   "latest_end_date": "2026-05-24",
   "items": [
     {
@@ -40,14 +40,14 @@
         "AI & Digital",
         "De-risking & Investment",
         "Other",
-        "Cybersecurity",
-        "CMU & Financial Markets"
+        "CMU & Financial Markets",
+        "Cybersecurity"
       ],
       "important_documents": [
         {
           "id": "rep-2026-05-24-4a3ed69337b07ea7",
           "title": "Daily Digest — 2026-05-24",
-          "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-05-23T11:08:01.591597+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
+          "summary": "_Items in last 24h: 30_ 1. EUR-Lex - 2026_130 - EN - EUR-Lex Bron: eur-lex.europa.eu · Datum: 2026-05-24T11:12:01.845689+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information 2…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-24.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -87,8 +87,8 @@
           ],
           "tags": [
             "law",
-            "EU",
             "EUR-Lex",
+            "EU",
             "Defence & Security"
           ]
         },
@@ -105,8 +105,8 @@
           ],
           "tags": [
             "law",
-            "EU",
             "EUR-Lex",
+            "EU",
             "Defence & Security"
           ]
         },
@@ -123,8 +123,8 @@
           ],
           "tags": [
             "law",
-            "EU",
             "EUR-Lex",
+            "EU",
             "Defence & Security"
           ]
         }
@@ -143,8 +143,8 @@
           ],
           "tags": [
             "law",
-            "EU",
             "EUR-Lex",
+            "EU",
             "Defence & Security"
           ]
         },
@@ -160,10 +160,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EUR-Lex",
-            "EU",
+            "De-risking & Investment",
             "law",
-            "De-risking & Investment"
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -178,10 +178,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EUR-Lex",
-            "EU",
+            "De-risking & Investment",
             "law",
-            "De-risking & Investment"
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -196,10 +196,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "law",
             "De-risking & Investment",
-            "EU",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -214,10 +214,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "law",
             "De-risking & Investment",
-            "EU",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -232,10 +232,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "law",
             "De-risking & Investment",
-            "EU",
-            "EUR-Lex"
+            "law",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
