@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T07:10:43.086546+00:00",
+  "generated_at": "2026-05-25T13:08:19.664733+00:00",
   "latest_end_date": "2026-05-25",
   "items": [
     {
@@ -39,15 +39,15 @@
         "Cybersecurity",
         "Defence & Security",
         "AI & Digital",
+        "De-risking & Investment",
         "Other",
-        "CMU & Financial Markets",
-        "De-risking & Investment"
+        "CMU & Financial Markets"
       ],
       "important_documents": [
         {
           "id": "rep-2026-05-25-f3ceff14d4701252",
           "title": "Daily Digest — 2026-05-25",
-          "summary": "_Items in last 24h: 80_ 1. EP:P10_TA(2026)0171: European Parliament legislative resolution of 19 May 2026 on the proposal for a regulation of the European Parliament and of the Council on the screening of foreign investments in the Union and repealing Regulation (EU) 2019/452 of the European Parliament and of the Council (COM(2024)0023 – C9-0011/2024 – 2024/0017(COD)) Bron: eur-lex.europa.eu · Datum: 2026-05-25T07:01:48.315532+00:00 Programma: Other/NA",
+          "summary": "_Items in last 24h: 76_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-05-25T13:00:18.018501+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-25.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,10 +86,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "EUR-Lex",
+            "law",
             "Defence & Security",
-            "law"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -104,10 +104,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "EUR-Lex",
+            "law",
             "Defence & Security",
-            "law"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -122,10 +122,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "EUR-Lex",
+            "law",
             "Defence & Security",
-            "law"
+            "EU",
+            "EUR-Lex"
           ]
         }
       ],
@@ -142,10 +142,28 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
+            "Defence & Security",
+            "EU",
+            "EUR-Lex"
+          ]
+        },
+        {
+          "id": "24805a319317520b",
+          "title": "Commission Decision of 24 September 2024 finding that, with the binding commitments, the foreign subsidies in the concentration do not distort the internal market (Case FS.100011 – e&/PPF Telecom Group) (notified under d",
+          "summary": "Commission Decision of 24 September 2024 finding that, with the binding commitments, the foreign subsidies in the concentration do not distort the internal market (Case FS.100011 – e&/PPF Telecom Group) (notified under document C(2024) 6745)",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602652",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-05-25",
+          "categories": [
+            "De-risking & Investment"
+          ],
+          "tags": [
+            "law",
             "EU",
             "EUR-Lex",
-            "Defence & Security",
-            "law"
+            "De-risking & Investment"
           ]
         },
         {
@@ -160,10 +178,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "De-risking & Investment",
+            "law",
             "EU",
             "EUR-Lex",
-            "law"
+            "De-risking & Investment"
           ]
         },
         {
@@ -178,10 +196,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "De-risking & Investment",
+            "law",
             "EU",
             "EUR-Lex",
-            "law"
+            "De-risking & Investment"
           ]
         },
         {
@@ -196,17 +214,17 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "De-risking & Investment",
+            "law",
             "EU",
             "EUR-Lex",
-            "law"
+            "De-risking & Investment"
           ]
         },
         {
-          "id": "8b1f7e51e0b295ab",
-          "title": "EP:P9_TA(2020)0021: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[2] – C9-0010/2020 – 2020/0903(NLE))",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_TA(2020)0021",
+          "id": "586d11db14cef3e1",
+          "title": "Opinion of the European Economic and Social Committee – Communication from the Commission to the European Parliament, the Council, the European Central Bank, the European Economic and Social Committee, the Committee of t",
+          "summary": "Opinion of the European Economic and Social Committee – Communication from the Commission to the European Parliament, the Council, the European Central Bank, the European Economic and Social Committee, the Committee of the Regions and the European Investment…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602544",
           "kind": "post",
           "source": "EUR-Lex",
           "date": "2026-05-25",
@@ -214,28 +232,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
-            "EUR-Lex",
+            "law",
             "Other",
-            "law"
-          ]
-        },
-        {
-          "id": "53cf65938fb6dec0",
-          "title": "EP:P9_A(2020)0009: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0009/2020 - 2020/0902(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_A(2020)0009",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-05-25",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
             "EU",
-            "EUR-Lex",
-            "Other",
-            "law"
+            "EUR-Lex"
           ]
         }
       ],
