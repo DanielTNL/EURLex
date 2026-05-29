@@ -1,11 +1,360 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-05-22T06:46:14.111584+00:00",
-    "end": "2026-05-29T06:46:14.111584+00:00",
+    "start": "2026-05-22T12:46:05.376564+00:00",
+    "end": "2026-05-29T12:46:05.376564+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-05-29T12:46:03.679913+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:46:00.968658+00:00",
+      "title": "Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:58.549266+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:56.563196+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:54.032073+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:51.432153+00:00",
+      "title": "Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:48.900015+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:46.308168+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:43.753562+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:41.943231+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:39.312323+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:37.239135+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:34.710126+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:32.805736+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:30.774343+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:28.814954+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:26.099734+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:24.266037+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:21.774731+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:19.725103+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:17.514146+00:00",
+      "title": "Help - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:15.232916+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:06.581950+00:00",
+      "title": "Feedback",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:04.415792+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:45:02.122284+00:00",
+      "title": "My searches",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-29T12:44:58.793496+00:00",
+      "title": "Redirecting To ECAS",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 29 May 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
     {
       "date": "2026-05-29T06:46:12.684170+00:00",
       "title": "CELEX:62024CC0459: Opinion of Advocate General Biondi delivered on 21 May 2026.###",
@@ -2032,6 +2381,32 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 27 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9427_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-27T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. Humanitarian needs are at an all-time high in 2026 with 239 million people in need of assistance. The European Commission has set out concrete solutions to",
+      "amounts": []
+    },
+    {
+      "date": "2026-05-27T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. Humanitarian needs are at an all-time high in 2026 with 239 million people in need of assistance. The European Commission has set out concrete solutions to",
       "amounts": []
     },
     {
@@ -5786,331 +6161,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 23 May 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:17:05.013170+00:00",
-      "title": "CELEX:62023CJ0483: Judgment of the Court (First Chamber) of 21 May 2026.#D and Others v Ministero dell'Economia e delle Finanze and Others.#Reference for a preliminary ruling – Common foreign and security policy – Restrictive measures taken in view of the military aggression against Ukraine – Regulation (EU) No 269/2014 – Article 2(1) – Freezing of funds and economic resources – Setting up of a trust – Settlor of the trust included on the list in Annex I to Regulation No 269/2014 – Freezing of the funds and economic resources held in the trust – Concepts of ‘belonging to’ and ‘control’.#Case C-483/23.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62023CJ0483",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62023CJ0483",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:17:03.451621+00:00",
-      "title": "CONSIL:ST_9391_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing Horizon Europe, the Framework Programme for Research and Innovation, for the period 2028-2034 laying down its rules for participation and dissemination, and repealing Regulation (EU) 2021/695 - Opinion of the European Committee of the Regions",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9391_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9391_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:17:02.076292+00:00",
-      "title": "CELEX:32026M12408: Commission Decision of 19/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12408 - USS / MUNICH RE / CVC DIF / ENCYCLIS IRELAND ASSETS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12408",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12408",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:17:00.658543+00:00",
-      "title": "CELEX:32026M12431: Commission Decision of 11/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12431 - EURAZEO / NETCO) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12431",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12431",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:59.203395+00:00",
-      "title": "CELEX:32026M12375: Commission Decision of 11/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12375 - DAE / MAF) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12375",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12375",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:57.765150+00:00",
-      "title": "CELEX:32026M12313: Commission Decision of 12/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12313 - KKCG / ROCKAWAY / JV) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12313",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12313",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:56.394248+00:00",
-      "title": "CELEX:62024CC0459: Opinion of Advocate General Biondi delivered on 21 May 2026.###",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CC0459",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CC0459",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:54.868229+00:00",
-      "title": "CONSIL:ST_9520_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT Updated climate tracking and digital tagging of the recovery and resilience plan of Poland Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 17 June 2022 on the approval of the assessment of the recovery and resilience plan for Poland",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9520_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9520_2026_ADD_2",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:53.441597+00:00",
-      "title": "CELEX:32026M12311: Commission Decision of 12/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12311 - MESSER / AMBRIAN ENERGY / JV) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12311",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12311",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:52.063241+00:00",
-      "title": "CELEX:62023CC0730: Opinion of Advocate General Rantos delivered on 21 May 2026.###",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62023CC0730",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62023CC0730",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:50.725954+00:00",
-      "title": "CONSIL:ST_9403_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing Horizon Europe, the Framework Programme for Research and Innovation, for the period 2028-2034 laying down its rules for participation and dissemination, and repealing Regulation (EU) 2021/695 Proposal for a Council Decision on establishing the Specific Programme implementing Horizon Europe – the Framework Programme for Research and Innovation for the period 2028-2034, laying down the rules for participation and dissemination under that Programme, and repealing Decision (EU) 2021/764 - Opinion of the European Economic and Social Committee",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9403_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9403_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:49.275353+00:00",
-      "title": "PI_COM:Ares(2026)5171782: European Grid Package",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5171782",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5171782",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:47.980986+00:00",
-      "title": "CELEX:62024CJ0604: Judgment of the Court (Fifth Chamber) of 21 May 2026.#FARMAKEIO YZ &amp;amp; SIA O.E. v Ypourgos Anaptyxis kai Ependyseon and Ypourgos Ygeias.#Reference for a preliminary ruling – Medicinal products for human use – Directive 2001/83/EC – Article 85c(1) and (2) – Non-prescription medicinal products – Prohibition of the sale at a distance to the public, by means of information society services, of a category of non-prescription medicinal products – Protection of public health.#Case C-604/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CJ0604",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CJ0604",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:46.480146+00:00",
-      "title": "CELEX:32026M12220: Commission Decision of 11/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12220 - CAPITAL MARITIME / FORTRESS / HAYFIN / UNITED OFFSHORE) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12220",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12220",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:44.978754+00:00",
-      "title": "CELEX:32026M12424: Commission Decision of 18/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12424 - OCTOPUS ENERGY GROUP / SCHNEIDER ELECTRIC / UPLIGHT) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12424",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12424",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:43.449062+00:00",
-      "title": "CONSIL:ST_9455_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2023/1542 and Regulation (EU) 2024/1244 as regards simplification of some requirements and reduction of administrative burden [16778/25 – COM(2025) 981 final] Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL suspending the application of the rules on the appointment of an authorised representative for extended producer responsibility for batteries and waste batteries and packaging and packaging waste [16753/25 – COM(2025) 982 final] Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL suspending the application of the rules on the appointment of authorised representatives for extended producer responsibility for waste, waste electrical and electronical equipment and single use plastic waste [16754/25 – COM(2025) 983 final] Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on speeding-up environmental assessments [16755/25 + ADD 1 – COM(2025) 984 final] Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2007/2/EC as regards simplification of certain requirements for the establishment of the Infrastructure for Spatial Information in the Union [16773/25 – COM(2025) 985 final] Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2008/98/EC, 2010/75/EU, (EU) 2015/2193 and (EU) 2024/1785 of the European Parliament and of the Council as regards simplification of some requirements and reduction of administrative burden [16771/25 + ADD 1 + ADD 2 – COM(2025) 986 final] - Opinion of the European Committee of the Regions",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9455_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9455_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:39.097746+00:00",
-      "title": "COM:2026:262:FIN: Recommendation for a COUNCIL RECOMMENDATION allowing Spain to deviate from the maximum growth rates of net expenditure as set by the Council under Regulation (EU) 2024/1263 (activation of the national escape clause)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:262:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:262:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:37.569824+00:00",
-      "title": "CONSIL:WK_7230_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry - 4-column table",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:WK_7230_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:WK_7230_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:16:24.799169+00:00",
-      "title": "COM:2026:244:FIN: Proposal for a COUNCIL IMPLEMENTING DECISION authorising Germany to apply a reduced rate of taxation to electricity directly provided to vessels at berth in a port, in accordance with Article 19 of Directive 2003/96/EC",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:244:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 22 May 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:244:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. Ten years ago, the GDPR gave Europeans real control over their personal data for the first time. From the right to access your data to the",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. Ten years ago, the GDPR gave Europeans real control over their personal data for the first time. From the right to access your data to the",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. New EU rules establish the first harmonised EU-wide standards for the welfare, breeding, identification and traceability of cats and dogs. Their identification and registration will now",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. New EU rules establish the first harmonised EU-wide standards for the welfare, breeding, identification and traceability of cats and dogs. Their identification and registration will now",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. New EU rules establish the first harmonised EU-wide standards for the welfare, breeding, identification and traceability of cats and dogs. Their identification and registration will now",
-      "amounts": []
-    },
-    {
-      "date": "2026-05-22T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. New EU rules establish the first harmonised EU-wide standards for the welfare, breeding, identification and traceability of cats and dogs. Their identification and registration will now",
       "amounts": []
     }
   ]

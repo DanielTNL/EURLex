@@ -34,16 +34,16 @@
     "daily",
     "Cybersecurity",
     "Defence & Security",
-    "Other",
     "CMU & Financial Markets",
     "AI & Digital",
+    "Other",
     "De-risking & Investment"
   ],
   "important_documents": [
     {
       "id": "rep-2026-05-29-5146167f5a3b7cad",
       "title": "Daily Digest — 2026-05-29",
-      "summary": "_Items in last 24h: 75_ 1. CELEX:62024CC0459: Opinion of Advocate General Biondi delivered on 21 May 2026.### Bron: eur-lex.europa.eu · Datum: 2026-05-29T06:46:12.684170+00:00 Programma: Other/NA",
+      "summary": "_Items in last 24h: 101_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-05-29T12:46:03.679913+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law…",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-29.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -82,9 +82,9 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
         "Defence & Security",
         "EU",
+        "law",
         "EUR-Lex"
       ]
     },
@@ -100,9 +100,9 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
         "Defence & Security",
         "EU",
+        "law",
         "EUR-Lex"
       ]
     },
@@ -118,9 +118,9 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
         "Defence & Security",
         "EU",
+        "law",
         "EUR-Lex"
       ]
     }
@@ -138,63 +138,45 @@
         "Defence & Security"
       ],
       "tags": [
-        "law",
         "Defence & Security",
         "EU",
+        "law",
         "EUR-Lex"
       ]
     },
     {
-      "id": "96939d592604ab94",
-      "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0945",
+      "id": "49bd90c4d219d334",
+      "title": "Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedure for the resolution of credit institutions and certain investment firms in the f",
+      "summary": "Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedure for the resolution of credit institutions and certain investment firms in the framework of a Single Resolution Mechani…",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02014R0806-20260611",
       "kind": "post",
       "source": "EUR-Lex",
       "date": "2026-05-29",
       "categories": [
-        "De-risking & Investment"
+        "Other"
       ],
       "tags": [
-        "De-risking & Investment",
-        "law",
         "EU",
+        "Other",
+        "law",
         "EUR-Lex"
       ]
     },
     {
-      "id": "83d6af925f4466c8",
-      "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
+      "id": "07fc5314888f7574",
+      "title": "Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)",
+      "summary": "Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0013",
       "kind": "post",
       "source": "EUR-Lex",
       "date": "2026-05-29",
       "categories": [
-        "De-risking & Investment"
+        "Other"
       ],
       "tags": [
-        "De-risking & Investment",
-        "law",
         "EU",
-        "EUR-Lex"
-      ]
-    },
-    {
-      "id": "36b30dd3c7a897ba",
-      "title": "PI_COM:Ares(2026)5334055: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5334055",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-05-29",
-      "categories": [
-        "De-risking & Investment"
-      ],
-      "tags": [
-        "De-risking & Investment",
+        "Other",
         "law",
-        "EU",
         "EUR-Lex"
       ]
     },
@@ -210,9 +192,9 @@
         "Other"
       ],
       "tags": [
-        "law",
-        "Other",
         "EU",
+        "Other",
+        "law",
         "EUR-Lex"
       ]
     },
@@ -228,9 +210,27 @@
         "Other"
       ],
       "tags": [
-        "law",
-        "Other",
         "EU",
+        "Other",
+        "law",
+        "EUR-Lex"
+      ]
+    },
+    {
+      "id": "50969828728eb642",
+      "title": "EP:P9_A(2020)0011: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0010/2020 - 2020/0903(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
+      "summary": "",
+      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_A(2020)0011",
+      "kind": "post",
+      "source": "EUR-Lex",
+      "date": "2026-05-29",
+      "categories": [
+        "Other"
+      ],
+      "tags": [
+        "EU",
+        "Other",
+        "law",
         "EUR-Lex"
       ]
     }
