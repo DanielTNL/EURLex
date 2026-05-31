@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T06:53:58.129775+00:00",
+  "generated_at": "2026-05-31T07:10:56.536051+00:00",
   "latest_end_date": "2026-05-31",
   "items": [
     {
@@ -13,9 +13,7 @@
       "key_points": [
         "COMMISSION STAFF WORKING DOCUMENT EVALUATION Interim Evaluation of the European Defence Fund Accompanying the document REPORT FROM THE COMM…",
         "REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REG…",
-        "Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealin…",
-        "CONSIL:ST 5793 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81…",
-        "Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedur…"
+        "Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealin…"
       ],
       "sections": [
         {
@@ -36,16 +34,44 @@
         }
       ],
       "categories": [
-        "Other/NA",
         "daily",
         "Defence & Security",
         "CMU & Financial Markets",
-        "Other",
         "AI & Digital",
-        "Cybersecurity",
+        "Other",
         "De-risking & Investment"
       ],
       "important_documents": [
+        {
+          "id": "rep-2026-05-31-61cdc02063b5e9c6",
+          "title": "Daily Digest — 2026-05-31",
+          "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-05-30T11:16:42.760214+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-05-31.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-05-31",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2026-05-31-a0c9db2688112088",
+          "title": "EUR-Lex Daily Digest — 2026-05-31",
+          "summary": "Multiannual Financial Framework (2028-2034) - Policy debate - Statement by Bulgaria, Czechia, Estonia, Greece, Spain, Croatia, Hungary, Italy, Lithuania, Latvia, Malta, Poland, Portugal, Romania, Slovenia, Slovakia; Economic and Financial Affairs Council; Economic and Financial Affairs Council; Economic and Financial Affairs Council; Economic and Financial Affairs Council (Budget)",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-05-31.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-05-31",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
         {
           "id": "f4719d2e6ec998c4",
           "title": "COMMISSION STAFF WORKING DOCUMENT EVALUATION Interim Evaluation of the European Defence Fund Accompanying the document REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS The European Defence Fund: supporting the development of the defence capabilities of tomorrow Interim evaluation of the European Defence Fund",
@@ -99,7 +125,9 @@
             "EUR-Lex",
             "EU"
           ]
-        },
+        }
+      ],
+      "related_documents": [
         {
           "id": "681a8aad96e26277",
           "title": "CONSIL:ST_5793_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - 4-column table",
@@ -130,14 +158,12 @@
             "Other"
           ],
           "tags": [
-            "law",
             "EUR-Lex",
+            "law",
             "Other",
             "EU"
           ]
-        }
-      ],
-      "related_documents": [
+        },
         {
           "id": "07fc5314888f7574",
           "title": "Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)",
@@ -150,8 +176,8 @@
             "Other"
           ],
           "tags": [
-            "law",
             "EUR-Lex",
+            "law",
             "Other",
             "EU"
           ]
@@ -207,42 +233,6 @@
             "law",
             "EUR-Lex",
             "Other",
-            "EU"
-          ]
-        },
-        {
-          "id": "96939d592604ab94",
-          "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0945",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-05-31",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "law",
-            "EUR-Lex",
-            "De-risking & Investment",
-            "EU"
-          ]
-        },
-        {
-          "id": "83d6af925f4466c8",
-          "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-05-31",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "law",
-            "EUR-Lex",
-            "De-risking & Investment",
             "EU"
           ]
         }
