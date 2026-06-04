@@ -73,11 +73,11 @@
     "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-publish-first-report-dora-major-ict-related-incidents",
     "title": "ESAs publish the first report on DORA major ICT-related incidents",
     "tags": [
+      "AI & Digital",
+      "EBA",
       "regulation",
       "CMU & Financial Markets",
-      "EU",
-      "EBA",
-      "AI & Digital"
+      "EU"
     ],
     "added": "2026-06-03T11:00:00+02:00",
     "summary": "The European Supervisory Authorities (EBA, EIOPA and ESMA) today published their first annual overview of major ICT-related incidents in the EU financial sector based on a reporting mechanism established by the Digital Operational Resilience Act (DORA). It shows that ICT risks are increasingly borderless and interconnected. The authorities also note that the recent evolution of highly capable AI-driven tools should encourage financial entities to strengthen cybersecurity measures to maintain their resilience going forward.",
@@ -180,30 +180,6 @@
     "display_summary": "Clear date for activation of certain rules on high-risk AI systems - Flexibility for companies on certain rules and support for small mid-cap enterprises - AI Act obligations can be less stringent for products governed by sectoral laws MEPs have agreed on proposals to simplify artificial intelligence rules and propose clear application dates for high-risk system requirements and a ban on AI “nudifier” systems. On Thursday, the European Parliament adopted its position on a simplification (“omnibus”) proposal amending the Artificial Intelligence Act (AIA), by 569 votes in favour, 45 against, and with 23 abstentions. The proposal would delay the application of certain rules on high-risk artificial intelligence (AI) systems, to ensure that guidance and standards to help companies with implementation are ready. In their amendments, MEPs introduce fixed dates for application to ensure predictability and legal certainty.…"
   },
   {
-    "id": "f87e534ad68ed757",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:504:FIN",
-    "title": "EUROPEAN COMMISSION",
-    "tags": [
-      "law",
-      "EUR-Lex",
-      "Defence & Security",
-      "EU",
-      "AI & Digital"
-    ],
-    "added": "2026-06-04T07:48:15.347143Z",
-    "summary": "EUROPEAN COMMISSION Brussels, 3.6.2026 COM(2026) 504 final 2026/0139(COD) Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union’s semiconductor ecosystem, repealing Regulation (EU) 2023/1781 (Chips Act 2.0) (Text with EEA relevance) {SEC(2026) 504 final} - {SWD(2026) 504 final} - {SWD(2026) 505 final} EXPLANATORY MEMORANDUM 1.CONTEXT OF THE PROPOSAL •Reasons for and objectives of the proposal Semiconductors underpin all digital technologies, from smart wearables and cars to medical, defence and mission-critical equipment, and the data centres powering the artificial intelligence (AI) revolution. Since 2020, a series of supply shortages and attempts to economically coerce on the EU have highlighted the fragility of the European semiconductor ecosystem and the vulnerability of its end-user industry. These disruptions have stemmed from global crises such as the COVID-19 pandemic, individual shocks like the Nexperia c…",
-    "score": 3,
-    "ts": 1780559295,
-    "categories": [
-      "AI & Digital",
-      "Defence & Security"
-    ],
-    "original_title": "EUROPEAN COMMISSION",
-    "display_title": "EUROPEAN COMMISSION",
-    "display_summary": "Brussels, 3.6.2026 COM(2026) 504 final 2026/0139(COD) Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union’s semiconductor ecosystem, repealing Regulation (EU) 2023/1781 (Chips Act 2.0) (Text with EEA relevance) {SEC(2026) 504 final} - {SWD(2026) 504 final} - {SWD(2026) 505 final} EXPLANATORY MEMORANDUM 1.CONTEXT OF THE PROPOSAL •Reasons for and objectives of the proposal Semiconductors underpin all digital technologies, from smart wearables and cars to medical, defence and mission-critical equipment, and the data centres powering the artificial intelligence (AI) revolution. Since 2020, a series of supply shortages and attempts to economically coerce on the EU have highlighted the fragility of the European semiconductor ecosystem and the vulnerability of its end-user industry. These disruptions have stemmed from global crises such as the COVID-19 pandemic, individual shocks like the Nexperia c…"
-  },
-  {
     "id": "04fc03df972c0f25",
     "source": "External",
     "url": "https://www.defensenews.com/news/pentagon-congress/2026/05/01/pentagon-freezes-out-anthropic-as-it-signs-deals-with-ai-rivals/",
@@ -224,6 +200,27 @@
     "original_title": "Pentagon freezes out Anthropic as it signs deals with AI rivals",
     "display_title": "Pentagon freezes out Anthropic as it signs deals with AI rivals",
     "display_summary": "The Department of Defense announced on Friday that it had struck deals with seven leading artificial intelligence companies."
+  },
+  {
+    "id": "c1dea845b0d3e988",
+    "source": "European Parliament",
+    "url": "https://www.europarl.europa.eu/news/en/press-room/20260316IPR38219/",
+    "title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
+    "tags": [
+      "EU",
+      "Parliament",
+      "AI & Digital"
+    ],
+    "added": "2026-04-06T12:37:50.053939Z",
+    "summary": "- Set clear date for activation of certain rules on high-risk AI systems - Stimulate take-up of AI by EU companies by introducing flexibility - Clarify interaction with other EU laws MEPs agree on proposals to simplify artificial intelligence rules and propose bans on AI “nudifier” systems and clear application dates for high-risk system requirements. On Wednesday, the Internal Market and Civil Liberties committees adopted their joint position on a simplification (“omnibus”) proposal amending the Artificial Intelligence Act (AIA), by 101 votes in favour, 9 against, and with 8 abstentions. The proposal supports postponing the activation of certain rules on high-risk artificial intelligence (AI) systems, given that key standards may not be finalised by the current deadline of 2 August 2026. In their amendments, the MEPs introduce fixed dates for application to ensure predictability and legal certainty. - For high-risk AI systems specifically listed in the regulation (including those invo…",
+    "score": 3,
+    "ts": 1775479070,
+    "categories": [
+      "AI & Digital"
+    ],
+    "original_title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
+    "display_title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
+    "display_summary": "- Set clear date for activation of certain rules on high-risk AI systems - Stimulate take-up of AI by EU companies by introducing flexibility - Clarify interaction with other EU laws MEPs agree on proposals to simplify artificial intelligence rules and propose bans on AI “nudifier” systems and clear application dates for high-risk system requirements. On Wednesday, the Internal Market and Civil Liberties committees adopted their joint position on a simplification (“omnibus”) proposal amending the Artificial Intelligence Act (AIA), by 101 votes in favour, 9 against, and with 8 abstentions. The proposal supports postponing the activation of certain rules on high-risk artificial intelligence (AI) systems, given that key standards may not be finalised by the current deadline of 2 August 2026. In their amendments, the MEPs introduce fixed dates for application to ensure predictability and legal certainty. - For high-risk AI systems specifically listed in the regulation (including those invo…"
   },
   {
     "id": "0c3e89eb25a2f155",
@@ -252,15 +249,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:02021R0697-20251223",
     "title": "CELEX:02021R0697-20251223: Regulation (EU) 2021/697 of the European Parliament and of the Council of 29 April 2021 establishing the European Defence Fund and repealing Regulation (EU) 2018/1092 (Text with EEA relevance)",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -274,15 +271,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_5793_2026_INIT",
     "title": "CONSIL:ST_5793_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - 4-column table",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -295,15 +292,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:SEDE_AD(2026)784322",
     "title": "EP:SEDE_AD(2026)784322: OPINION - of the Committee on Security and Defence - for the Committee on Industry, Research and Energy and the Committee on Transport and Tourism - on the proposal for a regulation of the European Parliament and of the Council establishing the Connecting Europe Facility for the period 2028-2034, amending Regulation (EU) 2024/1679 and repealing Regulation (EU) 2021/1153 - (COM(2025)0547 - C10-0167/2025 - 2025/0221(COD)) - Rapporteur for opinion: Petras Auštrevičius",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -316,15 +313,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:CJ57_PR(2026)784420",
     "title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -332,64 +329,20 @@
     "display_title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle"
   },
   {
-    "id": "49bd90c4d219d334",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02014R0806-20260611",
-    "title": "This document is an excerpt from the EUR-Lex website",
-    "tags": [
-      "Other",
-      "EUR-Lex",
-      "EU",
-      "law"
-    ],
-    "added": "2026-06-04T07:48:15.347143Z",
-    "summary": "This document is an excerpt from the EUR-Lex website Document 02014R0806-20260611 Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedure for the resolution of credit institutions and certain investment firms in the framework of a Single Resolution Mechanism and a Single Resolution Fund and amending Regulation (EU) No 1093/2010 Consolidated text: Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedure for the resolution of credit institutions and certain investment firms in the framework of a Single Resolution Mechanism and a Single Resolution Fund and amending Regulation (EU) No 1093/2010 Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedure for the resolution of credit institutions and certain investment firms in the framework of a…",
-    "score": 1,
-    "ts": 1780559296,
-    "categories": [
-      "Other"
-    ],
-    "original_title": "This document is an excerpt from the EUR-Lex website",
-    "display_title": "Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedure for the resolution of credit institutions and certain investment firms in the f",
-    "display_summary": "Regulation (EU) No 806/2014 of the European Parliament and of the Council of 15 July 2014 establishing uniform rules and a uniform procedure for the resolution of credit institutions and certain investment firms in the framework of a Single Resolution Mechanism and a Single Resolution Fund and amending Regulation (EU) No 1093/2010 Consolidated text"
-  },
-  {
-    "id": "07fc5314888f7574",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0013",
-    "title": "This document is an excerpt from the EUR-Lex website",
-    "tags": [
-      "Other",
-      "EUR-Lex",
-      "EU",
-      "law"
-    ],
-    "added": "2026-06-04T07:48:15.347143Z",
-    "summary": "This document is an excerpt from the EUR-Lex website Document 52026AB0013 Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13) Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13) Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13) CON/2026/13 OJ C, C/2026/2837, 28.5.2026, ELI: http://data.europa.eu/eli/C/2026/2837/oj (BG, ES, CS, DA, DE, ET, EL, EN, FR, GA, HR, IT, LV, LT, HU, MT, NL, PL, PT, RO, SK, SL, FI, SV) | Official Journal | EN C series | | C/2026/2837 | 28.5.2026 | OPINION OF THE EUROPEAN CENTRAL BANK of 9 April 2026 on proposals as regards the further development of capital market integration and supervisi…",
-    "score": 1,
-    "ts": 1780559296,
-    "categories": [
-      "Other"
-    ],
-    "original_title": "This document is an excerpt from the EUR-Lex website",
-    "display_title": "Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)",
-    "display_summary": "Opinion of the European Central Bank of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)"
-  },
-  {
     "id": "8b1f7e51e0b295ab",
     "source": "EUR-Lex",
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_TA(2020)0021",
     "title": "EP:P9_TA(2020)0021: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[2] – C9-0010/2020 – 2020/0903(NLE))",
     "tags": [
-      "Other",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Other",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Other"
     ],
@@ -403,15 +356,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_A(2020)0009",
     "title": "EP:P9_A(2020)0009: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0009/2020 - 2020/0902(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
     "tags": [
-      "Other",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Other",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Other"
     ],
@@ -424,15 +377,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_A(2020)0011",
     "title": "EP:P9_A(2020)0011: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0010/2020 - 2020/0903(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
     "tags": [
-      "Other",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Other",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Other"
     ],
@@ -440,20 +393,63 @@
     "display_title": "EP:P9_A(2020)0011: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0010/2020 - 2020/0903(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli"
   },
   {
+    "id": "6f637e683b38909e",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=COM:2026:200:FIN",
+    "title": "COM:2026:200:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
+    "tags": [
+      "law",
+      "EU",
+      "Other",
+      "EUR-Lex"
+    ],
+    "added": "2026-06-04T12:42:33.907423+00:00",
+    "summary": "",
+    "score": 1,
+    "ts": 1780576953,
+    "categories": [
+      "Other"
+    ],
+    "original_title": "COM:2026:200:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
+    "display_title": "COM:2026:200:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package"
+  },
+  {
+    "id": "d78c410bbaf0be0b",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_TA(2020)0020",
+    "title": "EP:P9_TA(2020)0020: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[1] – C9-0009/2020 – 2020/0902(NLE))",
+    "tags": [
+      "law",
+      "EU",
+      "Other",
+      "EUR-Lex"
+    ],
+    "added": "2026-06-04T12:42:33.907423+00:00",
+    "summary": "",
+    "score": 1,
+    "ts": 1780576953,
+    "categories": [
+      "Other"
+    ],
+    "original_title": "EP:P9_TA(2020)0020: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[1] – C9-0009/2020 – 2020/0902(NLE))",
+    "display_title": "EP:P9_TA(2020)0020: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[1] – C9-0009/2020 – 2020/0902(NLE))",
+    "reference": "P9_TA(2020)0020"
+  },
+  {
     "id": "96939d592604ab94",
     "source": "EUR-Lex",
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0945",
     "title": "CELEX:52025DC0945: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "De-risking & Investment",
       "law",
-      "De-risking & Investment"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "De-risking & Investment"
     ],
@@ -467,15 +463,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
     "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "De-risking & Investment",
       "law",
-      "De-risking & Investment"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "De-risking & Investment"
     ],
@@ -488,15 +484,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5334055",
     "title": "PI_COM:Ares(2026)5334055: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "De-risking & Investment",
       "law",
-      "De-risking & Investment"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "De-risking & Investment"
     ],
@@ -509,15 +505,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5588958",
     "title": "PI_COM:Ares(2026)5588958: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "De-risking & Investment",
       "law",
-      "De-risking & Investment"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "De-risking & Investment"
     ],
@@ -530,15 +526,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5639974",
     "title": "PI_COM:Ares(2026)5639974: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "De-risking & Investment",
       "law",
-      "De-risking & Investment"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 1,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "De-risking & Investment"
     ],
@@ -734,15 +730,15 @@
     "url": "https://www.eba.europa.eu/publications-and-media/press-releases/suptech-can-make-anti-money-laundering-and-countering-financing-terrorism-supervision-more-effective",
     "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds",
     "tags": [
-      "EU",
-      "EBA",
       "CMU & Financial Markets",
+      "EBA",
+      "EU",
       "regulation"
     ],
-    "added": "2026-06-04T07:48:15.347143Z",
+    "added": "2026-06-04T12:46:33.109006Z",
     "summary": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the financing of terrorism (AML/CFT) supervision (SupTech). The Report takes stock of ongoing innovation efforts by competent authorities in the EU and explores how these can support the effective implementation of the new EU AML/CFT framework. The new AML/CFT framework represents a significant step forward in the EU’s fight against financial crime. A key element o is the creation of the Anti-Money Laundering and Countering the Financing of Terrorism Authority (AMLA), which will coordinate AML/CFT supervision at EU level. This institutional change provides a unique opportunity to reassess supervisory approaches and harness the potential of technology to enhance oversight. To inform this work, the EBA conducted a survey of national com…",
     "score": 4,
-    "ts": 1780559295,
+    "ts": 1780577193,
     "categories": [
       "CMU & Financial Markets"
     ],
@@ -751,86 +747,20 @@
     "display_summary": "The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the financing of terrorism (AML/CFT) supervision (SupTech). The Report takes stock of ongoing innovation efforts by competent authorities in the EU and explores how these can support the effective implementation of the new EU AML/CFT framework. The new AML/CFT framework represents a significant step forward in the EU’s fight against financial crime. A key element o is the creation of the Anti-Money Laundering and Countering the Financing of Terrorism Authority (AMLA), which will coordinate AML/CFT supervision at EU level. This institutional change provides a unique opportunity to reassess supervisory approaches and harness the potential of technology to enhance oversight. To inform this work, the EBA conducted a survey of national com…"
   },
   {
-    "id": "0d9321fd730907cf",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205628",
-    "title": "This document is an excerpt from the EUR-Lex website",
-    "tags": [
-      "EUR-Lex",
-      "EU",
-      "law",
-      "CMU & Financial Markets"
-    ],
-    "added": "2026-06-04T07:48:15.347143Z",
-    "summary": "This document is an excerpt from the EUR-Lex website Document 72019L2177MLT_202205628 Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017 Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017 Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017 Official publication: The Malta government gazette; Publication date: 22/12/2021",
-    "score": 4,
-    "ts": 1780559295,
-    "categories": [
-      "CMU & Financial Markets"
-    ],
-    "original_title": "This document is an excerpt from the EUR-Lex website",
-    "display_title": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017",
-    "display_summary": "Financial Markets (MiFID and MiFIR Administrative Penalties, Measures and Investigator Powers) Regulations, 2017"
-  },
-  {
-    "id": "c970c924134b3732",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205630",
-    "title": "This document is an excerpt from the EUR-Lex website",
-    "tags": [
-      "EUR-Lex",
-      "EU",
-      "law",
-      "CMU & Financial Markets"
-    ],
-    "added": "2026-06-04T07:48:15.347143Z",
-    "summary": "This document is an excerpt from the EUR-Lex website Document 72019L2177MLT_202205630 Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12 Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12 Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12 Official publication: Gazetta tal-Gvern ta; Publication date: 22/12/2017",
-    "score": 4,
-    "ts": 1780559295,
-    "categories": [
-      "CMU & Financial Markets"
-    ],
-    "original_title": "This document is an excerpt from the EUR-Lex website",
-    "display_title": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12",
-    "display_summary": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 330.12"
-  },
-  {
-    "id": "e673d429fbf7d013",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72019L2177MLT_202205627",
-    "title": "This document is an excerpt from the EUR-Lex website",
-    "tags": [
-      "EUR-Lex",
-      "EU",
-      "law",
-      "CMU & Financial Markets"
-    ],
-    "added": "2026-06-04T07:48:15.347143Z",
-    "summary": "This document is an excerpt from the EUR-Lex website Document 72019L2177MLT_202205627 Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22 Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22 Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22 Official publication: Gazetta tal-Gvern ta; Publication date: 22/12/2017",
-    "score": 4,
-    "ts": 1780559295,
-    "categories": [
-      "CMU & Financial Markets"
-    ],
-    "original_title": "This document is an excerpt from the EUR-Lex website",
-    "display_title": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22",
-    "display_summary": "Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) Regulations SL 345.22"
-  },
-  {
     "id": "71d3169e4c7a3c64",
     "source": "EUR-Lex",
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:72024L0790MLT_202505478",
     "title": "CELEX:72024L0790MLT_202505478: Financial Markets Act (MiFID and MiFIR Administrative Penalties, Measures and Investigatory Powers) (Amendment) Regulations, 2025",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "CMU & Financial Markets",
       "law",
-      "CMU & Financial Markets"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 4,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "CMU & Financial Markets"
     ],
@@ -881,25 +811,68 @@
     "display_title": "CONSIL:CM_2512_2026_INIT: Att. & Exp. Financial Services and Banking Union (Financial Services) (Sustainable Finance)"
   },
   {
-    "id": "c1dea845b0d3e988",
-    "source": "European Parliament",
-    "url": "https://www.europarl.europa.eu/news/en/press-room/20260316IPR38219/",
-    "title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
+    "id": "9b770ef30b412297",
+    "source": "European Central Bank",
+    "url": "https://www.ecb.europa.eu//press/blog/date/2025/html/ecb.blog20250814~86d5171bf2.en.html",
+    "title": "12 August 2025",
     "tags": [
+      "CMU & Financial Markets",
       "EU",
-      "Parliament",
-      "AI & Digital"
+      "ECB"
     ],
-    "added": "2026-04-06T12:37:50.053939Z",
-    "summary": "- Set clear date for activation of certain rules on high-risk AI systems - Stimulate take-up of AI by EU companies by introducing flexibility - Clarify interaction with other EU laws MEPs agree on proposals to simplify artificial intelligence rules and propose bans on AI “nudifier” systems and clear application dates for high-risk system requirements. On Wednesday, the Internal Market and Civil Liberties committees adopted their joint position on a simplification (“omnibus”) proposal amending the Artificial Intelligence Act (AIA), by 101 votes in favour, 9 against, and with 8 abstentions. The proposal supports postponing the activation of certain rules on high-risk artificial intelligence (AI) systems, given that key standards may not be finalised by the current deadline of 2 August 2026. In their amendments, the MEPs introduce fixed dates for application to ensure predictability and legal certainty. - For high-risk AI systems specifically listed in the regulation (including those invo…",
+    "added": "2026-06-04T12:46:33.109006Z",
+    "summary": "12 August 2025 Investors who sell off sovereign bonds in times of stress are commonly referred to as “vigilantes” as they punish governments for what they consider to be bad policy choices. This post finds that investment funds account for most net sales of sovereign bonds in such times. Financial markets are sensitive to macroeconomic and political news, especially given the high debt levels in several euro area countries. On sovereign bond markets, investment funds – which invest the money of households, companies and others – have become key players. In some euro area countries, they hold as much as a quarter of outstanding government debt. So, when investment funds adjust their portfolios, they can have an impact on bond markets and, in turn, on the ability of governments to finance their budgets. That is why they are often referred to as “vigilantes” who discipline governments for what they consider to be unsustainable policy and enforce change. Despite their large footprint in so…",
     "score": 3,
-    "ts": 1775479070,
+    "ts": 1780577193,
     "categories": [
-      "AI & Digital"
+      "CMU & Financial Markets"
     ],
-    "original_title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
-    "display_title": "MEPs support postponement of certain rules on artificial intelligence | News | European Parliament",
-    "display_summary": "- Set clear date for activation of certain rules on high-risk AI systems - Stimulate take-up of AI by EU companies by introducing flexibility - Clarify interaction with other EU laws MEPs agree on proposals to simplify artificial intelligence rules and propose bans on AI “nudifier” systems and clear application dates for high-risk system requirements. On Wednesday, the Internal Market and Civil Liberties committees adopted their joint position on a simplification (“omnibus”) proposal amending the Artificial Intelligence Act (AIA), by 101 votes in favour, 9 against, and with 8 abstentions. The proposal supports postponing the activation of certain rules on high-risk artificial intelligence (AI) systems, given that key standards may not be finalised by the current deadline of 2 August 2026. In their amendments, the MEPs introduce fixed dates for application to ensure predictability and legal certainty. - For high-risk AI systems specifically listed in the regulation (including those invo…"
+    "original_title": "12 August 2025",
+    "display_title": "12 August 2025",
+    "display_summary": "Investors who sell off sovereign bonds in times of stress are commonly referred to as “vigilantes” as they punish governments for what they consider to be bad policy choices. This post finds that investment funds account for most net sales of sovereign bonds in such times. Financial markets are sensitive to macroeconomic and political news, especially given the high debt levels in several euro area countries. On sovereign bond markets, investment funds – which invest the money of households, companies and others – have become key players. In some euro area countries, they hold as much as a quarter of outstanding government debt. So, when investment funds adjust their portfolios, they can have an impact on bond markets and, in turn, on the ability of governments to finance their budgets. That is why they are often referred to as “vigilantes” who discipline governments for what they consider to be unsustainable policy and enforce change. Despite their large footprint in so…"
+  },
+  {
+    "id": "71016b6e10c9d871",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:02021O0831-20251201",
+    "title": "CELEX:02021O0831-20251201: Guideline (EU) 2021/831 of the European Central Bank of 26 March 2021 on statistical information to be reported on financial intermediaries other than monetary financial institutions (ECB/2021/12)",
+    "tags": [
+      "CMU & Financial Markets",
+      "law",
+      "EU",
+      "EUR-Lex"
+    ],
+    "added": "2026-06-04T12:42:33.907423+00:00",
+    "summary": "",
+    "score": 3,
+    "ts": 1780576953,
+    "categories": [
+      "CMU & Financial Markets"
+    ],
+    "original_title": "CELEX:02021O0831-20251201: Guideline (EU) 2021/831 of the European Central Bank of 26 March 2021 on statistical information to be reported on financial intermediaries other than monetary financial institutions (ECB/2021/12)",
+    "display_title": "Guideline (EU) 2021/831 of the European Central Bank of 26 March 2021 on statistical information to be reported on financial intermediaries other than monetary financial institutions (ECB/2021/12)",
+    "reference": "CELEX:02021O0831-20251201"
+  },
+  {
+    "id": "1726068cdc0effac",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=IMMC:LET/2025/12041",
+    "title": "IMMC:LET/2025/12041: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank, to Simon Harris, Tánaiste and Minister for Finance, Irish Department of Finance, on a request for an ECB opinion on draft laws as regards the establishment and functioning of the European Single Access Point",
+    "tags": [
+      "CMU & Financial Markets",
+      "law",
+      "EU",
+      "EUR-Lex"
+    ],
+    "added": "2026-06-04T12:42:33.907423+00:00",
+    "summary": "",
+    "score": 3,
+    "ts": 1780576953,
+    "categories": [
+      "CMU & Financial Markets"
+    ],
+    "original_title": "IMMC:LET/2025/12041: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank, to Simon Harris, Tánaiste and Minister for Finance, Irish Department of Finance, on a request for an ECB opinion on draft laws as regards the establishment and functioning of the European Single Access Point",
+    "display_title": "IMMC:LET/2025/12041: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank, to Simon Harris, Tánaiste and Minister for Finance, Irish Department of Finance, on a request for an ECB opinion on draft laws as regards the establishment and functioning of the European Single Access Point"
   },
   {
     "id": "b7498cb8f6ce9919",
@@ -925,42 +898,20 @@
     "display_summary": "Amending major EU funding programs to facilitate spending on defence projects - Ukraine’s defence industry to participate in the European Defence Fund - Horizon Europe amendment without prejudice to the outcome of upcoming MFF negotiations As part of the ReArm Europe Plan, the measures aim to strengthen Europe’s defence technological and industrial base by channelling EU funding to defence. The legislation informally agreed upon on Wednesday evening between MEPs and the Danish Presidency of the Council will increase funding for defence-related investment by amending existing EU programmes - the Strategic Technologies for Europe Platform (STEP), Horizon Europe, the European Defence Fund (EDF), the Digital Europe programme (DEP) and the Connecting Europe Facility (CEF) - to channel EU funding towards defence. During negotiations, MEPs advocated for the scope of the measures to include resilience, such as cri…"
   },
   {
-    "id": "a31f2ed4263de764",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:501:FIN",
-    "title": "EUROPEAN COMMISSION",
-    "tags": [
-      "EUR-Lex",
-      "EU",
-      "law",
-      "AI & Digital"
-    ],
-    "added": "2026-06-04T07:48:15.347143Z",
-    "summary": "EUROPEAN COMMISSION Brussels, 3.6.2026 COM(2026) 501 final COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Strategic Roadmap for Digitalisation and AI in the Energy Sector 1.Introduction Digitalisation is reshaping our lives, and the energy sector is no exception. Mario Draghi’s report on the future of European Competitiveness underlined the fact that the European Union must harness the ‘digital revolution’ and invest decisively in Artificial Intelligence (AI) and data infrastructure to safeguard its competitiveness and lead the clean energy transition. High energy prices in the EU, exacerbated by the escalating fossil fuel crisis, and the pressure they place on both industrial competitiveness and households, make the digital transformation of the energy system more urgent than ever. The conflict in the Middle East has triggered volatile price spikes, exposing the fragility of the EU’…",
-    "score": 2,
-    "ts": 1780559295,
-    "categories": [
-      "AI & Digital"
-    ],
-    "original_title": "EUROPEAN COMMISSION",
-    "display_title": "EUROPEAN COMMISSION",
-    "display_summary": "Brussels, 3.6.2026 COM(2026) 501 final COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Strategic Roadmap for Digitalisation and AI in the Energy Sector 1.Introduction Digitalisation is reshaping our lives, and the energy sector is no exception. Mario Draghi’s report on the future of European Competitiveness underlined the fact that the European Union must harness the ‘digital revolution’ and invest decisively in Artificial Intelligence (AI) and data infrastructure to safeguard its competitiveness and lead the clean energy transition. High energy prices in the EU, exacerbated by the escalating fossil fuel crisis, and the pressure they place on both industrial competitiveness and households, make the digital transformation of the energy system more urgent than ever. The conflict in the Middle East has triggered volatile price spikes, exposing the fragility of the EU’…"
-  },
-  {
     "id": "e18d8ae1ceda4c72",
     "source": "EUR-Lex",
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_7322_2026_INIT",
     "title": "CONSIL:ST_7322_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2024/1689 and (EU) 2018/1139 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI) - Mandate for negotiations with the European Parliament",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "AI & Digital",
       "law",
-      "AI & Digital"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "AI & Digital"
     ],
@@ -973,15 +924,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0234",
     "title": "CELEX:52026DC0234: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL REPORT ADOPTED PURSUANT TO ARTICLE 112(1) OF REGULATION (EU) 2024/1689 ON THE NEED TO REVIEW THE LIST OF PROHIBITED AI PRACTICES AND OF HIGH-RISK AI SYSTEMS LISTED IN ANNEX III",
     "tags": [
-      "EUR-Lex",
-      "EU",
+      "AI & Digital",
       "law",
-      "AI & Digital"
+      "EU",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "AI & Digital"
     ],
@@ -995,15 +946,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_6497_2026_INIT",
     "title": "CONSIL:ST_6497_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting for defence readiness projects [10518/25 - COM(2025)821] Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry [10526/25- COM (2025)822] Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement [10527/25- COM(2025)823 ] - Opinion on the application of the Principles of Subsidiarity and Proportionality",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -1016,15 +967,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_16097_2025_INIT",
     "title": "CONSIL:ST_16097_2025_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - Mandate for negotiations with the European Parliament",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -1037,15 +988,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_10527_2025_REV_1",
     "title": "CONSIL:ST_10527_2025_REV_1: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -1058,15 +1009,15 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:WK_11512_2025_ADD_1",
     "title": "CONSIL:WK_11512_2025_ADD_1: Omnibus V - Information from the European Defence Agency (EDA)",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
@@ -1079,19 +1030,63 @@
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:WK_11512_2025_INIT",
     "title": "CONSIL:WK_11512_2025_INIT: Omnibus V - Information from the European Defence Agency (EDA)",
     "tags": [
-      "Defence & Security",
-      "EUR-Lex",
+      "law",
       "EU",
-      "law"
+      "Defence & Security",
+      "EUR-Lex"
     ],
-    "added": "2026-06-04T07:22:27.348255+00:00",
+    "added": "2026-06-04T12:42:33.907423+00:00",
     "summary": "",
     "score": 2,
-    "ts": 1780557747,
+    "ts": 1780576953,
     "categories": [
       "Defence & Security"
     ],
     "original_title": "CONSIL:WK_11512_2025_INIT: Omnibus V - Information from the European Defence Agency (EDA)",
     "display_title": "CONSIL:WK_11512_2025_INIT: Omnibus V - Information from the European Defence Agency (EDA)"
+  },
+  {
+    "id": "65833ed97610725b",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62023TJ1191",
+    "title": "CELEX:62023TJ1191: Judgment of the General Court (Third Chamber) of 1 October 2025.#Fincantieri NexTech SpA v European Commission.#Award of grants in the field of defence – EDF – Funding of research actions – Call for proposals EDF‑2022-RA – Rejection of the applicant’s proposal – Manifest error of assessment.#Case T-1191/23.",
+    "tags": [
+      "law",
+      "EU",
+      "Defence & Security",
+      "EUR-Lex"
+    ],
+    "added": "2026-06-04T12:42:33.907423+00:00",
+    "summary": "",
+    "score": 2,
+    "ts": 1780576953,
+    "categories": [
+      "Defence & Security"
+    ],
+    "original_title": "CELEX:62023TJ1191: Judgment of the General Court (Third Chamber) of 1 October 2025.#Fincantieri NexTech SpA v European Commission.#Award of grants in the field of defence – EDF – Funding of research actions – Call for proposals EDF‑2022-RA – Rejection of the applicant’s proposal – Manifest error of assessment.#Case T-1191/23.",
+    "display_title": "Judgment of the General Court (Third Chamber) of 1 October 2025: Fincantieri NexTech SpA v European Commission: Award of grants in the field of defence – EDF – Funding of research actions – Call for proposals EDF‑2022-RA – Rejection of the applicant’s proposal – Manifest error of assessment: Case T-1191/23.",
+    "reference": "CELEX:62023TJ1191"
+  },
+  {
+    "id": "63ab639b810bff6c",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62020TJ0632",
+    "title": "CELEX:62020TJ0632: Judgment of the General Court (First Chamber) of 1 June 2022.#OG v European Defence Agency.#Civil service – Members of the temporary staff – EDA staff – Vacancy notice – Head of Unit post – Rejection of application – Obligation to state reasons – Equal treatment – Transparency – Objectivity – Principle of sound administration – Infringement of the vacancy notice – Manifest error of assessment – Liability – Non-material harm.#Case T-632/20.",
+    "tags": [
+      "law",
+      "EU",
+      "Defence & Security",
+      "EUR-Lex"
+    ],
+    "added": "2026-06-04T12:42:33.907423+00:00",
+    "summary": "",
+    "score": 2,
+    "ts": 1780576953,
+    "categories": [
+      "Defence & Security"
+    ],
+    "original_title": "CELEX:62020TJ0632: Judgment of the General Court (First Chamber) of 1 June 2022.#OG v European Defence Agency.#Civil service – Members of the temporary staff – EDA staff – Vacancy notice – Head of Unit post – Rejection of application – Obligation to state reasons – Equal treatment – Transparency – Objectivity – Principle of sound administration – Infringement of the vacancy notice – Manifest error of assessment – Liability – Non-material harm.#Case T-632/20.",
+    "display_title": "Judgment of the General Court (First Chamber) of 1 June 2022: OG v European Defence Agency: Civil service – Members of the temporary staff – EDA staff – Vacancy notice – Head of Unit post – Rejection of application – Obligation to state reasons – Equal treatment – Transparency – Objectivity – Principle of sound administration – Infringement of the vacancy notice – Manifest error of assessment – Liability – Non-material harm: Case T-632/20.",
+    "reference": "CELEX:62020TJ0632"
   }
 ]
