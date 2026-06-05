@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T07:07:55.923318+00:00",
+  "generated_at": "2026-06-05T12:39:32.202068+00:00",
   "latest_end_date": "2026-06-05",
   "items": [
     {
@@ -47,7 +47,7 @@
         {
           "id": "rep-2026-06-05-8618febb45cae680",
           "title": "Daily Digest — 2026-06-05",
-          "summary": "_Items in last 24h: 111_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-06-05T06:57:58.972274+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI im…",
+          "summary": "_Items in last 24h: 91_ 1. CELEX:52026SC0505: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0) Bron: eur-lex.europa.eu · Datum: 2026-06-05T12:35:28.411233+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-06-05.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,10 +86,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
+            "EU",
             "Defence & Security",
-            "EU"
+            "law",
+            "EUR-Lex"
           ]
         },
         {
@@ -104,10 +104,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
+            "EU",
             "Defence & Security",
-            "EU"
+            "law",
+            "EUR-Lex"
           ]
         },
         {
@@ -122,10 +122,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
+            "EU",
             "Defence & Security",
-            "EU"
+            "law",
+            "EUR-Lex"
           ]
         }
       ],
@@ -142,10 +142,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
+            "EU",
             "Defence & Security",
-            "EU"
+            "law",
+            "EUR-Lex"
           ]
         },
         {
@@ -160,10 +160,10 @@
             "Other"
           ],
           "tags": [
+            "EU",
             "Other",
             "law",
-            "EUR-Lex",
-            "EU"
+            "EUR-Lex"
           ]
         },
         {
@@ -178,10 +178,10 @@
             "Other"
           ],
           "tags": [
+            "EU",
             "Other",
             "law",
-            "EUR-Lex",
-            "EU"
+            "EUR-Lex"
           ]
         },
         {
@@ -196,28 +196,10 @@
             "Other"
           ],
           "tags": [
+            "EU",
             "Other",
             "law",
-            "EUR-Lex",
-            "EU"
-          ]
-        },
-        {
-          "id": "6f637e683b38909e",
-          "title": "COM:2026:200:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=COM:2026:200:FIN",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-06-05",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "Other",
-            "law",
-            "EUR-Lex",
-            "EU"
+            "EUR-Lex"
           ]
         },
         {
@@ -232,10 +214,28 @@
             "Other"
           ],
           "tags": [
+            "EU",
             "Other",
             "law",
-            "EUR-Lex",
-            "EU"
+            "EUR-Lex"
+          ]
+        },
+        {
+          "id": "b3f4970abf68b6a7",
+          "title": "COM:2026:273:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=COM:2026:273:FIN",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-06-05",
+          "categories": [
+            "Other"
+          ],
+          "tags": [
+            "EU",
+            "Other",
+            "law",
+            "EUR-Lex"
           ]
         }
       ],
