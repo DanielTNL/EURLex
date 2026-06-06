@@ -1,26 +1,25 @@
 {
   "date": "2026-06-06",
   "title": "Saturday 6 June 2026",
-  "headline": "Why implement ELI?",
-  "intro": "Saturday 6 June 2026 is led by Why implement ELI?. 5 relevant documents are currently attached to this publication window.",
-  "summary": "Why implement ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… ELI background: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… What is ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Statistics: Do you want to help improving EUR…",
+  "headline": "European Economic and Social Committee",
+  "intro": "Saturday 6 June 2026 is led by European Economic and Social Committee. 5 relevant documents are currently attached to this publication window.",
+  "summary": "European Economic and Social Committee: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Auditors: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… European Central Bank: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Justi…",
   "key_points": [
-    "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
     "Please note that opinions issued during the EU legislative process are not part",
     "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
     "Please note that opinions issued during the EU legislative process are not part"
   ],
   "sections": [
     {
-      "title": "Why implement ELI?",
+      "title": "European Economic and Social Committee",
       "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-06."
     },
     {
-      "title": "ELI background",
+      "title": "Court of Auditors",
       "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-06."
     },
     {
-      "title": "What is ELI?",
+      "title": "European Central Bank",
       "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-06."
     }
   ],
@@ -28,13 +27,14 @@
     "Other/NA",
     "Defence & Security",
     "Other",
-    "daily"
+    "daily",
+    "Cybersecurity"
   ],
   "important_documents": [
     {
       "id": "rep-2026-06-06-fd90f6c90685a93c",
       "title": "Daily Digest — 2026-06-06",
-      "summary": "_Items in last 24h: 120_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-06-06T06:22:32.832925+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI im…",
+      "summary": "_Items in last 24h: 100_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-06-06T11:21:06.050531+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law…",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-06-06.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -47,10 +47,27 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/benefits.html",
-      "title": "Why implement ELI?",
+      "id": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "title": "European Economic and Social Committee",
       "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-      "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "kind": "Blog/News",
+      "source": "eur-lex.europa.eu",
+      "date": "2026-06-06",
+      "categories": [
+        "Other/NA",
+        "Cybersecurity"
+      ],
+      "tags": [
+        "Other/NA",
+        "Cybersecurity"
+      ]
+    },
+    {
+      "id": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "title": "Court of Auditors",
+      "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-06-06",
@@ -62,10 +79,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/background.html",
-      "title": "ELI background",
+      "id": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "title": "European Central Bank",
       "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-      "url": "https://eur-lex.europa.eu/eli-register/background.html",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-06-06",
@@ -77,25 +94,10 @@
       ]
     },
     {
-      "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-      "title": "What is ELI?",
+      "id": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "title": "Court of Justice of the European Union",
       "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-      "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-      "kind": "Blog/News",
-      "source": "eur-lex.europa.eu",
-      "date": "2026-06-06",
-      "categories": [
-        "Other/NA"
-      ],
-      "tags": [
-        "Other/NA"
-      ]
-    },
-    {
-      "id": "https://eur-lex.europa.eu/statistics/statistics.html",
-      "title": "Statistics",
-      "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-      "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
       "date": "2026-06-06",
@@ -120,10 +122,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
-        "Defence & Security"
+        "Defence & Security",
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -138,10 +140,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
-        "Defence & Security"
+        "Defence & Security",
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -156,10 +158,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
-        "Defence & Security"
+        "Defence & Security",
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -174,10 +176,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
+        "Other",
         "law",
-        "Other"
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -192,10 +194,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
+        "Other",
         "law",
-        "Other"
+        "EUR-Lex",
+        "EU"
       ]
     },
     {
@@ -210,10 +212,10 @@
         "Other"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
+        "Other",
         "law",
-        "Other"
+        "EUR-Lex",
+        "EU"
       ]
     }
   ],
@@ -225,7 +227,7 @@
   "signal_counts": {
     "posts": 28,
     "reports": 2,
-    "digest_items": 46,
-    "timeline_events": 0
+    "digest_items": 72,
+    "timeline_events": 46
   }
 }
