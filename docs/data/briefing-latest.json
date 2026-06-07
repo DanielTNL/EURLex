@@ -10,15 +10,15 @@
   "sections": [
     {
       "title": "European Economic and Social Committee",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-06."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-07."
     },
     {
       "title": "Court of Auditors",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-06."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-07."
     },
     {
       "title": "European Central Bank",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-06."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-07."
     }
   ],
   "categories": [
@@ -32,7 +32,7 @@
     {
       "id": "rep-2026-06-07-7ea414ce55b2bbf7",
       "title": "Daily Digest — 2026-06-07",
-      "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-06-06T11:21:06.050531+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
+      "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-06-07T11:46:51.655270+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-06-07.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -51,7 +51,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-06-06",
+      "date": "2026-06-07",
       "categories": [
         "Other/NA",
         "Cybersecurity"
@@ -68,7 +68,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-06-06",
+      "date": "2026-06-07",
       "categories": [
         "Other/NA"
       ],
@@ -83,7 +83,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-06-06",
+      "date": "2026-06-07",
       "categories": [
         "Other/NA"
       ],
@@ -98,7 +98,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-06-06",
+      "date": "2026-06-07",
       "categories": [
         "Other/NA"
       ],
@@ -120,10 +120,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
         "law",
-        "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "Defence & Security",
+        "EU"
       ]
     },
     {
@@ -138,10 +138,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
         "law",
-        "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "Defence & Security",
+        "EU"
       ]
     },
     {
@@ -156,10 +156,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
         "law",
-        "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "Defence & Security",
+        "EU"
       ]
     },
     {
@@ -174,9 +174,27 @@
         "Other"
       ],
       "tags": [
-        "EU",
-        "EUR-Lex",
         "law",
+        "EUR-Lex",
+        "EU",
+        "Other"
+      ]
+    },
+    {
+      "id": "e7f5039e0fbc58c1",
+      "title": "EUROPEAN COMMISSION",
+      "summary": "Brussels, 4.6.2026 COM(2026) 273 final COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard 1. Introduction…",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:273:FIN",
+      "kind": "post",
+      "source": "EUR-Lex",
+      "date": "2026-06-07",
+      "categories": [
+        "Other"
+      ],
+      "tags": [
+        "law",
+        "EUR-Lex",
+        "EU",
         "Other"
       ]
     },
@@ -192,28 +210,10 @@
         "Other"
       ],
       "tags": [
-        "Other",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
-      ]
-    },
-    {
-      "id": "53cf65938fb6dec0",
-      "title": "EP:P9_A(2020)0009: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0009/2020 - 2020/0902(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_A(2020)0009",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-06-07",
-      "categories": [
         "Other"
-      ],
-      "tags": [
-        "Other",
-        "law",
-        "EU",
-        "EUR-Lex"
       ]
     }
   ],
@@ -223,9 +223,9 @@
     "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-06-07.md"
   },
   "signal_counts": {
-    "posts": 25,
+    "posts": 28,
     "reports": 2,
-    "digest_items": 4,
+    "digest_items": 26,
     "timeline_events": 0
   }
 }
