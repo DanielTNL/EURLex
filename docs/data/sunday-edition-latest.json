@@ -43,7 +43,7 @@
     {
       "id": "rep-2026-06-08-dc6ac37f8cbf6326",
       "title": "Daily Digest — 2026-06-08",
-      "summary": "_Items in last 24h: 72_ 1. CONSIL:ST_10094_2026_ADD_1: ANNEXES to the PROPOSAL FOR A REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening Europe's semiconductor ecosystem, repealing Regulation (EU) 2023/1781 (Chips Act 2.0) Bron: eur-lex.europa.eu · Datum: 2026-06-08T07:21:38.094858+00:00 Programma: Other/NA",
+      "summary": "_Items in last 24h: 72_ 1. CONSIL:ST_10104_2026_ADD_4: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a framework of measures for strengthening Europe's cloud and AI ecosystem (Cloud and AI Development Act) Bron: eur-lex.europa.eu · Datum: 2026-06-08T14:03:09.350408+00:00 Programma: Other/NA",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-06-08.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -83,9 +83,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "EUR-Lex",
+        "law",
         "EU",
-        "law"
+        "EUR-Lex"
       ]
     },
     {
@@ -101,9 +101,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "EUR-Lex",
+        "law",
         "EU",
-        "law"
+        "EUR-Lex"
       ]
     },
     {
@@ -119,9 +119,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "EUR-Lex",
+        "law",
         "EU",
-        "law"
+        "EUR-Lex"
       ]
     }
   ],
@@ -139,9 +139,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "EUR-Lex",
+        "law",
         "EU",
-        "law"
+        "EUR-Lex"
       ]
     },
     {
@@ -156,9 +156,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "EU",
         "law",
+        "EU",
+        "EUR-Lex",
         "Other"
       ]
     },
@@ -174,9 +174,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "EU",
         "law",
+        "EU",
+        "EUR-Lex",
         "Other"
       ]
     },
@@ -192,27 +192,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "EU",
         "law",
-        "Other"
-      ]
-    },
-    {
-      "id": "b3f4970abf68b6a7",
-      "title": "COM:2026:273:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=COM:2026:273:FIN",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-06-08",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
-        "EUR-Lex",
         "EU",
-        "law",
+        "EUR-Lex",
         "Other"
       ]
     },
@@ -228,9 +210,27 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "EU",
         "law",
+        "EU",
+        "EUR-Lex",
+        "Other"
+      ]
+    },
+    {
+      "id": "3e4db5c621f147db",
+      "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
+      "summary": "",
+      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0273",
+      "kind": "post",
+      "source": "EUR-Lex",
+      "date": "2026-06-08",
+      "categories": [
+        "Other"
+      ],
+      "tags": [
+        "law",
+        "EU",
+        "EUR-Lex",
         "Other"
       ]
     }
