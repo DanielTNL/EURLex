@@ -74,9 +74,9 @@
     "title": "ESAs publish the first report on DORA major ICT-related incidents",
     "tags": [
       "EBA",
-      "regulation",
       "CMU & Financial Markets",
       "AI & Digital",
+      "regulation",
       "EU"
     ],
     "added": "2026-06-03T11:00:00+02:00",
@@ -144,8 +144,8 @@
     "url": "https://nos.nl/l/2615038",
     "title": "Vier vragen over rapport gevaren sociale media: 'We staan op een keerpunt'",
     "tags": [
-      "external",
-      "AI & Digital"
+      "AI & Digital",
+      "external"
     ],
     "added": "2026-05-19T21:56:26+02:00",
     "summary": "De aanbevelingen die je krijgt voorgeschoteld op sociale media vormen een risico voor de democratie. Tot die weinig verrassende conclusie komt het Commissariaat voor de Media (CvdM) vandaag in een rapport. In dit artikel lees je het antwoord op vier vragen over dit rapport. Is er censuur op sociale media? Het CvdM zegt dat in ieder geval X de feeds gebruikt voor politiek gedreven beïnvloeding. De praktijk shadowbanning wordt echter ook over andere platformen gemeld. Bij dit fenomeen wordt content over een bepaald onderwerp veel minder zichtbaar gemaakt, zonder dat gebruikers daar duidelijk over worden geïnformeerd. Zo zei de toezichtsraad van moederbedrijf Meta in 2024 dat Instagram en Facebook Palestijnse en pro-Palestijnse gebruikers censureren . Gebruikers merkten een onverklaarbare afname van zichtbaarheid van berichten wanneer die over Palestijnen gaan. Meta heeft deze beschuldigingen steeds weersproken en gezegd dat het moderatiebeleid erop gericht is om de platforms…",
@@ -244,6 +244,48 @@
     "display_summary": "- Objective is to facilitate up to €800 billion in defence investment over four years - EU-wide time limit for the issuing of permits for defence projects - Easier procedures for intra-EU transfers and procurement - Simplified eligibility procedures for the European Defence Fund and specific measures for testing projects and actions in Ukraine On Monday, MEPs from four committees approved new proposals to accelerate defence investment and improve the EU’s responsiveness in the face of security challenges. The set of legislative files, part of the so-called “Omnibus V” package of EU simplification measures, aims to speed up the approval of permits for defence projects and the export of defence equipment between EU countries, simplify security and defence procurement and EU cooperation on defence contracts, ensure that EU chemical regulations accommodate defence needs, and simplify the implementation of the European Defence Fund. These proposals also aim to facilitate up to €800 billion …"
   },
   {
+    "id": "96be69ec572bcd49",
+    "source": "Council of the EU",
+    "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/06/10/simplification-council-and-parliament-strike-deal-to-boost-eu-defence-industry-and-readiness/",
+    "title": "Simplification: Council and Parliament strike deal to boost EU defence industry and readiness",
+    "tags": [
+      "EU",
+      "Defence & Security",
+      "Council"
+    ],
+    "added": "2026-06-10T10:31:00+00:00",
+    "summary": "Council and European Parliament reach agreement to simplify rules on security and defence procurement, accelerate permit-granting procedures and strengthen defence readiness.",
+    "score": 2,
+    "ts": 1781087460,
+    "categories": [
+      "Defence & Security"
+    ],
+    "original_title": "Simplification: Council and Parliament strike deal to boost EU defence industry and readiness",
+    "display_title": "Simplification: Council and Parliament strike deal to boost EU defence industry and readiness",
+    "display_summary": "Council and European Parliament reach agreement to simplify rules on security and defence procurement, accelerate permit-granting procedures and strengthen defence readiness."
+  },
+  {
+    "id": "2fd102347155329a",
+    "source": "European Parliament",
+    "url": "https://www.europarl.europa.eu/news/en/press-room/20260608IPR44910/",
+    "title": "Press release - MEPs strike a deal to strengthen Europe’s defence readiness",
+    "tags": [
+      "EU",
+      "Defence & Security",
+      "Parliament"
+    ],
+    "added": "2026-06-10T10:04:53+00:00",
+    "summary": "On Wednesday, Parliament and Council negotiators agreed on proposals to accelerate defence investment and improve the EU’s responsiveness to security challenges. Committee on Employment and Social Affairs Committee on the Internal Market and Consumer Protection Committee on Industry, Research and Energy Committee on Security and Defence Source : © European Union, 2026 - EP",
+    "score": 2,
+    "ts": 1781085893,
+    "categories": [
+      "Defence & Security"
+    ],
+    "original_title": "Press release - MEPs strike a deal to strengthen Europe’s defence readiness",
+    "display_title": "Press release - MEPs strike a deal to strengthen Europe’s defence readiness",
+    "display_summary": "On Wednesday, Parliament and Council negotiators agreed on proposals to accelerate defence investment and improve the EU’s responsiveness to security challenges. Committee on Employment and Social Affairs Committee on the Internal Market and Consumer Protection Committee on Industry, Research and Energy Committee on Security and Defence Source : © European Union, 2026 - EP"
+  },
+  {
     "id": "bd10c981e21028fc",
     "source": "EUR-Lex",
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:02021R0697-20251223",
@@ -287,46 +329,48 @@
     "display_title": "CONSIL:ST_5793_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - 4-column table"
   },
   {
-    "id": "03044df5bd4789b4",
+    "id": "138e905b0be2a39c",
     "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:SEDE_AD(2026)784322",
-    "title": "EP:SEDE_AD(2026)784322: OPINION - of the Committee on Security and Defence - for the Committee on Industry, Research and Energy and the Committee on Transport and Tourism - on the proposal for a regulation of the European Parliament and of the Council establishing the Connecting Europe Facility for the period 2028-2034, amending Regulation (EU) 2024/1679 and repealing Regulation (EU) 2021/1153 - (COM(2025)0547 - C10-0167/2025 - 2025/0221(COD)) - Rapporteur for opinion: Petras Auštrevičius",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0200",
+    "title": "CELEX:52026DC0200: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
     "tags": [
-      "EU",
       "EUR-Lex",
-      "law",
-      "Defence & Security"
+      "Other",
+      "EU",
+      "law"
     ],
-    "added": "2026-06-10T07:01:56.680887+00:00",
+    "added": "2026-06-10T12:52:31.798032+00:00",
     "summary": "",
-    "score": 2,
-    "ts": 1781074916,
+    "score": 1,
+    "ts": 1781095951,
     "categories": [
-      "Defence & Security"
+      "Other"
     ],
-    "original_title": "EP:SEDE_AD(2026)784322: OPINION - of the Committee on Security and Defence - for the Committee on Industry, Research and Energy and the Committee on Transport and Tourism - on the proposal for a regulation of the European Parliament and of the Council establishing the Connecting Europe Facility for the period 2028-2034, amending Regulation (EU) 2024/1679 and repealing Regulation (EU) 2021/1153 - (COM(2025)0547 - C10-0167/2025 - 2025/0221(COD)) - Rapporteur for opinion: Petras Auštrevičius",
-    "display_title": "EP:SEDE_AD(2026)784322: OPINION - of the Committee on Security and Defence - for the Committee on Industry, Research and Energy and the Committee on Transport and Tourism - on the proposal for a regulation of the European Parliament and of the Council establishing the Connecting Europe Facility for the period 2028-2034, amending Regulation (EU) 2024/1679 and repealing Regulation (EU) 2021/1153 - (COM(2025)0547 - C10-0167/2025 - 2025/0221(COD)) - Rapporteur for opinion: Petras Auštrevičius"
+    "original_title": "CELEX:52026DC0200: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
+    "display_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
+    "reference": "CELEX:52026DC0200"
   },
   {
-    "id": "ad6aa41f12353741",
+    "id": "3e4db5c621f147db",
     "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:CJ57_PR(2026)784420",
-    "title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0273",
+    "title": "CELEX:52026DC0273: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
     "tags": [
-      "EU",
       "EUR-Lex",
-      "law",
-      "Defence & Security"
+      "Other",
+      "EU",
+      "law"
     ],
-    "added": "2026-06-10T07:01:56.680887+00:00",
+    "added": "2026-06-10T12:52:31.798032+00:00",
     "summary": "",
-    "score": 2,
-    "ts": 1781074916,
+    "score": 1,
+    "ts": 1781095951,
     "categories": [
-      "Defence & Security"
+      "Other"
     ],
-    "original_title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle",
-    "display_title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle"
+    "original_title": "CELEX:52026DC0273: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
+    "display_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
+    "reference": "CELEX:52026DC0273"
   },
   {
     "id": "8b1f7e51e0b295ab",
@@ -391,50 +435,6 @@
     ],
     "original_title": "EP:P9_A(2020)0011: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0010/2020 - 2020/0903(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli",
     "display_title": "EP:P9_A(2020)0011: REPORT on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020 - C9-0010/2020 - 2020/0903(NLE)) Committee on Economic and Monetary Affairs Rapporteur: Irene Tinagli"
-  },
-  {
-    "id": "138e905b0be2a39c",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0200",
-    "title": "CELEX:52026DC0200: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
-    "tags": [
-      "EU",
-      "Other",
-      "EUR-Lex",
-      "law"
-    ],
-    "added": "2026-06-10T07:01:56.680887+00:00",
-    "summary": "",
-    "score": 1,
-    "ts": 1781074916,
-    "categories": [
-      "Other"
-    ],
-    "original_title": "CELEX:52026DC0200: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
-    "display_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
-    "reference": "CELEX:52026DC0200"
-  },
-  {
-    "id": "3e4db5c621f147db",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0273",
-    "title": "CELEX:52026DC0273: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
-    "tags": [
-      "EU",
-      "Other",
-      "EUR-Lex",
-      "law"
-    ],
-    "added": "2026-06-10T07:01:56.680887+00:00",
-    "summary": "",
-    "score": 1,
-    "ts": 1781074916,
-    "categories": [
-      "Other"
-    ],
-    "original_title": "CELEX:52026DC0273: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
-    "display_title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
-    "reference": "CELEX:52026DC0273"
   },
   {
     "id": "96939d592604ab94",
@@ -731,15 +731,15 @@
     "url": "https://www.eba.europa.eu/publications-and-media/press-releases/suptech-can-make-anti-money-laundering-and-countering-financing-terrorism-supervision-more-effective",
     "title": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds | European Banking Authority",
     "tags": [
+      "regulation",
       "EU",
       "EBA",
-      "CMU & Financial Markets",
-      "regulation"
+      "CMU & Financial Markets"
     ],
-    "added": "2026-06-10T07:05:34.434797Z",
+    "added": "2026-06-10T12:59:13.224985Z",
     "summary": "SupTech can make anti-money laundering and countering the financing of terrorism supervision more effective, the EBA finds The European Banking Authority (EBA) today published a Report on the use of technology tools in anti-money laundering and countering the financing of terrorism (AML/CFT) supervision (SupTech). The Report takes stock of ongoing innovation efforts by competent authorities in the EU and explores how these can support the effective implementation of the new EU AML/CFT framework. The new AML/CFT framework represents a significant step forward in the EU’s fight against financial crime. A key element o is the creation of the Anti-Money Laundering and Countering the Financing of Terrorism Authority (AMLA), which will coordinate AML/CFT supervision at EU level. This institutional change provides a unique opportunity to reassess supervisory approaches and harness the potential of technology to enhance oversight. To inform this work, the EBA conducted a survey of national com…",
     "score": 4,
-    "ts": 1781075134,
+    "ts": 1781096353,
     "categories": [
       "CMU & Financial Markets"
     ],
@@ -821,10 +821,10 @@
       "ECB",
       "CMU & Financial Markets"
     ],
-    "added": "2026-06-10T07:05:34.434797Z",
+    "added": "2026-06-10T12:59:13.224985Z",
     "summary": "12 August 2025 Investors who sell off sovereign bonds in times of stress are commonly referred to as “vigilantes” as they punish governments for what they consider to be bad policy choices. This post finds that investment funds account for most net sales of sovereign bonds in such times. Financial markets are sensitive to macroeconomic and political news, especially given the high debt levels in several euro area countries. On sovereign bond markets, investment funds – which invest the money of households, companies and others – have become key players. In some euro area countries, they hold as much as a quarter of outstanding government debt. So, when investment funds adjust their portfolios, they can have an impact on bond markets and, in turn, on the ability of governments to finance their budgets. That is why they are often referred to as “vigilantes” who discipline governments for what they consider to be unsustainable policy and enforce change. Despite their large footprint in so…",
     "score": 3,
-    "ts": 1781075134,
+    "ts": 1781096353,
     "categories": [
       "CMU & Financial Markets"
     ],
@@ -942,6 +942,48 @@
     "reference": "CELEX:52026DC0234"
   },
   {
+    "id": "03044df5bd4789b4",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:SEDE_AD(2026)784322",
+    "title": "EP:SEDE_AD(2026)784322: OPINION - of the Committee on Security and Defence - for the Committee on Industry, Research and Energy and the Committee on Transport and Tourism - on the proposal for a regulation of the European Parliament and of the Council establishing the Connecting Europe Facility for the period 2028-2034, amending Regulation (EU) 2024/1679 and repealing Regulation (EU) 2021/1153 - (COM(2025)0547 - C10-0167/2025 - 2025/0221(COD)) - Rapporteur for opinion: Petras Auštrevičius",
+    "tags": [
+      "EU",
+      "EUR-Lex",
+      "law",
+      "Defence & Security"
+    ],
+    "added": "2026-06-10T07:01:56.680887+00:00",
+    "summary": "",
+    "score": 2,
+    "ts": 1781074916,
+    "categories": [
+      "Defence & Security"
+    ],
+    "original_title": "EP:SEDE_AD(2026)784322: OPINION - of the Committee on Security and Defence - for the Committee on Industry, Research and Energy and the Committee on Transport and Tourism - on the proposal for a regulation of the European Parliament and of the Council establishing the Connecting Europe Facility for the period 2028-2034, amending Regulation (EU) 2024/1679 and repealing Regulation (EU) 2021/1153 - (COM(2025)0547 - C10-0167/2025 - 2025/0221(COD)) - Rapporteur for opinion: Petras Auštrevičius",
+    "display_title": "EP:SEDE_AD(2026)784322: OPINION - of the Committee on Security and Defence - for the Committee on Industry, Research and Energy and the Committee on Transport and Tourism - on the proposal for a regulation of the European Parliament and of the Council establishing the Connecting Europe Facility for the period 2028-2034, amending Regulation (EU) 2024/1679 and repealing Regulation (EU) 2021/1153 - (COM(2025)0547 - C10-0167/2025 - 2025/0221(COD)) - Rapporteur for opinion: Petras Auštrevičius"
+  },
+  {
+    "id": "ad6aa41f12353741",
+    "source": "EUR-Lex",
+    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:CJ57_PR(2026)784420",
+    "title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle",
+    "tags": [
+      "EU",
+      "EUR-Lex",
+      "law",
+      "Defence & Security"
+    ],
+    "added": "2026-06-10T07:01:56.680887+00:00",
+    "summary": "",
+    "score": 2,
+    "ts": 1781074916,
+    "categories": [
+      "Defence & Security"
+    ],
+    "original_title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle",
+    "display_title": "EP:CJ57_PR(2026)784420: DRAFT REPORT - on the proposal for a regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - (COM(2025)0847 - C10-0311/2025 - 2025/0847(COD)) - Committee on Security and Defence - Committee on Transport and Tourism - (Joint committee procedure - Rule 59 of the Rules of Procedure) - Rapporteurs: Michał Szczerba, Roberts Zīle"
+  },
+  {
     "id": "5b914d3b26a0d003",
     "source": "EUR-Lex",
     "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_6497_2026_INIT",
@@ -1045,49 +1087,5 @@
     ],
     "original_title": "CONSIL:WK_11512_2025_INIT: Omnibus V - Information from the European Defence Agency (EDA)",
     "display_title": "CONSIL:WK_11512_2025_INIT: Omnibus V - Information from the European Defence Agency (EDA)"
-  },
-  {
-    "id": "65833ed97610725b",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62023TJ1191",
-    "title": "CELEX:62023TJ1191: Judgment of the General Court (Third Chamber) of 1 October 2025.#Fincantieri NexTech SpA v European Commission.#Award of grants in the field of defence – EDF – Funding of research actions – Call for proposals EDF‑2022-RA – Rejection of the applicant’s proposal – Manifest error of assessment.#Case T-1191/23.",
-    "tags": [
-      "EU",
-      "EUR-Lex",
-      "law",
-      "Defence & Security"
-    ],
-    "added": "2026-06-10T07:01:56.680887+00:00",
-    "summary": "",
-    "score": 2,
-    "ts": 1781074916,
-    "categories": [
-      "Defence & Security"
-    ],
-    "original_title": "CELEX:62023TJ1191: Judgment of the General Court (Third Chamber) of 1 October 2025.#Fincantieri NexTech SpA v European Commission.#Award of grants in the field of defence – EDF – Funding of research actions – Call for proposals EDF‑2022-RA – Rejection of the applicant’s proposal – Manifest error of assessment.#Case T-1191/23.",
-    "display_title": "Judgment of the General Court (Third Chamber) of 1 October 2025: Fincantieri NexTech SpA v European Commission: Award of grants in the field of defence – EDF – Funding of research actions – Call for proposals EDF‑2022-RA – Rejection of the applicant’s proposal – Manifest error of assessment: Case T-1191/23.",
-    "reference": "CELEX:62023TJ1191"
-  },
-  {
-    "id": "63ab639b810bff6c",
-    "source": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:62020TJ0632",
-    "title": "CELEX:62020TJ0632: Judgment of the General Court (First Chamber) of 1 June 2022.#OG v European Defence Agency.#Civil service – Members of the temporary staff – EDA staff – Vacancy notice – Head of Unit post – Rejection of application – Obligation to state reasons – Equal treatment – Transparency – Objectivity – Principle of sound administration – Infringement of the vacancy notice – Manifest error of assessment – Liability – Non-material harm.#Case T-632/20.",
-    "tags": [
-      "EU",
-      "EUR-Lex",
-      "law",
-      "Defence & Security"
-    ],
-    "added": "2026-06-10T07:01:56.680887+00:00",
-    "summary": "",
-    "score": 2,
-    "ts": 1781074916,
-    "categories": [
-      "Defence & Security"
-    ],
-    "original_title": "CELEX:62020TJ0632: Judgment of the General Court (First Chamber) of 1 June 2022.#OG v European Defence Agency.#Civil service – Members of the temporary staff – EDA staff – Vacancy notice – Head of Unit post – Rejection of application – Obligation to state reasons – Equal treatment – Transparency – Objectivity – Principle of sound administration – Infringement of the vacancy notice – Manifest error of assessment – Liability – Non-material harm.#Case T-632/20.",
-    "display_title": "Judgment of the General Court (First Chamber) of 1 June 2022: OG v European Defence Agency: Civil service – Members of the temporary staff – EDA staff – Vacancy notice – Head of Unit post – Rejection of application – Obligation to state reasons – Equal treatment – Transparency – Objectivity – Principle of sound administration – Infringement of the vacancy notice – Manifest error of assessment – Liability – Non-material harm: Case T-632/20.",
-    "reference": "CELEX:62020TJ0632"
   }
 ]
