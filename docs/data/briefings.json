@@ -1,28 +1,29 @@
 {
-  "generated_at": "2026-06-13T06:59:15.191221+00:00",
+  "generated_at": "2026-06-13T11:59:01.627510+00:00",
   "latest_date": "2026-06-13",
   "items": [
     {
       "date": "2026-06-13",
       "title": "Saturday 13 June 2026",
-      "headline": "Why implement ELI?",
-      "intro": "Saturday 13 June 2026 is led by Why implement ELI?. 5 relevant documents are currently attached to this publication window.",
-      "summary": "Why implement ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… ELI background: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… What is ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Statistics: Do you want to help improving EUR…",
+      "headline": "European Economic and Social Committee",
+      "intro": "Saturday 13 June 2026 is led by European Economic and Social Committee. 5 relevant documents are currently attached to this publication window.",
+      "summary": "European Economic and Social Committee: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Auditors: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… European Central Bank: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Justi…",
       "key_points": [
+        "Please note that opinions issued during the EU legislative process are not part",
         "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
         "Please note that opinions issued during the EU legislative process are not part"
       ],
       "sections": [
         {
-          "title": "Why implement ELI?",
+          "title": "European Economic and Social Committee",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-13."
         },
         {
-          "title": "ELI background",
+          "title": "Court of Auditors",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-13."
         },
         {
-          "title": "What is ELI?",
+          "title": "European Central Bank",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-06-13."
         }
       ],
@@ -30,13 +31,14 @@
         "Other/NA",
         "Defence & Security",
         "Other",
-        "daily"
+        "daily",
+        "Cybersecurity"
       ],
       "important_documents": [
         {
           "id": "rep-2026-06-13-c18735963153e20b",
           "title": "Daily Digest — 2026-06-13",
-          "summary": "_Items in last 24h: 122_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-06-13T06:46:55.424533+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI im…",
+          "summary": "_Items in last 24h: 100_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-06-13T11:51:41.716729+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-06-13.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -49,10 +51,27 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/benefits.html",
-          "title": "Why implement ELI?",
+          "id": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+          "title": "European Economic and Social Committee",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+          "kind": "Blog/News",
+          "source": "eur-lex.europa.eu",
+          "date": "2026-06-13",
+          "categories": [
+            "Other/NA",
+            "Cybersecurity"
+          ],
+          "tags": [
+            "Other/NA",
+            "Cybersecurity"
+          ]
+        },
+        {
+          "id": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+          "title": "Court of Auditors",
+          "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
+          "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-06-13",
@@ -64,10 +83,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/background.html",
-          "title": "ELI background",
+          "id": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+          "title": "European Central Bank",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/background.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-06-13",
@@ -79,25 +98,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-          "title": "What is ELI?",
+          "id": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+          "title": "Court of Justice of the European Union",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-          "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
-          "date": "2026-06-13",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/statistics/statistics.html",
-          "title": "Statistics",
-          "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-06-13",
@@ -122,10 +126,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "EU",
-            "EUR-Lex",
-            "Defence & Security"
+            "law",
+            "Defence & Security",
+            "EUR-Lex"
           ]
         },
         {
@@ -140,10 +144,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "EU",
-            "EUR-Lex",
-            "Defence & Security"
+            "law",
+            "Defence & Security",
+            "EUR-Lex"
           ]
         },
         {
@@ -158,10 +162,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "EU",
-            "EUR-Lex",
-            "Defence & Security"
+            "law",
+            "Defence & Security",
+            "EUR-Lex"
           ]
         },
         {
@@ -176,9 +180,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "law",
             "EU",
+            "law",
+            "Other",
             "EUR-Lex"
           ]
         },
@@ -194,9 +198,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "law",
             "EU",
+            "law",
+            "Other",
             "EUR-Lex"
           ]
         },
@@ -212,9 +216,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "law",
             "EU",
+            "law",
+            "Other",
             "EUR-Lex"
           ]
         }
@@ -227,8 +231,8 @@
       "signal_counts": {
         "posts": 28,
         "reports": 2,
-        "digest_items": 46,
-        "timeline_events": 0
+        "digest_items": 72,
+        "timeline_events": 46
       }
     },
     {
@@ -437,7 +441,7 @@
       "signal_counts": {
         "posts": 0,
         "reports": 2,
-        "digest_items": 76,
+        "digest_items": 28,
         "timeline_events": 76
       }
     },
@@ -1702,31 +1706,26 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 72
+        "timeline_events": 26
       }
     },
     {
       "date": "2026-06-05",
       "title": "Friday 5 June 2026",
-      "headline": "CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of six new nuclear reactors in France – Inv…",
-      "intro": "Friday 5 June 2026 is led by CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of six new nuclear reactors in France – Invitation to submit comments pursuant to Article 108(2) of the Treaty on the Functioning of t…",
-      "summary": "CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of six new nuclear reactors in France – Invitation to submit comments pursuant to Article 108(2) of the Treaty on the Functioning of the European Union.: CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of six new nuclear reactors in France – Invitation to submit co… CELEX:52026M12319(01): Non-opposition to a notified concentration (Case M.12319 – CHARLESBANK / NORDIC CAPITAL / TECOMET / ORCHID): CELEX:52026M12319(01): Non-opposition to a notified concentration (Case M.12319 – CHARLESBANK / NORDIC CAPITAL / TECOMET / ORCHID)",
+      "headline": "Daily Digest — 2026-06-05",
+      "intro": "Friday 5 June 2026 is led by Daily Digest — 2026-06-05. 1 relevant documents are currently attached to this publication window.",
+      "summary": "Daily Digest — 2026-06-05: Items in last 24h: 91 1. CELEX:52026SC0505: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the C…",
       "key_points": [
         "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
         "Please note that opinions issued during the EU legislative process are not part"
       ],
       "sections": [
         {
-          "title": "CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of…",
-          "body": "CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of six new nuclear reactors in France – Invitation to submit co… Source: Timeline, 2026-06-05."
-        },
-        {
-          "title": "CELEX:52026M12319(01): Non-opposition to a notified concentration (Case M.12319 – CHARLESBANK / NORDIC CAPITAL / TECOME…",
-          "body": "CELEX:52026M12319(01): Non-opposition to a notified concentration (Case M.12319 – CHARLESBANK / NORDIC CAPITAL / TECOMET / ORCHID) Source: Timeline, 2026-06-05."
+          "title": "Daily Digest — 2026-06-05",
+          "body": "Items in last 24h: 91 1. CELEX:52026SC0505: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0) Bron: eur-lex.europa.eu · Datum: 2026-06-05T12:35:28.411233+00:00 Programma: Other/NA Source: EURLex reports, 2026-06-05."
         }
       ],
       "categories": [
-        "Other/NA",
         "daily"
       ],
       "important_documents": [
@@ -1744,55 +1743,9 @@
           "tags": [
             "daily"
           ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12319(01)",
-          "title": "CELEX:52026M12319(01): Non-opposition to a notified concentration (Case M.12319 – CHARLESBANK / NORDIC CAPITAL / TECOMET / ORCHID)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12319(01)",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-06-05",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS119469",
-          "title": "CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of six new nuclear reactors in France – Invitation to submit comments pursuant to Article 108(2) of the Treaty on the Functioning of the European Union.",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS119469",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-06-05",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
         }
       ],
-      "related_documents": [
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS119469",
-          "title": "CELEX:52026AS119469: State aid – France – State aid SA.119469 (2025/N) - Support for the construction and operation of six new nuclear reactors in France – Invitation to submit comments pursuant to Article 108(2) of the Treaty on the Functioning of the European Union.",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS119469",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-06-05",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        }
-      ],
+      "related_documents": [],
       "report": {
         "id": "rep-2026-06-05-8618febb45cae680",
         "title": "Daily Digest — 2026-06-05",
@@ -1802,7 +1755,7 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 2
+        "timeline_events": 0
       }
     },
     {
@@ -1910,9 +1863,9 @@
           "tags": [
             "CMU & Financial Markets",
             "regulation",
-            "AI & Digital",
+            "EBA",
             "EU",
-            "EBA"
+            "AI & Digital"
           ]
         },
         {
