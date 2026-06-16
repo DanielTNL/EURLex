@@ -1,11 +1,375 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-06-09T08:38:55.342628+00:00",
-    "end": "2026-06-16T08:38:55.342628+00:00",
+    "start": "2026-06-09T14:55:59.541117+00:00",
+    "end": "2026-06-16T14:55:59.541117+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-06-16T14:55:58.067211+00:00",
+      "title": "CONSIL:ST_9807_2026_REV_1_ADD_3: Proposal for a Regulation of the European Parliament and of the Council establishing the European Fund for economic, social and territorial cohesion, agriculture and rural, fisheries and maritime, prosperity and security for the period 2028-2034 and amending Regulation (EU) 2023/955 and Regulation (EU, Euratom) 2024/2509 ('NRPP Regulation') - Partial general approach = Statement by Estonia, Latvia and Lithuania",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9807_2026_REV_1_ADD_3",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9807_2026_REV_1_ADD_3",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:56.564966+00:00",
+      "title": "CELEX:52026SC0149: COMMISSION STAFF WORKING DOCUMENT Accompanying the document REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE COURT OF AUDITORS Annual report to the Discharge Authority on internal audits carried out in 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0149",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0149",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:55.076935+00:00",
+      "title": "CONSIL:ST_10604_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Germany",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10604_2026_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10604_2026_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:53.605328+00:00",
+      "title": "CONSIL:ST_10489_2026_ADD_1: Regulation establishing European Competitiveness Fund (ECF), including specific programme for defence research and innovation - Partial general approach = Statement by Austria",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10489_2026_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10489_2026_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:52.198749+00:00",
+      "title": "2026/0156/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Lithuania",
+      "url": "https://eur-lex.europa.eu/procedure/EN/2026_156",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_156",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:50.676357+00:00",
+      "title": "2026/0157/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Latvia",
+      "url": "https://eur-lex.europa.eu/procedure/EN/2026_157",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_157",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:49.159224+00:00",
+      "title": "CELEX:52026SC0153: COMMISSION STAFF WORKING DOCUMENT Updated climate tracking and digital tagging of the recovery and resilience plan of Germany Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Germany",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0153",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0153",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:47.734641+00:00",
+      "title": "CELEX:52026PC0291: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Latvia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0291",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0291",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:46.225136+00:00",
+      "title": "CELEX:52026PC0285: Proposal for a COUNCIL IMPLEMENTING DECISION authorising Croatia to apply reduced rates of excise duty to gas oil and unleaded petrol used as motor fuels, pursuant to Article 19 of Directive 2003/96/EC",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0285",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0285",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:44.776970+00:00",
+      "title": "PI_COM:Ares(2026)6094473: Proposal for a Regulation (EU) XXXX amending Regulation (EU) 2018/1999 on the Governance of the Energy Union and Climate Action",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6094473",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6094473",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:43.256080+00:00",
+      "title": "PI_COM:Ares(2026)6073732: Communication from the Commission on 'The European Ocean Research and Innovation Strategy: unlocking potential'",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6073732",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6073732",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:41.763198+00:00",
+      "title": "CELEX:52026PC0286: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Germany",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0286",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0286",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:40.393047+00:00",
+      "title": "CONSIL:ST_10587_2026_INIT: Proposal for a COUNCIL IMPLEMENTING DECISION authorising Croatia to apply reduced rates of excise duty to gas oil and unleaded petrol used as motor fuels, pursuant to Article 19 of Directive 2003/96/EC",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10587_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10587_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:38.924061+00:00",
+      "title": "CONSIL:ST_10454_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry - Final compromise text",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10454_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10454_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:37.408587+00:00",
+      "title": "CELEX:52026DC0279: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE COURT OF AUDITORS Annual report to the Discharge Authority on internal audits carried out in 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0279",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0279",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:35.874311+00:00",
+      "title": "CELEX:52026PC0289: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Lithuania",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0289",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0289",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:34.351759+00:00",
+      "title": "CONSIL:ST_10489_2026_ADD_1_REV_1: Regulation establishing European Competitiveness Fund (ECF), including specific programme for defence research and innovation - Partial general approach = Statement by Austria",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10489_2026_ADD_1_REV_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10489_2026_ADD_1_REV_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:33.027190+00:00",
+      "title": "CONSIL:ST_10547_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2014/45/EU on periodic roadworthiness tests for motor vehicles and their trailers and Directive 2014/47/EU on the technical roadside inspection of the roadworthiness of commercial vehicles circulating in the Union (Text with EEA relevance) - Four-column document",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10547_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10547_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:31.484286+00:00",
+      "title": "PI_COM:Ares(2026)6073850: Communication from the Commission - A Strategic Water Resilience Research &amp;amp; Innovation Strategy",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6073850",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6073850",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:29.959847+00:00",
+      "title": "CONSIL:ST_10212_2026_INIT: Draft amending budget No 2 to the general budget for 2026: Update of revenue (own resources) and adjustments to expenditure",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10212_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10212_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:28.395466+00:00",
+      "title": "CONSIL:ST_10676_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Lithuania",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10676_2026_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10676_2026_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:27.003259+00:00",
+      "title": "CONSIL:ST_10640_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT Updated climate tracking and digital tagging of the recovery and resilience plan of Latvia Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Latvia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10640_2026_ADD_2",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10640_2026_ADD_2",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:25.532274+00:00",
+      "title": "CONSIL:ST_10605_2026_INIT: Report from the Commission to the European Parliament and the Council on the Commission's assessment of the markets for commodity derivatives, for emission allowances and for derivatives of emission allowances, pursuant to Article 90(5) of the Markets in Financial Instruments Directive (MiFID II) (Directive (EU) 2014/65), as amended in February 2024 ; COM(2026)251 final [] - SGD(2026)7631",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10605_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10605_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:24.182999+00:00",
+      "title": "CONSIL:ST_10406_2026_INIT: Omnibus V Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting for defence readiness projects Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - Confirmation of the final compromise texts with a view to agreement",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10406_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10406_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:22.754095+00:00",
+      "title": "CONSIL:ST_10640_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Latvia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10640_2026_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10640_2026_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:17.803834+00:00",
+      "title": "PI_COM:Ares(2026)6115964: Proposal for a Council Regulation setting up European Partnerships as Joint Undertakings (Art. 187 TFEU) under Horizon Europe (2028-2034).",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6115964",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6115964",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:15.827592+00:00",
+      "title": "CONSIL:ST_10559_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council establishing the European Fund for economic, social and territorial cohesion, agriculture and rural, fisheries and maritime, prosperity and security for the period 2028-2034 and amending Regulation (EU) 2023/955 and Regulation (EU, Euratom) 2024/2509 ('NRPP Regulation') - Partial general approach",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10559_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10559_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-16T14:55:12.712241+00:00",
+      "title": "CONSIL:ST_10625_2026_INIT: Regulation establishing European Competitiveness Fund (ECF), including specific programme for defence research and innovation - Partial general approach",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10625_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 16 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10625_2026_INIT",
+      "amounts": []
+    },
     {
       "date": "2026-06-16T08:38:53.702632+00:00",
       "title": "CELEX:52026DC0460: DRAFT AMENDING BUDGET No 2 TO THE GENERAL BUDGET 2026 Update of revenue (own resources) and adjustments to expenditure",
@@ -654,6 +1018,32 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 15 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202601338",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-15T22:00:00+00:00",
+      "title": "CELEX:52026M12414(01): Non-opposition to a notified concentration (Case M.12414 – ABERDEEN / DIGITALBRIDGE / ZEMOBILITY)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12414(01)",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 15 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12414(01)",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-15T22:00:00+00:00",
+      "title": "CELEX:32026D1338: Council Decision (CFSP) 2026/1338 of 15 June 2026 in support of a project on digital solutions for secure conventional ammunition stockpiles in the EU Neighbourhood (AIMS/SIMS)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D1338",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 15 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D1338",
       "amounts": []
     },
     {
@@ -5893,370 +6283,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 10 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10269_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:37.231222+00:00",
-      "title": "2026/0140/NLE: Proposal for a COUNCIL DECISION on the financial contributions to be paid by the parties to the European Development Fund as a second instalment for 2026",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_140",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_140",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:35.749301+00:00",
-      "title": "CONSIL:ST_10104_2026_ADD_4: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a framework of measures for strengthening Europe's cloud and AI ecosystem (Cloud and AI Development Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_4",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_4",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:34.412071+00:00",
-      "title": "CONSIL:ST_10104_2026_ADD_1: ANNEX to the Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a framework of measures for strengthening Europe's cloud and AI ecosystem (Cloud and AI Development Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:33.013151+00:00",
-      "title": "CONSIL:ST_10104_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a framework of measures for strengthening Europe's cloud and AI ecosystem (Cloud and AI Development Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:31.590378+00:00",
-      "title": "CELEX:52026DC0273: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS   2026 EU Justice Scoreboard",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0273",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0273",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:30.229992+00:00",
-      "title": "CELEX:52026DC0266: COMMUNICATION FROM THE COMMISSION TO THE COUNCIL Financial information on the European Development Fund (EDF): Financial implementation 2025 and forecasts for 2026-2029",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0266",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0266",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:28.916274+00:00",
-      "title": "CELEX:52026PC0267: Proposal for a COUNCIL DECISION on the financial contributions to be paid by the parties to the European Development Fund as a second instalment for 2026",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0267",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0267",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:27.326262+00:00",
-      "title": "CONSIL:ST_10202_2026_INIT: Proposal for a COUNCIL DECISION on the financial contributions to be paid by the parties to the European Development Fund as a second instalment for 2026",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10202_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10202_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:25.948133+00:00",
-      "title": "CELEX:52026DC0268: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL OceanEye: An EU ocean observation initiative",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0268",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0268",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:24.629587+00:00",
-      "title": "PI_COM:C(2026)3647: COMMISSION DELEGATED REGULATION (EU) …/... amending Regulation (EU) No 575/2013 of the European Parliament and of the Council as regards temporary targeted operational relief measures and targeted multipliers for the calculation of an institution’s own funds requirements for market risk",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)3647",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)3647",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:23.284546+00:00",
-      "title": "CONSIL:ST_10104_2026_ADD_2: PART 1/2 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a framework of measures for strengthening Europe's cloud and AI ecosystem (Cloud and AI Development Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_2",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:21.839330+00:00",
-      "title": "CELEX:02021R0691-20260521: Regulation (EU) 2021/691 of the European Parliament and of the Council of 28 April 2021 on the European Globalisation Adjustment Fund for Displaced Workers (EGF) and repealing Regulation (EU) No 1309/2013",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021R0691-20260521",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021R0691-20260521",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:20.272490+00:00",
-      "title": "CELEX:52026SC0145: COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL Sustainable fishing in the EU: state of play and orientations for 2027",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0145",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0145",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:18.785101+00:00",
-      "title": "CONSIL:ST_10094_2026_ADD_4: PART 2/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_4",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_4",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:17.298080+00:00",
-      "title": "CELEX:52026PC0272: Proposal for a COUNCIL DECISION on the position to be adopted, on behalf of the European Union, within the EEA Joint Committee concerning an amendment to Protocol 31 to the EEA Agreement, on cooperation in specific fields outside the four freedoms (Govsatcom and Secure Connectivity)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0272",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0272",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:15.913316+00:00",
-      "title": "CELEX:52026DC0271: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL Sustainable fishing in the EU: state of play and orientations for 2027",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0271",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0271",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:14.470951+00:00",
-      "title": "CONSIL:ST_9834_2026_INIT: Omnibus simplification legislative packages - Progress report",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9834_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9834_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:13.098640+00:00",
-      "title": "CONSIL:ST_10177_2026_ADD_1: ANNEX to the Proposal for a COUNCIL DECISION on the position to be adopted, on behalf of the European Union, within the EEA Joint Committee concerning an amendment to Protocol 31 to the EEA Agreement, on cooperation in specific fields outside the four freedoms (Govsatcom and Secure Connectivity)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10177_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10177_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:11.668321+00:00",
-      "title": "CONSIL:ST_10094_2026_ADD_5: PART 3/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_5",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_5",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:10.398082+00:00",
-      "title": "CONSIL:ST_10104_2026_ADD_3: PART 2/2 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a framework of measures for strengthening Europe's cloud and AI ecosystem (Cloud and AI Development Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_3",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10104_2026_ADD_3",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:08.827362+00:00",
-      "title": "PI_EESC:EESC-2026-00431-AS: RESourceEU Action Plan",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2026-00431-AS",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2026-00431-AS",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:07.409571+00:00",
-      "title": "CELEX:32026M12186: Commission Decision of 27/03/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12186 - GTCR / ZENTIVA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12186",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12186",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:05.928409+00:00",
-      "title": "CELEX:32026M12289: Commission Decision of 22/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12289 - IFM INVESTORS / ATLAS ARTERIA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12289",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12289",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:04.487025+00:00",
-      "title": "CONSIL:ST_9891_2026_INIT: Presidency Steering Note on the Market Integration and Supervision Package - Policy debate",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9891_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9891_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:03.062779+00:00",
-      "title": "CELEX:32026M12414: Commission Decision of 28/05/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12414 - ABERDEEN / DIGITALBRIDGE / ZEMOBILITY) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12414",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12414",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:01.533474+00:00",
-      "title": "CELEX:52026DC0270: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL on the ‘Commitments on Confidence in Statistics’ by Member States as required by Regulation (EC) No 223/2009 of the European Parliament and of the Council of 11 March 2009",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0270",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0270",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:34:00.053888+00:00",
-      "title": "CELEX:02024R0792-20260227: Regulation (EU) 2024/792 of the European Parliament and of the Council of 29 February 2024 establishing the Ukraine Facility",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R0792-20260227",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R0792-20260227",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-09T12:33:53.483297+00:00",
-      "title": "CONSIL:ST_10269_2026_ADD_1: ANNEX to the Proposal for a COUNCIL DECISION on guidelines for the employment policies of the Member States",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10269_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 09 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10269_2026_ADD_1",
       "amounts": []
     }
   ]
