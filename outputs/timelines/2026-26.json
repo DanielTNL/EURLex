@@ -1,11 +1,354 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-06-19T06:44:50.350997+00:00",
-    "end": "2026-06-26T06:44:50.350997+00:00",
+    "start": "2026-06-19T12:11:14.317988+00:00",
+    "end": "2026-06-26T12:11:14.317988+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-06-26T12:11:12.804196+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:11.467983+00:00",
+      "title": "European Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:10.148477+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:08.347857+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:06.952858+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:05.518930+00:00",
+      "title": "Council of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/browse/institutions/council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:03.967305+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:02.644819+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:11:00.303901+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:58.454668+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:56.612467+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:54.896078+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:52.487591+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:50.645440+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:48.825860+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:47.115645+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:45.114188+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:42.419237+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:41.163914+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:39.792247+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:38.276043+00:00",
+      "title": "Help",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/content/help.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:36.561320+00:00",
+      "title": "EUR-Lex home",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/homepage.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:33.387993+00:00",
+      "title": "Feedback",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:31.571797+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:28.642040+00:00",
+      "title": "My searches",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-06-26T12:10:26.506724+00:00",
+      "title": "Redirecting To ECAS",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
     {
       "date": "2026-06-26T06:44:48.684534+00:00",
       "title": "CONSIL:ST_11014_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council on digital networks, amending Regulation (EU) 2015/2120, Directive 2002/58/EC and Decision No 676/2002/EC and repealing Regulation (EU) 2018/1971, Directive (EU) 2018/1972 and Decision No 243/2012/EU (Digital Networks Act) - Opinion of the European Economic and Social Committee (EESC)",
@@ -941,6 +1284,50 @@
       "stage": "NA",
       "short": "References • Source — 25 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:565:FIN",
       "amounts": []
+    },
+    {
+      "date": "2026-06-25T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Award/Grant",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. EU countries have adopted two laws eliminating tariffs on US industrial goods, providing preferential access for certain US seafood and agricultural products and extending the suspension",
+      "amounts": [
+        {
+          "amount": 800000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 838000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-25T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Award/Grant",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. EU countries have adopted two laws eliminating tariffs on US industrial goods, providing preferential access for certain US seafood and agricultural products and extending the suspension",
+      "amounts": [
+        {
+          "amount": 800000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 838000000.0,
+          "currency": "EUR"
+        }
+      ]
     },
     {
       "date": "2026-06-25T06:40:34.449519+00:00",
@@ -5817,750 +6204,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12426",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. According to the latest EU bathing water report, 85% of Europe’s bathing sites meet ‘excellent’ standards. Austria, Bulgaria, Cyprus and Greece have the highest share for",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:13.367226+00:00",
-      "title": "CONSIL:ST_10428_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the non-application of customs duties on imports of certain goods - Outcome of the European Parliament’s first reading (Strasbourg, 15 to 18 June 2026)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10428_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10428_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:12.005617+00:00",
-      "title": "CONSIL:PE_32_2026_INIT: REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the adjustment of customs duties on the imports of certain goods originating in the United States of America and opening of tariff quotas for imports of certain goods originating in the United States of America",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_32_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_32_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:10.602434+00:00",
-      "title": "CELEX:52026PC0307: Proposal for a COUNCIL IMPLEMENTING DECISION amending Implementing Decision (EU) 2024/1447 on the approval of the assessment of the Ukraine Plan",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0307",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0307",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:08.928842+00:00",
-      "title": "CELEX:52026DC0824: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE COURT OF AUDITORS Annual Management and Performance Report for the EU Budget – 2025 financial year",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0824",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0824",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:07.325944+00:00",
-      "title": "CONSIL:ST_10721_2026_INIT: AOB item for the meeting of the “Agriculture and Fisheries” Council on 22-23 June 2026: Regulation establishing the conditions for the implementation of Union support under the CAP: state of play - Information from the Presidency",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10721_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10721_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:05.948842+00:00",
-      "title": "2026/0167/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending Implementing Decision (EU) 2024/1447 on the approval of the assessment of the Ukraine Plan",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_167",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_167",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:04.425610+00:00",
-      "title": "CELEX:52026SC0155: COMMISSION STAFF WORKING DOCUMENT Digital Decade 2026 country report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS State of the Digital Decade 2026: Closing structural gaps and mobilising investments for 2030 and beyond",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0155",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0155",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:02.977766+00:00",
-      "title": "CELEX:52026SC0157: COMMISSION STAFF WORKING DOCUMENT Progress report on multi-country projects Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS State of the Digital Decade 2026: Closing structural gaps and mobilising investments for 2030 and beyond",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0157",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0157",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:01.559904+00:00",
-      "title": "CELEX:52026SC0156: COMMISSION STAFF WORKING DOCUMENT Monitoring of EU-level recommendations 2025 Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee, the Committee of the Regions State of the Digital Decade 2026: Closing structural gaps and mobilising investments for 2030 and beyond",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0156",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0156",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:25:00.102882+00:00",
-      "title": "CONSIL:ST_10743_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending Implementing Decision (EU) 2024/1447 on the approval of the assessment of the Ukraine Plan",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10743_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10743_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:58.351164+00:00",
-      "title": "CONSIL:ST_10367_2026_INIT: Regulation establishing the conditions for the implementation of Union support under the CAP - Presidency suggested amendments",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10367_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10367_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:56.837865+00:00",
-      "title": "CELEX:62025TJ0184: Judgment of the General Court (Second Chamber, Extended Composition) of 17 June 2026.#Veronsaajien oikeudenvalvontayksikkö v A Oy.#Reference for a preliminary ruling – Taxation – Common system of VAT – Exemptions – Article 135(1)(b) to (d) of Directive 2006/112/EC – Management of credit by the person granting it – Any dealings in credit guarantees or any other security for money – Transactions, including negotiation, concerning deposit and current accounts, payments, transfers, debts, cheques and other negotiable instruments, but excluding debt collection – Transfer of loans – Management services invoiced by the transferor to the transferee.#Case T-184/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0184",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0184",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:55.268577+00:00",
-      "title": "CONSIL:PE_31_2026_INIT: REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the non-application of customs duties on imports of certain goods",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_31_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_31_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:53.811238+00:00",
-      "title": "CELEX:52026DC0288: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS State of the Digital Decade 2026: Closing structural gaps and mobilising investments for 2030 and beyond",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0288",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0288",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:52.334453+00:00",
-      "title": "CELEX:62024TJ0330_INF: Judgment of the General Court (Fourth Chamber) of 29 October 2025.#KF v European Investment Bank.#Case T-330/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0330_INF",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0330_INF",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:50.866435+00:00",
-      "title": "CONSIL:ST_10429_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the adjustment of customs duties on the import of certain goods originating in the United States of America and opening of tariff quotas for imports of certain goods originating in the United States of America - Outcome of the European Parliament’s first reading (Strasbourg, 15 to 18 June 2026)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10429_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10429_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:49.285061+00:00",
-      "title": "CONSIL:ST_10572_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - Offer letter sent to the European Parliament",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10572_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10572_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:47.810936+00:00",
-      "title": "CELEX:02015R0063-20260606: Commission Delegated Regulation (EU) 2015/63 of 21 October 2014 supplementing Directive 2014/59/EU of the European Parliament and of the Council with regard to ex ante contributions to resolution financing arrangements",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02015R0063-20260606",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02015R0063-20260606",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:46.402888+00:00",
-      "title": "CELEX:52026PC0305: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Slovenia",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0305",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0305",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:44.997820+00:00",
-      "title": "CELEX:62025CC0550: Opinion of Advocate General Campos Sánchez-Bordona delivered on 18 June 2026.###",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0550",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0550",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:43.383117+00:00",
-      "title": "2026/0170/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Cyprus",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_170",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_170",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:41.975695+00:00",
-      "title": "CONSIL:ST_10837_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 29 October 2021 on the approval of the assessment of the recovery and resilience plan for Finland",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10837_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10837_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:40.451325+00:00",
-      "title": "CONSIL:ST_10570_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry - Offer letter sent to the European Parliament",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10570_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10570_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:39.037057+00:00",
-      "title": "CONSIL:ST_10852_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Luxembourg",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10852_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10852_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:37.498227+00:00",
-      "title": "CONSIL:ST_10854_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Cyprus",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10854_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10854_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:36.092232+00:00",
-      "title": "CELEX:52026AB0019: Opinion of the European Central Bank of 17 June 2026 on the functioning of a Systemic Stability Council (CON/2026/19)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0019",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0019",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:34.624305+00:00",
-      "title": "CELEX:52026SC0161: COMMISSION STAFF WORKING DOCUMENT Updated climate tracking and digital tagging of the recovery and resilience plan of the Netherlands Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 4 October 2022 on the approval of the assessment of the recovery and resilience plan for the Netherlands",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0161",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0161",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:33.151867+00:00",
-      "title": "2026/0171/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Luxembourg",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_171",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_171",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:31.767220+00:00",
-      "title": "CELEX:52026PC0309: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Luxembourg",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0309",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0309",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:30.251471+00:00",
-      "title": "CELEX:62024CJ0376: Judgment of the Court (Fourth Chamber) of 18 June 2026.#MT v Comité de direction de l’Autorité des Services et des Marchés Financiers (FSMA).#Reference for a preliminary ruling – Directive 2003/6/EC – Article 3 – Regulation (EU) No 596/2014 – Article 10 – Unlawful disclosure of inside information – Insider dealing and market abuse – Financial services – Article 21 – Disclosure or dissemination of information in the media – Disclosure of inside information in the media by a politician – Convention for the Protection of Human Rights and Fundamental Freedoms, signed at Rome on 4 November 1950 – Article 10 – Article 11 of the Charter of Fundamental Rights – Freedom of expression – Article 52(1) and (3) of the Charter of Fundamental Rights – Interpretation and limitation on the exercise of that freedom.#Case C-376/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CJ0376",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CJ0376",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:28.794529+00:00",
-      "title": "2026/0166/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Slovenia",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_166",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_166",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:27.368728+00:00",
-      "title": "CELEX:62025CC0241: Opinion of Advocate General Richard de la Tour delivered on 18 June 2026.###",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0241",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0241",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:26.027415+00:00",
-      "title": "CELEX:52026PC0298: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 4 October 2022 on the approval of the assessment of the recovery and resilience plan for the Netherlands",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0298",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0298",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:24.517705+00:00",
-      "title": "CONSIL:ST_10850_2026_INIT: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 4 October 2022 on the approval of the assessment of the recovery and resilience plan for the Netherlands",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10850_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10850_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:22.998668+00:00",
-      "title": "CONSIL:ST_10300_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) No 1308/2013, (EU) 2021/2115 and (EU) 2021/2116 as regards the strengthening of the position of farmers in the food supply chain - Outcome of the European Parliament’s first reading (Strasbourg, 15 to 18 June 2026)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10300_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10300_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:21.609266+00:00",
-      "title": "CELEX:52026PC0304: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 29 October 2021 on the approval of the assessment of the recovery and resilience plan for Finland",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0304",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0304",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:20.071549+00:00",
-      "title": "CONSIL:ST_10564_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting for defence readiness projects - Offer letter sent to the European Parliament",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10564_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10564_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:18.610383+00:00",
-      "title": "CELEX:62025CJ0346: Judgment of the Court (Eighth Chamber) of 18 June 2026.#FIBO MARKETS Limited v J.P.#Reference for a preliminary ruling – Area of freedom, security and justice – Judicial cooperation in civil matters – Conflicts of laws – Regulation (EC) No 593/2008 (Rome I) – Applicable law – Consumer contracts – Exceptions – Financial contracts for differences (CFDs) – Rights and obligations which constitute a financial instrument – Process of setting prices for CFDs – Difference between the exchange rate deviation accepted in the consumer’s order and the exchange rate deviation in the transaction executed.#Case C-346/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CJ0346",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CJ0346",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:17.016109+00:00",
-      "title": "CELEX:52026SC0169: COMMISSION STAFF WORKING DOCUMENT Updated Climate tracking and digital tagging of the recovery and resilience plan of Cyprus Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Cyprus",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0169",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0169",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:15.530443+00:00",
-      "title": "CELEX:52026PC0312: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Cyprus",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0312",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0312",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:14.096859+00:00",
-      "title": "CONSIL:ST_10730_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council on establishing a framework of measures to facilitate the transport of military equipment, goods and personnel across the Union - Mandate for negotiations with the European Parliament",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10730_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10730_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:12.681900+00:00",
-      "title": "CELEX:62024CC0582: Opinion of Advocate General Norkus delivered on 18 June 2026.###",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CC0582",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CC0582",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:11.118881+00:00",
-      "title": "CONSIL:ST_10854_2026_INIT: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Cyprus",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10854_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10854_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:09.711870+00:00",
-      "title": "2026/0162/NLE: Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 29 October 2021 on the approval of the assessment of the recovery and resilience plan for Finland",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_162",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/procedure/EN/2026_162",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:08.139591+00:00",
-      "title": "CELEX:52026SC0167: COMMISSION STAFF WORKING DOCUMENT Updated climate tracking and digital tagging of the recovery and resilience plan of Luxembourg Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Luxembourg",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0167",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0167",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:06.591108+00:00",
-      "title": "CELEX:52026SC0163: COMMISSION STAFF WORKING DOCUMENT Updated climate tracking and digital tagging of the recovery and resilience plan of Slovenia Accompanying the document Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Slovenia",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0163",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0163",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:05.179758+00:00",
-      "title": "CELEX:62024CJ0816: Judgment of the Court (Tenth Chamber) of 18 June 2026.#Belaruskali AAT and Others v Council of the European Union.#Appeal – Restrictive measures taken in view of the situation in Belarus and the involvement of Belarus in the Russian aggression against Ukraine – Freezing of funds and economic resources – List of persons, entities and bodies subject to the freezing of funds – Inclusion of the appellants’ names – Definition of ‘Lukashenko regime’ – Definition of persons ‘benefiting’ from or ‘supporting’ that regime – Obligation to state reasons – Principles of legal certainty and proportionality.#Joined Cases C-816/24 P to C-818/24 P.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CJ0816",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CJ0816",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-19T08:24:01.493209+00:00",
-      "title": "CONSIL:PE_10_2026_REV_1: REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL ON THE SCREENING OF FOREIGN INVESTMENTS IN THE UNION AND REPEALING REGULATION (EU) 2019/452",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_10_2026_REV_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:PE_10_2026_REV_1",
       "amounts": []
     }
   ]
