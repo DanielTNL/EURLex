@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T07:01:30.608327+00:00",
+  "generated_at": "2026-06-28T07:13:40.886767+00:00",
   "latest_end_date": "2026-06-28",
   "items": [
     {
@@ -13,9 +13,7 @@
       "key_points": [
         "CONSIL:ST 5793 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81…",
         "CONSIL:ST 6497 2026 INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting fo…",
-        "CONSIL:ST 16097 2025 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/8…",
-        "CONSIL:ST 10527 2025 REV 1: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/…",
-        "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF…"
+        "CONSIL:ST 16097 2025 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/8…"
       ],
       "sections": [
         {
@@ -36,16 +34,44 @@
         }
       ],
       "categories": [
-        "Other/NA",
         "daily",
         "AI & Digital",
         "De-risking & Investment",
         "Other",
-        "CMU & Financial Markets",
         "Defence & Security",
-        "Cybersecurity"
+        "CMU & Financial Markets"
       ],
       "important_documents": [
+        {
+          "id": "rep-2026-06-28-a73809d6931ef172",
+          "title": "Daily Digest — 2026-06-28",
+          "summary": "_Items in last 24h: 27_ 1. Isabel Schnabel: Is inflation back? Bron: ecb.europa.eu · Datum: 2026-06-27T13:45:00+00:00 Programma: Other/NA Tech: AI/Autonomy, Space/EO, Communications/5G+/SatCom %PDF-1.6 %���� 1730 0 obj <> endobj",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-06-28.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-06-28",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2026-06-28-226e9362e39f23c3",
+          "title": "EUR-Lex Daily Digest — 2026-06-28",
+          "summary": "Press Conference Economic And Financial Affairs Council; Att.; Att.; Working Party on Financial Services and the Banking Union (PEPP) 21.5.2026; Working Party on Financial Services and the Banking Union (PEPP) 21.5.2026 - First Draft Compromise Text",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-06-28.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-06-28",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
         {
           "id": "681a8aad96e26277",
           "title": "CONSIL:ST_5793_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - 4-column table",
@@ -99,7 +125,9 @@
             "EU",
             "Defence & Security"
           ]
-        },
+        }
+      ],
+      "related_documents": [
         {
           "id": "0488d518e66245d1",
           "title": "CONSIL:ST_10527_2025_REV_1: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement",
@@ -135,9 +163,7 @@
             "EU",
             "De-risking & Investment"
           ]
-        }
-      ],
-      "related_documents": [
+        },
         {
           "id": "83d6af925f4466c8",
           "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
@@ -208,42 +234,6 @@
             "law",
             "EU",
             "De-risking & Investment"
-          ]
-        },
-        {
-          "id": "138e905b0be2a39c",
-          "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE, THE COMMITTEE OF THE REGIONS AND THE EUROPEAN INVESTMENT BANK 2026 European Semester - Spring Package",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0200",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-06-28",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EUR-Lex",
-            "law",
-            "EU",
-            "Other"
-          ]
-        },
-        {
-          "id": "3e4db5c621f147db",
-          "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 EU Justice Scoreboard",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0273",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-06-28",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "EUR-Lex",
-            "law",
-            "EU",
-            "Other"
           ]
         }
       ],
