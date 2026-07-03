@@ -1,11 +1,362 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-06-26T06:22:25.366578+00:00",
-    "end": "2026-07-03T06:22:25.366578+00:00",
+    "start": "2026-06-26T12:04:55.126410+00:00",
+    "end": "2026-07-03T12:04:55.126410+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-07-03T12:04:53.477232+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:51.903957+00:00",
+      "title": "European Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:50.520956+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:49.048969+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:47.514915+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:46.022789+00:00",
+      "title": "Council of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:44.459688+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:42.833608+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:41.403716+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/browse/summaries.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:39.983115+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:38.619427+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:37.240358+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:35.840530+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:34.293501+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:32.626081+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:31.162187+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:29.604596+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:28.086844+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:26.487615+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:24.835880+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:23.431054+00:00",
+      "title": "Help",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/content/help.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:22.086598+00:00",
+      "title": "EUR-Lex home",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/homepage.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:17.714952+00:00",
+      "title": "(untitled)",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:16.072449+00:00",
+      "title": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/homepage.html?lang=en",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:14.461487+00:00",
+      "title": "My recent searches (0)",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:12.195520+00:00",
+      "title": "Sign in",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-03T12:04:05.410195+00:00",
+      "title": "Skip to main content",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 03 Jul 2026 — https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "amounts": []
+    },
     {
       "date": "2026-07-03T06:22:23.961173+00:00",
       "title": "CONSIL:ST_11199_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2017/1369 and Regulation (EU) 2020/740 as regards simplification and better use of digital options for energy and tyre labelling (Text with EEA relevance)",
@@ -5889,707 +6240,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. The Commission is deploying rescue teams and other emergency assistance to Venezuela following the strong earthquakes on 24 June. Eight EU countries are sending assistance through",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. The Commission is deploying rescue teams and other emergency assistance to Venezuela following the strong earthquakes on 24 June. Eight EU countries are sending assistance through",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. The Commission is deploying rescue teams and other emergency assistance to Venezuela following the strong earthquakes on 24 June. Eight EU countries are sending assistance through",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. The Commission is deploying rescue teams and other emergency assistance to Venezuela following the strong earthquakes on 24 June. Eight EU countries are sending assistance through",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. The Commission is deploying rescue teams and other emergency assistance to Venezuela following the strong earthquakes on 24 June. Eight EU countries are sending assistance through",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. The Commission is deploying rescue teams and other emergency assistance to Venezuela following the strong earthquakes on 24 June. Eight EU countries are sending assistance through",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:48.684534+00:00",
-      "title": "CONSIL:ST_11014_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council on digital networks, amending Regulation (EU) 2015/2120, Directive 2002/58/EC and Decision No 676/2002/EC and repealing Regulation (EU) 2018/1971, Directive (EU) 2018/1972 and Decision No 243/2012/EU (Digital Networks Act) - Opinion of the European Economic and Social Committee (EESC)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11014_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11014_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:47.215207+00:00",
-      "title": "CELEX:52026SC0164: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the document Proposal for a COUNCIL DIRECTIVE on administrative cooperation in the field of taxation (recast)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0164",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0164",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:45.719751+00:00",
-      "title": "CELEX:52026SC0165: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a COUNCIL DIRECTIVE on administrative cooperation in the field of taxation (recast)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0165",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0165",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:44.277223+00:00",
-      "title": "CONSIL:ST_10460_2026_INIT: Horizon Europe Package: Framework Programme for Research and Innovation 2028-2034 a) Framework Programme and its rules for participation and dissemination b) Specific programme implementing Horizon Europe - Partial general approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10460_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10460_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:42.714527+00:00",
-      "title": "CONSIL:ST_10464_2026_INIT: Horizon Europe Package: Framework Programme for Research and Innovation 2028-2034 Framework Programme and its rules for participation and dissemination - Partial general approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10464_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10464_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:41.132488+00:00",
-      "title": "CONSIL:ST_11077_2026_INIT: Proposal for a Decision of the European Parliament and of the Council amending Decision (EU) 2015/1814 as regards the market stability reserve for the buildings, road transport and additional sectors - Letter to the Chair of the European Parliament Committee for Environment, Public Health and Food Safety (ENVI)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11077_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11077_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:39.617134+00:00",
-      "title": "CELEX:02022D1093-20260604: Council Decision (CFSP) 2022/1093 of 30 June 2022 on an assistance measure under the European Peace Facility to support the Armed Forces of the Republic of Moldova",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02022D1093-20260604",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02022D1093-20260604",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:38.093653+00:00",
-      "title": "CELEX:02023D0921-20260604: Council Decision (CFSP) 2023/921 of 4 May 2023 on an assistance measure under the European Peace Facility to support the Armed Forces of the Republic of Moldova",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D0921-20260604",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D0921-20260604",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:36.609410+00:00",
-      "title": "CONSIL:ST_10735_2026_INIT: Delegations will find attached the Cyprus Presidency's Progress Report on the Market Integration and Supervision Package (MISP)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10735_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10735_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:34.990744+00:00",
-      "title": "PI_COM:C(2026)4080: COMMISSION IMPLEMENTING DECISION amending Implementing Decision C(2025)7410 as regards the introduction of the STEP Defence Call",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)4080",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)4080",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:33.445656+00:00",
-      "title": "PI_COM:Ares(2026)6383220: Proposal for a Regulation of the European Parliament and of the Council amending Regulation (EU) No 2021/1139",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6383220",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)6383220",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:32.038300+00:00",
-      "title": "CONSIL:ST_11060_2026_ADD_3: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a COUNCIL DIRECTIVE on administrative cooperation in the field of taxation (recast)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11060_2026_ADD_3",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11060_2026_ADD_3",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:30.423224+00:00",
-      "title": "CELEX:02016Y0312(02)-20260701: Recommendation of the European Systemic Risk Board of 15 December 2015 on the assessment of cross-border effects of and voluntary reciprocity for macroprudential policy measures (ESRB/2015/2)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02016Y0312(02)-20260701",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02016Y0312(02)-20260701",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:28.916981+00:00",
-      "title": "CELEX:02024D1447-20260528: Council Implementing Decision (EU) 2024/1447 of 14 May 2024 on the approval of the assessment of the Ukraine Plan",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024D1447-20260528",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024D1447-20260528",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:27.560803+00:00",
-      "title": "CELEX:52026PC0308: Proposal for a COUNCIL DIRECTIVE on administrative cooperation in the field of taxation (recast)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0308",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0308",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:26.084768+00:00",
-      "title": "CONSIL:ST_11060_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the document Proposal for a COUNCIL DIRECTIVE on administrative cooperation in the field of taxation (recast)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11060_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11060_2026_ADD_2",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:24.534525+00:00",
-      "title": "CONSIL:ST_10642_2026_ADD_1: Draft REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) No 1308/2013, (EU) 2021/2115 and (EU) 2021/2116 as regards the strengthening of the position of farmers in the food supply chain (first reading) - Adoption of the legislative act - Statements",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10642_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10642_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:23.091274+00:00",
-      "title": "CONSIL:ST_10641_2026_ADD_1: ANNEX to the COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Latvia",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10641_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10641_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:21.609385+00:00",
-      "title": "COM:2026:570:FIN: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Criminal Justice Cooperation (Eurojust) and repealing Regulation (EU) 2018/1727",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:570:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:570:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:20.211383+00:00",
-      "title": "CONSIL:ST_11112_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2008/98/EC, 2010/75/EU, (EU) 2015/2193 and (EU) 2024/1785 as regards simplification of some requirements and reduction of administrative burden - Mandate for negotiations with the European Parliament",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11112_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11112_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:18.699929+00:00",
-      "title": "SWD:2026:168:FIN: COMMISSION STAFF WORKING DOCUMENT EVALUATION of Council Directive (EU) 2016/1164, as amended by Council Directive (EU) 2017/952, laying down rules against tax avoidance practices that directly affect the functioning of the internal market",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:168:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:168:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:17.212916+00:00",
-      "title": "CELEX:02024R2642-20260615: Council Regulation (EU) 2024/2642 of 8 October 2024 concerning restrictive measures in view of Russia’s destabilising activities",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2642-20260615",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2642-20260615",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:15.698001+00:00",
-      "title": "SWD:2026:580:FIN: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Law Enforcement Cooperation (Europol), amending Regulation (EU) 2018/1726 and Regulation (EU) 2024/982, and repealing Regulation (EU) 2016/794",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:580:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:580:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:14.117858+00:00",
-      "title": "SWD:2026:560:FIN: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the document Proposal for a COUNCIL DIRECTIVE amending Directives 2003/49/EC, 2009/133/EC, 2011/96/EU, (EU) 2016/1164, (EU)2017/1852, (EU) 2025/50 as regards the simplification of the Union framework on direct taxation and supporting growth and competitiveness of the EU",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:560:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:560:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:12.532240+00:00",
-      "title": "SWD:2026:570:FIN: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Criminal Justice Cooperation (Eurojust) and repealing Regulation (EU) 2018/1727",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:570:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:570:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:10.956640+00:00",
-      "title": "SWD:2026:572:FIN: COMMISSION STAFF WORKING DOCUMENT Subsidiarity grid Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Criminal Justice Cooperation (Eurojust) and repealing Regulation (EU) 2018/1727",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:572:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:572:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:09.466745+00:00",
-      "title": "SWD:2026:562:FIN: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a COUNCIL DIRECTIVE amending Council Directives 2003/49/EC, 2009/133/EC, 2011/96/EU, (EU) 2016/1164, (EU) 2017/1852, (EU) 2025/50 as regards the simplification of the Union framework on direct taxation and supporting growth and competitiveness of the EU​",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:562:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:562:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:08.003819+00:00",
-      "title": "CELEX:52026DC0331: Recommendation for a COUNCIL RECOMMENDATION with a view to bringing an end to the situation of an excessive deficit in Bulgaria",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0331",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0331",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:06.476928+00:00",
-      "title": "SWD:2026:565:FIN: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2017/1369 and Regulation (EU) 2020/740 as regards simplification and better use of digital options for energy and tyre labelling (Text with EEA relevance)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:565:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:565:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:04.973564+00:00",
-      "title": "SWD:2026:174:FIN: COMMISSION STAFF WORKING DOCUMENT EVALUATION of Commission Regulation (EU) No 461/2010 of 27 May 2010 on the application of Article 101(3) of the Treaty on the Functioning of the European Union to categories of vertical agreements and concerted practices in the motor vehicle sector",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:174:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:174:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:03.478070+00:00",
-      "title": "SWD:2026:561:FIN: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a COUNCIL DIRECTIVE Amending Council Directives 2003/49/EC, 2009/133/EC, 2011/96/EU, (EU) 2016/1164, (EU) 2017/1852, and EU 2025/50 as regards the simplification of the Union framework on direct taxation and supporting growth and competitiveness of the EU",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:561:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:561:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:01.935376+00:00",
-      "title": "COM:2026:336:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE COURT OF AUDITORS CONSOLIDATED ANNUAL ACCOUNTS OF THE EUROPEAN UNION FOR THE FINANCIAL YEAR 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:336:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:336:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:44:00.505544+00:00",
-      "title": "CONSIL:ST_11145_2026_ADD_6: COMMISSION STAFF WORKING DOCUMENT Subsidiarity grid Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Criminal Justice Cooperation (Eurojust) and repealing Regulation (EU) 2018/1727",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11145_2026_ADD_6",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11145_2026_ADD_6",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:58.922905+00:00",
-      "title": "CONSIL:ST_11145_2026_ADD_3: PART 1/2 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Criminal Justice Cooperation (Eurojust) and repealing Regulation (EU) 2018/1727",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11145_2026_ADD_3",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11145_2026_ADD_3",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:57.383047+00:00",
-      "title": "COM:2026:585:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL CONVERGENCE REPORT 2026 (prepared in accordance with Article 140(1) of the Treaty on the Functioning of the European Union)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:585:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:585:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:55.888054+00:00",
-      "title": "CONSIL:ST_10642_2026_ADD_1_REV_1: Draft REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) No 1308/2013, (EU) 2021/2115 and (EU) 2021/2116 as regards the strengthening of the position of farmers in the food supply chain (first reading) - Adoption of the legislative act - Statements",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10642_2026_ADD_1_REV_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10642_2026_ADD_1_REV_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:54.266667+00:00",
-      "title": "CONSIL:ST_10735_2026_REV_1: Cyprus Presidency Progress Report on the Market Integration and Supervision Package (MISP)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10735_2026_REV_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10735_2026_REV_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:52.879182+00:00",
-      "title": "CELEX:52026PC0297: Proposal for a COUNCIL DECISION on the position to be taken on behalf of the European Union in the Committee on Customs established under the Free Trade Agreement between the European Union and the Republic of Singapore as regards the adoption of the decision concerning the mutual recognition of the Secure Trade Partnership Plus Programme of Singapore and the Authorised Economic Operator Programme of the European Union",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0297",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0297",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:51.336914+00:00",
-      "title": "CONSIL:ST_10460_2026_ADD_2: Horizon Europe Package: Framework Programme for Research and Innovation 2028-2034 a) Framework Programme and its rules for participation and dissemination b) Specific programme implementing Horizon Europe - Partial general approach = Statements",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10460_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10460_2026_ADD_2",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:49.732781+00:00",
-      "title": "CONSIL:ST_11145_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Criminal Justice Cooperation (Eurojust) and repealing Regulation (EU) 2018/1727",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11145_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11145_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:48.257947+00:00",
-      "title": "CONSIL:ST_10632_2026_ADD_1: ANNEX to the COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 13 July 2021 on the approval of the assessment of the recovery and resilience plan for Germany",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10632_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10632_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:46.645802+00:00",
-      "title": "SWD:2026:585:FIN: COMMISSION STAFF WORKING DOCUMENT CONVERGENCE REPORT 2026 Accompanying the document REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL CONVERGENCE REPORT 2026 (prepared in accordance with Article 140(1) of the Treaty of the Functioning of the European Union",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:585:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:585:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:45.183771+00:00",
-      "title": "COM:2026:560:FIN: Proposal for a COUNCIL DIRECTIVE amending Directives 2003/49/EC, 2009/133/EC, 2011/96/EU, (EU) 2016/1164, (EU)2017/1852, (EU) 2025/50 as regards the simplification of the Union framework on direct taxation and supporting growth and competitiveness of the EU",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:560:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:560:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:43.825040+00:00",
-      "title": "SWD:2026:581:FIN: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document PROPOSAL FOR A REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Law Enforcement Cooperation (Europol), amending Regulation (EU) 2018/1726 and Regulation (EU) 2024/982, and repealing Regulation (EU) 2016/794",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:581:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:581:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:42.224767+00:00",
-      "title": "SWD:2026:582:FIN: COMMISSION STAFF WORKING DOCUMENT Sudsidiarity grid Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Law Enforcement Cooperation (Europol), amending Regulation (EU) 2018/1726 and Regulation (EU) 2024/982, and repealing Regulation (EU) 2016/794",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:582:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:582:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:40.480697+00:00",
-      "title": "COM:2026:580:FIN: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the European Union Agency for Law Enforcement Cooperation (Europol), amending Regulation (EU) 2018/1726 and Regulation (EU) 2024/982, and repealing Regulation (EU) 2016/794",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:580:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:580:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-06-26T06:43:38.734234+00:00",
-      "title": "COM:2026:565:FIN: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2017/1369 and Regulation (EU) 2020/740 as regards simplification and better use of digital options for energy and tyre labelling",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:565:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 26 Jun 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:565:FIN",
       "amounts": []
     }
   ]
