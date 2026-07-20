@@ -1,11 +1,310 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-07-13T06:00:53.061072+00:00",
-    "end": "2026-07-20T06:00:53.061072+00:00",
+    "start": "2026-07-13T12:13:55.194670+00:00",
+    "end": "2026-07-20T12:13:55.194670+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-07-20T12:13:53.682062+00:00",
+      "title": "SWD:2026:929:FIN: COMMISSION STAFF WORKING DOCUMENT 2026 Rule of Law Report Country Chapter on the rule of law situation in Montenegro Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:929:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:929:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:52.205487+00:00",
+      "title": "SWD:2026:926:FIN: COMMISSION STAFF WORKING DOCUMENT 2026 Rule of Law Report Country Chapter on the rule of law situation in Finland Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:926:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:926:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:50.636617+00:00",
+      "title": "SWD:2026:923:FIN: COMMISSION STAFF WORKING DOCUMENT 2026 Rule of Law Report Country Chapter on the rule of law situation in Romania Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:923:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:923:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:49.112420+00:00",
+      "title": "SWD:2026:909:FIN: COMMISSION STAFF WORKING DOCUMENT 2026 Rule of Law Report Country Chapter on the rule of law situation in Spain Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:909:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:909:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:47.789919+00:00",
+      "title": "SWD:2026:911:FIN: COMMISSION STAFF WORKING DOCUMENT 2026 Rule of Law Report Country Chapter on the rule of law situation in Croatia Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:911:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:911:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:46.411471+00:00",
+      "title": "SWD:2026:912:FIN: COMMISSION STAFF WORKING DOCUMENT 2026 Rule of Law Report Country Chapter on the rule of law situation in Italy Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:912:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:912:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:45.055559+00:00",
+      "title": "COM:2026:900:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:900:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:900:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:43.478536+00:00",
+      "title": "SWD:2026:919:FIN: COMMISSION STAFF WORKING DOCUMENT 2026 Rule of Law Report Country Chapter on the rule of law situation in the Netherlands Accompanying the document Communication from the Commission to the European Parliament, the Council, the European Economic and Social Committee and the Committee of the Regions 2026 Rule of Law Report The rule of law situation in the European Union",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:919:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:919:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:42.109862+00:00",
+      "title": "CELEX:72026L0374MLT_202605513: Conduct of Business Rulebook",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72026L0374MLT_202605513",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:72026L0374MLT_202605513",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:40.625477+00:00",
+      "title": "COM:2026:615:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITEE AND THE COMMITTEE OF THE REGIONS Competitiveness of the Banking Sector and the Single Market in Banking",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:615:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:615:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:39.318321+00:00",
+      "title": "COM:2026:595:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS ELECTRIFICATION ACTION PLAN",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:595:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:595:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:37.860333+00:00",
+      "title": "SWD:2026:400:FIN: COMMISSION STAFF WORKING DOCUMENT EVALUATION of Directive 2004/35/EC of the European Parliament and of the Council on environmental liability with regard to the prevention and remedying of environmental damage",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:400:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:400:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:36.366582+00:00",
+      "title": "CONSIL:ST_11892_2026_ADD_1: ANNEX to the COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 29 October 2021 on the approval of the assessment of the recovery and resilience plan for Estonia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11892_2026_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11892_2026_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:34.912244+00:00",
+      "title": "CONSIL:ST_11894_2026_ADD_1: ANNEX to the COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 5 October 2021 on the approval of the assessment of the recovery and resilience plan for Malta",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11894_2026_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11894_2026_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:33.454675+00:00",
+      "title": "CONSIL:ST_11890_2026_INIT: COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 29 October 2021 on the approval of the assessment of the recovery and resilience plan for Romania",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11890_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11890_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:31.894868+00:00",
+      "title": "PI_COM:SEC(2026)616:",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:SEC(2026)616",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:SEC(2026)616",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:30.306984+00:00",
+      "title": "CONSIL:ST_11889_2026_INIT: COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 8 September 2021 on the approval of the assessment of the recovery and resilience plan for Czechia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11889_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11889_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:27.351672+00:00",
+      "title": "SWD:2026:616:FIN: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the documents Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2003/87/EC and Decision (EU) 2015/1814 as regards driving competitiveness and cost-effective decarbonisation REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2003/87/EC as regards revised benchmark values for the heat and fuel benchmarks for the period from 2026 to 2030 REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) 2015/757 and (EU) 2023/1805 to simplify and streamline monitoring, reporting and verification and to align with revisions of the EU Emissions Trading System",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:616:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:616:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:25.828917+00:00",
+      "title": "COM:2026:616:FIN: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2003/87/EC and Decision (EU) 2015/1814 as regards driving competitiveness and cost-effective decarbonisation",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:616:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:616:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:19.710552+00:00",
+      "title": "CONSIL:ST_11891_2026_INIT: COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 8 September 2021 on the approval of the assessment of the recovery and resilience plan for Ireland",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11891_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11891_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:16.634500+00:00",
+      "title": "CONSIL:ST_10767_2026_INIT: COUNCIL IMPLEMENTING DECISION amending Implementing Decision (EU) 2024/1447 on the approval of the assessment of the Ukraine Plan",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10767_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10767_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:15.120360+00:00",
+      "title": "SWD:2026:617:FIN: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the documents Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2003/87/EC and Decision (EU) 2015/1814 as regards driving competitiveness and cost-effective decarbonisation REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2003/87/EC as regards revised benchmark values for the heat and fuel benchmarks period from 2026 to 2030 REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2015/757 and Regulation (EU) 2023/1805 to simplify and streamline monitoring, reporting and verification and to align with revisions of the EU Emissions Trading System",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:617:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:617:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-20T12:13:13.091415+00:00",
+      "title": "SWD:2026:618:FIN: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the documents Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2003/87/EC and Decision (EU) 2015/1814 as regards driving competitiveness and cost-effective decarbonisation REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directive 2003/87/EC as regards revised benchmark values for the heat and fuel benchmarks period from 2026 to 2030 REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2015/757 and Regulation (EU) 2023/1805 to simplify and streamline monitoring, reporting and verification and to align with revisions of the EU Emissions Trading System",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:618:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:618:FIN",
+      "amounts": []
+    },
     {
       "date": "2026-07-20T06:00:51.545985+00:00",
       "title": "Why implement ELI?",
@@ -611,6 +910,97 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 20 Jul 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-19T22:00:00+00:00",
+      "title": "CELEX:62026CN0210: Case C-210/26, TRAPEZA TIS ELLADOS II: Request for a preliminary ruling from the Symvoulio tis Epikrateias (Greece) lodged on 13 March 2026 – KO v Trapeza tis Ellados AE (Bank of Greece SA)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0210",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0210",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-19T22:00:00+00:00",
+      "title": "CELEX:32026D1774: Council Decision (EU) 2026/1774 of 13 July 2026 on the position to be taken on behalf of the European Union within the General Council of the World Trade Organization on the request of the United States fora WTO waiver to extend the AGOA programme and on the incorporation of the Agreement on Investment Facilitation for Development into Annex 4 to the WTO Agreement",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D1774",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D1774",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-19T22:00:00+00:00",
+      "title": "CELEX:52026M12362: Prior notification of a concentration (Case M.12362 – FEDEX / ADVENT / A&amp;amp;R / INPOST)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12362",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12362",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-19T22:00:00+00:00",
+      "title": "CELEX:62026CN0209: Case C-209/26, Trapeza tis Ellados I: Request for a preliminary ruling from the Symvoulio tis Epikrateias (Greece) lodged on 13 March 2026 – JF v Trapeza tis Ellados",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0209",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0209",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-19T22:00:00+00:00",
+      "title": "CELEX:62026CN0573: Case C-573/26 P: Appeal brought on 28 May 2026 by Robin Wood – Gewaltfreie Aktionsgemeinschaft für Natur und Umwelt eV, Skydda Skogen – Protect the forest, Zero – Associação Sistema Terrestre Sustentável, Stowarzyszenie Pracownia na rzecz Wszystkich Istot, Päästame Eesti Metsad MTÜ, Stichting Comité Schone Lucht and 2 Celsius against the judgment of the General Court (Sixth Chamber, sitting with five Judges) delivered on 18/03/2026 in Case T-575/22, Robin Wood and Others v Commission",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0573",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0573",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-19T22:00:00+00:00",
+      "title": "CELEX:62026CN0211: Case C-211/26, Trapeza tis Ellados III: Request for a preliminary ruling from the Symvoulio tis Epikrateias (Greece) lodged on 13 March 2026 – ZT v Trapeza tis Ellados",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0211",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CN0211",
+      "amounts": []
+    },
+    {
+      "date": "2026-07-19T22:00:00+00:00",
+      "title": "CELEX:62024CA0350: Case C-350/24, Crédit agricole Corporate &amp;amp; Investment Bank: Judgment of the Court (Grand Chamber) of 19 May 2026 (request for a preliminary ruling from the Cour de cassation (France)) – HJ v Crédit agricole Corporate &amp;amp; Investment Bank SA (Reference for a preliminary ruling – Article 50 TEU – Article 288 TFEU – Agreement on the withdrawal of the United Kingdom of Great Britain and Northern Ireland from the European Union and the European Atomic Energy Community – Court of a Member State seised before the end of the transition period provided for in that agreement – Application by the courts of the forum of the law of another State – United Kingdom legislation transposing a directive – Directive 2006/54/EC – Applicability of EU law – Principle of mutual trust – Principle that national law must be interpreted in conformity with EU law)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CA0350",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CA0350",
       "amounts": []
     },
     {
@@ -6467,66 +6857,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 13 Jul 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:377:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-07-13T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. A new survey shows that Europeans are overwhelmingly concerned about all the risks children face on social media. Cyberbullying and harassment top the list of concerns,",
-      "amounts": []
-    },
-    {
-      "date": "2026-07-13T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. A new survey shows that Europeans are overwhelmingly concerned about all the risks children face on social media. Cyberbullying and harassment top the list of concerns,",
-      "amounts": []
-    },
-    {
-      "date": "2026-07-13T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. A new survey shows that Europeans are overwhelmingly concerned about all the risks children face on social media. Cyberbullying and harassment top the list of concerns,",
-      "amounts": []
-    },
-    {
-      "date": "2026-07-13T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. A new survey shows that Europeans are overwhelmingly concerned about all the risks children face on social media. Cyberbullying and harassment top the list of concerns,",
       "amounts": []
     }
   ]
