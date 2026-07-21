@@ -34,8 +34,8 @@
     "daily",
     "Defence & Security",
     "De-risking & Investment",
-    "Other",
     "AI & Digital",
+    "Other",
     "CMU & Financial Markets",
     "Cybersecurity"
   ],
@@ -43,7 +43,7 @@
     {
       "id": "rep-2026-07-21-6800b126976e724e",
       "title": "Daily Digest — 2026-07-21",
-      "summary": "_Items in last 24h: 115_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-07-21T05:43:16.197585+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI im…",
+      "summary": "_Items in last 24h: 99_ 1. COM:2026:615:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITEE AND THE COMMITTEE OF THE REGIONS Competitiveness of the Banking Sector and the Single Market in Banking Bron: eur-lex.europa.eu · Datum: 2026-07-21T11:46:17.967390+00:00 Programma: Other/NA",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-07-21.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -83,9 +83,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "law",
+        "EU",
         "EUR-Lex",
-        "EU"
+        "law"
       ]
     },
     {
@@ -101,9 +101,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "law",
+        "EU",
         "EUR-Lex",
-        "EU"
+        "law"
       ]
     },
     {
@@ -119,9 +119,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "law",
+        "EU",
         "EUR-Lex",
-        "EU"
+        "law"
       ]
     }
   ],
@@ -139,9 +139,9 @@
       ],
       "tags": [
         "Defence & Security",
-        "law",
+        "EU",
         "EUR-Lex",
-        "EU"
+        "law"
       ]
     },
     {
@@ -156,10 +156,10 @@
         "Other"
       ],
       "tags": [
-        "law",
-        "EUR-Lex",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -174,10 +174,10 @@
         "Other"
       ],
       "tags": [
-        "law",
-        "EUR-Lex",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -192,10 +192,10 @@
         "Other"
       ],
       "tags": [
-        "law",
-        "EUR-Lex",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -210,10 +210,10 @@
         "Other"
       ],
       "tags": [
-        "law",
-        "EUR-Lex",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -228,10 +228,10 @@
         "Other"
       ],
       "tags": [
-        "law",
-        "EUR-Lex",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     }
   ],
