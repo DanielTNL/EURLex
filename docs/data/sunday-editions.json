@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T05:56:34.506932+00:00",
+  "generated_at": "2026-07-25T11:27:00.202422+00:00",
   "latest_end_date": "2026-07-25",
   "items": [
     {
@@ -37,17 +37,17 @@
         "Other/NA",
         "daily",
         "Defence & Security",
+        "Cybersecurity",
         "De-risking & Investment",
         "Other",
-        "AI & Digital",
-        "Cybersecurity",
-        "CMU & Financial Markets"
+        "CMU & Financial Markets",
+        "AI & Digital"
       ],
       "important_documents": [
         {
           "id": "rep-2026-07-25-0873e7a7884f0818",
           "title": "Daily Digest — 2026-07-25",
-          "summary": "_Items in last 24h: 94_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-07-25T05:37:19.697976+00:00 Programma: Other/NA",
+          "summary": "_Items in last 24h: 89_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-07-25T11:06:34.916732+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-07-25.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -88,8 +88,8 @@
           "tags": [
             "Defence & Security",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -106,8 +106,8 @@
           "tags": [
             "Defence & Security",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -124,8 +124,8 @@
           "tags": [
             "Defence & Security",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         }
       ],
@@ -144,8 +144,26 @@
           "tags": [
             "Defence & Security",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
+          ]
+        },
+        {
+          "id": "7767579d751b1ed0",
+          "title": "Opinion of the European Economic and Social Committee – Communication from the Commission to the European Parliament, the European Council, the Council, the European Central Bank, the European Economic and Social Committ",
+          "summary": "Opinion of the European Economic and Social Committee – Communication from the Commission to the European Parliament, the European Council, the Council, the European Central Bank, the European Economic and Social Committee and the Committee of the Regions – E…",
+          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025AE4204",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-07-25",
+          "categories": [
+            "Other"
+          ],
+          "tags": [
+            "Other",
+            "EU",
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -162,8 +180,8 @@
           "tags": [
             "Other",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -180,8 +198,8 @@
           "tags": [
             "Other",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -198,8 +216,8 @@
           "tags": [
             "Other",
             "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -216,26 +234,8 @@
           "tags": [
             "Other",
             "EU",
-            "law",
-            "EUR-Lex"
-          ]
-        },
-        {
-          "id": "d78c410bbaf0be0b",
-          "title": "EP:P9_TA(2020)0020: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[1] – C9-0009/2020 – 2020/0902(NLE))",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=EP:P9_TA(2020)0020",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-07-25",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "Other",
-            "EU",
-            "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "law"
           ]
         }
       ],
