@@ -33,17 +33,17 @@
     "Other/NA",
     "Cybersecurity",
     "daily",
-    "Defence & Security",
     "AI/Autonomy",
+    "Defence & Security",
     "De-risking & Investment",
     "Other",
-    "Space/EO"
+    "AI & Digital"
   ],
   "important_documents": [
     {
       "id": "rep-2026-07-31-158a57097d29e53e",
       "title": "Daily Digest — 2026-07-31",
-      "summary": "_Items in last 24h: 75_ 1. CONSIL:ST_12237_2026_ADD_1: ANNEX to the Proposal for a COUNCIL IMPLEMENTING DECISION amending the Implementing Decision of 28 July 2021 on the approval of the assessment of the recovery and resilience plan for Croatia Bron: eur-lex.europa.eu · Datum: 2026-07-31T05:58:01.530224+00:00 Programma: Other/NA",
+      "summary": "_Items in last 24h: 80_ 1. CELEX:52026SC0249: COMMISSION STAFF WORKING DOCUMENT Measures adopted by the Member States to protect the EU's financial interests - Implementation of Article 325 TFEU Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT 37th Annual Report on the protection of the European Union's financial interests and the fight against fraud - 2025 Bron: eur-lex.europa.eu · Datum: 2026-07-31T11:57:16.798666+00:00 Programma: Other/NA",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-07-31.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -82,10 +82,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "law",
-        "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "EU"
       ]
     },
     {
@@ -100,10 +100,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "law",
-        "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "EU"
       ]
     },
     {
@@ -118,10 +118,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "law",
-        "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "EU"
       ]
     }
   ],
@@ -138,10 +138,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "law",
-        "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "EU"
       ]
     },
     {
@@ -156,9 +156,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "Other",
         "law",
+        "Other",
+        "EUR-Lex",
         "EU"
       ]
     },
@@ -174,9 +174,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "Other",
         "law",
+        "Other",
+        "EUR-Lex",
         "EU"
       ]
     },
@@ -192,9 +192,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "Other",
         "law",
+        "Other",
+        "EUR-Lex",
         "EU"
       ]
     },
@@ -210,9 +210,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "Other",
         "law",
+        "Other",
+        "EUR-Lex",
         "EU"
       ]
     },
@@ -228,9 +228,9 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "Other",
         "law",
+        "Other",
+        "EUR-Lex",
         "EU"
       ]
     }
