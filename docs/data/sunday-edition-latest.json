@@ -25,17 +25,19 @@
       "body": "CONSIL:ST_10527_2025_REV_1: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of… Source: EUR-Lex, 2026-08-02."
     },
     {
-      "title": "EP:P9_TA(2020)0021: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of…",
-      "body": "EP:P9_TA(2020)0021: European Parliament decision of 30 January 2020 on the proposal for the appointment of a member of the Single Resolution Board (N9-0005/2020[2] – C9-0010/2020… Source: EUR-Lex, 2026-08-02."
+      "title": "CONSIL:ST_6497_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration o…",
+      "body": "CONSIL:ST_6497_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting for defence readiness projects [10518/25… Source: EUR-Lex, 2026-08-02."
     }
   ],
   "categories": [
+    "Other/NA",
+    "Cybersecurity",
+    "AI/Autonomy",
     "daily",
+    "Space/EO",
     "Defence & Security",
     "CMU & Financial Markets",
-    "De-risking & Investment",
-    "Other",
-    "AI & Digital"
+    "De-risking & Investment"
   ],
   "important_documents": [
     {
@@ -80,10 +82,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "law"
       ]
     },
     {
@@ -98,10 +100,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "law"
       ]
     },
     {
@@ -116,10 +118,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "law"
       ]
     }
   ],
@@ -136,10 +138,28 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "EU",
-        "Defence & Security"
+        "EUR-Lex",
+        "Defence & Security",
+        "law"
+      ]
+    },
+    {
+      "id": "7767579d751b1ed0",
+      "title": "Opinion of the European Economic and Social Committee – Communication from the Commission to the European Parliament, the European Council, the Council, the European Central Bank, the European Economic and Social Committ",
+      "summary": "Opinion of the European Economic and Social Committee – Communication from the Commission to the European Parliament, the European Council, the Council, the European Central Bank, the European Economic and Social Committee and the Committee of the Regions – E…",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025AE4204",
+      "kind": "post",
+      "source": "EUR-Lex",
+      "date": "2026-08-02",
+      "categories": [
+        "Other"
+      ],
+      "tags": [
+        "EU",
+        "Other",
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -154,10 +174,10 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -172,10 +192,10 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -190,10 +210,10 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
+        "EU",
         "Other",
-        "EU"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -208,28 +228,10 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
+        "EU",
         "Other",
-        "EU"
-      ]
-    },
-    {
-      "id": "3de0470d54ecae3b",
-      "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITEE AND THE COMMITTEE OF THE REGIONS Competitiveness of the Banking Sector and the Single Market in Banking",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026DC0615",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-08-02",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
         "EUR-Lex",
-        "law",
-        "Other",
-        "EU"
+        "law"
       ]
     }
   ],
