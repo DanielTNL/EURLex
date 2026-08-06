@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T06:02:56.759316+00:00",
+  "generated_at": "2026-08-06T12:12:05.820893+00:00",
   "latest_end_date": "2026-08-06",
   "items": [
     {
@@ -40,14 +40,14 @@
         "daily",
         "Space/EO",
         "Defence & Security",
-        "CMU & Financial Markets",
-        "De-risking & Investment"
+        "De-risking & Investment",
+        "CMU & Financial Markets"
       ],
       "important_documents": [
         {
           "id": "rep-2026-08-06-b24ea08453173360",
           "title": "Daily Digest — 2026-08-06",
-          "summary": "_Items in last 24h: 67_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-08-06T05:43:52.285990+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI imp…",
+          "summary": "_Items in last 24h: 73_ 1. CELEX:32025M11974: Commission Decision of 18/12/2025 declaring a concentration to be compatible with the common market (Case No COMP/M.11974 - VANDEMOORTELE / DELIFRANCE) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic) Bron: eur-lex.europa.eu · Datum: 2026-08-06T12:04:04.123020+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-08-06.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,9 +86,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
             "EUR-Lex",
             "Defence & Security",
-            "law",
             "EU"
           ]
         },
@@ -104,9 +104,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
             "EUR-Lex",
             "Defence & Security",
-            "law",
             "EU"
           ]
         },
@@ -122,9 +122,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
             "EUR-Lex",
             "Defence & Security",
-            "law",
             "EU"
           ]
         }
@@ -142,9 +142,9 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
             "EUR-Lex",
             "Defence & Security",
-            "law",
             "EU"
           ]
         },
@@ -160,9 +160,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "law",
+            "EUR-Lex",
+            "Other",
             "EU"
           ]
         },
@@ -178,9 +178,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "law",
+            "EUR-Lex",
+            "Other",
             "EU"
           ]
         },
@@ -196,9 +196,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "law",
+            "EUR-Lex",
+            "Other",
             "EU"
           ]
         },
@@ -214,9 +214,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "law",
+            "EUR-Lex",
+            "Other",
             "EU"
           ]
         },
@@ -232,9 +232,9 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "law",
+            "EUR-Lex",
+            "Other",
             "EU"
           ]
         }
