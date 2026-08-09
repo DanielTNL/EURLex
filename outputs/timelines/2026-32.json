@@ -1,11 +1,362 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-08-02T04:15:21.025355+00:00",
-    "end": "2026-08-09T04:15:21.025355+00:00",
+    "start": "2026-08-02T10:31:18.932719+00:00",
+    "end": "2026-08-09T10:31:18.932719+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-08-09T10:31:17.339617+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:15.820374+00:00",
+      "title": "European Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:14.402210+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:12.888126+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:11.528091+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:09.898982+00:00",
+      "title": "Council of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:08.438206+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:06.959507+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:05.417328+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/browse/summaries.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:03.942052+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:02.424835+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:31:00.923644+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:59.352550+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:57.865140+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:56.421828+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:54.966854+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:53.351097+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:51.864990+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:50.251191+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:48.416959+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:46.802207+00:00",
+      "title": "Help",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/content/help.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:45.325043+00:00",
+      "title": "EUR-Lex home",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/homepage.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:41.011080+00:00",
+      "title": "(untitled)",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:39.544066+00:00",
+      "title": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/homepage.html?lang=en",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:38.089206+00:00",
+      "title": "My recent searches (0)",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:35.271109+00:00",
+      "title": "Sign in",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-09T10:30:25.639194+00:00",
+      "title": "Skip to main content",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 09 Aug 2026 — https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "amounts": []
+    },
     {
       "date": "2026-08-09T04:15:19.224641+00:00",
       "title": "Why implement ELI?",
@@ -7096,989 +7447,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 02 Aug 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:45.459315+00:00",
-      "title": "EUR-Lex - ST_12237_2026_ADD_1 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_12237_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:43.260472+00:00",
-      "title": "Decision - 20 July 2026 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026M12474",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:40.402530+00:00",
-      "title": "EUR-Lex - 52026PC0341(01) - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2026%3A341%3AREV1",
-      "doc_type": "Press_Release",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 289000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 102000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 187000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 93000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 58000000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:05:14.264312+00:00",
-      "title": "EUR-Lex - ST_12237_2026_ADD_2 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_12237_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:12.066036+00:00",
-      "title": "EUR-Lex - 72024L0927MLT_202605658 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A72024L0927MLT_202605658",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:09.982487+00:00",
-      "title": "Decision - 22 July 2026 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026M12461",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:07.468402+00:00",
-      "title": "Decision - 22 July 2026 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026M12417",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:05.209045+00:00",
-      "title": "EUR-Lex - 72024L0927MLT_202605661 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A72024L0927MLT_202605661",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:05:02.866781+00:00",
-      "title": "EUR-Lex - 52026SC0248 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0248",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity",
-        "Robotics/Drones"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:59.813566+00:00",
-      "title": "EUR-Lex - 52026SC0245 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0245",
-      "doc_type": "Call_for_Proposals",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Space/EO",
-        "Cybersecurity",
-        "Advanced_Computing/HPC"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 2635000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 1000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 232000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 124000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 124000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:04:57.255767+00:00",
-      "title": "EUR-Lex - 02018O0016-20260713 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02018O0016-20260713",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:54.713454+00:00",
-      "title": "EUR-Lex - 02020W/TXT-20260203 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02020W%2FTXT-20260203",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Advanced_Semiconductors",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 10000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:04:51.080812+00:00",
-      "title": "EUR-Lex - 02023R0206-20260727 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02023R0206-20260727",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:48.597103+00:00",
-      "title": "EUR-Lex - 52026SC0251 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0251",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:46.315278+00:00",
-      "title": "EUR-Lex - 52026DC0411 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026DC0411",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 21000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 2743000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 1994000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 1552000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 750000000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:04:42.703243+00:00",
-      "title": "EUR-Lex - 02023D2135-20260715 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02023D2135-20260715",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity",
-        "Robotics/Drones"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:40.266080+00:00",
-      "title": "EUR-Lex - 02017R0891-20260709 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02017R0891-20260709",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 0.7245,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:04:37.483596+00:00",
-      "title": "EUR-Lex - 02020D1999-20260713 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02020D1999-20260713",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:34.301492+00:00",
-      "title": "EUR-Lex - 52026SC0249 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0249",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 165000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 150.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 15000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 34000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 187000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:04:31.027090+00:00",
-      "title": "EUR-Lex - 02013D0255-20260520 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02013D0255-20260520",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:27.587416+00:00",
-      "title": "EUR-Lex - 02012R0036-20260520 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02012R0036-20260520",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity",
-        "Robotics/Drones",
-        "Positioning/Navigation/Timing"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:23.909663+00:00",
-      "title": "EUR-Lex - 52026SC0246 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0246",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 770000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 7000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 5.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:04:21.483320+00:00",
-      "title": "EUR-Lex - 52026SC0250 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0250",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:18.893828+00:00",
-      "title": "EUR-Lex - 02024R2642-20260713 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024R2642-20260713",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:16.463559+00:00",
-      "title": "EUR-Lex - 52026SC0247 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0247",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "EIB",
-        "EIF"
-      ],
-      "tech_area": [
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:13.995767+00:00",
-      "title": "EUR-Lex - 62025CO0574 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62025CO0574",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:11.569426+00:00",
-      "title": "EUR-Lex - 02024D2643-20260713 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02024D2643-20260713",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Space/EO",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:08.805249+00:00",
-      "title": "EUR-Lex - 52026PC0413 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0413",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:06.202860+00:00",
-      "title": "EUR-Lex - 2026_231 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_231",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:04.231821+00:00",
-      "title": "EUR-Lex - Ares(2026)7501289 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=PI_COM%3AAres%282026%297501289",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:04:01.731491+00:00",
-      "title": "EUR-Lex - Ares(2026)7501248 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=PI_COM%3AAres%282026%297501248",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:59.337503+00:00",
-      "title": "EUR-Lex - 52026PC0426 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0426",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Biotech",
-        "Space/EO",
-        "Cybersecurity",
-        "Energy_Tech"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 5244911861.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 5033950235.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 230100000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 209604000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 1600000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:03:56.093702+00:00",
-      "title": "EUR-Lex - Ares(2026)7501317 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=PI_COM%3AAres%282026%297501317",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:52.602322+00:00",
-      "title": "EUR-Lex - 52026SC0090 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0090",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 200000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 76.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 329.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:03:50.259924+00:00",
-      "title": "EUR-Lex - 2026_232 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/procedure/EN/2026_232",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:48.260527+00:00",
-      "title": "EUR-Lex - 52026SC0255 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0255",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Biotech",
-        "Space/EO",
-        "Cybersecurity",
-        "Energy_Tech"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:45.793433+00:00",
-      "title": "EUR-Lex - 52026PC0428 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0428",
-      "doc_type": "Call_for_Proposals",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity",
-        "Energy_Tech"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 6000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 6000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 0.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 6000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:03:42.327496+00:00",
-      "title": "EUR-Lex - 62024TJ0365_INF - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62024TJ0365_INF",
-      "doc_type": "Report",
-      "programme": [
-        "EIB"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:39.841428+00:00",
-      "title": "EUR-Lex - 52026SC0089 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0089",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "InvestEU"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 455000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 47000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 1868000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 49000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 27000000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:03:36.233701+00:00",
-      "title": "EUR-Lex - 52026PC0425 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0425",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Quantum",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 1969244522.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 1969244522.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 440.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 76000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 98000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:03:33.400787+00:00",
-      "title": "EUR-Lex - ST_12294_2026_ADD_1 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_12294_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:31.287447+00:00",
-      "title": "EUR-Lex - COM:2026:428:REV1 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2026%3A428%3AREV1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:28.931886+00:00",
-      "title": "EUR-Lex - ST_12301_2026_INIT - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_12301_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:26.378138+00:00",
-      "title": "EUR-Lex - COM:2026:429:FIN - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2026%3A429%3AFIN",
-      "doc_type": "Award/Grant",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": [
-        {
-          "amount": 89111937.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 47026323.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 24541937.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 225000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 522411398.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-02T06:03:22.615200+00:00",
-      "title": "EUR-Lex - 72024L2994IRL_202605887 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A72024L2994IRL_202605887",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:20.550578+00:00",
-      "title": "EUR-Lex - 72024L2994IRL_202605890 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A72024L2994IRL_202605890",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:18.223710+00:00",
-      "title": "EUR-Lex - ST_12312_2026_ADD_2 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_12312_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:15.917664+00:00",
-      "title": "Decision - 18 December 2025 - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32025M11974",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:13.552964+00:00",
-      "title": "EUR-Lex - SWD:2026:261:FIN - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=SWD%3A2026%3A261%3AFIN",
-      "doc_type": "Guidance/Notice",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "AI/Autonomy",
-        "Advanced_Semiconductors",
-        "Cybersecurity",
-        "Energy_Tech",
-        "Communications/5G+/SatCom"
-      ],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-02T06:03:10.737500+00:00",
-      "title": "EUR-Lex - ST_12312_2026_INIT - EN - EUR-Lex",
-      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_12312_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
       "amounts": []
     }
   ]
