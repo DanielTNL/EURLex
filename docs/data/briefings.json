@@ -1,30 +1,29 @@
 {
-  "generated_at": "2026-08-22T04:02:05.382712+00:00",
+  "generated_at": "2026-08-22T10:39:03.682701+00:00",
   "latest_date": "2026-08-22",
   "items": [
     {
       "date": "2026-08-22",
       "title": "Saturday 22 August 2026",
-      "headline": "Why implement ELI?",
-      "intro": "Saturday 22 August 2026 is led by Why implement ELI?. 5 relevant documents are currently attached to this publication window.",
-      "summary": "Why implement ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… ELI background: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… What is ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Statistics: Do you want to help improving EUR…",
+      "headline": "European Economic and Social Committee",
+      "intro": "Saturday 22 August 2026 is led by European Economic and Social Committee. 5 relevant documents are currently attached to this publication window.",
+      "summary": "European Economic and Social Committee: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Auditors: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… European Central Bank: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Justi…",
       "key_points": [
-        "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
         "Please note that opinions issued during the EU legislative process are not part",
         "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
         "Please note that opinions issued during the EU legislative process are not part"
       ],
       "sections": [
         {
-          "title": "Why implement ELI?",
+          "title": "European Economic and Social Committee",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-22."
         },
         {
-          "title": "ELI background",
+          "title": "Court of Auditors",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-22."
         },
         {
-          "title": "What is ELI?",
+          "title": "European Central Bank",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-22."
         }
       ],
@@ -32,13 +31,14 @@
         "Other/NA",
         "Defence & Security",
         "Other",
-        "daily"
+        "daily",
+        "Cybersecurity"
       ],
       "important_documents": [
         {
           "id": "rep-2026-08-22-f7925aebf3fe3ab9",
           "title": "Daily Digest — 2026-08-22",
-          "summary": "_Items in last 24h: 121_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-08-22T03:36:00.360383+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI im…",
+          "summary": "_Items in last 24h: 102_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-08-22T10:22:33.675747+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-08-22.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -51,10 +51,27 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/benefits.html",
-          "title": "Why implement ELI?",
+          "id": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+          "title": "European Economic and Social Committee",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+          "kind": "Blog/News",
+          "source": "eur-lex.europa.eu",
+          "date": "2026-08-22",
+          "categories": [
+            "Other/NA",
+            "Cybersecurity"
+          ],
+          "tags": [
+            "Other/NA",
+            "Cybersecurity"
+          ]
+        },
+        {
+          "id": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+          "title": "Court of Auditors",
+          "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
+          "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-08-22",
@@ -66,10 +83,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/background.html",
-          "title": "ELI background",
+          "id": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+          "title": "European Central Bank",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/background.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-08-22",
@@ -81,25 +98,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-          "title": "What is ELI?",
+          "id": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+          "title": "Court of Justice of the European Union",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-          "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
-          "date": "2026-08-22",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/statistics/statistics.html",
-          "title": "Statistics",
-          "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-08-22",
@@ -124,10 +126,10 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
             "EUR-Lex",
-            "EU",
             "Defence & Security",
-            "law"
+            "EU"
           ]
         },
         {
@@ -142,10 +144,10 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
             "EUR-Lex",
-            "EU",
             "Defence & Security",
-            "law"
+            "EU"
           ]
         },
         {
@@ -160,10 +162,10 @@
             "Defence & Security"
           ],
           "tags": [
+            "law",
             "EUR-Lex",
-            "EU",
             "Defence & Security",
-            "law"
+            "EU"
           ]
         },
         {
@@ -178,10 +180,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
+            "law",
             "EUR-Lex",
             "EU",
-            "law"
+            "Other"
           ]
         },
         {
@@ -196,10 +198,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
+            "law",
             "EUR-Lex",
             "EU",
-            "law"
+            "Other"
           ]
         },
         {
@@ -214,10 +216,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
+            "law",
             "EUR-Lex",
             "EU",
-            "law"
+            "Other"
           ]
         }
       ],
@@ -229,8 +231,8 @@
       "signal_counts": {
         "posts": 22,
         "reports": 2,
-        "digest_items": 46,
-        "timeline_events": 0
+        "digest_items": 72,
+        "timeline_events": 46
       }
     },
     {
@@ -442,7 +444,7 @@
       "signal_counts": {
         "posts": 2,
         "reports": 2,
-        "digest_items": 75,
+        "digest_items": 30,
         "timeline_events": 75
       }
     },
@@ -864,7 +866,7 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 80
+        "timeline_events": 82
       }
     },
     {
@@ -1730,37 +1732,27 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 72
+        "timeline_events": 26
       }
     },
     {
       "date": "2026-08-14",
       "title": "Friday 14 August 2026",
-      "headline": "CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the e…",
-      "intro": "Friday 14 August 2026 is led by CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Italy. 5 relevant docu…",
-      "summary": "CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Italy: CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, emp… CONSIL:ST_10094_2026_ADD_3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0): CONSIL:ST_10094_2026_…",
+      "headline": "Daily Digest — 2026-08-14",
+      "intro": "Friday 14 August 2026 is led by Daily Digest — 2026-08-14. 1 relevant documents are currently attached to this publication window.",
+      "summary": "Daily Digest — 2026-08-14: Items in last 24h: 106 1. CONSIL:ST 10094 2026 ADD 3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council…",
       "key_points": [
         "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
         "Please note that opinions issued during the EU legislative process are not part"
       ],
       "sections": [
         {
-          "title": "CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendati…",
-          "body": "CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, emp… Source: Timeline, 2026-08-14."
-        },
-        {
-          "title": "CONSIL:ST_10094_2026_ADD_3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the docume…",
-          "body": "CONSIL:ST_10094_2026_ADD_3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and… Source: Timeline, 2026-08-14."
-        },
-        {
-          "title": "CELEX:52026DC0222: Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budg…",
-          "body": "CELEX:52026DC0222: Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Portugal Source: Timeline, 2026-08-14."
+          "title": "Daily Digest — 2026-08-14",
+          "body": "Items in last 24h: 106 1. CONSIL:ST 10094 2026 ADD 3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0) Bron: eur-lex.europa.eu · Datum: 2026-08-14T10:57:44.070702+00:00 Programma: Other/NA Source: EURLex reports, 2026-08-14."
         }
       ],
       "categories": [
-        "Other/NA",
-        "daily",
-        "Cybersecurity"
+        "daily"
       ],
       "important_documents": [
         {
@@ -1777,162 +1769,9 @@
           "tags": [
             "daily"
           ]
-        },
-        {
-          "id": "https://european-union.europa.eu/index_en",
-          "title": "Your gateway to the European Union",
-          "summary": "",
-          "url": "https://european-union.europa.eu/index_en",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA",
-            "Cybersecurity"
-          ],
-          "tags": [
-            "Other/NA",
-            "Cybersecurity"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_3",
-          "title": "CONSIL:ST_10094_2026_ADD_3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_3",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0222",
-          "title": "CELEX:52026DC0222: Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Portugal",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0222",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0212",
-          "title": "CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Italy",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0212",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
         }
       ],
-      "related_documents": [
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_3",
-          "title": "CONSIL:ST_10094_2026_ADD_3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_3",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0222",
-          "title": "CELEX:52026DC0222: Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Portugal",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0222",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0212",
-          "title": "CELEX:52026SC0212: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Italy Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Italy",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0212",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0216",
-          "title": "CELEX:52026SC0216: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report – Luxembourg Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Luxembourg",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0216",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0504",
-          "title": "CELEX:52026PC0504: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union’s semiconductor ecosystem, repealing Regulation (EU) 2023/1781 (Chips Act 2.0)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0504",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0504",
-          "title": "CELEX:52026SC0504: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe’s semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0504",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-08-14",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        }
-      ],
+      "related_documents": [],
       "report": {
         "id": "rep-2026-08-14-98f7d542be14e631",
         "title": "Daily Digest — 2026-08-14",
@@ -1942,7 +1781,7 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 38
+        "timeline_events": 0
       }
     },
     {
