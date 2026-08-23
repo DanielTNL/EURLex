@@ -10,15 +10,15 @@
   "sections": [
     {
       "title": "European Economic and Social Committee",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-22."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-23."
     },
     {
       "title": "Court of Auditors",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-22."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-23."
     },
     {
       "title": "European Central Bank",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-22."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-08-23."
     }
   ],
   "categories": [
@@ -26,14 +26,13 @@
     "Defence & Security",
     "Other",
     "daily",
-    "Cybersecurity",
-    "De-risking & Investment"
+    "Cybersecurity"
   ],
   "important_documents": [
     {
       "id": "rep-2026-08-23-e6a6a51b938f3b5a",
       "title": "Daily Digest — 2026-08-23",
-      "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-08-22T10:22:33.675747+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
+      "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-08-23T10:22:44.923136+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-08-23.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -52,7 +51,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "categories": [
         "Other/NA",
         "Cybersecurity"
@@ -69,7 +68,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "categories": [
         "Other/NA"
       ],
@@ -84,7 +83,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "categories": [
         "Other/NA"
       ],
@@ -99,7 +98,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "categories": [
         "Other/NA"
       ],
@@ -121,10 +120,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "law",
         "Defence & Security",
-        "EU"
+        "EU",
+        "EUR-Lex"
       ]
     },
     {
@@ -139,10 +138,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "law",
         "Defence & Security",
-        "EU"
+        "EU",
+        "EUR-Lex"
       ]
     },
     {
@@ -157,10 +156,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
         "law",
         "Defence & Security",
-        "EU"
+        "EU",
+        "EUR-Lex"
       ]
     },
     {
@@ -175,10 +174,10 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
+        "Other",
         "law",
         "EU",
-        "Other"
+        "EUR-Lex"
       ]
     },
     {
@@ -193,28 +192,28 @@
         "Other"
       ],
       "tags": [
-        "EUR-Lex",
+        "Other",
         "law",
         "EU",
-        "Other"
+        "EUR-Lex"
       ]
     },
     {
-      "id": "96939d592604ab94",
-      "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
+      "id": "937d29dbe2cdec7e",
+      "title": "Opinion of the European Central Bank of 12 August 2026 on the introduction of a ban on crypto-asset activities, and measures concerning the application of Regulation (EU) 2023/1114 (CON/2026/26)",
       "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0945",
+      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AB0026",
       "kind": "post",
       "source": "EUR-Lex",
       "date": "2026-08-23",
       "categories": [
-        "De-risking & Investment"
+        "Other"
       ],
       "tags": [
-        "EUR-Lex",
+        "Other",
         "law",
         "EU",
-        "De-risking & Investment"
+        "EUR-Lex"
       ]
     }
   ],
@@ -224,9 +223,9 @@
     "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-08-23.md"
   },
   "signal_counts": {
-    "posts": 17,
+    "posts": 21,
     "reports": 2,
-    "digest_items": 4,
+    "digest_items": 26,
     "timeline_events": 0
   }
 }

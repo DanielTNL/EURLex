@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T04:14:40.802814+00:00",
+  "generated_at": "2026-08-23T10:34:48.897626+00:00",
   "latest_end_date": "2026-08-23",
   "items": [
     {
@@ -34,18 +34,20 @@
         }
       ],
       "categories": [
+        "Other/NA",
         "daily",
         "Defence & Security",
+        "Other",
         "De-risking & Investment",
-        "AI & Digital",
         "CMU & Financial Markets",
-        "Other"
+        "Cybersecurity",
+        "AI & Digital"
       ],
       "important_documents": [
         {
           "id": "rep-2026-08-23-e6a6a51b938f3b5a",
           "title": "Daily Digest — 2026-08-23",
-          "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-08-22T10:22:33.675747+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
+          "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-08-23T10:22:44.923136+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-08-23.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -84,10 +86,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "law",
             "Defence & Security",
-            "EU"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -102,10 +104,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "law",
             "Defence & Security",
-            "EU"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -120,10 +122,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "law",
             "Defence & Security",
-            "EU"
+            "EU",
+            "EUR-Lex"
           ]
         }
       ],
@@ -140,10 +142,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "law",
             "Defence & Security",
-            "EU"
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
@@ -158,10 +160,10 @@
             "Other"
           ],
           "tags": [
-            "EUR-Lex",
+            "Other",
             "law",
             "EU",
-            "Other"
+            "EUR-Lex"
           ]
         },
         {
@@ -176,64 +178,64 @@
             "Other"
           ],
           "tags": [
-            "EUR-Lex",
+            "Other",
             "law",
             "EU",
+            "EUR-Lex"
+          ]
+        },
+        {
+          "id": "937d29dbe2cdec7e",
+          "title": "Opinion of the European Central Bank of 12 August 2026 on the introduction of a ban on crypto-asset activities, and measures concerning the application of Regulation (EU) 2023/1114 (CON/2026/26)",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AB0026",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-08-23",
+          "categories": [
             "Other"
+          ],
+          "tags": [
+            "Other",
+            "law",
+            "EU",
+            "EUR-Lex"
           ]
         },
         {
-          "id": "96939d592604ab94",
-          "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
+          "id": "c372ea0732a7b6cf",
+          "title": "Opinion of the European Central Bank of 14 August 2026 on rules concerning the conduct and integrity of staff members of a supervisory authority and of the members of its executive board (CON/2026/25)",
           "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0945",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AB0025",
           "kind": "post",
           "source": "EUR-Lex",
           "date": "2026-08-23",
           "categories": [
-            "De-risking & Investment"
+            "Other"
           ],
           "tags": [
-            "EUR-Lex",
+            "Other",
             "law",
             "EU",
-            "De-risking & Investment"
+            "EUR-Lex"
           ]
         },
         {
-          "id": "83d6af925f4466c8",
-          "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
+          "id": "10f95542ad0936f2",
+          "title": "Opinion of the European Central Bank of 19 August 2026 on supervisory independence and prevention of conflicts of interest (CON/2026/27)",
           "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AB0027",
           "kind": "post",
           "source": "EUR-Lex",
           "date": "2026-08-23",
           "categories": [
-            "De-risking & Investment"
+            "Other"
           ],
           "tags": [
-            "EUR-Lex",
+            "Other",
             "law",
             "EU",
-            "De-risking & Investment"
-          ]
-        },
-        {
-          "id": "36b30dd3c7a897ba",
-          "title": "PI_COM:Ares(2026)5334055: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5334055",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-08-23",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "EUR-Lex",
-            "law",
-            "EU",
-            "De-risking & Investment"
+            "EUR-Lex"
           ]
         }
       ],
