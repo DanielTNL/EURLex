@@ -9,9 +9,7 @@
   "key_points": [
     "CONSIL:ST 6497 2026 INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting fo…",
     "CONSIL:ST 16097 2025 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/8…",
-    "CONSIL:ST 10527 2025 REV 1: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/…",
-    "CONSIL:ST 10572 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/8…",
-    "Opinion of the European Central Bank of 19 August 2026 on supervisory independence and prevention of conflicts of interest (CON/2026/27)"
+    "CONSIL:ST 10527 2025 REV 1: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/…"
   ],
   "sections": [
     {
@@ -32,16 +30,44 @@
     }
   ],
   "categories": [
-    "Other/NA",
     "daily",
     "Defence & Security",
-    "Other",
     "De-risking & Investment",
+    "AI & Digital",
     "CMU & Financial Markets",
-    "Cybersecurity",
-    "AI & Digital"
+    "Other"
   ],
   "important_documents": [
+    {
+      "id": "rep-2026-08-23-e6a6a51b938f3b5a",
+      "title": "Daily Digest — 2026-08-23",
+      "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-08-22T10:22:33.675747+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-08-23.md",
+      "kind": "report",
+      "source": "EURLex reports",
+      "date": "2026-08-23",
+      "categories": [
+        "daily"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "rep-2026-08-23-ab6ebfab55e990b0",
+      "title": "EUR-Lex Daily Digest — 2026-08-23",
+      "summary": "",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-08-23.md",
+      "kind": "report",
+      "source": "EURLex reports",
+      "date": "2026-08-23",
+      "categories": [
+        "daily"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
     {
       "id": "5b914d3b26a0d003",
       "title": "CONSIL:ST_6497_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting for defence readiness projects [10518/25 - COM(2025)821] Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry [10526/25- COM (2025)822] Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement [10527/25- COM(2025)823 ] - Opinion on the application of the Principles of Subsidiarity and Proportionality",
@@ -95,7 +121,9 @@
         "Defence & Security",
         "EU"
       ]
-    },
+    }
+  ],
+  "related_documents": [
     {
       "id": "b05a59619317eeae",
       "title": "CONSIL:ST_10572_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - Offer letter sent to the European Parliament",
@@ -112,62 +140,6 @@
         "law",
         "Defence & Security",
         "EU"
-      ]
-    },
-    {
-      "id": "37450ef72315f55c",
-      "title": "Opinion of the European Central Bank of 19 August 2026 on supervisory independence and prevention of conflicts of interest (CON/2026/27)",
-      "summary": "Opinion of the European Central Bank of 19 August 2026 on supervisory independence and prevention of conflicts of interest (CON/2026/27)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0027",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-08-23",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
-        "EUR-Lex",
-        "law",
-        "EU",
-        "Other"
-      ]
-    }
-  ],
-  "related_documents": [
-    {
-      "id": "41b8b022f465e014",
-      "title": "Opinion of the European Central Bank of 14 August 2026 on rules concerning the conduct and integrity of staff members of a supervisory authority and of the members of its executive board (CON/2026/25)",
-      "summary": "Opinion of the European Central Bank of 14 August 2026 on rules concerning the conduct and integrity of staff members of a supervisory authority and of the members of its executive board (CON/2026/25)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0025",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-08-23",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
-        "EUR-Lex",
-        "law",
-        "EU",
-        "Other"
-      ]
-    },
-    {
-      "id": "f440a5cb7cde599a",
-      "title": "Opinion of the European Central Bank of 12 August 2026 on the introduction of a ban on crypto-asset activities, and measures concerning the application of Regulation (EU) 2023/1114 (CON/2026/26)",
-      "summary": "Opinion of the European Central Bank of 12 August 2026 on the introduction of a ban on crypto-asset activities, and measures concerning the application of Regulation (EU) 2023/1114 (CON/2026/26)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0026",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-08-23",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
-        "EUR-Lex",
-        "law",
-        "EU",
-        "Other"
       ]
     },
     {
@@ -229,6 +201,24 @@
       "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
       "summary": "",
       "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
+      "kind": "post",
+      "source": "EUR-Lex",
+      "date": "2026-08-23",
+      "categories": [
+        "De-risking & Investment"
+      ],
+      "tags": [
+        "EUR-Lex",
+        "law",
+        "EU",
+        "De-risking & Investment"
+      ]
+    },
+    {
+      "id": "36b30dd3c7a897ba",
+      "title": "PI_COM:Ares(2026)5334055: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
+      "summary": "",
+      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5334055",
       "kind": "post",
       "source": "EUR-Lex",
       "date": "2026-08-23",
