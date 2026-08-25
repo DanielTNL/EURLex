@@ -1,11 +1,24 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-08-17T10:36:53.763356+00:00",
-    "end": "2026-08-24T10:36:53.763356+00:00",
+    "start": "2026-08-18T03:35:21.489108+00:00",
+    "end": "2026-08-25T03:35:21.489108+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-08-25T03:34:18.873381+00:00",
+      "title": "CheckLex: Official Journal electronic signature verification",
+      "url": "https://checklex.publications.europa.eu/",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "CheckLex enables you to verify the authenticity of the electronic edition of the Official Journal of the European Union. If verification succeeds, it gives you a guarantee that the electronic edition is authentic, and it has not been changed since",
+      "amounts": []
+    },
     {
       "date": "2026-08-24T10:36:52.203117+00:00",
       "title": "CELEX:52026SC0222: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Portugal Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Portugal",
@@ -397,6 +410,19 @@
       "amounts": []
     },
     {
+      "date": "2026-08-24T09:20:05+00:00",
+      "title": "EU Commission request for EIOPA's technical advice on the content of Delegated acts under the IDD in the context of the Retail Investment Strategy (RIS)",
+      "url": "https://www.eiopa.europa.eu/publications/eu-commission-request-eiopas-technical-advice-content-delegated-acts-under-idd-context-retail_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 24 Aug 2026 — https://www.eiopa.europa.eu/publications/eu-commission-request-eiopas-technical-advice-content-delegated-acts-under-idd-context-retail_en",
+      "amounts": []
+    },
+    {
       "date": "2026-08-24T03:40:26.461891+00:00",
       "title": "CheckLex: Official Journal electronic signature verification",
       "url": "https://checklex.publications.europa.eu/",
@@ -408,6 +434,87 @@
       "stage": "NA",
       "short": "CheckLex enables you to verify the authenticity of the electronic edition of the Official Journal of the European Union. If verification succeeds, it gives you a guarantee that the electronic edition is authentic, and it has not been changed since",
       "amounts": []
+    },
+    {
+      "date": "2026-08-24T00:00:00+00:00",
+      "title": "Interview with ilsussidiario.net",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in260824~fa5acbddea.en.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "24 August 2026 What can be done to try to strengthen European firms, now that they are once again facing challenges because of external shocks? First and foremost, we should try to capitalise on our advantages – the main one",
+      "amounts": [
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24T00:00:00+00:00",
+      "title": "Longer Term Refinancing Op. - Announcement",
+      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260075.en.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 24 Aug 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260075.en.html",
+      "amounts": [
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24T00:00:00+00:00",
+      "title": "Main Refinancing Operation - Announcement",
+      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260074.en.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 24 Aug 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260074.en.html",
+      "amounts": [
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        }
+      ]
     },
     {
       "date": "2026-08-23T10:22:44.923136+00:00",
@@ -4835,6 +4942,32 @@
       "amounts": []
     },
     {
+      "date": "2026-08-19T00:00:00+00:00",
+      "title": "Tender Operation - Allotment",
+      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260073.en.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 19 Aug 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260073.en.html",
+      "amounts": [
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
       "date": "2026-08-18T10:26:32.511415+00:00",
       "title": "CELEX:52026SC0222: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Portugal Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Portugal",
       "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0222",
@@ -5829,66 +5962,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 18 Aug 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-17T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. As wildfires spread around Europe, the EU has mobilised support to Belgium and Spain. Planes and helicopters have been dispatched to support local firefighters battling the",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-17T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. As wildfires spread around Europe, the EU has mobilised support to Belgium and Spain. Planes and helicopters have been dispatched to support local firefighters battling the",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-17T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. As wildfires spread around Europe, the EU has mobilised support to Belgium and Spain. Planes and helicopters have been dispatched to support local firefighters battling the",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-17T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [
-        "Cybersecurity"
-      ],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. As wildfires spread around Europe, the EU has mobilised support to Belgium and Spain. Planes and helicopters have been dispatched to support local firefighters battling the",
       "amounts": []
     }
   ]
