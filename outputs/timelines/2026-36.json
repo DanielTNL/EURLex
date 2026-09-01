@@ -1,8 +1,8 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-08-24T17:21:10.362081+00:00",
-    "end": "2026-08-31T17:21:10.362081+00:00",
+    "start": "2026-08-25T08:01:36.212671+00:00",
+    "end": "2026-09-01T08:01:36.212671+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
@@ -922,6 +922,65 @@
       "stage": "NA",
       "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2025)8562",
       "amounts": []
+    },
+    {
+      "date": "2026-08-31T00:00:00+00:00",
+      "title": "Big tech, big debt: when US tech giants tap the euro area bond market",
+      "url": "https://www.ecb.europa.eu//press/blog/date/2026/html/ecb.blog20260831~dac6a37e73.en.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "31 August 2026 By Anne Duquerroy, Oana Furtuna, Imène Rahmouni-Rousseau and Lia Vaz Cruz US tech giants are increasingly tapping the euro area bond market to fund their investments. The ECB Blog investigates the consequences for this market and the",
+      "amounts": [
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 40000000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31T00:00:00+00:00",
+      "title": "Main Refinancing Operation - Announcement",
+      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260077.en.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260077.en.html",
+      "amounts": [
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        }
+      ]
     },
     {
       "date": "2026-08-30T22:00:00+00:00",
@@ -4678,6 +4737,32 @@
       "amounts": []
     },
     {
+      "date": "2026-08-26T00:00:00+00:00",
+      "title": "Tender Operation - Allotment",
+      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260076.en.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Aug 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260076.en.html",
+      "amounts": [
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 2.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
       "date": "2026-08-25T22:00:00+00:00",
       "title": "CELEX:22026D1957: Decision No 1/2026 of the Committee on Investment Facilitation established by the Sustainable Investment Facilitation Agreement between the European Union and the Republic of Angola of 3 March 2026 as regards the adoption of the Rules of Procedure of the Committee on Investment Facilitation [2026/1957]",
       "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D1957",
@@ -5314,71 +5399,6 @@
         },
         {
           "amount": 5000000000.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-25T03:34:18.873381+00:00",
-      "title": "CheckLex: Official Journal electronic signature verification",
-      "url": "https://checklex.publications.europa.eu/",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "CheckLex enables you to verify the authenticity of the electronic edition of the Official Journal of the European Union. If verification succeeds, it gives you a guarantee that the electronic edition is authentic, and it has not been changed since",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T00:00:00+00:00",
-      "title": "Longer Term Refinancing Op. - Allotment",
-      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260075.en.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260075.en.html",
-      "amounts": [
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 150.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-25T00:00:00+00:00",
-      "title": "Main Refinancing Operation - Allotment",
-      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260074.en.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260074.en.html",
-      "amounts": [
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 150.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 2.0,
           "currency": "EUR"
         }
       ]
