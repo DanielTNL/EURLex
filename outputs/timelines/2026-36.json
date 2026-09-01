@@ -1,11 +1,401 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-08-25T08:01:36.212671+00:00",
-    "end": "2026-09-01T08:01:36.212671+00:00",
+    "start": "2026-08-25T14:26:28.372291+00:00",
+    "end": "2026-09-01T14:26:28.372291+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-09-01T14:26:23.959951+00:00",
+      "title": "PI_COM:Ares(2026)8330935: Recast of Regulation (EU) No 1215/2012 of the European Parliament and of the Council of 12 December 2012 on jurisdiction and the recognition and enforcement of judgments in civil and commercial matters (recast)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)8330935",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 01 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)8330935",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026R1119: Commission Delegated Regulation (EU) 2026/1119 of 26 May 2026 supplementing Regulation (EU) 2024/3005 of the European Parliament and of the Council with regard to regulatory technical standards specifying the information to be included in the application for authorisation as an ESG rating provider and in the application for recognition of an ESG rating provider",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026R1119",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026R1119",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03934: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Poland",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03934",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03934",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03927: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Latvia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03927",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03927",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03922: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Spain",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03922",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03922",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03914: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Belgium",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03914",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03914",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03915: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Bulgaria",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03915",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03915",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03924: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Croatia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03924",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03924",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03921: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Greece",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03921",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03921",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03938: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Slovakia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03938",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03938",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03923: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of France",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03923",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03923",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03929: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Luxembourg",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03929",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03929",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03930: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Hungary",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03930",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03930",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03928: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Lithuania",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03928",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03928",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03919: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Estonia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03919",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03919",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03913: Council Recommendation of 10 July 2026 with a view to bringing an end to the situation of an excessive deficit in Bulgaria",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03913",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03913",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03926: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Cyprus",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03926",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03926",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:52026M12570(01): Non-opposition to a notified concentration (Case M.12570 – C2X / CPCM / JV)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12570(01)",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12570(01)",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03932: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of the Netherlands",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03932",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03932",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03940: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Sweden",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03940",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03940",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03931: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Malta",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03931",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03931",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03918: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Germany",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03918",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03918",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03916: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Czechia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03916",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03916",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03917: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Denmark",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03917",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03917",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03937: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Slovenia",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03937",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03937",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03925: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Italy",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03925",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03925",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03935: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Portugal",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03935",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03935",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03936: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Romania",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03936",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03936",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32017R0565R(09):            Rectificatif au règlement délégué (UE) 2017/565 de la Commission du 25 avril 2016 complétant la directive 2014/65/UE du Parlement européen et du Conseil en ce qui concerne les exigences organisationnelles et les conditions d’exercice applicables aux entreprises d’investissement et la définition de certains termes aux fins de ladite directive (JO L 87 du 31.3.2017)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32017R0565R(09)",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32017R0565R(09)",
+      "amounts": []
+    },
+    {
+      "date": "2026-08-31T22:00:00+00:00",
+      "title": "CELEX:32026H03933: Council Recommendation of 10 July 2026 on the economic, social, employment, structural and budgetary policies of Austria",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03933",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 31 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H03933",
+      "amounts": []
+    },
     {
       "date": "2026-08-31T17:21:08.617215+00:00",
       "title": "European Economic and Social Committee",
@@ -4982,426 +5372,6 @@
       "stage": "NA",
       "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026IP0063",
       "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:35.220327+00:00",
-      "title": "CELEX:52025SC0110R(01): COMMISSION STAFF WORKING DOCUMENT EVALUATION Interim Evaluation of the Horizon Europe Framework Programme for Research and Innovation (2021 - 2024) Accompanying the document Communication from the Commission to the European Parliament and the Council Horizon Europe: Research and Innovation at the heart of competitiveness",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0110R(01)",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0110R(01)",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:33.693529+00:00",
-      "title": "CELEX:52025SC0390: COMMISSION STAFF WORKING DOCUMENT Accompanying the document REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL 2025 Annual Report on the implementation of the European Union's External Action Instruments in 2024",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0390",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025SC0390",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:32.253610+00:00",
-      "title": "CELEX:52025DC0945: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025DC0945",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025DC0945",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:30.754991+00:00",
-      "title": "CELEX:52025DC1005: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 'European Grids Package'",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025DC1005",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52025DC1005",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:29.379422+00:00",
-      "title": "CONSIL:ST_16740_2025_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2017/2402 of the European Parliament and of the Council of 12 December 2017 laying down a general framework for securitisation and creating a specific framework for simple, transparent and standardised securitisation - Mandate for negotiations with the European Parliament",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16740_2025_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16740_2025_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:27.888696+00:00",
-      "title": "PI_COM:C(2025)8493: COMMISSION IMPLEMENTING DECISION on the financing of the Specific Programme implementing Horizon Europe – the Framework Programme for Research and Innovation – and the adoption of the work programme for 2026-2027",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2025)8493",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2025)8493",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:26.376066+00:00",
-      "title": "CELEX:52026SC0071: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing a framework of measures for the acceleration of industrial capacity and decarbonisation in strategic sectors and amending Regulations (EU) 2018/1724, (EU) 2024/1735 and (EU) 2024/3110",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0071",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0071",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:25.004281+00:00",
-      "title": "CELEX:52026SC0084: COMMISSION STAFF WORKING DOCUMENT Accompanying the document Communication from the Commission Nuclear Illustrative Programme presented under Article 40 of the Euratom Treaty – Final (after the opinion of the EESC)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0084",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0084",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:23.505334+00:00",
-      "title": "CELEX:52026DC0116: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Clean Energy Investment Strategy",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0116",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0116",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:22.210207+00:00",
-      "title": "PI_COM:C(2026)2676: COMMISSION RECOMMENDATION on removing barriers to the development of power purchase agreements and other energy purchase agreements",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2676",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)2676",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:20.822480+00:00",
-      "title": "CELEX:52026DC0370: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS AccelerateEU - Energy Union Affordable and Secure Energy through Accelerated Action",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0370",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0370",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:19.454319+00:00",
-      "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:17.722166+00:00",
-      "title": "PI_COM:Ares(2026)5334055: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5334055",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5334055",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:16.263831+00:00",
-      "title": "CELEX:52026SC0450: COMMISSION STAFF WORKING DOCUMENT European Biotech Act Accompanying the documents Proposal for a Regulation of the European Parliament and of the Council on establishing a framework of measures for strengthening Union's biotechnology and biomanufacturing sectors particularly in the area of health and amending Regulations (EC) No 178/2002, (EC) No 1394/2007, (EU) No 536/2014, (EU) 2019/6, (EU) 2024/795 and (EU) 2024/1938 (European Biotech Act) and Proposal for a Directive of the European Parliament and of the Council amending Directives 2001/18/EC and 2010/53/EU as regards the placing on the market of genetically modified micro-organisms and the processing of organs",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0450",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0450",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:14.803908+00:00",
-      "title": "CONSIL:ST_9833_2026_INIT: PART 1/2 COMMISSION STAFF WORKING DOCUMENT European Biotech Act Accompanying the documents Proposal for a Regulation of the European Parliament and of the Council on establishing a framework of measures for strengthening Union's biotechnology and biomanufacturing sectors particularly in the area of health and amending Regulations (EC) No 178/2002, (EC) No 1394/2007, (EU) No 536/2014, (EU) 2019/6, (EU) 2024/795 and (EU) 2024/1938 (European Biotech Act) and Proposal for a Directive of the European Parliament and of the Council amending Directives 2001/18/EC and 2010/53/EU as regards the placing on the market of genetically modified micro-organisms and the processing of organs",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9833_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_9833_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:13.386316+00:00",
-      "title": "PI_COM:Ares(2026)5588958: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5588958",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5588958",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:11.954050+00:00",
-      "title": "PI_COM:Ares(2026)5639974: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5639974",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)5639974",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:10.489679+00:00",
-      "title": "CELEX:52026SC0209: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Spain Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Spain",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0209",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0209",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:09.238873+00:00",
-      "title": "CELEX:52026DC0503: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on European Tech Sovereignty, accompanied by an EU Open Source Strategy",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0503",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0503",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:07.817923+00:00",
-      "title": "CONSIL:ST_10094_2026_ADD_3: PART 1/3 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe's semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_3",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10094_2026_ADD_3",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:06.286111+00:00",
-      "title": "CELEX:52026SC0504: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening Europe’s semiconductor ecosystem repealing Regulation (EU) 2023/1782 (Chips Act 2.0)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0504",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0504",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:04.809145+00:00",
-      "title": "CELEX:52026SC0201: COMMISSION STAFF WORKING DOCUMENT 2026 Country Report - Belgium Accompanying the document Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Belgium",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0201",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0201",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:03.496527+00:00",
-      "title": "CELEX:52026DC0201: Recommendation for a COUNCIL RECOMMENDATION on the economic, social, employment, structural and budgetary policies of Belgium",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0201",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0201",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:02.146463+00:00",
-      "title": "CONSIL:ST_10491_2026_INIT: Regulation establishing European Competitiveness Fund (ECF), including specific programme for defence research and innovation - Partial general approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10491_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10491_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:30:00.730628+00:00",
-      "title": "CONSIL:ST_10625_2026_INIT: Regulation establishing European Competitiveness Fund (ECF), including specific programme for defence research and innovation - Partial general approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10625_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10625_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:29:59.243758+00:00",
-      "title": "CONSIL:ST_10746_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council on guidelines for trans-European energy infrastructure, amending Regulations (EU) 2019/942, (EU) 2019/943 and (EU) 2024/1789 and repealing Regulation (EU) 2022/869 - General approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10746_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_10746_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:29:57.140124+00:00",
-      "title": "CONSIL:ST_11228_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council on guidelines for trans-European energy infrastructure, amending Regulations (EU) 2019/942, (EU) 2019/943 and (EU) 2024/1789 and repealing Regulation (EU) 2022/869 - General approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11228_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_11228_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:29:55.385365+00:00",
-      "title": "CELEX:52026DC0355: Action Plan for resilience, strategic autonomy and sustainability of the EU protein system",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0355",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0355",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:29:53.124654+00:00",
-      "title": "CELEX:52026SC0615: COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITEE AND THE COMMITTEE OF THE REGIONS Competitiveness of the Banking Sector and the Single Market in Banking",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0615",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0615",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T10:29:47.916752+00:00",
-      "title": "CELEX:52026DC0595: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS ELECTRIFICATION ACTION PLAN",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0595",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 25 Aug 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0595",
-      "amounts": []
-    },
-    {
-      "date": "2026-08-25T08:32:13+00:00",
-      "title": "The EBA consults on revised technical standards for the reclassification of investment firms as credit institutions",
-      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-consults-revised-technical-standards-reclassification-investment-firms-credit-institutions",
-      "doc_type": "Report",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "The European Banking Authority (EBA) today launched a consultation on three draft Regulatory Technical Standards (RTS) on the reclassification of investment firms as credit institutions, when they exceed the EUR 30 billion total assets threshold. The proposals clarify how total",
-      "amounts": [
-        {
-          "amount": 30000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 30000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 30000000000.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 5000000000.0,
-          "currency": "EUR"
-        }
-      ]
     }
   ]
 }
