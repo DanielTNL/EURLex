@@ -1,28 +1,29 @@
 {
-  "generated_at": "2026-09-12T07:37:04.659383+00:00",
+  "generated_at": "2026-09-12T13:23:21.498324+00:00",
   "latest_date": "2026-09-12",
   "items": [
     {
       "date": "2026-09-12",
       "title": "Saturday 12 September 2026",
-      "headline": "Why implement ELI?",
-      "intro": "Saturday 12 September 2026 is led by Why implement ELI?. 5 relevant documents are currently attached to this publication window.",
-      "summary": "Why implement ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… ELI background: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… What is ELI?: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Statistics: Do you want to help improving EUR…",
+      "headline": "European Economic and Social Committee",
+      "intro": "Saturday 12 September 2026 is led by European Economic and Social Committee. 5 relevant documents are currently attached to this publication window.",
+      "summary": "European Economic and Social Committee: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Auditors: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… European Central Bank: Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forge… Court of Justi…",
       "key_points": [
+        "Please note that opinions issued during the EU legislative process are not part",
         "In older documentation and resources, the ELI Pillars 1, 2, 3 and 4 are sometimes referred to as Pillars I, II, III and IV respectively. Ev…",
         "Please note that opinions issued during the EU legislative process are not part"
       ],
       "sections": [
         {
-          "title": "Why implement ELI?",
+          "title": "European Economic and Social Committee",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-12."
         },
         {
-          "title": "ELI background",
+          "title": "Court of Auditors",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-12."
         },
         {
-          "title": "What is ELI?",
+          "title": "European Central Bank",
           "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-12."
         }
       ],
@@ -30,13 +31,14 @@
         "Other/NA",
         "Defence & Security",
         "Other",
-        "daily"
+        "daily",
+        "Cybersecurity"
       ],
       "important_documents": [
         {
           "id": "rep-2026-09-12-32151488bbccb186",
           "title": "Daily Digest — 2026-09-12",
-          "summary": "_Items in last 24h: 117_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-09-12T07:24:58.304285+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI im…",
+          "summary": "_Items in last 24h: 97_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-09-12T13:17:30.469130+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-09-12.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -49,10 +51,27 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/benefits.html",
-          "title": "Why implement ELI?",
+          "id": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+          "title": "European Economic and Social Committee",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/benefits.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+          "kind": "Blog/News",
+          "source": "eur-lex.europa.eu",
+          "date": "2026-09-12",
+          "categories": [
+            "Other/NA",
+            "Cybersecurity"
+          ],
+          "tags": [
+            "Other/NA",
+            "Cybersecurity"
+          ]
+        },
+        {
+          "id": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+          "title": "Court of Auditors",
+          "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
+          "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-09-12",
@@ -64,10 +83,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/background.html",
-          "title": "ELI background",
+          "id": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+          "title": "European Central Bank",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/background.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-09-12",
@@ -79,25 +98,10 @@
           ]
         },
         {
-          "id": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-          "title": "What is ELI?",
+          "id": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+          "title": "Court of Justice of the European Union",
           "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/eli-register/what_is_eli.html",
-          "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
-          "date": "2026-09-12",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/statistics/statistics.html",
-          "title": "Statistics",
-          "summary": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i…",
-          "url": "https://eur-lex.europa.eu/statistics/statistics.html",
+          "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
           "kind": "Blog/News",
           "source": "eur-lex.europa.eu",
           "date": "2026-09-12",
@@ -122,10 +126,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "EUR-Lex",
-            "law"
+            "law",
+            "Defence & Security",
+            "EU"
           ]
         },
         {
@@ -140,10 +144,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "EUR-Lex",
-            "law"
+            "law",
+            "Defence & Security",
+            "EU"
           ]
         },
         {
@@ -158,10 +162,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "EUR-Lex",
-            "law"
+            "law",
+            "Defence & Security",
+            "EU"
           ]
         },
         {
@@ -176,10 +180,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
             "EUR-Lex",
+            "Other",
             "law",
-            "Other"
+            "EU"
           ]
         },
         {
@@ -194,10 +198,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
             "EUR-Lex",
+            "Other",
             "law",
-            "Other"
+            "EU"
           ]
         },
         {
@@ -212,10 +216,10 @@
             "Other"
           ],
           "tags": [
-            "EU",
             "EUR-Lex",
+            "Other",
             "law",
-            "Other"
+            "EU"
           ]
         }
       ],
@@ -227,8 +231,8 @@
       "signal_counts": {
         "posts": 26,
         "reports": 2,
-        "digest_items": 46,
-        "timeline_events": 0
+        "digest_items": 72,
+        "timeline_events": 46
       }
     },
     {
@@ -441,7 +445,7 @@
       "signal_counts": {
         "posts": 2,
         "reports": 2,
-        "digest_items": 71,
+        "digest_items": 25,
         "timeline_events": 71
       }
     },
@@ -1725,36 +1729,25 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 72
+        "timeline_events": 26
       }
     },
     {
       "date": "2026-09-04",
       "title": "Friday 4 September 2026",
-      "headline": "OJ:L_202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of terephthalic acid origi…",
-      "intro": "Friday 4 September 2026 is led by OJ:L_202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of terephthalic acid originating in the Republic of Korea and the United Mexican States. 5 relevant documents ar…",
-      "summary": "OJ:L_202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of terephthalic acid originating in the Republic of Korea and the United Mexican States: OJ:L_202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of terephthalic acid originating in the Republ… OJ:L_202600780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 concerning statistics on holdings of securities (ECB/2026/9): OJ:L_202600780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 concerning statistics on holdings of securities (ECB/2026/9) O…",
+      "headline": "Daily Digest — 2026-09-04",
+      "intro": "Friday 4 September 2026 is led by Daily Digest — 2026-09-04. 1 relevant documents are currently attached to this publication window.",
+      "summary": "Daily Digest — 2026-09-04: Items in last 24h: 101 1. CELEX:32026M12530: Commission Decision of 11/08/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12530 - ATLAS HOLDINGS / KPS / JV) according to Council Re…",
       "key_points": [
-        "OJ:L 202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of ter…",
-        "OJ:C 202602125: Prior notification of a concentration (Case M.12339 – PERMIRA / WARBURG PINCUS / CLEARWATER ANALYTICS) – Candidate case for…",
-        "OJ:L 202600780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 concerning statistics o…"
+        "Daily Digest — 2026-09-04"
       ],
       "sections": [
         {
-          "title": "OJ:L_202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duti…",
-          "body": "OJ:L_202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of terephthalic acid originating in the Republ… Source: Timeline, 2026-09-04."
-        },
-        {
-          "title": "OJ:L_202600780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 con…",
-          "body": "OJ:L_202600780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 concerning statistics on holdings of securities (ECB/2026/9) Source: Timeline, 2026-09-04."
-        },
-        {
-          "title": "OJ:C_202602125: Prior notification of a concentration (Case M.12339 – PERMIRA / WARBURG PINCUS / CLEARWATER ANALYTICS)…",
-          "body": "OJ:C_202602125: Prior notification of a concentration (Case M.12339 – PERMIRA / WARBURG PINCUS / CLEARWATER ANALYTICS) – Candidate case for simplified procedure Source: Timeline, 2026-09-04."
+          "title": "Daily Digest — 2026-09-04",
+          "body": "Items in last 24h: 101 1. CELEX:32026M12530: Commission Decision of 11/08/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12530 - ATLAS HOLDINGS / KPS / JV) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic) Bron: eur-lex.europa.eu · Datum: 2026-09-04T13:55:06.687446+00:00 Programma: Other/NA Source: EURLex reports, 2026-09-04."
         }
       ],
       "categories": [
-        "Other/NA",
         "daily"
       ],
       "important_documents": [
@@ -1772,160 +1765,9 @@
           "tags": [
             "daily"
           ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600801",
-          "title": "OJ:L_202600801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of terephthalic acid originating in the Republic of Korea and the United Mexican States",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600801",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602125",
-          "title": "OJ:C_202602125: Prior notification of a concentration (Case M.12339 – PERMIRA / WARBURG PINCUS / CLEARWATER ANALYTICS) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602125",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600780",
-          "title": "OJ:L_202600780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 concerning statistics on holdings of securities (ECB/2026/9)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600780",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602128",
-          "title": "OJ:C_202602128: Prior notification of a concentration (Case M.12348 – SOFTBANK / DIGITALBRIDGE) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602128",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
         }
       ],
-      "related_documents": [
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602125",
-          "title": "OJ:C_202602125: Prior notification of a concentration (Case M.12339 – PERMIRA / WARBURG PINCUS / CLEARWATER ANALYTICS) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602125",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600780",
-          "title": "OJ:L_202600780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 concerning statistics on holdings of securities (ECB/2026/9)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:L_202600780",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602128",
-          "title": "OJ:C_202602128: Prior notification of a concentration (Case M.12348 – SOFTBANK / DIGITALBRIDGE) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202602128",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026R0801",
-          "title": "CELEX:32026R0801: Commission Implementing Regulation (EU) 2026/801 of 9 April 2026 imposing provisional anti-dumping duties on imports of terephthalic acid originating in the Republic of Korea and the United Mexican States",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026R0801",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12339",
-          "title": "CELEX:52026M12339: Prior notification of a concentration (Case M.12339 – PERMIRA / WARBURG PINCUS / CLEARWATER ANALYTICS) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12339",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026O0780",
-          "title": "CELEX:32026O0780: Guideline (EU) 2026/780 of the European Central Bank of 20 March 2026 amending Guideline ECB/2013/7 concerning statistics on holdings of securities (ECB/2026/9)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026O0780",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-09-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        }
-      ],
+      "related_documents": [],
       "report": {
         "id": "rep-2026-09-04-176ef0d1e12db516",
         "title": "Daily Digest — 2026-09-04",
@@ -1935,7 +1777,7 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 12
+        "timeline_events": 0
       }
     },
     {
