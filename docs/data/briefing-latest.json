@@ -10,15 +10,15 @@
   "sections": [
     {
       "title": "European Economic and Social Committee",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-12."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-13."
     },
     {
       "title": "Court of Auditors",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-12."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-13."
     },
     {
       "title": "European Central Bank",
-      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-12."
+      "body": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document i… Source: eur-lex.europa.eu, 2026-09-13."
     }
   ],
   "categories": [
@@ -32,7 +32,7 @@
     {
       "id": "rep-2026-09-13-f84e5139c646d5c2",
       "title": "Daily Digest — 2026-09-13",
-      "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-09-12T13:17:30.469130+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
+      "summary": "_Items in last 24h: 26_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-09-13T14:01:38.492073+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-09-13.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -51,7 +51,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "categories": [
         "Other/NA",
         "Cybersecurity"
@@ -68,7 +68,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "categories": [
         "Other/NA"
       ],
@@ -83,7 +83,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "categories": [
         "Other/NA"
       ],
@@ -98,7 +98,7 @@
       "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
       "kind": "Blog/News",
       "source": "eur-lex.europa.eu",
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "categories": [
         "Other/NA"
       ],
@@ -120,9 +120,9 @@
         "Defence & Security"
       ],
       "tags": [
+        "Defence & Security",
         "law",
         "EUR-Lex",
-        "Defence & Security",
         "EU"
       ]
     },
@@ -138,9 +138,9 @@
         "Defence & Security"
       ],
       "tags": [
+        "Defence & Security",
         "law",
         "EUR-Lex",
-        "Defence & Security",
         "EU"
       ]
     },
@@ -156,9 +156,9 @@
         "Defence & Security"
       ],
       "tags": [
+        "Defence & Security",
         "law",
         "EUR-Lex",
-        "Defence & Security",
         "EU"
       ]
     },
@@ -223,9 +223,9 @@
     "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-09-13.md"
   },
   "signal_counts": {
-    "posts": 24,
+    "posts": 26,
     "reports": 2,
-    "digest_items": 4,
+    "digest_items": 26,
     "timeline_events": 0
   }
 }
