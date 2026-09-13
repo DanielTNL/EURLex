@@ -1,8 +1,8 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-09-05T13:17:32.027449+00:00",
-    "end": "2026-09-12T13:17:32.027449+00:00",
+    "start": "2026-09-06T08:02:06.746341+00:00",
+    "end": "2026-09-13T08:02:06.746341+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
@@ -6367,110 +6367,6 @@
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 06 Sep 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
       "amounts": []
-    },
-    {
-      "date": "2026-09-06T00:00:00+00:00",
-      "title": "Main Refinancing Operation - Allotment",
-      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 Sep 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "amounts": [
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 150.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-06T00:00:00+00:00",
-      "title": "Main Refinancing Operation - Allotment",
-      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 Sep 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "amounts": [
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 150.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-06T00:00:00+00:00",
-      "title": "Main Refinancing Operation - Allotment",
-      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 Sep 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "amounts": [
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 150.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        }
-      ]
-    },
-    {
-      "date": "2026-09-06T00:00:00+00:00",
-      "title": "Main Refinancing Operation - Allotment",
-      "url": "https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 06 Sep 2026 — https://www.ecb.europa.eu/mopo/implement/omo/html/20260050.en.html",
-      "amounts": [
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 150.0,
-          "currency": "EUR"
-        },
-        {
-          "amount": 2.0,
-          "currency": "EUR"
-        }
-      ]
     }
   ]
 }
