@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T08:03:35.833895+00:00",
+  "generated_at": "2026-09-20T08:19:40.620841+00:00",
   "latest_end_date": "2026-09-20",
   "items": [
     {
@@ -8,14 +8,12 @@
       "week_end": "2026-09-20",
       "title": "Sunday Edition — 2026-09-14 to 2026-09-20",
       "headline": "ALMPs – Active Labour Market Policies",
-      "intro": "AMC – Asset Management Company AML – Anti-money laundering BoC – Bank of Cyprus CBC – Central Bank of Cyprus CCB – Cooperative Central Bank CCIs - Cooperative credit institutions COLA – Cost of living allowance CPB – Cyprus Popular (Laiki)… AMC – Asset Management Company AML – A…",
-      "summary": "AMC – Asset Management Company AML – Anti-money laundering BoC – Bank of Cyprus CBC – Central Bank of Cyprus CCB – Cooperative Central Bank CCIs - Cooperative credit institutions COLA – Cost of living allowance CPB – Cyprus Popular (Laiki)… AMC – Asset Management Company AML – Anti-money laundering BoC – Bank of Cyprus CBC – Central Bank of Cyprus CCB – Cooperative Central Bank CCIs - Cooperative credit institutions COLA – Cost of living allowance CPB – Cyprus Popular (Laiki)…",
+      "intro": "Sunday Edition — 2026-09-14 to 2026-09-20 is led by ALMPs – Active Labour Market Policies. 8 relevant documents are currently attached to this publication window.",
+      "summary": "ALMPs – Active Labour Market Policies: AMC – Asset Management Company AML – Anti-money laundering BoC – Bank of Cyprus CBC – Central Bank of Cyprus CCB – Cooperative Central Bank CCIs - Cooperative credit institutions COLA – Cost of living allowance CPB – Cy… ALMPs – Active Labour Market Policies: AMC – Asset Management Company AML – Anti-money laundering BoC – Bank of Cyprus CBC – Central Bank of Cyprus CCB – Cooperative Central Bank CCIs - Cooperative credit institutions COLA – Cost of living allowance CPB – Cy… CONSIL:ST_10572_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - Offer letter sent to the European Parliament: CONSIL:ST_10572_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of i… Judgment of the General Court (Third Chamber) of 10 June 2026 (Ext…",
       "key_points": [
         "ALMPs – Active Labour Market Policies",
         "ALMPs – Active Labour Market Policies",
-        "CONSIL:ST 6497 2026 INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting fo…",
-        "CONSIL:ST 10572 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/8…",
-        "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temp…"
+        "CONSIL:ST 6497 2026 INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting fo…"
       ],
       "sections": [
         {
@@ -37,8 +35,8 @@
       ],
       "categories": [
         "Other/NA",
-        "Defence & Security",
         "daily",
+        "Defence & Security",
         "CMU & Financial Markets",
         "Other",
         "De-risking & Investment",
@@ -46,6 +44,36 @@
         "AI & Digital"
       ],
       "important_documents": [
+        {
+          "id": "rep-2026-09-20-0560043b234cc590",
+          "title": "Daily Digest — 2026-09-20",
+          "summary": "_Items in last 24h: 72_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-09-20T08:09:44.101769+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI imp…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-09-20.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-09-20",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2026-09-20-e0843b9749f0ce7a",
+          "title": "EUR-Lex Daily Digest — 2026-09-20",
+          "summary": "Multiannual Financial Framework (MFF) 2028-2034 - Policy issues related to the Negotiating Box - Policy debate; CELEX:52026SC0308: COMMISSION STAFF WORKING DOCUMENT EVALUATION of COUNCIL DIRECTIVE 2008/114 ON THE IDENTIFICATION AND DESIGNATION OF EUROPEAN CRITICAL INFRASTRUCTURES AND THE ASSESSMENT OF THE NEED TO IMPROVE THEIR PROTECTION; CONSIL:ST_13320_2026_ADD_4: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a DIRECTIVE OF THE EUROPEAN…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-09-20.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-09-20",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
         {
           "id": "f645997f82802ea0",
           "title": "ALMPs – Active Labour Market Policies",
@@ -59,10 +87,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
-            "EUR-Lex",
-            "CMU & Financial Markets",
             "law",
+            "AI & Digital",
+            "CMU & Financial Markets",
+            "EUR-Lex",
             "EU"
           ]
         },
@@ -79,10 +107,10 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
-            "EUR-Lex",
-            "CMU & Financial Markets",
             "law",
+            "AI & Digital",
+            "CMU & Financial Markets",
+            "EUR-Lex",
             "EU"
           ]
         },
@@ -98,12 +126,14 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
+            "law",
             "EUR-Lex",
             "EU"
           ]
-        },
+        }
+      ],
+      "related_documents": [
         {
           "id": "b05a59619317eeae",
           "title": "CONSIL:ST_10572_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement - Offer letter sent to the European Parliament",
@@ -116,8 +146,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
+            "law",
             "EUR-Lex",
             "EU"
           ]
@@ -134,14 +164,12 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
+            "law",
             "EUR-Lex",
             "EU"
           ]
-        }
-      ],
-      "related_documents": [
+        },
         {
           "id": "15e7bade44129261",
           "title": "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temporary staff – EDA staff – Refusal of the request to initiate an invalidity procedure – Article 77 of the EDA Staff Regulations – Abuse of rights – Error of assessment: Case T-204/25.",
@@ -154,8 +182,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
             "Defence & Security",
+            "law",
             "EUR-Lex",
             "EU"
           ]
@@ -201,42 +229,6 @@
           "title": "CONSIL:ST_8216_2026_INIT: OPINION OF THE EUROPEAN CENTRAL BANK of 9 April 2026 on proposals as regards the further development of capital market integration and supervision within the Union (CON/2026/13)",
           "summary": "",
           "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:ST_8216_2026_INIT",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-09-20",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "Other",
-            "law",
-            "EUR-Lex",
-            "EU"
-          ]
-        },
-        {
-          "id": "ffebb938f907d307",
-          "title": "Opinion of the European Central Bank of 25 November 2025 on the prevention of conflicts of interest among the staff of the Central Bank of Cyprus (CON/2025/38)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025AB0038",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-09-20",
-          "categories": [
-            "Other"
-          ],
-          "tags": [
-            "Other",
-            "law",
-            "EUR-Lex",
-            "EU"
-          ]
-        },
-        {
-          "id": "a21844b40dacb6b0",
-          "title": "COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE EUROPEAN COUNCIL, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Enhancing the capacity of the EU supplementary pension sector to improve retirement income and supply long-term capital to the EU economy",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025SC0367",
           "kind": "post",
           "source": "EUR-Lex",
           "date": "2026-09-20",
