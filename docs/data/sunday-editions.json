@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T08:40:30.512867+00:00",
+  "generated_at": "2026-09-27T08:52:41.242110+00:00",
   "latest_end_date": "2026-09-27",
   "items": [
     {
@@ -13,9 +13,7 @@
       "key_points": [
         "CONSIL:ST 6497 2026 INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting fo…",
         "CONSIL:ST 10572 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/8…",
-        "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temp…",
-        "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temp…",
-        "COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE…"
+        "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temp…"
       ],
       "sections": [
         {
@@ -37,8 +35,8 @@
       ],
       "categories": [
         "Other/NA",
-        "Defence & Security",
         "daily",
+        "Defence & Security",
         "Other",
         "De-risking & Investment",
         "CMU & Financial Markets",
@@ -46,6 +44,36 @@
         "AI/Autonomy"
       ],
       "important_documents": [
+        {
+          "id": "rep-2026-09-27-8d6f4512d21c13ce",
+          "title": "Daily Digest — 2026-09-27",
+          "summary": "_Items in last 24h: 82_ 1. EUR-Lex - ST_13312_2026_INIT - EN - EUR-Lex Bron: eur-lex.europa.eu · Datum: 2026-09-27T08:46:51.544026+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Inf…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-09-27.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-09-27",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
+        {
+          "id": "rep-2026-09-27-67ed459d0ffd3b79",
+          "title": "EUR-Lex Daily Digest — 2026-09-27",
+          "summary": "Att.; CELEX:02021D1442-20261001: Decision (EU) 2021/1442 of the European Central Bank of 3 August 2021 on delegation of the power to adopt decisions on internal models and on extension of deadlines (ECB/2021/38); CELEX:02018D1544-20260703: Council Decision (CFSP) 2018/1544 of 15 October 2018 concerning restrictive measures against the proliferation and use of chemical weapons; CELEX:02018D1544-20260703: Council Decision (CFSP) 2018/1544 of 15 October 2018 concerning restrictive measures against the proliferation a…",
+          "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-09-27.md",
+          "kind": "report",
+          "source": "EURLex reports",
+          "date": "2026-09-27",
+          "categories": [
+            "daily"
+          ],
+          "tags": [
+            "daily"
+          ]
+        },
         {
           "id": "5b914d3b26a0d003",
           "title": "CONSIL:ST_6497_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting for defence readiness projects [10518/25 - COM(2025)821] Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry [10526/25- COM (2025)822] Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement [10527/25- COM(2025)823 ] - Opinion on the application of the Principles of Subsidiarity and Proportionality",
@@ -58,10 +86,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Defence & Security"
+            "Defence & Security",
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -76,10 +104,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Defence & Security"
+            "Defence & Security",
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -94,12 +122,14 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Defence & Security"
+            "Defence & Security",
+            "EUR-Lex",
+            "law"
           ]
-        },
+        }
+      ],
+      "related_documents": [
         {
           "id": "15e7bade44129261",
           "title": "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temporary staff – EDA staff – Refusal of the request to initiate an invalidity procedure – Article 77 of the EDA Staff Regulations – Abuse of rights – Error of assessment: Case T-204/25.",
@@ -112,10 +142,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Defence & Security"
+            "Defence & Security",
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -130,14 +160,12 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Other"
+            "Other",
+            "EUR-Lex",
+            "law"
           ]
-        }
-      ],
-      "related_documents": [
+        },
         {
           "id": "315e07c8cf829d98",
           "title": "Opinion of the European Central Bank of 12 June 2026 on the stay of foreclosures and the restructuring of loans and guarantees (CON/2026/18)",
@@ -150,10 +178,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Other"
+            "Other",
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -168,10 +196,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Other"
+            "Other",
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -186,10 +214,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Other"
+            "Other",
+            "EUR-Lex",
+            "law"
           ]
         },
         {
@@ -204,46 +232,10 @@
             "Other"
           ],
           "tags": [
-            "law",
-            "EUR-Lex",
             "EU",
-            "Other"
-          ]
-        },
-        {
-          "id": "96939d592604ab94",
-          "title": "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS RESourceEU Action Plan Accelerating our critical raw materials strategy to adapt to a new reality",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025DC0945",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-09-27",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "De-risking & Investment",
-            "law",
+            "Other",
             "EUR-Lex",
-            "EU"
-          ]
-        },
-        {
-          "id": "83d6af925f4466c8",
-          "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5029796",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-09-27",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "De-risking & Investment",
-            "law",
-            "EUR-Lex",
-            "EU"
+            "law"
           ]
         }
       ],
