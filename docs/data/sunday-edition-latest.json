@@ -33,15 +33,15 @@
     "Other/NA",
     "daily",
     "Defence & Security",
+    "CMU & Financial Markets",
     "Other",
-    "De-risking & Investment",
-    "CMU & Financial Markets"
+    "De-risking & Investment"
   ],
   "important_documents": [
     {
       "id": "rep-2026-10-05-c967b754544e62d3",
       "title": "Daily Digest — 2026-10-05",
-      "summary": "_Items in last 24h: 77_ 1. CELEX:62021TJ0294: Judgment of the General Court (Ninth Chamber, Extended Composition) of 30 September 2026.#Joules Ltd v European Union Intellectual Property Office.#EU trade mark – Opposition proceedings – Application for EU figurative mark Jules Gents – Earlier United Kingdom word marks and international registration of the earlier word mark JOULES – Earlier EU figurative mark Joules – Agreement on the withdrawal of the United Kingdom from the European Union and from Euratom – Transit…",
+      "summary": "_Items in last 24h: 73_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-10-05T18:59:50.112033+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-10-05.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -80,10 +80,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
+        "Defence & Security"
       ]
     },
     {
@@ -98,10 +98,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
+        "Defence & Security"
       ]
     },
     {
@@ -116,10 +116,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
+        "Defence & Security"
       ]
     }
   ],
@@ -136,10 +136,28 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
+        "Defence & Security"
+      ]
+    },
+    {
+      "id": "460945dddd03ca72",
+      "title": "Opinion of the European Central Bank of 1 October 2026 on empowering the competent authority under the market abuse regulation to impose a ban on exercising management functions in credit institutions (CON/2026/30)",
+      "summary": "Opinion of the European Central Bank of 1 October 2026 on empowering the competent authority under the market abuse regulation to impose a ban on exercising management functions in credit institutions (CON/2026/30)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AB0030",
+      "kind": "post",
+      "source": "EUR-Lex",
+      "date": "2026-10-05",
+      "categories": [
+        "Other"
+      ],
+      "tags": [
+        "law",
+        "EUR-Lex",
+        "EU",
+        "Other"
       ]
     },
     {
@@ -154,10 +172,10 @@
         "Other"
       ],
       "tags": [
-        "Other",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
+        "Other"
       ]
     },
     {
@@ -172,10 +190,10 @@
         "Other"
       ],
       "tags": [
-        "Other",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
+        "Other"
       ]
     },
     {
@@ -190,10 +208,10 @@
         "Other"
       ],
       "tags": [
-        "Other",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
+        "Other"
       ]
     },
     {
@@ -208,28 +226,10 @@
         "Other"
       ],
       "tags": [
-        "Other",
         "law",
+        "EUR-Lex",
         "EU",
-        "EUR-Lex"
-      ]
-    },
-    {
-      "id": "a21844b40dacb6b0",
-      "title": "COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE EUROPEAN COUNCIL, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Enhancing the capacity of the EU supplementary pension sector to improve retirement income and supply long-term capital to the EU economy",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52025SC0367",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-10-05",
-      "categories": [
         "Other"
-      ],
-      "tags": [
-        "Other",
-        "law",
-        "EU",
-        "EUR-Lex"
       ]
     }
   ],
