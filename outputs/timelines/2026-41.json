@@ -1,11 +1,427 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-09-30T09:23:22.643411+00:00",
-    "end": "2026-10-07T09:23:22.643411+00:00",
+    "start": "2026-09-30T17:08:19.753050+00:00",
+    "end": "2026-10-07T17:08:19.753050+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-10-07T17:08:17.999759+00:00",
+      "title": "EUR-Lex - 52026AB0030 - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026AB0030",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:08:15.846702+00:00",
+      "title": "EUR-Lex - 52026DC0542 - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026DC0542",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": [
+        {
+          "amount": 375000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 5068000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 995000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 334000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 24000000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07T17:08:13.155910+00:00",
+      "title": "Decision - 24 September 2026 - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32026M12610",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:08:10.842501+00:00",
+      "title": "EUR-Lex - 52026PC0780 - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026PC0780",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity",
+        "Energy_Tech"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": [
+        {
+          "amount": 295000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 30000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 30000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 1900000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 4500000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07T17:08:08.190813+00:00",
+      "title": "EUR-Lex - ST_13568_2026_INIT - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_13568_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:08:06.002300+00:00",
+      "title": "EUR-Lex - ST_13730_2026_INIT - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_13730_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:08:03.853123+00:00",
+      "title": "EUR-Lex - 52026SC0786 - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52026SC0786",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Quantum",
+        "Biotech",
+        "Space/EO",
+        "Cybersecurity",
+        "Robotics/Drones",
+        "Energy_Tech",
+        "Communications/5G+/SatCom"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": [
+        {
+          "amount": 500.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 100.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 120.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 30000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 11000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07T17:08:00.017664+00:00",
+      "title": "EUR-Lex - COM:2026:705:FIN - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2026%3A705%3AFIN",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Advanced_Semiconductors",
+        "Quantum",
+        "Biotech",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:57.843858+00:00",
+      "title": "EUR-Lex - ST_14141_2026_ADD_3 - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_14141_2026_ADD_3",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:55.759268+00:00",
+      "title": "EUR-Lex - SWD:2026:705:FIN - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=SWD%3A2026%3A705%3AFIN",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": [
+        {
+          "amount": 81000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 21500000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 600000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 100000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 100.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07T17:07:52.980720+00:00",
+      "title": "EUR-Lex - ST_13924_2026_INIT - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CONSIL%3AST_13924_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Energy_Tech"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:50.748443+00:00",
+      "title": "CONSIL:ST_13777_2026_INIT: Market Integration and Supervision Package (MISP) Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on settlement finality and repealing Directive 98/26/EC and amending Directive 2002/47/EC on financial collateral arrangements Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/65/EC, 2011/61/EU and 2014/65/EU as regards the further development of capital market integration and supervision within the Union Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) No 1095/2010, No 648/2012, No 600/2014, No 909/2014, 2015/2365, 2019/1156, 2021/23, 2022/858, 2023/1114, No 1060/2009, 2016/1011, 2017/2402, 2023/2631 and 2024/3005 as regards the further development of capital market integration and supervision within the Union - General Approach",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13777_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 07 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13777_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:49.222271+00:00",
+      "title": "CONSIL:ST_14141_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on European standardisation, repealing Regulation (EU) No 1025/2012 of the European Parliament and of the Council",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_14141_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 07 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_14141_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:47.641663+00:00",
+      "title": "CELEX:62026CO0460: Order of the Vice-President of the Court of 29 September 2026.#Republic of Poland v Council of the European Union.#Interim measures – Article 263 TFEU – Action for the annulment of an EU act – Article 278 TFEU – Application to suspend the operation of that act – Decision (EU) 2026/183 – Provisional application of the EU-Mercosur interim agreement on trade – Lack of urgency.#Case C-460/26 R.",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CO0460",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 07 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026CO0460",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:46.245331+00:00",
+      "title": "IMMC:LET/2026/10061: Letter from Frank Elderson, Member of the Executive Board of the European Central Bank (ECB), to Māris Kučinskis, Minister for Finance of the Republic of Latvia, on a draft law on the recovery and resolution of insurance and reinsurance undertakings",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=IMMC:LET/2026/10061",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 07 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=IMMC:LET/2026/10061",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:41.979054+00:00",
+      "title": "COM:2026:543:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL on the Common Provisioning Fund in 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:543:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 07 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:543:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:38.985527+00:00",
+      "title": "CELEX:62025TJ0371: Judgment of the General Court (First Chamber) of 7 October 2026.#Dentek Oral Care, Inc. v European Union Intellectual Property Office.#EU trade mark – Opposition proceedings – Application for the EU figurative mark dentix – Earlier EU word marks DENTEK and earlier EU figurative marks DenTek – Relative ground for refusal – No likelihood of confusion – Article 8(1)(b) of Regulation (EU) 2017/1001.#Case T-371/25.",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0371",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 07 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0371",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:35.708924+00:00",
+      "title": "SWD:2026:307:FIN: COMMISSION STAFF WORKING DOCUMENT EVALUATION of the Regulation (EU) 2019/515 on the Mutual Recognition of Goods",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:307:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 07 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:307:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-07T17:07:24.565578+00:00",
+      "title": "EUR-Lex - SWD:2026:305:FIN - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=SWD%3A2026%3A305%3AFIN",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "InvestEU"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": [
+        {
+          "amount": 272000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 31000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 36000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 272000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 271000000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07T17:07:21.240213+00:00",
+      "title": "EUR-Lex - COM:2026:546:FIN - EN - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2026%3A546%3AFIN",
+      "doc_type": "Guidance/Notice",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": [
+        {
+          "amount": 450000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 123000000000.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 100.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 150.0,
+          "currency": "EUR"
+        },
+        {
+          "amount": 450000000000.0,
+          "currency": "EUR"
+        }
+      ]
+    },
     {
       "date": "2026-10-07T09:23:21.039430+00:00",
       "title": "CELEX:52026SC0501: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Member State: Bulgaria Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
@@ -6459,305 +6875,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/04972",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:24.323509+00:00",
-      "title": "CONSIL:ST_7105_2026_REV_2: Position of the Council at first reading with a view to the adoption of a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL laying down Union procedures for the authorisation and supervision of medicinal products for human use and establishing rules governing the European Medicines Agency, amending Regulations (EC) No 1394/2007 and (EU) No 536/2014 and repealing Regulations (EC) No 141/2000, (EC) No 726/2004 and (EC) No 1901/2006 – Adopted by the Council on 28 September 2026",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7105_2026_REV_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_7105_2026_REV_2",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:22.802389+00:00",
-      "title": "PI_COM:Ares(2026)9174429: Cloud and AI Development Act",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)9174429",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)9174429",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:21.161812+00:00",
-      "title": "CONSIL:ST_13768_2026_INIT: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT pursuant to Article 294(6) of the Treaty on the Functioning of the European Union concerning the position of the Council on the adoption of a Regulation of the European Parliament and of the Council laying down Union procedures for the authorisation and supervision of medicinal products for human use and establishing rules governing the European Medicines Agency, amending Regulation (EC) No 1394/2007 and Regulation (EU) No 536/2014 and repealing Regulation (EC) No 141/2000, Regulation (EC) No 726/2004, and Regulation (EC) No 1901/2006",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13768_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13768_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:19.685831+00:00",
-      "title": "PI_EESC:EESC-2025-00476-AC: Opinion - European Economic and Social Committee - Evaluating the impact of public policies in the medium and long term through the intergenerational budgeting",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-00476-AC",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-00476-AC",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:18.102567+00:00",
-      "title": "PI_EESC:EESC-2025-01425-AC: Opinion - European Economic and Social Committee - EU Steel and Metals Action Plan",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-01425-AC",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-01425-AC",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:16.450059+00:00",
-      "title": "CELEX:62023TJ0115: Judgment of the General Court (Intermediate Chamber) of 30 September 2026.#Debreceni Egyetem v Council of the European Union.#Implementation of the Union budget – Regulation (EU, Euratom) 2020/2092 – General regime of conditionality for the protection of the Union budget – Implementing Decision (EU) 2022/2506 – Measures for the protection of the Union budget against breaches of the principles of the rule of law in Hungary – Article 2(2) of Implementing Decision 2022/2506 – Prohibition preventing the Commission from entering into legal commitments with any public interest trust or any entity maintained by such a trust – Competence of the Council – Right to be heard – Legal certainty – Equal treatment – Manifest error of assessment – Article 2 TEU – Proportionality – Article 13 of the Charter of Fundamental Rights – Academic freedom – Articles 165 and 179 TFEU – Freedom to provide services – Article 56 TFEU.#Case T-115/23.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62023TJ0115",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62023TJ0115",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:13.370965+00:00",
-      "title": "CELEX:32026M12567: Commission Decision of 25/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12567 - SOCIÉTÉ GÉNÉRALE / VODAFONE / OXG GLASFASER) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12567",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12567",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:10.150440+00:00",
-      "title": "CELEX:32026M12452: Commission Decision of 15/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12452 - BLACKSTONE / TINICUM / SENIOR / AEROFLOW) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12452",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12452",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:08.524828+00:00",
-      "title": "CELEX:62025TJ0494: Judgment of the General Court (Sixth Chamber) of 30 September 2026.#Van Eck Associates Corp. v European Union Intellectual Property Office.#EU trade mark – Opposition proceedings – International registration designating the European Union – Word mark MARKETVECTOR – Earlier EU word mark VECTOR FUND – Relative ground for refusal – Likelihood of confusion – Article 8(1)(b) of Regulation (EU) 2017/1001 – Genuine use of the earlier mark – Article 47(2) and (3) of Regulation 2017/1001 – Form differing in elements which do not alter the distinctive character – Article 18(1)(a) of Regulation 2017/1001.#Case T-494/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0494",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0494",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:07.053359+00:00",
-      "title": "CELEX:62025TJ0094: Judgment of the General Court (First Chamber) of 30 September 2026.#Mohammad Reza Khiabani v Council of the European Union.#Common foreign and security policy – Restrictive measures taken in view of Iran’s military support to Russia’s war of aggression against Ukraine and to armed groups and entities in the Middle East and the Red Sea region – Freezing of funds and economic resources – List of persons, entities and bodies subject to the freezing of funds and economic resources – Inclusion and maintenance of the applicant’s name on the list – Effective judicial protection – Rights of the defence – Error of law – Error of assessment – Right to property – Freedom to conduct a business.#Case T-94/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0094",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0094",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:05.516807+00:00",
-      "title": "CELEX:32026M12612: Commission Decision of 24/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12612 - M&amp;amp;G / ARINI / RENO DE MEDICI) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12612",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12612",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:12:00.895456+00:00",
-      "title": "SWD:2026:286:FIN: COMMISSION STAFF WORKING DOCUMENT Progress of implementation of Council Directive 2011/70 EURATOM Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on progress of implementation of Council Directive 2011/70 EURATOM and an inventory of radioactive waste and spent fuel present in the Community's territory and the future prospects - FOURTH REPORT",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:286:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:286:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:59.319305+00:00",
-      "title": "CELEX:32026M11964: Commission Decision of 10/02/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.11964 - GOOGLE / WIZ) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M11964",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M11964",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:57.050033+00:00",
-      "title": "CELEX:32026M12513: Commission Decision of 25/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12513 - AEQUITA / SABIC EUROPE) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12513",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12513",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:54.140480+00:00",
-      "title": "CELEX:62025TJ0302: Judgment of the General Court (Sixth Chamber) of 30 September 2026.#Van Eck Associates Corp. v European Union Intellectual Property Office.#EU trade mark – Opposition proceedings – International registration designating the European Union – Word mark MARKETVECTOR INDEXES – Earlier EU word mark VECTOR FUND – Relative ground for refusal – Likelihood of confusion – Article 8(1)(b) of Regulation (EU) 2017/1001 – Genuine use of the earlier mark – Article 47(2) and (3) of Regulation 2017/1001 – Form differing in elements which do not alter the distinctive character – Article 18(1)(a) of Regulation 2017/1001.#Case T-302/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0302",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0302",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:52.044388+00:00",
-      "title": "CELEX:32026M12524: Commission Decision of 28/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12524 - AEQUITA / RHEINMETALL AUTOMOTIVE) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12524",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12524",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:47.660933+00:00",
-      "title": "COM:2026:512:FIN: REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on progress of implementation of Council Directive 2011/70/EURATOM and an inventory of radioactive waste and spent fuel present in the Community's territory and the future prospects FOURTH REPORT",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:512:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:512:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:46.216806+00:00",
-      "title": "CELEX:32026M12497: Commission Decision of 10/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12497 - SANAD SERVICES / TIKEHAU CAPITAL / REVIMA) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12497",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12497",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:44.689285+00:00",
-      "title": "CELEX:62021TJ0294: Judgment of the General Court (Ninth Chamber, Extended Composition) of 30 September 2026.#Joules Ltd v European Union Intellectual Property Office.#EU trade mark – Opposition proceedings – Application for EU figurative mark Jules Gents – Earlier United Kingdom word marks and international registration of the earlier word mark JOULES – Earlier EU figurative mark Joules – Agreement on the withdrawal of the United Kingdom from the European Union and from Euratom – Transition period – Expiry – Circumstances prior to the adoption of the decision at issue – Relevant moment for assessing the existence of an earlier mark – Relative grounds for refusal – No likelihood of confusion – Article 8(1)(b) and Article 8(5) of Regulation (EC) No 207/2009 – Lack of highly distinctive character of the earlier marks.#Case T-294/21.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62021TJ0294",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62021TJ0294",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:43.175452+00:00",
-      "title": "CELEX:62024TJ0449: Judgment of the General Court (First Chamber) of 30 September 2026.#Dryade VZW and Others v European Commission.#Environment – Aarhus Convention – Rejection of a request for internal review – Article 10(1) of Regulation (EC) No 1367/2006 – Delegated Regulation (EU) 2023/2485 – Maritime and aviation sectors – Taxonomy – Requirements for technical screening criteria – Article 19 of Regulation (EU) 2020/852 – Precautionary principle – Error of law – Manifest error of assessment.#Case T-449/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0449",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0449",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:41.153905+00:00",
-      "title": "CELEX:32026M12565: Commission Decision of 22/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12565 - FRANCISCO PARTNERS / HEIDELBERG MATERIALS / COMMAND ALKON) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12565",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12565",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:37.895065+00:00",
-      "title": "CONSIL:ST_13729_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the conditions for the implementation of the Union support to the Common Fisheries Policy, to the European Ocean Pact and of the Union’s maritime and aquaculture policy as part of the National and Regional Partnership Fund set out in Regulation (EU) [...] [NRP Fund] for the period from 2028 to 2034 - Partial general approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13729_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13729_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-09-30T16:11:33.436518+00:00",
-      "title": "CELEX:62025TJ0093: Judgment of the General Court (First Chamber) of 30 September 2026.#Islamic Republic of Iran Shipping Lines v Council of the European Union.#Common foreign and security policy – Restrictive measures taken in view of Iran’s military support to Russia’s war of aggression against Ukraine and to armed groups and entities in the Middle East and the Red Sea region – Freezing of funds and economic resources – List of persons, entities and bodies subject to the freezing of funds and economic resources – Inclusion and maintenance of the applicant’s name on the list – Obligation to state reasons – Error of law – Error of assessment – Proportionality – Freedom to conduct a business.#Case T-93/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0093",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 30 Sep 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0093",
       "amounts": []
     }
   ]
