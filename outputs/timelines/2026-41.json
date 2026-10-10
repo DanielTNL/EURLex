@@ -1,11 +1,414 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-10-03T09:07:35.823001+00:00",
-    "end": "2026-10-10T09:07:35.823001+00:00",
+    "start": "2026-10-03T15:40:44.552826+00:00",
+    "end": "2026-10-10T15:40:44.552826+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-10-10T15:40:42.839313+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:41.426777+00:00",
+      "title": "European Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:39.979738+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:38.479214+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:36.972702+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:35.404169+00:00",
+      "title": "Council of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:33.821225+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:32.139206+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:30.669467+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:28.296905+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "AI/Autonomy",
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:26.060071+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Cybersecurity"
+      ],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:23.803798+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:21.193718+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:19.166485+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:17.257117+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Report",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:15.154435+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:12.883152+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:10.545781+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:08.229809+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:06.152945+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:03.810760+00:00",
+      "title": "Help - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:40:01.638856+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:39:57.087740+00:00",
+      "title": "Feedback",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:39:54.211132+00:00",
+      "title": "EU law - EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:39:51.440003+00:00",
+      "title": "My searches",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T15:39:47.494110+00:00",
+      "title": "Redirecting To ECAS",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 10 Oct 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Energy_Tech"
+      ],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. World Mental Health Day on October 10 serves as a reminder that good mental health is important and how we can prioritise it in our lives.",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Energy_Tech"
+      ],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. World Mental Health Day on October 10 serves as a reminder that good mental health is important and how we can prioritise it in our lives.",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Energy_Tech"
+      ],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. World Mental Health Day on October 10 serves as a reminder that good mental health is important and how we can prioritise it in our lives.",
+      "amounts": []
+    },
+    {
+      "date": "2026-10-10T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Energy_Tech"
+      ],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. World Mental Health Day on October 10 serves as a reminder that good mental health is important and how we can prioritise it in our lives.",
+      "amounts": []
+    },
     {
       "date": "2026-10-10T09:07:34.281417+00:00",
       "title": "Why implement ELI?",
@@ -6469,396 +6872,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 04 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13937_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:24.378449+00:00",
-      "title": "COM:2026:531:FIN: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL laying down management, conservation and control measures applicable in the Area of Application of the Southern Indian Ocean Fisheries Agreement (SIOFA)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:531:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:531:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:22.917229+00:00",
-      "title": "CONSIL:ST_13778_2026_INIT: Market Integration and Supervision Package Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/65/EC, 2011/61/EU and 2014/65/EU as regards the further development of capital market integration and supervision within the Union - General Approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13778_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13778_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:21.459466+00:00",
-      "title": "SWD:2026:602:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Second Flood Hazard and Risk Maps and Second Flood Risk Management Plans Member State: Slovenia Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:602:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:602:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:19.995066+00:00",
-      "title": "CONSIL:ST_13928_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the documents Proposal for a Regulation of the European Parliament and of the Council on establishing the European Criitcal Communication System Proposal for a Regulation of the European Parliament and of the Council establishing the framework for the use of the European Critical Communication Sysrem by the Member States' services and other organisations in charge of civil protection",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13928_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13928_2026_ADD_2",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:18.522261+00:00",
-      "title": "CONSIL:ST_13937_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the documents Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Union Critical Communication System (EUCCS) Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the framework for the use of the European Union Critical Communication System by the Member States' services and other organisations in charge of civil protection and amending Regulation (EU) .../...",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13937_2026_ADD_2",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13937_2026_ADD_2",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:17.071185+00:00",
-      "title": "CONSIL:ST_14000_2026_INIT: Proposal for a COUNCIL DECISION on the financial contributions to be paid by the parties to the European Development Fund as a third instalment for 2026",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_14000_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_14000_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:15.645795+00:00",
-      "title": "CELEX:02013L0036-20260711: Directive 2013/36/EU of the European Parliament and of the Council of 26 June 2013 on access to the activity of credit institutions and the prudential supervision of credit institutions, amending Directive 2002/87/EC and repealing Directives 2006/48/EC and 2006/49/EC (Text with EEA relevance)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02013L0036-20260711",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02013L0036-20260711",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:14.117611+00:00",
-      "title": "CONSIL:ST_13937_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the framework for the use of the European Union Critical Communication System by the Member States’ services and other organisations in charge of civil protection and amending Regulation (EU) .../...",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13937_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13937_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:12.748081+00:00",
-      "title": "COM:2025:2:REV1: REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third river basin management plans Second flood risk management plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2025:2:REV1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2025:2:REV1",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:11.271134+00:00",
-      "title": "SWD:2026:703:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Second Flood Hazard and Risk Maps and Second Flood Risk Management Plans Member State: Portugal Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:703:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:703:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:09.660900+00:00",
-      "title": "SWD:2026:780:FIN: COMMISSION STAFF WORKING DOCUMENT Analytical Supporting Document Accompanying the document Proposal for a Directive of the European Parliament and of the Council regarding the European Investigation Order in criminal matters and the European Remote Participation Order (recast)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:780:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:780:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:08.075548+00:00",
-      "title": "CONSIL:ST_13779_2026_INIT: Market Integration and Supervision Package Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EU) No 1095/2010, No 648/2012, No 600/2014, No 909/2014, 2015/2365, 2019/1156, 2021/23, 2022/858, 2023/1114, No 1060/2009, 2016/1011, 2017/2402, 2023/2631 and 2024/3005 as regards the further development of capital market integration and supervision within the Union - General Approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13779_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13779_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:06.572592+00:00",
-      "title": "CONSIL:ST_13992_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL laying down management, conservation and control measures applicable in the Area of Application of the Southern Indian Ocean Fisheries Agreement (SIOFA)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13992_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13992_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:05.172030+00:00",
-      "title": "SWD:2025:1:REV1: COMMISSION STAFF WORKING DOCUMENT Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the Commission's assessment of the Member States’ programmes of measures as updated under Article 17 of the Marine Strategy Framework Directive (2008/56/EC)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2025:1:REV1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2025:1:REV1",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:03.575356+00:00",
-      "title": "SWD:2026:501:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Member State: Bulgaria Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:501:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:501:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:02.072259+00:00",
-      "title": "CONSIL:ST_13928_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Union Critical Communication System (EUCCS)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13928_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13928_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:30:00.526419+00:00",
-      "title": "COM:2026:533:FIN: Proposal for a COUNCIL DECISION on the financial contributions to be paid by the parties to the European Development Fund to finance that fund specifying the ceiling for 2028, the annual amount for 2027, the amount of the first instalment for 2027 and an indicative and non-binding forecast for the expected annual amounts of contributions for the years 2029 and 2030",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:533:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:533:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:58.988419+00:00",
-      "title": "COM:2026:534:FIN: Proposal for a COUNCIL DECISION on the financial contributions to be paid by the parties to the European Development Fund as a third instalment for 2026",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:534:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:534:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:57.394379+00:00",
-      "title": "CONSIL:ST_13928_2026_ADD_3: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the documents Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the European Union Critical Communication System (EUCCS) Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL establishing the framework for the use of the European Union Critical Communication System by the Member States' services and other organisations in charge of civil protection and amending Regulation (EU) .../...",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13928_2026_ADD_3",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13928_2026_ADD_3",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:56.041347+00:00",
-      "title": "COM:2026:532:FIN: COMMUNICATION FROM THE COMMISSION TO THE COUNCIL Financial information on the European Development Fund (EDF): Forecasts of commitments, payments and contributions from the parties to the European Development Fund for 2026, 2027, 2028 and non binding forecasts for the years 2029-2030",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:532:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:532:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:54.254881+00:00",
-      "title": "SWD:2026:701:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Second Flood Hazard and Risk Maps and Second Flood Risk Management Plans Member State: Ireland Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:701:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:701:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:52.595236+00:00",
-      "title": "SWD:2026:603:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Second Flood Hazard and Risk Maps and Second Flood Risk Management Plans Member State: Cyprus Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:603:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:603:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:51.207935+00:00",
-      "title": "SWD:2026:702:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Second Flood Hazard and Risk Maps and Second Flood Risk Management Plans Member State: Malta Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:702:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:702:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:49.679175+00:00",
-      "title": "CELEX:02013L0036-20260111: Directive 2013/36/EU of the European Parliament and of the Council of 26 June 2013 on access to the activity of credit institutions and the prudential supervision of credit institutions, amending Directive 2002/87/EC and repealing Directives 2006/48/EC and 2006/49/EC (Text with EEA relevance)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02013L0036-20260111",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02013L0036-20260111",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:47.989131+00:00",
-      "title": "CONSIL:ST_13775_2026_INIT: Market Integration and Supervision Package Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on settlement finality and repealing Directive 98/26/EC and amending Directive 2002/47/EC on financial collateral arrangements - General Approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13775_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13775_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:46.406863+00:00",
-      "title": "SWD:2026:601:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Second Flood Hazard and Risk Maps and Second Flood Risk Management Plans Member State: Slovakia Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:601:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:601:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:44.447577+00:00",
-      "title": "COM:2026:525:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL on the implementation of the Public Sector Loan Facility under the Just Transition Mechanism in 2026, as referred to in Article 16 of Regulation (EU) 2021/1229",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:525:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:525:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:42.016164+00:00",
-      "title": "CONSIL:ST_13937_2026_ADD_1: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the documents Proposal for a Regulation of the European Parliament and of the Council on establishing the European Criitcal Communication System Proposal for a Regulation of the European Parliament and of the Council establishing the framework for the use of the European Critical Communication Sysrem by the Member States' services and other organisations in charge of civil protection",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13937_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_13937_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:39.927588+00:00",
-      "title": "SWD:2026:604:FIN: COMMISSION STAFF WORKING DOCUMENT Third River Basin Management Plans Second Flood Hazard and Risk Maps and Second Flood Risk Management Plans Member State: Greece Accompanying the document REPORT FROM THE COMMISSION TO THE COUNCIL AND THE EUROPEAN PARLIAMENT on the implementation of the Water Framework Directive (2000/60/EC) and the Floods Directive (2007/60/EC) Third River Basin Management Plans Second Flood Risk Management Plans",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:604:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:604:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-10-03T14:29:37.107589+00:00",
-      "title": "COM:2026:313:REV1: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL regarding the European Investigation Order in criminal matters and the European Remote Participation Order (recast)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:313:REV1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 03 Oct 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:313:REV1",
       "amounts": []
     }
   ]
