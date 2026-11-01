@@ -30,6 +30,7 @@
     }
   ],
   "categories": [
+    "Other/NA",
     "daily",
     "Defence & Security",
     "De-risking & Investment",
@@ -41,7 +42,7 @@
     {
       "id": "rep-2026-11-01-cd2089f28528ce57",
       "title": "Daily Digest — 2026-11-01",
-      "summary": "_Items in last 24h: 80_ 1. CELEX:02015D1333-20261013: Council Decision (CFSP) 2015/1333 of 31 July 2015 concerning restrictive measures in view of the situation in Libya, and repealing Decision 2011/137/CFSP Bron: eur-lex.europa.eu · Datum: 2026-11-01T09:56:39.819180+00:00 Programma: Other/NA",
+      "summary": "_Items in last 24h: 80_ 1. CONSIL:ST_15112_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2024/1252 (Text with EEA relevance) - Initial 4-column table Bron: eur-lex.europa.eu · Datum: 2026-11-01T16:33:43.331890+00:00 Programma: Other/NA",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-11-01.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -80,10 +81,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law",
+        "Defence & Security"
       ]
     },
     {
@@ -98,10 +99,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law",
+        "Defence & Security"
       ]
     },
     {
@@ -116,10 +117,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law",
+        "Defence & Security"
       ]
     }
   ],
@@ -136,10 +137,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "Defence & Security",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law",
+        "Defence & Security"
       ]
     },
     {
@@ -155,9 +156,9 @@
       ],
       "tags": [
         "De-risking & Investment",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -173,9 +174,9 @@
       ],
       "tags": [
         "De-risking & Investment",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -191,9 +192,9 @@
       ],
       "tags": [
         "De-risking & Investment",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -209,9 +210,9 @@
       ],
       "tags": [
         "De-risking & Investment",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law"
       ]
     },
     {
@@ -227,9 +228,9 @@
       ],
       "tags": [
         "De-risking & Investment",
-        "law",
         "EU",
-        "EUR-Lex"
+        "EUR-Lex",
+        "law"
       ]
     }
   ],
