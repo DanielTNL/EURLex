@@ -9,9 +9,7 @@
   "key_points": [
     "CONSIL:ST 6497 2026 INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting fo…",
     "CONSIL:ST 10572 2026 INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/8…",
-    "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temp…",
-    "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temp…",
-    "COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF…"
+    "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temp…"
   ],
   "sections": [
     {
@@ -32,15 +30,44 @@
     }
   ],
   "categories": [
-    "Other/NA",
-    "Defence & Security",
     "daily",
+    "Defence & Security",
     "De-risking & Investment",
     "Other",
     "CMU & Financial Markets",
     "AI & Digital"
   ],
   "important_documents": [
+    {
+      "id": "rep-2026-11-01-cd2089f28528ce57",
+      "title": "Daily Digest — 2026-11-01",
+      "summary": "_Items in last 24h: 80_ 1. CELEX:02015D1333-20261013: Council Decision (CFSP) 2015/1333 of 31 July 2015 concerning restrictive measures in view of the situation in Libya, and repealing Decision 2011/137/CFSP Bron: eur-lex.europa.eu · Datum: 2026-11-01T09:56:39.819180+00:00 Programma: Other/NA",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-11-01.md",
+      "kind": "report",
+      "source": "EURLex reports",
+      "date": "2026-11-01",
+      "categories": [
+        "daily"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
+    {
+      "id": "rep-2026-11-01-a3a5bf0797939604",
+      "title": "EUR-Lex Daily Digest — 2026-11-01",
+      "summary": "Working Party on Financial Services and Banking Union (MISP); Att.; Listening Room Economic And Financial Affairs Council; Wp On Financial Services And The Banking Union (Financial Services); Wp On Financial Services And The Banking Union (Financial Services)",
+      "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/2026-11-01.md",
+      "kind": "report",
+      "source": "EURLex reports",
+      "date": "2026-11-01",
+      "categories": [
+        "daily"
+      ],
+      "tags": [
+        "daily"
+      ]
+    },
     {
       "id": "5b914d3b26a0d003",
       "title": "CONSIL:ST_6497_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the acceleration of permit-granting for defence readiness projects [10518/25 - COM(2025)821] Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulations (EC) No 1907/2006, (EC) No 1272/2008, (EU) No 528/2012, (EU) 2019/1021 and (EU) 2021/697 as regards defence readiness and facilitating defence investments and conditions for defence industry [10526/25- COM (2025)822] Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2009/43/EC and 2009/81/EC, as regards the simplification of intra-EU transfers of defence-related products and the simplification of security and defence procurement [10527/25- COM(2025)823 ] - Opinion on the application of the Principles of Subsidiarity and Proportionality",
@@ -53,10 +80,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "Defence & Security",
-        "EU"
+        "law",
+        "EU",
+        "EUR-Lex"
       ]
     },
     {
@@ -71,10 +98,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "Defence & Security",
-        "EU"
+        "law",
+        "EU",
+        "EUR-Lex"
       ]
     },
     {
@@ -89,12 +116,14 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "Defence & Security",
-        "EU"
+        "law",
+        "EU",
+        "EUR-Lex"
       ]
-    },
+    }
+  ],
+  "related_documents": [
     {
       "id": "15e7bade44129261",
       "title": "Judgment of the General Court (Third Chamber) of 10 June 2026 (Extracts): IQ v European Defence Agency: Civil service – Members of the temporary staff – EDA staff – Refusal of the request to initiate an invalidity procedure – Article 77 of the EDA Staff Regulations – Abuse of rights – Error of assessment: Case T-204/25.",
@@ -107,10 +136,10 @@
         "Defence & Security"
       ],
       "tags": [
-        "EUR-Lex",
-        "law",
         "Defence & Security",
-        "EU"
+        "law",
+        "EU",
+        "EUR-Lex"
       ]
     },
     {
@@ -125,14 +154,12 @@
         "De-risking & Investment"
       ],
       "tags": [
-        "EUR-Lex",
+        "De-risking & Investment",
         "law",
         "EU",
-        "De-risking & Investment"
+        "EUR-Lex"
       ]
-    }
-  ],
-  "related_documents": [
+    },
     {
       "id": "83d6af925f4466c8",
       "title": "PI_COM:Ares(2026)5029796: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
@@ -145,10 +172,10 @@
         "De-risking & Investment"
       ],
       "tags": [
-        "EUR-Lex",
+        "De-risking & Investment",
         "law",
         "EU",
-        "De-risking & Investment"
+        "EUR-Lex"
       ]
     },
     {
@@ -163,10 +190,10 @@
         "De-risking & Investment"
       ],
       "tags": [
-        "EUR-Lex",
+        "De-risking & Investment",
         "law",
         "EU",
-        "De-risking & Investment"
+        "EUR-Lex"
       ]
     },
     {
@@ -181,10 +208,10 @@
         "De-risking & Investment"
       ],
       "tags": [
-        "EUR-Lex",
+        "De-risking & Investment",
         "law",
         "EU",
-        "De-risking & Investment"
+        "EUR-Lex"
       ]
     },
     {
@@ -199,46 +226,10 @@
         "De-risking & Investment"
       ],
       "tags": [
-        "EUR-Lex",
+        "De-risking & Investment",
         "law",
         "EU",
-        "De-risking & Investment"
-      ]
-    },
-    {
-      "id": "ffba2e3d2b094c79",
-      "title": "COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN CENTRAL BANK, THE EUROPEAN ECONOMIC AND SOCIAL COMMITEE AND THE COMMITTEE OF THE REGIONS Competitiveness of the Banking Sector and the Single Market in Banking",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026SC0615",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-11-01",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
-        "EUR-Lex",
-        "law",
-        "EU",
-        "Other"
-      ]
-    },
-    {
-      "id": "315e07c8cf829d98",
-      "title": "Opinion of the European Central Bank of 12 June 2026 on the stay of foreclosures and the restructuring of loans and guarantees (CON/2026/18)",
-      "summary": "",
-      "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026AB0018",
-      "kind": "post",
-      "source": "EUR-Lex",
-      "date": "2026-11-01",
-      "categories": [
-        "Other"
-      ],
-      "tags": [
-        "EUR-Lex",
-        "law",
-        "EU",
-        "Other"
+        "EUR-Lex"
       ]
     }
   ],
