@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T10:00:07.276265+00:00",
+  "generated_at": "2026-11-05T17:49:43.802959+00:00",
   "latest_date": "2026-11-05",
   "items": [
     {
@@ -37,7 +37,7 @@
         {
           "id": "rep-2026-11-05-dddaa0558201b9e9",
           "title": "Daily Digest — 2026-11-05",
-          "summary": "_Items in last 24h: 122_ 1. PI_COM:SEC(2026)730: Bron: eur-lex.europa.eu · Datum: 2026-11-05T09:54:36.656211+00:00 Programma: Other/NA",
+          "summary": "_Items in last 24h: 50_ 1. PI_COM:SEC(2026)730: Bron: eur-lex.europa.eu · Datum: 2026-11-05T09:54:36.656211+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-11-05.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -229,7 +229,7 @@
         "posts": 21,
         "reports": 2,
         "digest_items": 50,
-        "timeline_events": 0
+        "timeline_events": 50
       }
     },
     {
@@ -239,27 +239,28 @@
       "intro": "Wednesday 4 November 2026 is led by COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on the progress made in the implementation of the national Roma strategic framewo…",
       "summary": "COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on the progress made in the implementation of the national Roma strategic frameworks in light of the EU Roma strategic framework for equality, inclusion and participation and the Council Recommendation on Roma equality, inclusion and participation: COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on the progress m… COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on Si…",
       "key_points": [
+        "CONSIL:WK 11512 2025 INIT: Omnibus V - Information from the European Defence Agency (EDA)",
         "COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE CO…",
-        "COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE CO…",
-        "SWD:2026:697:FIN: COMMISSION STAFF WORKING DOCUMENT Georgia 2026 Report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE…"
+        "COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE CO…"
       ],
       "sections": [
         {
           "title": "COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL…",
-          "body": "COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on the progress m… Source: eur-lex.europa.eu, 2026-11-04."
+          "body": "COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on the progress m… Source: Timeline, 2026-11-04."
         },
         {
           "title": "COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL…",
-          "body": "COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on Simplification… Source: eur-lex.europa.eu, 2026-11-04."
+          "body": "COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on Simplification… Source: Timeline, 2026-11-04."
         },
         {
           "title": "SWD:2026:697:FIN: COMMISSION STAFF WORKING DOCUMENT Georgia 2026 Report Accompanying the document COMMUNICATION FROM TH…",
-          "body": "SWD:2026:697:FIN: COMMISSION STAFF WORKING DOCUMENT Georgia 2026 Report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EU… Source: eur-lex.europa.eu, 2026-11-04."
+          "body": "SWD:2026:697:FIN: COMMISSION STAFF WORKING DOCUMENT Georgia 2026 Report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EU… Source: Timeline, 2026-11-04."
         }
       ],
       "categories": [
         "Other/NA",
-        "daily"
+        "daily",
+        "Defence & Security"
       ],
       "important_documents": [
         {
@@ -278,12 +279,30 @@
           ]
         },
         {
+          "id": "e922c82d372f7374",
+          "title": "CONSIL:WK_11512_2025_INIT: Omnibus V - Information from the European Defence Agency (EDA)",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CONSIL:WK_11512_2025_INIT",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-11-04",
+          "categories": [
+            "Defence & Security"
+          ],
+          "tags": [
+            "law",
+            "EUR-Lex",
+            "Defence & Security",
+            "EU"
+          ]
+        },
+        {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:602:FIN",
           "title": "COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on the progress made in the implementation of the national Roma strategic frameworks in light of the EU Roma strategic framework for equality, inclusion and participation and the Council Recommendation on Roma equality, inclusion and participation",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:602:FIN",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:602:FIN",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -295,10 +314,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:715:FIN",
           "title": "COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on Simplification, Implementation and Enforcement",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:715:FIN",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:715:FIN",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -310,25 +329,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:697:FIN",
           "title": "SWD:2026:697:FIN: COMMISSION STAFF WORKING DOCUMENT Georgia 2026 Report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 Communication on EU enlargement policy",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:697:FIN",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:697:FIN",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
-          "date": "2026-11-04",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:693:FIN",
-          "title": "SWD:2026:693:FIN: COMMISSION STAFF WORKING DOCUMENT North Macedonia 2026 Report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 Communication on EU enlargement policy",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:693:FIN",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:693:FIN",
-          "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -342,10 +346,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:602:FIN",
           "title": "COM:2026:602:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on the progress made in the implementation of the national Roma strategic frameworks in light of the EU Roma strategic framework for equality, inclusion and participation and the Council Recommendation on Roma equality, inclusion and participation",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:602:FIN",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:602:FIN",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -357,10 +361,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:715:FIN",
           "title": "COM:2026:715:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS on Simplification, Implementation and Enforcement",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:715:FIN",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:715:FIN",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -372,10 +376,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:697:FIN",
           "title": "SWD:2026:697:FIN: COMMISSION STAFF WORKING DOCUMENT Georgia 2026 Report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 Communication on EU enlargement policy",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:697:FIN",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:697:FIN",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -387,10 +391,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:693:FIN",
           "title": "SWD:2026:693:FIN: COMMISSION STAFF WORKING DOCUMENT North Macedonia 2026 Report Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS 2026 Communication on EU enlargement policy",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:693:FIN",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:693:FIN",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -402,10 +406,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R1509-20261012",
           "title": "CELEX:02017R1509-20261012: Council Regulation (EU) 2017/1509 of 30 August 2017 concerning restrictive measures against the Democratic People's Republic of Korea and repealing Regulation (EC) No 329/2007",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R1509-20261012",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R1509-20261012",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -417,10 +421,10 @@
         {
           "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0098",
           "title": "CELEX:62025TJ0098: Judgment of the General Court (Tenth Chamber) of 4 November 2026.#Ypothalassios Agogos Fysikou Aeriou Elladas – Italias – Poseidon AE (YAFA Poseidon) v European Climate, Infrastructure and Environment Executive Agency.#Energy – Connecting Europe Facility – Regulation (EU, Euratom) No 347/2013 – Calls for proposals – Cross-border energy infrastructure projects – Proposal for the construction of a pipeline in the eastern Mediterranean Sea – Rejection of the proposal as inadmissible – Obligation to state reasons – Error of assessment – Right to be heard – Liability.#Case T-98/25.",
-          "summary": "References • Source — 04 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0098",
+          "summary": "",
           "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0098",
           "kind": "Blog/News",
-          "source": "eur-lex.europa.eu",
+          "source": "Timeline",
           "date": "2026-11-04",
           "categories": [
             "Other/NA"
@@ -438,7 +442,7 @@
       "signal_counts": {
         "posts": 1,
         "reports": 2,
-        "digest_items": 72,
+        "digest_items": 0,
         "timeline_events": 72
       }
     },
@@ -1713,36 +1717,25 @@
         "posts": 1,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 89
+        "timeline_events": 41
       }
     },
     {
       "date": "2026-10-28",
       "title": "Wednesday 28 October 2026",
-      "headline": "OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure",
-      "intro": "Wednesday 28 October 2026 is led by OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure. 5 relevant documents are currently attached to this publication window.",
-      "summary": "OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure: OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure CELEX:C/2026/05556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F): CELEX:C/2026/05556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F) OJ:C_202605556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F): OJ:C_202605556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F) CELEX:32019R0877R(05): CELEX:32019R0877R(05)",
+      "headline": "Daily Digest — 2026-10-28",
+      "intro": "Wednesday 28 October 2026 is led by Daily Digest — 2026-10-28. 1 relevant documents are currently attached to this publication window.",
+      "summary": "Daily Digest — 2026-10-28: Items in last 24h: 80 1. CELEX:02014D0145-20261015: Council Decision 2014/145/CFSP of 17 March 2014 concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty…",
       "key_points": [
-        "OJ:C 202605556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F)",
-        "OJ:C 202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified proc…",
-        "CELEX:C/2026/05556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F)"
+        "Daily Digest — 2026-10-28"
       ],
       "sections": [
         {
-          "title": "OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case…",
-          "body": "OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure Source: Timeline, 2026-10-28."
-        },
-        {
-          "title": "CELEX:C/2026/05556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F)",
-          "body": "CELEX:C/2026/05556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F) Source: Timeline, 2026-10-28."
-        },
-        {
-          "title": "OJ:C_202605556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F)",
-          "body": "OJ:C_202605556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F) Source: Timeline, 2026-10-28."
+          "title": "Daily Digest — 2026-10-28",
+          "body": "Items in last 24h: 80 1. CELEX:02014D0145-20261015: Council Decision 2014/145/CFSP of 17 March 2014 concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine Bron: eur-lex.europa.eu · Datum: 2026-10-28T16:23:38.210337+00:00 Programma: Other/NA Source: EURLex reports, 2026-10-28."
         }
       ],
       "categories": [
-        "Other/NA",
         "daily"
       ],
       "important_documents": [
@@ -1760,130 +1753,9 @@
           "tags": [
             "daily"
           ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202605556",
-          "title": "OJ:C_202605556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202605556",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202605649",
-          "title": "OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202605649",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/05556",
-          "title": "CELEX:C/2026/05556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/05556",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32019R0877R(05)",
-          "title": "CELEX:32019R0877R(05)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32019R0877R(05)",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
         }
       ],
-      "related_documents": [
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202605649",
-          "title": "OJ:C_202605649: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202605649",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/05556",
-          "title": "CELEX:C/2026/05556: Vacancy notice No COR/AD14/30BIS/26 – Director (M/F)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/05556",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32019R0877R(05)",
-          "title": "CELEX:32019R0877R(05)",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32019R0877R(05)",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12670",
-          "title": "CELEX:52026M12670: Prior notification of a concentration (Case M.12670 – ITALGAS RETI / ALLIANZ / FLOENE) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12670",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-10-28",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        }
-      ],
+      "related_documents": [],
       "report": {
         "id": "rep-2026-10-28-99fd85637ce12247",
         "title": "Daily Digest — 2026-10-28",
@@ -1893,7 +1765,7 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 5
+        "timeline_events": 0
       }
     },
     {
