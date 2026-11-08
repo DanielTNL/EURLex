@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T09:44:52.964903+00:00",
+  "generated_at": "2026-11-08T16:36:10.180921+00:00",
   "latest_end_date": "2026-11-08",
   "items": [
     {
@@ -47,7 +47,7 @@
         {
           "id": "rep-2026-11-08-a7e9938a2ada4b45",
           "title": "Daily Digest — 2026-11-08",
-          "summary": "_Items in last 24h: 76_ 1. Why implement ELI? Bron: eur-lex.europa.eu · Datum: 2026-11-08T09:35:20.209962+00:00 Programma: Other/NA Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law and case-law Information Adopting ELI imp…",
+          "summary": "_Items in last 24h: 76_ 1. European Economic and Social Committee Bron: eur-lex.europa.eu · Datum: 2026-11-08T16:29:49.171981+00:00 Programma: Other/NA Tech: Cybersecurity Do you want to help improving EUR-Lex ? This is a list of experimental features that you can enable. These features are still under development; they are not fully tested, and might reduce EUR-Lex stability. Don't forget to give your feedback! This document is an excerpt from the EUR-Lex website EU law EU case-law Official Journal National law a…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-11-08.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -87,11 +87,11 @@
             "Defence & Security"
           ],
           "tags": [
-            "AI & Digital",
             "EU",
-            "law",
+            "EUR-Lex",
             "Defence & Security",
-            "EUR-Lex"
+            "AI & Digital",
+            "law"
           ]
         },
         {
@@ -106,8 +106,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "EU",
+            "EUR-Lex",
             "Defence & Security",
             "law"
           ]
@@ -124,8 +124,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "EU",
+            "EUR-Lex",
             "Defence & Security",
             "law"
           ]
@@ -144,8 +144,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "EU",
+            "EUR-Lex",
             "Defence & Security",
             "law"
           ]
@@ -162,8 +162,8 @@
             "Defence & Security"
           ],
           "tags": [
-            "EUR-Lex",
             "EU",
+            "EUR-Lex",
             "Defence & Security",
             "law"
           ]
@@ -180,10 +180,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "EUR-Lex",
+            "law",
+            "Other"
           ]
         },
         {
@@ -198,10 +198,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "EUR-Lex",
+            "law",
+            "Other"
           ]
         },
         {
@@ -216,10 +216,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "EUR-Lex",
+            "law",
+            "Other"
           ]
         },
         {
@@ -234,10 +234,10 @@
             "Other"
           ],
           "tags": [
-            "Other",
-            "EUR-Lex",
             "EU",
-            "law"
+            "EUR-Lex",
+            "law",
+            "Other"
           ]
         }
       ],
