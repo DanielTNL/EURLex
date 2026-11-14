@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T09:35:56.536751+00:00",
+  "generated_at": "2026-11-14T16:17:36.844575+00:00",
   "latest_date": "2026-11-14",
   "items": [
     {
@@ -35,7 +35,7 @@
         {
           "id": "rep-2026-11-14-185e9b6cc2fdb797",
           "title": "Daily Digest — 2026-11-14",
-          "summary": "_Items in last 24h: 80_ 1. CheckLex: Official Journal electronic signature verification Bron: eur-lex.europa.eu · Datum: 2026-11-14T09:29:35.656604+00:00 Programma: Other/NA Instrument: Guarantee CheckLex enables you to verify the authenticity of the electronic edition of the Official Journal of the European Union. If verification succeeds, it gives you a guarantee that the electronic edition is authentic, and it has not been changed since the date of its signature/seal. Effective 1 July 2013, the electronic editi…",
+          "summary": "_Items in last 24h: 27_ 1. CheckLex: Official Journal electronic signature verification Bron: eur-lex.europa.eu · Datum: 2026-11-14T09:29:35.656604+00:00 Programma: Other/NA Instrument: Guarantee CheckLex enables you to verify the authenticity of the electronic edition of the Official Journal of the European Union. If verification succeeds, it gives you a guarantee that the electronic edition is authentic, and it has not been changed since the date of its signature/seal. Effective 1 July 2013, the electronic editi…",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-11-14.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -76,10 +76,10 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "regulation",
             "CMU & Financial Markets",
             "EBA",
-            "EU"
+            "EU",
+            "regulation"
           ]
         },
         {
@@ -95,8 +95,8 @@
           ],
           "tags": [
             "ECB",
-            "CMU & Financial Markets",
-            "EU"
+            "EU",
+            "CMU & Financial Markets"
           ]
         }
       ],
@@ -114,8 +114,8 @@
           ],
           "tags": [
             "ECB",
-            "CMU & Financial Markets",
-            "EU"
+            "EU",
+            "CMU & Financial Markets"
           ]
         },
         {
@@ -145,7 +145,7 @@
         "posts": 2,
         "reports": 2,
         "digest_items": 1,
-        "timeline_events": 0
+        "timeline_events": 1
       }
     },
     {
@@ -376,8 +376,8 @@
       "signal_counts": {
         "posts": 18,
         "reports": 2,
-        "digest_items": 79,
-        "timeline_events": 78
+        "digest_items": 26,
+        "timeline_events": 79
       }
     },
     {
@@ -437,8 +437,8 @@
             "AI & Digital"
           ],
           "tags": [
-            "AI & Digital",
             "ECB",
+            "AI & Digital",
             "EU"
           ]
         },
@@ -656,8 +656,8 @@
           ],
           "tags": [
             "ECB",
-            "CMU & Financial Markets",
-            "EU"
+            "EU",
+            "CMU & Financial Markets"
           ]
         },
         {
@@ -1678,36 +1678,25 @@
         "posts": 0,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 76
+        "timeline_events": 26
       }
     },
     {
       "date": "2026-11-06",
       "title": "Friday 6 November 2026",
       "headline": "Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven",
-      "intro": "Friday 6 November 2026 is led by Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven. 5 relevant documents are currently attached to this publication window.",
-      "summary": "Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven: Nederland moet zich meer mengen in de wereld van AI, maar we zullen altijd afhankelijk blijven van andere landen. Dat staat in de visie die staatssecretaris Aerdts van Digitale Economie en Soevereiniteit vandaag openbaa… OJ:C_202603120: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objections – SA.122075: OJ:C_202603120: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objectio… CELEX:52026AS122075: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty o…",
+      "intro": "Friday 6 November 2026 is led by Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven. 2 relevant documents are currently attached to this publication window.",
+      "summary": "Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven: Nederland moet zich meer mengen in de wereld van AI, maar we zullen altijd afhankelijk blijven van andere landen. Dat staat in de visie die staatssecretaris Aerdts van Digitale Economie en Soevereiniteit vandaag openbaa…",
       "key_points": [
-        "Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven",
-        "OJ:C 202603120: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases…",
-        "OJ:C 202603207: Prior notification of a concentration (Case M.12359 – MUTARES / JADEED) – Candidate case for simplified procedure"
+        "Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven"
       ],
       "sections": [
         {
           "title": "Kabinet wil meer met AI, maar Nederland zal afhankelijk blijven",
           "body": "Nederland moet zich meer mengen in de wereld van AI, maar we zullen altijd afhankelijk blijven van andere landen. Dat staat in de visie die staatssecretaris Aerdts van Digitale Economie en Soevereiniteit vandaag openbaar heeft gemaakt. \"Volledige onafhankelij… Source: External, 2026-11-06."
-        },
-        {
-          "title": "OJ:C_202603120: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the Eu…",
-          "body": "OJ:C_202603120: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objectio… Source: Timeline, 2026-11-06."
-        },
-        {
-          "title": "CELEX:52026AS122075: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of t…",
-          "body": "CELEX:52026AS122075: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no obj… Source: Timeline, 2026-11-06."
         }
       ],
       "categories": [
-        "Other/NA",
         "daily",
         "AI & Digital"
       ],
@@ -1742,115 +1731,9 @@
             "external",
             "AI & Digital"
           ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603120",
-          "title": "OJ:C_202603120: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objections – SA.122075",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603120",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-11-06",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603207",
-          "title": "OJ:C_202603207: Prior notification of a concentration (Case M.12359 – MUTARES / JADEED) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603207",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-11-06",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS122075",
-          "title": "CELEX:52026AS122075: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objections – SA.122075",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS122075",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-11-06",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
         }
       ],
-      "related_documents": [
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603120",
-          "title": "OJ:C_202603120: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objections – SA.122075",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603120",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-11-06",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603207",
-          "title": "OJ:C_202603207: Prior notification of a concentration (Case M.12359 – MUTARES / JADEED) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=OJ:C_202603207",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-11-06",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS122075",
-          "title": "CELEX:52026AS122075: Authorisation for State aid pursuant to Articles 107 and 108 of the Treaty on the Functioning of the European Union – Cases where the Commission raises no objections – SA.122075",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026AS122075",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-11-06",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        },
-        {
-          "id": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12359",
-          "title": "CELEX:52026M12359: Prior notification of a concentration (Case M.12359 – MUTARES / JADEED) – Candidate case for simplified procedure",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12359",
-          "kind": "Blog/News",
-          "source": "Timeline",
-          "date": "2026-11-06",
-          "categories": [
-            "Other/NA"
-          ],
-          "tags": [
-            "Other/NA"
-          ]
-        }
-      ],
+      "related_documents": [],
       "report": {
         "id": "rep-2026-11-06-36f7c541242676a5",
         "title": "Daily Digest — 2026-11-06",
@@ -1860,7 +1743,7 @@
         "posts": 1,
         "reports": 2,
         "digest_items": 0,
-        "timeline_events": 4
+        "timeline_events": 0
       }
     },
     {
@@ -2006,8 +1889,8 @@
             "CMU & Financial Markets"
           ],
           "tags": [
-            "CMU & Financial Markets",
-            "external"
+            "external",
+            "CMU & Financial Markets"
           ]
         }
       ],

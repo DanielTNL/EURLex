@@ -31,7 +31,7 @@
     {
       "id": "rep-2026-11-14-185e9b6cc2fdb797",
       "title": "Daily Digest — 2026-11-14",
-      "summary": "_Items in last 24h: 80_ 1. CheckLex: Official Journal electronic signature verification Bron: eur-lex.europa.eu · Datum: 2026-11-14T09:29:35.656604+00:00 Programma: Other/NA Instrument: Guarantee CheckLex enables you to verify the authenticity of the electronic edition of the Official Journal of the European Union. If verification succeeds, it gives you a guarantee that the electronic edition is authentic, and it has not been changed since the date of its signature/seal. Effective 1 July 2013, the electronic editi…",
+      "summary": "_Items in last 24h: 27_ 1. CheckLex: Official Journal electronic signature verification Bron: eur-lex.europa.eu · Datum: 2026-11-14T09:29:35.656604+00:00 Programma: Other/NA Instrument: Guarantee CheckLex enables you to verify the authenticity of the electronic edition of the Official Journal of the European Union. If verification succeeds, it gives you a guarantee that the electronic edition is authentic, and it has not been changed since the date of its signature/seal. Effective 1 July 2013, the electronic editi…",
       "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-11-14.md",
       "kind": "report",
       "source": "EURLex reports",
@@ -72,10 +72,10 @@
         "CMU & Financial Markets"
       ],
       "tags": [
-        "regulation",
         "CMU & Financial Markets",
         "EBA",
-        "EU"
+        "EU",
+        "regulation"
       ]
     },
     {
@@ -91,8 +91,8 @@
       ],
       "tags": [
         "ECB",
-        "CMU & Financial Markets",
-        "EU"
+        "EU",
+        "CMU & Financial Markets"
       ]
     }
   ],
@@ -110,8 +110,8 @@
       ],
       "tags": [
         "ECB",
-        "CMU & Financial Markets",
-        "EU"
+        "EU",
+        "CMU & Financial Markets"
       ]
     },
     {
@@ -141,6 +141,6 @@
     "posts": 2,
     "reports": 2,
     "digest_items": 1,
-    "timeline_events": 0
+    "timeline_events": 1
   }
 }
