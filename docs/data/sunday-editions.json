@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T13:05:15.703221+00:00",
+  "generated_at": "2026-11-24T20:30:56.069980+00:00",
   "latest_end_date": "2026-11-24",
   "items": [
     {
@@ -47,7 +47,7 @@
         {
           "id": "rep-2026-11-24-31226715fef37fe3",
           "title": "Daily Digest — 2026-11-24",
-          "summary": "_Items in last 24h: 76_ 1. CELEX:02017R1129-20270130: Regulation (EU) 2017/1129 of the European Parliament and of the Council of 14 June 2017 on the prospectus to be published when securities are offered to the public or admitted to trading on a regulated market, and repealing Directive 2003/71/EC (Text with EEA relevance) Bron: eur-lex.europa.eu · Datum: 2026-11-24T12:59:45.500018+00:00 Programma: Other/NA",
+          "summary": "_Items in last 24h: 106_ 1. CONSIL:ST_15995_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the procedure for authorisation of systems providing mobile satellite services using the harmonised 2 GHz frequency band and repealing Decision No 626/2008/EC (Text with EEA relevance) - General approach Bron: eur-lex.europa.eu · Datum: 2026-11-24T20:28:05.439310+00:00 Programma: Other/NA",
           "url": "https://github.com/DanielTNL/EURLex/blob/main/reports/daily/2026-11-24.md",
           "kind": "report",
           "source": "EURLex reports",
@@ -86,10 +86,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
-            "EUR-Lex"
+            "Defence & Security",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -104,10 +104,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
-            "EUR-Lex"
+            "Defence & Security",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -122,10 +122,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
-            "EUR-Lex"
+            "Defence & Security",
+            "EUR-Lex",
+            "EU"
           ]
         }
       ],
@@ -142,10 +142,10 @@
             "Defence & Security"
           ],
           "tags": [
-            "EU",
-            "Defence & Security",
             "law",
-            "EUR-Lex"
+            "Defence & Security",
+            "EUR-Lex",
+            "EU"
           ]
         },
         {
@@ -160,10 +160,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EU",
-            "De-risking & Investment",
             "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "De-risking & Investment",
+            "EU"
           ]
         },
         {
@@ -178,10 +178,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EU",
-            "De-risking & Investment",
             "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "De-risking & Investment",
+            "EU"
           ]
         },
         {
@@ -196,28 +196,10 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EU",
-            "De-risking & Investment",
             "law",
-            "EUR-Lex"
-          ]
-        },
-        {
-          "id": "4e073b9f2a87068b",
-          "title": "COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION Guidelines on the application of certain provisions of Regulation (EU) 2022/2560 of the European Parliament and of the Council on foreign subsidies distorting the internal market",
-          "summary": "",
-          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=CELEX:52026SC0940",
-          "kind": "post",
-          "source": "EUR-Lex",
-          "date": "2026-11-24",
-          "categories": [
-            "De-risking & Investment"
-          ],
-          "tags": [
-            "EU",
+            "EUR-Lex",
             "De-risking & Investment",
-            "law",
-            "EUR-Lex"
+            "EU"
           ]
         },
         {
@@ -232,10 +214,28 @@
             "De-risking & Investment"
           ],
           "tags": [
-            "EU",
-            "De-risking & Investment",
             "law",
-            "EUR-Lex"
+            "EUR-Lex",
+            "De-risking & Investment",
+            "EU"
+          ]
+        },
+        {
+          "id": "77841aaac9d52d21",
+          "title": "PI_COM:Ares(2026)5588958: Legislative proposal for a Regulation of the European Parliament and of the Council establishing the EU Critical Raw Materials Centre",
+          "summary": "",
+          "url": "https://eur-lex.europa.eu/./legal-content/AUTO/?uri=PI_COM:Ares(2026)5588958",
+          "kind": "post",
+          "source": "EUR-Lex",
+          "date": "2026-11-24",
+          "categories": [
+            "De-risking & Investment"
+          ],
+          "tags": [
+            "law",
+            "EUR-Lex",
+            "De-risking & Investment",
+            "EU"
           ]
         }
       ],
