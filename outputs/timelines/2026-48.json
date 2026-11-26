@@ -1,11 +1,661 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-11-18T19:42:09.924872+00:00",
-    "end": "2026-11-25T19:42:09.924872+00:00",
+    "start": "2026-11-19T11:33:28.396859+00:00",
+    "end": "2026-11-26T11:33:28.396859+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-11-26T11:33:26.929995+00:00",
+      "title": "CELEX:02024R2746-20261029: Commission Implementing Regulation (EU) 2024/2746 of 25 October 2024 laying down rules for the application of Council Regulation (EC) No 1217/2009 setting up the Farm Sustainability Data Network and repealing Commission Implementing Regulation (EU) 2015/220",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2746-20261029",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2746-20261029",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:25.586211+00:00",
+      "title": "SWD:2026:1204:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Croatia Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1204:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1204:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:24.240739+00:00",
+      "title": "SWD:2026:1227:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Sweden Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1227:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1227:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:22.746746+00:00",
+      "title": "SWD:2026:1222:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Portugal Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1222:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1222:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:21.252445+00:00",
+      "title": "SWD:2026:1220:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – The Netherlands Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1220:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1220:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:19.689719+00:00",
+      "title": "SWD:2026:1210:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – France Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1210:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1210:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:18.220871+00:00",
+      "title": "SWD:2026:1214:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Ireland Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1214:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1214:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:16.673340+00:00",
+      "title": "SWD:2026:1228:FIN: COMMISSION STAFF WORKING DOCUMENT Annex A: Methods and data for analysing tax gaps and compliance enforcement capacity in EU Member States Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1228:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1228:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:15.130593+00:00",
+      "title": "COM:2026:966:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS On the Tenth Report on economic, social and territorial cohesion",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:966:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:966:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:13.718584+00:00",
+      "title": "COM:2026:1053:FIN: Recommendation for a COUNCIL DECISION establishing that no effective action has been taken by Hungary in response to the Council Recommendation of 18 February 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:1053:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:1053:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:12.140988+00:00",
+      "title": "CELEX:52026PC1052: Recommendation for a COUNCIL DECISION establishing that no effective action has been taken by Bulgaria in response to the Council Recommendation of 10 July 2026",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC1052",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC1052",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:10.628691+00:00",
+      "title": "CELEX:02002L0047-20270130: Directive 2002/47/EC of the European Parliament and of the Council of 6 June 2002 on financial collateral arrangements",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02002L0047-20270130",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02002L0047-20270130",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:09.252379+00:00",
+      "title": "CELEX:02017R0392-20271103: Commission Delegated Regulation (EU) 2017/392 of 11 November 2016 supplementing Regulation (EU) No 909/2014 of the European Parliament and of the Council with regard to regulatory technical standards on authorisation, supervisory and operational requirements for central securities depositories (Text with EEA relevance)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R0392-20271103",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R0392-20271103",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:07.732794+00:00",
+      "title": "COM:2026:956:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Alert Mechanism Report 2027 prepared in accordance with Article 3 of Regulation (EU) No 1176/2011 on the prevention and correction of macroeconomic imbalances",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:956:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:956:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:06.288445+00:00",
+      "title": "SWD:2026:956:FIN: COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Alert Mechanism Report 2027 prepared in accordance with Article 3 of Regulation (EU) No 1176/2011 on the prevention and correction of macroeconomic imbalances",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:956:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:956:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:04.704836+00:00",
+      "title": "SWD:2026:1221:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Poland Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1221:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1221:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:03.210420+00:00",
+      "title": "SWD:2026:1224:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Slovakia Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1224:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1224:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:01.857532+00:00",
+      "title": "SWD:2026:1212:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Greece Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1212:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1212:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:33:00.555856+00:00",
+      "title": "SWD:2026:1218:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Luxembourg Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1218:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1218:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:59.038212+00:00",
+      "title": "SWD:2026:1217:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Lithuania Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1217:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1217:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:57.630004+00:00",
+      "title": "CELEX:62024TJ0151: Judgment of the General Court (Ninth Chamber, Extended Composition) of 25 November 2026.#Citizens' Committee of the European citizens’ initiative “End the Cage Age” v European Commission.#Law governing the institutions – European citizens’ initiative – Communication from the Commission adopted in accordance with Article 15(2) of Regulation (EU) 2019/788 – Commission’s intention to take action in response to a European citizens’ initiative – Expiry of the envisaged timeline for the submission of a legislative proposal in response to a European citizens’ initiative – Action for failure to act – Failure to define a position on the call to act – Requested act producing binding legal effects – Admissibility – Obligation to set out a new timeline – Action for annulment – Access to the file – Rejection – Article 41(2)(b) of the Charter of Fundamental Rights.#Case T-151/24.",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0151",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0151",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:56.120404+00:00",
+      "title": "CONSIL:ST_16438_2026_ADD_5: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the document Proposal for a Regulation of the European Parliament and of the Councilآ on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_5",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_5",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:54.793369+00:00",
+      "title": "CONSIL:ST_16438_2026_ADD_2: PART 1/2 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Councilآ on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_2",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_2",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:53.299467+00:00",
+      "title": "SWD:2026:965:FIN: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council  on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:965:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:965:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:51.912029+00:00",
+      "title": "CELEX:62025TJ0475: Judgment of the General Court (First Chamber) of 25 November 2026.#Petropavlovsk plc v Council of the European Union.#Common foreign and security policy – Restrictive measures adopted in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine – Freezing of funds – List of persons, entities and bodies subject to the freezing of funds and economic resources – Inclusion and maintenance of the applicant’s name on the list – Concept of ‘entity involved in economic sectors providing a substantial source of revenue to the Government of the Russian Federation’ – Article 2(1)(g) of Decision 2014/145/CFSP – Article 3(1)(g) of Regulation (EU) No 269/2014 – Error of assessment.#Case T-475/25.",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0475",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0475",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:50.466556+00:00",
+      "title": "CELEX:62024TJ0258: Judgment of the General Court (Fourth Chamber) of 25 November 2026.#Scandlines Danmark ApS and Others v European Commission.#State aid – Transport – Aid in favour of the Øresund fixed rail-road link – Public financing granted by the Kingdom of Denmark and the Kingdom of Sweden to the fixed link infrastructure project – State guarantees – Decision finding existing aid – Individual aid – Date of award – Action for annulment – Substantial direct and individual effect on competitive position – Interest in bringing proceedings – Admissibility.#Case T-258/24.",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0258",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0258",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:48.865418+00:00",
+      "title": "CONSIL:ST_16438_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:47.511666+00:00",
+      "title": "COM:2026:965:FIN: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:965:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:965:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:46.108026+00:00",
+      "title": "SWD:2026:966:FIN: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:966:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:966:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:44.647815+00:00",
+      "title": "SWD:2026:967:FIN: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the document Proposal for a Regulation of the European Parliament and of the Council  on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:967:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:967:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:43.341249+00:00",
+      "title": "CELEX:62025TJ0004: Judgment of the General Court (Eighth Chamber) of 25 November 2026.#International and European Public Services Organisation (IPSO) v European Central Bank.#Access to documents – Decision 2004/258/EC – Documents related to the consultation on the amendment of Administrative Circular 1/2019 – Refusal of access – Exception relating to the protection of legal advice – Second indent of Article 4(2) of Decision 2004/258 – No overriding public interest.#Case T-4/25.",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0004",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0004",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:41.979085+00:00",
+      "title": "CONSIL:ST_16438_2026_ADD_1: ANNEXES to the Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_1",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_1",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:40.671328+00:00",
+      "title": "CELEX:62024TJ0532: Judgment of the General Court (Eighth Chamber) of 25 November 2026.#Rangecourt SA, anciennement Banque Havilland SA v European Central Bank.#Economic and monetary policy – Prudential supervision of credit institutions – Regulation (EU) No 1024/2013 – Regulation (EU) No 468/2014 – Specific supervisory tasks conferred on the ECB – Decision to withdraw a credit institution’s authorisation – Proposal from the national competent authority – Infringements of the provisions on the prevention of the use of the financial system for the purposes of money laundering and terrorist financing – Breaches of governance requirements – Professional repute of the shareholder – Competence of the ECB – Composite administrative procedure – Misuse of powers – Procedural rights – Right to be heard – Confidentiality – Obligation to state reasons – Notification of the contested decision – Judicial review – Plea of illegality – Proportionality – Legitimate expectations – Ne bis in idem principle – Equality of treatment.#Case T-532/24.",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0532",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0532",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:39.303911+00:00",
+      "title": "CONSIL:ST_16341_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT Accompanying the document Proposal for a COUNCIL RECOMMENDATION on Advanced Materials [Advanced Materials for Europe]",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16341_2026_ADD_2",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16341_2026_ADD_2",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:37.826030+00:00",
+      "title": "CONSIL:ST_16438_2026_ADD_3: PART 2/2 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Councilآ on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_3",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_3",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:36.429181+00:00",
+      "title": "CELEX:52026SC0957: COMMISSION STAFF WORKING DOCUMENT STATISTICAL ANNEX Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Alert Mechanism Report 2027 prepared in accordance with Article 3 of Regulation (EU) No 1176/2011 on the prevention and correction of macroeconomic imbalances",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0957",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0957",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:35.029722+00:00",
+      "title": "CONSIL:ST_16438_2026_ADD_4: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_4",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_4",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:28.979941+00:00",
+      "title": "COM:2026:638:FIN: REPORT FROM THE COMMISSION ANNUAL REPORT 2025 ON THE APPLICATION OF THE PRINCIPLES OF SUBSIDIARITY AND PROPORTIONALITY AND ON RELATIONS WITH NATIONAL PARLIAMENTS",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:638:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:638:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:24.485927+00:00",
+      "title": "COM:2026:634:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL Annual Report to the European Parliament and to the Council on the humanitarian aid operations financed in 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:634:FIN",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:634:FIN",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T11:32:21.454927+00:00",
+      "title": "CONSIL:ST_16475_2026_INIT: OPINION if the European Parliament - Proposal for a Council regulation on establishing the research and training programme of the European Atomic Energy Community for the period 2028-2032, complementing Horizon Europe, the Framework Programme for Research and Innovation, and providing for the Community’s contribution to the ITER project, and repealing Regulation (Euratom) 2025/1304 [COM(2025)0594 - C10-0217/2025 - 2025/0594(NLE)]",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16475_2026_INIT",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16475_2026_INIT",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:C/2026/06139: Verbatim report of proceedings of 25 November 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06139",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06139",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:52026M12701: Prior notification of a concentration (Case M.12701 – KOCH / CHEYNE WALK TRUST / GETTY IMAGES) – Candidate case for simplified procedure",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12701",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12701",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:52026M12706: Prior notification of a concentration (Case M.12706 – DOUBLE HELIX / PLATINUM COMPASS / CONSTELLATION JV) – Candidate case for simplified procedure",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12706",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12706",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:C/2026/06144: Minutes of the sitting of 26 November 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06144",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06144",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:32026R2095: Commission Delegated Regulation (EU) 2026/2095 of 17 September 2026 amending Delegated Regulation (EU) 2022/126 supplementing Regulation (EU) 2021/2115 of the European Parliament and of the Council with additional requirements for certain types of intervention specified by Member States in their CAP Strategic Plans for the period 2023 to 2027 under that Regulation as well as rules on the ratio for the good agricultural and environmental conditions (GAEC) standard 1",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026R2095",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026R2095",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:52026M12677: Prior notification of a concentration (Case M.12677 – CLARIOS / ECOBAT US) – Candidate case for simplified procedure",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12677",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12677",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:C/2026/06140: Verbatim report of proceedings of 26 November 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06140",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06140",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:C/2026/06141: Verbatim report of proceedings of 27 November 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06141",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06141",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:C/2026/06145: Minutes of the sitting of 27 November 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06145",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06145",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-25T23:00:00+00:00",
+      "title": "CELEX:C/2026/06138: Verbatim report of proceedings of 24 November 2025",
+      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06138",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 25 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06138",
+      "amounts": []
+    },
     {
       "date": "2026-11-25T19:42:08.338243+00:00",
       "title": "COM:2026:956:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Alert Mechanism Report 2027 prepared in accordance with Article 3 of Regulation (EU) No 1176/2011 on the prevention and correction of macroeconomic imbalances",
@@ -6624,773 +7274,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:833:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:13.189879+00:00",
-      "title": "CELEX:32026M12258: Commission Decision of 09/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12258 - VOLKSWAGEN / EUROPCAR) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12258",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12258",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:11.638745+00:00",
-      "title": "CELEX:62025CC0539: Opinion of Advocate General Campos Sánchez-Bordona delivered on 12 November 2026.###",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0539",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CC0539",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:10.099493+00:00",
-      "title": "CELEX:32026M11903: Commission Decision of 12/10/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.11903 - CM / BUNGE / BTZ) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M11903",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M11903",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:08.431586+00:00",
-      "title": "CELEX:52026SC1121: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on cooperation between national authorities and the Commission in the enforcement of consumer protection laws in the Union, amending Directive (EU) 2019/1937 and Regulations (EC) No 261/2004, (EC) No 1107/2006, (EC) No 1008/2008, (EU) No 1177/2010, (EU) No 181/2011, (EU) No 1024/2012, (EU) 2018/302 and (EU) 2021/782 and repealing Regulation (EU) 2017/2394",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC1121",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC1121",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:06.967015+00:00",
-      "title": "CELEX:32026M12298: Commission Decision of 06/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12298 - SNOWHAWK / ARES / MACQUARIE / DATA REALTY GROUP / PRIME DATA CENTERS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12298",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12298",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:05.442684+00:00",
-      "title": "CONSIL:ST_15810_2026_INIT: Proposal for a DIRECTIVE OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Directives 2011/83/EU and 2002/58/EC of the European Parliament and of the Council as regards the simplification of certain consumer protection rules",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15810_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15810_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:03.964328+00:00",
-      "title": "CONSIL:ST_15798_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on promoting fair business-to-consumer commercial practices in the offline and digital single market, and repealing Directive 2005/29/EC (Digital Fairness Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15798_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15798_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:02.462829+00:00",
-      "title": "CELEX:32026M12581: Commission Decision of 11/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12581 - CDC / DK / HPC / ECLAIRION) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12581",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12581",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:49:00.895387+00:00",
-      "title": "CELEX:32026M12664: Commission Decision of 10/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12664 - BLACKSTONE / CLEARLAKE / DISCOVERY EDUCATION) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12664",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12664",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:59.373191+00:00",
-      "title": "CELEX:52026PC1120: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on cooperation between national authorities and the Commission in the enforcement of consumer protection laws in the Union, amending Directive (EU) 2019/1937 and Regulations (EC) No 261/2004, (EC) No 1107/2006, (EC) No 1008/2008, (EU) No 1177/2010, (EU) No 181/2011, (EU) No 1024/2012, (EU) 2018/302 and (EU) 2021/782 and repealing Regulation (EU) 2017/2394",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC1120",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC1120",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:57.796756+00:00",
-      "title": "PI_COM:Ares(2026)10593775: COMMISSION DELEGATED REGULATION (EU) …/... on supplementing Regulation (EU) 2024/3012 of the European Parliament and of the Council by establishing the certification methodologies for carbon storage in products",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)10593775",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)10593775",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:56.360830+00:00",
-      "title": "PI_COM:Ares(2026)10574624: Commission Delegated Regulation (EU) ...supplementing Directive 2006/43/EC of the European Parliament and of the Council as regards limited assurance standards for sustainability reporting",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)10574624",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)10574624",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:54.635577+00:00",
-      "title": "CELEX:62024TJ0475_INF: Judgment of the General Court (Tenth Chamber) of 21 October 2026.#FD v European Investment Fund.#Civil service – EIF Staff – Recruitment – Vacancy notice – Rejection of application – Plea of illegality – Manifest errors of assessment – Discrimination based on gender.#Case T-475/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0475_INF",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0475_INF",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:53.024177+00:00",
-      "title": "CELEX:62024TJ0471_INF: Judgment of the General Court (Third Chamber) of 21 October 2026.#FC v European Investment Fund.#Civil service – EIF Staff – Recruitment – Vacancy notice – Post of (senior) writer/narrator – Rejection of application – Selection criteria – Professional experience.#Case T-471/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0471_INF",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0471_INF",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:51.542630+00:00",
-      "title": "CELEX:52026PC0603: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL laying down management, conservation and control measures applicable in the Convention area of the South East Atlantic Fisheries Organisation (SEAFO)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0603",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0603",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:50.030323+00:00",
-      "title": "CELEX:62024TJ0519_INF: Judgment of the General Court (Tenth Chamber) of 21 October 2026.#FT v European Investment Fund.#Civil service – EIF Staff – Recruitment – Vacancy notice – Rejection of application – Appointment of another candidate – Plea of illegality – Manifest errors of assessment – Discrimination based on gender – Liability.#Case T-519/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0519_INF",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0519_INF",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:48.328844+00:00",
-      "title": "PI_EESC:EESC-2025-02823-AC: Opinion - European Economic and Social Committee - AgoraEU and Justice programmes",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-02823-AC",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-02823-AC",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:46.908780+00:00",
-      "title": "CONSIL:ST_15858_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL laying down management, conservation and control measures applicable in the Convention area of the South East Atlantic Fisheries Organisation (SEAFO)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15858_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15858_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:45.463538+00:00",
-      "title": "CONSIL:ST_15271_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the procedure for authorisation of systems providing mobile satellite services using the harmonised 2 GHz frequency band and repealing Decision No 626/2008/EC (Text with EEA relevance) - General approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15271_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_15271_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:43.851636+00:00",
-      "title": "PI_EESC:EESC-2024-00225-AC: Opinion - European Economic and Social Committee - EU space act",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2024-00225-AC",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2024-00225-AC",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:42.245491+00:00",
-      "title": "PI_COM:C(2026)42: COMMUNICATION FROM THE COMMISSION Guidelines on the application of certain provisions of Regulation (EU) 2022/2560 of the European Parliament and of the Council on foreign subsidies distorting the internal market",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)42",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:C(2026)42",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:40.739669+00:00",
-      "title": "CELEX:52026SC0940: COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION Guidelines on the application of certain provisions of Regulation (EU) 2022/2560 of the European Parliament and of the Council on foreign subsidies distorting the internal market",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0940",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0940",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:39.251896+00:00",
-      "title": "PI_COM:Ares(2026)10671193: Proposal for a legislative act on an EU corporate legal framework and other initiatives to assist innovative companies in particular.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)10671193",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_COM:Ares(2026)10671193",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:37.869740+00:00",
-      "title": "CELEX:62026TO0363(01): Order of the President of the General Court of 16 November 2026.#YOU Solutions Germany GmbH and Troy Chemical Company BV v European Chemicals Agency.#Interim measures – Biocidal products – List of active substances and their suppliers provided for in Article 95 of Regulation (EU) No 528/2012 – Inclusion of a company in the list as an authorised supplier of the active substance 3-iodo-2-propynylbutylcarbamate (IPBC) for product-type 7 – Application for suspension of operation of a measure – No urgency.#Case T-363/26 R.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026TO0363(01)",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62026TO0363(01)",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:36.350648+00:00",
-      "title": "PI_EESC:EESC-2025-02608-AC: Opinion - European Economic and Social Committee - The European Union's strategic approach to the Black Sea region",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-02608-AC",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=PI_EESC:EESC-2025-02608-AC",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:34.731081+00:00",
-      "title": "CELEX:02015D1814-20261117: Decision (EU) 2015/1814 of the European Parliament and of the Council of 6 October 2015 concerning the establishment and operation of a market stability reserve for the Union greenhouse gas emission trading scheme and amending Directive 2003/87/EC (Text with EEA relevance)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02015D1814-20261117",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02015D1814-20261117",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:33.216150+00:00",
-      "title": "CELEX:52026DC0623: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Reinforcing the European Sport Model",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0623",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0623",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:31.630411+00:00",
-      "title": "CELEX:62025CJ0241: Judgment of the Court (Grand Chamber) of 17 November 2026.#Société Générale SA v Skatteverket.#Request for a preliminary ruling from the Högsta förvaltningsdomstolen.#Reference for a preliminary ruling – Article 63 TFEU – Free movement of capital – Taxation – Taxation of dividends – Withholding tax on dividends received by a loss-making non-resident company – Refund – Deferral of taxation – Conditions – Requirement to calculate a non-resident company’s results in accordance with the rules of the Member State which is the source of the dividends.#Case C-241/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CJ0241",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CJ0241",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:30.045944+00:00",
-      "title": "CELEX:02006L0112-20270101: Council Directive 2006/112/EC of 28 November 2006 on the common system of value added tax",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02006L0112-20270101",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02006L0112-20270101",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:28.575481+00:00",
-      "title": "CELEX:52026SC0343: COMMISSION STAFF WORKING DOCUMENT STAKEHOLDER CONSULTATION - SYNOPSIS REPORT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Reinforcing the European Sport Model",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0343",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0343",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:27.081333+00:00",
-      "title": "CELEX:02023D0927-20261026: Council Decision (CFSP) 2023/927 of 5 May 2023 on an assistance measure under the European Peace Facility to support the Ukrainian Armed Forces through the provision of ammunition",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D0927-20261026",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D0927-20261026",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:25.669778+00:00",
-      "title": "CELEX:02021O0830-20270101: Guideline (EU) 2021/830 of the European Central Bank of 26 March 2021 on balance sheet item statistics and interest rate statistics of monetary financial institutions (ECB/2021/11)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021O0830-20270101",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021O0830-20270101",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:23.991068+00:00",
-      "title": "CELEX:62025TJ0499: Judgment of the General Court (Fifth Chamber) of 18 November 2026.#Maurten AB v European Union Intellectual Property Office.#EU trade mark – Invalidity proceedings – EU word marks SOLID 225 and SOLID 226 – Absolute ground for invalidity – Bad faith – Article 59(1)(b) of Regulation (EU) 2017/1001 – Obligation to state reasons – Article 94(1) of Regulation 2017/1001.#Cases T-499/25 and T-508/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0499",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0499",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:22.464031+00:00",
-      "title": "CELEX:32026M12554: Commission Decision of 22/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12554 - EQT FUNDS / CORZA BIOSURGERY BUSINESS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12554",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12554",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:20.866745+00:00",
-      "title": "CELEX:32026M12540: Commission Decision of 03/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12540 - AP EJENDOMME / CAPMAN AIFM / COPENHAGEN TOWERS HOTEL / SCANDIC WEBERS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12540",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12540",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:19.147605+00:00",
-      "title": "CELEX:62024TJ0141: Judgment of the General Court (Ninth Chamber) of 18 November 2026.#WM v European Investment Bank.#Civil service – EIB staff – Reports procedure – Appraisal report – 2021 appraisal exercise – Obligation to state reasons – Manifest error of assessment – Discrimination based on disability – Reasonable accommodation for persons with disabilities – Principle of good administration – Duty to have regard for the welfare of officials – Liability.#Case T-141/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0141",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0141",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:17.760884+00:00",
-      "title": "COM:2026:636:FIN: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the establishment of the Instrument for Coordinated Support to Ukraine for 2027 and amending Regulations (EU) 2024/792 and (EU) 2024/2773",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:636:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:636:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:16.336454+00:00",
-      "title": "CELEX:02017R1129-20270130: Regulation (EU) 2017/1129 of the European Parliament and of the Council of 14 June 2017 on the prospectus to be published when securities are offered to the public or admitted to trading on a regulated market, and repealing Directive 2003/71/EC (Text with EEA relevance)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R1129-20270130",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R1129-20270130",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:14.874172+00:00",
-      "title": "CELEX:32026M12640: Commission Decision of 12/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12640 - PLD / NBIM / NEUSTADT TARGET ASSET) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12640",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12640",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:13.482498+00:00",
-      "title": "CELEX:32026M12594: Commission Decision of 29/10/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12594 - CINVEN / LA CAISSE / OPTIO) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12594",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12594",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:12.155832+00:00",
-      "title": "CELEX:02021A0430(01)-20270101: Trade and Cooperation Agreement between the European Union and the European Atomic Energy Community, of the one part, and the United Kingdom of Great Britain and Northern Ireland, of the other part",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021A0430(01)-20270101",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021A0430(01)-20270101",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:10.824038+00:00",
-      "title": "CELEX:02020R1208-20280101: Commission Implementing Regulation (EU) 2020/1208 of 7 August 2020 on structure, format, submission processes and review of information reported by Member States pursuant to Regulation (EU) 2018/1999 of the European Parliament and of the Council and repealing Commission Implementing Regulation (EU) No 749/2014",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02020R1208-20280101",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02020R1208-20280101",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-19T10:48:09.233334+00:00",
-      "title": "CELEX:32026M12579: Commission Decision of 16/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12579 - SVP / MARELLI CORPORATION) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12579",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 19 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12579",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:32026H06151: Council Recommendation of 9 November 2026 allowing Italy to deviate from the maximum growth rates of net expenditure as set by the Council under Regulation (EU) 2024/1263 (Activation of the national escape clause)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H06151",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H06151",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:C/2026/06020: Verbatim report of proceedings of 13 November 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06020",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06020",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:22026D2426: Decision of the EEA Joint Committee No 228/2026 of 10 July 2026 amending Protocol 31 to the EEA Agreement, on cooperation in specific fields outside the four freedoms [2026/2426]",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D2426",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D2426",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:C/2026/06018: Minutes of the sitting of 13 November 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06018",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06018",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:32026D2584: Commission Implementing Decision (EU) 2026/2584 of 17 November 2026 excluding from European Union financing certain expenditure incurred by certain Member States under the European Agricultural Guarantee Fund (EAGF) and under the European Agricultural Fund for Rural Development (EAFRD) (notified under document C(2026) 8075)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D2584",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D2584",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:C/2026/06019: Verbatim report of proceedings of 12 November 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06019",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06019",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:52026M12609: Prior notification of a concentration (Case M.12609 – CERTARES / FS INTERNATIONAL / TRENITALIA FRANCE) – Candidate case for simplified procedure",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12609",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12609",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:C/2026/06020: Verbatim report of proceedings of 13 November 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06020",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06020",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:32026H06151: Council Recommendation of 9 November 2026 allowing Italy to deviate from the maximum growth rates of net expenditure as set by the Council under Regulation (EU) 2024/1263 (Activation of the national escape clause)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H06151",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026H06151",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:22026D2426: Decision of the EEA Joint Committee No 228/2026 of 10 July 2026 amending Protocol 31 to the EEA Agreement, on cooperation in specific fields outside the four freedoms [2026/2426]",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D2426",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:22026D2426",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:C/2026/06150: Call for proposals 2027 - EAC/A12/2026 – European Solidarity Corps",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06150",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06150",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:C/2026/06018: Minutes of the sitting of 13 November 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06018",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06018",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:C/2026/06019: Verbatim report of proceedings of 12 November 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06019",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:C/2026/06019",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:32026D2584: Commission Implementing Decision (EU) 2026/2584 of 17 November 2026 excluding from European Union financing certain expenditure incurred by certain Member States under the European Agricultural Guarantee Fund (EAGF) and under the European Agricultural Fund for Rural Development (EAFRD) (notified under document C(2026) 8075)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D2584",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D2584",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:52026M12579(01): Non-opposition to a notified concentration (Case M.12579 – SVP / MARELLI CORPORATION)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12579(01)",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12579(01)",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-18T23:00:00+00:00",
-      "title": "CELEX:52026M12609: Prior notification of a concentration (Case M.12609 – CERTARES / FS INTERNATIONAL / TRENITALIA FRANCE) – Candidate case for simplified procedure",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12609",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 18 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026M12609",
       "amounts": []
     }
   ]
