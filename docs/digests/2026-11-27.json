@@ -1,9 +1,360 @@
 {
   "schema": "daily_digest.v1",
-  "generated_at": "2026-11-27T11:29:10.491103+00:00",
+  "generated_at": "2026-11-27T19:17:58.996775+00:00",
   "window_hours": 24,
-  "count": 118,
+  "count": 103,
   "items": [
+    {
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:57.042785+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eco-social.html"
+    },
+    {
+      "title": "European Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:55.591401+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/auditors.html"
+    },
+    {
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:54.016368+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/bank.html"
+    },
+    {
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:52.539219+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/justice.html"
+    },
+    {
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:51.043190+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eu-commission.html"
+    },
+    {
+      "title": "Council of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:49.528637+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/council.html"
+    },
+    {
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:48.100807+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eu-council.html"
+    },
+    {
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:46.541283+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eu-parliament.html"
+    },
+    {
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:45.037954+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/summaries.html"
+    },
+    {
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:43.444239+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/legislative-procedures.html"
+    },
+    {
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:41.854306+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/efta.html"
+    },
+    {
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:40.326388+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/pre-acts.html"
+    },
+    {
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:38.732174+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/inter-agree.html"
+    },
+    {
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:37.277635+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/consleg.html"
+    },
+    {
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:35.773207+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html"
+    },
+    {
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:34.161612+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html"
+    },
+    {
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:32.625865+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html"
+    },
+    {
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:31.114996+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html"
+    },
+    {
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:29.555838+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html"
+    },
+    {
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:28.017832+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html"
+    },
+    {
+      "title": "Help",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:26.506674+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/content/help.html"
+    },
+    {
+      "title": "EUR-Lex home",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:24.981376+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/homepage.html"
+    },
+    {
+      "title": "(untitled)",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:21.144871+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback"
+    },
+    {
+      "title": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:19.567807+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/homepage.html?lang=en"
+    },
+    {
+      "title": "My recent searches (0)",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:17.938700+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/my-eurlex/my-queries.html"
+    },
+    {
+      "title": "Sign in",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:14.342084+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL"
+    },
+    {
+      "title": "Skip to main content",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "source_id": "eur-lex.europa.eu",
+      "published_date": "2026-11-27T19:17:09.125756+00:00",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "finance_instrument": [],
+      "tech_area": [],
+      "summary_150w": "\n\nReferences\n• Source — 27 Nov 2026 — https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L"
+    },
     {
       "title": "SWD:2026:1228:FIN: COMMISSION STAFF WORKING DOCUMENT Annex A: Methods and data for analysing tax gaps and compliance enforcement capacity in EU Member States Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
       "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1228:FIN",
@@ -1000,556 +1351,6 @@
       "finance_instrument": [],
       "tech_area": [],
       "summary_150w": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below.\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL"
-    },
-    {
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T12:00:00+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [
-        "Quantum"
-      ],
-      "summary_150w": "All featured news are available in the 24 EU official languages via machine translation. A new study by the European Central Bank shows that consumers are increasingly using digital means of payment, while cash continues to play an important role. Physical cards account for 45% of payments in shops, compared with 44% for cash. Euro area consumers want both means of payment. The online marketplace Temu has committed to bring several of its commercial practices in line with EU consumer protection laws following action by national consumer authorities. Earlier this month, the European Commission preliminarily found Temu in breach of the EU’s Digital Services Act. Quantum technologies have the potential to make possible things that simply cannot be done today. To unlock Europe’s potential, the Commission has proposed a new quantum act. This new framework will help move quantum technologies from laboratories into products and services. Before you go on your travels, let’s take a look inside your suitcase and see what the EU is doing to help make everything in it safer, more practical and of higher quality. Follow Sven, Elena and Sofia as they embark on an exciting trip across Europe. Discover the EU’s priorities for 2024-2029, promoting a free and democratic Europe, developing a strong and secure Europe, establishing a prosperous and competitive Europe. Find out how many EU Member States there are, how big the EU economy is, how people live in the EU, and other useful facts about the EU. Discover what the EU does for citizens, how it protects rights, promotes prosperity and strives to make the world a safer place. Teaching material, games and much more about the European Union and its activities, for children, teenagers, teachers and parents.\n\nReferences\n• Source — 26 Nov 2026 — https://european-union.europa.eu/index_en"
-    },
-    {
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T12:00:00+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [
-        "Quantum"
-      ],
-      "summary_150w": "All featured news are available in the 24 EU official languages via machine translation. A new study by the European Central Bank shows that consumers are increasingly using digital means of payment, while cash continues to play an important role. Physical cards account for 45% of payments in shops, compared with 44% for cash. Euro area consumers want both means of payment. The online marketplace Temu has committed to bring several of its commercial practices in line with EU consumer protection laws following action by national consumer authorities. Earlier this month, the European Commission preliminarily found Temu in breach of the EU’s Digital Services Act. Quantum technologies have the potential to make possible things that simply cannot be done today. To unlock Europe’s potential, the Commission has proposed a new quantum act. This new framework will help move quantum technologies from laboratories into products and services. Before you go on your travels, let’s take a look inside your suitcase and see what the EU is doing to help make everything in it safer, more practical and of higher quality. Follow Sven, Elena and Sofia as they embark on an exciting trip across Europe. Discover the EU’s priorities for 2024-2029, promoting a free and democratic Europe, developing a strong and secure Europe, establishing a prosperous and competitive Europe. Find out how many EU Member States there are, how big the EU economy is, how people live in the EU, and other useful facts about the EU. Discover what the EU does for citizens, how it protects rights, promotes prosperity and strives to make the world a safer place. Teaching material, games and much more about the European Union and its activities, for children, teenagers, teachers and parents.\n\nReferences\n• Source — 26 Nov 2026 — https://european-union.europa.eu/index_en"
-    },
-    {
-      "title": "CELEX:02024R2746-20261029: Commission Implementing Regulation (EU) 2024/2746 of 25 October 2024 laying down rules for the application of Council Regulation (EC) No 1217/2009 setting up the Farm Sustainability Data Network and repealing Commission Implementing Regulation (EU) 2015/220",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2746-20261029",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:26.929995+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02024R2746-20261029"
-    },
-    {
-      "title": "SWD:2026:1204:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Croatia Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1204:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:25.586211+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1204:FIN"
-    },
-    {
-      "title": "SWD:2026:1227:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Sweden Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1227:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:24.240739+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1227:FIN"
-    },
-    {
-      "title": "SWD:2026:1222:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Portugal Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1222:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:22.746746+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1222:FIN"
-    },
-    {
-      "title": "SWD:2026:1220:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – The Netherlands Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1220:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:21.252445+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1220:FIN"
-    },
-    {
-      "title": "SWD:2026:1210:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – France Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1210:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:19.689719+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1210:FIN"
-    },
-    {
-      "title": "SWD:2026:1214:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Ireland Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1214:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:18.220871+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1214:FIN"
-    },
-    {
-      "title": "SWD:2026:1228:FIN: COMMISSION STAFF WORKING DOCUMENT Annex A: Methods and data for analysing tax gaps and compliance enforcement capacity in EU Member States Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1228:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:16.673340+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1228:FIN"
-    },
-    {
-      "title": "COM:2026:966:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS On the Tenth Report on economic, social and territorial cohesion",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:966:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:15.130593+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:966:FIN"
-    },
-    {
-      "title": "COM:2026:1053:FIN: Recommendation for a COUNCIL DECISION establishing that no effective action has been taken by Hungary in response to the Council Recommendation of 18 February 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:1053:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:13.718584+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:1053:FIN"
-    },
-    {
-      "title": "CELEX:52026PC1052: Recommendation for a COUNCIL DECISION establishing that no effective action has been taken by Bulgaria in response to the Council Recommendation of 10 July 2026",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC1052",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:12.140988+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC1052"
-    },
-    {
-      "title": "CELEX:02002L0047-20270130: Directive 2002/47/EC of the European Parliament and of the Council of 6 June 2002 on financial collateral arrangements",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02002L0047-20270130",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:10.628691+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02002L0047-20270130"
-    },
-    {
-      "title": "CELEX:02017R0392-20271103: Commission Delegated Regulation (EU) 2017/392 of 11 November 2016 supplementing Regulation (EU) No 909/2014 of the European Parliament and of the Council with regard to regulatory technical standards on authorisation, supervisory and operational requirements for central securities depositories (Text with EEA relevance)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R0392-20271103",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:09.252379+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R0392-20271103"
-    },
-    {
-      "title": "COM:2026:956:FIN: COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Alert Mechanism Report 2027 prepared in accordance with Article 3 of Regulation (EU) No 1176/2011 on the prevention and correction of macroeconomic imbalances",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:956:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:07.732794+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:956:FIN"
-    },
-    {
-      "title": "SWD:2026:956:FIN: COMMISSION STAFF WORKING DOCUMENT Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Alert Mechanism Report 2027 prepared in accordance with Article 3 of Regulation (EU) No 1176/2011 on the prevention and correction of macroeconomic imbalances",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:956:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:06.288445+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:956:FIN"
-    },
-    {
-      "title": "SWD:2026:1221:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Poland Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1221:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:04.704836+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1221:FIN"
-    },
-    {
-      "title": "SWD:2026:1224:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Slovakia Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1224:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:03.210420+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1224:FIN"
-    },
-    {
-      "title": "SWD:2026:1212:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Greece Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1212:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:01.857532+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1212:FIN"
-    },
-    {
-      "title": "SWD:2026:1218:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Luxembourg Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1218:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:33:00.555856+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1218:FIN"
-    },
-    {
-      "title": "SWD:2026:1217:FIN: COMMISSION STAFF WORKING DOCUMENT Mind the Gap 2026: Country fiche – Lithuania Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1217:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:59.038212+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:1217:FIN"
-    },
-    {
-      "title": "CELEX:62024TJ0151: Judgment of the General Court (Ninth Chamber, Extended Composition) of 25 November 2026.#Citizens' Committee of the European citizens’ initiative “End the Cage Age” v European Commission.#Law governing the institutions – European citizens’ initiative – Communication from the Commission adopted in accordance with Article 15(2) of Regulation (EU) 2019/788 – Commission’s intention to take action in response to a European citizens’ initiative – Expiry of the envisaged timeline for the submission of a legislative proposal in response to a European citizens’ initiative – Action for failure to act – Failure to define a position on the call to act – Requested act producing binding legal effects – Admissibility – Obligation to set out a new timeline – Action for annulment – Access to the file – Rejection – Article 41(2)(b) of the Charter of Fundamental Rights.#Case T-151/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0151",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:57.630004+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0151"
-    },
-    {
-      "title": "CONSIL:ST_16438_2026_ADD_5: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the document Proposal for a Regulation of the European Parliament and of the Councilآ on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_5",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:56.120404+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_5"
-    },
-    {
-      "title": "CONSIL:ST_16438_2026_ADD_2: PART 1/2 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Councilآ on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_2",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:54.793369+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_2"
-    },
-    {
-      "title": "SWD:2026:965:FIN: COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council  on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:965:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:53.299467+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:965:FIN"
-    },
-    {
-      "title": "CELEX:62025TJ0475: Judgment of the General Court (First Chamber) of 25 November 2026.#Petropavlovsk plc v Council of the European Union.#Common foreign and security policy – Restrictive measures adopted in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine – Freezing of funds – List of persons, entities and bodies subject to the freezing of funds and economic resources – Inclusion and maintenance of the applicant’s name on the list – Concept of ‘entity involved in economic sectors providing a substantial source of revenue to the Government of the Russian Federation’ – Article 2(1)(g) of Decision 2014/145/CFSP – Article 3(1)(g) of Regulation (EU) No 269/2014 – Error of assessment.#Case T-475/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0475",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:51.912029+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0475"
-    },
-    {
-      "title": "CELEX:62024TJ0258: Judgment of the General Court (Fourth Chamber) of 25 November 2026.#Scandlines Danmark ApS and Others v European Commission.#State aid – Transport – Aid in favour of the Øresund fixed rail-road link – Public financing granted by the Kingdom of Denmark and the Kingdom of Sweden to the fixed link infrastructure project – State guarantees – Decision finding existing aid – Individual aid – Date of award – Action for annulment – Substantial direct and individual effect on competitive position – Interest in bringing proceedings – Admissibility.#Case T-258/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0258",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:50.466556+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0258"
-    },
-    {
-      "title": "CONSIL:ST_16438_2026_INIT: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_INIT",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:48.865418+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_INIT"
-    },
-    {
-      "title": "COM:2026:965:FIN: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:965:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:47.511666+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:965:FIN"
-    },
-    {
-      "title": "SWD:2026:966:FIN: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:966:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:46.108026+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:966:FIN"
-    },
-    {
-      "title": "SWD:2026:967:FIN: COMMISSION STAFF WORKING DOCUMENT Subsidiarity Grid Accompanying the document Proposal for a Regulation of the European Parliament and of the Council  on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:967:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:44.647815+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=SWD:2026:967:FIN"
-    },
-    {
-      "title": "CELEX:62025TJ0004: Judgment of the General Court (Eighth Chamber) of 25 November 2026.#International and European Public Services Organisation (IPSO) v European Central Bank.#Access to documents – Decision 2004/258/EC – Documents related to the consultation on the amendment of Administrative Circular 1/2019 – Refusal of access – Exception relating to the protection of legal advice – Second indent of Article 4(2) of Decision 2004/258 – No overriding public interest.#Case T-4/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0004",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:43.341249+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0004"
-    },
-    {
-      "title": "CONSIL:ST_16438_2026_ADD_1: ANNEXES to the Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_1",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:41.979085+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_1"
-    },
-    {
-      "title": "CELEX:62024TJ0532: Judgment of the General Court (Eighth Chamber) of 25 November 2026.#Rangecourt SA, anciennement Banque Havilland SA v European Central Bank.#Economic and monetary policy – Prudential supervision of credit institutions – Regulation (EU) No 1024/2013 – Regulation (EU) No 468/2014 – Specific supervisory tasks conferred on the ECB – Decision to withdraw a credit institution’s authorisation – Proposal from the national competent authority – Infringements of the provisions on the prevention of the use of the financial system for the purposes of money laundering and terrorist financing – Breaches of governance requirements – Professional repute of the shareholder – Competence of the ECB – Composite administrative procedure – Misuse of powers – Procedural rights – Right to be heard – Confidentiality – Obligation to state reasons – Notification of the contested decision – Judicial review – Plea of illegality – Proportionality – Legitimate expectations – Ne bis in idem principle – Equality of treatment.#Case T-532/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0532",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:40.671328+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0532"
-    },
-    {
-      "title": "CONSIL:ST_16341_2026_ADD_2: COMMISSION STAFF WORKING DOCUMENT Accompanying the document Proposal for a COUNCIL RECOMMENDATION on Advanced Materials [Advanced Materials for Europe]",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16341_2026_ADD_2",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:39.303911+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16341_2026_ADD_2"
-    },
-    {
-      "title": "CONSIL:ST_16438_2026_ADD_3: PART 2/2 COMMISSION STAFF WORKING DOCUMENT IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Councilآ on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_3",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:37.826030+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_3"
-    },
-    {
-      "title": "CELEX:52026SC0957: COMMISSION STAFF WORKING DOCUMENT STATISTICAL ANNEX Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL AND THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE Alert Mechanism Report 2027 prepared in accordance with Article 3 of Regulation (EU) No 1176/2011 on the prevention and correction of macroeconomic imbalances",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0957",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:36.429181+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0957"
-    },
-    {
-      "title": "CONSIL:ST_16438_2026_ADD_4: COMMISSION STAFF WORKING DOCUMENT EXECUTIVE SUMMARY OF THE IMPACT ASSESSMENT REPORT Accompanying the document Proposal for a Regulation of the European Parliament and of the Council on a framework of measures for strengthening the Union's quantum ecosystem (Quantum Act)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_4",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:35.029722+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16438_2026_ADD_4"
-    },
-    {
-      "title": "COM:2026:638:FIN: REPORT FROM THE COMMISSION ANNUAL REPORT 2025 ON THE APPLICATION OF THE PRINCIPLES OF SUBSIDIARITY AND PROPORTIONALITY AND ON RELATIONS WITH NATIONAL PARLIAMENTS",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:638:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:28.979941+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:638:FIN"
-    },
-    {
-      "title": "COM:2026:634:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL Annual Report to the European Parliament and to the Council on the humanitarian aid operations financed in 2025",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:634:FIN",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:24.485927+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:634:FIN"
-    },
-    {
-      "title": "CONSIL:ST_16475_2026_INIT: OPINION if the European Parliament - Proposal for a Council regulation on establishing the research and training programme of the European Atomic Energy Community for the period 2028-2032, complementing Horizon Europe, the Framework Programme for Research and Innovation, and providing for the Community’s contribution to the ITER project, and repealing Regulation (Euratom) 2025/1304 [COM(2025)0594 - C10-0217/2025 - 2025/0594(NLE)]",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16475_2026_INIT",
-      "source_id": "eur-lex.europa.eu",
-      "published_date": "2026-11-26T11:32:21.454927+00:00",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "finance_instrument": [],
-      "tech_area": [],
-      "summary_150w": "\n\nReferences\n• Source — 26 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16475_2026_INIT"
     }
   ]
 }

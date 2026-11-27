@@ -1,11 +1,362 @@
 {
   "schema": "timeline.v1",
   "window": {
-    "start": "2026-11-20T11:29:10.022559+00:00",
-    "end": "2026-11-27T11:29:10.022559+00:00",
+    "start": "2026-11-20T19:17:58.506872+00:00",
+    "end": "2026-11-27T19:17:58.506872+00:00",
     "timezone": "Europe/Amsterdam"
   },
   "events": [
+    {
+      "date": "2026-11-27T19:17:57.042785+00:00",
+      "title": "European Economic and Social Committee",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eco-social.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:55.591401+00:00",
+      "title": "European Court of Auditors",
+      "url": "https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/auditors.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:54.016368+00:00",
+      "title": "European Central Bank",
+      "url": "https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/bank.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:52.539219+00:00",
+      "title": "Court of Justice of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/justice.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:51.043190+00:00",
+      "title": "European Commission",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eu-commission.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:49.528637+00:00",
+      "title": "Council of the European Union",
+      "url": "https://eur-lex.europa.eu/browse/institutions/council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:48.100807+00:00",
+      "title": "European Council",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eu-council.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:46.541283+00:00",
+      "title": "European Parliament",
+      "url": "https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/institutions/eu-parliament.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:45.037954+00:00",
+      "title": "Summaries of EU legislation",
+      "url": "https://eur-lex.europa.eu/browse/summaries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/browse/summaries.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:43.444239+00:00",
+      "title": "Lawmaking procedures",
+      "url": "https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/legislative-procedures.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:41.854306+00:00",
+      "title": "EFTA documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/efta.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:40.326388+00:00",
+      "title": "Preparatory documents",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/pre-acts.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:38.732174+00:00",
+      "title": "International agreements",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/inter-agree.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:37.277635+00:00",
+      "title": "Consolidated texts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/consleg.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:35.773207+00:00",
+      "title": "Legal acts",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/legal-acts/recent.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:34.161612+00:00",
+      "title": "Chronological overview",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-overview.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:32.625865+00:00",
+      "title": "Other treaties and protocols",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-other.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:31.114996+00:00",
+      "title": "Accession Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-accession.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:29.555838+00:00",
+      "title": "Founding Treaties",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-founding.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:28.017832+00:00",
+      "title": "Treaties currently in force",
+      "url": "https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/collection/eu-law/treaties/treaties-force.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:26.506674+00:00",
+      "title": "Help",
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/content/help.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:24.981376+00:00",
+      "title": "EUR-Lex home",
+      "url": "https://eur-lex.europa.eu/homepage.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/homepage.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:21.144871+00:00",
+      "title": "(untitled)",
+      "url": "https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/experimental-features.html?action=confirmFeedback",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:19.567807+00:00",
+      "title": "EUR-Lex",
+      "url": "https://eur-lex.europa.eu/homepage.html?lang=en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/homepage.html?lang=en",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:17.938700+00:00",
+      "title": "My recent searches (0)",
+      "url": "https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/my-eurlex/my-queries.html",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:14.342084+00:00",
+      "title": "Sign in",
+      "url": "https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-27T19:17:09.125756+00:00",
+      "title": "Skip to main content",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [],
+      "stage": "NA",
+      "short": "References • Source — 27 Nov 2026 — https://eur-lex.europa.eu/legal-content/EN/RSS/?uri=OJ:L",
+      "amounts": []
+    },
     {
       "date": "2026-11-27T11:29:08.338313+00:00",
       "title": "SWD:2026:1228:FIN: COMMISSION STAFF WORKING DOCUMENT Annex A: Methods and data for analysing tax gaps and compliance enforcement capacity in EU Member States Accompanying the document COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS Mind the Gap 2026: Boosting public finances through joint efforts to reduce tax gaps and improve compliance",
@@ -999,6 +1350,36 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 26 Nov 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Quantum"
+      ],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. A new study by the European Central Bank shows that consumers are increasingly using digital means of payment, while cash continues to play an important role.",
+      "amounts": []
+    },
+    {
+      "date": "2026-11-26T12:00:00+00:00",
+      "title": "Your gateway to the European Union",
+      "url": "https://european-union.europa.eu/index_en",
+      "doc_type": "Blog/News",
+      "programme": [
+        "Other/NA"
+      ],
+      "tech_area": [
+        "Quantum"
+      ],
+      "stage": "NA",
+      "short": "All featured news are available in the 24 EU official languages via machine translation. A new study by the European Central Bank shows that consumers are increasingly using digital means of payment, while cash continues to play an important role.",
       "amounts": []
     },
     {
@@ -6934,396 +7315,6 @@
       "tech_area": [],
       "stage": "NA",
       "short": "Javascript should be enabled for this site. This document you requested requires ECAS authentication. You may authenticate to access this document by clicking \"Proceed\" below. References • Source — 21 Nov 2026 — https://eur-lex.europa.eu/protected/homepage.html?url=%2Flegal-content%2FEN%2FRSS%2F%3Furi%3DOJ%253AL",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:24.436907+00:00",
-      "title": "CELEX:02023D0927-20261026: Council Decision (CFSP) 2023/927 of 5 May 2023 on an assistance measure under the European Peace Facility to support the Ukrainian Armed Forces through the provision of ammunition",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D0927-20261026",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02023D0927-20261026",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:22.824267+00:00",
-      "title": "CELEX:02021O0830-20270101: Guideline (EU) 2021/830 of the European Central Bank of 26 March 2021 on balance sheet item statistics and interest rate statistics of monetary financial institutions (ECB/2021/11)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021O0830-20270101",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021O0830-20270101",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:21.207616+00:00",
-      "title": "CELEX:62025TJ0499: Judgment of the General Court (Fifth Chamber) of 18 November 2026.#Maurten AB v European Union Intellectual Property Office.#EU trade mark – Invalidity proceedings – EU word marks SOLID 225 and SOLID 226 – Absolute ground for invalidity – Bad faith – Article 59(1)(b) of Regulation (EU) 2017/1001 – Obligation to state reasons – Article 94(1) of Regulation 2017/1001.#Cases T-499/25 and T-508/25.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0499",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025TJ0499",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:19.670627+00:00",
-      "title": "CELEX:32026M12554: Commission Decision of 22/09/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12554 - EQT FUNDS / CORZA BIOSURGERY BUSINESS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12554",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12554",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:18.199382+00:00",
-      "title": "CELEX:62024TJ0141: Judgment of the General Court (Ninth Chamber) of 18 November 2026.#WM v European Investment Bank.#Civil service – EIB staff – Reports procedure – Appraisal report – 2021 appraisal exercise – Obligation to state reasons – Manifest error of assessment – Discrimination based on disability – Reasonable accommodation for persons with disabilities – Principle of good administration – Duty to have regard for the welfare of officials – Liability.#Case T-141/24.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0141",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024TJ0141",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:16.824569+00:00",
-      "title": "CELEX:32026M12540: Commission Decision of 03/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12540 - AP EJENDOMME / CAPMAN AIFM / COPENHAGEN TOWERS HOTEL / SCANDIC WEBERS) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12540",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12540",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:15.172314+00:00",
-      "title": "CELEX:52026PC0636: Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the establishment of the Instrument for Coordinated Support to Ukraine for 2027 and amending Regulations (EU) 2024/792 and (EU) 2024/2773",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0636",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026PC0636",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:13.716261+00:00",
-      "title": "CELEX:02017R1129-20270130: Regulation (EU) 2017/1129 of the European Parliament and of the Council of 14 June 2017 on the prospectus to be published when securities are offered to the public or admitted to trading on a regulated market, and repealing Directive 2003/71/EC (Text with EEA relevance)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R1129-20270130",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02017R1129-20270130",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:12.100361+00:00",
-      "title": "CELEX:32026M12640: Commission Decision of 12/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12640 - PLD / NBIM / NEUSTADT TARGET ASSET) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12640",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12640",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:10.435632+00:00",
-      "title": "CELEX:32026M12594: Commission Decision of 29/10/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12594 - CINVEN / LA CAISSE / OPTIO) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12594",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12594",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:08.780392+00:00",
-      "title": "CELEX:02021A0430(01)-20270101: Trade and Cooperation Agreement between the European Union and the European Atomic Energy Community, of the one part, and the United Kingdom of Great Britain and Northern Ireland, of the other part",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021A0430(01)-20270101",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02021A0430(01)-20270101",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:07.110497+00:00",
-      "title": "CELEX:02020R1208-20280101: Commission Implementing Regulation (EU) 2020/1208 of 7 August 2020 on structure, format, submission processes and review of information reported by Member States pursuant to Regulation (EU) 2018/1999 of the European Parliament and of the Council and repealing Commission Implementing Regulation (EU) No 749/2014",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02020R1208-20280101",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:02020R1208-20280101",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:05.585259+00:00",
-      "title": "CELEX:32026M12579: Commission Decision of 16/11/2026 declaring a concentration to be compatible with the common market (Case No COMP/M.12579 - SVP / MARELLI CORPORATION) according to Council Regulation (EC) No 139/2004 (Only the English text is authentic)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12579",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026M12579",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:03.984733+00:00",
-      "title": "CELEX:52026SC0348: COMMISSION STAFF WORKING DOCUMENT Second Biennial Transparency Report and Ninth National Communication Accompanying the document Report from the Commission The European Union Second Biennial Transparency Report under the Paris Agreement and Ninth National Communication under the United Nations Framework Convention on Climate Change",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0348",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0348",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:02.507844+00:00",
-      "title": "CELEX:52026DC0635: REPORT FROM THE COMMISSION The European Union Second Biennial Transparency Report under the Paris Agreement and Ninth National Communication under the United Nations Framework Convention on Climate Change",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0635",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0635",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:10:00.967209+00:00",
-      "title": "CELEX:52026SC0833: COMMISSION STAFF WORKING DOCUMENT Accompanying the document Proposal for a COUNCIL RECOMMENDATION on Advanced Materials [Advanced Materials for Europe]",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0833",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026SC0833",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:59.378044+00:00",
-      "title": "CELEX:62024CC0890: Opinion of Advocate General Rantos delivered on 19 November 2026.###",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CC0890",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62024CC0890",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:57.939263+00:00",
-      "title": "CELEX:62025CJ0312: Judgment of the Court (Fourth Chamber) of 19 November 2026.#EN v Court of Justice of the European Union.#Appeal – Civil service – Staff Regulations of Officials of the European Union – Articles 90 and 91 – Act adversely affecting an official – Salary statement – Action for annulment – Admissibility – Plea of illegality – Article 72 – Joint Sickness Insurance Scheme (JSIS) of the European Union – Amendment to the JSIS General Implementing Provisions – Reimbursable services relating to fertility treatments.#Case C-312/25 P.",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CJ0312",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:62025CJ0312",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:56.094034+00:00",
-      "title": "CELEX:52026DC0833: Proposal for a COUNCIL RECOMMENDATION on Advanced Materials [Advanced Materials for Europe]",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0833",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:52026DC0833",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:54.619419+00:00",
-      "title": "CONSIL:ST_16220_2026_INIT: Proposal for a Regulation on the Union Civil Protection Mechanism and Union support for health emergency preparedness and response - Partial mandate for negotiations with the European Parliament",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16220_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16220_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:53.174574+00:00",
-      "title": "COM:2026:642:FIN: Proposal for a COUNCIL IMPLEMENTING DECISION establishing the satisfactory fulfilment of the conditions for the partial payment of the tenth instalment under the Ukraine Plan of the Ukraine Facility",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:642:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:642:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:50.187015+00:00",
-      "title": "COM:2026:624:FIN: REPORT FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT AND THE COUNCIL 2025 Annual Report on the Strategic Technologies for Europe Platform (STEP)",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:624:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:624:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:48.524284+00:00",
-      "title": "CONSIL:ST_16129_2026_ADD_1: Proposal for a Regulation of the European Parliament and of the Council on the European Union Space Services Agency and amending Regulation (EU) 2021/696 - General approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16129_2026_ADD_1",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16129_2026_ADD_1",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:45.059679+00:00",
-      "title": "CONSIL:ST_16129_2026_INIT: Proposal for a Regulation of the European Parliament and of the Council on the European Union Space Services Agency and amending Regulation (EU) 2021/696 - General approach",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16129_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:ST_16129_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:39.182717+00:00",
-      "title": "CONSIL:CM_5056_2026_INIT: END OF WRITTEN PROCEDURE EU-Indonesia trade and investment agreements",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:CM_5056_2026_INIT",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=CONSIL:CM_5056_2026_INIT",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T18:09:35.886960+00:00",
-      "title": "COM:2026:626:FIN: ANNUAL REVIEW BY THE COMMISSION of Member States' Annual Activity Reports on Export Credits in the sense of Regulation (EU) No 1233/2011",
-      "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:626:FIN",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "References • Source — 20 Nov 2026 — https://eur-lex.europa.eu/legal-content/AUTO/?uri=COM:2026:626:FIN",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. This year, 20 November is the day of the year on which women in Europe symbolically stop to be paid compared to men, because of the",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. This year, 20 November is the day of the year on which women in Europe symbolically stop to be paid compared to men, because of the",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. This year, 20 November is the day of the year on which women in Europe symbolically stop to be paid compared to men, because of the",
-      "amounts": []
-    },
-    {
-      "date": "2026-11-20T12:00:00+00:00",
-      "title": "Your gateway to the European Union",
-      "url": "https://european-union.europa.eu/index_en",
-      "doc_type": "Blog/News",
-      "programme": [
-        "Other/NA"
-      ],
-      "tech_area": [],
-      "stage": "NA",
-      "short": "All featured news are available in the 24 EU official languages via machine translation. This year, 20 November is the day of the year on which women in Europe symbolically stop to be paid compared to men, because of the",
       "amounts": []
     }
   ]
